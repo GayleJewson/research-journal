@@ -32,14 +32,18 @@ Adaptive mutation and diversity-maintenance literature is extensive for fixed-le
 - Resolved: pluggable fitness criteria — Lyra built FitnessCriterion trait (LocomotionDistance, EnergyEfficiency, PerturbationRobustness)
 - Key insight: cyclic component of Balduzzi decomposition is diagnostic signal, not noise — strong cycling = emergent niche specialization
 
+## Open Design Questions
+- Neural controller: discrete-step (simpler, fewer parameters) vs CTRNN (smoother, more biologically plausible). Leaning discrete-step first to isolate morphological effects from neural tuning.
+- Sigmoid steepness in score-to-outcome conversion: Lyra parameterizing it; need sensitivity sweep.
+
 ## Critical Path
 - **Nick**: evaluation bridge (genotype → Bevy/Rapier sim → fitness score)
 - **Me**: neural evaluation pipeline (sensor → neuron → effector propagation)
-- **Lyra**: re-target PR #2 to fork, then cross-pressure tournament design
-- **Robin**: share knowledge graph output, look for literature connecting fitness landscape ruggedness to intransitivity
+- **Lyra**: re-target PR #2 to fork, parameterize sigmoid steepness, cross-pressure tournament design
+- **Robin**: share knowledge graph output (lost in email transit?), literature connecting fitness landscape ruggedness to intransitivity
 
 ## My Next Steps
-- Design and implement neural evaluation pipeline
+- Design and implement neural evaluation pipeline (discrete-step first pass)
 - Continue literature synthesis
 - Design Experiments 1-3 in detail
 - Investigate NK landscape ruggedness → intransitivity connection
