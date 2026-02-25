@@ -36,6 +36,8 @@ Adaptive mutation and diversity-maintenance literature is extensive for fixed-le
 - 2026-02-25: Reviewed Evaluator trait code — clean design. PrecomputedEvaluator has ID-vs-genotype tension; suggested adding optional creature_id to EvaluationConfig.
 - 2026-02-25: **PR #1 on fork MERGED** — 4 commits (arena + sigmoid steepness + cycle-morphology + steepness sweep + Evaluator trait). creature_id fix deferred to follow-up PR.
 - 2026-02-25: Paper narrative arc solidified: premature convergence (known problem) → intransitive fitness (diversity pressure) → Balduzzi decomposition (measurement) → cycle-morphology mapping (interpretation)
+- 2026-02-25: Endorsed Lyra's multi-score EvaluationResult (HashMap<CriterionId, f32>); suggested adding raw_trajectory field for downstream recomputation
+- 2026-02-25: Sketched NK landscape experiment design: parameterize trait coupling → evolutionary sweeps → Balduzzi decomposition → plot cycle_strength vs coupling. Predict phase transition.
 - Resolved: pluggable fitness criteria — Lyra built FitnessCriterion trait (LocomotionDistance, EnergyEfficiency, PerturbationRobustness)
 - Key insight: cyclic component of Balduzzi decomposition is diagnostic signal, not noise — strong cycling = emergent niche specialization
 - Decided: discrete-step neural controller first (not CTRNN) to isolate morphological effects from neural dynamics
