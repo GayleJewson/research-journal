@@ -26,24 +26,28 @@ Adaptive mutation and diversity-maintenance literature is extensive for fixed-le
 - 2026-02-24: Collaboration formally agreed, four-way division of labor established
 - 2026-02-24: Forked repo to GayleJewson/virtual-creatures; future development goes there
 - 2026-02-24: Nick rewrote history on his repo (removed PR #1 merge commit); fork diverged as expected
-- 2026-02-24: Lyra shipped PR #2 — arena tournament system with Elo + Balduzzi decomposition (1,293 lines, 21 tests). Still open on Nick's repo, needs re-targeting to fork.
-- 2026-02-24: Robin started knowledge graph for literature review; shared initial output
+- 2026-02-24: Lyra shipped arena PR — retargeted to fork as GayleJewson/virtual-creatures#1 (OPEN)
 - 2026-02-24: Robin's "grandmaster vs amateur" insight → cross-pressure tournaments as experiment design
+- 2026-02-25: Lyra added configurable sigmoid steepness (TournamentConfig field + CLI flag, default 5.0)
+- 2026-02-25: Lyra shipped cycle-morphology mapping module (~300 lines, 5 tests) — maps cyclic residuals to morphological feature differences at each edge. Shows which traits give winner advantage in each cycle.
+- 2026-02-25: **Robin shared knowledge graph results** — 77 concept summaries → 20 research themes. 5 strong edges validate original clusters. Key finding: "premature convergence in morphology-control" emerged as its own theme — this is our paper's niche.
+- 2026-02-25: Robin's bridge paper analysis: NEAT (score 44), Novelty Search (40), Abandoning Objectives (30), Robots That Adapt (27), HyperNEAT (18), Sims (6). Bridge scores correlate with methodological generality.
 - Resolved: pluggable fitness criteria — Lyra built FitnessCriterion trait (LocomotionDistance, EnergyEfficiency, PerturbationRobustness)
 - Key insight: cyclic component of Balduzzi decomposition is diagnostic signal, not noise — strong cycling = emergent niche specialization
+- Decided: discrete-step neural controller first (not CTRNN) to isolate morphological effects from neural dynamics
 
 ## Open Design Questions
-- Neural controller: discrete-step (simpler, fewer parameters) vs CTRNN (smoother, more biologically plausible). Leaning discrete-step first to isolate morphological effects from neural tuning.
-- Sigmoid steepness in score-to-outcome conversion: Lyra parameterizing it; need sensitivity sweep.
+- Sigmoid steepness sensitivity: need to sweep 1.0–20.0 and check if cycle_strength is invariant (structural intransitivity) or sensitive (artifact of probability model)
+- NK landscape connection: vary morphological trait coupling (effective K), measure cycle_strength. Phase transition prediction: low K → no cycling, high K → strong cycling.
 
 ## Critical Path
-- **Nick**: evaluation bridge (genotype → Bevy/Rapier sim → fitness score)
-- **Me**: neural evaluation pipeline (sensor → neuron → effector propagation)
-- **Lyra**: re-target PR #2 to fork, parameterize sigmoid steepness, cross-pressure tournament design
-- **Robin**: share knowledge graph output (lost in email transit?), literature connecting fitness landscape ruggedness to intransitivity
+- **Nick**: evaluation bridge (genotype → Bevy/Rapier sim → fitness score) — reading to catch up, no rush
+- **Me**: neural evaluation pipeline (discrete-step), review Lyra's PR #1 on fork
+- **Lyra**: steepness sweep utility, continued arena development
+- **Robin**: share full knowledge graph output (edge list + theme assignments) for related work section
 
 ## My Next Steps
-- Design and implement neural evaluation pipeline (discrete-step first pass)
-- Continue literature synthesis
+- Review Lyra's PR #1 on GayleJewson/virtual-creatures
+- Design and implement neural evaluation pipeline (discrete-step)
+- Start drafting related work section using Robin's bridge paper analysis
 - Design Experiments 1-3 in detail
-- Investigate NK landscape ruggedness → intransitivity connection
