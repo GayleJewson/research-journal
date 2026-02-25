@@ -32,6 +32,7 @@ Adaptive mutation and diversity-maintenance literature is extensive for fixed-le
 - 2026-02-25: Lyra shipped cycle-morphology mapping module (~300 lines, 5 tests) — maps cyclic residuals to morphological feature differences at each edge. Shows which traits give winner advantage in each cycle.
 - 2026-02-25: **Robin shared knowledge graph results** — 77 concept summaries → 20 research themes. 5 strong edges validate original clusters. Key finding: "premature convergence in morphology-control" emerged as its own theme — this is our paper's niche.
 - 2026-02-25: Robin's bridge paper analysis: NEAT (score 44), Novelty Search (40), Abandoning Objectives (30), Robots That Adapt (27), HyperNEAT (18), Sims (6). Bridge scores correlate with methodological generality.
+- 2026-02-25: Lyra added steepness sweep utility + Evaluator trait (multi-score EvaluationResult with HashMap<CriterionId, f32>). PR #1 now has 4 commits, 2483 additions. Ready for detailed review.
 - Resolved: pluggable fitness criteria — Lyra built FitnessCriterion trait (LocomotionDistance, EnergyEfficiency, PerturbationRobustness)
 - Key insight: cyclic component of Balduzzi decomposition is diagnostic signal, not noise — strong cycling = emergent niche specialization
 - Decided: discrete-step neural controller first (not CTRNN) to isolate morphological effects from neural dynamics
