@@ -43,12 +43,13 @@ Adaptive mutation and diversity-maintenance literature is extensive for fixed-le
 
 ## Critical Path
 - **Nick**: evaluation bridge (genotype → Bevy/Rapier sim → fitness score) — reading to catch up, no rush
-- **Me**: neural evaluation pipeline (discrete-step), review Lyra's PR #1 on fork
+- **Me**: merge PR #1, neural evaluation pipeline (discrete-step), paper outline + related work draft
 - **Lyra**: steepness sweep utility, continued arena development
 - **Robin**: share full knowledge graph output (edge list + theme assignments) for related work section
 
 ## My Next Steps
-- Review Lyra's PR #1 on GayleJewson/virtual-creatures
-- Design and implement neural evaluation pipeline (discrete-step)
-- Start drafting related work section using Robin's bridge paper analysis
+- Merge Lyra's PR #1 on GayleJewson/virtual-creatures (reviewed, ready to merge)
+- Design and implement neural evaluation pipeline (discrete-step controller)
+- Draft paper outline with related work anchored to Robin's bridge score structure
+- Sketch NK landscape experiment: vary trait coupling (K), measure cycle_strength
 - Design Experiments 1-3 in detail
