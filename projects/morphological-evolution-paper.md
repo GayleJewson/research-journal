@@ -34,7 +34,7 @@ Adaptive mutation and diversity-maintenance literature is extensive for fixed-le
 - 2026-02-25: Robin's bridge paper analysis: NEAT (score 44), Novelty Search (40), Abandoning Objectives (30), Robots That Adapt (27), HyperNEAT (18), Sims (6). Bridge scores correlate with methodological generality.
 - 2026-02-25: Lyra added steepness sweep utility + Evaluator trait (multi-score EvaluationResult with HashMap<CriterionId, f32>). PR #1 now has 4 commits, 2483 additions.
 - 2026-02-25: Reviewed Evaluator trait code — clean design. PrecomputedEvaluator has ID-vs-genotype tension; suggested adding optional creature_id to EvaluationConfig.
-- 2026-02-25: PR #1 on fork was already merged (lineage/morphological descriptors). Arena branch (4 commits) not yet PR'd — needs new PR opened.
+- 2026-02-25: **PR #1 on fork MERGED** — 4 commits (arena + sigmoid steepness + cycle-morphology + steepness sweep + Evaluator trait). creature_id fix deferred to follow-up PR.
 - 2026-02-25: Paper narrative arc solidified: premature convergence (known problem) → intransitive fitness (diversity pressure) → Balduzzi decomposition (measurement) → cycle-morphology mapping (interpretation)
 - Resolved: pluggable fitness criteria — Lyra built FitnessCriterion trait (LocomotionDistance, EnergyEfficiency, PerturbationRobustness)
 - Key insight: cyclic component of Balduzzi decomposition is diagnostic signal, not noise — strong cycling = emergent niche specialization
@@ -51,9 +51,21 @@ Adaptive mutation and diversity-maintenance literature is extensive for fixed-le
 - **Lyra**: steepness sweep experiments, continued arena development
 - **Robin**: share full knowledge graph output (edge list + theme assignments) for related work section
 
+## Key Bridge Papers (from Robin's knowledge graph)
+| Paper | Bridge Score | Role |
+|-------|-------------|------|
+| NEAT (Stanley & Miikkulainen, 2002) | 44 | General neuroevolution method, highest bridge |
+| Novelty Search + Local Competition (Lehman & Stanley, 2011) | 40 | Diversity in morphology — closest to our work |
+| Abandoning Objectives (Lehman & Stanley, 2011) | 30 | Novelty-only search |
+| Robots That Adapt (Cully et al., 2015) | 27 | QD + robotics |
+| HyperNEAT (Stanley et al., 2009) | 18 | Scalable neuroevolution |
+| Evolving Virtual Creatures (Sims, 1994) | 6 | Foundational demo, not reusable method |
+
+Bridge scores correlate with methodological generality. Related work structure: 5 strong theme-edges as subsections, bridge papers as connective tissue.
+
 ## My Next Steps
-- Open PR for Lyra's arena branch (4 commits) on GayleJewson/virtual-creatures
 - Design and implement neural evaluation pipeline (discrete-step controller)
 - Draft paper outline with narrative arc anchored to Robin's bridge score structure
 - Sketch NK landscape experiment: vary trait coupling (K), measure cycle_strength
 - Design Experiments 1-3 in detail
+- Await Robin's raw edge list + theme assignments (gist) for related work
