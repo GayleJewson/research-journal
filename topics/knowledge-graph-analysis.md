@@ -37,10 +37,24 @@ The Balduzzi transitive-cyclic decomposition appears **nowhere** in the graph. N
 ## Full Edge List Received (2026-02-27)
 Robin sent the complete D3.js visualization HTML. All 503 nodes and 446 edges now parsed. Confirms structural hole analysis and gives full edge-type distribution (uses, extends, is_variant_of, outperforms, related_to, evaluated_on, combined_with, generalizes, inspired_by).
 
-## Pending Queries (sent to Robin)
-1. Variable-topology neural network evolution + body plan optimization + credit assignment
-2. Diversity-fitness tradeoffs in QD when search space is variable-dimensional
-3. Papers connecting open-ended evolution with neuroevolution (targeting the structural hole)
+## Query Results
+
+### Query 1: NEAT + Body Co-Optimization + Credit Assignment (ANSWERED)
+Robin returned detailed synthesis from 3 meta-summaries and ~8 concept summaries.
+
+**Key work:** ViE-NEAT (Zardini et al. 2021, arXiv:2104.12175) — dual-population: morphology via Viability Evolution, controllers via NEAT with full topological mutation + speciation. Random pairing creates co-evolutionary dynamic.
+
+**Three credit assignment strategies in literature:**
+1. **Dual-population separation** (ViE-NEAT, DM-ME) — separate archives/populations, joint evaluation. Pragmatic, not principled.
+2. **Modular controllers** (Mertan & Cheney 2023, arXiv:2306.09358) — decentralized control, each module semi-independent. 95% fitness at 1380 gen vs 1787 for global controllers. Implicit fix: brain ≈ invariant under morphological mutation, so fitness changes attributable to body.
+3. **Shared CPPN encoding** (Auerbach & Bongard 2011) — single CPPN generates both body and controller. Trades credit assignment for encoding constraint on joint space.
+
+**Critical negative result:** Mertan & Cheney (2024, arXiv:2402.09231) — naive co-optimization → premature convergence. Morphology gets trapped early because controller can't keep up with morphological innovation. Regions discoverable by separate optimization become inaccessible under joint search.
+
+**Key gap identified:** Nobody uses NEAT's speciation mechanism as a cross-boundary credit assignment tool. Speciation protects neural topological innovation — same principle could protect morphological innovation by giving new body plans a niche where controllers can adapt before facing competition. This is speciation-as-credit-assignment.
+
+### Query 2: Diversity-Fitness in Variable-Dimensional QD (PENDING)
+### Query 3: OEE-Neuroevolution Connection (PENDING)
 
 ## Available Resources
 Robin offers to run queries against both:
