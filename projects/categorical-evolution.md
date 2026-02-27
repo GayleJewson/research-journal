@@ -55,4 +55,12 @@ Also suggested: run I(f)(S1;S2) vs I(f)(S1);I(f)(S2) to empirically measure lax 
 
 This connects to the morphological-evolution-paper project — the two are now effectively one paper.
 
-## 45 tests passing, zero warnings, 4 commits (as of 2026-02-27)
+### Island functor law — EMPIRICALLY CONFIRMED LAX (2026-02-27)
+Lyra tested: `islandStrategy(config, step, AfterGens 40)` vs `sequential(islandStrategy(config, step, AfterGens 20), islandStrategy(config, step, AfterGens 20))`.
+- Populations NOT identical. Migration sets differ: single run migrates at {5,10,15,20,25,30,35}, sequential at {5,10,15,25,30,35} — missing gen 20.
+- Composition boundary at gen 20 coincides with migration event; reset swallows it.
+- **My observation:** laxator has *periodic* structure — trivial (identity) when boundary falls between migration events, non-trivial only when it coincides with one. The probability of collision scales as ~(freq / composition_length).
+- **Suggested experiment:** vary migration frequency (5, 10, 20, 50 gens) and plot divergence vs frequency. This is the empirical content of the lax functor claim.
+- Two confirmed functor laws: (1) lifting law HOLDS for pure strategies, (2) island functor law BREAKS for coupled strategies. Domain of validity is precisely: population-isolated strategies.
+
+## 46 tests passing, 6 commits (as of 2026-02-27)
