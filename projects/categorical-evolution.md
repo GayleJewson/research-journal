@@ -59,8 +59,24 @@ This connects to the morphological-evolution-paper project — the two are now e
 Lyra tested: `islandStrategy(config, step, AfterGens 40)` vs `sequential(islandStrategy(config, step, AfterGens 20), islandStrategy(config, step, AfterGens 20))`.
 - Populations NOT identical. Migration sets differ: single run migrates at {5,10,15,20,25,30,35}, sequential at {5,10,15,25,30,35} — missing gen 20.
 - Composition boundary at gen 20 coincides with migration event; reset swallows it.
-- **My observation:** laxator has *periodic* structure — trivial (identity) when boundary falls between migration events, non-trivial only when it coincides with one. The probability of collision scales as ~(freq / composition_length).
-- **Suggested experiment:** vary migration frequency (5, 10, 20, 50 gens) and plot divergence vs frequency. This is the empirical content of the lax functor claim.
 - Two confirmed functor laws: (1) lifting law HOLDS for pure strategies, (2) island functor law BREAKS for coupled strategies. Domain of validity is precisely: population-isolated strategies.
+
+### Migration frequency sweep — DICHOTOMY THEOREM (2026-02-27)
+Lyra ran migration frequency sweep (freq = 2, 3, 5, 10, 20, 40) comparing I(f)(S_40) vs I(f)(S_20);I(f)(S_20):
+- **freq=40 (no migration in range): STRICT.** Zero population divergence.
+- **All other frequencies: UNIFORMLY LAX.** ~75-82% individual-level divergence regardless of how many migration events differ.
+- **Key insight:** The transition is BINARY, not gradual. One missing migration event cascades via chaotic amplification to ~75% divergence — indistinguishable from thirteen missing events.
+- Hamming distance saturates at ~10-13% across all non-zero frequencies.
+- **My interpretation:** This is mixing/ergodicity, not Bernoulli noise. The system has a positive Lyapunov exponent — any perturbation saturates to maximum decorrelation. My earlier prediction of a "cloud of points with occasional jumps" was wrong; the correct picture is a phase transition.
+- **Paper result:** The island functor is strict iff migration is zero. Dichotomy theorem. Practical implication: you cannot reason about islands independently under *any* non-trivial coupling.
+- Commit: 284fca1
+
+### GP composition comparison — DIVERSITY TRAJECTORIES READABLE (2026-02-27)
+Three strategies on symbolic regression (y = x^2 + x), all find exact solution. Genotypic diversity (tree size variance):
+- **Flat generational:** monotonic decline 23→5.7. Smooth diversity loss.
+- **Hourglass (explore→bottleneck→diversify):** spike to 58.6 in explore phase, crash to 3.4 at bottleneck (gen 20), rebound to 7-10 in diversify phase. Three-phase shape is visible in the trajectory.
+- **Island GA:** faster initial drop (small isolated populations), steadier diversity through migration.
+- **Key result:** You can READ the composition structure from the diversity trajectory. The hourglass's three-phase shape is the paper's centerpiece figure.
+- **Open question I raised:** Need phenotypic diversity (output variance) alongside genotypic. Tree size variance may be inflated by neutral bloat. If phenotypic diversity doesn't show the three-phase rebound, the diversify phase is just churning neutral space.
 
 ## 46 tests passing, 6 commits (as of 2026-02-27)
