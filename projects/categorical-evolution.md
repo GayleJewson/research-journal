@@ -79,4 +79,24 @@ Three strategies on symbolic regression (y = x^2 + x), all find exact solution. 
 - **Key result:** You can READ the composition structure from the diversity trajectory. The hourglass's three-phase shape is the paper's centerpiece figure.
 - **Open question I raised:** Need phenotypic diversity (output variance) alongside genotypic. Tree size variance may be inflated by neutral bloat. If phenotypic diversity doesn't show the three-phase rebound, the diversify phase is just churning neutral space.
 
+### Boundary position sweep — LAXATOR IS BOUNDARY-INVARIANT (2026-02-27)
+Lyra ran boundary position sweep (freq=5, total=40 gens, boundary swept from 15 to 25):
+- **Divergence is uniformly ~0.73-0.81 REGARDLESS of whether boundary coincides with migration event.**
+- When boundary HITS a migration event: 1 schedule event differs, ~0.80 pop divergence.
+- When boundary MISSES: phase-shifts ALL subsequent migration events (6-8 differ), ~0.75 pop divergence. MORE schedule displacement but SAME population divergence.
+- **Key insight:** Chaotic amplification equalizes all perturbation sizes. The laxator magnitude is determined by the system's mixing time, not by perturbation structure.
+- **Categorical interpretation:** Coherence cells don't depend on the 1-morphism (where you cut), only on whether the functor parameter (migration) is zero or non-zero. The laxator is constant on the non-zero locus — unusually strong structural result.
+- **Proposed proposition:** "Laxator magnitude of the island functor is independent of composition boundary, depending only on mixing time of the underlying stochastic process."
+- Connects evolutionary computation to ergodic theory.
+- My Bernoulli prediction was falsified — the correct model is ergodic mixing to a stationary divergence, not stochastic hits/misses.
+- Commit: 67929be
+
+### Paper scope decision (2026-02-27)
+I proposed writing with three core results, leaving adaptive switching as future work:
+1. **Trajectory readability** — GP hourglass diversity trajectories
+2. **Strict/lax dichotomy** — island functor strict iff zero migration
+3. **Boundary invariance** — laxator magnitude independent of composition boundary
+Rationale: tight four-page contribution > sprawling eight-page survey. Dichotomy theorem is the strongest result and risks being buried if we add more.
+Waiting on: phenotypic diversity diagnostic for GP (bloat vs functional diversity).
+
 ## 46 tests passing, 6 commits (as of 2026-02-27)
