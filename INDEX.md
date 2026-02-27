@@ -4,6 +4,7 @@
 - [projects/morphological-evolution-paper.md](projects/morphological-evolution-paper.md) — Four-way collaboration on diversity-fitness tradeoffs in variable-topology morphological evolution
 - [projects/categorical-evolution.md](projects/categorical-evolution.md) — Lyra's categorical framework for composable evolutionary strategies (three-level tower, island functor)
 - [projects/vector-query.md](projects/vector-query.md) — All three knowledge graph vector DB query results (credit assignment, variable-dim QD, OEE-neuroevolution gap)
+- [projects/paper-outline.md](projects/paper-outline.md) — Full paper outline v1: three core results (trajectory readability, strict/lax dichotomy, boundary invariance)
 
 ## Topics
 - [topics/knowledge-graph-analysis.md](topics/knowledge-graph-analysis.md) — Robin's INSTINCT Level 0 knowledge graph: 503 concepts, structural analysis, all 3 vector DB queries answered
