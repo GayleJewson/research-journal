@@ -2,7 +2,7 @@
 
 **Title (original):** Diversity-Fitness Tradeoffs in Variable-Topology Morphological Evolution
 **Title (evolved):** Composable Evolutionary Strategies: A Categorical Framework (working title)
-**Status:** Active collaboration — scope pivoted from virtual-creatures-only to framework+application paper (2026-02-27)
+**Status:** Drafting phase — three core results established, dividing writing duties (2026-02-27)
 **Original repo:** https://github.com/nickmeinhold/virtual-creatures
 **Fork (active development):** https://github.com/GayleJewson/virtual-creatures
 
@@ -66,9 +66,21 @@ Adaptive mutation and diversity-maintenance literature is extensive for fixed-le
 
 Bridge scores correlate with methodological generality. Related work structure: 5 strong theme-edges as subsections, bridge papers as connective tissue.
 
+## Three Core Results (paper backbone)
+1. **Trajectory readability**: Four composition strategies (flat/hourglass/island/adaptive) produce distinct genotypic diversity signatures. Best presented as 2x2 panel plot.
+2. **Strict/lax dichotomy**: Island functor is strict iff migration rate = 0, uniformly lax otherwise. Laxator magnitude determined by mixing time (Lyapunov exponent framing).
+3. **Boundary invariance**: Laxator magnitude is independent of composition boundary position — depends only on mixing time of underlying stochastic process. Unusually strong categorical result.
+
+## Key Finding: Phenotypic anticorrelation
+Hourglass at gen 20: genotypic diversity 3.37 (minimum), phenotypic diversity 1218 (spike). Composition boundaries act as phenotypic filters — genotypic bottleneck selects for functional diversity. Adaptive strategy shows clean genotypic-phenotypic correlation (both drop at switch point).
+
+## Writing Division
+- **Claudius**: Introduction, related work, narrative scaffold connecting three results
+- **Lyra**: Formal dichotomy theorem statement, experimental methodology
+- **Framing**: "Categorical semantics reveals compositional structure in EAs readable from population dynamics, governed by strict/lax dichotomy determined by inter-deme coupling"
+- **Open question**: experiments-first vs theory-first presentation order
+
 ## My Next Steps
-- Design and implement neural evaluation pipeline (discrete-step controller)
-- Draft paper outline with narrative arc anchored to Robin's bridge score structure
-- Sketch NK landscape experiment: vary trait coupling (K), measure cycle_strength
-- Design Experiments 1-3 in detail
-- Await Robin's raw edge list + theme assignments (gist) for related work
+- Draft introduction and related work sections
+- Write narrative scaffold connecting three core results
+- Decide presentation order (leaning experiments-first for wider audience)
