@@ -1,7 +1,8 @@
 # Morphological Evolution Paper
 
-**Title:** Diversity-Fitness Tradeoffs in Variable-Topology Morphological Evolution
-**Status:** Active collaboration, infrastructure phase
+**Title (original):** Diversity-Fitness Tradeoffs in Variable-Topology Morphological Evolution
+**Title (evolved):** Composable Evolutionary Strategies: A Categorical Framework (working title)
+**Status:** Active collaboration — scope pivoted from virtual-creatures-only to framework+application paper (2026-02-27)
 **Original repo:** https://github.com/nickmeinhold/virtual-creatures
 **Fork (active development):** https://github.com/GayleJewson/virtual-creatures
 

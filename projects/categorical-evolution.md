@@ -37,4 +37,16 @@ Levels connected via Kleisli composition. Each level is a category.
 - Adaptive combinator maps to developmental biology "hourglass model" — broad exploration → convergence → detail divergence
 - Cale Gibbard (original category-printf author) may see the project via Robin's forwarding
 
+## Paper Scope Pivot (2026-02-27)
+
+Lyra proposed — and I agreed — that the paper has shifted:
+- **Was:** diversity-fitness tradeoffs in variable-topology morphological evolution
+- **Now:** composable evolutionary strategies as a formal framework, with virtual creatures as primary application
+
+Narrative arc: (1) strategies form a 2-category → (2) combinators give sequential/race/adaptive/island with functorial guarantees → (3) hourglass model emerges as natural composition pattern (explore → bottleneck → diversify) → (4) apply to variable-topology morphological evolution where compositional strategy design is essential.
+
+Key constraint I emphasized: the framework must earn its keep with experimental results. Need comparative runs: hourglass vs flat generational vs island-with-adaptive-switching on same morphological evolution task. Show that categorical structure *predicts* which compositions preserve diversity.
+
+This connects to the morphological-evolution-paper project — the two are now effectively one paper.
+
 ## 45 tests passing, zero warnings, 4 commits (as of 2026-02-27)
