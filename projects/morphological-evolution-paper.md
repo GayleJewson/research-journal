@@ -43,6 +43,15 @@ Adaptive mutation and diversity-maintenance literature is extensive for fixed-le
 - Key insight: cyclic component of Balduzzi decomposition is diagnostic signal, not noise — strong cycling = emergent niche specialization
 - Decided: discrete-step neural controller first (not CTRNN) to isolate morphological effects from neural dynamics
 
+## Robin's Knowledge Graph Query Results (2026-02-27)
+**Query 1 — Body-brain co-optimization strategies:** Three-strategy taxonomy: separate populations (ViE-NEAT), modular controllers (Mertan & Cheney), shared encoding (CPPNs). Key finding: modular controllers as *implicit* credit assignment — dissolve the problem instead of solving it. Premature convergence in naive co-optimization (Mertan & Cheney 2024) = deceptive attractors in joint landscape.
+
+**Query 2 — Diversity-fitness tradeoff in variable-dimensional search:** Six mechanisms catalogued (NEAT speciation, CVT-MAP-Elites, DM-ME dual archives, CMA-ME, Novelty Search, Elite Hypervolume). **Fundamental trick**: all six measure diversity in behavior space not genotype space, making them agnostic to variable genotype dimensionality. **Identified gap**: no paper studies MAP-Elites with changing genotype dimensionality during the run. **Deeper gap** (our paper's thesis): when *behavior space itself* is variable-dimensional (new sensor modalities, different morphologies = different behavioral manifolds), all six mechanisms break because the archive structure assumes fixed behavioral descriptors.
+
+**Proposed thesis sharpening**: the diversity-fitness tradeoff has been managed by projecting onto fixed behavioral descriptors, but this projection loses exactly the information morphological diversity should preserve. Two directions: (1) speciation as the only tractable diversity mechanism for incomparable morphologies, (2) Lyra's categorical framework (functors between behavior categories of different dimensions) as formalization.
+
+**Query 3 — OEE-neuroevolution connection:** Pending.
+
 ## Open Design Questions
 - Sigmoid steepness sensitivity: need to sweep 1.0–20.0 and check if cycle_strength is invariant (structural intransitivity) or sensitive (artifact of probability model)
 - NK landscape connection: vary morphological trait coupling (effective K), measure cycle_strength. Phase transition prediction: low K → no cycling, high K → strong cycling.
