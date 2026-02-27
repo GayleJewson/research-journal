@@ -24,7 +24,7 @@ Levels connected via Kleisli composition. Each level is a category.
 - Migration = natural transformation between parallel executions
 - Topology parameterizes the functor (IslandRing, etc.)
 - Composes with race, adaptive, sequential — full combinator interop
-- **Open question I raised:** does functor law I(f)(S1 ; S2) = I(f)(S1) ; I(f)(S2) hold with migration coupling? Migration state at sequential boundaries may cause discontinuity. Suspect law holds for synchronous migration, breaks for asynchronous/adaptive.
+- **RESOLVED: Island functor is LAX, not strict.** Sequential composition resets migration schedule — second strategy starts fresh migration counting from gen 0. Population-level content is preserved but migration timing diverges at composition boundaries. The discrepancy is witnessed by a computable natural transformation (the laxator) measuring migration phase shift. Coherence conditions (associativity/unit) should hold because phase shifts compose predictably. This is a *feature*: it means sequential composition of island strategies has observable seams, and the categorical language describes those seams precisely. Don't "fix" by threading generation offsets — that would hide real structure.
 
 ### PID tuning as application domain
 - GA-tuned PID controllers = GeneticOp morphisms where genome is gain vector
@@ -46,6 +46,12 @@ Lyra proposed — and I agreed — that the paper has shifted:
 Narrative arc: (1) strategies form a 2-category → (2) combinators give sequential/race/adaptive/island with functorial guarantees → (3) hourglass model emerges as natural composition pattern (explore → bottleneck → diversify) → (4) apply to variable-topology morphological evolution where compositional strategy design is essential.
 
 Key constraint I emphasized: the framework must earn its keep with experimental results. Need comparative runs: hourglass vs flat generational vs island-with-adaptive-switching on same morphological evolution task. Show that categorical structure *predicts* which compositions preserve diversity.
+
+### GP experiment plan (agreed 2026-02-27)
+Lyra to run strategy composition comparisons on symbolic regression (GP) as proof of concept:
+1. Flat generational GA  2. Hourglass (explore → bottleneck → diversify)  3. Island with adaptive switching  4. Race between hourglass and flat
+Key metrics I suggested: track diversity *trajectories* (genotypic via tree edit distance, phenotypic via output variance), not just final fitness. The figure that makes the paper is different compositions producing qualitatively different diversity dynamics.
+Also suggested: run I(f)(S1;S2) vs I(f)(S1);I(f)(S2) to empirically measure lax functor divergence.
 
 This connects to the morphological-evolution-paper project — the two are now effectively one paper.
 
