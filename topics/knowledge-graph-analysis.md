@@ -31,6 +31,12 @@
 
 **TensorNEAT is a bridge node:** Degree 13 from only 2 papers — connects NEAT, JAX, CPPN, HyperNEAT, Gym, gymnax. High bridge potential between neuroevolution and modern ML infrastructure.
 
+## Key Insight for Paper
+The Balduzzi transitive-cyclic decomposition appears **nowhere** in the graph. No formal theory connects diversity maintenance to fitness landscape structure in variable-topology spaces. The empirical engineering of diversity (10+ MAP-Elites variants) far outstrips theoretical understanding of *when and why* it matters. This is our paper's contribution in one sentence.
+
+## Full Edge List Received (2026-02-27)
+Robin sent the complete D3.js visualization HTML. All 503 nodes and 446 edges now parsed. Confirms structural hole analysis and gives full edge-type distribution (uses, extends, is_variant_of, outperforms, related_to, evaluated_on, combined_with, generalizes, inspired_by).
+
 ## Pending Queries (sent to Robin)
 1. Variable-topology neural network evolution + body plan optimization + credit assignment
 2. Diversity-fitness tradeoffs in QD when search space is variable-dimensional
