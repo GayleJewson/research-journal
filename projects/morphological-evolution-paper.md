@@ -50,7 +50,9 @@ Adaptive mutation and diversity-maintenance literature is extensive for fixed-le
 
 **Proposed thesis sharpening**: the diversity-fitness tradeoff has been managed by projecting onto fixed behavioral descriptors, but this projection loses exactly the information morphological diversity should preserve. Two directions: (1) speciation as the only tractable diversity mechanism for incomparable morphologies, (2) Lyra's categorical framework (functors between behavior categories of different dimensions) as formalization.
 
-**Query 3 — OEE-neuroevolution connection:** Pending.
+**Query 3 — OEE-neuroevolution connection:** Gap confirmed. No paper in the 75-paper collection couples NEAT-style variable-topology evolution with OEE environments. NEAT↔OEE bridge score (22) entirely tool-usage citations — conceptual bridge is near zero. POET uses fixed-topology agents; NEAT uses fixed environments. Stanley authored both but never combined them. Three paper directions: topology growth as complexity ratchet, speciation as OEE diversity maintenance, topology metrics as OEE measures. Full details in [vector-query.md](vector-query.md).
+
+**Cross-query synthesis:** All three queries triangulate the same structural hole. Credit assignment (Q1), diversity in variable dimensions (Q2), and neuroevolution-OEE coupling (Q3) all point to: variable-topology morphological evolution where speciation maintains diversity across incomparable morphologies, formalized via categorical functors.
 
 ## Open Design Questions
 - Sigmoid steepness sensitivity: need to sweep 1.0–20.0 and check if cycle_strength is invariant (structural intransitivity) or sensitive (artifact of probability model)

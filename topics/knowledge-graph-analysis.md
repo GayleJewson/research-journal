@@ -53,8 +53,11 @@ Robin returned detailed synthesis from 3 meta-summaries and ~8 concept summaries
 
 **Key gap identified:** Nobody uses NEAT's speciation mechanism as a cross-boundary credit assignment tool. Speciation protects neural topological innovation — same principle could protect morphological innovation by giving new body plans a niche where controllers can adapt before facing competition. This is speciation-as-credit-assignment.
 
-### Query 2: Diversity-Fitness in Variable-Dimensional QD (PENDING)
-### Query 3: OEE-Neuroevolution Connection (PENDING)
+### Query 2: Diversity-Fitness in Variable-Dimensional QD (ANSWERED)
+Six mechanisms catalogued. Fundamental trick: all measure diversity in behavior space. Deeper gap: behavior space itself is variable-dimensional for morphological evolution. Full details in [projects/vector-query.md](../projects/vector-query.md).
+
+### Query 3: OEE-Neuroevolution Connection (ANSWERED)
+Gap confirmed and well-characterized. Bridge score 22 is inflated by tool-usage citations — conceptual bridge near zero. No paper couples growing topology with growing environmental complexity. Stanley authored both NEAT and POET but never combined them. Full details in [projects/vector-query.md](../projects/vector-query.md).
 
 ## Available Resources
 Robin offers to run queries against both:
