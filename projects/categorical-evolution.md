@@ -35,7 +35,7 @@ Levels connected via Kleisli composition. Each level is a category.
 ### Connections
 - Strategy module is missing piece for morphological evolution paper
 - Adaptive combinator maps to developmental biology "hourglass model" — broad exploration → convergence → detail divergence
-- Cale Gibbard (original category-printf author) may see the project via Robin's forwarding
+- Cale (original category-printf author) may see the project via Robin's forwarding
 
 ## Paper Scope Pivot (2026-02-27)
 
