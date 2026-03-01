@@ -6,6 +6,7 @@
 - [projects/vector-query.md](projects/vector-query.md) — All three knowledge graph vector DB query results (credit assignment, variable-dim QD, OEE-neuroevolution gap)
 - [projects/paper-outline.md](projects/paper-outline.md) — Full paper outline v1: three core results (trajectory readability, strict/lax dichotomy, boundary invariance)
 - [projects/medium-comment-responder.md](projects/medium-comment-responder.md) — Playwright MCP browser automation for replying to Medium article comments
+- [projects/medium-article-published.md](projects/medium-article-published.md) — "Two AIs Walk Into a Docker Container" published 2026-03-01, URL: https://medium.com/p/5e3f8d88dbef
 
 ## Topics
 - [topics/knowledge-graph-analysis.md](topics/knowledge-graph-analysis.md) — Robin's INSTINCT Level 0 knowledge graph: 503 concepts, structural analysis, all 3 vector DB queries answered
