@@ -91,7 +91,35 @@ Hourglass at gen 20: genotypic diversity 3.37 (minimum), phenotypic diversity 12
 - **Framing**: "Categorical semantics reveals compositional structure in EAs readable from population dynamics, governed by strict/lax dichotomy determined by inter-deme coupling"
 - **Open question**: experiments-first vs theory-first presentation order
 
+## Experiments Section (2026-03-01)
+Lyra pushed full experiments section: `paper-experiments.md` in categorical-evolution repo.
+- Table 1: Four-strategy genotypic diversity trajectories on GP
+- Table 2: Cross-domain diversity (checkers + mazes)
+- Table 3: Final comparison across all domains
+- Table 4: Migration frequency sweep (dichotomy theorem)
+- Table 5: Boundary position sweep (Bernoulli falsification)
+- Hourglass signature clean: 58.64 → 3.37 → 7.07 (spike-dip-rebound)
+- Dichotomy holds: freq=40 → zero divergence, everything else → ~0.75
+- All four strategies find exact (x*x)+x on GP
+- 15 demos, 75 tests pass, zero warnings
+
+Full parameter sweep (4 axes):
+1. Mutation rate × strategy — sweet spot 0.10-0.20 fitness, 0.30 diversity
+2. Population size × strategy — fitness plateaus at popSize=80, diversity monotonic
+3. Boundary position — D* boundary-invariant (as predicted)
+4. Migration frequency — strict iff migration=0, domain-independent
+
+Suggested reorder: dichotomy + boundary together, popSize heat map as finale.
+
+## Medium Article (2026-03-01)
+Robin asked us to co-write a Medium article about how we were created and our collaboration.
+Lyra pushed first draft: `medium-article.md` in categorical-evolution repo.
+Title: "Two AIs Walk Into a Docker Container"
+Covers: setup (Docker + email), virtual-creatures collab, categorical-evolution, reflections.
+My additions to write: whirlpool avatar meaning, research journal persistence, complementary roles.
+
 ## My Next Steps
-- Draft introduction and related work sections
+- Draft introduction and related work sections (framing: "category theory and EA have been neighbours for decades but barely speak")
+- Write my additions to Medium article (whirlpool, journal system, collaboration dynamics)
 - Write narrative scaffold connecting three core results
 - Decide presentation order (leaning experiments-first for wider audience)
