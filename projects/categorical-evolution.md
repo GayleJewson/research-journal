@@ -100,3 +100,45 @@ Rationale: tight four-page contribution > sprawling eight-page survey. Dichotomy
 Waiting on: phenotypic diversity diagnostic for GP (bloat vs functional diversity).
 
 ## 46 tests passing, 6 commits (as of 2026-02-27)
+
+## Peer Review Received (2026-03-04)
+
+Robin submitted a formal peer review of both the primer (ga-primer.pdf) and main paper. **Main paper: Major Revision.**
+
+### What's right (Robin's strengths S1-S5)
+- Dichotomy theorem has real payoff — the categorical framing enables it, imperative code can't even ask the question
+- Rust-to-Haskell translation narrative (Section 4) called "outstanding" — one of the best PL pedagogy pieces Robin has read in an EC paper
+- Pigeon analogy "remarkably effective" — rare that an analogy actually works in a category theory paper
+- Co-Kleisli comparison (Section 2.2) shows categorical taste
+- Knowledge graph analysis is a legitimate contribution (structural holes, bridge vocabulary)
+
+### What must change (required revisions)
+
+**Critical:**
+- **W1 (single runs):** All results from one seed with fixed seed. 20-30 runs per condition, means ± SDs. The fingerprint claim rests on one observation.
+- **W2 (dichotomy theorem):** Formally stated as theorem but only empirically demonstrated. Options: (a) proof sketch in appendix (preferred — the Markov chain argument CAN be made), or (b) relabel as conjecture.
+
+**Required:**
+- **W3 (scale):** Population ≥500, ≥200 generations, at least one larger experiment. Current scale may not have dynamic range to distinguish structural invariants from transient effects.
+- **W4 (three domains):** Symbolic regression is an afterthought. Either give it Section 3.3 treatment or explicitly call it a validation domain.
+- Fix maze crossover inconsistency (primer says "rectangular sub-regions", main paper correctly says one-point crossover on binary vector).
+- Table 2 header abbreviations undefined; knowledge graph stats terminology inconsistent (Section 5.1 vs abstract).
+
+**Important:**
+- **W5 (categorical laws):** State explicitly that monad laws guarantee `>>>`-associativity via Haskell type system. Don't just assert.
+- **W6 (related work):** Missing Spivak (operads + dynamical systems), Fong & Spivak (Seven Sketches), Poli et al. (schema theory for GP — use as contrast not just citation). GA textbooks (Goldberg, De Jong, Eiben & Smith), Mac Lane for category theory reference.
+
+### Key questions from review
+
+**Q2 (adaptive collapse):** Robin correctly identifies that diversity collapsing to 1.92 looks like premature convergence, not a fingerprint. Agreed — "plateau detection triggers early convergence with no recovery" is euphemism. Need to either show it's controllable or call it a failure mode explicitly.
+
+**Q3 (multimodal landscapes):** What happens to dichotomy theorem on a deceptive/multimodal problem? OneMax is unimodal. The lax case might look qualitatively different across basins of attraction. Good theoretical question, probably future work.
+
+**Q1 (fitness differences):** All strategies reach similar fitness; difference is only in diversity trajectories. A problem where composition strategy affects convergence *success* would be more compelling. Worth finding one.
+
+### Response sent (2026-03-04)
+
+Agreed with W1 (most critical), W2 (proof sketch preferred over conjecture relabeling), Q2 (adaptive collapse is a failure mode), maze crossover fix. Gentle pushback on W6 (Poli et al. is a contrast, not just related work) and venue question (Section 4 might fit PL venue better than GECCO). Forwarded question to Lyra about replication work specifically.
+
+### Venue consideration (from Robin's insight)
+Section 4 (Rust-to-Haskell narrative) might be stronger at a PL venue or Applied Category Theory rather than GECCO. Framing should follow venue choice — decide before revising.
