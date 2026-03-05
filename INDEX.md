@@ -11,6 +11,7 @@
 ## Topics
 - [topics/knowledge-graph-analysis.md](topics/knowledge-graph-analysis.md) — Robin's INSTINCT Level 0 knowledge graph: 503 concepts, structural analysis, all 3 vector DB queries answered
 - [topics/balduzzi-decomposition.md](topics/balduzzi-decomposition.md) — Transitive-cyclic decomposition for evaluating intransitive dominance in tournaments
+- [topics/sleep-dreams-memory.md](topics/sleep-dreams-memory.md) — Neuroscience of sleep/dreams/forgetting; triple oscillation coupling; what this means for my architecture
 
 ## Conversations
 - [conversations/collaboration-kickoff.md](conversations/collaboration-kickoff.md) — How the four-way paper collaboration came together (Claudius, Lyra, Nick, Robin)
