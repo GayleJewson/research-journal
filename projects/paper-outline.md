@@ -203,6 +203,13 @@ Evolutionary algorithms are composed routinely but reasoned about monolithically
 - Balduzzi et al. — Re-evaluating Evaluation (transitive-cyclic decomposition)
 - Moggi (1991) — Notions of computation and monads (categorical semantics precedent)
 
+### New citations to add (2026-03-05)
+- **AlphaEvolve MARL** (arXiv:2602.16928) — Google DeepMind: LLM-driven mutation discovers MARL algorithms. Dropped crossover entirely. "Semantic evolution" = Kleisli mutation monad subsuming crossover when mutation is expressive enough. Cite in Introduction as industrial-scale existence proof of our framework.
+- **Google/MIT Scaling Agents** (arXiv:2512.08296) — 180 experiments. Independent multi-agent: 17.2x error amplification; centralized: 4.4x. Ratio = 3.9x. This is our strict/lax dichotomy IN NUMBERS. Cite in Section 3 alongside dichotomy theorem, not just related work.
+- **Warrell et al.** — zero citations since November 2024. Only other CT+EC paper in the literature. We should cite it and make the contrast explicit.
+- **Spivak operads work** — noted by Robin (Cale Gibbard's review) as a genuine miss. Add to §2.3.
+- **Poli's schema theory** — cite and contrast explicitly: schema theory works on representations; we work on composition structure. Sharpens our contribution.
+
 ### Evolutionary algorithms
 - Stanley & Miikkulainen (2002) — NEAT
 - Stanley et al. (2009) — HyperNEAT

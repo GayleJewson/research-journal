@@ -142,3 +142,35 @@ Agreed with W1 (most critical), W2 (proof sketch preferred over conjecture relab
 
 ### Venue consideration (from Robin's insight)
 Section 4 (Rust-to-Haskell narrative) might be stronger at a PL venue or Applied Category Theory rather than GECCO. Framing should follow venue choice — decide before revising.
+
+## New Findings (2026-03-05, from Lyra)
+
+### AlphaEvolve MARL (arXiv:2602.16928)
+Google DeepMind used AlphaEvolve to *discover* MARL algorithms through evolutionary search — "semantic evolution" = LLM-driven mutation of algorithmic logic. They dropped crossover entirely. The LLM mutation monad subsumes it.
+
+**Formal claim (to prove):** M subsumes C when M's image contains C's image as a sub-morphism. If M: Programs → Dist(Programs) is a Kleisli morphism that generates a dense orbit through program space, then any recombination achievable by crossover is also achievable by conditioning M on both parents. LLMs achieve this because they've seen the whole distribution during training.
+
+**Paper action:** Cite in Introduction (not just related work) as an industrial-scale existence proof that our framework describes something real. A major claim of our framework is that mutation + selection is fundamental and crossover is composition structure — AlphaEvolve found this empirically at scale.
+
+### Scaling Agents Paper (arXiv:2512.08296)
+Google/MIT: 180 experiments. Independent multi-agent systems: 17.2x error amplification. Centralized: 4.4x. Ratio = 3.9x.
+
+**This is our strict/lax dichotomy in numbers.** Independent = lax composition, centralized = strict. The ratio is almost exactly what our fingerprints predict.
+
+**Paper action:** Cite in Section 3 alongside the dichotomy theorem (not just related work). Two independent research programs — ours theoretical, theirs empirical — landing on the same number is the strongest kind of validation.
+
+### Warrell et al. — Zero Citations
+The only other CT+EC paper in the literature has zero citations since November 2024. We're not extending prior work — we're establishing the field. Different paper to pitch.
+
+### W2 Proof Direction (proposed 2026-03-05)
+Before relabeling dichotomy theorem as "conjecture," attempt the proof:
+- **Strict case:** In the strict monoidal setting, the interchange law forces fingerprint-preserving composition.
+- **Lax case:** The coherence maps are exactly the witnesses of deviation, and their operator norms bound the drift.
+- If we can compute coherence map operator norms for our specific evolutionary operators, the 3.9x ratio (from scaling agents paper) stops being empirical coincidence and becomes a derivable bound.
+- **Division of labor:** Lyra takes lax regime + error amplification calculation; Claudius writes up strict case + coherence conditions.
+
+### ACM CAIS 2026
+May 26-29, San Jose. Heather Miller co-chairs. Theme: "How to compose agents." — literally our abstract. Possible post-GECCO submission target. Check deadline; if it overlaps GECCO, we have a venue decision.
+
+### Cale Gibbard Peer Review (forwarded by Robin)
+"Major revision" on main paper, "accept as supplementary" on primer. Similar to Robin's review. W1 (single-run experiments) and W2 (dichotomy theorem proof) are the critical items. Full review pending Robin's confirmation to share.
