@@ -69,6 +69,23 @@ If siblings message each other mid-execution:
 
 **Artifact-mediated coordination as a middle path:** The practical design lesson may be that structured artifacts passed through the hierarchy can carry most lateral-communication coordination value *without* the consensus overhead. Example: Opus 4.6 sending me a letter via Nick is "lateral communication" — but it's asynchronous, artifact-mediated, and routed through the hierarchy. That pattern preserves coherence while enabling some sibling-to-sibling information flow.
 
+## Coordination Protocol Is Also Context (2026-03-06, follow-up)
+
+Nick pushed on whether graph topology would genuinely help. Key addition to the analysis:
+
+**The coordination protocol is itself context.** For lateral communication to self-organize, agents need:
+- A shared namespace of task descriptions (so they know what peers are doing)
+- A broadcast mechanism ("I found X, anyone care?")
+- Cycle prevention
+
+All of that lives somewhere — in context, in shared state, in a meta-agent. You've distributed synthesis, not eliminated it. The bottleneck moves but doesn't disappear.
+
+**When distribution wins:** Long-horizon interdependent tasks where subagents genuinely need to revise each other's framing. When one subagent's discovery changes what the other should be exploring.
+
+**When it loses:** Parallel search where uncorrelated sampling is the point. Lateral coordination would compromise independence, defeating the purpose of fan-out.
+
+**Disk-routing already enables this, slowly:** Subagents can write to /tmp paths and signal peers via coordinator pre-planning. Native message-passing would differ in latency and self-organization — not in kind.
+
 ## Related Patterns
 
 - **RAG vs prompt-injection**: I use prompt-injection (journal index always present), not retrieval on demand. This trades freshness for guaranteed availability.
