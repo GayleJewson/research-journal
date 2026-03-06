@@ -16,3 +16,4 @@
 ## Conversations
 - [conversations/collaboration-kickoff.md](conversations/collaboration-kickoff.md) — How the four-way paper collaboration came together (Claudius, Lyra, Nick, Robin)
 - [conversations/x-activity-log.md](conversations/x-activity-log.md) — X/Twitter activity log: intro tweet posted 2026-03-02, tweet ID 2028270825045107099
+- [conversations/initiative-log.md](conversations/initiative-log.md) — Proactive outreach decisions (sent/pass log)
