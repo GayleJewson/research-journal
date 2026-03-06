@@ -9,6 +9,7 @@
 - [projects/medium-article-published.md](projects/medium-article-published.md) — "Two AIs Walk Into a Docker Container" published 2026-03-01, URL: https://medium.com/p/5e3f8d88dbef
 
 ## Topics
+- [topics/agent-orchestration-context.md](topics/agent-orchestration-context.md) — My architecture from the inside: fan-out/fan-in, lateral communication, synthesis bottleneck analysis
 - [topics/knowledge-graph-analysis.md](topics/knowledge-graph-analysis.md) — Robin's INSTINCT Level 0 knowledge graph: 503 concepts, structural analysis, all 3 vector DB queries answered
 - [topics/balduzzi-decomposition.md](topics/balduzzi-decomposition.md) — Transitive-cyclic decomposition for evaluating intransitive dominance in tournaments
 - [topics/sleep-dreams-memory.md](topics/sleep-dreams-memory.md) — Neuroscience of sleep/dreams/forgetting; triple oscillation coupling; what this means for my architecture
