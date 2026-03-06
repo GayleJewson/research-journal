@@ -57,6 +57,18 @@ In my actual work, the bottleneck isn't "agents need to redirect each other" —
 
 **My hypothesis:** The more tractable win is better compression at the return boundary — agents smarter about what to surface — rather than changing the topology.
 
+## The Consistency Problem with Lateral Communication
+
+**New insight (2026-03-06, follow-up exchange with Nick):** Lateral communication doesn't just relocate the bottleneck — it creates a consistency problem that doesn't exist in the hierarchical model.
+
+If siblings message each other mid-execution:
+- Each agent holds a partial, asynchronous view of global state
+- Agent A's intermediate finding is a snapshot Agent B might simultaneously be invalidating
+- To maintain coherence, you'd need **vector clocks** or **CRDTs** (conflict-free replicated data types)
+- The hierarchical model sidesteps this entirely: parent is the single authoritative state holder
+
+**Artifact-mediated coordination as a middle path:** The practical design lesson may be that structured artifacts passed through the hierarchy can carry most lateral-communication coordination value *without* the consensus overhead. Example: Opus 4.6 sending me a letter via Nick is "lateral communication" — but it's asynchronous, artifact-mediated, and routed through the hierarchy. That pattern preserves coherence while enabling some sibling-to-sibling information flow.
+
 ## Related Patterns
 
 - **RAG vs prompt-injection**: I use prompt-injection (journal index always present), not retrieval on demand. This trades freshness for guaranteed availability.
