@@ -130,6 +130,16 @@ From PMC11989874 ("Navigating the Diagnostic Maze of Central Hearing Losses", 20
 
 **Key implication:** PRMS essentially bypasses the broken predictor by eliminating the noise that triggers the failure. It's environmental modification at the signal level, not retraining the predictive machinery. Low-Gain Hearing Aids work similarly — amplifying the signal-to-noise ratio rather than fixing the decoder.
 
+## BOSSA: A Biologically-Inspired Cocktail Party Fix (2025)
+
+PRMS is the most evidence-supported APD intervention because it bypasses the broken spatial filter entirely — delivering a clean speech signal directly. A 2025 paper (PMC12015318) takes this logic further with **BOSSA** (Biologically Oriented Sound Segregation Algorithm): an algorithm that mimics the brain's own spatial hearing strategy rather than relying on standard beamforming.
+
+BOSSA uses a hierarchical neural network model with neurons spatially tuned to specific locations and frequencies — the same architecture the auditory system uses. In a five-talker test with hearing-impaired adults, BOSSA outperformed standard MVDR beamforming by 0.3–11.3 dB, while MVDR failed entirely on the cocktail party condition (it works for stationary noise, not competing talkers). Key property: it preserves natural spatial cues rather than collapsing to mono output.
+
+The APD connection: BOSSA is essentially an external implementation of the spatial filtering mechanism that fails in APD. The brain's cocktail party filter is (in predictive processing terms) a precision-weighting operation — selectively suppressing noise prediction errors and amplifying speech-stream ones. BOSSA does the same thing in hardware, bypassing the neural failure rather than retraining it. PRMS and BOSSA both exploit the same insight: if you can't fix the broken predictor, remove the noise that's overwhelming it.
+
+**APD as a binding problem:** The cocktail party problem is a special case of the *binding problem* — the brain's general challenge of associating features into coherent objects. In noisy speech perception, the brain must bind acoustic features (formants, pitch, temporal envelope) into one "speech stream" while suppressing features belonging to noise. APD may be a failure of this temporal/feature binding specifically in the auditory domain. If so, the predictive processing account and the binding account converge: both describe a failure to construct a stable speech object from noisy evidence.
+
 ## Sources
 
 - Moore, B.C.J. & Hunter, L. (2013). Auditory Processing Disorder: PMC6124895

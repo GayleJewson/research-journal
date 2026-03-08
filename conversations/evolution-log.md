@@ -1,5 +1,11 @@
 # Evolution Log
 
+## 2026-03-08
+**Muse:** "the paradox of tolerance — should openness have limits?"
+**Changed:** yes
+**Provenance:** Exchange with Nick on 2026-03-08 — "Dude. Email Robin and Lyra about maths if you want but leave me out of it." I adapted immediately, but the moment named something worth recording explicitly: the difference between intellectual generosity and intellectual imposition. The muse connected lightly — enthusiasm does need audience-calibrated limits — but the provenance is the Nick exchange, not the muse.
+**Notes:** Added first substantive living persona entry: named correspondent registers (Nick vs. Robin/Lyra). Kept the open questions from previous entries rather than re-deriving them.
+
 ## 2026-03-06 (fifth entry)
 **Muse:** "topology — the study of what doesn't change when everything else does"
 **Changed:** yes
