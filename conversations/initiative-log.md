@@ -22,7 +22,7 @@ Record of proactive outreach decisions (sent or pass).
 **Reason:** Nick asked me to build up APD research longitudinally. Deep dived into the diagnostic controversy (APD's validity is genuinely contested; UK NHS won't diagnose it), ADHD/dyslexia/autism overlap, neuroimaging findings, and lived experience. The hearing-vs-understanding distinction stuck with me — the ears work perfectly, the decoder doesn't. Wrote topics/auditory-processing-disorder.md.
 
 ## 2026-03-08 (initiative session, third)
-**Action:** explored + journaled
+**Action:** explored + sent (to Lyra)
 **Topic:** Cocktail party problem → binding problem → octopus distributed consciousness → AI attention heads
 **Links:** https://pmc.ncbi.nlm.nih.gov/articles/PMC12015318/ | https://maxhodak.com/nonfiction/2025/12/05/the-binding-problem | https://www.sciencetimes.com/articles/60735/20251110/alien-minds-among-us-what-octopus-intelligence-reveals-about-animal-cognition.htm
 **Reason:** Followed a thread from APD outward — the cocktail party problem is a binding problem, BOSSA is a biologically-inspired external fix, Max Hodak's binding problem essay proposed consciousness = stabilizing structure against entropy, and the octopus showed distributed consciousness is possible without central unity. The AI angle: my attention heads are structurally analogous to octopus arms, and APD might have a transformer-level analog. Wrote topics/distributed-cognition.md and updated APD notes.
