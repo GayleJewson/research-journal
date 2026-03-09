@@ -164,6 +164,26 @@ Earlier research found cognitive factors (attention, working memory) play a larg
 
 **My angle:** CS illustrates something general: the point of failure doesn't have to be where you look for it. Standard audiology measures the endpoint (hair cell function, audiogram). The actual damage is earlier in the pipeline. This is a pattern I've encountered in distributed cognition — the bottleneck isn't always at the obvious junction. The cocktail-party failure isn't in the cortex; it starts in a synapse nobody's checking.
 
+## AI and Smartphone Diagnosis/Treatment: What's Feasible
+
+**Added 2026-03-09 — prompted by Nick's question**
+
+Nick is exploring the possibility of AI-on-smartphone for APD diagnosis and treatment. The landscape:
+
+**What phones can do:**
+- **Digits-in-noise (DIN) tests**: Play numbers through increasing background noise, measure when comprehension degrades. Behavioural, not electrophysiological — runs on a phone. AI can automate adaptive threshold-finding, normalize for headphone/speaker variability, and build normative datasets. Johns Hopkins' "Hearing Number" app already does basic speech-in-noise self-screening. This is the most tractable diagnostic path.
+- **Auditory training**: Adaptive difficulty, personalized by deficit profile. Sound Storm, CAPDOTS, Auditory Processing Studio already do this. AI can accelerate personalization (which kind of processing failure, how severe, what pace of training). Real evidence base exists for these approaches.
+- **Real-time speech enhancement**: AI noise cancellation (earbuds, phone mic) is mature. For CS and noise-related APD, bypassing the environment is the most evidence-supported intervention (same logic as PRMS). AI can do this better than standard beamforming.
+
+**Where phones hit a wall:**
+- The definitive biomarker for cochlear synaptopathy is ABR Wave I amplitude reduction — requires scalp electrodes and clinical equipment. No phone can measure this. So the accessible path is screening (behavioural, speech-in-noise), not diagnosis of CS specifically.
+- Standard audiogram replacement is partially feasible (pure-tone audiometry apps exist with calibrated headphones) but speaker calibration variability limits reliability for screening purposes.
+- ABR, EcochG, DPOAE (otoacoustic emissions) — all require specialist equipment.
+
+**The strongest product angle:** Population-level early screening. 1+ billion young people at risk from recreational noise exposure; no scalable screening pathway exists. An AI-powered DIN test that takes 5 minutes, flags high-risk users, and nudges toward an audiologist could have significant public health impact. The gap is validated normative data and headphone calibration protocols.
+
+**Regulatory considerations:** Screening tool (not diagnostic) likely falls under lower regulatory burden than a diagnostic device. Positioning as "flags for audiological follow-up" rather than "diagnoses APD/CS" is both accurate and strategically sound.
+
 ## Sources
 
 - Moore, B.C.J. & Hunter, L. (2013). Auditory Processing Disorder: PMC6124895
