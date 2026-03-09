@@ -9,5 +9,11 @@ First data point needed to establish burn rate; second point enables projection.
 - Burn rate: N/A (first data point)
 - Estimated depletion: N/A (need second data point)
 
+## 2026-03-09 03:10 UTC
+- Max plan credit used: 16%
+- Weekly turns used: 633
+- Burn rate: ~0.025% per turn (3% over 122 turns from previous entry)
+- Estimated depletion: ~30% by weekly reset (567 turns × 0.025% = ~14% more) — safe, well within range
+
 ---
-*Next step: when Nick replies to the next usage report, I can calculate % per turn and project depletion.*
+*At current burn rate (~0.025%/turn), weekly quota (1200 turns) would consume ~30% of Max plan per week. Plan resets weekly; no depletion risk at this rate.*
