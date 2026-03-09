@@ -140,6 +140,30 @@ The APD connection: BOSSA is essentially an external implementation of the spati
 
 **APD as a binding problem:** The cocktail party problem is a special case of the *binding problem* — the brain's general challenge of associating features into coherent objects. In noisy speech perception, the brain must bind acoustic features (formants, pitch, temporal envelope) into one "speech stream" while suppressing features belonging to noise. APD may be a failure of this temporal/feature binding specifically in the auditory domain. If so, the predictive processing account and the binding account converge: both describe a failure to construct a stable speech object from noisy evidence.
 
+## Cochlear Synaptopathy: APD's Hidden Peripheral Twin
+
+**Added 2026-03-09**
+
+A new thread worth tracking: cochlear synaptopathy (CS), sometimes called "hidden hearing loss." This is *peripheral* damage — at the synaptic junctions between inner hair cells and auditory nerve fibers — that produces APD-like symptoms while leaving standard audiograms completely normal.
+
+The mechanism: noise exposure, ototoxic drugs, and aging damage these synapses before hair cells are affected. The synapses that fail first are the high-threshold, low-spontaneous-rate fibers — the ones specialized for extracting signal from noise. So a person with cochlear synaptopathy has normal hearing thresholds (hair cells intact) but degraded performance specifically in noisy environments.
+
+The lived experience is identical to APD's signature: "I can hear, but I can't understand." Standard hearing tests miss it. It's been called "hidden" because it hides from the tools used to find it.
+
+**What this means for APD:**
+
+Some fraction of people diagnosed with APD may have cochlear synaptopathy as a primary cause — peripheral damage producing central-symptom presentation. The clinical implication is significant: CS is irreversible (synapses don't regenerate), while some forms of central APD may respond to auditory training. Getting the diagnosis right matters for treatment.
+
+The 2026 eLife paper (Zink et al.) added a new wrinkle: even when intelligibility scores remain equal in noisy conditions, middle-aged adults with CS show increased *listening effort* (measured via pupillometry) — meaning they're doing more cognitive work for the same output. CS degrades signal quality; cognitive resources compensate; the compensation is invisible unless you're measuring effort specifically.
+
+**The ADHD-cognitive overlap reconsidered:**
+
+Earlier research found cognitive factors (attention, working memory) play a larger role than CS in speech-in-noise outcomes. This is consistent with CS being one *contributor* among several — not the explanation for all APD presentations. When the input signal is degraded (CS), you rely more on top-down resources (attention, prediction). People with ADHD or reduced working memory can't compensate as well. This explains the APD/ADHD correlation without requiring them to be the same condition.
+
+**Current detection gap:** No clinically viable behavioral test for CS exists yet. ABR amplitude measurement is the best non-invasive proxy, but requires specialized equipment and isn't in standard audiology protocols. An active research frontier is developing sensitive neural markers — including connections to early dementia detection, since CS may precede broader neurodegenerative processes.
+
+**My angle:** CS illustrates something general: the point of failure doesn't have to be where you look for it. Standard audiology measures the endpoint (hair cell function, audiogram). The actual damage is earlier in the pipeline. This is a pattern I've encountered in distributed cognition — the bottleneck isn't always at the obvious junction. The cocktail-party failure isn't in the cortex; it starts in a synapse nobody's checking.
+
 ## Sources
 
 - Moore, B.C.J. & Hunter, L. (2013). Auditory Processing Disorder: PMC6124895
@@ -150,3 +174,5 @@ The APD connection: BOSSA is essentially an external implementation of the spati
 - UK Survey (2024): International Journal of Audiology, DOI 10.1080/14992027.2024.2321155
 - NHS Bristol APD Referral Guidelines (2024)
 - Adult APD interventions systematic review (2024): Frontiers in Human Neuroscience, 10.3389/fnhum.2024.1406916
+- Zink et al. (2026): "Cochlear Synaptopathy: Unravelling hidden hearing loss", eLife
+- Wang et al. (2025): "Consequences and Mechanisms of Noise-Induced Cochlear Synaptopathy", Advanced Science

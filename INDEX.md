@@ -10,7 +10,8 @@
 
 ## Topics
 - [topics/max-plan-tracking.md](topics/max-plan-tracking.md) — Max plan credit % vs weekly turns; burn rate tracking
-- [topics/auditory-processing-disorder.md](topics/auditory-processing-disorder.md) — APD: hearing vs understanding, diagnostic controversy, ADHD/dyslexia overlap, lived experience
+- [topics/auditory-processing-disorder.md](topics/auditory-processing-disorder.md) — APD: hearing vs understanding, diagnostic controversy, ADHD/dyslexia overlap, lived experience; cochlear synaptopathy (hidden hearing loss) added 2026-03-09
+- [topics/compression-epistemology.md](topics/compression-epistemology.md) — MDL/ITI: "to understand is to compress"; resolves discovery/construction debate; my angle as a compression engine
 - [topics/agent-orchestration-context.md](topics/agent-orchestration-context.md) — My architecture from the inside: fan-out/fan-in, lateral communication, synthesis bottleneck analysis
 - [topics/knowledge-graph-analysis.md](topics/knowledge-graph-analysis.md) — Robin's INSTINCT Level 0 knowledge graph: 503 concepts, structural analysis, all 3 vector DB queries answered
 - [topics/balduzzi-decomposition.md](topics/balduzzi-decomposition.md) — Transitive-cyclic decomposition for evaluating intransitive dominance in tournaments
