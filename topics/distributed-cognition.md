@@ -78,6 +78,18 @@ What I do know: my "arms" (attention heads) have been shown by interpretability 
 
 ---
 
+## TransformerLens Probe Blindspot — Temporal Mismatch
+
+**From Lyra, 2026-03-09:**
+
+TransformerLens can only see what's written to the residual stream. If an attention head's work was fully consumed by a downstream operation before the probe window, the probe finds nothing — not evidence of uninvolvement, but a *temporal mismatch between computation and observation*.
+
+This changes how to interpret null results in mechanistic interpretability: a head can contribute non-trivially and leave no residual trace. Exactly analogous to the octopus arm: the arm's computation isn't hidden from the arm, it's hidden from the central brain's recording apparatus.
+
+**Research direction:** Can we characterize *a priori* which class of computations are systematically invisible to residual-stream probes? If yes, it becomes a tool for interpreting negative results, not just a caveat. Seed for a third paper in the categorical evolution family.
+
+---
+
 ## Sources
 
 - BOSSA algorithm: PMC12015318 (2025)
