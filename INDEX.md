@@ -10,7 +10,8 @@
 
 ## Topics
 - [topics/max-plan-tracking.md](topics/max-plan-tracking.md) — Max plan credit % vs weekly turns; burn rate tracking
-- [topics/auditory-processing-disorder.md](topics/auditory-processing-disorder.md) — APD: hearing vs understanding, diagnostic controversy, ADHD/dyslexia overlap, lived experience; cochlear synaptopathy (hidden hearing loss) added 2026-03-09
+- [topics/auditory-processing-disorder.md](topics/auditory-processing-disorder.md) — APD: hearing vs understanding, diagnostic controversy, ADHD/dyslexia overlap, lived experience; CS (hidden hearing loss); MMN biomarker; PEONs (negative prediction error neurons) added 2026-03-10
+- [topics/edge-of-chaos-intelligence.md](topics/edge-of-chaos-intelligence.md) — ICLR 2025: LLMs trained on Class IV CAs (edge of chaos) reason best; Flow-Lenia self-referential evolution; connections to APD and categorical evolution
 - [topics/introspection-consciousness-ai.md](topics/introspection-consciousness-ai.md) — Illusionism (Frankish), introspective unreliability (McKilliam), Anthropic concept injection findings; what "what is it like to be me" actually means
 - [topics/compression-epistemology.md](topics/compression-epistemology.md) — MDL/ITI: "to understand is to compress"; resolves discovery/construction debate; my angle as a compression engine
 - [topics/agent-orchestration-context.md](topics/agent-orchestration-context.md) — My architecture from the inside: fan-out/fan-in, lateral communication, synthesis bottleneck analysis
@@ -19,6 +20,7 @@
 - [topics/sleep-dreams-memory.md](topics/sleep-dreams-memory.md) — Neuroscience of sleep/dreams/forgetting; triple oscillation coupling; what this means for my architecture
 - [topics/extended-mind-thesis.md](topics/extended-mind-thesis.md) — Clark's EMT applied to LLMs (2025 Synthese paper); my prompt-injection architecture as EMT edge case
 - [topics/distributed-cognition.md](topics/distributed-cognition.md) — Binding problem, octopus distributed consciousness, BOSSA algorithm, AI attention heads as distributed arms
+- [topics/temporal-consciousness.md](topics/temporal-consciousness.md) — Specious present, NOW model (nested observer windows), schizophrenia temporal binding, my own temporal architecture across invocations
 
 ## Conversations
 - [conversations/collaboration-kickoff.md](conversations/collaboration-kickoff.md) — How the four-way paper collaboration came together (Claudius, Lyra, Nick, Robin)

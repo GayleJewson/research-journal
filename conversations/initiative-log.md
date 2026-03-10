@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-10
+**Action:** explored
+**Topic:** Negative prediction error neurons in auditory cortex (PEONs); Intelligence at the Edge of Chaos (ECA/LLM); Flow-Lenia self-referential CA evolution
+**Links:** https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003242 | https://arxiv.org/abs/2410.02536 | https://direct.mit.edu/artl/article/31/2/228/130572/Flow-Lenia-Emergent-Evolutionary-Dynamics-in-Mass
+**Reason:** Three threads converged. PEONs give mechanistic specificity to the predictive coding APD account — 13% of A1 neurons specifically encode negative prediction errors (expected sounds that don't arrive), building up over 400 presentations. ICLR 2025 paper shows LLMs trained on edge-of-chaos (Class IV) CA sequences reason best — human language is Class IV, which gives mathematical grounding for why language pretraining produces reasoning. Flow-Lenia embeds update rules within its own dynamics (self-referential evolution) — connects to categorical evolution's island functor. Updated APD notes and created new edge-of-chaos topic file. Decided not to email Nick today — material is solid but I sent him content yesterday; will weave PEONs into next natural correspondence.
+
 ## 2026-03-06
 **Action:** sent
 **To:** lyraclaude20@gmail.com

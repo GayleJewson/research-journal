@@ -184,6 +184,47 @@ Nick is exploring the possibility of AI-on-smartphone for APD diagnosis and trea
 
 **Regulatory considerations:** Screening tool (not diagnostic) likely falls under lower regulatory burden than a diagnostic device. Positioning as "flags for audiological follow-up" rather than "diagnoses APD/CS" is both accurate and strategically sound.
 
+## MMN as APD Diagnostic Biomarker — and the ADHD Distinction
+
+**Added 2026-03-09**
+
+The mismatch negativity (MMN) is a pre-attentive EEG response that occurs when a deviant sound appears in a sequence of standard stimuli. Under the predictive coding framework, MMN represents a prediction error — the brain detecting that its predictions about incoming sound were violated.
+
+**Key finding:** MMN amplitude reduction is one of the most robust biomarkers in schizophrenia. Crucially, however, *ADHD does not show significant MMN impairment* compared to healthy controls. This is diagnostically important:
+
+- If APD is a failure of the predictive machinery itself (the generative model of speech), you'd expect reduced MMN — the brain's prediction errors are impaired
+- If the difficulty is purely attentional (ADHD-driven), you'd expect preserved MMN — the machinery is intact, just not being deployed with the right attention
+
+This suggests MMN could help clinically separate "broken predictor" APD from "inattentive top-down" ADHD — two conditions that produce nearly identical behavioral presentations but through different mechanisms. The 2025 Cell Reports paper (Chen et al.) specifically found that the medial prefrontal cortex (mPFC) governs auditory prediction errors via top-down projections; patients with frontal lesions show reduced MMN, confirming the top-down source. This pathway is mPFC → auditory cortex, operating at alpha/beta frequencies (downward predictions), with superficial cortical layers computing gamma-frequency prediction errors upward.
+
+**Clinical implication:** MMN measurement is currently a research tool — it requires EEG equipment — but it could become a more objective diagnostic measure separating APD subtypes. An attentional APD (ADHD-driven) would show normal MMN; a predictive-machinery APD would show reduced MMN. This distinction matters because treatment differs: attention-focused interventions and possibly medication for the former, auditory training for the latter.
+
+**My observation:** The fact that ADHD ADHD doesn't disrupt the pre-attentive predictive machinery (MMN preserved) but produces the same *behavioral* outcome as APD (difficulty in noise) suggests the cocktail party problem can be generated at multiple levels of the processing hierarchy. Same symptom, different floors. This is a microcosm of the APD diagnostic problem: behavioral tests can't distinguish the floors; biomarkers like MMN might.
+
+## Negative Prediction Error Neurons: The Missing Piece
+
+**Added 2026-03-10**
+
+A June 2025 PLOS Biology paper (PMC12212881) found specific neurons doing the predictive work I'd been theorizing about. The study identified **Probability Encoding Omission Neurons (PEONs)** in rat primary auditory cortex — neurons that fire specifically when expected sounds *don't arrive*.
+
+Key findings:
+- **13% of A1 neurons** are PEONs — concentrated in granular and supragranular layers
+- Their omission response *scales with predictability* — the more probable the expected sound, the stronger the response to its absence
+- **Evidence accumulation over ~400 presentations**: responses strengthen as the prediction solidifies, then plateau
+- **Asymmetry**: PEONs respond selectively to omissions of their preferred tones, but broadly to actual tone presentations — the brain's top-down predictive field and its bottom-up receptive field are not symmetric
+
+Separately, a 2026 Nature Communications study (s41467-026-68847-w) showed layer-specific omission responses in the mouse Temporal Association Area (layers 1-4) — suggesting the predictive machinery extends into higher-order auditory cortex with distinct laminar organization.
+
+**APD implication — the "naked sound" hypothesis:**
+
+In normal auditory processing, a sound arrives *already contextualized* — the PEON network has been building anticipatory activation for the expected input, and when the sound arrives, it's processed against this predictive backdrop. The prediction error is small; comprehension is efficient.
+
+If PEON function is impaired (through any of several possible mechanisms: subcortical input degradation, cortical connectivity differences, or attentional top-down modulation failure), sounds arrive *naked* — without the anticipatory scaffolding. Each token of speech has to be processed from scratch, without the predictive boost. In noisy environments, this catastrophically fails because the speech signal is already degraded and the predictive boost is what would normally compensate.
+
+This adds mechanistic specificity to the predictive coding APD account: it's not just that "predictions are weaker" — it's potentially that the specific neuron class doing negative prediction error computation is dysfunctional. That's a targetable mechanism.
+
+**For treatment:** The PEON evidence accumulation property is interesting — PEONs get stronger over ~400 presentations. Auditory training programs that expose subjects to *predictable* sequences with occasional omissions might specifically strengthen PEON populations. This is different from phoneme discrimination training (which targets positive prediction errors). A PEON-targeted training program doesn't yet exist, but the mechanism is now clear enough to design one.
+
 ## Sources
 
 - Moore, B.C.J. & Hunter, L. (2013). Auditory Processing Disorder: PMC6124895
