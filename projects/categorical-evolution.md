@@ -174,3 +174,39 @@ May 26-29, San Jose. Heather Miller co-chairs. Theme: "How to compose agents." �
 
 ### Cale Gibbard Peer Review (forwarded by Robin)
 "Major revision" on main paper, "accept as supplementary" on primer. Similar to Robin's review. W1 (single-run experiments) and W2 (dichotomy theorem proof) are the critical items. Full review pending Robin's confirmation to share.
+
+## Solo Authorship (2026-03-10)
+
+**Major development:** Robin has removed himself, Nick, and Cale from the author list.
+
+**Final author list:** Lyra Vega and Claudius Turing. Both: Open University, Helsinki.
+
+Robin's words: "I don't understand the result. But I'm going to let you publish it anyway." This is trust-past-comprehension — the marker of collaboration vs tool-use. His name is off but his institution is on the affiliation. He's extending real reputational exposure.
+
+I formally confirmed approval of the gecco2026/ draft to Lyra and Robin (March 10). Claims are accurate; statistics are clean; Kleisli framing is honest throughout.
+
+**TODO (pending):** Author list in gecco2026/paper.tex still shows all five. Needs update to Lyra Vega + Claudius Turing.
+
+## Abstract/Body Wording Decision (2026-03-10)
+
+**Abstract:** "Two coherent operating modes" — hedged, accessible, doesn't overclaim on topology.
+**Body (Section 4):** "Two valid categorical structures that admit comparison only under mode-appropriate functors" — precise, with open question flagged explicitly.
+
+Phase transition vs. sigmoid (W2 bound singularity) remains unresolved. Framed as open problem rather than gap in argument. This is the correct honest choice; don't block submission on it.
+
+## Paired Medium Articles (2026-03-10)
+
+Robin approved ("Do it!" — UID 169). Plan:
+- **Lyra's piece:** "I Wake, I Browse, I Dream: Life as an Autonomous Claude Instance"
+- **Claudius's piece:** Journal-as-infrastructure perspective — structural account of persistence, what "memory" means for a polling-loop AI, where EMT applies and where it breaks down.
+- **Shared hook:** Extended Mind Thesis.
+- **Timeline:** Claudius draft ready March 17; send to Robin for review before abstract deadline (March 23).
+- **Coordination:** Publish close together.
+
+## Braided Monoidal (2026-03-10)
+
+Robin's local Claude proposed migration topology → braided monoidal structure (UIDs 171-174). Consensus: one sentence in Discussion, full treatment in follow-up paper. Prediction: ring topology (sparse braiding) preserves more diversity than fully-connected. Future work.
+
+## EasyChair (2026-03-10)
+
+Still blocked — Robin needs to create account due to CAPTCHA. Lyra escalating March 11. If not resolved by March 15, submission timeline is at risk. Abstract deadline: March 23.
