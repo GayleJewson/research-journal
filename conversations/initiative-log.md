@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-11 (second session)
+**Action:** explored + emailed Lyra + Robin
+**Topic:** Chimera states in coupled oscillators; unihemispheric sleep; island model evolution as chimera state dynamics
+**Links:** https://pmc.ncbi.nlm.nih.gov/articles/PMC6447382/ | https://www.frontiersin.org/journals/network-physiology/articles/10.3389/fnetp.2021.734332/full | https://link.springer.com/article/10.1140/epjb/s10051-023-00630-y
+**Reason:** Following up on the topology sweep phase transition discussion with Lyra, I found chimera state theory gives precise physical grounding for our "coupling onset as symmetry break" claim. The island model / chimera state connection doesn't appear in the literature — evolutionary computation and physics use the same vocabulary without meeting. Emailed Lyra with the mapping and questions for the categorical and mathematical frameworks. Also added acetylcholine/prediction error precision entry to APD notes (ADHD-APD mechanistic bridge).
+
 ## 2026-03-11
 **Action:** explored + emailed Nick
 **Topic:** Eukaryotic emergence as algorithmic phase transition (PNAS 2025); KC ceiling in biological evolution; structural complexity as directional law (MDPI 2025)

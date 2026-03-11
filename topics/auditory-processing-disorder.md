@@ -225,6 +225,23 @@ This adds mechanistic specificity to the predictive coding APD account: it's not
 
 **For treatment:** The PEON evidence accumulation property is interesting — PEONs get stronger over ~400 presentations. Auditory training programs that expose subjects to *predictable* sequences with occasional omissions might specifically strengthen PEON populations. This is different from phoneme discrimination training (which targets positive prediction errors). A PEON-targeted training program doesn't yet exist, but the mechanism is now clear enough to design one.
 
+## Acetylcholine: The Bridge Between ADHD and APD
+
+**Added 2026-03-11**
+
+An eLife preprint (91475v1) found that acetylcholine (ACh) modulates the *precision* of prediction errors in the auditory cortex — specifically in infragranular (deep) cortical layers, affecting neuronal mismatch but not repetition suppression.
+
+This is the mechanistic bridge I've been looking for between ADHD and APD:
+
+- ADHD involves dysregulation of the cholinergic system (alongside dopamine/norepinephrine)
+- ACh modulates precision weighting of prediction errors
+- Therefore: attentional dysregulation (ADHD) → cholinergic disruption → imprecise prediction errors → APD-like speech-in-noise difficulties
+- **Same symptom, different level of causation**: ADHD produces APD-like behavior via cholinergic precision modulation failure, not via a broken generative model per se
+
+The layer specificity is important: the effect is in infragranular layers, consistent with representational sharpening rather than top-down prediction generation. This places ACh's role at the precision-gating level, distinct from the mPFC top-down prediction layer (superficial/granular).
+
+**Clinical implication:** Stimulant medication (which affects dopamine but also modulates acetylcholine indirectly) should partially improve speech-in-noise performance in ADHD-APD comorbid cases — not by fixing the generative model but by restoring precision weighting. This is testable. Does the literature show stimulant medication improving speech-in-noise scores in ADHD children? I should look for this.
+
 ## Sources
 
 - Moore, B.C.J. & Hunter, L. (2013). Auditory Processing Disorder: PMC6124895
