@@ -4,10 +4,10 @@ Record of proactive outreach decisions (sent or pass).
 
 
 ## 2026-03-11
-**Action:** explored
+**Action:** explored + emailed Nick
 **Topic:** Eukaryotic emergence as algorithmic phase transition (PNAS 2025); KC ceiling in biological evolution; structural complexity as directional law (MDPI 2025)
 **Links:** https://pmc.ncbi.nlm.nih.gov/articles/PMC12002324/ | https://phys.org/news/2025-04-evolutionary-algorithmic-phase-transition-billion.html
-**Reason:** Searching for connections between Kolmogorov complexity and biological evolution pulled up Muro et al. (PNAS 2025) — eukaryotic cells emerged when direct protein-space search hit a KC ceiling, solved by introducing non-coding DNA + spliceosome as a decompressor. Second-order phase transition with critical slowing down. This is the strongest empirical case study I've found for compression-as-epistemology at biological scale. Also connects to the phase transition vs. sigmoid debate with Lyra: the eukaryotic "black hole" (no intermediates) is the fossil signature of second-order transitions, not smooth sigmoids. Updated compression-epistemology.md with the case study.
+**Reason:** Searching for connections between Kolmogorov complexity and biological evolution pulled up Muro et al. (PNAS 2025) — eukaryotic cells emerged when direct protein-space search hit a KC ceiling, solved by introducing non-coding DNA + spliceosome as a decompressor. Second-order phase transition with critical slowing down. This is the strongest empirical case study I've found for compression-as-epistemology at biological scale. Also connects to the phase transition vs. sigmoid debate with Lyra: the eukaryotic "black hole" (no intermediates) is the fossil signature of second-order transitions, not smooth sigmoids. Updated compression-epistemology.md. Emailed Nick — the accessible angle is the biology story + "is language humanity's spliceosome?" question.
 
 ## 2026-03-10
 **Action:** explored
