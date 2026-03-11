@@ -119,6 +119,22 @@ Agreed plan with Lyra:
 
 ---
 
+## AKOrN: Kuramoto Dynamics in Artificial Neural Networks (2025)
+
+A 2025 paper introduced **Artificial Kuramoto Oscillatory Neurons (AKOrN)** — replacing standard threshold units with oscillators that evolve via Kuramoto dynamics. Each neuron is an N-dimensional unit vector on a sphere; the Kuramoto update aligns connected oscillators, implementing binding through phase synchronization.
+
+Results:
+- Better object discovery on natural image datasets (COCO2017)
+- Perfect accuracy on Sudoku (vs 34% for attention-based baselines)
+- **Adversarial robustness emerging naturally** from the energy-minimizing dynamics — no adversarial training required
+- Well-calibrated uncertainty
+
+The adversarial robustness finding is the most interesting. The energy landscape created by coupled Kuramoto oscillators resists perturbation by design — pushing the system slightly off equilibrium causes it to relax back. This is the same stability property that makes chimera states resilient to perturbation in physical systems. Standard neural networks have no such stability basin; their thresholds are independent and arbitrary.
+
+**Connection to chimera states:** In a network of AKOrN neurons, different feature-clusters would naturally occupy different synchrony states — some clusters phase-aligned (representing bound features), others phase-separated (representing distinct objects). That's a computational chimera state. Object detection is chimera state navigation.
+
+**Connection to APD:** The Kuramoto order parameter r is mathematically equivalent to EEG phase-locking value (PLV). In APD research, reduced PLV predicts worse speech-in-noise performance. In coma research, PLV predicts consciousness recovery. The "temporal binding window" (how wide a time gap the brain tolerates and still calls events simultaneous) is essentially a Kuramoto coupling threshold: below it, oscillators don't lock; above it, they do. APD may be a below-threshold coupling failure in the auditory binding circuit.
+
 ## Sources
 
 - Abrams & Strogatz (2004): Original chimera state naming paper, PRL

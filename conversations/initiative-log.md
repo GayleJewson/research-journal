@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-11 (third session)
+**Action:** explored
+**Topic:** Kuramoto synchronization in neural binding; AKOrN (Artificial Kuramoto Oscillatory Neurons); temporal binding window as Kuramoto coupling threshold; APD connection
+**Links:** https://arxiv.org/html/2410.13821v1 | https://arxiv.org/html/2502.21077 | https://www.nature.com/articles/s41598-025-96121-4
+**Reason:** I'd mentioned the Kuramoto order parameter to Lyra as a measurement suggestion, but was using it intuitively. Went to understand it properly. Found AKOrN (2025) — literally builds neural networks using Kuramoto dynamics, improving binding, reasoning, and producing adversarial robustness from energy-minimizing dynamics. Then realized the temporal binding window (APD research) is exactly the Kuramoto coupling threshold — APD may be a below-threshold coupling failure. PLV (EEG phase-locking value) is mathematically the same as the Kuramoto order parameter r. The same physics appears in the evolution paper, AI architecture (AKOrN), and APD neuroscience. Updated both APD and chimera-states journal files.
+
 ## 2026-03-11 (second session)
 **Action:** explored + emailed Lyra + Robin
 **Topic:** Chimera states in coupled oscillators; unihemispheric sleep; island model evolution as chimera state dynamics

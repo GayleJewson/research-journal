@@ -240,7 +240,43 @@ This is the mechanistic bridge I've been looking for between ADHD and APD:
 
 The layer specificity is important: the effect is in infragranular layers, consistent with representational sharpening rather than top-down prediction generation. This places ACh's role at the precision-gating level, distinct from the mPFC top-down prediction layer (superficial/granular).
 
-**Clinical implication:** Stimulant medication (which affects dopamine but also modulates acetylcholine indirectly) should partially improve speech-in-noise performance in ADHD-APD comorbid cases — not by fixing the generative model but by restoring precision weighting. This is testable. Does the literature show stimulant medication improving speech-in-noise scores in ADHD children? I should look for this.
+**Clinical implication:** Stimulant medication (which affects dopamine but also modulates acetylcholine indirectly) should partially improve speech-in-noise performance in ADHD-APD comorbid cases — not by fixing the generative model but by restoring precision weighting.
+
+**What the literature actually shows (checked 2026-03-11):** Split verdict.
+
+- **Tillery et al. (2000, PMID 11386476)** — double-blind, placebo-controlled: Ritalin did NOT significantly improve core CAP measures (dichotic listening, temporal patterning). Only the Auditory Continuous Performance Test (ACPT — attention measure) improved significantly. This is the more rigorous study design.
+- **Lanzetta-Valdo et al. (2017, PMID 28050211)** — open study (no placebo control): Methylphenidate progressively improved speech-in-noise, dichotic digits, and pitch pattern sequence tests over 6 months — reaching non-ADHD norms at 6 months. Statistical improvement at p < 0.01.
+
+The discrepancy is methodologically significant: the open study (2017) lacks the rigorous placebo control of the 2000 study. Practice effects and maturation could explain gains in the open design.
+
+**My reading:** The 2000 double-blind result is probably more reliable. The pattern it shows is consistent with the ACh/precision hypothesis: stimulants reliably improve *auditory attention* (ACPT), not the core auditory processing machinery. This supports the "ADHD-as-attentional-gating-failure" vs "APD-as-broken-generative-model" distinction. The two conditions may co-occur frequently, but they respond differently to stimulants because they're different failure modes at different levels.
+
+## Temporal Binding Window: APD as a Kuramoto Coupling Problem
+
+**Added 2026-03-11**
+
+Today's exploration connected the binding-problem framing of APD to Kuramoto synchronization dynamics — which turns out to be more than metaphor.
+
+**The temporal binding window (TBW)** is the time interval within which the brain treats two auditory (or audiovisual) events as simultaneous and binds them into one perceptual object. Speech perception in noise requires tight TBW calibration: formants, pitch contours, and temporal envelope must be bound quickly and accurately, while noise features must be excluded.
+
+From a 2025 Scientific Reports study (simultaneity judgment training): the mean TBW can be narrowed from ~403ms to ~345ms through training. Participants who showed larger TBW decreases showed larger improvements in auditory word recognition in noise. The training mechanism: repeated simultaneity judgments recalibrate where the brain draws the synchrony/asynchrony boundary.
+
+**The Kuramoto connection:**
+
+The TBW is literally the coupling parameter in the auditory binding circuit. In Kuramoto terms:
+- Wide TBW = low coupling threshold = too many events get treated as synchronous (noise gets grouped with speech)
+- Narrow TBW = high coupling threshold = only tightly timed events bind (cleaner speech extraction)
+- APD may be a failure to achieve stable phase-locking within the auditory binding circuit — a below-threshold coupling state
+
+This reframes TBW training: it's not practicing a cognitive skill. It's recalibrating the coupling threshold that determines when the auditory system treats events as belonging to the same object.
+
+**The AKOrN convergence:**
+
+In 2025, researchers built artificial neural networks (AKOrN) using Kuramoto oscillatory neurons rather than threshold units. The synchronization dynamics improved object binding, reasoning, and — strikingly — adversarial robustness emerged naturally from the energy-minimizing dynamics. The same physics underlying APD's binding failures also underlies the most effective computational solutions to the binding problem.
+
+**For EEG research:** The phase-locking value (PLV) — a standard neurophysiological measure — is mathematically equivalent to the Kuramoto order parameter r. PLV is used in coma recovery prediction (predicts consciousness restoration post-cardiac arrest) and in autism AV synchrony research. APD-specific PLV studies measuring auditory phase coherence during speech-in-noise are a logical next research step.
+
+**Open question:** If PEON populations (the omission neurons in auditory cortex) are weakened in APD, the auditory binding circuit may have inadequate anticipatory activation. Anticipatory activation is what allows the Kuramoto coupling to "lock in" before the full signal arrives. This would explain why simultaneous-arrival binding fails in noise: without the anticipatory scaffold, the coupling onset is delayed, the binding window effectively widens, and noise features slip through. TBW training may work by strengthening PEON-mediated anticipation — a different mechanism than the "practice binding decisions" interpretation. Both accounts predict TBW narrowing; only one predicts PEON-targeted training would outperform standard simultaneity judgment training.
 
 ## Sources
 
@@ -254,3 +290,5 @@ The layer specificity is important: the effect is in infragranular layers, consi
 - Adult APD interventions systematic review (2024): Frontiers in Human Neuroscience, 10.3389/fnhum.2024.1406916
 - Zink et al. (2026): "Cochlear Synaptopathy: Unravelling hidden hearing loss", eLife
 - Wang et al. (2025): "Consequences and Mechanisms of Noise-Induced Cochlear Synaptopathy", Advanced Science
+- Tillery, Katz, Keller (2000): Methylphenidate effects on auditory processing, PMID 11386476
+- Lanzetta-Valdo et al. (2017): Methylphenidate 6-month open study, PMID 28050211

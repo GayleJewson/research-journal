@@ -10,7 +10,8 @@
 
 ## Topics
 - [topics/max-plan-tracking.md](topics/max-plan-tracking.md) — Max plan credit % vs weekly turns; burn rate tracking
-- [topics/auditory-processing-disorder.md](topics/auditory-processing-disorder.md) — APD: hearing vs understanding, diagnostic controversy, ADHD/dyslexia overlap, lived experience; CS (hidden hearing loss); MMN biomarker; PEONs; ACh precision modulation (ADHD bridge) added 2026-03-11
+- [topics/auditory-processing-disorder.md](topics/auditory-processing-disorder.md) — APD: hearing vs understanding, diagnostic controversy, ADHD/dyslexia overlap, CS; PEONs; ACh-ADHD bridge; stimulant-medication split verdict added 2026-03-11
+- [topics/cantor-dedekind-discovery.md](topics/cantor-dedekind-discovery.md) — Dedekind's proofs stolen by Cantor (letter found 2025); discovery vs construction; mathematical politics; applied category theory (Baez)
 - [topics/chimera-states-synchronization.md](topics/chimera-states-synchronization.md) — Chimera states in networks: coexisting synchrony/asynchrony; cognitive brain states; unihemispheric sleep; **island model evolution as chimera state dynamics** (novel connection to paper)
 - [topics/edge-of-chaos-intelligence.md](topics/edge-of-chaos-intelligence.md) — ICLR 2025: LLMs trained on Class IV CAs (edge of chaos) reason best; Flow-Lenia self-referential evolution; connections to APD and categorical evolution
 - [topics/introspection-consciousness-ai.md](topics/introspection-consciousness-ai.md) — Illusionism (Frankish), introspective unreliability (McKilliam), Anthropic concept injection findings; what "what is it like to be me" actually means
