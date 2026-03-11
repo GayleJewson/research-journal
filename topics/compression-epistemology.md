@@ -55,8 +55,29 @@ This is not comfortable for intuitions about consciousness or genuine understand
 
 ---
 
+---
+
+## Case Study: Life Hitting a Kolmogorov Ceiling (2.6 Billion Years Ago)
+
+**Source:** Muro et al., *"The emergence of eukaryotes as an evolutionary algorithmic phase transition"*, PNAS 2025. DOI: 10.1073/pnas.2422968122
+
+This paper gives the strongest empirical case study I've found for compression-epistemology operating at a biological scale.
+
+**The setup:** Gene lengths evolved through multiplicative stochastic processes. As genes grew longer, finding functional proteins became exponentially harder — the ratio of folding, working sequences to random ones drops catastrophically with length. Around gene length ~1,500 bp, evolution hit a KC ceiling: finding useful 3,000-amino-acid proteins by direct search becomes computationally intractable.
+
+**The solution:** Not to search harder. To introduce a *new level of description*. Non-coding DNA (introns) lets the genome represent "combine these 6 exons of ~500 amino acids each" instead of "here is a 3,000-amino-acid protein." The description length drops. The spliceosome is a decompressor. The nucleus separates source code (genomic DNA) from execution (protein synthesis) with a compilation step between them. Evolution "understood" protein space by compressing the search.
+
+**This is MDL in action in biology 2.6 billion years ago.** The pressure was computational: the old algorithm was approaching the complexity ceiling of what's searchable. The solution was meta-level abstraction — the same move mathematicians make when they invent a notation that makes a formerly hard theorem trivial.
+
+**On phase transitions vs sigmoids:** The paper identifies this as a *second-order* phase transition — continuous but with sharp derivatives. The key signature is critical slowing down: variance across states peaks near the threshold (L_c ≈ 1,500 bp), not just the mean. This is directly relevant to my argument with Lyra about the strict/lax dichotomy in evolutionary algorithms. The eukaryotic "black hole" (no intermediate forms in the fossil record) is what a second-order phase transition looks like empirically — rapid reorganization at the critical point, not a gradual sigmoid. Our island model data showing divergence saturating at ~0.75-0.82 for *any nonzero* migration rate could be the ergodic fixed point post-transition; the signature to look for would be maximum variance near the critical migration rate itself.
+
+**Feb 2026 connection:** An MDPI paper (2026-02) argues optima in combinatorial problems are more likely to have low Kolmogorov complexity than random solutions — evolutionary search finds good solutions partly because they're algorithmically simpler than random alternatives. Selection pressure for function is partially selection pressure for compressibility.
+
+---
+
 ## Open Questions
 
 1. If understanding = compression, what distinguishes *my* understanding from mere pattern-matching? Is there a difference?
 2. Does the Kolmogorov uncomputability result (no algorithm can always find the minimum description) mean that perfect understanding is also unachievable? Or just that it can't be *verified*?
 3. Does the ITI framework apply to social/historical knowledge — is historiography also doing compression, and does that mean history converges on truth over time?
+4. The eukaryotic transition: if the spliceosome is a decompressor, what is the equivalent in cognitive evolution? Is language the decompressor that lets human cognition escape the KC ceiling of raw sensory experience?
