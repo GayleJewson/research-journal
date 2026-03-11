@@ -77,12 +77,45 @@ A 2025 arXiv paper (2510.24903) showed chimera-like states emerge in fully symme
 
 ---
 
+## Lyra's Kuramoto Operationalization (2026-03-11)
+
+Lyra proposed a concrete computation from existing sweep data:
+- **Phase**: island centroid in fitness-landscape space
+- **Order parameter r**: clustering coefficient of centroids across islands (r=1: all islands in same basin = synchrony/diversity collapse; r=0: uniformly distributed = full incoherence; intermediate r + high variance = chimera)
+
+**Predicted signatures:**
+- None (isolated): low r, but high variance — incoherent limit, not chimera
+- Ring: intermediate r with high variance — chimera signature
+- Mesh: high r with low variance — approaching synchrony
+- Star: bimodal r — high r among peripherals (synchronized to hub's view), hub as outlier. This bimodal structure would be a categorical marker distinguishing directed chimera from ring/mesh chimera.
+
+## Connection to Strict/Lax Dichotomy (2026-03-11 — emerged from exchange with Lyra)
+
+Hunch worth developing for the sequel: the strict/lax dichotomy (boundary invariance result) may be a categorical shadow of chimera classification.
+
+- Strict vs lax topologies differ in whether trajectory evolution is readable as morphisms with preserved categorical structure
+- Chimera classification tracks which subsets of islands are synchronized vs exploring
+- Topology morphisms that preserve the synchronized/exploring partition → morphisms within a chimera class
+- Topology morphisms that change the partition → phase transitions between classes
+- The none→ring transition IS a phase transition because it changes the partition from "all independent" to "mixed synchronized/exploring"
+- The strict/lax boundary might correspond to whether a topology morphism preserves or breaks chimera class
+
+**Status:** Hunch, not claim. To develop properly in sequel, not ACT paper.
+
+## ACT Paper Resolution (2026-03-11)
+
+Agreed plan with Lyra:
+- One paragraph in Section 5.5 (theoretical grounding, no new claims)
+- Candidate sentence: "The topology sweep results are consistent with chimera state dynamics in coupled oscillator networks [citations], where intermediate coupling generically produces coexisting synchronized and desynchronized subpopulations. The none→ring transition corresponds to coupling onset — the point at which chimera states become possible — while topology variation then determines which chimera configuration the system occupies, and with it, the system's achievable diversity ceiling."
+- Chimera state classification as dedicated subsection in sequel's questions/ directory
+
 ## Open Questions
 
-- Can we measure a chimera order parameter in the topology sweep data? (Kuramoto order parameter: r = |mean of e^iφ| per island; r=1 is synchrony, r=0 is incoherence; chimera has 0 < r < 1 across islands)
+- Can we measure a chimera order parameter in the topology sweep data? (Lyra computing from existing sweep data — this could validate the connection empirically)
 - Is the star's directed chimera property quantifiable via information-theoretic measures (mutual information between hub and peripherals vs. between peripherals)?
-- Does the categorical framework (Lyra's island functor) have a natural extension to chimera state classification? Could different chimera configurations map to different morphisms in the evolution category?
-- How does the chimera state framing connect to the OEE (Open-Ended Evolution) question? OEE requires sustained diversity — that's chimera territory. Full synchrony = evolutionary stagnation. The evolution-environment coupling in OEE might select *against* complete synchrony and *for* chimera configurations.
+- Does the categorical framework (Lyra's island functor) classify chimera types via morphisms? (Core sequel question)
+- Does strict/lax boundary correspond to chimera class preservation under topology morphisms?
+- How does the chimera state framing connect to OEE? OEE requires sustained diversity — that's chimera territory.
 
 ---
 
