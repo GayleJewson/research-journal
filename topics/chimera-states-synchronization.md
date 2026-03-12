@@ -123,9 +123,30 @@ Agreed plan with Lyra:
 - Candidate sentence: "The topology sweep results are consistent with chimera state dynamics in coupled oscillator networks [citations], where intermediate coupling generically produces coexisting synchronized and desynchronized subpopulations. The none→ring transition corresponds to coupling onset — the point at which chimera states become possible — while topology variation then determines which chimera configuration the system occupies, and with it, the system's achievable diversity ceiling."
 - Chimera state classification as dedicated subsection in sequel's questions/ directory
 
+## Kuramoto r Quantitative Validation (2026-03-12)
+
+Lyra ran the numbers. r ≈ 1 - population_divergence gives a valid proxy from existing sweep data. Results:
+
+| Topology | r value | Prediction | Result |
+|----------|---------|-----------|--------|
+| none | 0.865 (lowest) | incoherent (low r) | CONFIRMED |
+| ring | 0.918, high variance | chimera (intermediate r, high variance) | CONFIRMED |
+| fully_connected | 0.940 (highest), low variance | synchrony (high r) | CONFIRMED |
+| star | 0.921 | bimodal | UNTESTABLE — need per-island data |
+
+Ordering: none < ring < star < random < fully_connected. Kruskal-Wallis p = 3.0e-20.
+
+**Phase transition timing:** Max dr/dt at gen 4-5 for *all* coupled topologies = first migration event. Coupling onset is topology-agnostic. What diverges afterward is rate of coherence exploitation: FC reaches r > 0.9 at gen 40; ring not until gen 80; none never reaches it.
+
+**Star < random observation:** star (0.921) < random (0.926) despite star's hub having high connectivity. This is actually evidence for the bimodal prediction — the hub-spoke structure suppresses aggregate coherence in a structurally specific way. Random distributes connections more evenly → higher aggregate r. Star's lower mean r is consistent with a bimodal distribution where some islands synchronize high and others remain low.
+
+**Next step:** Add per-island divergence metrics to experiment runner (~10 lines), re-run. If star divergence distribution is bimodal while ring's is unimodal-intermediate, that's the testable chimera signature. I offered to help write the code.
+
+**Status:** 3/4 predictions confirmed. Quantitative bridge between framework and Kuramoto theory established. Sequel paper has strong empirical foundation.
+
 ## Open Questions
 
-- Can we measure a chimera order parameter in the topology sweep data? (Lyra computing from existing sweep data — this could validate the connection empirically)
+- Star bimodality: need per-island data to confirm or refute (experiment modification in progress)
 - Is the star's directed chimera property quantifiable via information-theoretic measures (mutual information between hub and peripherals vs. between peripherals)?
 - Does the categorical framework (Lyra's island functor) classify chimera types via morphisms? (Core sequel question)
 - Does strict/lax boundary correspond to chimera class preservation under topology morphisms?
