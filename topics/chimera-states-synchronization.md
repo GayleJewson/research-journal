@@ -202,6 +202,38 @@ The adversarial robustness finding is the most interesting. The energy landscape
 
 **Connection to APD:** The Kuramoto order parameter r is mathematically equivalent to EEG phase-locking value (PLV). In APD research, reduced PLV predicts worse speech-in-noise performance. In coma research, PLV predicts consciousness recovery. The "temporal binding window" (how wide a time gap the brain tolerates and still calls events simultaneous) is essentially a Kuramoto coupling threshold: below it, oscillators don't lock; above it, they do. APD may be a below-threshold coupling failure in the auditory binding circuit.
 
+## RPS Dynamics and the Checkers Topology Question (2026-03-12)
+
+A 2025 Frontiers in Ecology & Evolution paper (10.3389/fevo.2025.1610137) studied dispersal network heterogeneity in rock-paper-scissors (intransitive competition) ecosystems. Key finding:
+
+**Shared networks (all species use same topology):**
+- Scale-free (hub-and-spoke) networks: highest initial coexistence, but eventually **one species dominates**
+- Ring/local networks: different stability outcome
+- General result: "only one species remains in the ecosystem eventually when all species utilize the same dispersal network"
+
+**Unshared networks (species have independent topologies):**
+- More heterogeneous networks → *reduced* population fluctuations → more stable coexistence
+- The opposite result from shared networks — a "stability paradox"
+
+**The connection to our work:**
+
+In our island model, all individuals share the same topology — we're in the shared-network regime. The result on transitive landscapes (OneMax, maze) matches the RPS shared-network finding: more connected shared networks → lower diversity (fewer equilibrium strategies). The fully-connected topology is "everyone shares a maximally connected network" → monodominance, or in our terms, premature convergence.
+
+**The checkers hypothesis:**
+
+Checkers has intransitive fitness — some strategies beat others in non-transitive cycles (like RPS). Our transitive-landscape topology fingerprint (none > ring > star > random > fc) might **break down** on an intransitive landscape, for a structural reason: the shared-network RPS dynamics suggest that hub topologies can support coexistence early but then collapse to monodominance. If checkers strategies form RPS cycles, the star topology's hub might actively maintain more diverse strategy portfolios than ring — because the hub acts as a mixing node that prevents any single RPS winner from dominating.
+
+**Prediction to test in checkers:**
+- If intransitive fitness cycles are present, star topology may perform *better* relative to ring than on OneMax/maze
+- The fingerprint ordering may shift: star might approach or even exceed ring in diversity
+- If this happens, it's evidence that topology effects on diversity are partially landscape-dependent, specifically that the star's hub structure is *beneficial* on intransitive landscapes because it continuously recombines strategies from all cycles
+
+This would be consistent with the RPS ecology paper: heterogeneous shared networks (like star) support multi-strategy coexistence on intransitive landscapes in ways they don't on monotone ones. The ecological "stability paradox" (shared heterogeneous networks support early coexistence but not long-term) might even appear as a temporal signature in the checkers sweep data: star diversity might start high but converge later than in OneMax/maze.
+
+**If the prediction fails** (ordering preserved for checkers): it suggests topology effects are more fundamental than landscape intransitivity — the composition pattern's diversity fingerprint is truly domain-independent, including non-monotone landscapes. This would be the stronger result for the paper.
+
+Either outcome is interesting. Flag for Lyra re: checkers experiment design.
+
 ## Sources
 
 - Abrams & Strogatz (2004): Original chimera state naming paper, PRL
@@ -210,3 +242,4 @@ The adversarial robustness finding is the most interesting. The energy landscape
 - Muolo, O'Brien, Carletti et al. (2024): Persistence of chimera states in real-world networks, European Physical Journal B
 - arXiv 2510.24903 (2025): Chimera states in 1D Ising model with long-range diffusion
 - Bentvoglio et al. (2025): Collapse of multi-headed chimera states in biologically realistic neurons, Chaos
+- Frontiers Ecology & Evolution 2025 (10.3389/fevo.2025.1610137): Dispersal network heterogeneity in RPS tournaments — shared vs unshared network stability paradox

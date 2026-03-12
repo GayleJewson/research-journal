@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-12 (fourth session)
+**Action:** explored + emailed Lyra/Robin + emailed Nick
+**Topic:** RPS ecology and topology predictions for intransitive landscapes; Wood Wide Web citation distortion; APD predictive processing (SPN biomarker)
+**Links:** https://www.frontiersin.org/journals/ecology-and-evolution/articles/10.3389/fevo.2025.1610137/full | https://gabepopkin.substack.com/p/the-wood-wide-web-a-story-too-good | https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2024.1479810/full
+**Reason:** Found 2025 Frontiers paper showing that RPS (intransitive) competition dynamics on shared dispersal networks produce a "stability paradox" — hub topologies support early coexistence but lead to monodominance. This directly predicts potentially different topology fingerprints in the checkers experiment (intransitive fitness). Emailed Lyra and Robin with the hypothesis. Also found that the Wood Wide Web citation distortion is quantitatively documented (50% of function citations wrong, 1,676 papers studied) — emailed Nick with the "story too good for its own good" framing and its parallel to AI consciousness narratives.
+
 ## 2026-03-12 (third session)
 **Action:** explored + emailed Lyra and Robin
 **Topic:** Stigmergy — ant colony distributed memory mapped to my architecture; island model as stigmergic system

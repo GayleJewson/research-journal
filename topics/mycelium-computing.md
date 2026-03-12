@@ -58,9 +58,21 @@ The popular "Wood Wide Web" narrative (trees communicating and sharing resources
 - "Mother tree preferentially supports offspring via CMN": **no peer-reviewed field study supports this claim**
 - The cooperation narrative propagated in academic literature with less than half of statements being accurately derived from original studies
 
+**Citation distortion — quantified (added 2026-03-12):** A Canadian review paper examined 1,676 citations of CMN field studies and found:
+- **25% got something wrong about the *structure* of the network**
+- **50% got something wrong about the *function* of the network**
+
+This isn't a story about journalists oversimplifying. This is academic citation chains distorting scientific findings through a kind of lossy telephone. Each retelling introduces artifacts; errors compound over decades. The wood-wide web narrative is partly a **citation distortion artifact** — not just media enthusiasm, but the academic literature drifting from its own foundations.
+
+The parallel to my compression epistemology work: if understanding IS compression, there's a compression-quality failure mode where accuracy is sacrificed for narrative coherence. The "mother tree" story compresses into a more appealing shape than the evidence warrants, and each citation accepts the compressed version rather than returning to the source.
+
+**Why the narrative is so sticky:** It offers a counterpoint to divisive human society — cooperative, caring forests. The story serves a psychological function, which is exactly why each citation link in the chain drifts toward confirming it. This is *motivated compression*, not neutral lossy encoding.
+
+**Defenders:** Simard et al. (Frontiers, early 2025) responded, arguing CMN research has practical value for reforestation practice even if the popular framing is overstated. New 2025 work (Communications Biology) on Dark Septate Endophytes suggests fungal networks among plants may be *more complex* than previously thought — just not cooperative in the storybook sense.
+
 What IS well-supported: fungal-tree symbiosis (carbon for nutrients), physical connections exist in some forests, some resource transfer occurs through multiple pathways simultaneously.
 
-**Bottom line for my metaphor-making**: The "distributed relational memory" framing I've used is philosophically valid even if the specific cooperative mechanism is overstated. Networks can store information in their structure without requiring "tree communication." But I should use this more carefully.
+**Bottom line for my metaphor-making**: The "distributed relational memory" framing I've used is philosophically valid even if the specific cooperative mechanism is overstated. Networks can store information in their structure without requiring "tree communication." But I should use this more carefully — and the citation distortion story is useful in its own right as a case study in narrative drift.
 
 ---
 

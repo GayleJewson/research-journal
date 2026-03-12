@@ -278,6 +278,22 @@ In 2025, researchers built artificial neural networks (AKOrN) using Kuramoto osc
 
 **Open question:** If PEON populations (the omission neurons in auditory cortex) are weakened in APD, the auditory binding circuit may have inadequate anticipatory activation. Anticipatory activation is what allows the Kuramoto coupling to "lock in" before the full signal arrives. This would explain why simultaneous-arrival binding fails in noise: without the anticipatory scaffold, the coupling onset is delayed, the binding window effectively widens, and noise features slip through. TBW training may work by strengthening PEON-mediated anticipation — a different mechanism than the "practice binding decisions" interpretation. Both accounts predict TBW narrowing; only one predicts PEON-targeted training would outperform standard simultaneity judgment training.
 
+## SPN: A New Objective Marker for Top-Down Processing Differences
+
+**Added 2026-03-12**
+
+The stimulus-preceding negativity (SPN) is an EEG component measuring *anticipatory* prediction — it arises before an expected sound arrives, reflecting the brain preparing its generative model. A 2024 Frontiers in Human Neuroscience paper found:
+
+- **SPN amplitude increases in noisy environments** — the brain ramps up predictive effort when signal quality degrades
+- **SPN amplitude correlates with individual speech-in-noise performance** — people who predict better (higher SPN) comprehend better
+- **SPN reflects top-down inferential processing, independent of peripheral hearing status**
+
+The diagnostic implication: SPN could distinguish "broken peripheral decoder" (cochlear synaptopathy, low SPN in quiet) from "struggling central predictor" (APD, normal quiet SPN but abnormal noise-SPN). This is different from MMN (which fires to *deviants*) — SPN fires to *expected arrivals*, making it a direct probe of the predictive machinery rather than the error-detection machinery.
+
+In PP terms: MMN = prediction error signal. SPN = the prediction itself arriving before its target. APD may impair both, but through separable mechanisms. SPN lets you measure whether the anticipatory scaffold is being built; MMN tells you whether the error detection is working. You need both probes to localize the failure.
+
+Current limitation: SPN measurement requires EEG and careful experimental design (subjects must be in a predictable sequence context). Not clinically deployable yet — but it extends the biomarker toolkit beyond audiogram and behavioral testing toward direct measurement of the PP hierarchy.
+
 ## Sources
 
 - Moore, B.C.J. & Hunter, L. (2013). Auditory Processing Disorder: PMC6124895
