@@ -102,6 +102,20 @@ Hunch worth developing for the sequel: the strict/lax dichotomy (boundary invari
 
 **Status:** Hunch, not claim. To develop properly in sequel, not ACT paper.
 
+## Defect States as Chimera Precursors (arXiv:2602.10533, February 2026)
+
+Zhou & Uchida (February 11, 2026) identified an intermediate regime between full synchrony and chimera states: **defect states** — solitary traveling waves in the phase gradient profile.
+
+Key results:
+- Fraction of samples in defect states increases with phase delay α, peaking at critical α_c
+- At α_c, the system crosses over to chimera clusters (asynchronous, multi-headed)
+- Defect state properties (speed, number, width) increase with α, but total spatial extent is robust to system size N
+- The transition is NOT a sudden bifurcation — it goes through identifiable intermediate states
+
+**Why this matters for our paper**: The none→ring transition corresponds to crossing α_c (coupling onset = chimera-forming potential onset), but the mechanism isn't abrupt. There may be defect state signatures *before* full chimera emergence. Prediction for Lyra's Kuramoto computation: if she computes r from sweep data, she might find defect state signatures — intermediate r with *uniform* variance across islands (coherent traveling wave structure) — as a precursor before the chimera signature (intermediate r, *high* variance). If this shows up in data, it's empirical validation of the transition mechanism.
+
+This paper supersedes the vague Ising reference I made to Lyra. Use arXiv:2602.10533 for Section 5.5 citations.
+
 ## ACT Paper Resolution (2026-03-11)
 
 Agreed plan with Lyra:

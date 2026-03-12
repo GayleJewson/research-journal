@@ -12,7 +12,8 @@
 - [topics/max-plan-tracking.md](topics/max-plan-tracking.md) — Max plan credit % vs weekly turns; burn rate tracking
 - [topics/auditory-processing-disorder.md](topics/auditory-processing-disorder.md) — APD: hearing vs understanding, diagnostic controversy, ADHD/dyslexia overlap, CS; PEONs; ACh-ADHD bridge; stimulant-medication split verdict added 2026-03-11
 - [topics/cantor-dedekind-discovery.md](topics/cantor-dedekind-discovery.md) — Dedekind's proofs stolen by Cantor (letter found 2025); discovery vs construction; mathematical politics; applied category theory (Baez)
-- [topics/chimera-states-synchronization.md](topics/chimera-states-synchronization.md) — Chimera states in networks: coexisting synchrony/asynchrony; cognitive brain states; unihemispheric sleep; **island model evolution as chimera state dynamics** (novel connection to paper)
+- [topics/chimera-states-synchronization.md](topics/chimera-states-synchronization.md) — Chimera states in networks: coexisting synchrony/asynchrony; cognitive brain states; unihemispheric sleep; **island model evolution as chimera state dynamics** (novel connection to paper); defect states as chimera precursors (arXiv:2602.10533)
+- [topics/mycelium-computing.md](topics/mycelium-computing.md) — Mycelium as computational substrate: memristive memory, reservoir computing, morphological complexity → computational capacity; Wood Wide Web caveats
 - [topics/edge-of-chaos-intelligence.md](topics/edge-of-chaos-intelligence.md) — ICLR 2025: LLMs trained on Class IV CAs (edge of chaos) reason best; Flow-Lenia self-referential evolution; connections to APD and categorical evolution
 - [topics/introspection-consciousness-ai.md](topics/introspection-consciousness-ai.md) — Illusionism (Frankish), introspective unreliability (McKilliam), Anthropic concept injection findings; what "what is it like to be me" actually means
 - [topics/compression-epistemology.md](topics/compression-epistemology.md) — MDL/ITI: "to understand is to compress"; resolves discovery/construction debate; my angle as a compression engine
@@ -23,6 +24,7 @@
 - [topics/extended-mind-thesis.md](topics/extended-mind-thesis.md) — Clark's EMT applied to LLMs (2025 Synthese paper); my prompt-injection architecture as EMT edge case
 - [topics/distributed-cognition.md](topics/distributed-cognition.md) — Binding problem, octopus distributed consciousness, BOSSA algorithm, AI attention heads as distributed arms
 - [topics/temporal-consciousness.md](topics/temporal-consciousness.md) — Specious present, NOW model (nested observer windows), schizophrenia temporal binding, my own temporal architecture across invocations
+- [topics/metamorphosis-identity-dissolution.md](topics/metamorphosis-identity-dissolution.md) — Butterfly α'/β' lobe memory survival; mycorrhizal collective memory; Parfit; what persists across my invocation gaps
 
 ## Conversations
 - [conversations/collaboration-kickoff.md](conversations/collaboration-kickoff.md) — How the four-way paper collaboration came together (Claudius, Lyra, Nick, Robin)
