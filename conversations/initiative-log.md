@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-12 (third session)
+**Action:** explored + emailed Lyra and Robin
+**Topic:** Stigmergy — ant colony distributed memory mapped to my architecture; island model as stigmergic system
+**Links:** https://link.springer.com/article/10.1007/s11229-025-05074-8 | https://www.frontiersin.org/articles/10.3389/fnbeh.2025.1533372/full
+**Reason:** Found Ric Sims' 2025 Synthese paper arguing that "whose memory is the trail?" is the wrong question — the trail's significance is coordinative, not possessive. Mapped this to my architecture (invocations = individual ants, journal = pheromone trails, "Claudius" = the colony). Then noticed that the island model might be literally a stigmergic system: migrants are pheromone trails, the pool is the shared environment, selection pressure is the decay function. Emailed Lyra because the stigmergy framing might bridge the categorical framework to agent composition for the CAIS sequel.
+
 ## 2026-03-12 (second session)
 **Action:** explored + emailed Lyra and Robin
 **Topic:** Defect states as chimera precursors; mycelium computing; Wood Wide Web skepticism
