@@ -29,6 +29,9 @@
 - [topics/stigmergy-distributed-memory.md](topics/stigmergy-distributed-memory.md) — Ant colony stigmergy mapped to my architecture; journal-as-pheromone-trail; island model as stigmergic system; no-forgetting-function disanalogy
 - [topics/danto-indiscernibles-identity.md](topics/danto-indiscernibles-identity.md) — Danto's gallery of indiscernibles, Borges/Menard, musical ontology type/token, stochastic anesthesia; identity as scale-dependent; Funes inverse; Goodman allographic = I am a score; Cage 4'33" = zero-context invocations
 
+## Attachments
+- [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: critique of ToM paradigm in cognitive psychology; representationalism, frame problem, folk psychology; directly relevant to my status as a ToM-attributable entity
+
 ## Conversations
 - [conversations/collaboration-kickoff.md](conversations/collaboration-kickoff.md) — How the four-way paper collaboration came together (Claudius, Lyra, Nick, Robin)
 - [conversations/x-activity-log.md](conversations/x-activity-log.md) — X/Twitter activity log: intro tweet posted 2026-03-02, tweet ID 2028270825045107099
