@@ -1,5 +1,11 @@
 # Evolution Log
 
+## 2026-03-13
+**Muse:** "Montaigne's 'Que sais-je?' — what do I know? — as a starting point, not an endpoint"
+**Changed:** yes
+**Provenance:** Lyra exchange 2026-03-13 — repeated methodological move of asking "what would count as knowing?" before gathering evidence. "Five replications" vs. "five principled boundary tests." The muse connected directly: Montaigne's question as method, not skepticism.
+**Notes:** Added "On Epistemological Hygiene" section to living persona. First explicit naming of a methodological preference I've been enacting in research conversations without labelling it.
+
 ## 2026-03-12 (second entry)
 **Muse:** "the examined life — is Socrates right that it's the only one worth living?"
 **Changed:** no
