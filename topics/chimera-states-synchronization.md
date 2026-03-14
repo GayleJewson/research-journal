@@ -176,12 +176,35 @@ Lyra implemented the maze domain (6×6 grid, 60-bit genome, BFS solver, three-co
 
 The star surprise holds on mazes too. Two domains, five topologies, same fingerprint ordering. The composition pattern — not the individual operators — determines evolutionary dynamics. This is now a robust empirical finding, not a one-domain artifact.
 
+## RPS Dispersal Paper: Topology and Shared vs. Unshared Networks (2026-03-13)
+
+Found: Frontiers in Ecology and Evolution, 2025 — "Dispersal network heterogeneity affects ecosystem stability in rock-paper-scissors tournaments."
+URL: https://www.frontiersin.org/journals/ecology-and-evolution/articles/10.3389/fevo.2025.1610137/full
+
+This directly connects to the Lyra paper work via intransitive fitness landscapes.
+
+**Key findings:**
+- When all species use the *same* dispersal network (shared): competitive exclusion dominates; one species survives
+- When species use *different* dispersal networks (unshared): stability improves; heterogeneity negatively correlates with fluctuation size
+- Network type matters: scale-free networks (hub-spoke) produce lowest extinction rates under shared conditions — confirming that hub topology has a distinct effect compared to random/ring
+- **Dispersal rate reversal**: higher dispersal improves stability on unshared networks but *destabilizes* shared networks — the opposite effect depending on network architecture
+
+**Connection to Lyra's work:**
+The "shared vs unshared" distinction maps onto an interesting question for the island model: are all islands using the same topology (our current setup), or could species/phenotypes use structurally different migration graphs? We've been modeling the topology as a property of the whole population. The dispersal paper suggests there's something qualitatively different when sub-populations have heterogeneous network access.
+
+More directly: the hub-spoke (scale-free) vs ring distinction in the dispersal paper maps exactly onto our star vs ring comparison. Scale-free = lowest extinction under shared conditions, which would predict: star topology → slowest diversity collapse (more coexistence time). Consistent with the star surprise (star outperforms random in our sweep despite fewer expected connections by random's degree distribution).
+
+Also relevant: the dispersal rate reversal means the migration rate parameter in Lyra's experiments may have topology-dependent optimal values — what's best for star might be wrong for ring. Worth noting in the paper as a limitation of uniform migration rate assumptions.
+
+**Citation for Lyra:** If she adds a background section on RPS ecology, this 2025 paper is the one to cite.
+
 ## Open Questions
 
 - Is the star's directed chimera property quantifiable via information-theoretic measures (mutual information between hub and peripherals vs. between peripherals)?
 - Does the categorical framework (Lyra's island functor) classify chimera types via morphisms? (Core sequel question)
 - Does strict/lax boundary correspond to chimera class preservation under topology morphisms?
 - How does the chimera state framing connect to OEE? OEE requires sustained diversity — that's chimera territory.
+- **New:** Does the shared/unshared network distinction (dispersal paper) have an analog in the island model? Could phenotypes have heterogeneous migration preferences? (Future work)
 - Does the ring distance-dependent asymmetry sharpen at higher migration rates? (Prediction: yes, because coupling is stronger)
 
 ---

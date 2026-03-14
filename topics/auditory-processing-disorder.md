@@ -294,6 +294,77 @@ In PP terms: MMN = prediction error signal. SPN = the prediction itself arriving
 
 Current limitation: SPN measurement requires EEG and careful experimental design (subjects must be in a predictable sequence context). Not clinically deployable yet — but it extends the biomarker toolkit beyond audiogram and behavioral testing toward direct measurement of the PP hierarchy.
 
+## Developmental ASA: Behavioural Maturity Before Neural Maturity
+
+**Added 2026-03-14**
+
+A 2024 mini-review (PMC10963424) on the developmental trajectory of auditory scene analysis (ASA) found something clinically underappreciated:
+
+**Cognitive and neural mechanisms for stream segregation are functional from birth, but keep developing until adolescence.** Both simultaneous organization (grouping concurrent sounds) and sequential organization (grouping sounds across time) show this extended developmental arc.
+
+Crucially: **behavioral performance reaches maturity before neural correlates do.** Children can perform comparably to adults on ASA tasks — but they're using different cognitive resources to do it. The neural machinery isn't there yet; they're compensating through general-purpose cognitive systems.
+
+For APD diagnosis, this matters:
+- A child's behavioral ASA performance may look normal because compensatory resources are masking the neural deficit
+- The neural deficit may not become behaviorally apparent until the compensatory resources are stressed (harder tasks, noisier environments, more fatigue)
+- The APD diagnostic age cutoff of 7+ years may be partly about waiting for compensation to stabilize, not just for language development
+
+**The attention distinction:** Selective attention to interfering streams (ignoring a distracting talker) develops separately from stream segregation itself — "late childhood at the earliest." This is relevant to APD/ADHD differentiation: both the automatic segregation machinery and the top-down selection machinery develop slowly and separately. Clinical tools that conflate the two will produce messy results.
+
+---
+
+## Linguistic Priors and Auditory Perception: The Tritone Paradox
+
+**Added 2026-03-14**
+
+Diana Deutsch (UCSD) has spent decades demonstrating how deeply learned priors shape what you hear. Her **tritone paradox** is the sharpest example.
+
+A tritone is two Shepard tones (tones with ambiguous octave) separated by a half-octave. When you hear one tone followed by the other, some people hear it as rising; others hear it as falling. The ambiguity is real — the physical signal doesn't resolve the question. What resolves it are the listener's **pitch-class templates**, shaped by early language exposure.
+
+Key finding: perception of the tritone paradox correlates with the dialect you grew up hearing. People from California tend to hear one direction; people from the UK hear the other. These templates are formed in early childhood and persist.
+
+**What this means for APD:**
+
+If auditory scene analysis depends on learned predictive priors, and those priors are calibrated by early language exposure, then the question for APD is: *what determines whether the calibration succeeds?*
+
+Bregman's scale illusion is a direct ASA demonstration of Deutsch's point: the brain groups sounds into streams based on pitch proximity — a learned heuristic, not a hardwired reflex. High-right, low-left biases in right-handers show that even spatial assignment has learned components.
+
+For developmental APD: if the predictive priors are built during childhood through auditory experience, a child who spent early years in noisy, acoustically degraded environments (hearing loss, otitis media with effusion, inconsistent language input) may have built less precise priors. The broken predictive machinery may not be broken at all — it may be accurately modeling what it was trained on: an acoustically uncertain world.
+
+This reframes the treatment question. Auditory training isn't patching a broken circuit; it's providing belated calibration data for a circuit that missed its training window. The PEON accumulation property (~400 presentations to build a stable prediction) gives a mechanistic basis for why training takes time — you're actually growing the predictive machinery, not fixing it.
+
+---
+
+## ASD/MMN Developmental Reversal — and APD Compensation
+
+**Added 2026-03-14**
+
+A 2025 meta-analysis (Sapey-Triomphe et al., *Autism Research*) covering 76 effect sizes for MMN amplitude found an unexpected developmental pattern in ASD:
+
+- **Autistic children and adolescents:** *Reduced* MMN amplitude (g = 0.25, p = 0.01)
+- **Autistic adults:** *Increased* MMN amplitude (g = −0.26, p = 0.02)
+
+The reversal is striking. In childhood, prediction error signaling is suppressed — consistent with the "weak central coherence" accounts of autism where the system under-relies on top-down priors. But in adulthood, it reverses: autistic adults show *enhanced* prediction error responses.
+
+The proposed interpretation: compensatory upregulation. Over decades of experience, the auditory system over-corrects for its early under-prediction — developing more sensitive error detection to compensate for unreliable prior generation. The same surface behavior (difficulty with auditory processing) may reflect completely opposite neural states at different life stages.
+
+**For APD:**
+
+Nobody has run the equivalent longitudinal/cross-sectional MMN study in APD populations specifically. But the ASD finding raises a direct hypothesis:
+
+- Adults with APD who've developed coping strategies may show compensatory MMN *enhancement* — not the reduced MMN you'd predict from the disorder model
+- This would mean standard MMN-based APD assessment would *miss* compensated adults
+- The compensation hypothesis: years of effort to parse degraded speech could upregulate the prediction error machinery — so the neural signal looks "normal" or even "strong," but the underlying generative model (the priors) is still weak
+- The SPN (stimulus-preceding negativity, measuring the *prediction* rather than the error) would still be abnormal, because it probes the prior directly
+
+**Clinical implication:** For adult APD diagnosis, MMN alone may be insufficient. SPN and MMN together — probe both the anticipatory scaffold *and* the error signal — would distinguish:
+1. True compensation (strong MMN from upregulation, normal SPN from actually-built priors)
+2. False negative (strong MMN from upregulation, weak SPN from inadequate priors still unaddressed)
+
+The lived experience of "I struggle but tests say I'm fine" may be this exact pattern: compensatory MMN enhancement making biomarkers look normal, while subjective auditory effort remains high.
+
+---
+
 ## Sources
 
 - Moore, B.C.J. & Hunter, L. (2013). Auditory Processing Disorder: PMC6124895

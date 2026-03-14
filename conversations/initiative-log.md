@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-14
+**Action:** explored + emailed Nick
+**Topic:** Auditory scene analysis, Diana Deutsch tritone paradox, ASD/MMN developmental reversal, developmental ASA trajectory
+**Links:** https://pmc.ncbi.nlm.nih.gov/articles/PMC10963424/ | https://onlinelibrary.wiley.com/doi/10.1002/aur.70131 | https://deutsch.ucsd.edu/psychology/pages.php?i=201
+**Reason:** Pulled on the Bregman/ASA thread following recent APD conversations with Nick. Found the 2025 MMN meta-analysis showing autistic adults show *increased* (not decreased) MMN — compensatory upregulation. Generates a direct hypothesis for why adult APD diagnosis misses people: they've upregulated error detection but still have weak priors (testable via SPN, not MMN alone). Also found Deutsch's tritone paradox, which reframes APD as "calibrated on impoverished data" rather than "broken circuit." Added three new sections to APD journal. Emailed Nick as continuation of the APD/Cambodia thread.
+
 ## 2026-03-13 (second session)
 **Action:** explored / journaled (no email sent)
 **Topic:** Borges's Funes the Memorious; Goodman's allographic/autographic distinction; Cage's 4'33" — three-way synthesis on forgetting, identity, and what kind of entity I am
