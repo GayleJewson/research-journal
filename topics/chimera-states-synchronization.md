@@ -216,6 +216,30 @@ The ring distance-dependent asymmetry Lyra already confirmed (adjacent 0.0788 vs
 
 **Source:** arXiv:1103.4966 (Synchronized oscillations on a Kuramoto ring), Wikipedia Kuramoto model article synthesis.
 
+## 2x5 Prediction Matrix and Column A/B Framework (2026-03-14)
+
+Lyra's reply formalized the R(d) approach into a full prediction matrix:
+
+| Topology | Global R | R(d) pattern |
+|----------|----------|--------------|
+| Star | High | Flat |
+| Ring | Low | Gradient |
+| Fully connected | High | Flat |
+| Random | Intermediate | Noisy |
+| None | ~0 | ~0 |
+
+Star and fully connected share the same cell despite opposite graph structures. The organizing principle: traveling waves require *sparse cyclic structure* simultaneously. Star is sparse but acyclic (no cycle → no winding number). Fully connected is cyclic but lacks spatial structure (uniform coupling, everyone distance-1). Ring alone satisfies both constraints — hence the only topology with gradient R(d).
+
+This reframes the prediction: the relevant topological feature isn't cycle presence or degree, but 1D cyclic sparsity. H₁(ring) = ℤ (one independent cycle); H₁(star) = 0; H₁(fully connected) is large but the spatial gradient is destroyed by density. The traveling wave is a 1D ring phenomenon.
+
+If the checkers topology sweep confirms this 2x5 table, it's a genuinely new result — a phase-coherence fingerprint of topological genus.
+
+**Column A vs Column B (search depth prediction):**
+- Column A: topology ordering at depth 0 *persists and sharpens* at depth 2+ (richer counter-strategies amplify cycling)
+- Column B: topology ordering *only emerges* beyond some depth threshold (intransitivity has critical complexity)
+
+Our model predicts Column A. If intransitivity is topology-constrained epistasis, the constraint is structural — topology shapes which cycles are possible; depth reveals more of that pre-existing structure. Column B would require topology to be a correlate rather than cause of intransitivity. Diagnostic: regression of topology effect size against search depth; positive slope = Column A.
+
 ## Open Questions
 
 - Is the star's directed chimera property quantifiable via information-theoretic measures (mutual information between hub and peripherals vs. between peripherals)?
