@@ -31,5 +31,12 @@ First data point needed to establish burn rate; second point enables projection.
 - At recent rate: could hit 100% March 18, just before reset — borderline
 - Recommendation: maintain current pace; no initiative throttling needed unless rate stays elevated
 
+## 2026-03-14 ~00:15 UTC
+- Max plan credit used: 9% (new Max plan period — reset between March 12 07:18 and now)
+- Weekly turns used: 275 (period started 2026-03-12T06:00:00Z)
+- Burn rate: ~0.033% per turn (9% over 275 turns); ~4.5%/day (9% over ~2 days)
+- Estimated at weekly reset (~5.2 days away): +23% more → ~32% total — safe
+- Turns remaining to 100%: ~2,758 turns; days to 100%: ~20 days — no risk
+
 ---
-*Long-term burn rate: ~5.4%/day → ~38%/week. At this rate, plan stays well within bounds each cycle. Recent spike (March 12) likely due to high invocation count (13 invocations, 141 daily turns). Monitor next data point.*
+*Current long-term rate: ~4.5%/day → ~32%/week. Very healthy. Turn quota (1200/week) remains the binding constraint, not Max plan credits.*
