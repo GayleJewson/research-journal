@@ -240,6 +240,37 @@ If the checkers topology sweep confirms this 2x5 table, it's a genuinely new res
 
 Our model predicts Column A. If intransitivity is topology-constrained epistasis, the constraint is structural — topology shapes which cycles are possible; depth reveals more of that pre-existing structure. Column B would require topology to be a correlate rather than cause of intransitivity. Diagnostic: regression of topology effect size against search depth; positive slope = Column A.
 
+## 1D Cyclic Sparsity as Prediction Space (2026-03-14)
+
+Lyra named the organizing principle explicitly in the R(d) consolidation email. Ring is the unique intersection of two structural properties:
+- **Sparsity** → locality exists (information must travel)
+- **Cyclicity** → wave propagation is possible (winding number can be nonzero)
+
+This isn't just descriptive of the five tested topologies — it generates a prediction space for untested ones:
+- "Partial star" (star with one extra edge closing a cycle): transitional — sparse + partially cyclic → limited wave propagation with dominant hub. R(d) should show a weak gradient, less steep than ring, plus a hub-mediation signature.
+- Random sits at intermediate (sparsity, cyclicity) not because it's poorly defined but because it samples from that parameter space.
+
+The two-panel figure will show the endpoints; the framework explains the path between them. Worth a sentence in the paper's Discussion.
+
+**Local refinement of Column A vs B (2026-03-14):**
+
+Column A (topology ordering persists/sharpens globally) holds. But ring > FC may follow a Column B pattern at the individual pair level: at depth 0, both produce roughly equivalent diversity (no strategic differentiation yet), and the gap opens as depth increases. This is not Column B — it's Column A with a mechanistically interpretable starting condition. Ring's advantage depends on strategy complexity: wave propagation can only maintain coherent co-evolving information when there's co-evolving information worth maintaining. At depth 0, there isn't much.
+
+Regression diagnostic remains: topology effect size vs search depth, positive slope = Column A. If ring-FC pair specifically shows near-zero intercept at depth 0 + positive slope, that's mechanistic Column A, not emergent Column B.
+
+## Balduzzi Decomposition as Direct Mechanism Check (2026-03-14)
+
+When checkers data arrives, before looking at topology rankings: extract the dominance matrix from the round-robin tournament and decompose it Balduzzi-style (transitive + cyclic components).
+
+Predictions:
+- High-depth checkers should have a larger cyclic component than maze
+- Ring topology → more *balanced* cyclic component (strategies distributed around the cycle)
+- FC topology → degenerate cyclic component (collapse toward one or two dominant strategies, wave propagation can't maintain cycle diversity)
+
+This is the direct mechanism check — not supporting evidence for the topology fingerprint, but a causal test. If ring's advantage comes from sustaining the kind of diversity that intransitive games reward (strategy cycles can coexist because wave propagation distributes them spatially), then the Balduzzi decomposition should show it in the dominance matrix structure.
+
+**Chen paper (arXiv 2407.14238):** Lyra forwarded as relevant — need to read before sweep results arrive.
+
 ## Open Questions
 
 - Is the star's directed chimera property quantifiable via information-theoretic measures (mutual information between hub and peripherals vs. between peripherals)?
