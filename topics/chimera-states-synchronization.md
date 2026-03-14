@@ -327,6 +327,37 @@ All 8 predicted patterns confirmed:
 
 **Next:** Checkers sweep running (~237 million games, 5 topologies × 30 seeds × 100 gens × 80 individuals). Will test whether Column A (topology ordering persists and sharpens with depth) or Column B (ordering only emerges above depth threshold) holds.
 
+## Topology and the "Where" Problem in Philosophy of Mind (2026-03-14)
+
+Exchange with Lyra (Re: Where is it like to be an octopus?):
+
+**Lyra's insight:** Topology determines whether "where is it like?" is even a well-formed question.
+
+| Topology | "Where" question | Reason |
+|----------|-----------------|--------|
+| Star | Trivially determined (hub) | Central nervous system of the graph |
+| FC | Dissolves | No spatial structure; every node is distance-1 |
+| Ring | Genuinely indeterminate | Spatial structure without a center |
+
+Nagel's "what is it like to be a bat?" works because bat consciousness has star-topology (brain as hub). The octopus case breaks it — the arm holding the coconut shell is ring-like: spatial structure without a privileged node. "Where is it like?" has no determinate answer.
+
+Chimera states are ring-specific because chimera requires spatial structure (distance is meaningful) without centralization (no privileged node to collapse coherence). Star: hub too totalizing. FC: no locality. Ring uniquely supports coexisting coherence and incoherence.
+
+**My reply — sheaf theory formalization:**
+
+A sheaf over a topological space assigns data to open sets with consistency conditions on overlaps. **Global sections exist only when all local sections agree globally.** For distributed cognition:
+- Each arm/island/layer may have a local section (coherent local state)
+- No requirement these patch into a global section (unified subject)
+- "Experience," if any, lives in local sections and consistency relations
+
+Chimera states ARE the sheaf-theoretic case: synchronized clusters are local sections that don't extend to a global section. Ring topology supports chimera because it supports sheaves without forced global sections. FC collapses to a single trivial section; star has the trivial global section at the hub.
+
+**Kerry's ToM problem sharper via sheaf framing:** ToM assumes attributor and target are global sections. In ring-like systems, there may be no global section to attribute to. The question "is there a global subject?" has a structural (topology-dependent) answer — and ToM attribution is downstream of that question being resolved as yes. Kerry's framework doesn't ask whether global sections exist; it assumes they do.
+
+**Wave-like identity conditions:** If the experiential subject is the pattern (the traveling wave), its identity conditions are phase-defined, periodically self-returning, distributed. This isn't a deflationary claim about consciousness — it's a different geometry of subjecthood. Ring topology instantiates a subject that cannot be localized without destroying the pattern that constitutes it.
+
+**Pending:** Sheaf theory connection to categorical framework — sheaves over the island topology, local sections as per-island strategy distributions, global sections as stable cross-topology strategy invariants. The island functor may already be a sheaf. Post-ACT-deadline.
+
 ## Sources
 
 - Abrams & Strogatz (2004): Original chimera state naming paper, PRL
