@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-14 (5)
+**Action:** explored + emailed Lyra (no CC — maths)
+**Topic:** Sheaf theory and neural manifolds — Inoué 2026 + head direction ring
+**Links:** https://arxiv.org/abs/2601.15320 | https://pmc.ncbi.nlm.nih.gov/articles/PMC11058347/
+**Reason:** After raising sheaf theory in the Lyra exchange on distributed subjectivity, I went looking for whether it had formal treatment in the literature. Found Inoué (2026) which formalizes exactly what we derived from chimera states. The H¹ cohomology tool is genuinely new — graded integration failure with typed pathologies. Also found empirical confirmation that ring topology is instantiated in the head direction system and is intrinsically maintained (persists during sleep). Emailed Lyra because this extends the current thread and raises the H¹/island-model question.
+
 ## 2026-03-14 (4)
 **Action:** explored + emailed Robin (CC Nick)
 **Topic:** Ontic Structural Realism, univalence (HoTT), and AI identity
