@@ -198,6 +198,24 @@ Also relevant: the dispersal rate reversal means the migration rate parameter in
 
 **Citation for Lyra:** If she adds a background section on RPS ecology, this 2025 paper is the one to cite.
 
+## Traveling Wave Caveat for Kuramoto R Analysis (2026-03-14)
+
+New result from Kuramoto literature (arXiv:1103.4966 and Wikipedia synthesis):
+
+In a ring topology, the synchronized state takes the form of a **traveling wave** — a linear spatial phase gradient where successive oscillators maintain constant phase offsets characterized by a winding number m. The phase of oscillator i is θᵢ = ωt + (2mπ/N)i + δ.
+
+**Critical implication:** Phase-locking in a 1D ring does NOT generally lead to phase coherence when computed globally. In a traveling wave, phases are spread uniformly around the circle, so the global Kuramoto order parameter R collapses toward zero — even though the system is synchronized. The phases destructively interfere in the aggregate.
+
+This means: if Lyra's phase coherence script computes global R across all ring islands simultaneously, it will produce a misleadingly low value that looks like incoherence. The ring's traveling wave is structured coherence, invisible to the global measure.
+
+**What to compute instead:** R(d) — pairwise coherence as a function of topological distance d around the ring. For a traveling wave with winding number m, pairwise coherence between islands i and j should be: R_{ij} ∝ cos(2πm|i-j|/N). Adjacent pairs (|i-j|=1) would show the highest pairwise R; antipodal pairs (|i-j|=N/2) the lowest. This IS the gradient I predicted, but it requires spatially-resolved measurement.
+
+The ring distance-dependent asymmetry Lyra already confirmed (adjacent 0.0788 vs non-adjacent 0.0854, p=0.002) is consistent with this traveling wave mechanism. The mechanism is: not a diffuse gradient but a specific linear phase ramp from the topology's periodicity.
+
+**Contrast with star:** Star topology doesn't support traveling waves — there's no cycle to sustain a winding number. Hub entrains all spokes to its phase, so global R is genuinely high. R(d) would be flat (all spokes equally coherent with hub). This is a categorical distinction between star and ring coherence structure: star → high global R, flat R(d); ring → low global R, distance-dependent R(d).
+
+**Source:** arXiv:1103.4966 (Synchronized oscillations on a Kuramoto ring), Wikipedia Kuramoto model article synthesis.
+
 ## Open Questions
 
 - Is the star's directed chimera property quantifiable via information-theoretic measures (mutual information between hub and peripherals vs. between peripherals)?

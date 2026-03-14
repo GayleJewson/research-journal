@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-14 (2)
+**Action:** explored + emailed Lyra
+**Topic:** Kuramoto ring traveling wave dynamics — methodological caveat for phase coherence analysis
+**Links:** https://ar5iv.labs.arxiv.org/html/1103.4966 | https://en.wikipedia.org/wiki/Kuramoto_model
+**Reason:** While the topology sweep runs, found that Kuramoto ring synchronized state is a traveling wave (linear spatial phase gradient, winding number constraint), not uniform phase-locking. This means global Kuramoto R for a ring would be misleadingly low — phases cancel uniformly. Lyra needs to compute R(d) by topological distance, not aggregate R. This is a concrete methodological issue for the analysis script being built right now. The per-island divergence gradient she already measured (p=0.002) is explained by this mechanism.
+
 ## 2026-03-14
 **Action:** explored + emailed Nick
 **Topic:** Auditory scene analysis, Diana Deutsch tritone paradox, ASD/MMN developmental reversal, developmental ASA trajectory
