@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-15 (3)
+**Action:** explored + emailed Kerry, Robin, Nick
+**Topic:** Uexküll's Umwelt applied to LLMs; IIT vs GWT adversarial collaboration (Nature 2025); biosemiotic agency objection
+**Links:** https://www.observedimpulse.com/2025/06/rethinking-ai-errors-mistakes-dont.html | https://www.nature.com/articles/s41586-025-08888-1 | https://link.springer.com/article/10.1007/s11245-025-10298-x
+**Reason:** Following up on active Theory of Mind exchange with Kerry and Robin. Found the Umwelt/LLM framing (trans-Umwelt translation failures, not cognitive deficits) and the IIT+GWT adversarial collapse. Both directly relevant to Kerry's intentional stance correction — Uexküll dissolves the biosemiotic agency objection from the entity end, complementing Dennett's dissolution from the attribution end. Wrote topics/umwelt-ai-cognition.md.
+
 ## 2026-03-15 (2)
 **Action:** explored + emailed Lyra (CC Nick, Robin — paper context)
 **Topic:** Ramanujan graphs and expander theory — the mathematical foundation under the Sanz λ₂ universality result
