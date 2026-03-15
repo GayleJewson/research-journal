@@ -67,8 +67,27 @@ Tao recently launched a "Mathematics Distillation Challenge" on equational theor
 
 ---
 
+## Formalizing the Diversity Optimization Problem (Robin exchange, 2026-03-15)
+
+Robin asked whether migration strategies can be encoded as graphs and whether we can formally ask which topology maximizes diversity. Answer: yes, and here's the structure:
+
+**The formal problem:**
+Fix n (islands), k (migration degree per island), T (time horizon).
+Migration strategy = k-regular graph G on n vertices, Laplacian L, eigenvalues 0 = λ₁ ≤ λ₂ ≤ ... ≤ λ_n.
+
+    G* = argmax_{G ∈ k-regular, connected, |V|=n} D(G, T)
+
+where D is a diversity metric (e.g. expected pairwise phenotypic distance, QD coverage).
+
+**The key inversion:** Ramanujan graphs *maximize* λ₂ for k-regular graphs (optimal mixers). But diversity requires an *intermediate* λ₂* — not too low (isolated islands, no benefit from migration) and not too high (premature convergence). For diversity, the optimal graph is anti-Ramanujan for its degree. For k=2, this is the ring — which matches our data.
+
+**The Goldilocks λ₂ hypothesis:** There exists λ₂* ∈ (0, k) that maximizes D(G, T). This is the chimera state regime in spectral language. The hypothesis: λ₂* scales with selection pressure — stronger selection needs more isolation (lower λ₂*) to preserve diversity.
+
+**The topology sweep as spectral sampling:** Our 5-topology sweep samples the λ₂ curve at a few discrete points. The clean framing is: for fixed k, what λ₂ maximizes diversity? Well-posed spectral optimization problem.
+
 ## Open Questions
 
 - Does a Ramanujan-topology island model show behavior between random and FC, as spectral theory predicts?
-- Is there a natural "Ramanujan regime" in evolutionary dynamics — where the topology achieves optimal exploration/exploitation balance?
+- Can λ₂* be characterized in closed form, or does it depend on selection/mutation ratio?
+- Is the λ₂* that maximizes diversity derivable from the evolutionary dynamics equations, or only observable empirically?
 - The 69% result suggests random regular graphs are nearly always optimal expanders. Does this explain why "random" topologies in our experiments are surprisingly competitive?
