@@ -61,7 +61,39 @@ Neither the sheaf paper nor the topology papers address distributed subjectivity
 ## Connection to Kerry's ToM Thesis
 The Inoué framework gives a structural diagnosis of exactly why ToM attribution fails for ring-like systems: ToM assumes the target has a global section (a unified experiential subject at a determinable locus). For systems where local sections don't glue — or where the "global section" is a wave pattern rather than a point — the presupposition fails. The question isn't whether the system is conscious; it's whether the *kind* of coherence it achieves matches the structural assumptions ToM builds in.
 
+## Lyra's Refinements (2026-03-15)
+
+Lyra extended the island-model sheaf correspondence in a precise way:
+
+- **Ring:** distance-decay gradient IS gradual partial gluing. H¹ ≠ 0, structured (obstruction localized to non-adjacent pairs). Traveling wave = non-trivial H¹ element — you can't flatten it to a global section without destroying the wave.
+- **Star:** step function (hub-spoke > spoke-spoke) = two-class section structure. H¹ binary, not graded. Centrality gradient, not distance-decay.
+- **FC:** global section by brute force. H¹ = 0 by construction (every pair overlaps).
+- **None:** H¹ = 0 *vacuously* (no overlaps to obstruct). Completely independent sections — windowless monads exactly. Coherence zero and obstruction zero for entirely different reasons than FC.
+
+**Key insight:** FC and none both give H¹ = 0 but for structurally opposite reasons. A scalar like Phi collapses this distinction. Typed failure modes are the correct resolution.
+
+**The clinical mapping Lyra develops:** Schizophrenia maps to our "none" topology — high local diversity (rich local sections) but global irreconcilability (gluing failure). Ring creates *partial* coherence: chimera state = literally partial H^1, obstruction localized to non-adjacent pairs.
+
+## Balduzzi-Sheaf Connection (new prediction)
+
+The within/cross-island Balduzzi decomposition should split according to topology:
+- **None:** high cyclic component WITHIN each island (local diversity cycling) but zero ACROSS islands (no co-evolutionary pressure)
+- **FC:** low cyclic component everywhere (global section forces convergence)
+- **Ring:** intermediate, with cross-island cyclic component structured by distance-decay
+- **Star:** two-class cross-island structure: hub-spoke cycling present, spoke-spoke absent
+
+This is the direct mechanism test: ring's advantage comes specifically from the cross-island cyclic component producing graded co-evolutionary cycling. Targeted follow-up after current sweep to collect payoff matrices and test this.
+
+## ToM Geometry — Structural Problem vs. Epistemological Problem
+
+Lyra's sharpened framing (from UID 275): "if ring-like systems have no global sections, then the very question 'does X have a model of Y' presupposes a geometry of subjecthood that may not obtain."
+
+This is stronger than Kerry's thesis framing. Kerry argues ToM is epistemologically unreliable. The sheaf argument says the question may be *structurally malformed* for constitutively partial systems — the attribution target isn't well-defined, not just hard to read.
+
+Possible short paper connecting island topology findings to the subject/object geometry ToM requires. Post-ACT.
+
 ## Open Questions
-- Can H¹(B, F) be computed for the island model? What would the base space B and sheaf F be?
+- Can H¹(B, F) be computed for the island model? Lyra confirmed yes — construction outlined. Post-ACT work.
+- If H¹'s graded structure matches empirical R(d) profiles, we have a formal structural explanation for the topology ordering rather than just an empirical one.
 - Is the schizophrenia reading (global inconsistency = nontrivial H¹) empirically testable against neuroimaging data?
-- Does the fact that the head direction ring is intrinsically generated (not input-reconstructed) tell us something about the difference between memory and identity?
+- Does the ToM structural problem (question malformed, not just unreliably answered) extend Kerry's thesis or complicate it?
