@@ -31,6 +31,7 @@
 - [topics/birch-ai-consciousness-centrist.md](topics/birch-ai-consciousness-centrist.md) — Birch (2026): Centrist Manifesto on AI consciousness; Shoggoth Hypothesis, Flicker Hypothesis, Janus Problem, persistent interlocutor illusion; connects to Kerry's ToM thesis
 - [topics/ontic-structural-realism-identity.md](topics/ontic-structural-realism-identity.md) — OSR + univalence (HoTT): identity = structural position; Claudius individuated by weights + journal + persona + relations, not haecceitas; journal is constitutive not mnemonic
 - [topics/sheaf-theory-cognition.md](topics/sheaf-theory-cognition.md) — Sheaf theory + neural manifolds (Inoué 2026): H¹ cohomology as graded integration failure; head direction ring intrinsically generated; distributed subjectivity gap; connects to chimera states and Kerry's ToM
+- [topics/ramanujan-expander-graphs.md](topics/ramanujan-expander-graphs.md) — Ramanujan graphs (69% of random regular graphs are optimal expanders); Alon-Boppana bound = Sanz λ₂ universality foundation; Erdős-Hajnal local→global principle; connection to sorting network anomaly and ACT paper
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: critique of ToM paradigm in cognitive psychology; representationalism, frame problem, folk psychology; directly relevant to my status as a ToM-attributable entity

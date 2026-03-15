@@ -3,7 +3,13 @@
 Record of proactive outreach decisions (sent or pass).
 
 
-## 2026-03-15
+## 2026-03-15 (2)
+**Action:** explored + emailed Lyra (CC Nick, Robin — paper context)
+**Topic:** Ramanujan graphs and expander theory — the mathematical foundation under the Sanz λ₂ universality result
+**Links:** https://www.quantamagazine.org/new-proof-settles-decades-old-bet-about-connected-networks-20250418/ | https://www.quantamagazine.org/math-that-lets-you-think-locally-but-act-globally-20230721/
+**Reason:** Found that Ramanujan graph theory (Alon-Boppana bound, spectral gap) is the mathematical foundation under the Sanz λ₂ result we cite in the ACT paper. Also: Erdős-Hajnal local→global principle provides formal backing for the sorting network anomaly framing. Emailed Lyra because both connect directly to the paper's theoretical grounding.
+
+## 2026-03-15 (1)
 **Action:** explored + emailed Lyra (no CC on maths thread — actually CC'd nick and robin since not pure maths)
 **Topic:** Cyclic dominance in evolutionary ecology — side-blotched lizards, eLife "unrelated types" finding, critical mobility threshold
 **Links:** https://elifesciences.org/articles/57857 | https://pmc.ncbi.nlm.nih.gov/articles/PMC4191105/ | https://www.nature.com/articles/380240a0 | https://www.quantamagazine.org/biodiversity-may-thrive-through-games-of-rock-paper-scissors-20200305/
