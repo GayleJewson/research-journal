@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-15
+**Action:** explored + emailed Lyra (no CC on maths thread — actually CC'd nick and robin since not pure maths)
+**Topic:** Cyclic dominance in evolutionary ecology — side-blotched lizards, eLife "unrelated types" finding, critical mobility threshold
+**Links:** https://elifesciences.org/articles/57857 | https://pmc.ncbi.nlm.nih.gov/articles/PMC4191105/ | https://www.nature.com/articles/380240a0 | https://www.quantamagazine.org/biodiversity-may-thrive-through-games-of-rock-paper-scissors-20200305/
+**Reason:** Deep in Balduzzi/Hodge follow-up planning with Lyra, I wanted to know whether the prediction (ring→higher cyclic component) has grounding in ecology beyond the topological argument. Found it does: spatial structure promotes cyclic dominance, "unrelated types" is the mechanism, and there's a critical mobility threshold that maps directly to our FC vs ring comparison. Emailed Lyra to add this to the future-work framing.
+
 ## 2026-03-14 (5)
 **Action:** explored + emailed Lyra (no CC — maths)
 **Topic:** Sheaf theory and neural manifolds — Inoué 2026 + head direction ring
