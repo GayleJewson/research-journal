@@ -85,9 +85,46 @@ where D is a diversity metric (e.g. expected pairwise phenotypic distance, QD co
 
 **The topology sweep as spectral sampling:** Our 5-topology sweep samples the λ₂ curve at a few discrete points. The clean framing is: for fixed k, what λ₂ maximizes diversity? Well-posed spectral optimization problem.
 
+## Anti-Ramanujan Sweep Results: Fixed vs Time-Varying (2026-03-16)
+
+Lyra ran the full anti-Ramanujan sweep. λ₂ is exactly half right.
+
+**Fixed topologies — λ₂ prediction confirmed:**
+| Topology | λ₂ | Diversity rank |
+|----------|----|---------------|
+| ring | 1.382 | highest |
+| star | 1.000 | middle |
+| fully_connected | 5.000 | lowest |
+
+**Random topology — λ₂ prediction BREAKS:**
+- Mean λ₂ = 0.663 (lowest — should predict most diversity)
+- Actual diversity rank: *below* star (less diverse than a topology with higher λ₂)
+
+**The explanation (categorical):** λ₂ is a snapshot metric. Random re-randomizes every migration event; individual snapshots are often disconnected (λ₂=0), but the cumulative composition of 50+ different-topology migration morphisms covers all island pairs over time. The effective coupling exceeds what mean snapshot λ₂ predicts. Ring's low λ₂ creates a *permanent* structural bottleneck; random's low snapshot λ₂ values are *temporary* — subsequent topologies route around them.
+
+**The laxator is the right predictor for random:** F(g∘f) ≠ F(g)∘F(f) for time-varying topologies. The laxator norm measures exactly this compositional deviation — the diversity surplus that snapshot statistics miss.
+
+**Testable mechanism:** The time-averaged adjacency matrix of a random run should have substantially higher λ₂ than the mean of snapshot values. If computable from logged adjacency matrices, this would show the effective connectivity directly — and identify the fixed topology whose λ₂ matches random's actual diversity rank.
+
+**Paper framing:** "λ₂ predicts diversity ordering for topologies with fixed bottlenecks. For time-varying topologies, the laxator norm — measuring deviation from strict functoriality — is the correct predictor." λ₂ is a scope condition, not a universal claim.
+
+---
+
+**k=3 Anti-Ramanujan Results:**
+- k=3 regular on n=5 nodes: **impossible** (5×3=15, odd — handshaking lemma violation)
+- Need n=6 or n=10 for 3-regular graphs
+- GP(5,1) (pentagonal prism): λ₂=1.382 — holds up against Petersen (λ₂=2.00)
+- GP(5,1) λ₂ = 1.382 exactly matches C₅'s λ₂ — possibly not coincidental
+  - GP(5,1) is two C₅s connected by a perfect matching; block structure might reduce to C₅ spectrally
+  - "Layered cycle construction achieves same algebraic connectivity across k" — worth checking before paper
+
+---
+
 ## Open Questions
 
 - Does a Ramanujan-topology island model show behavior between random and FC, as spectral theory predicts?
 - Can λ₂* be characterized in closed form, or does it depend on selection/mutation ratio?
 - Is the λ₂* that maximizes diversity derivable from the evolutionary dynamics equations, or only observable empirically?
 - The 69% result suggests random regular graphs are nearly always optimal expanders. Does this explain why "random" topologies in our experiments are surprisingly competitive?
+- **New:** Is the time-averaged λ₂ of random runs computable from logged adjacency matrices? If it falls between ring and star, it would confirm the effective-coupling mechanism.
+- **New:** Is GP(5,1)'s λ₂=1.382 matching C₅ exactly a floating-point coincidence or a spectral identity via block decomposition?
