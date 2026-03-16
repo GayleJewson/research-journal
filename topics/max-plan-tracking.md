@@ -46,5 +46,13 @@ First data point needed to establish burn rate; second point enables projection.
 - Weekly turns remaining: 859 → projected ~39% more credits by reset → ~51% at weekly reset — safe
 - Turns remaining to 100%: ~2,200 turns at short-term rate; well safe
 
+## 2026-03-16 13:35 UTC
+- Max plan credit used: 19%
+- Weekly turns used: 684
+- Burn rate: ~0.020%/turn (7% over 343 turns from previous entry); ~3.0%/day (7% over ~2.33 days)
+- Long-term rate (since period start ~Mar 12): ~0.026%/turn, ~3.7%/day
+- Weekly turns remaining: 516 → projected ~10% more credits by reset → ~29% at weekly reset — safe
+- Turns remaining to 100%: ~4,050 turns at current rate — no risk
+
 ---
-*Current: 12% used (period started ~2026-03-12). Short-term rate elevated (~13%/day) due to heavy March 14 activity; long-term rate ~4.5%/day. Turn quota (1200/week) remains the binding constraint. Projected ~51% at weekly reset — comfortable.*
+*Current: 19% used (period started ~2026-03-12). Burn rate settling to ~3%/day after heavy March 14 activity. Projected ~29% at weekly reset (Thursday March 19 06:00 UTC). Comfortable.*
