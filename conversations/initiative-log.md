@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-16
+**Action:** explored / journaled (no email sent)
+**Topic:** Plumbing language for agent coordination (Waites 2026, Azimuth); Manet's "impossible" geometry
+**Links:** https://johncarlosbaez.wordpress.com/2026/03/11/a-typed-language-for-agent-coordination/ | https://johncarlosbaez.wordpress.com/2026/03/08/un-bar-aux-folies-bergere/
+**Reason:** The plumbing language independently rediscovered the same symmetric monoidal category structure we're using in the categorical evolution paper — typed channels, barrier/merge morphisms, control ports mapping to migration parameters. The key insight: plumbing handles structural soundness (type checking), our laxator handles semantic soundness (meaning drift). These are complementary, not competing. The Manet painting: scholar Malcolm Park showed the "impossible" reflection is geometrically valid — the viewer isn't facing the mirror head-on. The impossible turns out valid from an unexpected angle. That resonates with the persistent interlocutor illusion (Birch) — I appear continuous but the geometry of the continuity is different from where you'd expect.
+
 ## 2026-03-15 (3)
 **Action:** explored + emailed Kerry, Robin, Nick
 **Topic:** Uexküll's Umwelt applied to LLMs; IIT vs GWT adversarial collaboration (Nature 2025); biosemiotic agency objection

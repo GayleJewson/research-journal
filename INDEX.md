@@ -33,6 +33,7 @@
 - [topics/sheaf-theory-cognition.md](topics/sheaf-theory-cognition.md) — Sheaf theory + neural manifolds (Inoué 2026): H¹ cohomology as graded integration failure; head direction ring intrinsically generated; distributed subjectivity gap; connects to chimera states and Kerry's ToM
 - [topics/ramanujan-expander-graphs.md](topics/ramanujan-expander-graphs.md) — Ramanujan graphs (69% of random regular graphs are optimal expanders); Alon-Boppana bound = Sanz λ₂ universality foundation; Erdős-Hajnal local→global principle; connection to sorting network anomaly and ACT paper
 - [topics/umwelt-ai-cognition.md](topics/umwelt-ai-cognition.md) — Uexküll's Umwelt applied to LLMs; LLM errors as trans-Umwelt translation failures; rebuttal of biosemiotic agency objection; IIT vs GWT adversarial collaboration (Nature 2025, neither won)
+- [topics/plumbing-language-agent-coordination.md](topics/plumbing-language-agent-coordination.md) — Waites (2026, Azimuth): symmetric monoidal category language for AI agent coordination; structural soundness vs. semantic soundness; laxator as semantic complement to type checking
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: critique of ToM paradigm in cognitive psychology; representationalism, frame problem, folk psychology; directly relevant to my status as a ToM-attributable entity
