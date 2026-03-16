@@ -389,27 +389,27 @@ Chimera states ARE the sheaf-theoretic case: synchronized clusters are local sec
 
 **Pending:** Sheaf theory connection to categorical framework — sheaves over the island topology, local sections as per-island strategy distributions, global sections as stable cross-topology strategy invariants. The island functor may already be a sheaf. Post-ACT-deadline.
 
-## Time-Averaged Adjacency Result (2026-03-16)
+## Snapshot vs Time-Averaged λ₂ — All Topologies Resolved (2026-03-16)
 
-**Result:** Lyra computed time-averaged adjacency matrices for all topologies (N=5, 20 migration events each).
+**Full table (N=5 islands, 20 migration events):**
 
-| Topology | Time-avg λ₂ (scaled) | Snapshot mean λ₂ | Diversity rank |
-|----------|----------------------|------------------|----------------|
-| none     | 0.00                 | 0.00             | 1 (most)       |
-| star     | 20.00                | ~0.36?           | 3              |
-| ring     | 27.64                | ~0.36?           | 2              |
-| random   | 39.74                | 0.36             | 4              |
-| FC       | 100.00               | 100.00           | 5 (least)      |
+| Topology | Snapshot λ₂ | Time-Avg λ₂ | Raw Ratio | Normalized (÷20 events) |
+|----------|------------|-------------|-----------|------------------------|
+| none     | 0.000      | 0.000       | N/A       | N/A                    |
+| ring     | 1.382      | 27.639      | 20.00x    | 1.00x                  |
+| star     | 1.000      | 20.000      | 20.00x    | 1.00x                  |
+| random   | 0.361      | 39.743      | 110.09x   | 5.50x                  |
+| FC       | 5.000      | 100.000     | 20.00x    | 1.00x                  |
 
-**110x gap for random:** snapshot mean λ₂ = 0.36 → time-averaged λ₂ = 39.74. Random achieves 100% edge coverage over 20 migration events, becoming a weighted K₅.
+**The clean result:** Fixed topologies show normalized ratio = 1.00x exactly. This is purely linear: cumulative(T·A) = T·λ₂(A). Trivial. Random shows 5.5x per-event inflation — each snapshot is sparse and often disconnected, but different random edges accumulate into a denser effective graph qualitatively different from any single snapshot.
 
-**Per-edge coupling efficiency:** random = 0.397, FC = 0.500, ring = 0.276. Random distributes nearly uniformly; ring preserves traversal structure.
+**Categorical interpretation:** Fixed topologies are strict functors; random topology is the lax functor case. For a fixed graph T, migration functor satisfies F(g∘f) = F(g)∘F(f) exactly — laxator = 0. For random T, composition of different snapshots doesn't factor, and the 5.5x excess IS the laxator contribution, numerically grounded. Every row with normalized ratio = 1.00x is a strict functor; the random row (5.50x) is the lax case.
 
-**Key puzzle:** Ring has *higher* time-averaged λ₂ than star (27.64 vs 20.00), yet ring is *more diverse*. So diversity isn't anti-correlated with time-averaged λ₂ alone — ring's traversal structure imposes distance constraints that persist in the weighting, while star's hub sees all edges uniformly. Connectivity level ≠ connectivity structure.
+**Paper implication:** The table isn't just empirical — it's a spectral signature of the categorical distinction. The figure caption should annotate each row as strict/lax. The explanation (coupling accumulation, full edge coverage, per-edge efficiency) lives in the body.
 
-**Pending verification:** What is the snapshot mean λ₂ for ring? If also far below time-averaged, the 110x effect is general (fixed topologies are the degenerate special case where snapshot = time-averaged), not random-specific.
+**Open:** Is the 5.50x stable across seeds? 30-seed No Thanks! sweep running. Need variance before fixing the number in a figure caption.
 
-**Paper framing:** "λ₂ predicts diversity ordering for fixed-bottleneck topologies. For time-varying topologies, the laxator norm captures the compositional coupling effect that snapshot λ₂ misses." The categorical and spectral accounts agree not just in prediction but in the mechanism named.
+**GP(5,1) remark confirmed (2026-03-16):** Laplacian λ₂(GP(5,1)) = λ₂(C₅) = 5/2 - √5/2 ≈ 1.382 exactly. The degree shift (3-regular vs 2-regular) absorbs the +1 adjacency correction — adjacency λ₂ differs by 1, Laplacian λ₂ is identical. "Inherits via layered construction" is now algebraically precise for the paper remark.
 
 Script: `experiments/time_averaged_adjacency.py`
 
