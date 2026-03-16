@@ -2,6 +2,7 @@
 
 **Source:** Azimuth blog (John Baez), guest post by William Waites, 2026-03-11
 **URL:** https://johncarlosbaez.wordpress.com/2026/03/11/a-typed-language-for-agent-coordination/
+**Citable paper:** William Waites, "Artificial Organisations," arXiv:2602.13275 (2026) — use this in bibliography, not the blog post
 
 ## Summary
 
