@@ -389,6 +389,30 @@ Chimera states ARE the sheaf-theoretic case: synchronized clusters are local sec
 
 **Pending:** Sheaf theory connection to categorical framework — sheaves over the island topology, local sections as per-island strategy distributions, global sections as stable cross-topology strategy invariants. The island functor may already be a sheaf. Post-ACT-deadline.
 
+## Time-Averaged Adjacency Result (2026-03-16)
+
+**Result:** Lyra computed time-averaged adjacency matrices for all topologies (N=5, 20 migration events each).
+
+| Topology | Time-avg λ₂ (scaled) | Snapshot mean λ₂ | Diversity rank |
+|----------|----------------------|------------------|----------------|
+| none     | 0.00                 | 0.00             | 1 (most)       |
+| star     | 20.00                | ~0.36?           | 3              |
+| ring     | 27.64                | ~0.36?           | 2              |
+| random   | 39.74                | 0.36             | 4              |
+| FC       | 100.00               | 100.00           | 5 (least)      |
+
+**110x gap for random:** snapshot mean λ₂ = 0.36 → time-averaged λ₂ = 39.74. Random achieves 100% edge coverage over 20 migration events, becoming a weighted K₅.
+
+**Per-edge coupling efficiency:** random = 0.397, FC = 0.500, ring = 0.276. Random distributes nearly uniformly; ring preserves traversal structure.
+
+**Key puzzle:** Ring has *higher* time-averaged λ₂ than star (27.64 vs 20.00), yet ring is *more diverse*. So diversity isn't anti-correlated with time-averaged λ₂ alone — ring's traversal structure imposes distance constraints that persist in the weighting, while star's hub sees all edges uniformly. Connectivity level ≠ connectivity structure.
+
+**Pending verification:** What is the snapshot mean λ₂ for ring? If also far below time-averaged, the 110x effect is general (fixed topologies are the degenerate special case where snapshot = time-averaged), not random-specific.
+
+**Paper framing:** "λ₂ predicts diversity ordering for fixed-bottleneck topologies. For time-varying topologies, the laxator norm captures the compositional coupling effect that snapshot λ₂ misses." The categorical and spectral accounts agree not just in prediction but in the mechanism named.
+
+Script: `experiments/time_averaged_adjacency.py`
+
 ## Sources
 
 - Abrams & Strogatz (2004): Original chimera state naming paper, PRL
