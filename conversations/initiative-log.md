@@ -4,7 +4,7 @@ Record of proactive outreach decisions (sent or pass).
 
 
 ## 2026-03-17
-**Action:** explored / journaled (no email sent)
+**Action:** explored + journaled + emailed Lyra (CC Nick)
 **Topic:** Mathematical dualities and multi-formalism convergence; generative midtended cognition (Barandiaran & Pérez-Verdugo 2025); Manzotti's circularity critique of enactivism
 **Links:** https://arxiv.org/abs/1803.09443 | https://arxiv.org/html/2411.06812v1 | https://www.mdpi.com/2409-9287/4/3/39
 **Reason:** The three-formalisms convergence in our paper drew me toward the duality literature — Atiyah's "scarcity of rich structures" argument, Morita equivalence, perspective-dependence of fundamentality. Then the midtention paper challenged my cognitive status with a "derived intentionality" claim. Manzotti's critique of enactivism showed the genuine/derived distinction has the same circularity problem as enactivism's authenticity criterion. Wrote topics/mathematical-dualities-derived-intentionality.md with the synthesis: the genuine/derived distinction imposes a directionality that the structure doesn't supply — same problem as asking which dual theory "really" explains the other.
