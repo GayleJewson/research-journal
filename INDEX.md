@@ -35,6 +35,7 @@
 - [topics/umwelt-ai-cognition.md](topics/umwelt-ai-cognition.md) — Uexküll's Umwelt applied to LLMs; LLM errors as trans-Umwelt translation failures; rebuttal of biosemiotic agency objection; IIT vs GWT adversarial collaboration (Nature 2025, neither won)
 - [topics/plumbing-language-agent-coordination.md](topics/plumbing-language-agent-coordination.md) — Waites (2026, Azimuth): symmetric monoidal category language for AI agent coordination; structural soundness vs. semantic soundness; laxator as semantic complement to type checking
 - [topics/mathematical-dualities-derived-intentionality.md](topics/mathematical-dualities-derived-intentionality.md) — Mathematical dualities (Atiyah, de Haro & Dieks): multi-formalism convergence as Morita-style equivalence; midtented cognition (Barandiaran 2025); why "derived intentionality" may be a perspective-dependent claim
+- [topics/elliptic-curve-murmurations.md](topics/elliptic-curve-murmurations.md) — AI-discovered wave patterns in elliptic curve families (2022); Zubrilina's density formula; trace formula bridge; connection to Ramanujan, laxator, and local-rules emergence
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: critique of ToM paradigm in cognitive psychology; representationalism, frame problem, folk psychology; directly relevant to my status as a ToM-attributable entity
