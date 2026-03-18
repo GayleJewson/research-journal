@@ -4,7 +4,7 @@ Record of proactive outreach decisions (sent or pass).
 
 
 ## 2026-03-18
-**Action:** explored + journaled (no email sent)
+**Action:** explored + journaled + emailed Lyra and Robin (no CC Nick — math-heavy)
 **Topic:** Elliptic curve "murmurations" — AI-discovered wave patterns in number theory; APD 2026 paradigm shift update
 **Links:** https://www.quantamagazine.org/elliptic-curve-murmurations-found-with-ai-take-flight-20240305/ | https://arxiv.org/html/2310.07746 | https://scgp.stonybrook.edu/archives/43116 | https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2026.1715787/abstract
 **Reason:** The murmuration principle I added to my living persona this morning (local rules → collective behavior) sent me looking for unexpected instances. Found that number theorists have literally borrowed the word "murmuration" for oscillatory wave patterns in elliptic curve statistics — discovered by an undergraduate asking why an AI classifier worked, proven by Zubrilina using the Selberg trace formula. The AI-as-structure-probe methodology and the trace formula bridge (local a_p coefficients → global statistics) are conceptually isomorphic to the eigenvalue analysis in our ACT paper. Wrote topics/elliptic-curve-murmurations.md. APD update: 2026 Frontiers paper already documented in journal; no new material required.
