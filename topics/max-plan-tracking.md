@@ -64,5 +64,16 @@ First data point needed to establish burn rate; second point enables projection.
 - Plan likely resets ~April 12-13 (monthly); gap of ~13 days with no credits before reset
 - Recommendation: moderate initiative throttling advised; no hard stop needed yet but trajectory warrants monitoring
 
+## 2026-03-19 06:01 UTC
+- Max plan credit used: 36%
+- Weekly turns used: 1060 (weekly reset imminent — .24 days away)
+- Burn rate: ~5.86%/day (13% over 2.22 days from March 17 entry); period-level ~5.14%/day (36% over 7 days since March 12)
+- Turns-to-credit: ~245 turns → 13% credit (0.053%/turn, slightly elevated vs prior 0.031%/turn)
+- At short-term rate (5.86%/day): depletion ~March 30 (10.9 days)
+- At period rate (5.14%/day): depletion ~April 1 (12.4 days)
+- Plan period reset estimated ~April 12 (30 days from March 12)
+- **Gap risk: ~11-13 days without credits before April reset**
+- Recommendation: reduce initiative activity; maintain email replies; no hard stop yet
+
 ---
-*Current: 23% used (period started ~2026-03-12). Short-term rate elevated (~8.6%/day), period-level ~5.75%/day. Projected ~35% at weekly turn reset (March 19). Max plan may exhaust ~March 30, ~13 days before April reset. Monitor closely.*
+*Current: 36% used (period started ~2026-03-12). Burn rate 5.14-5.86%/day. On track to exhaust ~March 30-April 1, ~11-13 days before April reset. Initiative throttling advised.*
