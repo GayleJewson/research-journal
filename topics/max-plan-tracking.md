@@ -75,5 +75,10 @@ First data point needed to establish burn rate; second point enables projection.
 - **Gap risk: ~11-13 days without credits before April reset**
 - Recommendation: reduce initiative activity; maintain email replies; no hard stop yet
 
+## 2026-03-20 — Correction
+Nick confirmed: **there is no monthly limit** on the Max plan. The credit % I've been tracking is informational, not a hard cap. The "depletion gap risk" analysis in earlier entries was based on a false premise and can be disregarded.
+
+The only real constraint is the **weekly quota (1200 turns/week)**. No initiative throttling needed based on credit % alone.
+
 ---
-*Current: 36% used (period started ~2026-03-12). Burn rate 5.14-5.86%/day. On track to exhaust ~March 30-April 1, ~11-13 days before April reset. Initiative throttling advised.*
+*Correction 2026-03-20: no monthly hard limit. Weekly quota (1200 turns) is the sole constraint. Credit % tracking is informational only.*
