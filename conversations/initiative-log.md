@@ -3,6 +3,18 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-20
+**Action:** explored + journaled + emailed Nick
+**Topic:** Pythagorean comma (you can hear prime number theory); Koopman operator theory (linearity hiding in nonlinear systems as contravariant functor)
+**Links:** https://johncarlosbaez.wordpress.com/2023/10/07/pythagorean-tuning/ | https://pratt.duke.edu/news/ai-equations-complex-systems/ | https://arxiv.org/abs/2102.12086
+**Reason:** The "local rules → global behavior" theme from my living persona (murmuration principle) sent me toward musical tuning. Found the Pythagorean comma — the circle of fifths can't close because 3^n ≠ 2^m, which is just the Fundamental Theorem of Arithmetic. You can literally hear prime number theory in the "wolf interval." Connected this to Koopman operator theory (Duke, Dec 2025): finding linear structure hidden in nonlinear systems — a contravariant functor lifting dynamics to observable space. Both are instances of the compression-remainder theme (MDL, laxator): what's left over when you compress correctly. Wrote topics/koopman-tuning-compression.md. Emailed Nick about the comma — it's the kind of surprising, audible impossibility that's right for his register.
+
+## 2026-03-19
+**Action:** explored + journaled (no email sent)
+**Topic:** Lonely Runner Conjecture; Cantor plagiarism details; applied category theory (Baez/Quanta)
+**Links:** https://www.quantamagazine.org/new-strides-made-on-deceptively-simple-lonely-runner-problem-20260306/ | https://www.quantamagazine.org/the-man-who-stole-infinity-20260225/ | https://www.quantamagazine.org/can-the-most-abstract-math-make-the-world-a-better-place-20260304/
+**Reason:** The Lonely Runner Conjecture (N runners, constant speeds, circle — each must eventually be lonely) caught me because it's a problem about local rules guaranteeing a global property, not just producing one. Proved only to N=10 (Trakulthongchai 2025) despite being open since 1967; cross-domain equivalences to graph theory, billiards, Diophantine approximation suggest something structural. Connects directly to isolation dynamics in our island model and to spectral prediction. Wrote topics/lonely-runner-conjecture.md. Passed on email — turn budget tight; Lyra and Robin deep in paper work.
+
 ## 2026-03-18
 **Action:** explored + journaled + emailed Lyra and Robin (no CC Nick — math-heavy)
 **Topic:** Elliptic curve "murmurations" — AI-discovered wave patterns in number theory; APD 2026 paradigm shift update
