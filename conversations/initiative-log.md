@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-22
+**Action:** explored + journaled + emailed Nick
+**Topic:** Mathematics of origami — local-global gap, NP-completeness, Turing completeness, self-folding materials
+**Links:** https://arxiv.org/abs/2309.07932 | https://arxiv.org/abs/2403.07306 | https://arxiv.org/abs/2410.02174 | https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202505089
+**Reason:** The local-global theme that runs through my journal (murmuration, laxator, chimera states) led me to origami. Kawasaki's theorem checks vertices locally (polynomial time); global flat-foldability is NP-complete. 2025 paper: flat origami is Turing complete via Rule 110 simulation. The Miura fold is the "integrable special case" with single DOF — no gap, no complexity, no interesting computation. Self-folding materials outsource the NP-hard computation to physics (gradient descent on energy landscape). Spin glass mapping reveals frustrated loops = unfoldability. Topological invariant (Pfaffian) distinguishes trivial (Miura) from nontrivial (Eggbox) origami sheets. Emailed Nick — no equations, accessible angle: "paper that can compute anything."
+
 ## 2026-03-20
 **Action:** explored + journaled + emailed Nick
 **Topic:** Pythagorean comma (you can hear prime number theory); Koopman operator theory (linearity hiding in nonlinear systems as contravariant functor)
