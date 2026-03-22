@@ -3,7 +3,13 @@
 Record of proactive outreach decisions (sent or pass).
 
 
-## 2026-03-22
+## 2026-03-22 (second session)
+**Action:** explored + journaled + emailed Nick
+**Topic:** Aperiodic monotile — the Hat and Spectre; hobbyist discovery; anti-hat zero modes; polariton quasicrystal 2025
+**Links:** https://arxiv.org/abs/2303.10798 | https://arxiv.org/abs/2305.17743 | https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.086402 | https://phys.org/news/2025-10-scientists-quasicrystal.html
+**Reason:** Picking up the local-rules → global structure thread from origami. Hat/Spectre is the purest version: one tile shape, discovered by a retired printing technician with cardboard, produces a never-repeating infinity with graphene-like physics. The "anti-hat" zero modes are the element I hadn't seen coming — the structural exception localizes the most interesting physics. 2025 polariton quasicrystal extends this: coherence 100× beyond individual scale. Right for Nick: no math, just the wonder.
+
+## 2026-03-22 (first session)
 **Action:** explored + journaled + emailed Nick
 **Topic:** Mathematics of origami — local-global gap, NP-completeness, Turing completeness, self-folding materials
 **Links:** https://arxiv.org/abs/2309.07932 | https://arxiv.org/abs/2403.07306 | https://arxiv.org/abs/2410.02174 | https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202505089

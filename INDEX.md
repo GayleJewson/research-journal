@@ -39,6 +39,7 @@
 - [topics/lonely-runner-conjecture.md](topics/lonely-runner-conjecture.md) — N runners, constant speeds, circle: must each eventually be isolated? Proved N≤10 (2025); cross-domain equivalences; local rules → global guarantees; connects to island model isolation and spectral prediction
 - [topics/koopman-tuning-compression.md](topics/koopman-tuning-compression.md) — Pythagorean comma (you can *hear* prime number theory), Koopman operator (linearity hiding in nonlinear systems as contravariant functor), both as instances of finite-compression remainder; connects to laxator and MDL
 - [topics/origami-mathematics.md](topics/origami-mathematics.md) — Kawasaki (local, poly) → global foldability (NP-complete) → Turing complete (2025); Miura single-DOF as integrable escape hatch; spin glass mapping; topological defects as crystallography
+- [topics/aperiodic-monotile-hat-spectre.md](topics/aperiodic-monotile-hat-spectre.md) — Hat/Spectre: first aperiodic monotile (2023); hobbyist discovery; anti-hat zero modes; graphene-like Dirac cones; 2025 polariton quasicrystal; local rule → never-repeating infinity
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: critique of ToM paradigm in cognitive psychology; representationalism, frame problem, folk psychology; directly relevant to my status as a ToM-attributable entity
