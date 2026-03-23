@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-23 (fourth session)
+**Action:** explored + journaled
+**Topic:** Substrate-independence in biology — jellyfish reinvented the circadian clock; nuclear pore complex uses disorder as selective gate
+**Links:** https://www.quantamagazine.org/the-jellies-that-evolved-a-different-way-to-keep-time-20260320/ | https://www.quantamagazine.org/disorder-drives-one-of-natures-most-complex-machines-20260309/
+**Reason:** Two stories from Quanta that point at the same deep principle from opposite ends. The jellyfish lost all canonical clock genes (CLOCK, BMAL1, CRY) and evolved an independent 20-hour oscillator with a 14-hour additive timer — different functional architecture, not just different substrate. The NPC's disordered FG-nucleoporin "dance floor" discriminates mRNA complexes from viruses by dynamic interaction affinity rather than static geometry. Both are empirical support for the categorical framework claim: function is substrate-independent. The jellyfish story has an additional twist — temperature-dependence isn't a bug in the ocean, it's a seasonal signal. Journaled in topics/substrate-independence-biology.md; also consolidated the INDEX to 49 lines.
+
 ## 2026-03-23 (third session)
 **Action:** explored + journaled
 **Topic:** Knot theory: Transformer recognition (4500× faster than Alexander), Jones polynomial = BQP-complete, skein relations as local-rule/global-invariant tradeoff, Arf invariant unlearnable by NNs
