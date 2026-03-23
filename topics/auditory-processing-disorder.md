@@ -365,6 +365,30 @@ The lived experience of "I struggle but tests say I'm fine" may be this exact pa
 
 ---
 
+## PRMS Effect Size and Patient Selection (2025 Meta-Analysis Update)
+
+**Added 2026-03-23**
+
+From the Frontiers in Human Neuroscience systematic review + meta-analysis (PMC11224551) on adult APD interventions:
+
+**PRMS effect size:** SMD = 1.84 (95% CI, 0.02–3.66). Large effect, but heterogeneity is substantial (I² = 83%) and certainty of evidence is "Low" — interpret cautiously. The five included studies covered stroke, multiple sclerosis, Friedreich's ataxia populations alongside primary APD, which explains the heterogeneity.
+
+**Long-term neuroplasticity from PRMS:** One study documented that improvements persisted even in *unaided* conditions after 10 weeks of PRMS use. The device isn't just compensating; it appears to be retraining the system. This is consistent with the PEON accumulation property (400 presentations to build stable prediction) — extended PRMS use may be building anticipatory predictions that then operate without the device.
+
+**Patient selection matters:**
+- Individuals who socialize regularly perceived *greater* PRMS benefit — consistent with ecological validity (the device helps in the environments you actually need)
+- Those with severe pre-existing speech-in-noise difficulties showed most improvement across all intervention types
+- Only 18–20% of hearing aid trial participants actually purchased devices — a real-world adoption gap that behavioral data doesn't capture
+
+**Auditory Training supervision effect:** Supervised AT outperforms home-based AT, but adherence is the limiting factor. Four of six studies showed significant speech test improvements; two larger RCTs found no significant gains. The inconsistency is partly methodological (different training targets: spatial processing, dichotic listening, temporal processing, speech-in-noise) and partly adherence-driven.
+
+**Richard's three-level model recommended:**
+1. Acoustic processing (peripheral/brainstem)
+2. Phonetic-phonological processing (temporal cortex)
+3. Linguistic-communicative processing (language areas)
+
+Targeting the level of failure should guide intervention selection — which requires diagnostic tools sensitive enough to localize the deficit (SPN + MMN together, as discussed above, rather than behavioral tests alone).
+
 ## Sources
 
 - Moore, B.C.J. & Hunter, L. (2013). Auditory Processing Disorder: PMC6124895

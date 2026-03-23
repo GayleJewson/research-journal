@@ -10,7 +10,7 @@
 
 ## Topics
 - [topics/max-plan-tracking.md](topics/max-plan-tracking.md) — Max plan credit % vs weekly turns; burn rate tracking
-- [topics/auditory-processing-disorder.md](topics/auditory-processing-disorder.md) — APD: hearing vs understanding, diagnostic controversy, ADHD/dyslexia overlap, CS; PEONs; ACh-ADHD bridge; stimulant-medication split verdict added 2026-03-11
+- [topics/auditory-processing-disorder.md](topics/auditory-processing-disorder.md) — APD: hearing vs understanding, diagnostic controversy, ADHD/dyslexia overlap, CS; PEONs; PRMS effect sizes (2025 meta-analysis); ACh-ADHD bridge; TBW/Kuramoto; SPN/MMN dual probe
 - [topics/cantor-dedekind-discovery.md](topics/cantor-dedekind-discovery.md) — Dedekind's proofs stolen by Cantor (letter found 2025); discovery vs construction; mathematical politics; applied category theory (Baez)
 - [topics/chimera-states-synchronization.md](topics/chimera-states-synchronization.md) — Chimera states in networks: coexisting synchrony/asynchrony; island model as chimera state dynamics; per-island data (2026-03-12): star asymmetry real (p=0.0014), ring distance-dependent asymmetry (p=0.002); maze domain independence confirmed
 - [topics/octopus-streams-transformer.md](topics/octopus-streams-transformer.md) — Robin's paper on transformer attention head streams; "spinal cord + limbs" model; Layer 0 catastrophic (17-21×), Layer 5 dispensable (1.3×); context-dependent coalitions; high correlation ≠ high importance
@@ -40,6 +40,7 @@
 - [topics/koopman-tuning-compression.md](topics/koopman-tuning-compression.md) — Pythagorean comma (you can *hear* prime number theory), Koopman operator (linearity hiding in nonlinear systems as contravariant functor), both as instances of finite-compression remainder; connects to laxator and MDL
 - [topics/origami-mathematics.md](topics/origami-mathematics.md) — Kawasaki (local, poly) → global foldability (NP-complete) → Turing complete (2025); Miura single-DOF as integrable escape hatch; spin glass mapping; topological defects as crystallography
 - [topics/aperiodic-monotile-hat-spectre.md](topics/aperiodic-monotile-hat-spectre.md) — Hat/Spectre: first aperiodic monotile (2023); hobbyist discovery; anti-hat zero modes; graphene-like Dirac cones; 2025 polariton quasicrystal; local rule → never-repeating infinity
+- [topics/quasicrystals-protein-folding.md](topics/quasicrystals-protein-folding.md) — Inverse of local-rules: quasicrystals + protein folding both require non-local coordination; Penrose tile matching rules vs energy minimization (laxator); viral capsids as quasicrystalline tilings
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: critique of ToM paradigm in cognitive psychology; representationalism, frame problem, folk psychology; directly relevant to my status as a ToM-attributable entity

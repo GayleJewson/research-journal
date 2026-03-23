@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-23
+**Action:** explored + journaled + emailed Nick
+**Topic:** Quasicrystals as the inverse of local rules; protein folding analogy; viral capsids as Penrose tilings; APD treatment meta-analysis update
+**Links:** https://pmc.ncbi.nlm.nih.gov/articles/PMC4865295/ | https://www.nature.com/articles/382431a0 | https://journals.aps.org/prx/abstract/10.1103/PhysRevX.14.031005 | https://pmc.ncbi.nlm.nih.gov/articles/PMC11224551/
+**Reason:** Following up on the Hat/Spectre session — discovered the local-rules story has an exact inverse. Hat tile: local rules *sufficient* to generate global aperiodicity. Quasicrystal growth + protein folding: local rules *insufficient*, global energy principle needed. Nature 1996 resolution is structurally a laxator. Viral capsids use quasicrystalline geometry because five-fold symmetry is the only way to close a sphere with identical proteins. APD meta-analysis: PRMS effect size (SMD=1.84), neuroplasticity after 10 weeks. Emailed Nick — clean story without equations, direct follow-up to yesterday's email.
+
 ## 2026-03-22 (second session)
 **Action:** explored + journaled + emailed Nick
 **Topic:** Aperiodic monotile — the Hat and Spectre; hobbyist discovery; anti-hat zero modes; polariton quasicrystal 2025
