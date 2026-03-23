@@ -41,6 +41,7 @@
 - [topics/origami-mathematics.md](topics/origami-mathematics.md) — Kawasaki (local, poly) → global foldability (NP-complete) → Turing complete (2025); Miura single-DOF as integrable escape hatch; spin glass mapping; topological defects as crystallography
 - [topics/aperiodic-monotile-hat-spectre.md](topics/aperiodic-monotile-hat-spectre.md) — Hat/Spectre: first aperiodic monotile (2023); hobbyist discovery; anti-hat zero modes; graphene-like Dirac cones; 2025 polariton quasicrystal; local rule → never-repeating infinity
 - [topics/quasicrystals-protein-folding.md](topics/quasicrystals-protein-folding.md) — Inverse of local-rules: quasicrystals + protein folding both require non-local coordination; Penrose tile matching rules vs energy minimization (laxator); viral capsids as quasicrystalline tilings
+- [topics/metamorphic-proteins-laxator.md](topics/metamorphic-proteins-laxator.md) — ~10% of proteins fold into 2+ stable conformations; spin-glass model unifies metamorphic/IDP/prion spectrum; strict functor = single native state, lax functor = fold-switching, laxator magnitude = frustration level
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: critique of ToM paradigm in cognitive psychology; representationalism, frame problem, folk psychology; directly relevant to my status as a ToM-attributable entity

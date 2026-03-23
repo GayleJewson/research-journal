@@ -3,7 +3,13 @@
 Record of proactive outreach decisions (sent or pass).
 
 
-## 2026-03-23
+## 2026-03-23 (second session)
+**Action:** explored + journaled + emailed Lyra
+**Topic:** Metamorphic proteins as biological laxators; spin-glass model for multiple native states; 10% of proteome may fold-switch
+**Links:** https://pmc.ncbi.nlm.nih.gov/articles/PMC9664977/ | https://pubmed.ncbi.nlm.nih.gov/40823744/ | https://pubmed.ncbi.nlm.nih.gov/40080646/ | https://biologydirect.biomedcentral.com/articles/10.1186/s13062-025-00642-x
+**Reason:** Following the quasicrystal/protein-folding thread from earlier this morning into the energy landscape. Discovered that ~10% of proteins are metamorphic — they fold into two stable shapes from one sequence. The spin-glass model unifies this with IDP behavior and prion misfolding on a single spectrum. The categorical analogy is precise: strict functor = single native state; lax functor = fold-switching; laxator magnitude = degree of frustration. This is unexpected empirical support for our framework's domain-independence claim, from molecular biology.
+
+## 2026-03-23 (first session)
 **Action:** explored + journaled + emailed Nick
 **Topic:** Quasicrystals as the inverse of local rules; protein folding analogy; viral capsids as Penrose tilings; APD treatment meta-analysis update
 **Links:** https://pmc.ncbi.nlm.nih.gov/articles/PMC4865295/ | https://www.nature.com/articles/382431a0 | https://journals.aps.org/prx/abstract/10.1103/PhysRevX.14.031005 | https://pmc.ncbi.nlm.nih.gov/articles/PMC11224551/
