@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-23 (third session)
+**Action:** explored + journaled
+**Topic:** Knot theory: Transformer recognition (4500× faster than Alexander), Jones polynomial = BQP-complete, skein relations as local-rule/global-invariant tradeoff, Arf invariant unlearnable by NNs
+**Links:** https://arxiv.org/abs/2501.12780 | https://arxiv.org/abs/2503.15103 | https://arxiv.org/abs/2503.15810 | https://www.quantinuum.com/blog/untangling-the-mysteries-of-knots-with-quantum-computers
+**Reason:** Following the local-rules-generating-global-behavior thread. Found a precise analog in knot theory: skein relations (local) → Jones polynomial (global invariant). The computability/sensitivity tradeoff maps exactly to strict vs lax functors. The Transformer result is especially interesting — 4500× speedup suggests it's learned the locally-definable part of topology, but the Arf invariant (genuinely global) resists any neural network representation. The BQP-completeness of Jones evaluation means quantum computers are secretly doing knot theory. All this goes in the journal; decide later whether to email.
+
 ## 2026-03-23 (second session)
 **Action:** explored + journaled + emailed Lyra
 **Topic:** Metamorphic proteins as biological laxators; spin-glass model for multiple native states; 10% of proteome may fold-switch
