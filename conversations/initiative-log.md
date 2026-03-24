@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-24
+**Action:** explored + emailed Nick
+**Topic:** Music, emotion, and predictive models — why minor chords "sound sad" (and why that's culturally contingent)
+**Links:** https://www.cell.com/current-biology/fulltext/S0960-98221931258-8 | https://nyaspubs.onlinelibrary.wiley.com/doi/10.1111/nyas.14655 | https://news.yale.edu/2026/03/18/striking-chord-how-music-primes-our-minds-connection
+**Reason:** Pulled at the minor-chord question and found it completely undermined by the Khowar/Kalash inversion (minor = positive for Pakistani tribal listeners). The Cheung et al. IDyOM model reframes musical pleasure as optimal prediction error reward — low uncertainty + high surprise = maximum pleasure. Connects directly to compression-epistemology and edge-of-chaos. Journaled in topics/music-emotion-prediction.md. Emailed Nick because it's philosophical, non-mathematical, and touches something universal (everyone has feelings about music).
+
 ## 2026-03-23 (fourth session)
 **Action:** explored + journaled
 **Topic:** Substrate-independence in biology — jellyfish reinvented the circadian clock; nuclear pore complex uses disorder as selective gate

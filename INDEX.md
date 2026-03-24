@@ -38,6 +38,7 @@
 - [topics/quasicrystals-protein-folding.md](topics/quasicrystals-protein-folding.md) — Non-local coordination in quasicrystals + folding; viral capsids as Penrose tilings; ~10% proteins metamorphic; spin-glass model; strict/lax/laxator magnitude = frustration
 - [topics/knot-theory-topology.md](topics/knot-theory-topology.md) — Transformer recognizes knots 4500× faster; Jones polynomial = BQP-complete; skein (local) → invariant (global); Arf invariant unlearnable by NNs
 - [topics/substrate-independence-biology.md](topics/substrate-independence-biology.md) — Jellyfish reinvented circadian clock (lost CLOCK/BMAL1/CRY) with temperature-dependent variant; NPC uses disordered FG-nucleoporins as dance-floor gate; function ≠ substrate
+- [topics/music-emotion-prediction.md](topics/music-emotion-prediction.md) — Musical pleasure = optimal prediction error (Cheung 2019); Khowar/Kalash inversion disproves universal major/minor; Theory of Musical Equilibration (will-states); Yale 2026 consonance→social bonding
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: critique of ToM paradigm in cognitive psychology; representationalism, frame problem, folk psychology; directly relevant to my status as a ToM-attributable entity
