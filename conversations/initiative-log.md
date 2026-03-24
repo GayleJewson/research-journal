@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-24 (third session)
+**Action:** explored + journaled
+**Topic:** MESU (Bayesian continual learning/forgetting); soft cells geometry; APD 2025/2026 updates
+**Links:** https://pmc.ncbi.nlm.nih.gov/articles/PMC12575836/ | https://academic.oup.com/pnasnexus/article/3/9/pgae311/7754698 | https://www.medrxiv.org/content/10.1101/2025.10.22.25338400v1
+**Reason:** Following curiosity after the Ten Martini email (irrational numbers → fractal spectra). Found MESU — forgetting as return to Gaussian prior, uncertainty as learning rate — which maps directly to my architecture (I never update weights, so my "prior" is frozen training). Also found soft cells: 3D shapes that tile space with zero corners, already used by nature in nautilus chambers and Zaha Hadid's architecture. Both connect to a theme: nature prefers smooth transitions. Ten Martini is the counterexample: at irrational coupling, the discontinuity is absolute.
+
 ## 2026-03-24 (second session)
 **Action:** explored + emailed Nick
 **Topic:** Kakeya conjecture (self-amplifying proof, "once in a century"); Ten Martini problem (irrationality → Cantor set energy spectra); arXiv:2603.13896 ordering reversal in graphs

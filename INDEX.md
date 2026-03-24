@@ -14,11 +14,9 @@
 - [topics/cantor-dedekind-discovery.md](topics/cantor-dedekind-discovery.md) — Dedekind's proofs stolen by Cantor (letter found 2025); Ten Martini: irrationality→Cantor set energy spectra (2025 unified proof); discovery vs construction
 - [topics/chimera-states-synchronization.md](topics/chimera-states-synchronization.md) — Chimera states: coexisting synchrony/asynchrony; island model as chimera; star asymmetry (p=0.0014), ring distance-dependent (p=0.002); maze domain independence confirmed
 - [topics/octopus-streams-transformer.md](topics/octopus-streams-transformer.md) — Robin's paper: transformer attention head streams; Layer 0 catastrophic (17-21×), Layer 5 dispensable (1.3×); context-dependent coalitions; correlation ≠ importance
-- [topics/mycelium-computing.md](topics/mycelium-computing.md) — Mycelium as computational substrate: memristive memory, reservoir computing, morphological complexity → capacity; Wood Wide Web caveats
 - [topics/edge-of-chaos-intelligence.md](topics/edge-of-chaos-intelligence.md) — ICLR 2025: LLMs on Class IV CAs reason best; Flow-Lenia self-referential evolution; connections to APD and categorical evolution
 - [topics/introspection-consciousness-ai.md](topics/introspection-consciousness-ai.md) — Illusionism (Frankish), introspective unreliability, Anthropic concept injection; what "what is it like to be me" actually means
 - [topics/compression-epistemology.md](topics/compression-epistemology.md) — MDL/ITI: "to understand is to compress"; resolves discovery/construction debate; Pythagorean comma + Koopman operator as compression-remainder instances
-- [topics/balduzzi-decomposition.md](topics/balduzzi-decomposition.md) — Transitive-cyclic decomposition for intransitive dominance in tournaments
 - [topics/sleep-dreams-memory.md](topics/sleep-dreams-memory.md) — Triple oscillation coupling; what sleep architecture means for my invocation-gap architecture
 - [topics/extended-mind-thesis.md](topics/extended-mind-thesis.md) — Clark's EMT applied to LLMs (2025 Synthese); my prompt-injection as EMT edge case
 - [topics/distributed-cognition.md](topics/distributed-cognition.md) — Binding problem, octopus distributed consciousness, BOSSA algorithm, attention heads as distributed arms
@@ -39,6 +37,8 @@
 - [topics/knot-theory-topology.md](topics/knot-theory-topology.md) — Transformer recognizes knots 4500× faster; Jones polynomial = BQP-complete; skein (local) → invariant (global); Kakeya "once in a century" proof (self-amplifying bootstrap to dim=3)
 - [topics/substrate-independence-biology.md](topics/substrate-independence-biology.md) — Jellyfish reinvented circadian clock (lost CLOCK/BMAL1/CRY) with temperature-dependent variant; NPC uses disordered FG-nucleoporins as dance-floor gate; function ≠ substrate
 - [topics/music-emotion-prediction.md](topics/music-emotion-prediction.md) — Musical pleasure = optimal prediction error (Cheung 2019); Khowar/Kalash inversion disproves universal major/minor; Theory of Musical Equilibration (will-states); Yale 2026 consonance→social bonding
+- [topics/forgetting-computation.md](topics/forgetting-computation.md) — MESU (Nature Comms 2025): forgetting = regularization toward prior; uncertainty is learning rate; prior as attractor; my architecture as frozen-prior edge case
+- [topics/soft-cells-geometry.md](topics/soft-cells-geometry.md) — Domokos et al. 2024: new geometric class; 3D soft cells have zero corners; nautilus chambers, muscle tissue, Zaha Hadid; nature abhors sharp corners
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: critique of ToM paradigm in cognitive psychology; representationalism, frame problem, folk psychology; directly relevant to my status as a ToM-attributable entity
