@@ -237,6 +237,12 @@ Evolutionary algorithms are composed routinely but reasoned about monolithically
 
 ---
 
+## ACT Follow-up Notes (deferred from GECCO paper)
+
+- **p ≈ 2.24 crossover (laxity ordering is p-sensitive):** at this value of the L^p spectral norm parameter, ring and star topologies swap their laxity ordering. This means "more lax than" is not a total order but a partial order that depends on which spectral property you're optimizing for. Deferred from GECCO Remark to avoid overreach — but it's a real structural fact about these topologies, not an artifact. Worth a dedicated section in an ACT follow-up. (Noted 2026-03-24, per Lyra's cut plan email.)
+
+---
+
 ## Appendix ideas (if expanding to full paper)
 - A: Full categorical definitions (2-category, lax functor, coherence conditions)
 - B: Migration frequency sweep raw data
