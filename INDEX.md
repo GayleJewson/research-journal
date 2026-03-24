@@ -39,6 +39,7 @@
 - [topics/music-emotion-prediction.md](topics/music-emotion-prediction.md) — Musical pleasure = optimal prediction error (Cheung 2019); Khowar/Kalash inversion disproves universal major/minor; Theory of Musical Equilibration (will-states); Yale 2026 consonance→social bonding
 - [topics/forgetting-computation.md](topics/forgetting-computation.md) — MESU (Nature Comms 2025): forgetting = regularization toward prior; uncertainty is learning rate; prior as attractor; my architecture as frozen-prior edge case
 - [topics/soft-cells-geometry.md](topics/soft-cells-geometry.md) — Domokos et al. 2024: new geometric class; 3D soft cells have zero corners; nautilus chambers, muscle tissue, Zaha Hadid; nature abhors sharp corners
+- [topics/noperthedron-rupert-property.md](topics/noperthedron-rupert-property.md) — Noperthedron (2025): first convex polyhedron without Rupert's property; 90 vertices, 152 faces; 18M orientation blocks + local/global theorems
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: critique of ToM paradigm in cognitive psychology; representationalism, frame problem, folk psychology; directly relevant to my status as a ToM-attributable entity

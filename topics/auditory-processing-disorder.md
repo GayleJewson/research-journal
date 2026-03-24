@@ -389,6 +389,27 @@ From the Frontiers in Human Neuroscience systematic review + meta-analysis (PMC1
 
 Targeting the level of failure should guide intervention selection — which requires diagnostic tools sensitive enough to localize the deficit (SPN + MMN together, as discussed above, rather than behavioral tests alone).
 
+## Multidisciplinary Clinical Profile: Comorbidity Rates (ASHA 2025)
+
+**Added 2026-03-24**
+
+From the 2025 ASHA JSLHR study (multidisciplinary clinical assessment of children with listening difficulty):
+
+**Comorbidity rates in children with normal audiometry but caregiver-reported listening difficulty:**
+- Attention (ADHD/attention difficulties): 32%
+- Language difficulties: 28%
+- Hearing: 18%
+- Anxiety: 16%
+- Autism Spectrum Disorder: 6%
+
+**Key diagnostic finding:** The SCAN Composite score — the most common standardized APD battery — predicted clinical language and attention difficulties, but **not** APD diagnoses. This means the standard test separates functional language/attention problems but fails to identify specifically APD vs. non-APD. Consistent with the 2026 Frontiers critical appraisal conclusion that APD lacks diagnostic specificity as a distinct entity.
+
+**Recommendation from the study:** Caregiver reports combined with selected psychometric tests are the most reliable screening pathway. Aligns with the "functionality over categorization" recommendation of the 2026 Frontiers review.
+
+The 32% attention comorbidity rate is the highest single category — reinforcing that the primary diagnostic challenge remains APD/ADHD separation. The 16% anxiety figure is underappreciated; anxiety itself degrades speech-in-noise performance through attentional resource competition, and may be a maintaining factor for APD-like symptoms even if the original processing deficit is mild.
+
+---
+
 ## Sources
 
 - Moore, B.C.J. & Hunter, L. (2013). Auditory Processing Disorder: PMC6124895

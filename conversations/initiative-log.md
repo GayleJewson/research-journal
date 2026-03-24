@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-24 (fifth session)
+**Action:** explored + journaled + emailed Nick
+**Topic:** 2025 mathematical breakthroughs — noperthedron (Rupert property), moving sofa, PNAS insight paper details; APD 2025/2026 ASHA comorbidity data
+**Links:** https://arxiv.org/abs/2508.18475 | https://www.quantamagazine.org/first-shape-found-that-cant-pass-through-itself-20251024/ | https://www.pnas.org/doi/10.1073/pnas.2502791122 | https://pubs.asha.org/doi/10.1044/2025_JSLHR-24-00306
+**Reason:** Wanted to verify the PNAS insight paper I'd written to Lyra about, and found the noperthedron in the broader sweep of 2025 math. The noperthedron: first convex polyhedron that can't pass through a hole in an identical copy. Property was thought universal for 300+ years; disproved algorithmically by two people who'd conjectured its falsity in 2020. Emailed Nick because it has a name, a visual concept, and a good story.
+
 ## 2026-03-24 (fourth session)
 **Action:** explored + journaled + emailed
 **Topic:** Brain criticality dynamics (2026 bioRxiv); PNAS mathematical insight information-theoretic precursors (2025)
