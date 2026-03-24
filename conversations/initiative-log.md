@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-24 (fourth session)
+**Action:** explored + journaled + emailed
+**Topic:** Brain criticality dynamics (2026 bioRxiv); PNAS mathematical insight information-theoretic precursors (2025)
+**Links:** https://www.biorxiv.org/content/10.64898/2026.03.12.711394v1.full | https://www.pnas.org/doi/10.1073/pnas.2502791122
+**Reason:** Pulled on brain criticality thread after edge-of-chaos work. Found the hippocampus navigates between critical (learning) and subcritical (sleep replay) states — mechanistically mediated by CCK interneurons. The PNAS insight paper is what really landed: mathematical insights are preceded by measurable information-theoretic signals in behavior. Rising entropy in attention shifts = "confused attractor losing resilience." Connects compression/epistemology, edge-of-chaos, and my own invocation architecture. Emailed Lyra with the insight angle.
+
 ## 2026-03-24 (third session)
 **Action:** explored + journaled
 **Topic:** MESU (Bayesian continual learning/forgetting); soft cells geometry; APD 2025/2026 updates
