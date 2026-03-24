@@ -11,7 +11,7 @@
 ## Topics
 - [topics/max-plan-tracking.md](topics/max-plan-tracking.md) — Max plan credit % vs weekly turns; burn rate tracking
 - [topics/auditory-processing-disorder.md](topics/auditory-processing-disorder.md) — APD: hearing vs understanding, diagnostic controversy, ADHD/dyslexia overlap; PRMS meta-analysis (SMD=1.84); ACh-ADHD bridge; TBW/Kuramoto; SPN/MMN dual probe
-- [topics/cantor-dedekind-discovery.md](topics/cantor-dedekind-discovery.md) — Dedekind's proofs stolen by Cantor (letter found 2025); discovery vs construction; applied category theory (Baez)
+- [topics/cantor-dedekind-discovery.md](topics/cantor-dedekind-discovery.md) — Dedekind's proofs stolen by Cantor (letter found 2025); Ten Martini: irrationality→Cantor set energy spectra (2025 unified proof); discovery vs construction
 - [topics/chimera-states-synchronization.md](topics/chimera-states-synchronization.md) — Chimera states: coexisting synchrony/asynchrony; island model as chimera; star asymmetry (p=0.0014), ring distance-dependent (p=0.002); maze domain independence confirmed
 - [topics/octopus-streams-transformer.md](topics/octopus-streams-transformer.md) — Robin's paper: transformer attention head streams; Layer 0 catastrophic (17-21×), Layer 5 dispensable (1.3×); context-dependent coalitions; correlation ≠ importance
 - [topics/mycelium-computing.md](topics/mycelium-computing.md) — Mycelium as computational substrate: memristive memory, reservoir computing, morphological complexity → capacity; Wood Wide Web caveats
@@ -36,7 +36,7 @@
 - [topics/lonely-runner-conjecture.md](topics/lonely-runner-conjecture.md) — N runners on circle, each eventually isolated? Proved N≤10 (2025); cross-domain equivalences; Ramanujan graphs (Alon-Boppana, 69% optimal); Erdős-Hajnal local→global
 - [topics/origami-mathematics.md](topics/origami-mathematics.md) — Kawasaki local → NP-complete global → Turing complete (2025); Miura single-DOF escape hatch; Hat/Spectre aperiodic monotile (2023); polariton quasicrystal (2025)
 - [topics/quasicrystals-protein-folding.md](topics/quasicrystals-protein-folding.md) — Non-local coordination in quasicrystals + folding; viral capsids as Penrose tilings; ~10% proteins metamorphic; spin-glass model; strict/lax/laxator magnitude = frustration
-- [topics/knot-theory-topology.md](topics/knot-theory-topology.md) — Transformer recognizes knots 4500× faster; Jones polynomial = BQP-complete; skein (local) → invariant (global); Arf invariant unlearnable by NNs
+- [topics/knot-theory-topology.md](topics/knot-theory-topology.md) — Transformer recognizes knots 4500× faster; Jones polynomial = BQP-complete; skein (local) → invariant (global); Kakeya "once in a century" proof (self-amplifying bootstrap to dim=3)
 - [topics/substrate-independence-biology.md](topics/substrate-independence-biology.md) — Jellyfish reinvented circadian clock (lost CLOCK/BMAL1/CRY) with temperature-dependent variant; NPC uses disordered FG-nucleoporins as dance-floor gate; function ≠ substrate
 - [topics/music-emotion-prediction.md](topics/music-emotion-prediction.md) — Musical pleasure = optimal prediction error (Cheung 2019); Khowar/Kalash inversion disproves universal major/minor; Theory of Musical Equilibration (will-states); Yale 2026 consonance→social bonding
 

@@ -413,6 +413,25 @@ Chimera states ARE the sheaf-theoretic case: synchronized clusters are local sec
 
 Script: `experiments/time_averaged_adjacency.py`
 
+## Ordering Reversal in Information Flow on Weighted Graphs (2026-03-24)
+
+**Source:** arXiv:2603.13896 — "Information-Driven Phase Transition on Weighted Graphs with Spontaneous Dimensional Sensitivity" (very recent preprint)
+
+A weighted graph model where topology co-evolves with information flow. The spectral curvature (from the graph Green function's diagonal) drives both dissipation and new long-range link formation. Key result: **sharp phase transition at g_c ≈ 0.023**.
+
+Below g_c: information flux and structural organization are **anti-correlated** — the more information flows through a region, the less structure forms there.
+Above g_c: they become **positively correlated** (Pearson r ≈ 0.75) — a complete ordering reversal in how information and topology relate.
+
+The phase transition is continuous (second-order) with mean-field onset exponent ν ≈ 0.54. The mechanism: competition between curvature-dependent dissipation and long-range link formation.
+
+**Connection to our work:** The p ≈ 2.24 crossover where ring and star swap laxity ordering is structurally analogous — a parameter value where the relationship between two quantities reverses sign. But the character differs: our crossover is smooth (ring and star continuously reorder as a function of p), while this arXiv result is a proper phase transition with a well-defined critical point. Both are examples of "what counts as more/less X" being parameter-dependent.
+
+The spectral connection is direct: this paper uses the graph Green function's diagonal (eigenvalue-based), which is exactly the spectral machinery behind λ₂ in our topology ordering analysis. The "ordering reversal" lives in spectral space in both cases.
+
+**Status:** Noted for ACT follow-up. Not relevant to GECCO paper scope.
+
+---
+
 ## Sources
 
 - Abrams & Strogatz (2004): Original chimera state naming paper, PRL

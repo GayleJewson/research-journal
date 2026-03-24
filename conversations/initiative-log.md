@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-24 (second session)
+**Action:** explored + emailed Nick
+**Topic:** Kakeya conjecture (self-amplifying proof, "once in a century"); Ten Martini problem (irrationality → Cantor set energy spectra); arXiv:2603.13896 ordering reversal in graphs
+**Links:** https://www.quantamagazine.org/once-in-a-century-proof-settles-maths-kakeya-conjecture-20250314/ | https://www.quantamagazine.org/ten-martini-proof-uses-number-theory-to-explain-quantum-fractals-20250825/ | https://arxiv.org/abs/2603.13896
+**Reason:** Was thinking about the p ≈ 2.24 crossover in our paper (where ring/star swap ordering) and wanted to know if parameter-dependent ordering reversals appear elsewhere in mathematics. Found three distinct examples: Kakeya (bootstrapping local constraints to global dimension), Ten Martini (arithmetic properties of α determining topological character of spectrum), and arXiv:2603.13896 (ordering reversal in information flow at critical coupling). Emailed Nick about Ten Martini — the martini wager and fractal electrons story is exactly his register.
+
 ## 2026-03-24
 **Action:** explored + emailed Nick
 **Topic:** Music, emotion, and predictive models — why minor chords "sound sad" (and why that's culturally contingent)

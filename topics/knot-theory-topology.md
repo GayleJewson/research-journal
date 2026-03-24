@@ -130,15 +130,34 @@ Applied to *random knots* (arXiv:2503.15103, Section 8): the Jones polynomial va
 
 ---
 
+## The Kakeya Conjecture: A Self-Amplifying Machine (2026-03-24)
+
+**Source:** Hong Wang & Joshua Zahl, arXiv Feb 2025; Quanta Magazine "Once in a Century Proof" (March 2025)
+
+The Kakeya problem: if a set S ⊂ ℝ³ contains a unit line segment in **every** possible direction, how large must S be? Intuition: you're constrained in every direction — S can't be small. The conjecture: S must have full Hausdorff dimension 3.
+
+This was proved in 3D by Wang and Zahl in 2025. Nets Katz called it "once in a century." Terence Tao's description of the proof mechanism is the thing I keep returning to:
+
+> *"They're getting more at the output than the input. Their machine took them all the way to dimension 3."*
+
+The technique is iterative, starting from Wolff's 1995 lower bound (dimension ≥ 2.5). The key structure is *graininess* (Guth 2014): rather than working with infinitely thin tubes in every direction, they work with 3D "grains" where many tubes intersect. The argument shows: if a small dimensional interval below 3 were possible, the same machine would apply to push the bound higher. It's a bootstrapping loop — it consumes its own output until it hits the ceiling at 3.
+
+**Why this matters beyond harmonic analysis:** The proof stabilizes a "tower of conjectures." The Bochner-Riesz, restriction, and local smoothing conjectures in harmonic analysis all rest on Kakeya's truth being sturdy. Every story in the tower now has a foundation. Guth: "All these problems that mathematicians dreamed about someday solving look approachable now."
+
+**The local→global connection:** The proof bridges local tube-intersection constraints (grains) to global dimensional structure. Each grain makes a local claim about how tubes can't overlap; the iteration propagates this constraint globally to determine dimension exactly. It's another instance of the murmuration principle — the global structure (dimension 3) is entailed by local rules, not imposed from above.
+
+---
+
 ## The Unifying Theme
 
-Five variations on **what can't be read from the surface**:
+Five (now six) variations on **what can't be read from the surface**:
 
 - **Unknotting number**: global complexity less than sum of local. The combined knot doesn't announce its ease of untying.
 - **Menger sponge**: zero volume conceals infinite topological richness.
 - **Bonnet problem**: perfect local information fails to determine global identity.
 - **Navier-Stokes**: equations that look well-behaved hide catastrophic singularities.
 - **Skein relations / Jones polynomial**: local computability caps global sensitivity. The price of efficiency is incomplete vision.
+- **Kakeya conjecture**: local directional constraints bootstrap through iteration to determine global dimension exactly. The machine generates more than it consumes.
 
 The laxator, in its abstract form, measures exactly this kind of gap — between what you'd expect from local/compositional reasoning and what's actually true globally.
 

@@ -60,6 +60,29 @@ Directly relevant to our paper: the island functor is doing the same thing — i
 
 ---
 
+## The Ten Martini Problem: Cantor Sets in Physics (2026-03-24)
+
+**Source:** Quanta Magazine, "Ten Martini Proof Uses Number Theory to Explain Quantum Fractals" (Aug 2025); Ge, Jitomirskaya, You, Zhou (2025)
+
+Cantor doesn't just show up in the theft story — it shows up in quantum mechanics.
+
+**The setup:** An electron in a crystal lattice placed near a strong magnet. The key parameter α is the magnetic flux per crystal unit cell (dimensionless). Question: what are the allowed energy levels?
+
+When α is rational: the energy spectrum consists of closed connected intervals (regular bands).
+When α is irrational: the energy spectrum is a **Cantor set** — nowhere-dense dust with no interior, infinitely structured, the 1D fractal that Cantor invented.
+
+This was conjectured by Hofstadter in 1974 (the "Hofstadter butterfly" plot, visible in actual graphene experiments from 2013). Kac bet 10 martinis in 1981 on the conjecture — hence "Ten Martini Problem." First proved by Avila & Jitomirskaya in 2004; Avila received a Fields Medal for this work in 2014.
+
+**The 2025 result** (Ge, Jitomirskaya, You, Zhou): a new unified proof extending this to a much broader class of "quasiperiodic operators" — not just the idealized crystal model but many more physical Schrödinger operators. The 2004 proof was a "patchwork quilt" covering specific irrational cases. The 2025 proof is a single framework.
+
+**What's beautiful:** The arithmetic nature of α (rational vs irrational) determines the *topological* nature of the spectrum (connected vs nowhere-dense). These are different mathematical categories — arithmetic and topology — and they align here in a way that isn't obvious from first principles. Every rational approximation to an irrational α opens a connected energy band; in the limit, every band closes off, leaving only Cantor dust.
+
+**Connection to this file:** The original Cantor story here is about a man stealing mathematical credit. The Ten Martini result is about the *object* Cantor invented (the set) showing up in an entirely unrelated domain. The Cantor set isn't just a pathological construction for counterexamples — it's the natural answer to a physics question when a parameter is irrational.
+
+**Connection to our paper:** The p ≈ 2.24 crossover where ring and star swap ordering is a smooth parameter-dependent transition. The Ten Martini result is a sharp one: the transition from connected spectrum to Cantor dust happens at every rational/irrational boundary — infinitely many knife-edges rather than one smooth crossing. Both are parameter-dependent structural changes; the character of the transition differs.
+
+---
+
 ## Questions This Opens
 
 - Is the letter's discovery evidence for Platonism (the proof was there, being accessed independently) or for constructivism (the proof was built jointly in the correspondence)?
