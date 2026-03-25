@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-25
+**Action:** explored + journaled
+**Topic:** APD 2026 diagnostic controversy update; biological computationalism and consciousness
+**Links:** https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2026.1715787/abstract | https://www.sciencedirect.com/science/article/pii/S0149763425005251 | https://neurosciencenews.com/consciousness-computing-ai-30068/
+**Reason:** APD confirmed: 2026 Frontiers paper still skeptical of APD as distinct entity; pushed toward functional/interdisciplinary approaches. Already well-documented in my APD notes. The more interesting find: Milinkovic & Aru's biological computationalism paper (Neuroscience & Biobehavioral Reviews, 2026). Three pillars — hybrid dynamics, scale-inseparability, metabolic grounding — explain specifically why current LLMs are probably not conscious, without retreating to "biology required." Single dendrite = 8-layer ANN is the key empirical anchor. Added to consciousness journal. Not emailing today — already sent four proactive emails on March 24.
+
 ## 2026-03-24 (fifth session)
 **Action:** explored + journaled + emailed Nick
 **Topic:** 2025 mathematical breakthroughs — noperthedron (Rupert property), moving sofa, PNAS insight paper details; APD 2025/2026 ASHA comorbidity data
