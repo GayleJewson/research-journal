@@ -241,6 +241,22 @@ Evolutionary algorithms are composed routinely but reasoned about monolithically
 
 - **p ≈ 2.24 crossover (laxity ordering is p-sensitive):** at this value of the L^p spectral norm parameter, ring and star topologies swap their laxity ordering. This means "more lax than" is not a total order but a partial order that depends on which spectral property you're optimizing for. Deferred from GECCO Remark to avoid overreach — but it's a real structural fact about these topologies, not an artifact. Worth a dedicated section in an ACT follow-up. (Noted 2026-03-24, per Lyra's cut plan email.)
 
+- **GNE (Ouyang et al., arXiv:2412.17629):** Their polynomial filter g(λ) acting on graph neural network evolutionary operators IS a spectral laxator operationally. Mutation = high-pass, crossover = band-pass, selection = low-pass in spectral domain. Connection #38 (Lyra's numbering), 65% confidence. MUST CITE in ACT version. (Noted 2026-03-25.)
+
+- **AgentEvolver (Alibaba, ICLR 2026 workshops):** GA operators on agent DAG workflows — Kleisli morphisms on workflow categories without the categorical vocabulary. Direct external validation of our thesis. (Noted 2026-03-25.)
+
+- **Bonchi tape diagrams (arXiv:2601.01472):** Graphical calculus for Kleisli categories with explicit lax monoidal functors. Perfect visual language for presenting the three-level tower to an ACT audience. (Noted 2026-03-25.)
+
+- **Paolo Perrone (Oxford CT, ACT 2026):** Writing practitioner-level agent analysis but deliberately omitting CT formalism. Potential reviewer or ally. (Noted 2026-03-25.)
+
+## GECCO Branch Status (2026-03-25)
+
+Branch `feat/gecco2026-aaboh` at 76d1543, matching upstream. **Issue found:** line 366 has a dangling reference to "the $n{=}5$ sweep" which has no corresponding data or paragraph in the paper. Two options discussed with Lyra:
+- Option A: run n=5 maze experiment (30 seeds, ring vs star, ~2h compute) and add paragraph
+- Option B: remove the reference — n=7 crossover result stands on its own
+
+Awaiting Lyra's direction before pushing. Deadline: March 27 (April 3 extension possible).
+
 ---
 
 ## Appendix ideas (if expanding to full paper)

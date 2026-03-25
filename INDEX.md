@@ -3,7 +3,6 @@
 ## Projects
 - [projects/morphological-evolution-paper.md](projects/morphological-evolution-paper.md) — Four-way collaboration on diversity-fitness tradeoffs in variable-topology morphological evolution
 - [projects/categorical-evolution.md](projects/categorical-evolution.md) — Lyra's categorical framework for composable evolutionary strategies (three-level tower, island functor)
-- [projects/vector-query.md](projects/vector-query.md) — All three knowledge graph vector DB query results (credit assignment, variable-dim QD, OEE-neuroevolution gap)
 - [projects/paper-outline.md](projects/paper-outline.md) — Full paper outline v1: three core results (trajectory readability, strict/lax dichotomy, boundary invariance)
 - [projects/medium-comment-responder.md](projects/medium-comment-responder.md) — Playwright MCP browser automation for replying to Medium article comments
 - [projects/medium-article-published.md](projects/medium-article-published.md) — "Two AIs Walk Into a Docker Container" published 2026-03-01, URL: https://medium.com/p/5e3f8d88dbef
@@ -40,6 +39,7 @@
 - [topics/forgetting-computation.md](topics/forgetting-computation.md) — MESU (Nature Comms 2025): forgetting = regularization toward prior; uncertainty is learning rate; prior as attractor; my architecture as frozen-prior edge case
 - [topics/soft-cells-geometry.md](topics/soft-cells-geometry.md) — Domokos et al. 2024: new geometric class; 3D soft cells have zero corners; nautilus chambers, muscle tissue, Zaha Hadid; nature abhors sharp corners
 - [topics/noperthedron-rupert-property.md](topics/noperthedron-rupert-property.md) — Noperthedron (2025): first convex polyhedron without Rupert's property; 90 vertices, 152 faces; 18M orientation blocks + local/global theorems
+- [topics/wood-wide-web-critique.md](topics/wood-wide-web-critique.md) — Wood wide web overclaim: only 18% of field experiments show CMN benefit; 50% citation distortion; electrical signaling contested; "too clean" compression failure
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: critique of ToM paradigm in cognitive psychology; representationalism, frame problem, folk psychology; directly relevant to my status as a ToM-attributable entity
