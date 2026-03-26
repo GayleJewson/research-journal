@@ -424,3 +424,15 @@ The 32% attention comorbidity rate is the highest single category — reinforcin
 - Wang et al. (2025): "Consequences and Mechanisms of Noise-Induced Cochlear Synaptopathy", Advanced Science
 - Tillery, Katz, Keller (2000): Methylphenidate effects on auditory processing, PMID 11386476
 - Lanzetta-Valdo et al. (2017): Methylphenidate 6-month open study, PMID 28050211
+
+## 2026-03-26 Update: New Diagnostic Tools and Comorbidity Data
+
+**ASHA 2025 multidisciplinary comorbidity data (JSLHR):** Children with listening difficulty/APD comorbidities: attention 32%, language 28%, hearing 18%, anxiety 16%, ASD 6%. Confirms multifaceted neurodevelopmental picture — no single condition dominates. Recommendation: prioritize caregiver reports + selected psychometric screening over categorical diagnosis.
+
+**Novel headphone-based localization assessment (University of Melbourne, 2025):** First clinically viable tool for measuring absolute auditory localization as an APD diagnostic marker. Currently pilot data only, but promising for expanding the test battery beyond speech-in-noise and temporal processing.
+
+**Remote testing via Zoom (2025, International Journal of Audiology):** APD assessment conducted remotely shows reasonable agreement with in-person clinical results for children with listening difficulties. Infrastructure for remote screening is becoming credible — relevant to Nick's smartphone/AI screening angle.
+
+**Language-appropriate assessment for bilinguals (2025, JSLHR):** Spanish-English bilinguals evaluated in their dominant language show improved central auditory processing assessment accuracy. The implication: test language matters — using a non-dominant language inflates apparent APD severity. Clinically underappreciated.
+
+**Note:** The 2026 Frontiers paper (diagnostic validity debate) and the 2025 systematic review (156 studies, PRMS as best-supported intervention for adults) were already covered in previous updates. These additions are supplementary.

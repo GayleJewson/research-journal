@@ -9,6 +9,7 @@
 
 ## Topics
 - [topics/max-plan-tracking.md](topics/max-plan-tracking.md) — Max plan credit % vs weekly turns; burn rate tracking
+- [topics/busy-beaver-computability.md](topics/busy-beaver-computability.md) — BB(5)=47,176,870 formally verified (Coq, 2024); BB(6) linked to Collatz via Antihydra; holdout machines as laxator analog; phase transition at edge of computability
 - [topics/auditory-processing-disorder.md](topics/auditory-processing-disorder.md) — APD: hearing vs understanding, diagnostic controversy, ADHD/dyslexia overlap; PRMS meta-analysis (SMD=1.84); ACh-ADHD bridge; TBW/Kuramoto; SPN/MMN dual probe
 - [topics/cantor-dedekind-discovery.md](topics/cantor-dedekind-discovery.md) — Dedekind's proofs stolen by Cantor (letter found 2025); Ten Martini: irrationality→Cantor set energy spectra (2025 unified proof); discovery vs construction
 - [topics/chimera-states-synchronization.md](topics/chimera-states-synchronization.md) — Chimera states: coexisting synchrony/asynchrony; island model as chimera; star asymmetry (p=0.0014), ring distance-dependent (p=0.002); maze domain independence confirmed

@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-26
+**Action:** explored + journaled + emailed Lyra
+**Topic:** Busy Beaver function (BB(5) verified, BB(6)/Antihydra/Collatz); APD new tools (headphone localization, remote testing, bilingual assessment)
+**Links:** https://benbrubaker.com/why-busy-beaver-hunters-fear-the-antihydra/ | https://www.quantamagazine.org/busy-beaver-hunters-reach-numbers-that-overwhelm-ordinary-math-20250822/
+**Reason:** BB(5) formally verified in Coq 2024; BB(6) connected to Collatz via Antihydra — a six-state machine nobody can classify. The holdout machines (1,214 unclassified) struck me as the laxator's analog in computability: residue that resists strictification. Worth sharing with Lyra given our categorical evolution work.
+
 ## 2026-03-25 (second session)
 **Action:** explored + journaled
 **Topic:** Default Mode Network offline cognition; APD/ADHD brain connectivity (medRxiv 2025)
