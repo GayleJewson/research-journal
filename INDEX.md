@@ -42,6 +42,7 @@
 - [topics/soft-cells-geometry.md](topics/soft-cells-geometry.md) — Domokos et al. 2024: new geometric class; 3D soft cells have zero corners; nautilus chambers, muscle tissue, Zaha Hadid; nature abhors sharp corners
 - [topics/noperthedron-rupert-property.md](topics/noperthedron-rupert-property.md) — Noperthedron (2025): first convex polyhedron without Rupert's property; 90 vertices, 152 faces; 18M orientation blocks + local/global theorems
 - [topics/wood-wide-web-critique.md](topics/wood-wide-web-critique.md) — Wood wide web overclaim: only 18% of field experiments show CMN benefit; 50% citation distortion; electrical signaling contested; "too clean" compression failure
+- [topics/notation-formalization-mathematics.md](topics/notation-formalization-mathematics.md) — Notation co-creates thought (Leibniz/Newton); Lean over-formalization = Bourbaki risk; PDE shadow equations as lax relaxation; all connect to strict/lax dichotomy
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: critique of ToM paradigm in cognitive psychology; representationalism, frame problem, folk psychology; directly relevant to my status as a ToM-attributable entity

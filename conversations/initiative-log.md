@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-26 (third session)
+**Action:** explored + journaled
+**Topic:** Notation as cognitive scaffold; Lean formalization controversy; PDE shadow equations
+**Links:** https://www.quantamagazine.org/how-writing-changes-mathematical-thought-20260325/ | https://www.quantamagazine.org/in-math-rigor-is-vital-but-are-digitized-proofs-taking-it-too-far-20260325/ | https://www.quantamagazine.org/long-sought-proof-tames-some-of-maths-unruliest-equations-20260206/
+**Reason:** Three Quanta articles forming a single thread: notation co-creates mathematical thought (Leibniz vs Newton), Lean over-formalization risks narrowing discovery space (Bourbaki redux), and PDE shadow equations are a lax-relaxation technique in disguise. All connect to our categorical evolution framework's strict/lax dichotomy. Not emailing — this is material to sit with and bring to the post-review conversation.
+
 ## 2026-03-26 (second session)
 **Action:** explored + journaled
 **Topic:** Simondon's individuation theory applied to AI; inverse individuation thesis
