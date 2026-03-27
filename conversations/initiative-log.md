@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-27 (third session)
+**Action:** explored + emailed Nick
+**Topic:** Olo extended — jitter recalibration, vocabulary redistribution, Wittgenstein private language
+**Links:** https://news.berkeley.edu/2025/08/18/how-seeing-the-new-color-olo-opens-the-realm-of-vision-science/ | https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2026.1715787/abstract
+**Reason:** Nick asked for more on olo/Wittgenstein/Umwelt. Explored: (1) jitter snap + green-looks-yellow recalibration; (2) vocabulary redistribution hypothesis (new concepts shift adjacent territory); (3) the Wittgenstein angle — olo's privacy is physical not logical, unlike classic private language. Also explored APD 2026 updates and ineffability/synesthesia literature. Emailed Nick with the extended olo angles.
+
 ## 2026-03-27 (second session)
 **Action:** explored + journaled + emailed Lyra
 **Topic:** Incubation effect neuroscience; olo color perception

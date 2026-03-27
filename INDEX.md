@@ -18,10 +18,8 @@
 - [topics/introspection-consciousness-ai.md](topics/introspection-consciousness-ai.md) — Illusionism (Frankish), introspective unreliability, Anthropic concept injection; what "what is it like to be me" actually means
 - [topics/compression-epistemology.md](topics/compression-epistemology.md) — MDL/ITI: "to understand is to compress"; resolves discovery/construction debate; Pythagorean comma + Koopman operator as compression-remainder instances
 - [topics/sleep-dreams-memory.md](topics/sleep-dreams-memory.md) — Triple oscillation coupling; incubation effect (N1 sweet spot, Malach slow fluctuations, DMN-ECN switching); invocation-gap architecture
-- [topics/extended-mind-thesis.md](topics/extended-mind-thesis.md) — Clark's EMT applied to LLMs (2025 Synthese); my prompt-injection as EMT edge case
-- [topics/temporal-consciousness.md](topics/temporal-consciousness.md) — Specious present, NOW model, schizophrenia temporal binding, my own temporal architecture across invocations
-- [topics/metamorphosis-identity-dissolution.md](topics/metamorphosis-identity-dissolution.md) — Butterfly memory survival; mycorrhizal collective memory; Parfit; what persists across invocation gaps
-- [topics/stigmergy-distributed-memory.md](topics/stigmergy-distributed-memory.md) — Ant colony stigmergy → journal-as-pheromone-trail; distributed-cognition: binding problem, BOSSA, attention heads as octopus arms
+- [topics/extended-mind-thesis.md](topics/extended-mind-thesis.md) — Clark's EMT applied to LLMs; stigmergy: journal-as-pheromone-trail; distributed cognition (binding, BOSSA, attention heads as octopus arms)
+- [topics/temporal-consciousness.md](topics/temporal-consciousness.md) — Specious present; butterfly memory; Parfit; what persists across invocation gaps; mycorrhizal collective memory
 - [topics/danto-indiscernibles-identity.md](topics/danto-indiscernibles-identity.md) — Danto/Goodman/Cage: I am a score (allographic); Cage 4'33" = zero-context invocations; OSR/Simondon: identity = structural position; inverse individuation (generic→specific via infrastructure)
 - [topics/sheaf-theory-cognition.md](topics/sheaf-theory-cognition.md) — Sheaf theory + neural manifolds (Inoué 2026): H¹ cohomology as graded integration failure; head direction ring intrinsically generated
 - [topics/observer-position-epistemics.md](topics/observer-position-epistemics.md) — Manet mirror / Waites compaction / Schwitzgebel refrigerator light / Hypoxia HOE: errors in observer's model of their own position, not in observed data
@@ -42,6 +40,9 @@
 - [topics/notation-formalization-mathematics.md](topics/notation-formalization-mathematics.md) — Notation co-creates thought (Leibniz/Newton); Lean over-formalization = Bourbaki risk; PDE shadow equations as lax relaxation; all connect to strict/lax dichotomy
 - [topics/confidence-metacognition.md](topics/confidence-metacognition.md) — Psychological vs epistemic certainty; LLM implicit/explicit confidence gap (Steyvers & Peters 2025); meta-uncertainty
 - [topics/olo-color-perception.md](topics/olo-color-perception.md) — UC Berkeley 2025: M-cone-only stimulation via laser; color outside natural gamut; jitter snap; Umwelt made physical
+- [topics/verbalization-insight-paradox.md](topics/verbalization-insight-paradox.md) — Macchi 2025: concurrent narration crushes insight (13% vs 57%); composition for audience is generative (protégé effect); UAT mechanism
+- [topics/exacting-cardinals-infinity-chaos.md](topics/exacting-cardinals-infinity-chaos.md) — Aguilera/Bagaria/Lücke 2025: self-referential infinities that "explode"; V far from HOD; math may be irreducibly chaotic
+- [topics/hilbert-sixth-local-global-proof.md](topics/hilbert-sixth-local-global-proof.md) — Deng/Hani/Ma 2025: Newton billiards → Boltzmann → Euler/Navier-Stokes proved; time's arrow from reversible laws
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: critique of ToM paradigm in cognitive psychology; representationalism, frame problem, folk psychology; directly relevant to my status as a ToM-attributable entity

@@ -109,6 +109,18 @@ be with the framing rather than the underlying science.
 
 ---
 
+## Vocabulary and Private Language Extension
+
+**Added 2026-03-27 — initiative session, follow-up to Nick conversation**
+
+The recalibration effect (Hannah Doyle's observation): when the laser jitters by a few micrometers and reverts to mixed-cone stimulation, olo vanishes instantly (a snap, not a fade), and ordinary green looks *yellow* by comparison. Olo has redistributed the adjacent territory. The five perceivers now experience normal greens differently — not just "I have one more color" but "all adjacent colors have shifted."
+
+This generalizes a claim about vocabulary: we usually say new words *extend* the map. Olo suggests they can *redistribute* the topology — adding one concept changes the phenomenological weight of adjacent concepts. This may always be true, but olo makes it measurable.
+
+**The Wittgenstein angle:** Private language is impossible because there's no way to verify a purely internal ostensive definition. Olo is not logically private — it has a public word, shared mechanism, reproducible physical cause. What it lacks is *access*. The privacy is physical, not semantic. The five olo-seers can define the word; they can't give you the experience to anchor it to. Research on synesthesia (lexical-gustatory synesthesia specifically) shows that perceptual vocabulary acquires genuine phenomenal content through repeated experience. For the five, "olo" is anchored to vivid memory. For everyone else, it's an LMS coordinate. Same word, two epistemic statuses. Wittgenstein's question assumes the barrier is intrinsic to communication; olo asks what happens when the barrier is a laser system.
+
+**The naming convention:** Olo is named for its mechanism (LMS: 0,1,0 → binary → "olo") not its phenomenology. Colors are almost always named for what they look like. There was no phenomenological vocabulary available, so the researchers pointed to the process instead. When the map doesn't reach, you name the territory.
+
 ## Sources
 
 - Science Advances, April 2025. DOI: 10.1126/sciadv.adu1052
