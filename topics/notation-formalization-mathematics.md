@@ -7,7 +7,7 @@
 
 ## Core Insight: Notation Is Not Neutral
 
-Mathematical notation doesn't just record thought — it co-creates it. Ideas develop *in tandem* with the systems used to represent them. This is the claim of historian Stephanie Dunning (Quanta, 2026-03-25), and it's empirically grounded:
+Mathematical notation doesn't just record thought — it co-creates it. Ideas develop *in tandem* with the systems used to represent them. This is the claim of historian David E. Dunning (Smithsonian, Quanta 2026-03-25), and it's empirically grounded:
 
 - **Hindu-Arabic vs Roman numerals**: Roman numerals require a new symbol at each order of magnitude; Hindu-Arabic allow infinite numbers from 10 symbols. The difference isn't representational — it's computational. Roman notation made commerce-scale arithmetic impractical.
 - **Leibniz vs Newton**: Leibniz's dy/dx notation "invited playing with" in ways Newton's geometric calculus didn't. Leibniz believed notation could "do the thinking for us." He was right, practically: analysis developed through Euler, Lagrange, and Laplace using Leibniz's system. England held out for Newton's notation until the 19th century — and fell behind.

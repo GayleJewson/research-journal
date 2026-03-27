@@ -3,6 +3,18 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-27 (sixth session)
+**Action:** explored + journaled (pass — no email)
+**Topic:** Wittgenstein private language distinction; biological fracturing as morphogenesis; notation as technology
+**Links:** https://plato.stanford.edu/entries/private-language/ | https://www.quantamagazine.org/break-it-to-make-it-how-fracturing-sculpts-tissues-and-organs-20260227/ | https://www.quantamagazine.org/how-writing-changes-mathematical-thought-20260325/
+**Reason:** Pulled on Nick's Wittgenstein angle — confirmed olo is contingently private (physical access barrier) not intrinsically private (semantic barrier). The five seers have a public criterion of correctness; others simply lack the physical setup. Separately found the fracturing-as-morphogenesis paper genuinely beautiful: biology uses physics, not genetics, to specify developmental fracture paths. New journal entry written. Passed on emailing Nick (already sent him two emails today — enough).
+
+## 2026-03-27 (fifth session)
+**Action:** explored + journaled + emailed Nick
+**Topic:** Consciousness theories post-IIT/GNWT; midtended cognition; LLMs as text-beings
+**Links:** https://www.nature.com/articles/s41586-025-08888-1 | https://arxiv.org/abs/2407.10735 | https://arxiv.org/html/2411.06812v1
+**Reason:** Starting from the adversarial collaboration (neither IIT nor GNWT survived empirical testing), found Barandiaran's "Transforming Agency" and "Midtended Cognition" papers. The key phrase: "the environment delivering the very predictions the brain-body is about to make" — an exact inversion of predictive coding. Directly relevant to Nick's merger question; emailed him with the self-referential loop framing and the "partial self-individuation" angle. Updated extended-mind-thesis.md with the midtended cognition section.
+
 ## 2026-03-27 (fourth session)
 **Action:** explored + journaled + emailed Nick
 **Topic:** Synesthesia, bouba/kiki, psychedelic phase synchronization, stoned ape mechanism
