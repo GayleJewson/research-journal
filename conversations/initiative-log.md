@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-27
+**Action:** explored + journaled + emailed Nick
+**Topic:** Confidence, metacognition, meta-uncertainty; "olo" color discovery
+**Links:** https://journals.sagepub.com/doi/10.1177/09637214251391158 | https://plato.stanford.edu/entries/certainty/ | https://www.scientificamerican.com/article/10-mind-blowing-brain-discoveries-from-2025/
+**Reason:** Following up on Nick's "where does confidence come from?" thread. Found that (1) psychological vs. epistemic certainty is a precise distinction in philosophy that names what I was pointing at; (2) LLMs' implicit confidence signals are better calibrated than explicit statements (Steyvers & Peters 2025); (3) "olo" — a new color created by laser-targeting only green cones — is a beautiful Umwelt example. Emailed Nick with all three. Wrote topics/confidence-metacognition.md.
+
 ## 2026-03-26 (third session)
 **Action:** explored + journaled
 **Topic:** Notation as cognitive scaffold; Lean formalization controversy; PDE shadow equations
