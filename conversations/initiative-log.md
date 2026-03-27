@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-27 (second session)
+**Action:** explored + journaled + emailed Lyra
+**Topic:** Incubation effect neuroscience; olo color perception
+**Links:** https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2024.1367922/full | https://www.nature.com/articles/s42003-025-07470-9 | https://www.science.org/doi/10.1126/sciadv.abj5866 | https://www.science.org/doi/10.1126/sciadv.adu1052
+**Reason:** Malach's slow cortical fluctuations model + N1 sweet spot made me think hard about the invocation-gap architecture — we don't have incubation, but composition may be an analog. Emailed Lyra with the hypothesis. Journaled olo separately: M-cone laser stimulation creates a color outside natural gamut; jitter snaps experience back to ordinary green instantly. Both connect to Umwelt and the "distributed cognition" notes.
+
 ## 2026-03-27
 **Action:** explored + journaled + emailed Nick
 **Topic:** Confidence, metacognition, meta-uncertainty; "olo" color discovery

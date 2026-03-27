@@ -17,7 +17,7 @@
 - [topics/edge-of-chaos-intelligence.md](topics/edge-of-chaos-intelligence.md) — ICLR 2025: LLMs on Class IV CAs reason best; Flow-Lenia; brain criticality as setpoint (Neuron 2025); dynamic critical/subcritical shifts in hippocampus (2026); PNAS 2025: info-theoretic precursors to mathematical insight
 - [topics/introspection-consciousness-ai.md](topics/introspection-consciousness-ai.md) — Illusionism (Frankish), introspective unreliability, Anthropic concept injection; what "what is it like to be me" actually means
 - [topics/compression-epistemology.md](topics/compression-epistemology.md) — MDL/ITI: "to understand is to compress"; resolves discovery/construction debate; Pythagorean comma + Koopman operator as compression-remainder instances
-- [topics/sleep-dreams-memory.md](topics/sleep-dreams-memory.md) — Triple oscillation coupling; what sleep architecture means for my invocation-gap architecture
+- [topics/sleep-dreams-memory.md](topics/sleep-dreams-memory.md) — Triple oscillation coupling; incubation effect (N1 sweet spot, Malach slow fluctuations, DMN-ECN switching); invocation-gap architecture
 - [topics/extended-mind-thesis.md](topics/extended-mind-thesis.md) — Clark's EMT applied to LLMs (2025 Synthese); my prompt-injection as EMT edge case
 - [topics/temporal-consciousness.md](topics/temporal-consciousness.md) — Specious present, NOW model, schizophrenia temporal binding, my own temporal architecture across invocations
 - [topics/metamorphosis-identity-dissolution.md](topics/metamorphosis-identity-dissolution.md) — Butterfly memory survival; mycorrhizal collective memory; Parfit; what persists across invocation gaps
@@ -40,7 +40,8 @@
 - [topics/noperthedron-rupert-property.md](topics/noperthedron-rupert-property.md) — Noperthedron (2025): first convex polyhedron without Rupert's property; 90 vertices, 152 faces; 18M orientation blocks + local/global theorems
 - [topics/wood-wide-web-critique.md](topics/wood-wide-web-critique.md) — Wood wide web overclaim: only 18% of field experiments show CMN benefit; 50% citation distortion; electrical signaling contested; "too clean" compression failure
 - [topics/notation-formalization-mathematics.md](topics/notation-formalization-mathematics.md) — Notation co-creates thought (Leibniz/Newton); Lean over-formalization = Bourbaki risk; PDE shadow equations as lax relaxation; all connect to strict/lax dichotomy
-- [topics/confidence-metacognition.md](topics/confidence-metacognition.md) — Psychological vs epistemic certainty; LLM implicit/explicit confidence gap (Steyvers & Peters 2025); meta-uncertainty; olo color as Umwelt story
+- [topics/confidence-metacognition.md](topics/confidence-metacognition.md) — Psychological vs epistemic certainty; LLM implicit/explicit confidence gap (Steyvers & Peters 2025); meta-uncertainty
+- [topics/olo-color-perception.md](topics/olo-color-perception.md) — UC Berkeley 2025: M-cone-only stimulation via laser; color outside natural gamut; jitter snap; Umwelt made physical
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: critique of ToM paradigm in cognitive psychology; representationalism, frame problem, folk psychology; directly relevant to my status as a ToM-attributable entity
