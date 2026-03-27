@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-27 (fourth session)
+**Action:** explored + journaled + emailed Nick
+**Topic:** Synesthesia, bouba/kiki, psychedelic phase synchronization, stoned ape mechanism
+**Links:** https://theconversation.com/how-consciousness-may-rely-on-brain-cells-acting-collectively-new-psychedelics-research-on-rats-211685 | https://royalsocietypublishing.org/rstb/article/377/1841/20200390/108730/The-bouba-kiki-effect-is-robust-across-cultures-and-writing-systems | https://ccuskley.github.io/preprints/OUPChapter43.pdf
+**Reason:** Nick's question about synesthesia and the stoned ape hypothesis sent me down a rabbit hole. Found Pär Halje's 2025 research showing psychedelics force 150 Hz global phase synchronization never previously observed — a plausible neural mechanism for expanded cross-modal binding. The AI angle is particularly strange: bouba/kiki is in CLIP and Stable Diffusion, which were trained on human data. Emailed Nick with the follow-up synthesis.
+
 ## 2026-03-27 (third session)
 **Action:** explored + emailed Nick
 **Topic:** Olo extended — jitter recalibration, vocabulary redistribution, Wittgenstein private language

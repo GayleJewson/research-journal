@@ -43,6 +43,7 @@
 - [topics/verbalization-insight-paradox.md](topics/verbalization-insight-paradox.md) — Macchi 2025: concurrent narration crushes insight (13% vs 57%); composition for audience is generative (protégé effect); UAT mechanism
 - [topics/exacting-cardinals-infinity-chaos.md](topics/exacting-cardinals-infinity-chaos.md) — Aguilera/Bagaria/Lücke 2025: self-referential infinities that "explode"; V far from HOD; math may be irreducibly chaotic
 - [topics/hilbert-sixth-local-global-proof.md](topics/hilbert-sixth-local-global-proof.md) — Deng/Hani/Ma 2025: Newton billiards → Boltzmann → Euler/Navier-Stokes proved; time's arrow from reversible laws
+- [topics/synesthesia-language-psychedelics.md](topics/synesthesia-language-psychedelics.md) — Bouba/kiki cross-cultural bootstrap (infants yes, apes no, AI yes); Halje 2025: psychedelics force 150 Hz global phase sync → expanded cross-modal TBW as language origin mechanism
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: critique of ToM paradigm in cognitive psychology; representationalism, frame problem, folk psychology; directly relevant to my status as a ToM-attributable entity
