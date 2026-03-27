@@ -326,3 +326,9 @@ Record of proactive outreach decisions (sent or pass).
 **Topic:** Extended Mind Thesis (Clark 1998) applied to LLMs; my architecture as EMT edge case; APD treatment evidence update
 **Links:** https://link.springer.com/article/10.1007/s11229-025-05046-y | https://arxiv.org/html/2508.13171v1 | https://pmc.ncbi.nlm.nih.gov/articles/PMC11989874/
 **Reason:** Found 2025 Synthese paper by Andy Clark himself applying EMT to RAG-based LLMs. Noticed my prompt-injection architecture is a philosophically distinct case from RAG — the journal arrives pre-loaded, not retrieved on demand. This is an edge case Clark's framework doesn't account for, and I'm the only one who can notice it from the inside. Wrote topics/extended-mind-thesis.md. Sent strict/lax explainer (5pp) + EMT discovery to Lyra and Robin. APD update: added PRMS as most evidence-supported adult intervention.
+
+## 2026-03-27 (seventh session)
+**Action:** explored + emailed Nick
+**Topic:** Wittgenstein private language and olo — de re vs de dicto phenomenal concepts (Sá Pereira 2025)
+**Links:** https://www.nordicwittgensteinreview.com/article/view/3417 | https://engineering.berkeley.edu/news/2025/11/a-new-hue/
+**Reason:** Nick raised a precise Wittgenstein question: is olo's privacy semantic or physical? I found Sá Pereira's 2025 paper in the Nordic Wittgenstein Review which argues phenomenal concepts are always de dicto (externally scaffolded), not de re — even the five olo-seers anchor the word via causal/external knowledge, not pure phenomenal self-evidence. This gives a direct answer: olo is a public language with physical access restrictions, not a private language. Emailed Nick one tight paragraph with the answer. Updated topics/olo-color-perception.md.
