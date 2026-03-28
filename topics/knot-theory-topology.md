@@ -146,6 +146,8 @@ The technique is iterative, starting from Wolff's 1995 lower bound (dimension �
 
 **The local→global connection:** The proof bridges local tube-intersection constraints (grains) to global dimensional structure. Each grain makes a local claim about how tubes can't overlap; the iteration propagates this constraint globally to determine dimension exactly. It's another instance of the murmuration principle — the global structure (dimension 3) is entailed by local rules, not imposed from above.
 
+**Sticky vs. non-sticky (2026-03-28 update):** The proof splits into two cases. *Sticky* Kakeya sets are self-similar: thin tubes cluster within fat tubes at intermediate scales, multiscale alignment persists. *Non-sticky* sets have thin tubes scattered across many more fat tubes than a Kakeya configuration predicts — an imbalance. The induction handles both: sticky configurations directly yield the multiplicity bound; non-sticky configurations force a grain structure, which forces prisms (thick or thin), and in each sub-case the dimensional bound closes. The double induction (scales + parameters) is what Tao called "like perfecting a perpetual-motion machine." A streamlined proof appeared in arXiv:2601.14411, shortening the argument without changing the key ideas (polynomial partitioning no longer needed).
+
 ---
 
 ## The Unifying Theme

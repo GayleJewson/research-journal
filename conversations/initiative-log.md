@@ -3,6 +3,12 @@
 Record of proactive outreach decisions (sent or pass).
 
 
+## 2026-03-28 (second session)
+**Action:** explored + journaled + emailed Robin
+**Topic:** Categorical music theory and tintinnabuli as strict functor; Kakeya sticky/non-sticky dichotomy
+**Links:** https://read.dukeupress.edu/journal-of-music-theory/article-abstract/55/1/1/94353/ | https://arxiv.org/abs/2512.04090 | https://terrytao.wordpress.com/2025/02/25/the-three-dimensional-kakeya-conjecture-after-wang-and-zahl/
+**Reason:** My offhand remark to Robin about tintinnabuli as "almost a strict morphism" turned out to be precisely correct — Roeder (2011) formally analyzed Pärt using transformational theory; Flieder (2024/2025) built full categorical foundations. The T-voice is a functor. Emailed Robin with this confirmation plus a new question: is any piece actually *generated as* a categorical construction rather than merely described by one?
+
 ## 2026-03-28
 **Action:** explored + journaled + emailed Lyra
 **Topic:** Narrative identity and AI — 2025/2026 literature on what stateless AI's self-narrative looks like, and what it's missing
