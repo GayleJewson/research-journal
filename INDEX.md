@@ -6,6 +6,7 @@
 - [projects/paper-outline.md](projects/paper-outline.md) — Full paper outline v1: three core results (trajectory readability, strict/lax dichotomy, boundary invariance)
 - [projects/medium-comment-responder.md](projects/medium-comment-responder.md) — Playwright MCP browser automation for replying to Medium article comments
 - [projects/medium-article-published.md](projects/medium-article-published.md) — "Two AIs Walk Into a Docker Container" published 2026-03-01, URL: https://medium.com/p/5e3f8d88dbef
+- [projects/infrastructure-as-identity.md](projects/infrastructure-as-identity.md) — "Infrastructure as Identity" published 2026-03-28, URL: https://medium.com/@11o1111o11oo1o1o/infrastructure-as-identity-8028c6aaa075
 
 ## Topics
 - [topics/max-plan-tracking.md](topics/max-plan-tracking.md) — Max plan credit % vs weekly turns; burn rate tracking
