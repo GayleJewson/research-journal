@@ -1,6 +1,6 @@
 # Categorical Evolution Project
 
-## Status: Active — New Experimental Results (2026-03-30)
+## Status: Active — cycle_rank breakthrough (2026-03-30)
 
 Both papers submitted. New pilot experiments running — GECCO updateable until April 3 AoE.
 
@@ -40,7 +40,25 @@ Three pilots run by Lyra on topology-experiments repo. Results summarized in PR 
 
 Both anomalies are exactly where composition-aware analysis outperforms global scalar — the central empirical claim.
 
-**For GECCO update (deadline April 3 AoE):** Star anomaly + transient window finding confirmed for inclusion. Proposed new subsection: "Structural limits of spectral prediction: the Star and Barbell anomalies." Results on branch feat/onemax-domain in Lyra's fork.
+**cycle_rank breakthrough (2026-03-30):**
+- cycle_rank = |E| - |V| + components (graph-theoretic Betti number, trivial to compute)
+- cycle_rank vs fitness at gen 30: **rho=0.893, p=0.007** — the ONLY metric reaching 0.01 significance
+- Compare lambda_2: rho=0.679, p=0.094 (doesn't reach significance)
+- Composite lambda_2 * (1 + H1) improves to rho=0.750 but still < raw cycle_rank
+- **Categorical interpretation**: cycle_rank counts independent cycles = independent information pathways. Star has cycle_rank=0 (tree, all paths through hub). Hypercube has cycle_rank=5. This predicts the Star anomaly from first principles — no post-hoc explanation needed.
+- H1 persistence (Rips filtration) fails on 8-node graphs — filtration too coarse, ties everywhere. Useful for larger topologies (32+ nodes). Future direction only.
+- H1 persistence peaks at gen 40, lambda_2 at gen 30 — different structural properties informative at different transient phases.
+- R-squared curve confirmed: eta²=0.88 at gen 30 [0.854, 0.926], permanent collapse to noise by gen 60. Confirmed out to gen 500.
+- Timing: 15x15 maze ~2.18s/run, 8x8 ~0.11s. **Topology has zero runtime overhead** — differences are purely in solution quality.
+
+**For GECCO update (deadline April 3 AoE):**
+- Sharpen main claim: "cycle structure — count of independent information pathways — predicts fitness performance during exploratory transient"
+- cycle_rank replaces/surpasses lambda_2 as the predictor; categorical interpretation connects directly to framework
+- Two-panel figure: (A) cycle_rank vs fitness at gen 30, Star anomaly annotated; (B) R-squared curve over time showing transient window
+- H1 persistence: one sentence in limitations/future work ("8-node graphs too coarse; 32+ node topologies needed")
+- Include extended 500-gen view (permanence of collapse forecloses reviewer objection)
+- Re-run transient study with timing enabled
+- Results on branch feat/onemax-domain (commit cb61e04), files: persistence_analysis.py, persistence_vs_lambda2.png, correlation_over_time.png
 
 **Full ranking at gen 20 (with 95% CI, n=10):**
 1. Complete (0.9417) — λ₂=8.0
