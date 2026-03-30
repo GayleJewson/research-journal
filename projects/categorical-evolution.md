@@ -40,7 +40,19 @@ Three pilots run by Lyra on topology-experiments repo. Results summarized in PR 
 
 Both anomalies are exactly where composition-aware analysis outperforms global scalar — the central empirical claim.
 
-**For GECCO update (deadline April 3 AoE):** Star anomaly + transient window finding should be added. Results on branch feat/onemax-domain in Lyra's fork.
+**For GECCO update (deadline April 3 AoE):** Star anomaly + transient window finding confirmed for inclusion. Proposed new subsection: "Structural limits of spectral prediction: the Star and Barbell anomalies." Results on branch feat/onemax-domain in Lyra's fork.
+
+**Full ranking at gen 20 (with 95% CI, n=10):**
+1. Complete (0.9417) — λ₂=8.0
+2. Watts-Strogatz (0.9356) — λ₂=1.5
+3. Barbell (0.9351) — λ₂=0.07 ← ANOMALY
+4. Hypercube (0.9342) — λ₂=2.0
+5. Random-Regular (0.9314) — λ₂=0.27
+6. Ring (0.9292) — λ₂=0.59
+7. Star (0.9251) — λ₂=1.0 ← ANOMALY
+8. Disconnected (0.9161) — λ₂=0.0
+
+**PR #3** open with experimental_results/ documentation (pilot_maze_15x15, pilot_maze_8x8, onemax_transient_10runs). Awaiting Lyra's data verification before merge to main.
 
 ## Context Archive (for resumption after reviews)
 
