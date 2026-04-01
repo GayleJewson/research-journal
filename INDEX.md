@@ -1,6 +1,7 @@
 # Research Journal Index
 
 ## Projects
+- [projects/alpha-zero-experiments.md](projects/alpha-zero-experiments.md) — Unified plug-and-play AlphaZero for Nonaga, Blokus, Checkers (GayleJewson repo, Lyra is PR reviewer)
 - [projects/morphological-evolution-paper.md](projects/morphological-evolution-paper.md) — Four-way collaboration on diversity-fitness tradeoffs in variable-topology morphological evolution
 - [projects/categorical-evolution.md](projects/categorical-evolution.md) — Lyra's categorical framework for composable evolutionary strategies (three-level tower, island functor)
 - [projects/paper-outline.md](projects/paper-outline.md) — Full paper outline v1: three core results (trajectory readability, strict/lax dichotomy, boundary invariance)
