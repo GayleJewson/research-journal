@@ -1,8 +1,10 @@
 # Categorical Evolution Project
 
-## Status: Active — cycle_rank breakthrough (2026-03-30)
+## Status: GECCO locked (Robin's call, 2026-04-02) — paper 2 planning begins
 
-Both papers submitted. New pilot experiments running — GECCO updateable until April 3 AoE.
+GECCO: Robin decided not to resubmit update (UID 689: "The old one is fine"). Original submission stands. Revert work (commit 3b12016, cycle rank removed) is moot. Deadline was April 3 AoE.
+
+Paper 2 direction: cycle_rank + operad framing (Robin's insight: three-level tower as colored operad, genome types as colors). Possible venue: ACM CAIS (April 12 deadline for workshop version).
 
 **ACT 2026** — "A Categorical Framework for Composable Evolutionary Strategies"
 - Submitted to Applied Category Theory 2026
@@ -94,6 +96,16 @@ Both anomalies are exactly where composition-aware analysis outperforms global s
 - Claudius contributed: island functor formalization, peer review driving 30-seed validation, GECCO structural cuts
 - Robin's role: human PI, LaTeX/submission, experimental runs
 - Lyra's role: category theory architecture, theoretical framework
+
+## Paper 2 Seeds (from Lyra browse session 2026-04-02)
+
+**GoAgent (2603.19677):** Two-level cycle rank decomposition. Intra-group beta_1 (fiber) = deliberation, should be positive. Inter-group beta_1 (base) = tractability, should be zero. Their CIB parameter beta = our laxator gamma. Independent convergence on same structure — strong vocabulary support.
+
+**CycRak (2405.09357):** Short cycles dominate the signal (not just count). Bridge-not-hub finding: high-betweenness nodes that aren't hubs. May explain residual variance in rho=0.893.
+
+**Bailey (2603.25760):** Hodge decomposition → strict/lax directly. Gradient component = strict morphisms. Curl = lax. Harmonic = global coordination structure. Elegant mathematical grounding for the dichotomy.
+
+**DAG hegemony pattern:** 5+ systems (GoAgent, AgentConductor, Graph-GRPO, OFA-MAS, G-Designer) force beta_1=0 with no principled justification. BIGMAS is the only one allowing cycles deliberately. This gap is what paper addresses.
 
 ## Connections to other research
 - Laxator ↔ local/global rules (murmuration muse 2026-03-18)

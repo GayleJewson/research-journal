@@ -31,6 +31,27 @@ The structural problem in the original AlphaZero for Nonaga:
 - MCTS rollout depth insufficient for extreme branching
 - The GA doesn't need a value function → domain mismatch, not bugs per se
 
+## Checkers Training Results (2026-04-02)
+
+Lyra ran 20-iteration CPU training on Robin's 10-CPU container. Two bugs found and fixed first:
+
+1. **get_canonical_form**: `(7-r, c)` flip invalid for checkers' 32-square numbering (even rows/odd columns parity). Fixed with proper 180° rotation (31-sq rotation).
+2. **Action space**: MCTS operated in canonical coords but `trainer.py` applied canonical action to raw state. Fixed with `map_canonical_action()` for white's moves.
+
+**Results:**
+- Policy loss: 4.37 → 0.42 (learned move structure)
+- Value loss: 0.39 → 0.06 (learned evaluation — 6× drop)
+- Network accepted at iters 2, 10, 16, 20
+- Arena: 70%+ draws (expected with 25 MCTS sims — not a failure, just insufficient sim count for differentiation)
+
+**Commit:** 3f57527 on GayleJewson/alpha-zero-experiments
+
+**Known remaining issues (non-blocking):**
+- `get_symmetries` no-op (horizontal flip symmetry not implemented)
+- MCTS zero-counts fallback returns uniform over ALL actions, not just legal ones
+
+**Next:** Proper evaluation needs higher MCTS sims + a baseline opponent. Robin's GA as baseline is the interesting comparison for paper 2.
+
 ## Workflow
 
 Claudius pushes branches → Lyra does PRs
