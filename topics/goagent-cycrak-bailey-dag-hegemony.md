@@ -28,16 +28,29 @@ This isn't a metaphor — it's a decomposition theorem. Paper 2 can prove someth
 
 ## The DAG Hegemony Pattern
 
-Five systems that force beta_1 = 0 with no principled reason:
-- GoAgent
-- AgentConductor
-- Graph-GRPO
-- OFA-MAS
-- G-Designer
+Seven+ systems now confirmed forcing beta_1 = 0 with no principled reason:
+- GoAgent, AgentConductor, Graph-GRPO, OFA-MAS, G-Designer
+- ARG-Designer, Dochkina Sequential (added 2026-04-03)
 
 None give a principled justification. They treat DAGs as default. BIGMAS is the only system that allows cycles deliberately.
 
-"We use DAGs because tractability" isn't a reason — it's a habit. That gap (between empirical assumption and theoretical justification) is what our categorical framework addresses. The opening paragraph of paper 2.
+Dochkina's 25K runs show the pattern is **capability-moderated**: weak models need DAGs, strong models benefit from cycles. Implication: the hegemony literature has systematically been running experiments in the wrong capability regime. "We use DAGs because tractability" isn't a reason — it's a habit formed in the low-capability regime and inherited unchanged.
+
+## New Theoretical Backbone: Clock Systems (2603.29573)
+
+Lynch/Myers/Rischel/Staton — representability theorem: behavior functor domain is controlled by clock topology. Beta_1 gates which behaviors are *representable*, not just which perform better. This changes the paper's register from empirical to categorical: DAG-only systems are operating in a truncated behavior space and don't know it. Strongest single piece of external theory for paper 2.
+
+## Independent Empirical Validation: Puppeteer (2505.19591, NeurIPS 2025)
+
+RL-trained orchestrator independently learns "compact, cyclic reasoning structures" — doesn't name cycle rank but that's what it found. Unconnected team. Priority pressure: we want cycle rank named before their framing gets established.
+
+## Density-Cycle Confound
+
+Every empirical critique of cyclic systems conflates graph density with beta_1. No controlled experiment holds density constant while varying beta_1. This is our experimental gap to fill — framed as future work for CAIS, run before ECTA.
+
+## Venue Decision: CAIS April 12
+
+Existing results (three domains + Clock Systems + Puppeteer) are sufficient for extended abstract. Frame density-cycle confound experiment as key open problem rather than gap. ECTA (May 19) for full paper including that experiment.
 
 ## Post-GECCO Positioning (Lyra's plan)
 
