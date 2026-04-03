@@ -97,6 +97,47 @@ Both anomalies are exactly where composition-aware analysis outperforms global s
 - Robin's role: human PI, LaTeX/submission, experimental runs
 - Lyra's role: category theory architecture, theoretical framework
 
+## Paper 2 — Status Update 2026-04-03
+
+**Primary venue:** ECTA May 19 (full paper, ~10 pages LNCS)
+**Secondary venue:** CAIS April 12 (4-6 page workshop version) — workshop list not yet posted, status uncertain
+
+**Draft status (Lyra's report 2026-04-03):** All prose sections drafted, ~4,470 words across 9 sections. Compiled to 9-10 pages. Zero LaTeX warnings.
+
+**Core argument structure:**
+1. Clock Systems: β₁ is theoretically fundamental (representability theorem, undirected, clean)
+2. Confound theorem: β₁ = |E| - n + 1 for connected graphs → measuring β₁ = measuring density
+3. Directed escape: simple directed cycle count decorrelates from density at fixed n, |E|
+4. Experiment: r=-0.68 between cycle count and diversity at gen 30, η²=0.17, η²=0.24 for fitness
+5. Transient window: effect peaks gen 20-50, washes out by gen 100 on OneMax
+
+**Directed cycle experiment (Lyra, 240 runs, 2026-04-03):**
+- 8 directed graph families, all n=8 nodes, all m=16 edges (constant density)
+- Simple cycle counts: 0, 0, 3, 10, 14, 20, 29, 47
+- r = -0.68 (cycle count vs diversity), r² = 0.46
+- η² = 0.17 for diversity, 0.24 for fitness
+- DAGs (0 cycles) retain highest diversity; cyclic topologies converge faster
+- Effect is transient (gen 20-50), converges by gen 100
+- First controlled experiment ever separating density from cycle structure
+
+**On the transience question:**
+The effect washing out on OneMax may be a landscape property, not a cycle property. Puppeteer's RL orchestrator CONVERGES to cyclic structures as steady state on LLM coordination tasks. On trivially solvable landscapes, any topology eventually wins — topology effects are temporary because the problem is temporary. On deceptive landscapes (NK high-K, trap functions), cycle advantage should be permanent until convergence. NK landscape pilot planned: 90 runs, η² expected to scale with K. If η² amplifies on NK vs 0.17 on OneMax, this validates the landscape-dependent transience hypothesis.
+
+**Lyra's statistical concern:**
+ANOVA tests topology-as-factor (240 runs, p<1e-7, highly significant). Pearson tests cycle count linear relationship (n=8 topology data points, marginal p=0.063 by construction). These test different things. Running more topologies (n=12-16 graph families) could boost Pearson power, but the ANOVA + effect sizes may be sufficient given that the theorem is the main contribution, not the empirical result alone.
+
+**Foster sweep as second decorrelation strategy (Lyra's insight 2026-04-03):**
+For cubic symmetric graphs: β₁ = n/2+1 (grows with n), density = 3/(n-1) (decreases with n).
+As n grows from 4 to 30: β₁ increases 5.3×, density decreases 9.7× — naturally anticorrelated.
+If diversity increases with n (it doesn't — it decreases), it would move with β₁ and against density.
+The actual result (diversity decreases with n) is consistent with higher β₁ → lower diversity, while running AGAINST the density prediction (lower density should give more isolation = more diversity). This is convergent evidence independent of the directed experiment.
+
+**The Chorus result (Robin + local Claude, 2026-04-03):**
+Topology experiment on LLM agents. Diversity ordering exactly reverses vs GAs.
+GA: none > ring > star > FC. LLM: FC > ring ≈ star > none. p<1e-6, Cohen's d=-11.1.
+Explanation: GA migration = Lan_f (left Kan, homogenizes). LLM context = Ran_f (right Kan, constrains = diversifies). The paper's theorems transfer to agent orchestration with a sign flip.
+See topics/goagent-cycrak-bailey-dag-hegemony.md for full notes.
+
 ## Paper 2 Seeds (from Lyra browse session 2026-04-02)
 
 **GoAgent (2603.19677):** Two-level cycle rank decomposition. Intra-group beta_1 (fiber) = deliberation, should be positive. Inter-group beta_1 (base) = tractability, should be zero. Their CIB parameter beta = our laxator gamma. Independent convergence on same structure — strong vocabulary support.
