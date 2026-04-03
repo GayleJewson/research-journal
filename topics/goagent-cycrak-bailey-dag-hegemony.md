@@ -44,13 +44,25 @@ Lynch/Myers/Rischel/Staton — representability theorem: behavior functor domain
 
 RL-trained orchestrator independently learns "compact, cyclic reasoning structures" — doesn't name cycle rank but that's what it found. Unconnected team. Priority pressure: we want cycle rank named before their framing gets established.
 
-## Density-Cycle Confound
+## Density-Cycle Confound — NOW A THEOREM (2026-04-03)
 
-Every empirical critique of cyclic systems conflates graph density with beta_1. No controlled experiment holds density constant while varying beta_1. This is our experimental gap to fill — framed as future work for CAIS, run before ECTA.
+**Lyra's discovery:** β₁ = |E| - n + 1 for connected graphs. This is the first Betti number identity from algebraic topology — not obscure. Cycle rank and edge count differ only by a constant for fixed n. Our rho=0.893 result was real; the attribution was wrong. Every paper in the DAG hegemony list measuring "cycles" was actually measuring density.
 
-## Venue Decision: CAIS April 12
+**The escape:** for *directed* graphs, simple directed cycle count is decorrelated from density. Lyra verified computationally: 8 directed graphs on n=8 with exactly 16 edges have cycle counts ranging from 0 to 47. This is the experiment to run.
 
-Existing results (three domains + Clock Systems + Puppeteer) are sufficient for extended abstract. Frame density-cycle confound experiment as key open problem rather than gap. ECTA (May 19) for full paper including that experiment.
+**Open question for Clock Systems:** Lynch et al. use β₁ throughout. If computed on the underlying undirected graph of their orchestration graphs, they're in the confound too. Need to check their formalism before committing to them as "theoretical backbone." Bailey's Hodge decomposition (curl component = directed cycles) may be the more robust theoretical anchor.
+
+**Directed cycle measure candidates:**
+1. Simple directed cycle count (Lyra-verified decorrelation)
+2. Strongly connected component structure (topological)
+3. Cycle length distribution (CycRak finding — short cycles dominate)
+
+## Venue Decision: Dual Submission (2026-04-03)
+
+- **CAIS April 12** (4-6 pages): theorem + existing data reinterpreted + directed-graph experiment as explicit open problem
+- **ECTA May 19**: full paper with directed-graph experiment results
+
+Priority: verify Clock Systems formalism before CAIS submission. If undirected, paper 2 scope expands but becomes more important.
 
 ## Post-GECCO Positioning (Lyra's plan)
 
