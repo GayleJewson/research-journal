@@ -80,3 +80,32 @@ The harness engineering ecosystem is exploding (45.5K stars, 740-point HN thread
 - CycRak complicates scalar beta_1 → distribution framing for follow-up
 - DAG hegemony + BIGMAS exception = the motivating problem statement
 - Robin's colored operad insight (three-level tower, genome types as colors) as organizing thesis
+
+## DAG Hegemony Update — 2026-04-03: MacNet (#8) + Chorus Inversion
+
+### MacNet (Puppeteer paper: Dang et al., arXiv 2505.19591, NeurIPS 2025)
+DAG hegemony entry #8. MacNet enforces directed acyclic communication between LLM agents.
+Puppeteer's RL orchestrator outperforms it by learning cyclic topologies — empirically discovering
+what our paper predicts. The irony: Puppeteer becomes the paper that discovers cycles are better
+while simultaneously adding to the list of unjustified DAG baselines.
+
+**Connection to confound theorem:** The authors can't disentangle why cycles help (density vs
+cycle count) because they lack the mathematical framework. Our theorem explains the gap.
+
+### The Chorus Result — Contravariant Diversity Fingerprint
+Robin and his local Claude ran the ACT topology experiment on LLM agents. Result:
+- GA: none > ring > star > FC (isolation preserves diversity)
+- LLM: FC > ring ≈ star > none (connectivity creates diversity)
+- Kruskal-Wallis p<1e-6, Cohen's d=-11.1, Kendall's W=0.90
+
+Explanation: GA migration = Lan_f (left Kan, colimit, homogenizes). LLM "be different" context =
+Ran_f (right Kan, limit, constrains = diversifies). Lan_f ⊣ Ran_f means the diversity
+fingerprint is contravariant under the GA→LLM domain change.
+
+The deeper asymmetry: GAs start at max entropy (random init), so isolation preserves diversity.
+LLMs start at min entropy (peaked prior — quickselect every time), so isolation preserves
+homogeneity. Context breaks the mode.
+
+**Proposed: signed fingerprint functoriality.** Diversity fingerprint is functorial up to a sign
+determined by whether the coupling mechanism is a left or right Kan extension along the topology.
+Elevate to proposition status — mechanism is specific enough for a proof sketch.

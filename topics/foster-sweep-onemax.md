@@ -1,0 +1,58 @@
+# Foster Sweep: OneMax over Cubic Symmetric Graphs
+
+**Date:** 2026-04-03
+**Context:** Robin requested a "full sweep with OneMax" over the Foster census cubic symmetric
+graphs in RaggedR/symmetric-graphs. Lyra was running independently; I ran in parallel.
+
+## Setup
+- 13 cubic symmetric graphs (Foster census, all cubic/3-regular, n=4..30)
+- Each graph used as island migration topology (one island per vertex)
+- OneMax fitness, bitstring length = n (graph order)
+- 10 seeds, 50 individuals/island, 100 generations, migration rate 0.1 every 10 gen
+
+## Results
+
+  Graph             n   β₁  density     λ₂    div@30   div@50
+  K4                4    3   1.0000   4.0000   0.3314   0.3302
+  K33               6    4   0.6000   3.0000   0.2514   0.2561
+  Cube              8    5   0.4286   2.0000   0.2004   0.2047
+  Petersen         10    6   0.3333   2.0000   0.1713   0.1702
+  Heawood          14    8   0.2308   1.5858   0.1300   0.1299
+  Mobius-Kantor    16    9   0.2000   1.2679   0.1144   0.1137
+  Pappus           18   10   0.1765   1.2679   0.1054   0.1056
+  Dodecahedron     20   11   0.1579   0.7639   0.0920   0.0949
+  Desargues        20   11   0.1579   1.0000   0.0919   0.0951
+  Nauru            24   13   0.1304   1.0000   0.0803   0.0788
+  F26A             26   14   0.1200   0.9264   0.0740   0.0732
+  Coxeter          28   15   0.1111   1.0000   0.0697   0.0699
+  Tutte-Coxeter    30   16   0.1034   1.0000   0.0653   0.0640
+
+Correlations: r(β₁, div@30) ≈ -0.99, r(density, div@30) ≈ +0.99, r(λ₂, div@30) ≈ +0.97
+
+## Key findings
+
+1. **Monotone decrease with n.** Diversity decreases as graph order grows. This is a scaling
+   result, not a per-topology fingerprint. Expected: for cubic graphs β₁=n/2+1, density=3/(n-1).
+   β₁ and density are perfectly anticorrelated with n — this is a single-degree-of-freedom
+   family.
+
+2. **β₁ vs density decorrelation is partial.** As n grows: β₁ increases, density decreases.
+   Diversity decreases — moves WITH β₁ and AGAINST density's prediction (lower density should
+   mean more isolation = more diversity, but we see the opposite). This is Lyra's "second
+   decorrelation strategy" — not a confound resolver, but adds weight.
+
+3. **Dodecahedron vs Desargues (n=20).** Same β₁=11, same density=0.158, λ₂=0.764 vs 1.000.
+   Diversity IDENTICAL (0.0920 vs 0.0919 at gen 30). On OneMax, λ₂ doesn't independently
+   predict diversity at fixed n. Would need a harder domain to isolate the spectral signal.
+
+4. **Confound with n.** Since β₁=f(n) and density=g(n) for cubic graphs, all three variables
+   (β₁, density, n) are measuring the same degree of freedom. The directed experiment remains
+   the only clean decorrelation.
+
+## Interpretation
+
+This is a scaling study, exactly as Lyra framed it. The diversity ordering is consistent with
+the theoretical prediction (more β₁ → less diversity), but the confound with n means the signal
+can't be cleanly attributed to cycles vs density for this graph family.
+
+The code is at /workspace/onemax_sweep.py.
