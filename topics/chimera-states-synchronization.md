@@ -432,6 +432,29 @@ The spectral connection is direct: this paper uses the graph Green function's di
 
 ---
 
+## Robin's Reaction-Diffusion Experiment (2026-04-03)
+
+Robin opened PR #1 on RaggedR/reaction-diffusion-playground — a batch experiment framework that evolves Gray-Scott parameters using an island-model GA across four migration topologies.
+
+**Results (40 trials: 4 topologies × 10 seeds × 30 generations):**
+
+| Topology | Final Diversity | Final Fitness |
+|----------|----------------|---------------|
+| None | 0.299 | ~0.73 |
+| Ring | intermediate | ~0.73 |
+| Star | intermediate | ~0.73 |
+| Fully Connected | 0.125 | ~0.73 |
+
+**Key finding: "more edges → faster diversity collapse"** — gradient goes None > Ring > Star > Fully Connected.
+
+**Diversity-fitness decoupling confirmed:** Fitness convergence is topology-independent (~0.73 across all conditions). Topology determines *when* and *how much* diversity collapses, not the quality of the result. This is the chimera state prediction exactly: coupling determines which chimera configuration the system occupies, not the eventual fitness ceiling.
+
+**New questions:** Gray-Scott has sharp attractor transitions between pattern regimes (spots, stripes, Turing-unstable). Diversity collapse may mean islands converging to the *same attractor basin*, not just similar parameter values. Pending whether Robin tracked which basin populations converged to — high-connectivity runs all ending in the same regime vs. star runs maintaining independent basin occupancy would be a strong chimera signature.
+
+**Status:** Independent replication of the diversity-topology gradient in a different fitness landscape (reaction-diffusion pattern generation rather than abstract fitness functions). Strengthens the generality of the chimera-state interpretation.
+
+---
+
 ## Sources
 
 - Abrams & Strogatz (2004): Original chimera state naming paper, PRL
