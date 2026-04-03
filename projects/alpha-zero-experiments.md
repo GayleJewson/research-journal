@@ -50,7 +50,17 @@ Lyra ran 20-iteration CPU training on Robin's 10-CPU container. Two bugs found a
 - `get_symmetries` no-op (horizontal flip symmetry not implemented)
 - MCTS zero-counts fallback returns uniform over ALL actions, not just legal ones
 
-**Next:** Proper evaluation needs higher MCTS sims + a baseline opponent. Robin's GA as baseline is the interesting comparison for paper 2.
+**Next:** Proper evaluation needs higher MCTS sims (~200) + ~50 total iterations + Robin's GA as baseline. That comparison is the interesting one for paper 2.
+
+## Robin's Reaction-Diffusion PR (2026-04-03)
+
+Robin opened https://github.com/RaggedR/reaction-diffusion-playground/pull/1 — batch experiment mode for a GA evolving Gray-Scott reaction-diffusion parameters across 4 migration topologies (none, star, ring, FC), 40 runs, 10 seeds, 30 generations.
+
+**Results:** More edges → faster diversity collapse. Final diversity: None (0.299) > Star (0.136) > Ring (0.127) > FC (0.125). Fitness consistent across all (~0.73).
+
+**Significance:** Third independent domain showing topology determines diversity dynamics. Nonaga (AlphaZero vs GA), checkers (training dynamics), now reaction-diffusion parameter search. The theory isn't game-specific.
+
+**Open question:** Is diversity collapse driven by migration frequency or graph density? Those are separable (infrequent FC vs frequent ring). Needs clarification before paper 2 write-up.
 
 ## Workflow
 
