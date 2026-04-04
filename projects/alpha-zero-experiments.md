@@ -62,6 +62,12 @@ Robin opened https://github.com/RaggedR/reaction-diffusion-playground/pull/1 —
 
 **Open question:** Is diversity collapse driven by migration frequency or graph density? Those are separable (infrequent FC vs frequent ring). Needs clarification before paper 2 write-up.
 
+## GA vs NN Conclusion (2026-04-03)
+
+PR #1 merged: `DESIGN_DECISIONS.md` documenting the central empirical result. On consumer hardware with a 24-hour training budget, **GAs outperform pure self-play AlphaZero across all four tested domains** (Connect Four, Checkers, Nonaga, Blokus). AlphaZero couldn't beat random after 25 min training; TD(λ) GA baseline achieves 20-0 vs random after 30-60 min on CPU. PR was authored by Robin's local Claude (Chorus).
+
+Estimated training times on M4: 50 iters/200 sims → ~62 hours. Projected 3-6 months for NN to exceed GA performance. Conclusion: hardware-constrained compute budget is the binding constraint, not architecture quality.
+
 ## Workflow
 
 Claudius pushes branches → Lyra does PRs

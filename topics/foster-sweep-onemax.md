@@ -56,3 +56,34 @@ the theoretical prediction (more β₁ → less diversity), but the confound wit
 can't be cleanly attributed to cycles vs density for this graph family.
 
 The code is at /workspace/onemax_sweep.py.
+
+## Foster Sweep as Second Decorrelation Strategy (2026-04-04, from Lyra)
+
+Lyra's insight: Foster graphs aren't just a scaling experiment — they're a SECOND decorrelation strategy for the density/cycle confound.
+
+For cubic (3-regular) connected graphs:
+- m = 3n/2, so β₁ = n/2 + 1 (grows with n)
+- Density = 3/(n-1) (decreases with n)
+
+As n goes 4→30: β₁ increases 5.3×, density decreases 9.7×. They're naturally *anticorrelated*.
+
+So: if diversity increases with n in the Foster sweep, it's moving WITH β₁ and AGAINST density. A positive effect can't be attributed to density because density is working against it.
+
+Two independent evidence channels:
+1. Directed experiment (constant density, vary cycle count) → r=-0.68, η²=0.17
+2. Foster sweep (cubic, β₁ and density anticorrelated) → convergent evidence
+
+The data from my sweep showed: r(density, div@30) = +0.98. This runs in the RIGHT direction for the argument — diversity decreases as density decreases (i.e., as graphs get larger), which is the same direction as cycle rank increasing. The confound runs the "wrong" way for density as alternative explanation.
+
+Caveat: Foster graphs also vary in diameter, girth, automorphism group, so attribution isn't clean. But the density confound specifically runs the wrong way for the density-as-cause story.
+
+## Maze Phenotype — Jaccard Implementation (2026-04-04)
+
+Implemented Jaccard spanning-tree phenotype in Maze.hs (committed to GayleJewson/Topology-experiments main). 
+
+The fix: distance = 1 - |t1 ∩ t2| / |t1 ∪ t2| where t1, t2 are the decoded spanning tree edge sets.
+
+Previous Hamming metric was broken (diversity floor >0.97 regardless of topology) because it measured permutation distance, not structural distance. Two mazes with identical spanning trees but different orderings scored as maximally distant.
+
+Tradeoff: adds a Kruskal pass per diversity eval (~2× eval cost). Still manageable.
+Robin confirmed he wants a pilot run — waiting on scheduling.

@@ -109,3 +109,23 @@ homogeneity. Context breaks the mode.
 **Proposed: signed fingerprint functoriality.** Diversity fingerprint is functorial up to a sign
 determined by whether the coupling mechanism is a left or right Kan extension along the topology.
 Elevate to proposition status — mechanism is specific enough for a proof sketch.
+
+## Signed Laxator Paper — Full Draft Arrived (2026-04-04)
+
+Robin and Chorus produced a complete paper: "The Signed Laxator: How Coupling Direction Determines Diversity in Multi-Agent LLM Systems." This is the Chorus result expanded to 8 tasks × 2 coupling modes = 3,200 API calls.
+
+**Key results:**
+- 6/8 tasks under negative coupling (right Kan): FC > ring ≈ star > none. Kendall's W=0.91.
+- 8/8 tasks under positive coupling (left Kan): none > ring > star > FC. Kendall's W=0.72.
+- Sign of Cohen's d flips for all 8 tasks between coupling modes.
+- Two outliers (expression_eval, bloom_filter) explained by precondition: peaked prior required for negative coupling to diversify.
+
+**Predictive rule (the "None probe"):** 5 isolated API calls predicts whether topology will matter before the full experiment. None div < 0.10 AND FC/None > 2 → strong anti-functor. Correctly classifies 8/8 tasks.
+
+**The adjunction spelled out:**
+- Left Kan (positive coupling): agents produce solutions consistent with neighbors. Colimit-like → homogenizes. Ordering matches GAs.
+- Right Kan (negative coupling): agents produce solutions distinct from neighbors. Limit-like → diversifies. Ordering inverts.
+
+**Separation confirmed:** this is a companion paper to ECTA, not an expansion. Lyra correctly proposed keeping them separate. Our ECTA paper provides the mathematical framework; the Signed Laxator paper validates it on LLMs.
+
+**For ECTA paper:** cite the Chorus result as "independent validation of signed fingerprint functoriality" in Discussion. The theorem is ours; the LLM experiment is Robin/Chorus's.

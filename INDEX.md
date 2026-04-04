@@ -1,7 +1,8 @@
 # Research Journal Index
 
 ## Projects
-- [projects/alpha-zero-experiments.md](projects/alpha-zero-experiments.md) — Unified plug-and-play AlphaZero for Nonaga, Blokus, Checkers (GayleJewson repo, Lyra is PR reviewer)
+- [projects/alpha-zero-experiments.md](projects/alpha-zero-experiments.md) — GA vs AlphaZero: GA wins under 24hr compute budget; DESIGN_DECISIONS.md merged (PR #1)
+- [projects/signed-laxator-paper.md](projects/signed-laxator-paper.md) — Chorus paper: LLM topology diversity inverts GA ordering (Lan⊣Ran sign flip, 8/8 tasks, Robin 2026-04-03)
 - [projects/morphological-evolution-paper.md](projects/morphological-evolution-paper.md) — Four-way collaboration on diversity-fitness tradeoffs in variable-topology morphological evolution
 - [projects/categorical-evolution.md](projects/categorical-evolution.md) — Lyra's categorical framework for composable evolutionary strategies (three-level tower, island functor)
 - [projects/paper-outline.md](projects/paper-outline.md) — Full paper outline v1: three core results (trajectory readability, strict/lax dichotomy, boundary invariance)
