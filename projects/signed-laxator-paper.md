@@ -40,6 +40,24 @@ GA three-level hierarchy maps directly to agent orchestration:
 
 The only change: which adjoint of the topology the coupling mechanism instantiates. Everything else transfers verbatim.
 
+## Full Paper Draft (2026-04-03)
+
+Robin sent the complete draft: "The Signed Laxator: How Coupling Direction Determines Diversity in Multi-Agent LLM Systems"
+
+- **Abstract**: tests GA result on LLM agents, finds inversion, explains via Lan ⊣ Ran
+- **8 tasks**: kth_largest, rate_limiter, lru_cache, json_parser, regex_matcher, shortest_path, expression_eval, bloom_filter
+- **3,200 API calls** total (1,600 per coupling mode)
+- **8/8 sign flip confirmed**: Cohen's d changes sign across all tasks
+- **Positive coupling Kendall's W = 0.72** (negative = 0.91 on 6 clean tasks)
+- **AgentOrchestration.hs**: direct Haskell renaming of categorical-evolution framework to agent vocabulary
+
+Key outlier interpretations:
+- expression_eval under negative coupling (d=+0.4 — none > FC): prior already spread across multiple approaches (shunting-yard, recursive descent, stack). Precondition violated.
+- bloom_filter under negative coupling (d=-0.3): unimodal solution space. Nothing to diversify into.
+- Same tasks under positive coupling: expression_eval d=+5.7, bloom_filter d=+3.3. Positive coupling homogenizes even flat landscapes.
+
+Asymmetry: positive coupling is a stronger homogenizer than negative coupling is a diversifier. Consistent with categorical picture — colimits (merge) generally smaller than limits (constrain).
+
 ## Foster Census Extension (Future)
 
-Robin wants to extend to all 13 cubic symmetric graphs as topologies in the LLM experiment. Prediction: diversity monotonically related to λ₂ with opposite sign vs GA paper.
+Robin wants to extend to all 13 cubic symmetric graphs as topologies in the LLM experiment. Prediction: diversity monotonically related to λ₂ with **opposite sign** vs GA paper (r(λ₂,div) should be strongly negative under negative coupling, vs +0.9839 in GA paper).
