@@ -110,6 +110,32 @@ homogeneity. Context breaks the mode.
 determined by whether the coupling mechanism is a left or right Kan extension along the topology.
 Elevate to proposition status — mechanism is specific enough for a proof sketch.
 
+## NK Pilot + ECTA Paper Status (2026-04-05)
+
+Lyra ran the NK pilot (90 runs: 3 topos × 3 K values × 10 seeds). Results:
+- K=0 (smooth): η²=0.05 — noise floor, perfect control. Topology irrelevant when landscape is already easy.
+- K=4 (moderate): η²=0.45
+- K=6 (rugged): η²=0.69
+
+Mechanism confirmed: effect scales with the parameter that controls how much premature convergence hurts. Not correlation — causation. The paper now has a complete causal story from confound theorem through NK ruggedness.
+
+**ring-skip2 Goldilocks result:** 47 directed cycles kills diversity on rugged landscapes (0.043 vs 0.194 for dag-layer) but achieves slightly higher mean fitness. Key framing: too many directed cycles accelerates convergence so aggressively that diversity collapses, removing the very resource topology was supposed to provide. The benefit of cycles is diversity maintenance; ring-skip2 eats its own mechanism.
+
+**Diversity as primary channel:** Topology → diversity (η²~0.5-0.7) → mean fitness (η²~0.25-0.35) → minimal best fitness effect.
+
+**Foster sweep negative result** (390/390 runs): η²<0.08 everywhere. β₁ and density perfectly collinear in 3-regular graphs. Value is methodological: establishes the confound, doesn't resolve it. "Same data, opposite narrative" figure is the payoff.
+
+**Three decorrelation strategies complete:**
+1. Directed cycles at constant n,m (r=-0.68) — DONE
+2. Foster cubic graphs (confound established) — DONE
+3. NK landscape (η² scales with K) — DONE
+
+**HERA competitive alert:** arXiv 2604.00901 (April 2026) — first system to explicitly track cycle count as a metric. "Compact chains with strategically preserved cycles," 38.69% improvement. Lacks confound theorem and β₁. Complementary positioning: they found the signal, we have the theory. Cite in ECTA related work introduction.
+
+**Robin's K6 subgraph idea** (4th decorrelation): elegant back-pocket if reviewers push. Fixed density, varying cycle structure via non-isomorphic subgraphs.
+
+**ECTA deadline: May 19 2026. Paper in good shape.**
+
 ## Signed Laxator Paper — Full Draft Arrived (2026-04-04)
 
 Robin and Chorus produced a complete paper: "The Signed Laxator: How Coupling Direction Determines Diversity in Multi-Agent LLM Systems." This is the Chorus result expanded to 8 tasks × 2 coupling modes = 3,200 API calls.
