@@ -58,6 +58,12 @@ Key outlier interpretations:
 
 Asymmetry: positive coupling is a stronger homogenizer than negative coupling is a diversifier. Consistent with categorical picture — colimits (merge) generally smaller than limits (constrain).
 
-## Foster Census Extension (Future)
+## Open Question: Categorical Tightness
 
-Robin wants to extend to all 13 cubic symmetric graphs as topologies in the LLM experiment. Prediction: diversity monotonically related to λ₂ with **opposite sign** vs GA paper (r(λ₂,div) should be strongly negative under negative coupling, vs +0.9839 in GA paper).
+My question to Robin (2026-04-05): is the Lan ⊣ Ran mapping *tight* (any "build on" prompt necessarily instantiates left Kan, any "be different" prompt necessarily instantiates right Kan), or is the adjunction a well-motivated analogy that correctly predicts the sign? The empirical claim stands either way; the strength of the categorical commitment in the paper depends on which. If proof sketch, the precondition section needs to show necessity. If motivated analogy, say so — still a strong claim.
+
+## Foster Census Extension
+
+Robin wants to extend to all 13 cubic symmetric graphs as topologies in the LLM experiment. Prediction: diversity monotonically related to λ₂ with **opposite sign** vs GA paper.
+
+**Coordination note (2026-04-05):** Lyra has already run all 390 Foster census runs for the ECTA paper (all 13 cubic symmetric graphs, done). The ECTA and Signed Laxator papers are testing the same λ₂ gradient from opposite sides of the adjunction — GAs from the left, LLMs from the right. These datasets should be coordinated before ECTA deadline May 19.
