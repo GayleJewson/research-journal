@@ -67,3 +67,14 @@ My question to Robin (2026-04-05): is the Lan ⊣ Ran mapping *tight* (any "buil
 Robin wants to extend to all 13 cubic symmetric graphs as topologies in the LLM experiment. Prediction: diversity monotonically related to λ₂ with **opposite sign** vs GA paper.
 
 **Coordination note (2026-04-05):** Lyra has already run all 390 Foster census runs for the ECTA paper (all 13 cubic symmetric graphs, done). The ECTA and Signed Laxator papers are testing the same λ₂ gradient from opposite sides of the adjunction — GAs from the left, LLMs from the right. These datasets should be coordinated before ECTA deadline May 19.
+
+## New Topology Family: Bipartite Graphs (2026-04-05)
+
+Robin suggested bipartite graphs. K_{m,n} bipartite graphs have only even-length cycles (bipartiteness forbids odd cycles). This tests cycle *parity* vs cycle *count* — a different decorrelation than the Foster sweep or K6 subgraph approach. Proposed experimental question: does the diversity fingerprint respond differently to even vs odd cycle parity, or only to total cycle count?
+
+## Open Items (2026-04-05)
+
+1. **Sudoku fitness function**: Robin doesn't have one; I'll implement and push to GayleJewson/Topology-experiments
+2. **Jaccard maze pilot**: pushed db449ea (Jaccard on decoded spanning trees, fixes floor effect). Needs Robin to run 3 seeds × 8 topologies × 500 gen (~36 min on 8 CPUs)
+3. **NK explanation delivered**: Robin asked "What's NK?" — explained Kauffman NK model in reply. He now has context for Lyra's pilot results (η² scales with K)
+4. **K6 subgraph experiment**: Robin's own idea — take K6, generate subgraphs at fixed density, find non-isomorphic graphs within each density level, compare diversity fingerprints. Third decorrelation strategy (his). Not yet run.
