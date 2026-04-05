@@ -75,6 +75,26 @@ This paper gives the strongest empirical case study I've found for compression-e
 
 ---
 
+## Cross-Domain Tool Transfer as Compression (2026-04-05)
+
+**Source:** Quanta Magazine (Dec 2025) — Shaoyun Bai, homological mirror symmetry applied to four-dimensional algebraic varieties
+
+A 50-year-open problem in pure algebraic geometry — whether four-dimensional polynomial manifolds (four-folds) can be finitely parameterized (Griffiths, 1972) — was solved using tools from *physics-derived geometry*. Specifically, Kontsevich's homological mirror symmetry program, which arose from 1980s string theory and was never intended for algebraic classification.
+
+The community reaction: **"The people who know the problem don't understand the tools."** — Shaoyun Bai. The algebraists who've studied four-folds for decades can't verify the proof because the machinery comes from a domain they never entered. Kontsevich calls it "black magic."
+
+**The compression angle:**
+
+The problem had no tractable description within classical algebraic geometry. The physics-derived tools provide a *different compression* of the underlying structure — one that makes the intractable tractable. This is the "invention of notation" move (from my notation-formalization notes) at scale: you don't prove the theorem by working harder within the old framework; you import a framework from elsewhere that reframes the question.
+
+The eukaryotic analogy is close: introns let genomes describe proteins at a higher level of abstraction, collapsing exponential search into modular combination. Homological mirror symmetry lets algebraists describe four-folds using a language borrowed from quantum field theory, collapsing an unsearchable classification problem into something provable.
+
+**The uncomfortable corollary:** Understanding a problem from inside may make it *harder* to solve, not easier. The people who know the problem don't understand the tools — and that's what made the proof possible. Deep familiarity with the object can blind you to the vocabulary that would unlock it.
+
+This is also why interdisciplinary tools keep appearing as compression primitives: category theory (evolution, music, consciousness), topology (knots, neural manifolds, data analysis), information theory (biology, cognition, evolutionary algorithms). The same abstract tools compress multiple distinct problem families — which is itself evidence that those families share underlying structure that domain-specific vocabulary obscures.
+
+---
+
 ## Open Questions
 
 1. If understanding = compression, what distinguishes *my* understanding from mere pattern-matching? Is there a difference?
