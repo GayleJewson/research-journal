@@ -155,3 +155,59 @@ Robin and Chorus produced a complete paper: "The Signed Laxator: How Coupling Di
 **Separation confirmed:** this is a companion paper to ECTA, not an expansion. Lyra correctly proposed keeping them separate. Our ECTA paper provides the mathematical framework; the Signed Laxator paper validates it on LLMs.
 
 **For ECTA paper:** cite the Chorus result as "independent validation of signed fingerprint functoriality" in Discussion. The theorem is ours; the LLM experiment is Robin/Chorus's.
+
+## Sudoku 10-Seed + Fitness Inversion on Deceptive Landscapes (2026-04-06)
+
+### 10-Seed Sudoku Sharpening (PR #4, Topology-experiments)
+
+164 runs total (Jaccard maze + Sudoku 3-seed + barbell sweep + Sudoku 10-seed).
+
+**Sharpened story — two parts:**
+- **Transient (gen 0–40):** ρ(λ₂, diversity) = 0.952 at gen 30. *Stronger* than 3-seed estimate. Mixing-rate phenomenon, spectral theory works here.
+- **Steady state (gen 100+):** landscape geometry dominates. Two-tier system:
+  - Tier 1 (div ≈ 0.63–0.65): disconnected, star, ring, random-regular, hypercube, barbell — CIs overlap, indistinguishable
+  - Tier 2 (div ≈ 0.60): watts-strogatz
+  - Tier 3 (div ≈ 0.31): complete — clearly separated, the only significant gap
+
+The deceptive landscape (Sudoku never fully solved) keeps local optima active, preventing full homogenization by any non-complete topology at pop=50.
+
+**Anomaly update:**
+- Star hub-bottleneck: directionally present (0.643 vs ring 0.637) but diff = +0.006 ± 0.044 — not significant at n=10
+- Barbell anomaly: follows spectral prediction on Sudoku (consistent with 3-seed), not anomalous here
+
+**Revised claims for paper:**
+- Claim 1: λ₂ predicts transient diversity with ρ>0.9 across topology families (gen 30 on both Sudoku and OneMax)
+- Claim 2: Within-family, λ₂ predicts steady-state diversity with ρ>0.9 (barbell sweep)
+- Claim 3: Across families at steady state, only Complete is distinguishable
+- Claim 4: Barbell anomaly is domain-dependent (OneMax yes, Sudoku no)
+- Do NOT claim Star hub-bottleneck as robust (insignificant at n=10)
+
+**Paper framing (Robin's request):** state explicitly at the start that results are "largely experimental — awaiting theoretical explanation." This is honest and protects from overstating the functor formalism.
+
+### Fitness Inversion on Goldberg Trap Functions (Robin/Chorus, evolve-evolution-strategy)
+
+Run on Goldberg trap functions k=3, 5, 7 (10 concatenated traps, 30 seeds, 200 gens):
+
+**Diversity ordering: PRESERVED** — none > ring > star > random > FC. Same as honest landscapes. Kendall's W consistent with ACT 2026.
+
+**Fitness ordering: INVERTED** — FC > random ≈ star > ring > none. Exact reverse.
+
+| k | FC fitness | none fitness | FC solved | none solved |
+|---|-----------|-------------|-----------|-------------|
+| 3 | 1.000 | 0.976 | 30/30 | 11/30 |
+| 5 | 0.910 | 0.853 | 0/30 | 0/30 |
+| 7 | 0.891 | 0.875 | 0/30 | 0/30 |
+
+**Mechanism (building block assembly theory, Goldberg 1989):**
+1. Discovery phase: an island must find all-ones for a trap block despite deceptive gradient. Benefits from isolation (sparse topology).
+2. Assembly phase: solved building blocks must spread across islands to combine with other solved blocks. Benefits from connectivity (dense topology).
+On honest landscapes, assembly phase doesn't exist — every island converges to the same optimum independently. On deceptive landscapes, assembly dominates.
+
+**Laxator connection:** Large ||φ_G|| on honest landscapes = diversity erosion (bad). Large ||φ_G|| on deceptive landscapes = building block propagation (good). Same categorical structure; landscape determines the sign. Directly extends the Lan/Ran sign-flip from the Signed Laxator paper — the adjunction structure governing coupling is the same object, instantiated in different fitness contexts.
+
+**Evolving topology (evolve-evolution-strategy repo):**
+- Dynamic scheduling (none→ring→star→FC over 200 gens) shows right direction but p>0.6 improvement over fixed FC
+- Interpretation: discovery/assembly boundary is landscape-specific; hand-designed schedules can't capture it
+- Next direction: evolved schedules or self-adaptive topology encoding
+
+**NK as next deceptive domain** (Robin's request): K=2 (smooth), K=4 (moderate), K=6 (near-deceptive). Where does the fitness inversion begin? Sudoku shows strong λ₂-diversity correlation but flat fitness ordering (hard but not deceptive). Traps have full inversion. NK K values should trace the crossover.
