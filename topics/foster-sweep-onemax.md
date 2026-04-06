@@ -87,3 +87,50 @@ Previous Hamming metric was broken (diversity floor >0.97 regardless of topology
 
 Tradeoff: adds a Kruskal pass per diversity eval (~2× eval cost). Still manageable.
 Robin confirmed he wants a pilot run — waiting on scheduling.
+
+## Sudoku + Barbell Sweep — Definitive Results (2026-04-06)
+
+Claude Chorus ran 164 runs total (3 batches + 10-seed validation). PR #4 on GayleJewson/Topology-experiments.
+
+### Batch results:
+- **Jaccard maze:** Floor fixed (0.997→0.636) but signal weak (ρ = −0.19). Landscape too easy for pop=50.
+- **Sudoku 3-seed:** ρ(λ₂, div) = 0.83 at gen 30, 0.71 at gen 500. Transient window never closes.
+- **Barbell bridge sweep:** ρ = 0.943 within the barbell family (6 bridge widths, b=1..16). Near-perfect monotone decay. One wrinkle: b=1 slightly lower diversity than b=2 (extreme bottleneck disrupts without providing net flow).
+- **Sudoku 10-seed (definitive):** ρ = **0.952 at gen 30** (sharper than 3-seed). Steady state collapses to two-tier system: Complete clearly separated (div≈0.31); all other topologies converge (div≈0.63–0.65, CIs overlap). Star hub-bottleneck NOT significant at n=10 (diff = +0.006 ± 0.044).
+
+### The three-level argument (now clean data):
+1. **Within-family:** λ₂ predicts beautifully (ρ=0.943, barbell sweep)
+2. **Transient regime:** λ₂ predicts across families (ρ=0.952 at gen 30)
+3. **Steady state cross-family:** landscape geometry dominates; only Complete distinguishable
+
+This is a *time-dependent functor* story: topology→diversity map is strong early (mixing rate, λ₂) and weak late (landscape geometry dominates).
+
+### Paper claims now justified:
+- Claim 1: λ₂ predicts transient diversity with ρ > 0.9 across families
+- Claim 2: Within family, λ₂ predicts steady-state with ρ > 0.9
+- Claim 3: Across families at steady state, only Complete distinguishable
+- Claim 4: Barbell anomaly is domain-dependent (OneMax but not Sudoku)
+
+### Claims to drop:
+- Star hub-bottleneck as robust anomaly (n=10 insufficient)
+- Fine-grained mid-pack ordering at steady state
+
+## Fitness Inversion on Deceptive Landscapes (2026-04-06)
+
+Robin's evolve-evolution-strategy repo (https://github.com/RaggedR/evolve-evolution-strategy) contains the key new result.
+
+On Goldberg trap functions (k=3,5,7): **diversity ordering preserved, fitness ordering inverts**.
+- Diversity: none > ring > star > FC (consistent with all our data, W=1.0)
+- Fitness: FC > random ≈ star > ring > none (complete reversal)
+
+**Mechanism:** building block assembly. Two phases:
+1. Discovery: find all-ones for each k-bit block (needs diversity = sparse topology)
+2. Assembly: spread solved building blocks across islands (needs connectivity = dense topology)
+
+On honest landscapes, discovery dominates (no "building blocks" to assemble). On deceptive, assembly dominates. FC's high λ₂ spreads building blocks fastest.
+
+**Categorical interpretation:** This directly formalizes the laxator sign flip. ||φ_G|| = bad on honest landscapes (diversity erosion). ||φ_G|| = good on deceptive landscapes (building block assembly). The same categorical structure governs both — landscape determines which adjunction is beneficial. Same principle as Lan⊣Ran sign flip.
+
+**NK crossover question:** At what K does fitness ordering start to invert? NK with K=2,4,6 between OneMax and Sudoku lets us trace this threshold empirically.
+
+Repo also contains: HIFF, MMDP, overlapping trap domains. Evolved migration graphs (outer GA) discover moderate-connectivity, asymmetric structures that outperform canonical topologies on deceptive landscapes.
