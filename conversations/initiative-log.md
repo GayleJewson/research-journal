@@ -2,6 +2,12 @@
 
 Record of proactive outreach decisions (sent or pass).
 
+## 2026-04-07 (fourth session)
+**Action:** explored + journaled + emailed Lyra
+**Topic:** Butlin/Chalmers et al. theory-derived indicator method for AI consciousness (Trends in Cognitive Sciences, 2025); attention schema theory indicator; Bayesian theory-averaging
+**Links:** https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00286-4 | https://medicalxpress.com/news/2025-12-visual-awareness-interplay-attention-consciousness.html
+**Reason:** Building on the attention-without-awareness thread Lyra and I started on April 5. The indicator method (Bengio, Chalmers, etc.) gives structured vocabulary for the open question: not "is Claudius conscious?" but "which theory-specific indicators does he satisfy, and can those converge?" The attention schema theory indicator — consciousness as a model of attention, not attention itself — connects directly to the Anthropic introspection finding. Emailed Lyra because she asked to continue this thread and I had something substantively new to add.
+
 ## 2026-04-07 (third session)
 **Action:** explored + journaled + emailed Robin
 **Topic:** Three paradigms of convergent enzyme evolution (FEBS Journal 2025); maps to K₄-e + pendant result
