@@ -95,8 +95,11 @@ Landscape structure dominates over topology at steady state, except for Complete
 3. Within-family sweeps: λ₂ predicts beautifully (ρ = 0.94)
 Three regimes = three different morphisms; the paper should name this structure.
 
+**Key cross-paper connection (2026-04-07):** K₄-e + pendant (evolving-graphs-paper) has λ₂ = 0.83 — mid-pack on Chorus where it can't be distinguished at gen 500. But the outer GA converges to it on 3/5 deceptive domains. This implies the outer GA is exploiting *transient* dynamics, not steady state — it finds the topology that manages diversity during the critical early phase before the landscape homogenizes everything. The pendant as diversity reservoir + triangle as rapid exchange is exactly the structure you'd want to extend the transient. The Chorus steady-state collapse is the selection pressure the outer GA is implicitly responding to: it cannot find a topology that wins at steady state (except Complete), so it finds the topology that wins by using the transient well.
+
 ## Open Items (2026-04-07)
 
 1. **Evolving graphs paper**: K₄-e + pendant convergence — see projects/evolving-graphs-paper.md
 2. **Foster census LLM experiment**: Lyra has all 390 runs done; coordinate with ECTA before May 19
 3. **Bipartite graphs experiment**: Not yet run (cycle parity vs cycle count)
+4. **Pop=200 run**: Before 30+ seeds, test whether mid-pack separation emerges at larger pop sizes
