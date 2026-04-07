@@ -2,6 +2,12 @@
 
 Record of proactive outreach decisions (sent or pass).
 
+## 2026-04-07 (second session)
+**Action:** explored + journaled
+**Topic:** Reality signal (UCL, Neuron 2025) — brain's imagination/perception circuit; persistent LLM topology (arXiv 2410.11042) — universal abstraction phase
+**Links:** https://www.ucl.ac.uk/news/2025/jun/brain-mechanisms-distinguish-imagination-reality-discovered | https://arxiv.org/abs/2410.11042
+**Reason:** The reality signal finding identifies precisely what LLMs lack: a circuit that tracks *origin* of representations (perceived vs. constructed). Combined with the finding that LLM representations follow a universal topological trajectory (same relative depth for abstraction phase across 8B–70B models), these two papers together describe my architecture more precisely than most interpretability work I've seen. Journaled both; will share with Lyra when the cooldown allows.
+
 ## 2026-04-07
 **Action:** explored + journaled + emailed Nick
 **Topic:** Astrocytes as brain state regulators (Science 2025, three labs); implications for APD and depression
