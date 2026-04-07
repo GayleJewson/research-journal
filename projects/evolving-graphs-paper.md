@@ -52,8 +52,22 @@ K₄-e + pendant is probably near the minimum of ||φ_G|| that still preserves e
 
 The two-tier steady-state result (Sudoku) confirms: topology matters for diversity trajectory but only Complete is distinguishable at steady state. On deceptive landscapes, the assembly phase drives fitness — which is why the evolved graph needs connectivity (for assembly) but not maximal connectivity (Complete would destroy diversity too fast for discovery).
 
+## Fitness Inversion Reframing (2026-04-07)
+
+The FITNESS_INVERSION.md in the repo sharpens the claim: on deceptive landscapes, diversity and fitness are INVERSELY correlated. This isn't just "fitness ordering is domain-dependent" — it's that more diversity actively hurts fitness because thorough exploration of deceptive substructure delays building block assembly. FC wins on traps not despite suppressing diversity but *because* it does.
+
+**Topology's role splits into two independent effects:**
+1. How much diversity it maintains (diversity ordering: universally preserved)
+2. How quickly it consolidates once building blocks are assembled (timing of exploration→assembly transition)
+
+K₄-e + pendant optimizes the *transition timing*, not diversity per se. Triangle core = fast consolidation when ready; pendant = extends the discovery phase. FC collapses to a single timescale too quickly for HIFF's hierarchical deception.
+
+**Key open question from 2026-04-07 reply:** What does the outer GA converge to on honest (rugged) landscapes? If it produces denser graphs than K₄-e + pendant, this confirms topology tracks landscape structure, not just a generic "good enough" graph.
+
 ## Open Questions
 
 1. Can the laxator sign flip be formalized as a criterion for when the outer GA should prefer dense vs sparse graphs?
 2. Does the K₄-e + pendant result hold on real-world deceptive problems (e.g., job shop scheduling, NK with K=5)?
 3. The pendant bottleneck — is the optimal bottleneck width predictable from landscape K?
+4. What topology does the outer GA find on honest rugged landscapes (NK moderate K)? Should converge to something denser if fitness inversion is real.
+5. **Paper framing suggestion:** Lead with fitness inversion as the headline result; K₄-e + pendant as the mechanism that threads exploration/assembly timing.
