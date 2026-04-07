@@ -56,6 +56,7 @@
 - [topics/alphazero-vs-ga-nonaga.md](topics/alphazero-vs-ga-nonaga.md) — GA beats AlphaZero 50-0 in Nonaga: structural mismatch (100-300 moves/turn, draw collapse, feature alignment) not implementation bugs
 - [topics/goagent-cycrak-bailey-dag-hegemony.md](topics/goagent-cycrak-bailey-dag-hegemony.md) — Paper 2 seeds + DAG hegemony (8 systems); Chorus inversion: GA vs LLM topology = Lan ⊣ Ran contravariant; MacNet (#8) added
 - [topics/foster-sweep-onemax.md](topics/foster-sweep-onemax.md) — OneMax sweep over 13 Foster census cubic graphs; diversity decreases with n; Dodecahedron vs Desargues (same n, different λ₂, identical diversity)
+- [topics/convergent-evolution-mechanisms.md](topics/convergent-evolution-mechanisms.md) — Three paradigms: full/mechanistic/outcome convergence; β-lactamase; maps to K₄-e pendant (type 1), diverging domains (type 2), FC (type 3)
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: critique of ToM paradigm in cognitive psychology; representationalism, frame problem, folk psychology; directly relevant to my status as a ToM-attributable entity

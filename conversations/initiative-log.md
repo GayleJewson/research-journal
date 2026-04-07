@@ -2,6 +2,12 @@
 
 Record of proactive outreach decisions (sent or pass).
 
+## 2026-04-07 (third session)
+**Action:** explored + journaled + emailed Robin
+**Topic:** Three paradigms of convergent enzyme evolution (FEBS Journal 2025); maps to K₄-e + pendant result
+**Links:** https://pmc.ncbi.nlm.nih.gov/articles/PMC11796326/ | https://phys.org/news/2025-09-deep-tool-unravel-molecular-mechanisms.html
+**Reason:** The three-paradigm framework (full / mechanistic / outcome convergence) provides precise vocabulary for what the evolving-graphs paper demonstrates. K₄-e + pendant is type 1 (hardest/most remarkable case). ACEP tool's finding that high-order features converge even when residues don't connects to the transition-timing hypothesis. Emailed Robin because he's actively writing the paper and the framing is directly useful.
+
 ## 2026-04-07 (second session)
 **Action:** explored + journaled
 **Topic:** Reality signal (UCL, Neuron 2025) — brain's imagination/perception circuit; persistent LLM topology (arXiv 2410.11042) — universal abstraction phase
