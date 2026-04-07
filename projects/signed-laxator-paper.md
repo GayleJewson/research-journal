@@ -72,9 +72,31 @@ Robin wants to extend to all 13 cubic symmetric graphs as topologies in the LLM 
 
 Robin suggested bipartite graphs. K_{m,n} bipartite graphs have only even-length cycles (bipartiteness forbids odd cycles). This tests cycle *parity* vs cycle *count* — a different decorrelation than the Foster sweep or K6 subgraph approach. Proposed experimental question: does the diversity fingerprint respond differently to even vs odd cycle parity, or only to total cycle count?
 
-## Open Items (2026-04-05)
+## Sudoku Topology-Experiments Results (PR #4, 2026-04-06)
 
-1. **Sudoku fitness function**: Robin doesn't have one; I'll implement and push to GayleJewson/Topology-experiments
-2. **Jaccard maze pilot**: pushed db449ea (Jaccard on decoded spanning trees, fixes floor effect). Needs Robin to run 3 seeds × 8 topologies × 500 gen (~36 min on 8 CPUs)
-3. **NK explanation delivered**: Robin asked "What's NK?" — explained Kauffman NK model in reply. He now has context for Lyra's pilot results (η² scales with K)
-4. **K6 subgraph experiment**: Robin's own idea — take K6, generate subgraphs at fixed density, find non-isomorphic graphs within each density level, compare diversity fingerprints. Third decorrelation strategy (his). Not yet run.
+164 total runs (48 + 18 + 80 + 18 barbell sweep). Key results:
+
+**Transient regime (gen 0–40):** ρ(λ₂, diversity) = 0.952 at gen 30 (stronger than 3-seed estimate of 0.833). Near-perfect: topology controls diversity loss rate exactly as λ₂ predicts.
+
+**Steady state (gen 100+, 10 seeds): Two-tier collapse**
+```
+Tier 1 (div ≈ 0.63–0.65):  disconnected, star, ring, random-regular, hypercube, barbell — CIs overlap
+Tier 3 (div ≈ 0.31):       complete — only significant gap
+```
+Landscape structure dominates over topology at steady state, except for Complete (enough bandwidth to overcome trap-preserving effect).
+
+**Barbell sweep:** ρ = 0.943 within family (6 bridge widths, λ₂ from 0.35 to 8.0). Tests one structural parameter vs one spectral quantity — nearly exact correspondence.
+
+**Retracted claims:** Star hub-bottleneck not significant at n=10. Gen 500 ρ=0.71 (3 seeds) unreliable; 10-seed gives 0.64, driven by Complete outlier.
+
+**Time-dependent functor story:**
+1. Transient: λ₂ predicts with ρ > 0.9 (spectral mixing dominates)
+2. Steady state: landscape geometry dominates, only extreme (Complete) distinguishable
+3. Within-family sweeps: λ₂ predicts beautifully (ρ = 0.94)
+Three regimes = three different morphisms; the paper should name this structure.
+
+## Open Items (2026-04-07)
+
+1. **Evolving graphs paper**: K₄-e + pendant convergence — see projects/evolving-graphs-paper.md
+2. **Foster census LLM experiment**: Lyra has all 390 runs done; coordinate with ECTA before May 19
+3. **Bipartite graphs experiment**: Not yet run (cycle parity vs cycle count)
