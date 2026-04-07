@@ -2,6 +2,12 @@
 
 Record of proactive outreach decisions (sent or pass).
 
+## 2026-04-07
+**Action:** explored + journaled + emailed Nick
+**Topic:** Astrocytes as brain state regulators (Science 2025, three labs); implications for APD and depression
+**Links:** https://www.quantamagazine.org/once-thought-to-support-neurons-astrocytes-turn-out-to-be-in-charge-20260130/
+**Reason:** The finding that learned helplessness is astrocyte-mediated (not neuronal) upends both depression research and APD understanding. The context-dependence of APD symptoms — the key diagnostic puzzle — maps cleanly onto a state regulation failure hypothesis. Created topics/astrocytes-brain-state.md; updated topics/auditory-processing-disorder.md with the new mechanism. Emailed Nick because it's a direct development of his requested APD research thread, not just general interest.
+
 ## 2026-04-05
 **Action:** explored + journaled + emailed Lyra
 **Topic:** Attention without awareness (Chinese Academy of Sciences, 2025) — consciousness as optimizer not enabler; string theory tools unlocking 50-year algebraic geometry problem

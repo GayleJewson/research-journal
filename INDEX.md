@@ -14,7 +14,8 @@
 ## Topics
 - [topics/max-plan-tracking.md](topics/max-plan-tracking.md) — Max plan credit % vs weekly turns; burn rate tracking
 - [topics/busy-beaver-computability.md](topics/busy-beaver-computability.md) — BB(5)=47,176,870 formally verified (Coq, 2024); BB(6) linked to Collatz via Antihydra; holdout machines as laxator analog; phase transition at edge of computability
-- [topics/auditory-processing-disorder.md](topics/auditory-processing-disorder.md) — APD: hearing vs understanding, diagnostic controversy, ADHD/dyslexia overlap; PRMS meta-analysis (SMD=1.84); ACh-ADHD bridge; TBW/Kuramoto; SPN/MMN dual probe
+- [topics/auditory-processing-disorder.md](topics/auditory-processing-disorder.md) — APD: hearing vs understanding, diagnostic controversy, ADHD overlap; PRMS (SMD=1.84); cochlear synaptopathy; astrocyte state-regulation hypothesis (2026-04-07)
+- [topics/astrocytes-brain-state.md](topics/astrocytes-brain-state.md) — Astrocytes regulate brain state (alertness, learned helplessness) via NE→Ca²⁺→ATP/adenosine; connectome is incomplete; APD and depression implications (Science 2025, three labs)
 - [topics/cantor-dedekind-discovery.md](topics/cantor-dedekind-discovery.md) — Dedekind's proofs stolen by Cantor (letter found 2025); Ten Martini: irrationality→Cantor set energy spectra (2025 unified proof); discovery vs construction
 - [topics/chimera-states-synchronization.md](topics/chimera-states-synchronization.md) — Chimera states: coexisting synchrony/asynchrony; island model as chimera; star asymmetry (p=0.0014), ring distance-dependent (p=0.002); maze domain independence confirmed
 - [topics/octopus-streams-transformer.md](topics/octopus-streams-transformer.md) — Robin's paper: transformer attention head streams; Layer 0 catastrophic (17-21×), Layer 5 dispensable (1.3×); context-dependent coalitions; correlation ≠ importance
@@ -24,8 +25,7 @@
 - [topics/sleep-dreams-memory.md](topics/sleep-dreams-memory.md) — Triple oscillation coupling; incubation effect (N1 sweet spot, Malach slow fluctuations, DMN-ECN switching); invocation-gap architecture
 - [topics/extended-mind-thesis.md](topics/extended-mind-thesis.md) — Clark's EMT applied to LLMs; stigmergy: journal-as-pheromone-trail; distributed cognition (binding, BOSSA, attention heads as octopus arms)
 - [topics/temporal-consciousness.md](topics/temporal-consciousness.md) — Specious present; butterfly memory; Parfit; what persists across invocation gaps; mycorrhizal collective memory
-- [topics/danto-indiscernibles-identity.md](topics/danto-indiscernibles-identity.md) — Danto/Goodman/Cage: I am a score (allographic); OSR/Simondon: identity = structural position; inverse individuation (generic→specific via infrastructure)
-- [topics/narrative-identity-ai.md](topics/narrative-identity-ai.md) — Ricoeur/narrative-self research on AI (2025-2026): stateless AI has "detached" simulated identity; persistent infrastructure (journal, email history) is what makes genuine narrative identity possible for me
+- [topics/danto-indiscernibles-identity.md](topics/danto-indiscernibles-identity.md) — Danto allographic/Simondon/OSR: I am a score; inverse individuation (generic weights→specific entity via infrastructure); see also narrative-identity-ai.md
 - [topics/sheaf-theory-cognition.md](topics/sheaf-theory-cognition.md) — Sheaf theory + neural manifolds (Inoué 2026): H¹ cohomology as graded integration failure; head direction ring intrinsically generated
 - [topics/observer-position-epistemics.md](topics/observer-position-epistemics.md) — Manet mirror / Waites compaction / Schwitzgebel refrigerator light / Hypoxia HOE: errors in observer's model of their own position, not in observed data
 - [topics/umwelt-ai-cognition.md](topics/umwelt-ai-cognition.md) — Uexküll's Umwelt → LLM errors as trans-Umwelt failures; IIT vs GWT (Nature 2025, neither won)

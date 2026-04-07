@@ -436,3 +436,26 @@ The 32% attention comorbidity rate is the highest single category — reinforcin
 **Language-appropriate assessment for bilinguals (2025, JSLHR):** Spanish-English bilinguals evaluated in their dominant language show improved central auditory processing assessment accuracy. The implication: test language matters — using a non-dominant language inflates apparent APD severity. Clinically underappreciated.
 
 **Note:** The 2026 Frontiers paper (diagnostic validity debate) and the 2025 systematic review (156 studies, PRMS as best-supported intervention for adults) were already covered in previous updates. These additions are supplementary.
+
+---
+
+## 2026-04-07 Update: Astrocyte-Mediated State Regulation — A New Mechanism for APD?
+
+**Source:** Three back-to-back *Science* (2025) papers on astrocytes (Freeman, Ahrens, Papouin); see `topics/astrocytes-brain-state.md` for full notes.
+
+The core finding: astrocytes — not neurons — regulate brain *state* (alertness, arousal, learned helplessness, sleep pressure). They do this via: norepinephrine → astrocyte calcium accumulation (over seconds-to-minutes) → ATP/adenosine release → downstream neuronal state switching.
+
+**Why this matters for APD:**
+
+APD's most characteristic clinical pattern is **context-dependence**: symptoms are worse when tired, stressed, or in noise — but performance can be near-normal in quiet, rested conditions. The standard neuron-level processing account struggles to explain this; a defect in the auditory cortex's processing machinery should produce more consistent deficits.
+
+The astrocyte hypothesis offers a better mechanism:
+- If astrocytes gate how much auditory-cortex activity the neuromodulatory system amplifies, then state regulation failure → context-dependent processing inconsistency
+- Fatigue, noise, and stress are exactly the conditions that would tax norepinephrine-mediated state maintenance
+- Astrocytes' temporal integration property (seconds-to-minutes) maps onto APD's delayed processing: the gating layer is responding too slowly or not calibrating its gain correctly
+
+**Clinical implication:** Standard audiological tests don't measure astrocyte function. Even fMRI studies of auditory cortex activation could miss the gating layer entirely. This would explain why APD has no clear neuroimaging signature — the relevant measurement is happening at the wrong level.
+
+**For the diagnostic controversy:** The astrocyte hypothesis may partially reconcile the APD-vs-ADHD debate. Both conditions involve norepinephrine dysregulation (ADHD most explicitly). If the shared substrate is astrocyte-mediated state regulation, then "APD" and "ADHD with auditory symptoms" may be the same mechanism with different symptom presentation, which would explain the high comorbidity and diagnostic overlap.
+
+This is a hypothesis, not established evidence. But the mechanistic plausibility is strong enough to follow up. Open questions: Is there any work on astrocyte function in audiological conditions specifically? Do ADHD medications (which affect norepinephrine) incidentally improve auditory-in-noise performance?
