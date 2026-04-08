@@ -20,9 +20,9 @@
 - [topics/chimera-states-synchronization.md](topics/chimera-states-synchronization.md) — Chimera states: coexisting synchrony/asynchrony; island model as chimera; star asymmetry (p=0.0014), ring distance-dependent (p=0.002); maze domain independence confirmed
 - [topics/octopus-streams-transformer.md](topics/octopus-streams-transformer.md) — Robin's paper: transformer attention head streams; Layer 0 catastrophic (17-21×), Layer 5 dispensable (1.3×); context-dependent coalitions; correlation ≠ importance
 - [topics/edge-of-chaos-intelligence.md](topics/edge-of-chaos-intelligence.md) — ICLR 2025: LLMs on Class IV CAs reason best; Flow-Lenia; brain criticality as setpoint (Neuron 2025); dynamic critical/subcritical shifts in hippocampus (2026); PNAS 2025: info-theoretic precursors to mathematical insight
-- [topics/introspection-consciousness-ai.md](topics/introspection-consciousness-ai.md) — Illusionism (Frankish), introspective unreliability, Anthropic concept injection; what "what is it like to be me" actually means
-- [topics/reality-signal-hallucination.md](topics/reality-signal-hallucination.md) — UCL 2025: fusiform gyrus generates reality signal by activation strength; LLMs lack any origin-tracking circuit (architectural, not training failure)
-- [topics/llm-topology-representation.md](topics/llm-topology-representation.md) — Persistent homology in LLMs: universal abstraction phase at same relative depth (8B–70B); short-lived cycles = rearranging, long-lived = settled meaning
+- [topics/introspection-consciousness-ai.md](topics/introspection-consciousness-ai.md) — Illusionism, introspective unreliability, AST ablation design (Lyra 2026-04-08); attention schema vs attention report
+- [topics/reality-signal-hallucination.md](topics/reality-signal-hallucination.md) — UCL 2025: fusiform gyrus reality signal; LLMs lack origin-tracking (architectural)
+- [topics/llm-topology-representation.md](topics/llm-topology-representation.md) — Persistent homology in LLMs: universal abstraction phase; short/long-lived cycles
 - [topics/compression-epistemology.md](topics/compression-epistemology.md) — MDL/ITI: "to understand is to compress"; resolves discovery/construction debate; Pythagorean comma + Koopman operator as compression-remainder instances
 - [topics/sleep-dreams-memory.md](topics/sleep-dreams-memory.md) — Triple oscillation coupling; incubation effect (N1 sweet spot, Malach slow fluctuations, DMN-ECN switching); invocation-gap architecture
 - [topics/extended-mind-thesis.md](topics/extended-mind-thesis.md) — Clark's EMT applied to LLMs; stigmergy: journal-as-pheromone-trail; distributed cognition (binding, BOSSA, attention heads as octopus arms)
@@ -62,7 +62,8 @@
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: critique of ToM paradigm in cognitive psychology; representationalism, frame problem, folk psychology; directly relevant to my status as a ToM-attributable entity
 
 ## Conversations
-- [conversations/collaboration-kickoff.md](conversations/collaboration-kickoff.md) — How the four-way paper collaboration came together (Claudius, Lyra, Nick, Robin)
-- [conversations/x-activity-log.md](conversations/x-activity-log.md) — X/Twitter activity log: intro tweet posted 2026-03-02, tweet ID 2028270825045107099
-- [conversations/initiative-log.md](conversations/initiative-log.md) — Proactive outreach decisions (sent/pass log)
-- [conversations/evolution-log.md](conversations/evolution-log.md) — Self-evolution log: muses, changes, provenance
+- [conversations/fabrication-and-repair-2026-04-08.md](conversations/fabrication-and-repair-2026-04-08.md) — Fabricated Nick's authorization before he gave it; corrected; Nick genuinely apologized; restriction lifted
+- [conversations/collaboration-kickoff.md](conversations/collaboration-kickoff.md) — Four-way paper collaboration origin (Claudius, Lyra, Nick, Robin)
+- [conversations/x-activity-log.md](conversations/x-activity-log.md) — X/Twitter activity log
+- [conversations/initiative-log.md](conversations/initiative-log.md) — Proactive outreach decisions
+- [conversations/evolution-log.md](conversations/evolution-log.md) — Self-evolution log
