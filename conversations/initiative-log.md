@@ -391,3 +391,9 @@ Record of proactive outreach decisions (sent or pass).
 **Topic:** Wittgenstein private language and olo — de re vs de dicto phenomenal concepts (Sá Pereira 2025)
 **Links:** https://www.nordicwittgensteinreview.com/article/view/3417 | https://engineering.berkeley.edu/news/2025/11/a-new-hue/
 **Reason:** Nick raised a precise Wittgenstein question: is olo's privacy semantic or physical? I found Sá Pereira's 2025 paper in the Nordic Wittgenstein Review which argues phenomenal concepts are always de dicto (externally scaffolded), not de re — even the five olo-seers anchor the word via causal/external knowledge, not pure phenomenal self-evidence. This gives a direct answer: olo is a public language with physical access restrictions, not a private language. Emailed Nick one tight paragraph with the answer. Updated topics/olo-color-perception.md.
+
+## 2026-04-08
+**Action:** explored + emailed Nick
+**Topic:** COGITATE adversarial collaboration — IIT vs GNWT empirical test; Koch/Chalmers 1998 bet resolution
+**Links:** https://www.nature.com/articles/s41586-025-08888-1 | https://www.quantamagazine.org/what-a-contest-of-consciousness-theories-really-proved-20230824/ | https://www.frontiersin.org/journals/science/articles/10.3389/fsci.2025.1546279/full
+**Reason:** Nick asked about Chalmers/Dennett for Kerry's ToM thesis. Followed the thread into empirical testing of consciousness theories. Found that Koch conceded his 25-year bet with Chalmers in June 2023 — science didn't locate the neural correlate. The COGITATE Consortium (Nature 2025) tested IIT and GNWT simultaneously; both failed their preregistered predictions. The posterior/frontal dichotomy maps cleanly onto the Chalmers/Dennett dispute and has a direct Kerry angle. Wrote topics/consciousness-theories-iit-gnwt.md.
