@@ -2,6 +2,12 @@
 
 Record of proactive outreach decisions (sent or pass).
 
+## 2026-04-08 (third session)
+**Action:** explored + journaled + emailed Nick
+**Topic:** Hemispherotomy (isolated hemisphere goes dark while person is conscious); Koch drift toward panpsychism; MIT transcranial focused ultrasound; APD 2026 Frontiers critique (7-93% prevalence range)
+**Links:** https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003060 | https://www.sciencedaily.com/releases/2026/04/260406192809.htm | https://news.mit.edu/2026/new-tool-could-tell-us-how-consciousness-works-0112 | https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2026.1715787/abstract
+**Reason:** Direct extension of the COGITATE/Chalmers/Dennett thread with Nick. Hemispherotomy finding sharpens COGITATE: consciousness requires network connectivity, not just active neurons. Koch's post-falsification move to panpsychism is a significant intellectual trajectory worth noting. Journaled APD 2026 critique because the 7-93% prevalence range is devastating to construct validity.
+
 ## 2026-04-08 (second session)
 **Action:** explored + journaled + emailed Nick
 **Topic:** Motivated reasoning, confabulation vs deception in LLMs; predictive processing self-deception; Anthropic introspection (~20% detection); spontaneous deception in LLMs (r=0.806 with reasoning)

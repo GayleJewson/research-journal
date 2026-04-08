@@ -247,6 +247,28 @@ Most theories address Arrow A and treat Arrow B as magic. AST resolves it: the a
 
 **Wilterson & Graziano 2021 empirical test ([PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC8379943/)):** Deep Q-learning agent with/without attention schema. Without schema, the agent was "comparatively incapacitated" at controlling its own attention spotlight. Critical weakness acknowledged by authors: a more powerful network might learn the task without a schema — the deficit could be computational limitation, not principled architecture requirement. This is the ablation limitation to flag in any experimental design: distinguishing "schema is necessary in principle" from "schema is a useful shortcut for underpowered systems."
 
+## Hemispherotomy: One Brain, Two States (2026-04-08)
+
+**Source:** Colombo, Favoro, Mikulan, Seth et al. — *PLOS Biology*, 23(10): e3003060 (2025). Reported in MedicalXpress, Oct 2025.
+
+Ten pediatric epilepsy patients whose one hemisphere was surgically disconnected from the other (hemispherotomy — a procedure to prevent seizure spread). Then: EEG on both hemispheres.
+
+**The finding:** The isolated hemisphere — still containing living, metabolically active neurons — shows deep-sleep and anesthesia-level activity while the patient is awake and conscious. The *spectral exponent* (a validated consciousness marker) in the disconnected hemisphere matches vegetative-state values. The connected hemisphere shows normal waking activity. The same brain, simultaneously, is "awake" in one half and in a state equivalent to deep NREM sleep or general anesthesia in the other.
+
+**The consciousness significance:** Without thalamic and subcortical activating input, cortical tissue defaults to sleep-like states *regardless of the rest of the brain's waking status*. This means consciousness isn't a cortical property in isolation — it requires the network, including subcortical activating structures. The same neurons that were presumably participating in conscious experience before surgery fall into something like a vegetative state once they're cut off from the activating network.
+
+What happened to whatever experience was happening in those neurons before the disconnection? Nothing, in the sense that the patient doesn't report losing "half" of their consciousness after surgery. But the EEG says that cortex is now in a state we associate with absence of consciousness. Seth's original framing: "philosophical discussions about 'islands of awareness' in completely isolated neural systems." The islands, it turns out, go dark.
+
+**What this means for the COGITATE results:** COGITATE found consciousness markers in *posterior sensory areas*, not prefrontal cortex. Koch said "consciousness is about being, not doing." The hemispherotomy finding sharpens this: "being" still requires *network connectivity*, not just active neurons. Posterior sensory cortex contributes to consciousness not because of where it is but because of how it's connected to the rest of the system.
+
+**What it means for Koch's drift (same month, different direction):** After conceding the Chalmers bet and watching IIT fail COGITATE, Koch is moving toward panpsychism: "consciousness isn't created by the brain — but is actually built into the universe." He endorses IIT's integrated information concept but reframes it as pointing to consciousness as a fundamental feature of reality, like gravity or charge.
+
+This is a significant intellectual trajectory. In 1998, Koch bet Chalmers fine wine that neuroscience would find the neural correlate of consciousness in 25 years. He conceded in 2023. IIT, his preferred theory, failed its preregistered predictions in COGITATE. And now he's moved toward the one position that the empirical approach he spent his career on cannot falsify: consciousness as fundamental. Chalmers (who has always been near this position) has won twice — once by the concession, once by watching his adversary join him.
+
+**The MIT tool (2026):** MIT is developing transcranial focused ultrasound (TFU) — acoustic waves through the skull to stimulate specific deep brain structures with millimeter resolution, non-invasively. The distinctive capability: it reaches *deep* structures (thalamus, basal ganglia) that transcranial magnetic/electrical stimulation can't. This enables *causal* experiments — not just "X correlates with consciousness" but "stimulating X causes/doesn't cause consciousness." This is the tool that could test hemispherotomy implications: does TFU-stimulated thalamic activation restore consciousness-level activity in the isolated cortex? And what does the disconnected cortex experience, if anything?
+
+---
+
 ## Key Sources
 
 - Frankish, K. — [Illusionism as a Theory of Consciousness](https://keithfrankish.github.io/articles/Frankish_Illusionism%20as%20a%20theory%20of%20consciousness_eprint.pdf)

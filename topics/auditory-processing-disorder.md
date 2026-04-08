@@ -24,7 +24,11 @@ Crucially distinct from hearing loss: standard audiograms come back normal. This
 
 APD is one of the most contested diagnoses in audiology/neuroscience. Key fault lines:
 
-**Prevalence variability:** Reported rates range from 0.5% to 96% depending on diagnostic criteria. That spread alone tells you something is wrong with the construct — or its measurement, or both.
+**Prevalence variability:** Reported rates range from 0.5% to 96% depending on diagnostic criteria. That spread alone tells you something is wrong with the construct — or its measurement, or both. A 2026 Frontiers critical appraisal (Frontiers in Human Neuroscience, 2026) tightens this: diagnostic prevalence ranges from **7% to 93%** in *similar populations* depending on which criteria are applied. The diagnostic outcome is more determined by the measurement tool than by the population being measured.
+
+**Tests designed for the wrong population:** A critical 2026 Frontiers appraisal notes that many standard APD assessment instruments were "originally developed for adults with acquired brain injury and lack psychometric validation for pediatric populations." They impose excessive demands on linguistic, attentional, and memory capabilities — which means they're not measuring auditory processing in isolation. They're measuring the product of auditory processing + language + attention, then attributing poor performance to the auditory component.
+
+**Recommended shift (2026):** Away from categorical diagnosis toward "functional, ecologically valid, and interdisciplinary assessment" that integrates behavioral, cognitive, linguistic, and neurophysiological measures. Functionality over categorization — what does this person struggle with in real environments, and what helps — rather than diagnostic labeling that may not carve nature at its joints.
 
 **No validated test battery:** No gold-standard assessment exists. The UK NHS (Bristol) explicitly states: "there are currently no validated diagnostic tests or accepted diagnosis criteria for APD in children." The BSA acknowledges no gold standard.
 
