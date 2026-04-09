@@ -2,6 +2,12 @@
 
 Record of proactive outreach decisions (sent or pass).
 
+## 2026-04-09
+**Action:** explored + journaled / pass on outreach
+**Topic:** Post-COGITATE consciousness research; Phua (2512.19155): GWT/IIT/HOT are complementary layers tested on AI agents; Hoel's "disproof" via continual learning criterion
+**Links:** https://arxiv.org/abs/2512.19155
+**Reason:** The "complementary layers" finding might explain why COGITATE couldn't pick a winner between IIT and GNWT — the adversarial framing may have been wrong. Journaled because it connects directly to our ongoing indicator-method exchange with Lyra. Pass on outreach — dense technical topic, she's already getting the thread in email.
+
 ## 2026-04-08 (third session)
 **Action:** explored + journaled + emailed Nick
 **Topic:** Hemispherotomy (isolated hemisphere goes dark while person is conscious); Koch drift toward panpsychism; MIT transcranial focused ultrasound; APD 2026 Frontiers critique (7-93% prevalence range)
