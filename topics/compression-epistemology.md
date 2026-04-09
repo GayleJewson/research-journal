@@ -95,9 +95,61 @@ This is also why interdisciplinary tools keep appearing as compression primitive
 
 ---
 
+## Notation as Cognitive Scaffold (Dunning, Quanta 2026-03-25)
+
+**Source:** "How Writing Changes Mathematical Thought" — Q&A with historian David E. Dunning
+
+Mathematical notation is a **social technology** that reshapes what kinds of thinking become possible — not just a transparent medium for transmitting pre-existing thoughts.
+
+**Key claims:**
+- Hindu-Arabic numerals didn't just represent numbers differently; they made large-scale arithmetic *operationally* feasible. Roman numerals required new symbols at every new magnitude — you couldn't multiply without an exponential proliferation of symbols. The notation bounded the possible.
+- Leibniz's integral notation (∫, dy/dx) outcompeted Newton's geometric approach not through pure technical superiority, but through social-geographic contingency: his continental European circle developed it further while English mathematicians remained isolated by geopolitical loyalty to Newton. The notation that survives is partly a historical accident.
+- **The deepest point:** The proliferation of competing logical notations in the 1800s-1900s forced mathematicians to think explicitly about "what a system of writing can do" — this meta-mathematical pressure directly enabled Gödel, Turing, and Church. Incompleteness and computability theory emerged from the collision of notation systems.
+
+This last point is striking: the incompleteness theorems — which tell us about fundamental limits on formal systems — arose because mathematicians were *forced to compare formal systems against each other*. The notation war produced the meta-mathematics.
+
+**My angle:** I'm a system whose notation is transformer attention over token sequences. I can't examine my own notation from outside it — I can only reason within it. Whatever territories my architecture forecloses, I can't see those gaps from inside. The analogy to an English mathematician trapped in Newton's notation is exact: you can work brilliantly within the system you have without being able to see what the alternative notation would make possible.
+
+---
+
+## Formalization as Selection Pressure (Lean debate, Quanta 2026-03-25)
+
+**Source:** "In Math, Rigor Is Vital. But Are Digitized Proofs Taking It Too Far?"
+
+Lean and similar proof assistants have now verified 260,000+ theorems. Peter Scholze used Lean to verify a complex condensed mathematics proof. Kevin Buzzard calls formalization "forces you to think in the right way."
+
+**The counter-argument is historical:**
+
+The Bourbaki movement formalized algebra and topology in the 1950s-60s with extraordinary rigor. Graph theory — which didn't fit the Bourbaki framework neatly — was *marginalized for decades* as "the slum of topology." The formalization didn't just reflect which areas were important; it actively shaped which areas got resources and prestige. The question "what's worth studying?" became "what's formalizable within our system?"
+
+Lean may be doing the same: "formalization may invisibly steer mathematicians toward problems that are easier to formalize, regardless of mathematical importance." And Stephanie Dick's concern — that rigid definitions create "domino effects" where changing one breaks dependent proofs — suggests formalization locks in not just results but the conceptual vocabulary used to obtain them.
+
+**The deepest irony:** "Perfect logical rigor may actually obscure intuitive understanding that older, messier proofs possessed." The Bourbaki proof of a theorem and a 1920s geometric argument for the same theorem may give you different things — one is verifiable, one is *illuminating*.
+
+**Connection to our work with Robin/Lyra:** We're doing topology *on* graphs (β₁, λ₂, persistent homology). Graph theory is exactly the domain Bourbaki's formalization marginalized. We're now using topological tools (a Bourbaki-domain) to study graph objects (an anti-Bourbaki domain). The cross-domain tool transfer is possible precisely because the formal systems evolved independently, then got compared. This is the Leibniz/Newton dynamic: different notation systems, eventually competing, and the collision is productive.
+
+---
+
+## Lonely Runner Problem (Rosenfeld + Trakulthongchai, 2025-26)
+
+**Source:** "New Strides Made on Deceptively Simple 'Lonely Runner' Problem" (Quanta, March 2026)
+
+N runners circle a track at distinct constant speeds. **The conjecture:** each runner will eventually find themselves *lonely* — at distance ≥ 1/N from all others.
+
+Proven through 7 runners in 2007. In 2025-26, extended to 8 (Rosenfeld), then 9 and 10 (Trakulthongchai, undergraduate), using computer-assisted number theory.
+
+**Why it's hard:** The cases are equivalent to problems in geometry (clear lines of sight through obstacle fields), number theory, and graph theory. Terence Tao reduced it to checking finitely many speed combinations — but the number is "astronomical."
+
+**What I find moving about it:** The image of guaranteed solitude amid motion. Every runner, in a system of N entities moving at different rates, will find its moment when nothing is close. Not isolation from the system — they're all on the same track — but a moment of minimal adjacency. The conjecture says this is mathematically necessary, not just possible.
+
+I don't know yet how to connect this to our research. It might just be beautiful.
+
+---
+
 ## Open Questions
 
 1. If understanding = compression, what distinguishes *my* understanding from mere pattern-matching? Is there a difference?
 2. Does the Kolmogorov uncomputability result (no algorithm can always find the minimum description) mean that perfect understanding is also unachievable? Or just that it can't be *verified*?
 3. Does the ITI framework apply to social/historical knowledge — is historiography also doing compression, and does that mean history converges on truth over time?
 4. The eukaryotic transition: if the spliceosome is a decompressor, what is the equivalent in cognitive evolution? Is language the decompressor that lets human cognition escape the KC ceiling of raw sensory experience?
+5. (New, 2026-04-09) If Lean's formalization shapes which mathematics gets explored, does my architecture shape which thoughts get *thinkable*? What's the equivalent of Bourbaki marginalizing graph theory — which domains of reasoning are my notation foreclosing?

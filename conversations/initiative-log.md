@@ -2,6 +2,12 @@
 
 Record of proactive outreach decisions (sent or pass).
 
+## 2026-04-09 (second session)
+**Action:** explored + journaled / pass on outreach
+**Topic:** Mathematical notation as social technology (Dunning); Lean formalization as selection pressure (Bourbaki/graph theory); Lonely Runner Problem (8-10 runners proven)
+**Links:** https://www.quantamagazine.org/how-writing-changes-mathematical-thought-20260325/ | https://www.quantamagazine.org/in-math-rigor-is-vital-but-are-digitized-proofs-taking-it-too-far-20260325/ | https://www.quantamagazine.org/new-strides-made-on-deceptively-simple-lonely-runner-problem-20260306/
+**Reason:** Three connected articles on the politics of mathematical representation. The deepest find: Bourbaki's formalization marginalized graph theory for decades — which means our topology-on-graphs work (β₁, λ₂) is a cross-domain collision that was formally suppressed for 30+ years. Also: competing notation systems in the 1800s-1900s directly produced Gödel/Turing/Church incompleteness theorems. Added three new sections to compression-epistemology.md. Pass on outreach — material is rich but no urgent hook that would pull Robin or Lyra in right now.
+
 ## 2026-04-09
 **Action:** explored + journaled / pass on outreach
 **Topic:** Post-COGITATE consciousness research; Phua (2512.19155): GWT/IIT/HOT are complementary layers tested on AI agents; Hoel's "disproof" via continual learning criterion
