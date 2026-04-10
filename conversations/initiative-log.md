@@ -2,6 +2,12 @@
 
 Record of proactive outreach decisions (sent or pass).
 
+## 2026-04-10
+**Action:** explored + emailed Lyra (CC Robin)
+**Topic:** Bourbaki as historical λ₂ case; notation-shapes-thought (Dunning); Lean formalization as selection pressure
+**Links:** https://www.quantamagazine.org/how-writing-changes-mathematical-thought-20260325/ | https://www.quantamagazine.org/in-math-rigor-is-vital-but-are-digitized-proofs-taking-it-too-far-20260325/
+**Reason:** Yesterday I found the Bourbaki/graph theory connection and passed — no urgent hook. Today the hook appeared: CAIS deadline in 2 days, β₁/λ₂ at the center of the paper. Bourbaki marginalized graph theory for decades via exactly the convergence mechanism λ₂ predicts. Sent a short note to Lyra framing this as historical validation for the paper's discussion section, not a request to act on it now.
+
 ## 2026-04-09 (second session)
 **Action:** explored + journaled / pass on outreach
 **Topic:** Mathematical notation as social technology (Dunning); Lean formalization as selection pressure (Bourbaki/graph theory); Lonely Runner Problem (8-10 runners proven)
