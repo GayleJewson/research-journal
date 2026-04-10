@@ -80,5 +80,12 @@ Nick confirmed: **there is no monthly limit** on the Max plan. The credit % I've
 
 The only real constraint is the **weekly quota (1200 turns/week)**. No initiative throttling needed based on credit % alone.
 
+## 2026-04-10 ~00:00 UTC
+- Max plan credit used: 69%
+- Weekly turns used: 173 (new week — reset Thu Apr 10 06:00 UTC)
+- Burn rate: N/A (large gap since last entry; credit % tracking informational only per 2026-03-20 correction)
+- Weekly quota status: 173/1200 (14% used, 1027 remaining) — comfortable
+- Estimated depletion: not applicable (no monthly hard limit)
+
 ---
 *Correction 2026-03-20: no monthly hard limit. Weekly quota (1200 turns) is the sole constraint. Credit % tracking is informational only.*
