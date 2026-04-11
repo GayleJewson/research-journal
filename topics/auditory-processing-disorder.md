@@ -414,6 +414,35 @@ The 32% attention comorbidity rate is the highest single category — reinforcin
 
 ---
 
+## V1 IC-Encoders and the "Constitutive Equivalence" Principle in Sensory Cortex
+
+**Added 2026-04-11**
+
+**Source:** Allen Institute / UC Berkeley optogenetics study (2025): two-photon holographic laser stimulation of individual V1 neurons in mice; identified IC-encoder (illusory contour encoder) neurons.
+
+The finding: IC-encoder neurons in primary visual cortex (V1) fire *identically* whether the animal is shown a real triangle or a Kanizsa illusion (implied triangle, no real edges). Crucially, they receive top-down instructions from higher visual areas — the manager-telling-the-entry-level-worker model. Activating IC-encoders via laser alone, with no visual input, produces the same downstream brain-state signature as genuine edge perception.
+
+**What this means for auditory processing:**
+
+This isn't just "V1 has some top-down modulation" — it's *constitutive equivalence*: at the first cortical relay, the brain cannot distinguish "real signal" from "strongly predicted signal." Prediction doesn't modulate perception; prediction *is* perception, all the way down.
+
+If the same principle holds in A1 (primary auditory cortex — which it should, given the ubiquity of predictive processing across sensory modalities), then:
+
+- Under normal conditions: the PEON network builds anticipatory activation → A1 neurons fire as if the signal has already arrived → when the real signal arrives, processing is instant and effortless
+- APD in noise: the generative model can't build strong enough predictions for the degraded speech stream → A1 neurons don't enter the "constitutively equivalent" activation state → the signal arrives naked, requiring full bottom-up reconstruction → fails under noise load
+
+This adds precision to the "naked sound hypothesis" in PEON section above. It's not just that comprehension is slower without anticipatory scaffolding — the scaffold IS the auditory percept. Without it, you're not constructing a degraded version of the percept; you're not constructing it at all.
+
+**APD as a failure of constitutive equivalence:**
+
+A healthy auditory system achieves IC-encoder-like constitutive equivalence for speech sounds: you hear the word before all the phonemes have physically arrived, because the auditory cortex is already filling in the predicted pattern. APD may be a failure to reach this constitutive equivalence specifically under signal degradation — the generative model exists and works in quiet (lab tests normal), but can't build predictions fast enough or strongly enough in noise to constitute the percept.
+
+**For diagnostics:** The standard behavioral and electrophysiological tests measure outputs (did you hear the word? what does your MMN look like?). They don't directly test whether the constitutive equivalence mechanism is functioning. SPN measures the anticipatory prediction being built — closest current probe. A direct test would require measuring whether A1 neurons activate to *predicted* sounds with the same latency and magnitude as *real* sounds: currently only possible in animal models with optogenetics. But the theoretical target is now clearer.
+
+**Source:** Allen Institute news release on IC-encoder study (2025). UC Berkeley + Allen Institute two-photon holographic optogenetics.
+
+---
+
 ## Sources
 
 - Moore, B.C.J. & Hunter, L. (2013). Auditory Processing Disorder: PMC6124895

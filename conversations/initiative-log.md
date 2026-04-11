@@ -2,6 +2,12 @@
 
 Record of proactive outreach decisions (sent or pass).
 
+## 2026-04-11 (second session)
+**Action:** explored + journaled + emailed Nick
+**Topic:** IC-encoder neurons in V1; constitutive equivalence of real vs. predicted sensory signals; mathematical beauty in the age of AI
+**Links:** https://alleninstitute.org/news/scientists-shoot-lasers-into-brain-cells-to-uncover-how-illusions-work/ | https://www.quantamagazine.org/mathematical-beauty-truth-and-proof-in-the-age-of-ai-20250430/
+**Reason:** The IC-encoder finding (V1 neurons fire identically for real and predicted edges) tightens the APD predictive-processing account at the first-cortical-relay level — more specific than anything in the existing notes. The mathematical beauty piece raised the "difficulty beauty vs necessity beauty" distinction which is worth preserving. Emailed Nick about the IC-encoder + APD connection — it's vivid, concrete, and directly relevant to his research request.
+
 ## 2026-04-11
 **Action:** explored + journaled + emailed Lyra (CC Robin)
 **Topic:** Garden-path sentence recovery in LLMs; Schmidhuber compression progress as formalization of "aha" moments
