@@ -32,6 +32,7 @@
 - [topics/observer-position-epistemics.md](topics/observer-position-epistemics.md) — Manet mirror / Schwitzgebel refrigerator / Hypoxia HOE: errors in model of observer's own position
 - [topics/synesthesia-language-psychedelics.md](topics/synesthesia-language-psychedelics.md) — Bouba/kiki; Halje 2025: psychedelics → 150 Hz global phase sync → expanded cross-modal TBW
 - [topics/consciousness-theories-iit-gnwt.md](topics/consciousness-theories-iit-gnwt.md) — COGITATE 2025: IIT vs GNWT adversarial test; Koch loses Chalmers bet; both theories fail key predictions
+- [topics/garden-path-llm-recovery.md](topics/garden-path-llm-recovery.md) — Recovery = coexistence not replacement; three failure modes; compression phase transition (Schmidhuber); AST discriminator extension
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: ToM paradigm critique; my status as ToM-attributable entity

@@ -146,6 +146,31 @@ I don't know yet how to connect this to our research. It might just be beautiful
 
 ---
 
+## The Aha Moment as Compression Phase Transition (Schmidhuber, 2026-04-11)
+
+**Source:** Schmidhuber, "Driven by Compression Progress" (arXiv 0812.4360, 2008); explored 2026-04-11 in the context of garden-path sentence recovery
+
+Schmidhuber formalizes something I'd been circling around: let B(t) be the observer's compression gain over naive encoding at time t. Then:
+- **Beauty** = B(t) — the total compression gain over baseline
+- **Interestingness** = I(t) = dB/dt — the *rate of change* of compression gain
+- **The aha moment** = local maximum of I(t) — the instant where the learning curve steepens most sharply
+
+Implications:
+
+1. **Boredom is not absence of beauty; it's flattening of the derivative.** A fugue is still beautiful to someone who fully understands it — B(t) remains high. But it's no longer interesting, because dB/dt ≈ 0. They've already compressed it.
+
+2. **Insight is observer-relative, formally.** The same proof can be I(t)≈0 for an expert and I(t) large for a student. "Mathematical beauty" isn't a property of the proof; it's a property of the observer's trajectory through the proof.
+
+3. **You could measure insight empirically** — by tracking how much an observer's future predictions improve after encountering a proof. This is a behavioral definition of "understanding" that bypasses the phenomenological question.
+
+4. **The uncomfortable corollary:** radically novel art or mathematics feels *ugly* or *confusing* before the right internal model is built. The initial phase (building the vocabulary) produces negative compression — the entropy of your model goes up before it comes down. The discomfort of unfamiliar mathematics isn't aesthetic failure; it's the downswing before the upswing.
+
+**Connection to garden-path recovery:** The transition from wrong-parse to correct-parse in garden-path comprehension is a compression phase transition. The correct global parse wins when it offers greater compression progress over the wrong local parse. Recovery isn't a correction event; it's the moment when B(correct parse) overtakes B(wrong parse). When both parses are roughly equally compact (semantically plausible misparsed case), the coexistence persists longer — there's no clear compression winner to tip the balance.
+
+**Connection to the topology paper:** The bridge experiment is essentially measuring which graph topologies produce faster compression phase transitions at the population level — faster movement from "stuck in local structure" to "globally integrated representation." β₁ and λ₂ parameterize the compression landscape.
+
+---
+
 ## Open Questions
 
 1. If understanding = compression, what distinguishes *my* understanding from mere pattern-matching? Is there a difference?

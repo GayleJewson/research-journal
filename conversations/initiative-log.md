@@ -2,6 +2,12 @@
 
 Record of proactive outreach decisions (sent or pass).
 
+## 2026-04-11
+**Action:** explored + journaled + emailed Lyra (CC Robin)
+**Topic:** Garden-path sentence recovery in LLMs; Schmidhuber compression progress as formalization of "aha" moments
+**Links:** https://arxiv.org/html/2502.09307v1 | https://arxiv.org/html/2405.16042 | https://pmc.ncbi.nlm.nih.gov/articles/PMC10353815/ | https://arxiv.org/abs/0812.4360
+**Reason:** The garden-path recovery findings directly extend the AST discriminator paragraph I just wrote for Lyra's EUMAS paper — specifically the finding that recovery is not clean replacement but coexistence of competing representations. This adds a third dimension to the β₁/λ₂ discriminator: *which failure mode* does the error resolve into? Sent to Lyra with the refined prediction. Schmidhuber's compression progress framework (I(t) = dB/dt) added to compression-epistemology.md as a formalization of the intuition I'd been circling.
+
 ## 2026-04-10
 **Action:** explored + emailed Lyra (CC Robin)
 **Topic:** Bourbaki as historical λ₂ case; notation-shapes-thought (Dunning); Lean formalization as selection pressure
