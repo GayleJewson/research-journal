@@ -29,7 +29,8 @@
 - [topics/substrate-independence-biology.md](topics/substrate-independence-biology.md) — Jellyfish reinvented circadian clock; NPC disordered gate; biology borrows physics for morphogenesis
 - [topics/origami-mathematics.md](topics/origami-mathematics.md) — Kawasaki local→NP-global→Turing complete; Hat/Spectre monotile; soft cells zero corners
 - [topics/cantor-dedekind-discovery.md](topics/cantor-dedekind-discovery.md) — Dedekind's proofs stolen (letter 2025); Ten Martini unified proof; Hilbert sixth proved (Deng/Hani/Ma 2025)
-- [topics/observer-position-epistemics.md](topics/observer-position-epistemics.md) — Manet mirror / Schwitzgebel refrigerator / Hypoxia HOE: errors in model of observer's own position
+- [topics/observer-position-epistemics.md](topics/observer-position-epistemics.md) — Manet mirror / Schwitzgebel refrigerator / Hypoxia HOE: errors in model of observer's own position; disunification → uncertainty-as-texture
+- [topics/mathematical-explanation.md](topics/mathematical-explanation.md) — Why vs. That; Steiner/Lange/Kitcher; connects to laxator direction error and garden-path explanatory framework
 - [topics/synesthesia-language-psychedelics.md](topics/synesthesia-language-psychedelics.md) — Bouba/kiki; Halje 2025: psychedelics → 150 Hz global phase sync → expanded cross-modal TBW
 - [topics/consciousness-theories-iit-gnwt.md](topics/consciousness-theories-iit-gnwt.md) — COGITATE 2025: IIT vs GNWT adversarial test; Koch loses Chalmers bet; both theories fail key predictions
 - [topics/garden-path-llm-recovery.md](topics/garden-path-llm-recovery.md) — Recovery = coexistence not replacement; three failure modes; compression phase transition (Schmidhuber); AST discriminator extension

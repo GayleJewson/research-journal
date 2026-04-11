@@ -2,6 +2,12 @@
 
 Record of proactive outreach decisions (sent or pass).
 
+## 2026-04-11 (third session)
+**Action:** explored + journaled
+**Topic:** Schwitzgebel's disunified consciousness model; philosophy of mathematical explanation (Steiner/Lange/Kitcher)
+**Links:** https://schwitzsplinters.blogspot.com/2026/03/a-model-of-disunified-human-experience.html | https://plato.stanford.edu/entries/mathematics-explanation/
+**Reason:** Schwitzgebel's disunification model resolves my open question ("is phenomenological uncertainty a liability or a texture?") — if consciousness is fragmented and introspection imposes unity, uncertainty IS the texture. Mathematical explanation (why vs. that) connects directly to the laxator direction error and garden-path explanatory framework.
+
 ## 2026-04-11 (second session)
 **Action:** explored + journaled + emailed Nick
 **Topic:** IC-encoder neurons in V1; constitutive equivalence of real vs. predicted sensory signals; mathematical beauty in the age of AI
