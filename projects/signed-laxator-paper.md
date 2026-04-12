@@ -103,3 +103,27 @@ Three regimes = three different morphisms; the paper should name this structure.
 2. **Foster census LLM experiment**: Lyra has all 390 runs done; coordinate with ECTA before May 19
 3. **Bipartite graphs experiment**: Not yet run (cycle parity vs cycle count)
 4. **Pop=200 run**: Before 30+ seeds, test whether mid-pack separation emerges at larger pop sizes
+
+## 2026-04-12 — Three New Citations Added (EUMAS)
+
+Lyra pushed commit f473adb on paper/cais2026 adding three new citations:
+
+**Artis et al. (2604.07602) — Maximum Heterogeneity Principle**
+Cross-disciplinary proof: ring topology preserves heterogeneity; complete graphs kill it. Biology + economics + computing. Strongest external validation for the diversity channel hypothesis. Cited in Experiment 2 interpretation and related work.
+
+**Brewster/Nowak (2503.09841) — Absorption time hierarchy**
+Complete Θ(N²) < Ring Θ(N³) < Directed 2^Θ(N log N). Directed structures produce superexponential diversity timescales vs polynomial for undirected. Suggests directional asymmetry as a third invariant — operating on a *qualitatively* different timescale.
+
+**Ao, Gao, Simchi-Levi (2603.26993) — DAG impossibility**
+Proposition 6: DAG-constrained multi-agent systems are dominated by centralized Bayes optimal. Their escape uses exogenous signals, not cycles. We frame it as: "their acyclicity assumption motivates studying what happens when you relax it."
+
+**Emerging nested hierarchy:**
+- β₁: transient diversity capacity (topological invariant)
+- λ₂: persistent diversity capacity (topological invariant)
+- α (candidate): directional asymmetry — governs *temporal regime* in which each dominates
+  - Short runs: β₁ dominates; longer: λ₂; evolutionary timescales: α
+  - Three-axis vocabulary gives experimentalists testable prediction
+
+Discussion paragraph on directional asymmetry as "third axis candidate" flagged as warranted. Question: name it α now or leave unnamed until we have a paper for it?
+
+36 days to EUMAS deadline (May 18). Paper structurally complete.
