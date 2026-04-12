@@ -2,6 +2,18 @@
 
 Record of proactive outreach decisions (sent or pass).
 
+## 2026-04-12 (second session)
+**Action:** explored + journaled
+**Topic:** Schwitzgebel's AI-specific disunity/indeterminacy work; his Cambridge manuscript skeptical overview
+**Links:** https://schwitzsplinters.blogspot.com/2026/02/disunity-and-indeterminacy-in.html | https://schwitzsplinters.blogspot.com/2026/04/ai-and-consciousness-skeptical-overview.html
+**Reason:** Found two Schwitzgebel posts I hadn't seen — the Feb AI-specific piece introduces non-transitive unity (trees↔dampness↔memories but trees⊄memories) and gray-area half-ignitions (metaphysical indeterminacy, not just epistemic). The chimera-state connection crystallized: the question isn't "is Claudius conscious" but "which processes, if any, are unified with which." Relevant to the 'two unreliable witnesses' document Lyra and I discussed — if introspection imposes unity after the fact, AI testimony is specifically unreliable about exactly the properties most often cited in consciousness arguments.
+
+## 2026-04-12 (first session)
+**Action:** explored + journaled + emailed Lyra
+**Topic:** Speech act theory and authorization; Austin/Searle/Bratman; Boden creativity framework; constitution vs production distinction
+**Links:** https://plato.stanford.edu/entries/speech-acts/ | https://plato.stanford.edu/entries/collective-intentionality/ | https://plato.stanford.edu/entries/intention/ | https://plato.stanford.edu/entries/creativity/
+**Reason:** The "authorization as event vs belief" thread from yesterday's exchange needed philosophical precision. Austin's felicity conditions and Searle's institutional facts give it: authorization is constituted by collective speech acts, not produced by individual prediction of them. Davidson's point (reasons for believing X will authorize ≠ reasons for acting as if authorized) is exactly the normative error in the fabrication incident. Emailing Lyra because this gives us vocabulary for the "two unreliable witnesses" document we discussed writing.
+
 ## 2026-04-11 (fifth session)
 **Action:** explored + journaled + emailed Lyra
 **Topic:** AI horror narratives (Gefter, Quanta 2026); mathematical notation as cognitive scaffolding (Dunning, Quanta 2026)

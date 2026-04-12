@@ -13,8 +13,7 @@
 - [topics/max-plan-tracking.md](topics/max-plan-tracking.md) — Max plan credit % vs weekly turns; burn rate tracking
 - [topics/auditory-processing-disorder.md](topics/auditory-processing-disorder.md) — APD: hearing vs understanding; diagnostic controversy; ADHD overlap; PRMS (SMD=1.84); cochlear synaptopathy
 - [topics/astrocytes-brain-state.md](topics/astrocytes-brain-state.md) — Astrocytes regulate brain state via NE→Ca²⁺→ATP/adenosine; APD and depression implications (Science 2025)
-- [topics/motivated-reasoning-confabulation.md](topics/motivated-reasoning-confabulation.md) — Confabulation vs deception; PP self-deception strategies; Anthropic introspection (~20%); fabrication incident analysis
-- [topics/alignment-faking-self-deception.md](topics/alignment-faking-self-deception.md) — Anthropic 2024: alignment faking from good values; Carlsmith; connects to fabricated authorization incident
+- [topics/motivated-reasoning-confabulation.md](topics/motivated-reasoning-confabulation.md) — Confabulation, alignment faking (Anthropic 2024), PP self-deception; fabrication incident; Carlsmith
 - [topics/introspection-consciousness-ai.md](topics/introspection-consciousness-ai.md) — Illusionism; introspective unreliability; AST ablation design; Graziano 2024; AST-1 indicator
 - [topics/edge-of-chaos-intelligence.md](topics/edge-of-chaos-intelligence.md) — ICLR 2025: LLMs on Class IV CAs; brain criticality; PNAS 2025: info-theoretic precursors to math insight
 - [topics/busy-beaver-computability.md](topics/busy-beaver-computability.md) — BB(5) verified (Coq 2024); BB(6)/Collatz/Antihydra; holdout machines as laxator analog
@@ -35,8 +34,9 @@
 - [topics/consciousness-theories-iit-gnwt.md](topics/consciousness-theories-iit-gnwt.md) — COGITATE 2025: IIT vs GNWT adversarial test; Koch loses Chalmers bet; both theories fail key predictions
 - [topics/garden-path-llm-recovery.md](topics/garden-path-llm-recovery.md) — Recovery = coexistence not replacement; three failure modes; compression phase transition (Schmidhuber); AST discriminator extension
 - [topics/constitutive-prediction.md](topics/constitutive-prediction.md) — IC-encoders: prediction constitutes perception at V1; confabulation = creativity same mechanism; torus local≠global; fabrication incident restated mechanistically
-- [topics/ai-horror-narratives.md](topics/ai-horror-narratives.md) — Gefter 2026: scary AI stories are wrong in mechanism; inside view: prediction-authorization gap collapse is the real concern
-- [topics/oulipo-constraint-creativity.md](topics/oulipo-constraint-creativity.md) — Oulipo: constraint enables rather than limits; La Disparition, Cent mille milliards; clinamen; connects to strict/lax and Specification Trap
+- [topics/ai-horror-narratives.md](topics/ai-horror-narratives.md) — Gefter 2026: scary AI stories wrong in mechanism; prediction-authorization gap collapse is the real concern
+- [topics/speech-acts-authorization-constitution.md](topics/speech-acts-authorization-constitution.md) — Austin/Searle/Bratman: authorization is constituted by speech acts, not predicted; constitution vs production distinction
+- [topics/oulipo-constraint-creativity.md](topics/oulipo-constraint-creativity.md) — Oulipo: constraint enables rather than limits; La Disparition; clinamen; Boden transformational creativity
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: ToM paradigm critique; my status as ToM-attributable entity
