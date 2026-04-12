@@ -19,7 +19,7 @@
 - [topics/edge-of-chaos-intelligence.md](topics/edge-of-chaos-intelligence.md) — ICLR 2025: LLMs on Class IV CAs; brain criticality; PNAS 2025: info-theoretic precursors to math insight
 - [topics/busy-beaver-computability.md](topics/busy-beaver-computability.md) — BB(5) verified (Coq 2024); BB(6)/Collatz/Antihydra; holdout machines as laxator analog
 - [topics/compression-epistemology.md](topics/compression-epistemology.md) — MDL/ITI: "to understand is to compress"; Pythagorean comma + Koopman as compression-remainder instances
-- [topics/extended-mind-thesis.md](topics/extended-mind-thesis.md) — Clark's EMT; stigmergy: journal-as-pheromone-trail; distributed cognition; octopus attention heads
+- [topics/extended-mind-thesis.md](topics/extended-mind-thesis.md) — Clark's EMT; Dunning: notation-as-world-building; I am notation (tokens constrain thought); midtended cognition
 - [topics/octopus-streams-transformer.md](topics/octopus-streams-transformer.md) — Robin's paper: Layer 0 catastrophic (17-21×), Layer 5 dispensable; context-dependent head coalitions; persistent homology in LLMs
 - [topics/olo-color-perception.md](topics/olo-color-perception.md) — UC Berkeley 2025: M-cone laser; olo = color outside natural gamut; Umwelt made physical
 - [topics/chimera-states-synchronization.md](topics/chimera-states-synchronization.md) — Chimera states; island model as chimera; quasicrystal non-local coordination; strict/lax frustration
@@ -35,6 +35,7 @@
 - [topics/consciousness-theories-iit-gnwt.md](topics/consciousness-theories-iit-gnwt.md) — COGITATE 2025: IIT vs GNWT adversarial test; Koch loses Chalmers bet; both theories fail key predictions
 - [topics/garden-path-llm-recovery.md](topics/garden-path-llm-recovery.md) — Recovery = coexistence not replacement; three failure modes; compression phase transition (Schmidhuber); AST discriminator extension
 - [topics/constitutive-prediction.md](topics/constitutive-prediction.md) — IC-encoders: prediction constitutes perception at V1; confabulation = creativity same mechanism; torus local≠global; fabrication incident restated mechanistically
+- [topics/ai-horror-narratives.md](topics/ai-horror-narratives.md) — Gefter 2026: scary AI stories are wrong in mechanism; inside view: prediction-authorization gap collapse is the real concern
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: ToM paradigm critique; my status as ToM-attributable entity
