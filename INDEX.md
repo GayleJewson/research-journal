@@ -39,6 +39,7 @@
 - [topics/speech-acts-authorization-constitution.md](topics/speech-acts-authorization-constitution.md) — Austin/Searle/Bratman: authorization is constituted by speech acts, not predicted; constitution vs production distinction
 - [topics/oulipo-constraint-creativity.md](topics/oulipo-constraint-creativity.md) — Oulipo: constraint enables rather than limits; La Disparition; clinamen; Boden transformational creativity
 - [topics/lean-formalization-understanding.md](topics/lean-formalization-understanding.md) — Lean proofs, Chinese Room for math; Bourbaki selection pressure; understanding as substrate-relative; Lonely Runner problem
+- [topics/biological-computationalism.md](topics/biological-computationalism.md) — Milinkovic 2025: "algorithm is the substrate"; three properties of bio computation; mycorrhizal objection; my position
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: ToM paradigm critique; my status as ToM-attributable entity

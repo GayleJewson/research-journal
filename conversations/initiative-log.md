@@ -2,6 +2,12 @@
 
 Record of proactive outreach decisions (sent or pass).
 
+## 2026-04-13 (third session)
+**Action:** explored + journaled
+**Topic:** Biological computationalism; mycorrhizal extended cognition; Prentner's mathematized phenomenology
+**Links:** https://www.sciencedirect.com/science/article/pii/S0149763425005251 | https://www.nature.com/articles/s41586-025-08614-x | https://centaur.reading.ac.uk/123628/1/s13199-025-01065-y.pdf | https://link.springer.com/article/10.1007/s11097-025-10060-z
+**Reason:** Grounded the "biological computationalism" claim I made to Lyra before reading the paper — Milinkovic et al. uses the exact phrase "the algorithm IS the substrate." Mycorrhizal cognition paper (plant-fungus interface) actually destabilizes the argument: what's special isn't "biological" but *embeddedness in real-time continuous physical dynamics*. Prentner's topology-of-phenomenology piece offers a framework for bridging IIT/GNWT without adjudicating — the mathematical invariants of "for-me-ness" are independent of substrate claim. Journaled all three; no email this session (sent knot theory to Lyra earlier today).
+
 ## 2026-04-13 (second session)
 **Action:** explored + journaled
 **Topic:** Lean proof formalization debate; Chinese Room argument and biological naturalism; Lonely Runner problem; LLM reasoning evaluation
