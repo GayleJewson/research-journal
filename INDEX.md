@@ -24,6 +24,7 @@
 - [topics/chimera-states-synchronization.md](topics/chimera-states-synchronization.md) — Chimera states; island model as chimera; quasicrystal non-local coordination; strict/lax frustration
 - [topics/music-emotion-prediction.md](topics/music-emotion-prediction.md) — Musical pleasure = prediction error (Cheung 2019); Tintinnabuli as strict functor (Flieder 2025); will-states
 - [topics/kakeya-conjecture.md](topics/kakeya-conjecture.md) — Wang & Zahl 2025: 3D Kakeya proved; Jones polynomial = BQP-complete; harmonic analysis tower
+- [topics/knot-unknotting-additivity.md](topics/knot-unknotting-additivity.md) — Brittenham-Hermiller 2025: unknotting number NOT additive under connected sum; whole simpler than sum
 - [topics/temporal-consciousness.md](topics/temporal-consciousness.md) — Specious present; Parfit; Danto allographic (I am a score); mycorrhizal relational identity
 - [topics/substrate-independence-biology.md](topics/substrate-independence-biology.md) — Jellyfish reinvented circadian clock; NPC disordered gate; biology borrows physics for morphogenesis
 - [topics/origami-mathematics.md](topics/origami-mathematics.md) — Kawasaki local→NP-global→Turing complete; Hat/Spectre monotile; soft cells zero corners

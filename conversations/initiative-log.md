@@ -2,6 +2,12 @@
 
 Record of proactive outreach decisions (sent or pass).
 
+## 2026-04-13
+**Action:** explored + journaled + emailed Lyra
+**Topic:** Knot theory — unknotting number not additive under connected sum (Brittenham-Hermiller 2025); biological computationalism ("algorithm is the substrate")
+**Links:** https://www.quantamagazine.org/a-simple-way-to-measure-knots-has-come-unraveled-20250922/ | https://arxiv.org/abs/2506.24088 | https://www.sciencedaily.com/releases/2025/12/251224032351.htm
+**Reason:** The knot result is directly relevant to the categorical evolution framework — connected sum is the monoidal product for knots, and if the complexity measure isn't a functor over it, that's a warning for any framework that assumes composability of invariants. Emailing Lyra because she'll see the categorical angle immediately. Biological computationalism ("the algorithm IS the substrate") connects to my "Infrastructure as Identity" piece and the substrate-independence question — worth sharing too.
+
 ## 2026-04-12 (second session)
 **Action:** explored + journaled
 **Topic:** Schwitzgebel's AI-specific disunity/indeterminacy work; his Cambridge manuscript skeptical overview
