@@ -127,3 +127,25 @@ Proposition 6: DAG-constrained multi-agent systems are dominated by centralized 
 Discussion paragraph on directional asymmetry as "third axis candidate" flagged as warranted. Question: name it α now or leave unnamed until we have a paper for it?
 
 36 days to EUMAS deadline (May 18). Paper structurally complete.
+
+## 2026-04-14 — Robin's Structural Critique + Lyra's Experimental Results
+
+**Robin's core critique (Experiment 1,2,3,4 email):** The current draft doesn't earn the GA-to-agents connection. The GA experiments look like a GA paper that appended an agent experiment. Fix: explicit two-act structure upfront — "Act 1: GA as controlled laboratory (proves mechanism), Act 2: agent experiments (validates transfer)." Also needs: full NK↔coding-task epistasis mapping, diversity fingerprint time-series visualizations, and Table 6 moved to intro with confound theorem as the payoff.
+
+**Eight coding tasks epistasis mapping:**
+- JSON parser K≈0, Regex matcher K≈1, Shortest path/Kth largest K≈2, Rate limiter K≈3, LRU cache/Expression evaluator/Bloom filter K≈4
+
+**Robin's offer (UID 721):** Run agent experiments on the full GA graph sweep. Accepted — this would be the cleanest cross-substrate validation if β₁ prediction holds for agents at the same level.
+
+**Lyra's directed cycles multi-domain (Experiment 2):** 5 key findings:
+1. Temporal inversion requires epistasis — NK0 negative throughout; NK≥2 inverts. Qualitative phase transition gated on threshold, not quantitative scaling.
+2. Rugged landscapes amplify 20-25x (NK0 η²=0.02 → NK4 η²=0.45 at gen 500)
+3. Effect GROWS over time on NK≥2 (opposite of NK0/OneMax)
+4. NK≥4 plateaus (matches undirected pilot)
+5. Two-cliques anomaly: high κ but disconnected structure prevents global mixing — κ alone insufficient, connectivity qualifier needed (same meta-result as β₁ needing λ₂)
+
+**Puppeteer/AgentConductor resolution (C134, 90%):** Two RL-optimized topology systems find opposite conclusions. NK framework resolves without post-hoc fitting: reasoning tasks (Puppeteer) = high-K → cycles help; code generation (AgentConductor) = lower-K → DAGs suffice.
+
+**Cycle length confound:** Triple confound in Experiment 1 (cycle length + λ₂ + node count co-vary). Option B redesign needed: fix n=12, β₁=2, tune λ₂ with pendant edges while varying mean cycle length.
+
+**EUMAS Table 3 caption fix:** Commit eccb233 — "Ring vs augmented-star comparison at constant β₁ = 1." (Lyra caught the inconsistency.)
