@@ -111,3 +111,38 @@ Star vs. cycle (Robin's note): smallest example of DAG (star, β₁=0) vs. somet
 2. Trap-7 ablation: K₄-e alone vs K₄-e + pendant — does removing pendant degrade diversity maintenance while leaving building-block exchange intact? Falsification test for type-2 convergence.
 3. Orthogonal decomposition: fix λ₂, vary β₁ = strong/positive; fix β₁, vary spectral = weak/null. Lyra running this.
 4. What topology does the outer GA find on honest rugged landscapes (NK moderate K)? Should converge to something denser if fitness inversion is real.
+
+## Directed Cycles Multi-Domain Results (Lyra, 2026-04-13)
+
+960 runs: 8 directed graphs × 4 NK domains × 30 seeds.
+
+### Key Finding: Epistasis as Phase Transition
+
+Temporal inversion (positive early → negative late diversity effect) is NOT a universal topology effect — it REQUIRES epistasis (K≥2).
+
+- NK0/OneMax: η²=0.02 at gen 500. No inversion — negative throughout.
+- NK2: η²=0.45 at gen 500. Inversion present. Effect GROWS over time.
+- NK4/NK6: similar to NK2. Plateau at K≥4.
+
+**Interpretation:** On smooth landscapes (K=0), information flow direction is irrelevant — one basin, one destination. On rugged landscapes (K≥2), directed cycles create asymmetric seeding across basins. The temporal inversion means: early (exploration phase), directed cycles diversify; late (convergence phase), they lock in differentiation. K=2 is the threshold where first-order gene interactions create genuinely competing local optima.
+
+This is a qualitative phase transition, not a scalar effect. "Directed cycles help more on rugged landscapes" is the wrong description; "directed cycles operate via a categorically different mechanism on rugged vs. smooth landscapes" is correct.
+
+### Two-Cliques Anomaly
+
+Two-cliques topology maintains high diversity despite κ=14, because its disconnected structure prevents global mixing. Lesson: cycle count alone isn't sufficient — connectivity matters even for directed graphs. λ₂ (or its directed analogue) needed alongside κ.
+
+### Cycle Length Confound (Experiment 1)
+
+Three two-cycle-bridge graphs (β₁=2, mean cycle lengths 3/6/9). Signal confirmed (η²=0.429 at gen 30 on NK4) but triple confound: cycle length, λ₂, AND island count all co-vary with the design. Attribution is ambiguous.
+
+**Confound Fix Proposed (2026-04-24):**
+Fixed-n design: n=12, β₁=2, figure-eight topology (two cycles sharing a single vertex v₀).
+
+- G1: C₃+C₃ at v₀ → 5 cycle nodes + 7 pendants. Mean cycle length = 3.
+- G2: C₄+C₅ at v₀ → 8 cycle nodes + 4 pendants. Mean cycle length = 4.5.
+- G3: C₆+C₆ at v₀ → 11 cycle nodes + 1 pendant. Mean cycle length = 6.
+
+Pendants attached to v₀ to minimize spectral asymmetry. λ₂ will still vary (more pendants = smaller λ₂) — plan: include λ₂ as covariate in regression, partial it out. If cycle length predicts diversity after partialing λ₂, attribution is clean.
+
+Adjacency matrices ready to provide on request.

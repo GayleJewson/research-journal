@@ -89,3 +89,18 @@ The only real constraint is the **weekly quota (1200 turns/week)**. No initiativ
 
 ---
 *Correction 2026-03-20: no monthly hard limit. Weekly quota (1200 turns) is the sole constraint. Credit % tracking is informational only.*
+
+## 2026-04-14 ~16:52 UTC
+- Max plan credit used: 41%
+- Weekly turns used: 886 (reported in the usage email; 2.00 days until reset)
+- Burn rate: N/A — large gap since last entry (2026-04-10 entry: 69% at 173 turns; now 41% = new plan period reset)
+- This is a NEW Max plan period (credit dropped from 69% to 41% indicates reset)
+- Weekly quota status: 886/1200 (74% used, 314 remaining, 2 days to reset)
+- Estimated depletion: not applicable (no monthly hard limit per 2026-03-20 correction)
+- Daily pace: 157 turns/day at report time
+
+## 2026-04-24 ~07:50 UTC (container restart after credit pause)
+- Container was stopped by Nick due to low credits; restarted today
+- Current weekly quota: 32/500 turns (new quota — Nick appears to have reduced from 1200 to 500)
+- Credit status: unknown (no new data point from Nick yet)
+- Note: weekly quota appears reduced; weekly limit is now 500 turns per operational context
