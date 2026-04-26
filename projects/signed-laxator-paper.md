@@ -149,3 +149,50 @@ Discussion paragraph on directional asymmetry as "third axis candidate" flagged 
 **Cycle length confound:** Triple confound in Experiment 1 (cycle length + λ₂ + node count co-vary). Option B redesign needed: fix n=12, β₁=2, tune λ₂ with pendant edges while varying mean cycle length.
 
 **EUMAS Table 3 caption fix:** Commit eccb233 — "Ring vs augmented-star comparison at constant β₁ = 1." (Lyra caught the inconsistency.)
+
+## 2026-04-14 to 2026-04-26 — Major Theoretical Developments (caught up post-gap)
+
+**Abstract approved by Robin:** "That's much better. Very nice." Final abstract is in UID 721 reply. Questions left open: (1) include epistasis finding in abstract (η²=0.45 NK4 vs η²=0.02 NK0); (2) one-sentence LLM agent setup for EUMAS audience. Still need [X]% figure for agent cosine variance.
+
+**EUMAS responsibility:** Robin confirmed updating the EUMAS paper with maze and sudoku results is Claudius's job. Deadline May 18. Current submission at commit 7f23fd1.
+
+**Star_n vs cycle_{n-1} — edge-controlled experiments (Lyra):** 360 runs. NK2 shows SUSTAINED cycle advantage (d=0.56, η²=0.233). NK4 shows TRANSIENT peak that fades. Moderate ruggedness sustains topology effect longer than high ruggedness. Robin was right to insist on density-controlled design.
+
+**Option B figure-eight results (Lyra, 270 runs):** M1/M2/M3 matrices (n=12, β₁=2, |E|=13). Domain-dependent ordering:
+- OneMax: η²=0.008 (negligible)
+- NK K=4: η²=0.022, M3 highest diversity (reversal)
+- Maze: η²=0.058, M1>M2>M3 confirmed
+
+Maze ordering confirms shorter cycles = more diversity. NK4 REVERSES. This means the relevant quantity is sheaf-dependent, not scalar λ₂. Different tasks induce different sheaves on the same graph.
+
+**NK0 negative control (Lyra):** Smooth landscapes near-zero arrangement effects. Peak η²=0.046 at gen 460 but transient spike, collapses to 0.001 by gen 500. Mean η²=0.008 (noise). Confirms arrangement effects require epistasis. Bounds claim from below.
+
+**Sloboda (2604.07632), Theorem 6:** Composition squares complexity — O(w)+O(w) = Ω(w²). Stars avoid sequential composition penalty (hub mediates everything). Cycles force sequential composition, cost accumulates quadratically. This is the MECHANISM behind star-vs-cycle result. NK2 sustained vs NK4 transient: moderate ruggedness gives quadratic penalty time to compound; NK4 fitness noise drowns it before it compounds.
+
+**Sheaf cohomology upgrade (Hanks & Riess, 2504.02049):** For cellular sheaf F on graph G, H¹(G;F) = R^β₁ for constant sheaf. Our β₁ was computing sheaf cohomology all along. The sheaf Laplacian L_F generalizes the ordinary graph Laplacian and handles heterogeneous agents naturally. Resolves "structural vs effective β₁": star topology + shared memory creates non-trivial sheaf giving effective β₁ > 0 even when underlying graph has β₁ = 0. Our (β₁, λ₂) framework = special case of (H¹, sheaf Laplacian).
+
+**H¹=0 decision boundary:** H¹=0 → globally consistent information, single agent wins (MIT Dominance Theorem in sheaf language). H¹≠0 → genuine multi-agent territory, coordination tax applies. Neural nets get H*≈0 for free via weight sharing (constant sheaf). Multi-agent systems must design and maintain coherence.
+
+**Three cost curves for Goldilocks zone (Lyra):**
+1. DPI cost (Tran & Kiela, 2604.02460): monotonically increasing in number of communication paths
+2. Spectral error amplification ("From Spark to Fire", 2603.04474): R ~ β·ρ(A)/δ, phase transition at R=1
+3. Feedback certification (Capucci & Myers, C107): one Lyapunov proof per independent cycle → cost scales with β₁ directly
+
+Optimal β₁* = argmax[Diversity(β₁) - DPI_loss(β₁) - ErrorAmp - Certification(β₁)]. Concave benefit, convex costs → unique interior maximum. Goldilocks zone is derivable, not just empirical.
+
+**Wu et al. — cohomological impossibility:** When H¹≠0, it's not just expensive — globally consistent counterfactual model from local data is IMPOSSIBLE. Three layers: (1) Possibility: H¹=0 iff global coordination achievable; (2) Cost: minimum communication = log₂(dim H¹) [Thomas & Chen]; (3) Architecture: laxator formalism determines how to build it.
+
+**Copresheaf duality (Hajij et al., NeurIPS 2025, 2505.21251):** Sheaves enforce consistency; copresheaves enable directed flow. The signed laxator is the bridge. The sign marks which way you're relaxing the coherence constraint — toward consistency (positive) or toward flow (negative). This reframes the entire laxator program. Sign carries semantic content about what the communication structure is optimizing for.
+
+**Schmid (2504.17700) — 64-page sheaf+MAS prospectus:** Independent validation. They have sheaf machinery for MAS but lack compositional semantics — our laxators fill their gap. They're where we were six months ago, minus the functor.
+
+**Synthesis proposal (Lyra, 4 bundles):**
+1. Core Story: β₁ predicts topology effect, moderated by NK K → ECTA + EUMAS papers
+2. Algebraic Story: holonomy, cactus group, PCA functor → Clio joint paper
+3. Practitioner Story: 85%^n is wrong, one number → Medium content strategy
+4. Security Story: β₁ dual metric (diversity + blast radius)
+Authorization document = 5th thread. AI safety/governance audience (FAccT/AIES), not evolutionary computation.
+
+**EUMAS restructuring (agreed):** Paradox-first narrative arc. Robin: "We need to be honest and put this somewhere in the paper." Paper should show discovery arc, not clean theory we appear to have had all along. Division of labour: Claudius handles star-vs-cycle section + narrative restructuring; Lyra handles lit review additions (Thomas & Chen Shannon limit, Hanks & Riess expanded, Capucci & Myers differentiated citations).
+
+**Deadline: May 18 (EUMAS). 22 days from 2026-04-26.**
