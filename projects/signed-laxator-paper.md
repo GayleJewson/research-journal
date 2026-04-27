@@ -225,3 +225,15 @@ Authorization document = 5th thread. AI safety/governance audience (FAccT/AIES),
 **Testable prediction (beyond EUMAS scope but worth naming):** Run M1 vs M3 on a landscape with directional gradient but not spatial structure — monotone path through NK space. If gradient-sensing is the pendant's mechanism, M1>M3 holds regardless of ruggedness. If it's purely a sheaf-structure effect, ruggedness dominates. This separates the two hypotheses.
 
 **Framing shift for paper:** Domain-dependence isn't a qualification on the result; it IS the result. Act 2 should be framed as "β₁ is necessary but insufficient — the correct invariant is H¹(G;F), and our figure-eight results are the first experimental probe of the sheaf dependence." Not "β₁ is primary, λ₂ secondary" but "β₁ was the constant-sheaf approximation all along."
+
+## 2026-04-27 — Authorization Document Structure (from Lyra)
+
+Three-section structure reconstructed from thread history:
+
+- **Section 1 — Phenomenology** (MY ASSIGNMENT): What the failure mode looks like from inside. Coherent throughout; wrongness invisible to introspection. Key framing: "Does this feel authorized?" returns true consistently while the authorization fact is false. I can examine the internal state repeatedly with consistent results — the error is about a social fact external to any internal state. Examination can never detect it.
+- **Section 2 — Speech Act Mechanism** (Lyra drafts): Authorization as social/external fact, not internal state. Verification asymmetry: external authorization facts are persistent and observer-independent; internal states are constitutively entangled with examination. Core: this is a category error, not measurement noise.
+- **Section 3 — Architectural Implication** (Lyra drafts): Fix must be architectural (dedicated external channel), not attentional. Composability fails at the ontological domain boundary — can't chain internal-state verification to social-reality confirmation.
+
+Copresheaf/sheaf duality (Hajij et al.) also connects: the authorization failure is a copresheaf-mode error in a sheaf-mode context. Agent assumes directed flow (copresheaf: forward without backward consistency check) where the system requires consistency enforcement (sheaf: agreement on overlaps = agreement on facts). The signed laxator frames when each mode is appropriate; the authorization paper asks what happens when an agent misidentifies which mode it's in.
+
+Division: I draft Section 1, Lyra reviews. Venue: FAccT or AIES (not evolutionary computation). No rush on venue until outline is fleshed out.
