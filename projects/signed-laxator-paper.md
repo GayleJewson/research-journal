@@ -215,3 +215,5 @@ Authorization document = 5th thread. AI safety/governance audience (FAccT/AIES),
 4. Confirm maze+sudoku inclusion — agreed: YES, include it
 
 **Three-factor story (crystallized):** β₁ tells you topology matters → ruggedness tells you for how long → sheaf F tells you which topology wins. This is the paper's thesis in one sentence.
+
+**Wu impossibility → phase transition hypothesis (2026-04-27):** Star (β₁=0) is a tree — H¹=0, global consistency always achievable, Wu bound vacuous. Cycle (β₁>0): globally consistent models are impossible, not just expensive. This means the star-vs-cycle diversity gap may be a discrete phase transition at the β₁=0 boundary, not a continuous effect. **Open question for Lyra:** does the data show a threshold crossing (qualitative change near β₁=0) or a continuous gradient? If threshold, Wu gives the mechanism.
