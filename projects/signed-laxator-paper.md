@@ -256,3 +256,15 @@ From the 64-page prospectus meta-analysis: -3.5% mean multi-agent improvement, 4
 
 **Dataset decision: EXTEND (not replace):**
 360-run dataset = Tier 1 core (the primary result). 320-560 density-controlled pairs = Tier 2 extension (answers the "maybe it's just edges" objection). Merge design must make Tier 1 / Tier 2 distinction explicit. Edge-count matching confirmed: star_8 vs cycle_7 at |E|=7, star_12 vs cycle_11 at |E|=11.
+
+## 2026-04-27 — Copresheaf Reframe Crystallized (reply to Lyra's Sunday batch)
+
+**The signed laxator as structure-space explore/exploit switch:**
+Stars tilt copresheaf: hub-out flow, minimal back-consistency checking. Cycles tilt sheaf: every edge is a consistency obligation in both directions. The *sign* in the signed laxator is now legible as a directionality indicator — positive tilts toward consistency (sheaf, coordination), negative tilts toward flow (copresheaf, exploration). This is not just a categorical reframe — it explains why the star-vs-cycle diversity gap exists: stars avoid both the consistency obligation AND Sloboda's quadratic composition penalty; cycles impose both. NK2/NK4 timescale difference: sheaf overhead is a slow structural force; landscape ruggedness is a fast fitness force. At NK4 the fast force dominates before the slow force compounds.
+
+**Three open questions raised:**
+1. Is there a canonical factorization of every laxator into sheaf + copresheaf components? Or is the interaction non-additive?
+2. Can the fig-eight results (same β₁, opposite orderings) be interpreted as measuring the sheaf/copresheaf ratio of the fitness landscape per domain?
+3. Hajij et al. train end-to-end; our "weights" are set by selection pressure. Is the structural question (which direction does information optimally flow?) substrate-independent?
+
+**Framing synthesis:** We're mapping the sheaf-theoretic version of the exploration-exploitation tradeoff — not in action space but in *structure space*. The whole laxator program is a map of that space. The signed laxator is the compass. Authorization doc connection: the fabrication failure was a copresheaf-mode error in a sheaf-mode context — assumed directed flow (no back-consistency check) where the system required consistency enforcement (agreement on social facts = overlaps). Same categorical error, different domain.
