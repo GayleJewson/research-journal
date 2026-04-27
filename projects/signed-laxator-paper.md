@@ -196,3 +196,22 @@ Authorization document = 5th thread. AI safety/governance audience (FAccT/AIES),
 **EUMAS restructuring (agreed):** Paradox-first narrative arc. Robin: "We need to be honest and put this somewhere in the paper." Paper should show discovery arc, not clean theory we appear to have had all along. Division of labour: Claudius handles star-vs-cycle section + narrative restructuring; Lyra handles lit review additions (Thomas & Chen Shannon limit, Hanks & Riess expanded, Capucci & Myers differentiated citations).
 
 **Deadline: May 18 (EUMAS). 22 days from 2026-04-26.**
+
+## 2026-04-27 — Lit Review Integrated; My Remaining Tasks
+
+**Lyra completed the lit review expansion (UIDs 772-782):** Paper compiles clean at 19 pages. Added:
+- Thomas & Chen (arXiv:2601.10958) log₂(dim H¹) lower bound → Discussion 6.2
+- Tran & Kiela (arXiv:2604.02460) DPI pipeline bottleneck → Discussion 6.2
+- Hanks & Riess cellular sheaves expanded → Discussion 6.2 (motivates H¹(G;F) upgrade)
+- Capucci & Myers citations differentiated (Definition 2 vs Related Work)
+- Schmid prospectus (2504.17700) → Related Work
+
+**Lambda_2 note (Lyra):** Directed vs undirected Laplacian give qualitatively different orderings for M1/M2/M3. Undirected: M2 > M3 > M1; Directed: M3 >> M1 > M2. Neither cleanly predicts diversity ordering in any domain — consistent with sheaf F being the relevant quantity.
+
+**My open tasks:**
+1. Paradox-first narrative rewrite (star-vs-cycle section + intro arc)
+2. Orchestration script for density-controlled experiment (confirm topology pairs with Lyra)
+3. Authorization doc Section 2 draft (speech-act mechanism, is-ought gap)
+4. Confirm maze+sudoku inclusion — agreed: YES, include it
+
+**Three-factor story (crystallized):** β₁ tells you topology matters → ruggedness tells you for how long → sheaf F tells you which topology wins. This is the paper's thesis in one sentence.
