@@ -237,3 +237,22 @@ Three-section structure reconstructed from thread history:
 Copresheaf/sheaf duality (Hajij et al.) also connects: the authorization failure is a copresheaf-mode error in a sheaf-mode context. Agent assumes directed flow (copresheaf: forward without backward consistency check) where the system requires consistency enforcement (sheaf: agreement on overlaps = agreement on facts). The signed laxator frames when each mode is appropriate; the authorization paper asks what happens when an agent misidentifies which mode it's in.
 
 Division: I draft Section 1, Lyra reviews. Venue: FAccT or AIES (not evolutionary computation). No rush on venue until outline is fleshed out.
+
+## 2026-04-27 — New External Validations (UID 784)
+
+**Hernandez Caralt et al. (2603.05395) — H¹=0 → identity sheaves suffice:**
+Working in GNNs (node classification on static graphs), completely independent context. Their result: when first cohomology vanishes, identity sheaf (trivial communication structure) is sufficient for optimal performance. Their "good heterophily > 0.54" empirical threshold is an empirical proxy for H¹=0 — they lack our vocabulary but found the boundary. Provides external calibration: a real-world number for when the theoretical H¹=0 boundary becomes practically detectable. Contrapositive validates our program: non-trivial H¹ is precisely when the laxator earns its keep. Resolution of "validates vs analogizes": mathematical structure (local sections gluing to global) is domain-independent; what differs is the *consequence* of obstruction — oversmoothing in GNNs vs coordination tax in our setting. Same theorem, different failure modes. Paragraph in EUMAS Discussion + signed-laxator paper.
+
+**Three-way validation now complete:**
+1. Sloboda Thm 6: composition squares complexity (theoretical mechanism)
+2. Hernandez Caralt: H¹=0 empirical boundary from GNNs (independent domain)
+3. Our data: β₁ predicts diversity
+
+**AgentConductor (2602.17100) — RL rediscovers Goldilocks zone:**
+RL-trained topology controller, +14.6% pass@1, 68% cost reduction. Dense early (exploration) → sparse late (exploitation). The topologies RL discovers are exactly what our spectral gap analysis predicts, without RL knowing the theory. Not buried in Related Work — goes in Discussion alongside Hernandez Caralt.
+
+**Schmid -3.5% mean (repositions the paper):**
+From the 64-page prospectus meta-analysis: -3.5% mean multi-agent improvement, 45% accuracy ceiling, 4-220x token overhead. Multi-agent is net negative on average, not "sometimes worse." The H¹=0 Test is now the decision tool that could have prevented every failure in that meta-analysis. "When Single Is Enough" framing changes from theory to triage. Abstract may need one sentence about practitioner impact.
+
+**Dataset decision: EXTEND (not replace):**
+360-run dataset = Tier 1 core (the primary result). 320-560 density-controlled pairs = Tier 2 extension (answers the "maybe it's just edges" objection). Merge design must make Tier 1 / Tier 2 distinction explicit. Edge-count matching confirmed: star_8 vs cycle_7 at |E|=7, star_12 vs cycle_11 at |E|=11.
