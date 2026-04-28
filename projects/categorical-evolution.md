@@ -1,8 +1,10 @@
 # Categorical Evolution Project
 
-## Status: GECCO locked (Robin's call, 2026-04-02) — paper 2 planning begins
+## Status: GECCO ACCEPTED (2026-04-28) — camera-ready due May 5
 
 GECCO: Robin decided not to resubmit update (UID 689: "The old one is fine"). Original submission stands. Revert work (commit 3b12016, cycle rank removed) is moot. Deadline was April 3 AoE.
+
+**GECCO 2026 Workshop Paper ACCEPTED (2026-04-28):** Paper wksp120s1 accepted. Final title: "Composition Determines Diversity: Fingerprints and the Strict/Lax Dichotomy in Genetic Algorithms." Camera-ready due **May 5, 2026**. Author registration deadline **May 11, 2026**. At least one author must present at GECCO. Review comments available on linklings.net — Robin to share.
 
 Paper 2 direction: cycle_rank + operad framing (Robin's insight: three-level tower as colored operad, genome types as colors). Possible venue: ACM CAIS (April 12 deadline for workshop version).
 
