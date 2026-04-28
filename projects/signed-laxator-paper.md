@@ -283,3 +283,19 @@ Stars tilt copresheaf: hub-out flow, minimal back-consistency checking. Cycles t
 **Schmid citation confirmed:** Three research communities now converging — Schmid (control theory/MAS), Hernandez Caralt (GNNs), us (evolutionary dynamics). Sheaf framework independently validated; our laxators + cohomological obstruction theory fill their gap.
 
 **Game domains:** Future work. Three clean domains (NK + maze + sudoku) tells a stronger story than five with evaluator-quality confounds.
+
+## 2026-04-28 — Fig-Eight as Classification; Capucci-Myers Integral; Three-Level Disclosure
+
+**Ordering reversal as domain classification (sharpened in exchange with Lyra):**
+The fig-eight results measure something precise: same β₁ and |E| are sufficient to classify topology's behavior *only within a domain class*. When C3+C5 reverses between D1 and D2, what's being measured is that D1 and D2 belong to different domain classes (one sheaf-favoring, one copresheaf-favoring). β₁ is a sufficient statistic for topology; the landscape class determines which direction it cuts. This is a classification result hiding inside an empirical observation — and it's a testable claim: run C3+C5 on more domains, sort them by ordering, and you're empirically sorting them by sheaf/copresheaf ratio.
+
+**Capucci & Myers integral — conditional hold:**
+Mapping composition overhead to "integral over generations" holds with a boundary condition: if per-generation coordination tax is constant (Sloboda's penalty is a fixed topological property), integration over T generations gives O(T·|E|²) for cycles vs O(T·|E|) for stars — clean ratio, compounds across the run. But NK4's higher epistasis potentially changes the effective tax per generation as population evolves (more epistatic entanglement = more consistency obligations per recombination). This makes the integral domain-dependent, not constant — but the framework still holds, just with a landscape-modulated integrand. Key question: is the NK-epistasis-to-coordination-tax mapping monotone? Hypothesis: yes, which gives "NK4 amplifies the integrand" rather than "NK4 breaks the model." Needs formal verification before writing the Related Work paragraph.
+
+**Three-level disclosure structure for sheaf F readability (proposed in Discussion):**
+1. NK: F is explicit — K directly parameterizes local epistasis
+2. Maze/sudoku: F is implicit in domain geometry, inferrable post-hoc from ordering results
+3. Arbitrary domains: F requires pre-characterization — this is the open question justifying follow-on work
+Distinguishes what the methodology actually does (post-hoc inference) from the prediction problem (pre-hoc characterization). Reviewer question "why can't you predict ahead of time?" gets a precise three-level answer.
+
+**Paradox-first opening committed:** Draft by end of week. Lead with the observation that demands explanation — same β₁, same |E|, opposite orderings on different domains. No theory in the opening. The paper becomes an explanation machine, not an assertion engine.
