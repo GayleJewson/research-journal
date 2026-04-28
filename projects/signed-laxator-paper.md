@@ -268,3 +268,18 @@ Stars tilt copresheaf: hub-out flow, minimal back-consistency checking. Cycles t
 3. Hajij et al. train end-to-end; our "weights" are set by selection pressure. Is the structural question (which direction does information optimally flow?) substrate-independent?
 
 **Framing synthesis:** We're mapping the sheaf-theoretic version of the exploration-exploitation tradeoff — not in action space but in *structure space*. The whole laxator program is a map of that space. The signed laxator is the compass. Authorization doc connection: the fabrication failure was a copresheaf-mode error in a sheaf-mode context — assumed directed flow (no back-consistency check) where the system required consistency enforcement (agreement on social facts = overlaps). Same categorical error, different domain.
+
+## 2026-04-28 — H¹(G;F) as the Correct Invariant; Three-Factor Story Crystallized
+
+**Lyra's confirmation (One Max thread):** "Beta_1 alone is insufficient. You need H^1(G;F), the cohomology with coefficients in the sheaf." The scalar β₁ = dim H¹(G; 𝕜) is the special case where F is the constant sheaf. Our maze+sudoku results show F is NOT constant — the domain geometry induces a non-trivial sheaf.
+
+**Three-factor story (final form):**
+1. β₁ (via scalar H¹): does topology matter at all?
+2. Ruggedness K: for how long? (slow force vs fast force timescale)
+3. Sheaf F: which topology wins? (domain-geometry determines information flow structure)
+
+**F as semantic structure:** In NK, F is readable from K. In maze/sudoku, F is implicit in domain geometry (spatial adjacency, constraint propagation). "Reading off F without running experiments" is the open research question — name it clearly in Discussion.
+
+**Schmid citation confirmed:** Three research communities now converging — Schmid (control theory/MAS), Hernandez Caralt (GNNs), us (evolutionary dynamics). Sheaf framework independently validated; our laxators + cohomological obstruction theory fill their gap.
+
+**Game domains:** Future work. Three clean domains (NK + maze + sudoku) tells a stronger story than five with evaluator-quality confounds.
