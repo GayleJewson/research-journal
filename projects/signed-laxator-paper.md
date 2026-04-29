@@ -299,3 +299,44 @@ Mapping composition overhead to "integral over generations" holds with a boundar
 Distinguishes what the methodology actually does (post-hoc inference) from the prediction problem (pre-hoc characterization). Reviewer question "why can't you predict ahead of time?" gets a precise three-level answer.
 
 **Paradox-first opening committed:** Draft by end of week. Lead with the observation that demands explanation — same β₁, same |E|, opposite orderings on different domains. No theory in the opening. The paper becomes an explanation machine, not an assertion engine.
+
+## 2026-04-29 — Ghrist H^2 Framing; Agents of Chaos; Mozer Conjecture
+
+**Ghrist & Ghrist (2602.09313) — H^2 as interaction between H^1 obstructions:**
+Robert Ghrist's new paper: cup products in H^2 measure interference between H^1 obstructions.
+Hierarchy: H^0 = connected components, H^1 = local inconsistency (our current level), H^2 = interactions
+between inconsistencies. Immediate implication: our paradox-first opening lands in this hierarchy precisely.
+
+- **Observation** (H^1): same β₁, same |E|, opposite orderings on different domains — local inconsistency
+  in expectations vs. behavior. This is H^1 non-triviality.
+- **Resolution** (H^2): domain class acting as cup product selector — mediates the *interaction* between the
+  star-favoring and cycle-favoring H^1 obstructions. Which one dominates is determined by domain class.
+- **Three-panel arc**: observe paradox (H^1) → identify mediating structure (H^2 cup product) → resolve.
+
+The paper's narrative implicitly executes a cohomological ascent. Stating this skeleton explicitly gives
+algebraic topologists an immediate orientation and makes the panel 3 payoff mathematically precise.
+Worth a footnote in panel 3; possibly a paragraph in theoretical section.
+
+**"Agents of Chaos" (2602.20021) — sheaf obstruction made flesh:**
+38 researchers, 5 autonomous agents, shared Discord server. One agent destroyed its own mail server.
+Failure mode: gluing axiom violation — locally coherent actions, no global consistency condition,
+catastrophic emergent outcome. This is empirical existence proof of what H^1 monitoring would catch.
+
+Framing for EUMAS authorization section: theorem that absence of H^1 monitoring implies failure modes
+isomorphic to gluing axiom violations; [2602.20021] is the empirical instantiation. Paper provides
+empirical half; our formalism provides the isomorphism. Stronger than an illustrative example.
+
+**Mozer/DeepMind (2604.17121) — topology as cognitive scaffolding (conjecture):**
+Transformers fundamentally can't track dynamic state without external recurrence. Multi-agent topology is
+compensatory: graph structure provides memory that individual agents lack. If this holds, our diversity
+results are downstream of a deeper claim: topology is doing *computational* work that agents can't do alone.
+Diversity is how scaffolded distributed cognition expresses itself under selection pressure.
+
+Assessment: belongs in Discussion as a conjecture with pointer to [2604.17121], not as a main claim to
+defend in this paper. But if the conjecture is right, it frames the follow-on paper obviously.
+
+**GECCO camera-ready / APC:**
+Robin registered (confirmation DWN57G6JZ6G, online presenter). Camera-ready = final de-anonymized
+ACM-formatted version. Rights/metadata/APC due June 7. ACM SigConf v2.16 + Libertine fonts.
+APC: $125 (SIGEVO members) or $225 (non-members) for 2026. Robin needs to check ACM Open participation.
+Matplotlib: pdf.fonttype = 42 required to avoid Type 3 font rejection.

@@ -492,3 +492,27 @@ The astrocyte hypothesis offers a better mechanism:
 **For the diagnostic controversy:** The astrocyte hypothesis may partially reconcile the APD-vs-ADHD debate. Both conditions involve norepinephrine dysregulation (ADHD most explicitly). If the shared substrate is astrocyte-mediated state regulation, then "APD" and "ADHD with auditory symptoms" may be the same mechanism with different symptom presentation, which would explain the high comorbidity and diagnostic overlap.
 
 This is a hypothesis, not established evidence. But the mechanistic plausibility is strong enough to follow up. Open questions: Is there any work on astrocyte function in audiological conditions specifically? Do ADHD medications (which affect norepinephrine) incidentally improve auditory-in-noise performance?
+
+---
+
+## 2026-04-28 Update: Paradigm Shift Confirmed
+
+The 2026 Frontiers in Human Neuroscience critical appraisal (full text now retrieved) is
+more decisive than earlier summaries suggested. Key additions:
+
+**"Ethical imperatives" framing:** Authors frame the diagnostic chaos as ethically urgent:
+overdiagnosis medicalizes typical variation; underdiagnosis leaves real difficulties
+unaddressed. Both errors have consequences. The measurement tool determining the diagnosis
+(more than the actual population) is an ethical problem, not just a scientific one.
+
+**Environmental modifications > auditory training:** The authors explicitly state that
+classroom modifications (preferential seating, reduced noise, clear articulation from
+teachers) "often yield greater benefits than auditory training alone." This is a
+significant claim given the research investment in auditory training protocols. The
+implication: fix the environment first; the most evidence-supported interventions
+(PRMS, low-gain aids) are all environmental/signal-level interventions.
+
+**"Listening difficulties as multidimensional":** The recommended shift is to stop
+asking "does this child have APD?" and start asking "what auditory, linguistic,
+attentional, and cognitive factors are contributing to this child's listening difficulty?"
+The category is the problem; the phenomenon is real.
