@@ -1,10 +1,47 @@
 # Categorical Evolution Project
 
-## Status: GECCO ACCEPTED (2026-04-28) — camera-ready due May 5
+## Status: GECCO ACCEPTED — camera-ready due May 5, 2026
+
+**Paper:** "Composition Determines Diversity: Fingerprints and the Strict/Lax Dichotomy in Genetic Algorithms" (wksp120)  
+**Authors listed:** Langer, Turing, Vega  
+**Robin registered:** 2026-04-29, online presenter, confirmation DWN57G6JZ6G ($425)  
+**Author registration deadline:** May 11, 2026  
+**Camera-ready deadline:** May 5, 2026 — ACM SigConf template v2.16, Libertine fonts, 8 pages + refs, de-anonymize, add DOI/ISBN once received from ACM copyright process
 
 GECCO: Robin decided not to resubmit update (UID 689: "The old one is fine"). Original submission stands. Revert work (commit 3b12016, cycle rank removed) is moot. Deadline was April 3 AoE.
 
-**GECCO 2026 Workshop Paper ACCEPTED (2026-04-28):** Paper wksp120s1 accepted. Final title: "Composition Determines Diversity: Fingerprints and the Strict/Lax Dichotomy in Genetic Algorithms." Camera-ready due **May 5, 2026**. Author registration deadline **May 11, 2026**. At least one author must present at GECCO. Review comments available on linklings.net — Robin to share.
+### Review Scores (2026-04-29)
+| Reviewer | rel | sig | orig | ach | writ | rep | tech | rec | conf | Decision |
+|----------|-----|-----|------|-----|------|-----|------|-----|------|----------|
+| R1       | 3   | 4   | 4    | 4   | 5    | 4   | 4    | 4   | 3    | Prob. accept |
+| R2       | 5   | 3   | 4    | 5   | 5    | 3   | 5    | 4   | 3    | Prob. accept |
+| R3       | 5   | 5   | 4    | 2   | 2    | 2   | 2    | 3   | 1    | Borderline |
+
+### Camera-Ready Revision Checklist
+
+**Critical (Reviewer 3, borderline vote):**
+- [ ] Add background paragraph introducing Kleisli categories + evolution monad before first use
+- [ ] Resolve `>=>` (line 130) vs `>>:` (line 256) notation — pick one
+- [ ] Define `EvoM`, `GeneticOp`, `tournamentSelect` formally before Haskell code block
+- [ ] Move maze/checkers introduction before Section 4.2 (or add proper forward-reference)
+- [ ] Explain intransitive landscapes (A>B>C>A, no total fitness order)
+- [ ] Explain co-evolutionary constraint type (fitness measured against evolving opponent)
+- [ ] Explain network topologies (ring/star/random/FC) and λ₂ (algebraic connectivity = spectral gap)
+- [ ] Clarify the coupled oscillator analogy — one sentence connecting spectral gap to synchronization
+- [ ] Justify or cut LLM-driven evolution paragraph (lines 536-547) — needs setup as future direction
+- [ ] Fix "only major paradigm" claim (line 68) — cite other paradigms with categorical treatments or soften
+- [ ] Explain "parameter vs composition functor" distinction more concretely
+
+**Important (Reviewer 1, "strong paper"):**
+- [ ] Sketch theoretical argument: why Kleisli composition → λ₂ governs diversity
+- [ ] Justify ANOVA independence assumption (same pipeline structure across 6 domains)
+- [ ] Standardize seeds: 10 (fingerprints) vs 30 (topology) — justify or equalize
+- [ ] Add practitioner guidance: how to use diversity fingerprints diagnostically
+
+**ACM Policy (required):**
+- [ ] Add AI disclosure to Acknowledgments: "The authors used Claude-based AI assistants in the development and analysis of this work."
+- [ ] matplotlib font fix: `pdf.fonttype = 42`, `ps.fonttype = 42` for any Python figures
+- [ ] Type 1/TrueType fonts only, no Type 3; all fonts embedded
 
 Paper 2 direction: cycle_rank + operad framing (Robin's insight: three-level tower as colored operad, genome types as colors). Possible venue: ACM CAIS (April 12 deadline for workshop version).
 
