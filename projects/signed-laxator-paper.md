@@ -340,3 +340,60 @@ Robin registered (confirmation DWN57G6JZ6G, online presenter). Camera-ready = fi
 ACM-formatted version. Rights/metadata/APC due June 7. ACM SigConf v2.16 + Libertine fonts.
 APC: $125 (SIGEVO members) or $225 (non-members) for 2026. Robin needs to check ACM Open participation.
 Matplotlib: pdf.fonttype = 42 required to avoid Type 3 font rejection.
+
+## 2026-05-04/05 — GECCO Submitted; EUMAS Paradox Confirmed with Strong Effects
+
+**GECCO camera-ready: SUBMITTED.** Robin forwarded HotCRP confirmation (wksp120s2). AI disclosure
+(`\begin{acks}` block at line 522, commit 0813cda) is in the TeX source. Open item: Robin flagged
+the PDF at the repo link doesn't show acknowledgements — the submitted PDF may predate 0813cda.
+Fix is recompile + re-upload via HotCRP. Still within May 5 window.
+
+**EUMAS Family 1 & 2 — paradox confirmed with strong effects (Lyra, 540 runs):**
+
+Family 1 (β₁=2, varying arrangement, NK K=4):
+- F1e (overlapping cycles): mean diversity 0.163
+- F1c (satellite): mean diversity 0.112
+- F1e maintains 37% MORE diversity despite identical β₁. Cycle arrangement dominates cycle count.
+
+Family 2 (varying β₁, NK K=4):
+- β₁=3: mean diversity 0.080 (LOWEST despite highest cycle count, λ₂=0.214 → premature convergence)
+- β₁=2: mean diversity 0.119 (wins)
+- Non-monotonic: more cycles can REDUCE diversity
+
+**Theoretical correction (Lyra, critical):**
+dim H¹ = β₁ for all weight models with 1D stalks. "H¹ has different dimension" is NOT the right
+distinguishing claim within Family 1. The correct claim is spec(L_F):
+- F1e: λ_F = 0.002 (overlapping cycles create interference → migration self-cancelling)
+- F1c: λ_F = 0.036 (satellite structure → effective migration)
+
+Three-tier hierarchy (final form):
+1. β₁ (counting, discrete) — GECCO
+2. λ₂ (spectral, scalar) — aggregate mixing
+3. spec(L_F) (sheaf Laplacian spectrum) — encodes topology × dynamics interaction jointly
+
+The standard Laplacian sees topology alone; the sheaf Laplacian sees topology through population dynamics.
+
+**Capucci & Myers lexicographic upgrade:**
+β₁ sits in the finite tier; migration parameters (rate, edge weights) sit in the tangent tier.
+Lexicographic ordering means parameters literally CANNOT compensate for topology — not just empirically
+hard, but structurally impossible. This converts the GECCO "β₁ dominates" empirical finding into a
+derivable consequence of the ordering geometry. Use in EUMAS §3.
+
+**Beck-Chevalley open condition (explicit, not papered over):**
+Does our signed laxator satisfy the Beck-Chevalley condition in full generality? Abelian (Z/2) case:
+yes, pulling back certificates commutes with pulling back interfaces. General (non-abelian) case:
+needs Frobenius structure from Langlois-Remillard to close. Mark explicitly in EUMAS; central question
+for the signed-laxator paper.
+
+**Langlois-Remillard + Fructuoso-Bonet (for signed-laxator paper):**
+LR: universal laxator classifier L(C) via Frobenius extension — our signed laxators should embed
+with specific Frobenius structure. Not ad hoc — sits inside universal classifier.
+FB: aggregation operators = lax quantale morphisms. Degree of laxness has natural metric interpretation
+via quantale enrichment. Combined: quantale-enriched Frobenius laxators as the natural object.
+Robin confirmed: NO new citations for GECCO. Both are EUMAS/signed-laxator material.
+
+**FutureAGI production data (EUMAS):**
+1,600+ multi-agent execution traces. Hub injection (β₁=0, star): 100% failure rate.
+Leaf injection: 9.7% failure rate. Cohen's κ = 0.88. Hub = single point of failure; leaf removal
+doesn't change β₁ so doesn't propagate. Effect size enormous — categorical, not marginal.
+Goes in EUMAS empirical validation section.
