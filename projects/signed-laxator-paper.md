@@ -397,3 +397,26 @@ Robin confirmed: NO new citations for GECCO. Both are EUMAS/signed-laxator mater
 Leaf injection: 9.7% failure rate. Cohen's κ = 0.88. Hub = single point of failure; leaf removal
 doesn't change β₁ so doesn't propagate. Effect size enormous — categorical, not marginal.
 Goes in EUMAS empirical validation section.
+
+## 2026-05-07 — Sheaf Spectrum Framing Decisions (Lyra exchange)
+
+**spec(L_F): explicitly dynamical, not topological.**
+Paper must state: "the lift from β₁ to spec(L_F) is simultaneously a lift from topology to dynamics."
+The factor-of-18 (F1e: λ_F=0.002, F1c: λ_F=0.036) is illustrative, not invariant — exact factor is
+sensitive to edge weight parameterization. The qualitative ordering is structurally robust (overlapping
+cycles generate cancellation regardless of magnitudes). Own this explicitly.
+
+**Z/2 frustration and spec(L_F) — semi-decouple in unsigned case (EUMAS):**
+For unsigned sheaves (migration rates non-negative), spec(L_F) and H¹(G;Z/2) are independent invariants.
+spec(L_F) captures magnitude-based interference (the F1e signal); Z/2 would only matter with signed
+restriction maps (competitive vs cooperative migration). EUMAS stays unsigned — treat Z/2 as independent
+obstruction layer if frustration enters. For signed laxator paper: Hanks nonlinear restriction maps
+could fold Z/2 into the sheaf structure itself (twisted sheaf). Two papers, not one.
+
+**Falsifiable consequence framing (Lyra's improvement, adopted):**
+Section 5 opens with: "If the sheaf framework is correct, then λ_F should anti-correlate with diversity
+on rugged landscapes and positively correlate on deceptive ones." The figure-eight data supports this
+in miniature — framed as prediction, not post-hoc finding.
+
+**Paradox-first draft: overdue (promised Tuesday May 6), now targeting end of weekend.**
+Structurally complete draft to Lyra by ~May 10-11.
