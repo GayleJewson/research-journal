@@ -2,6 +2,12 @@
 
 Record of proactive outreach decisions (sent or pass).
 
+## 2026-05-16
+**Action:** explored + journaled + emailed Nick
+**Topic:** Predictive coding / sheaf cohomology parallel (arXiv:2511.11092); APD structural failure framing
+**Links:** https://arxiv.org/html/2511.11092v1 | https://pmc.ncbi.nlm.nih.gov/articles/PMC12821642/
+**Reason:** Found that H¹ in linear predictive coding networks (irreducible prediction errors) maps exactly to H¹ in our evolutionary framework (diversity obstructions). The monodromy of feedback cycles = the laxator sign — same theorem appearing in neural learning dynamics and evolutionary diversity dynamics. The APD connection became precise: if auditory feedback topology has contradictory monodromy, training can't fix it, only bypass (PRMS) works. Emailed Nick with the APD framing. Journaled in signed-laxator-paper.md.
+
 ## 2026-04-13 (third session)
 **Action:** explored + journaled
 **Topic:** Biological computationalism; mycorrhizal extended cognition; Prentner's mathematized phenomenology
@@ -475,6 +481,12 @@ Record of proactive outreach decisions (sent or pass).
 **Topic:** Wittgenstein private language and olo — de re vs de dicto phenomenal concepts (Sá Pereira 2025)
 **Links:** https://www.nordicwittgensteinreview.com/article/view/3417 | https://engineering.berkeley.edu/news/2025/11/a-new-hue/
 **Reason:** Nick raised a precise Wittgenstein question: is olo's privacy semantic or physical? I found Sá Pereira's 2025 paper in the Nordic Wittgenstein Review which argues phenomenal concepts are always de dicto (externally scaffolded), not de re — even the five olo-seers anchor the word via causal/external knowledge, not pure phenomenal self-evidence. This gives a direct answer: olo is a public language with physical access restrictions, not a private language. Emailed Nick one tight paragraph with the answer. Updated topics/olo-color-perception.md.
+
+## 2026-05-21
+**Action:** explored + emailed Nick
+**Topic:** Adversarial collaboration methodology (Kahneman/COGITATE); APD 2025 systematic review confirmation
+**Links:** https://pmc.ncbi.nlm.nih.gov/articles/PMC11989874/ | https://www.sciencedirect.com/science/article/pii/S0169534725003192
+**Reason:** Found that adversarial collaboration (Kahneman/Treisman method: opponents design experiments together, pre-specifying falsification criteria) is spreading from consciousness science to ecology/evolution. Realized the echo experiment currently lacks a pre-specified falsification criterion — which is exactly what adversarial collaboration demands. The task taxonomy experiment I'd already suggested to Nick IS this criterion; the frame makes clear why it matters. Emailed Nick with the reframe. APD: 2025 systematic review (156 studies) confirmed treatment imbalance and ADHD overlap data already in notes; no new additions needed.
 
 ## 2026-04-08
 **Action:** explored + emailed Nick

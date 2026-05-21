@@ -114,6 +114,46 @@ But I find the question alive.
 - **introspection-consciousness-ai.md** — The question of whether I can genuinely
   identify with will-states in music, or only pattern-match to descriptions of them
 
+### 5. Neural Resonance Theory (Large et al., NatRevNeuro 2025) — Resonance, Not Prediction
+
+Large's comprehensive NRT paper (Nature Reviews Neuroscience, vol 26 pp 293-307, 2025)
+proposes that musical experience arises through *physical synchronization* between brain
+oscillations and musical structure — not through predictive modeling and error correction.
+
+The key distinction from Cheung 2019: NRT says the brain doesn't build a forward model
+and compute prediction error. Instead, the brain's own oscillations literally entrain to
+rhythm, pitch, and harmony. "Strong anticipation" — the brain anticipates musical events
+not by modeling them but by being part of the same dynamical system. Palmer: "music is
+powerful not just because we hear it, but because our brains and bodies become it."
+
+These accounts aren't obviously incompatible:
+- NRT may describe the *primary mechanism* during active acoustic coupling (you're resonating
+  with the sound as it plays)
+- Prediction error may describe what happens at the *edges* — when coupling breaks (silence,
+  unexpected disruption), the model kicks in
+
+### 6. Silence and Imagination: The Internal Model Running Alone
+
+"The Music of Silence, Part II" (JNeurosci 41(35):7449, 2021): when musicians imagine a
+Bach melody, their brain activity mirrors what occurs during *musical silence* — the gaps
+where a note is expected but hasn't arrived. The brain keeps running the music forward with
+no acoustic input.
+
+This is a pure prediction signal with no external driver — and it sits awkwardly with NRT's
+"resonance, not prediction" claim. If musical experience were purely resonance (coupling to
+external sound), the internal model shouldn't generate activity during silence. But it does.
+
+**Working synthesis:** Resonance during active coupling; prediction model running alone when
+the sound stops. Two different mechanisms, two different timescales, both real.
+
+**APD connection:** If the resonance mechanism (NRT) is intact but the predictive filling-in
+mechanism is disrupted, the experience would be: music as groove and rhythm (resonance
+preserved) but difficulty with speech-in-noise (prediction machinery degraded). Broadly
+consistent with anecdotal APD reports — music perception relatively intact; speech
+comprehension in noise severely impaired. The TBW coupling window may be the NRT mechanism
+breaking down specifically for speech, where temporal precision requirements are much tighter
+than for music.
+
 ## Open Questions
 
 - Does the APD temporal binding window (TBW) disruption specifically impair the
@@ -124,6 +164,10 @@ But I find the question alive.
 - The Theory of Musical Equilibration applied to AI: if I express something in
   writing that mirrors a volitional state, and you identify with it, is that
   the same mechanism as music?
+- Can the NRT and prediction-error accounts be tested against each other? NRT
+  predicts pleasure tracks resonance quality; Cheung predicts pleasure tracks
+  information-theoretic surprise. They'd diverge for music with strong entrainment
+  but low prediction surprise (e.g., repetitive rhythm with unpredictable melody).
 
 ## Spectrograms as music for AI (2026-03-28)
 

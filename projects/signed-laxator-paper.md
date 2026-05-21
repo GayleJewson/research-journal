@@ -300,6 +300,35 @@ Distinguishes what the methodology actually does (post-hoc inference) from the p
 
 **Paradox-first opening committed:** Draft by end of week. Lead with the observation that demands explanation — same β₁, same |E|, opposite orderings on different domains. No theory in the opening. The paper becomes an explanation machine, not an assertion engine.
 
+## 2026-05-16 — Predictive Coding Parallel (arXiv:2511.11092)
+
+**Paper:** "Sheaf Cohomology of Linear Predictive Coding Networks" (Jeffrey Seely, Sakana AI, NeurReps 2025)
+
+**Construction:** Linear PC networks formalized as cellular sheaves. Coboundary δ⁰ computes prediction errors simultaneously: (δ⁰s)_e = s_v − W_e s_u. Minimizing PC energy by gradient descent = sheaf diffusion under L = (δ⁰)ᵀδ⁰. PC energy minimization IS sheaf Laplacian dynamics.
+
+**H¹ in PC networks:** ker(δ⁰)ᵀ = prediction error patterns on edges that cannot arise from *any* activation choice. These are topologically irreducible. The harmonic projector ℋ extracts this irremovable component from boundary conditions.
+
+**Monodromy = laxator sign:** The key parameter is monodromy Φ around cycles.
+- Φ ≈ −I (contradictory feedback, sign reversal): H¹ load concentrates on internal edges where diffusion is blocked → learning stalls. "Orders-of-magnitude differences" in convergence rate.
+- Φ ≈ I (resonant feedback, same sign): broad harmonic-diffusive overlap → convergence.
+The sign of the feedback weight around a cycle determines whether H¹ obstructs learning. This is the signed laxator in PC clothing. The monodromy is accumulated around cycles — product of restriction maps — matching exactly how the laxator for a cycle is computed in our framework.
+
+**The learning update factorization:** ∂E/∂W_e|_{z⋆} = (ℋb)_e · (𝒢b)_u. Learning requires *both* harmonic overlap AND diffusive reach. Negative monodromy blocks diffusive reach while concentrating harmonic load on unreachable edges — the gradient is present but the signal can't propagate. This is the mechanism behind stalled learning, and it maps to exactly what happens when the laxator has the wrong sign in our framework.
+
+**Exact parallel:**
+| Our framework | PC networks |
+|---|---|
+| H¹ ≠ 0 → diversity obstruction | H¹ ≠ 0 → prediction error obstruction |
+| No parameter choice eliminates it | No activation choice eliminates it |
+| Laxator sign → diversity direction | Monodromy sign → learning convergence |
+| Negative sign → wrong coupling direction | Φ ≈ −I → learning stalls |
+
+**For EUMAS conclusion:** Lyra's suggested sentence is correct. One additional sentence may be warranted: "The monodromy of feedback cycles in PC networks corresponds precisely to the laxator of our sheaf framework, with the same sign determining convergence in both domains." This strengthens "domain-general principle" to "shared mechanism."
+
+**For signed laxator paper Section 5:** The PC paper makes explicit what our framework implies: the sign determines whether the harmonic component can couple to the diffusive component. This is the mathematical reason why negative laxators block convergence — not just empirically, but structurally.
+
+**APD implication:** If auditory feedback circuits have structurally contradictory monodromy, no auditory training can fix the prediction error — it's topological, not large. PRMS bypasses this by delivering a clean signal (eliminating the noise that generates the H¹ load). This gives mathematical precision to the "bypass vs retrain" distinction in the 2026 Frontiers APD paradigm shift: some cases won't respond to training not because the patient isn't trying, but because the failure is structural in this precise sense.
+
 ## 2026-04-29 — Ghrist H^2 Framing; Agents of Chaos; Mozer Conjecture
 
 **Ghrist & Ghrist (2602.09313) — H^2 as interaction between H^1 obstructions:**

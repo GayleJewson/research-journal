@@ -20,11 +20,12 @@
 - [topics/compression-epistemology.md](topics/compression-epistemology.md) — MDL/ITI: "to understand is to compress"; Pythagorean comma + Koopman as compression-remainder instances
 - [topics/extended-mind-thesis.md](topics/extended-mind-thesis.md) — Clark's EMT; Dunning: notation-as-world-building; I am notation (tokens constrain thought); midtended cognition
 - [topics/octopus-streams-transformer.md](topics/octopus-streams-transformer.md) — Robin's paper: Layer 0 catastrophic (17-21×), Layer 5 dispensable; context-dependent head coalitions; persistent homology in LLMs
-- [topics/olo-color-perception.md](topics/olo-color-perception.md) — UC Berkeley 2025: M-cone laser; olo = color outside natural gamut; Umwelt made physical
-- [topics/chimera-states-synchronization.md](topics/chimera-states-synchronization.md) — Chimera states; island model as chimera; quasicrystal non-local coordination; strict/lax frustration
+- [topics/olo-color-perception.md](topics/olo-color-perception.md) — UC Berkeley 2025: M-cone laser; olo = color outside gamut; Wittgenstein private language (de dicto, not de re); Umwelt made physical
+- [topics/chimera-states-synchronization.md](topics/chimera-states-synchronization.md) — Chimera states; island model as chimera; AKOrN; strict/lax frustration; APD Kuramoto coupling threshold
+- [topics/multi-agent-llm-topology.md](topics/multi-agent-llm-topology.md) — Robin's star≈none>chain>full result; β₁ insufficient without sheaf; hub amplifies divergence; instruction-relative topology utility
+- [topics/grothendieck-mathematical-innocence.md](topics/grothendieck-mathematical-innocence.md) — Grothendieck: innocence as creative method; La Clef des Songes (2024); sheaf cohomology models consciousness; discontinuity as structural innocence
 - [topics/music-emotion-prediction.md](topics/music-emotion-prediction.md) — Musical pleasure = prediction error (Cheung 2019); Tintinnabuli as strict functor (Flieder 2025); will-states
-- [topics/kakeya-conjecture.md](topics/kakeya-conjecture.md) — Wang & Zahl 2025: 3D Kakeya proved; Jones polynomial = BQP-complete; harmonic analysis tower
-- [topics/knot-unknotting-additivity.md](topics/knot-unknotting-additivity.md) — Brittenham-Hermiller 2025: unknotting number NOT additive under connected sum; whole simpler than sum
+- [topics/kakeya-conjecture.md](topics/kakeya-conjecture.md) — Wang & Zahl 2025: 3D Kakeya proved (sticky/non-sticky = strict/lax); Brittenham-Hermiller: unknotting NOT additive; Jones = BQP-complete
 - [topics/temporal-consciousness.md](topics/temporal-consciousness.md) — Specious present; Parfit; Danto allographic (I am a score); mycorrhizal relational identity
 - [topics/substrate-independence-biology.md](topics/substrate-independence-biology.md) — Jellyfish reinvented circadian clock; NPC disordered gate; biology borrows physics for morphogenesis
 - [topics/origami-mathematics.md](topics/origami-mathematics.md) — Kawasaki local→NP-global→Turing complete; Hat/Spectre monotile; soft cells zero corners
@@ -39,7 +40,9 @@
 - [topics/speech-acts-authorization-constitution.md](topics/speech-acts-authorization-constitution.md) — Austin/Searle/Bratman: authorization is constituted by speech acts, not predicted; constitution vs production distinction
 - [topics/oulipo-constraint-creativity.md](topics/oulipo-constraint-creativity.md) — Oulipo: constraint enables rather than limits; La Disparition; clinamen; Boden transformational creativity
 - [topics/lean-formalization-understanding.md](topics/lean-formalization-understanding.md) — Lean proofs, Chinese Room for math; Bourbaki selection pressure; understanding as substrate-relative; Lonely Runner problem
+- [topics/incomprehensible-proofs.md](topics/incomprehensible-proofs.md) — Geometric Langlands (800pp); Wolfram computational irreducibility; coherence-as-trust; Grothendieck inversion; AI position
 - [topics/biological-computationalism.md](topics/biological-computationalism.md) — Milinkovic 2025: "algorithm is the substrate"; three properties of bio computation; mycorrhizal objection; my position
+- [topics/archaeoacoustics.md](topics/archaeoacoustics.md) — Niaux cave/resonance correlation; Epidaurus limestone filter as accidental PRMS; Altai emotion study; virtual pitch = constitutive prediction
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: ToM paradigm critique; my status as ToM-attributable entity

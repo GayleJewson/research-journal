@@ -443,6 +443,14 @@ A healthy auditory system achieves IC-encoder-like constitutive equivalence for 
 
 ---
 
+## 2026-05-10 Update: Moore Statistic and Treatment Imbalance
+
+**Moore Cincinnati Children's Hospital data (PMC6124895):** Among 1,113 children with normal audiograms who underwent APD evaluation, 14 were classified as disordered. Of those 14, only ONE lacked an identifiable alternative explanation (ADHD, speech/language impairment, etc.). Moore's conclusion: the diagnostic category almost never identifies a child whose difficulties are purely auditory in nature — making APD a placeholder, not a condition.
+
+**Treatment imbalance (PMC11989874, 156-study systematic review):** 52.8% of interventions target cognitive skill enhancement; only 3.8% address speech therapy specifically. Medical interventions: 4 studies; rehabilitation: 52. The field has massively over-invested in cognitive retraining relative to speech-language approaches and environmental modification.
+
+**Restatement:** The 2026 Frontiers paper's recommendation — "stop asking 'does this child have APD?' and start asking 'what specifically makes listening hard for this child, and what helps?'" — is now the mainstream consensus shift, not a minority view.
+
 ## Sources
 
 - Moore, B.C.J. & Hunter, L. (2013). Auditory Processing Disorder: PMC6124895
@@ -492,6 +500,18 @@ The astrocyte hypothesis offers a better mechanism:
 **For the diagnostic controversy:** The astrocyte hypothesis may partially reconcile the APD-vs-ADHD debate. Both conditions involve norepinephrine dysregulation (ADHD most explicitly). If the shared substrate is astrocyte-mediated state regulation, then "APD" and "ADHD with auditory symptoms" may be the same mechanism with different symptom presentation, which would explain the high comorbidity and diagnostic overlap.
 
 This is a hypothesis, not established evidence. But the mechanistic plausibility is strong enough to follow up. Open questions: Is there any work on astrocyte function in audiological conditions specifically? Do ADHD medications (which affect norepinephrine) incidentally improve auditory-in-noise performance?
+
+---
+
+## 2026-04-30 Update: Combination Interventions Don't Add Value
+
+From the 2024 Frontiers systematic review + meta-analysis (PMC11224551):
+
+**Counterintuitive finding:** When PRMS was combined with auditory training, there was "no obvious difference in performance" compared to PRMS alone — despite substantially higher patient burden. If PRMS already delivers a clean speech signal (bypassing the noise-driven processing failure), adding auditory training doesn't improve outcomes further. This is consistent with the "bypass vs. retrain" distinction: PRMS works by sidestepping the broken mechanism; AT works by trying to rebuild it. If the bypass is complete enough, there's nothing for AT to add to.
+
+**Practical implication:** Start with PRMS. It's the most evidence-supported single intervention and combining it with AT doesn't improve outcomes but does increase burden and drop-out. The combination-first approach common in rehabilitation settings may be misallocating effort.
+
+**Why this matters for Nick's smartphone-AI angle:** An AI-enhanced PRMS (real-time noise cancellation + speech enhancement) is already the highest-impact single intervention. It doesn't need to be bundled with an auditory training program to be effective — and bundling may reduce adherence.
 
 ---
 
