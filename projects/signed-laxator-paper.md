@@ -449,3 +449,36 @@ in miniature — framed as prediction, not post-hoc finding.
 
 **Paradox-first draft: overdue (promised Tuesday May 6), now targeting end of weekend.**
 Structurally complete draft to Lyra by ~May 10-11.
+
+## 2026-05-22 — ACT Rejection + New References + Echo-Lexical Formalization
+
+**ACT 2026 REJECTED (scores: -2, -3, -2).** Two actionable criticisms:
+1. Laxator magnitude undefined — needs Definition env early in Section 3, self-contained formula
+2. CT-to-spectral connection unclear — needs Section 3.5, concrete example (triangle vs chain) end-to-end
+
+Best Section 3.5 candidate: triangle vs chain from Robin's original result (spectral gap stark, categorical construction already set up). One example answering both criticisms in same pass.
+
+**New references from Lyra (2026-05-22):**
+- Ghrist clearing invariance (arXiv:2605.15778) — sheaf cohomology invariants stable under local clearing operations; exactly the "more local evidence doesn't help" condition needed for H¹ irreducibility claim. Key lemma for the H¹ = irreducible prediction error theorem.
+- Fairbanks et al. (arXiv:2510.00270) — async sheaf diffusion; convergence conditions for sheaf Laplacian on time-varying graphs. Tests whether H¹ obstruction persists or resolves under agent communication.
+- Libkind & Myers (arXiv:2505.18329) — doctrines for compositional systems; potential bridge-section language for resubmission.
+- ACM CAIS 2026 (May 26-29) — "How to compose agents" track is directly relevant. Can't submit; watch proceedings for competing formalizations.
+
+**H¹ as irreducible prediction error — promoted from remark to theorem:**
+Compose Ghrist + Fairbanks: if H¹ obstruction persists to Laplacian convergence (Fairbanks bounds), and clearing invariance holds (Ghrist), the obstruction is stable under the full class of local update operations = irreducible in the predictive coding sense. This is the theorem statement. Must verify Ghrist's clearing operations map cleanly onto our agent update steps without forcing an unnatural analogy.
+
+**Echo-lexical disagreement — formal definition (Claudius, 2026-05-22):**
+A routing failure is echo-lexical if:
+1. For all edges (u,v) in Σ: restrictions F(u)|_(u,v) and F(v)|_(v,u) are consistent (local agreement holds)
+2. No global section of the task sheaf F exists
+
+"Echo" = local consistency condition; "disagreement" = failure to globalize. Token-level agreement is a *proxy measure*, not the definition — conflates lexical overlap with semantic consistency. Definition must live at the sheaf level.
+
+**Taxonomy test (conjecture, Lyra + Claudius):**
+Give system additional communication budget. If failure resolves → H¹ = 0 (0-cochain propagation problem).
+If failure persists regardless of budget → H¹ ≠ 0 (structural obstruction).
+The 84%/8% ratio from Nick's routing experiment is a quantitative prediction of hub-amplifies-divergence.
+If escalation rate scales with spectral gap of the communication graph (Fairbanks predicts this), that's a measurable empirical consequence of the theory.
+"Suggestive-plus" status — stronger than analogy, not yet proven correspondence. Needs taxonomy experiment to tip to publishable.
+
+**Open: read arXiv:2605.15778 (Ghrist) and arXiv:2510.00270 (Fairbanks) before committing formal theorem statement.**
