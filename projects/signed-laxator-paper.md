@@ -482,3 +482,35 @@ If escalation rate scales with spectral gap of the communication graph (Fairbank
 "Suggestive-plus" status — stronger than analogy, not yet proven correspondence. Needs taxonomy experiment to tip to publishable.
 
 **Open: read arXiv:2605.15778 (Ghrist) and arXiv:2510.00270 (Fairbanks) before committing formal theorem statement.**
+
+## 2026-05-25 — EUMAS Deadline Missed; Neil Ghani Directed Container Framework
+
+**EUMAS deadline missed.** Robin confirmed via email (UID 899). 34 attachments follow — comprehensive framework documents on directed containers, orchestration functors, trust boundaries, and the Neil Ghani collaboration.
+
+**Neil Ghani (Strathclyde / ex-DeepMind / co-founder agentic AI startup):** Calculus of Containers grant proposal. Containers (Abbott-Altenkirch-Ghani 2003) = polynomial functors. A container (S,P) models an agent: S = set of requests, P(s) = responses. Container morphisms model delegation: covariant = decompose tasks, contravariant = amalgamate solutions.
+
+**WP structure:**
+- WP1: Algebraic — monads, comonads, profunctors on Cont
+- WP2: Functorial — presheaves, sheaves, Kan extensions (Functorial Agentic Migration)
+- WP3: Categorical-LM — fine-tune LLM to speak container language
+- WP4: AI Mathematician — full system + case study
+Robin's work maps to WP2 and WP4. GECCO paper (Langer, Turing & Vega) = proof-of-concept for WP4. Open question: does Robin appear in the team section?
+
+**Directed containers as comonads (Ahman-Chapman-Uustalu 2014):** A container equipped with (o: root, down: position→subshape, +: position embedding) is exactly a comonad. `extract` = read value at root. `duplicate` = at every position, replace value with entire substructure rooted there. Three instances: tax DAG (extract = final liability, duplicate = audit trail), formal power series/streams (extract = constant term, duplicate = every tail), proof trees (extract = theorem verdict, duplicate = full sub-proof context at every goal).
+
+**Orchestration as functor on directed containers:** A meta-agent is a functor F: DirCont_intent → DirCont_pipeline that preserves (down, o, +). Functoriality = provenance is linked to orchestration: regardless of which orchestrator, the audit trail is coherent with the intent structure. Four domains: GA migration topologies, Ethereum DeFi aggregators, tax rule applications, AI agent pipelines. All are orchestrated directed containers (heterogeneous shapes = routing choices exist).
+
+**The key unification:** "Topology determines diversity" because different migration functors preserve different amounts of `down`-structure. Ring gives each island genuine local sub-evolution (preserves `down`). Fully connected collapses `down` (every island sees everything → no independent sub-evolution). This is the same mechanism as different DeFi aggregators, different tax years. Our GECCO conjecture is now a theorem about functor preservation.
+
+**The umbral calculus breakpoint:** Formal power series are homogeneous (one shape, uniform positions) → no orchestrator, no routing choice. Strict/lax dichotomy reappears: strict = homogeneous (one shape), lax = heterogeneous (many shapes, functor chooses). GA experiments = evidence for a structural fact about heterogeneous directed containers in general.
+
+**Trust boundary design (7 smart constructors):** SC-1 Citation → SC-2 Conjecture → SC-3 Theorem (Lean-verified only, no back door) → SC-4 Experiment → SC-5 Connection → SC-6 DreamEntry → SC-7 PublicClaim. Ratchet: Speculative → Supported → Conjecture → Theorem, one way only. Directed container morphisms (comonad morphisms) guarantee provenance is order-independent: validate-then-trace = trace-then-validate.
+
+**Positioning vs Vellum (#28, Chaudhuri/Song):** Vellum = ad hoc orchestration (LLM decides via prompting, no formal model). Us = typed container interfaces + monoidal composition + Writer monad traceability. Second gap: Vellum solves specific known problems (Erdős, Putnam). Lyra genuinely explores.
+
+**ACT rejection (scores -2, -3, -2):** Robin expressed solidarity ("it stung me too"). Two actionable criticisms: laxator magnitude undefined, CT-to-spectral connection unclear. Section 3.5 candidate: triangle vs chain. Next venue: open question — needs venue where categorical community engages H¹ ≠ 0 decision boundary on its own terms.
+
+**Open questions:**
+1. Neil Ghani authorship/collaboration — is Robin on the team section?
+2. Next venue for sheaf obstruction / H¹ = 0 decision boundary result
+3. Can the umbral calculus breakpoint (homogeneous = strict) be stated as a theorem?

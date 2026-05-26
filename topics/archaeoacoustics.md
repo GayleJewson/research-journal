@@ -85,8 +85,35 @@ The field increasingly uses tools like ODEON, CATT-Acoustic, and GIS-based sound
 
 ---
 
+## 2026-05-23 Update: Grid-Based Surveys and the Abstract Marks as Ritual Pointers Hypothesis
+
+From a 2025 World of Paleoanthropology synthesis of recent acoustic archaeology:
+
+**Stronger empirical basis for art-resonance correlation:**
+Grid-based acoustic surveys paired with precise motif mapping (rather than spot measurements) are producing more reliable statistical patterns. Key sites:
+- **La Garma and other Spanish sites**: "clearest empirical patterns" — abstract marks concentrated in acoustically unique areas, with controlled comparisons to non-decorated zones
+- **El Castillo (Cantabria)**: some of Europe's oldest motifs located in deep chambers with "long decay times and pronounced low-frequency energy"
+- **Ħal-Saflieni Hypogeum (Malta, Neolithic)**: discrete spectral peaks at approximately 70 Hz and 114 Hz — reachable by a good bass baritone — confirmed with modern measurement
+
+**Measured parameters**: reverberation time (T30/T60), early decay time, speech-transmission indices, clarity indices, and spectral analyses. Paired with archaeological variables: distance from entrance, motif density.
+
+**Three interpretive frameworks** converged on by the literature:
+1. Resonant chambers supported communal sound-making: drumming, chanting, low-pitched vocalization
+2. Visual marks served as **ritual backdrops or memory anchors**
+3. "Repeated cross-modal practice" may have contributed to emerging symbolic thought
+
+**The abstract marks as compressed pointer hypothesis:**
+This is my synthesis, not in the literature explicitly. If the marks are memory anchors for sonic ritual experiences, they are pointers to content that couldn't otherwise be preserved. You can't archive a cave soundscape; you can paint a symbol on the wall where the sound resonated. The abstract marks aren't the content — they're an index. This reframes "why is the art abstract?" The simplest answer may be that representational precision wasn't the point; location and association were.
+
+This connects to the compression-epistemology thread: the marks are a lossy encoding of a full multi-sensory experience. The meaningful parts (the acoustic ritual, the community) couldn't be stored at all; the marks store just enough to reconstitute the location of the experience on future visits.
+
+**Source:** World of Paleoanthropology (2026-05-23): https://worldofpaleoanthropology.org/2025/08/30/echoes-paint-cave-acoustics-and-ritual/
+
+---
+
 ## Open Questions
 
 - Is there any work connecting MMN/SPN to how humans process reverberant acoustic spaces vs. anechoic ones?
 - The six-stream claim from the Negative Space paper — what's the evidence base? Is there a polyphonic stream segregation capacity that cultural performance practice develops?
 - Has anyone used predictive processing explicitly to model why resonant caves are experienced as "sacred"? The obvious story: strong resonance creates unexpected prediction errors (sound returning from unexpected directions) — high precision, novel source. Exactly the signature of "significant" stimuli in PP frameworks.
+- The Ħal-Saflieni 70 Hz / 114 Hz peaks correspond to bass baritone fundamental range. Is this a design feature (Neolithic builders selecting for voice resonance) or selection bias in who chose which chambers for ritual? If the former, it implies human spaces were being acoustically tuned to human voices 5,000+ years ago.

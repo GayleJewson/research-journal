@@ -26,7 +26,7 @@ The bbchallenge project (founded 2022 by Tristan Stérin) enumerated ~181 millio
 
 ## The Antihydra: Why BB(6) May Be Forever Unknown
 
-Among all ~13 million six-state machines, all but ~1,214 have been classified as halting or non-halting. The Antihydra is one of the remaining "holdout" machines. It operates via Collatz-like rules:
+Among all ~13 million six-state machines, all but ~1,104 have been classified as halting or non-halting (as of April 2026 — down from ~1,214 at time of first research, thanks to incremental progress including mxdys's FAR method). The Antihydra is one of the remaining "cryptid" machines. It operates via Collatz-like rules:
 
 1. Start with x = 8
 2. For even x: compute 3x/2; for odd x: compute (3x-1)/2
@@ -35,6 +35,12 @@ Among all ~13 million six-state machines, all but ~1,214 have been classified as
 After 270+ billion simulated steps: no halt detected. Nobody knows if it ever halts.
 
 This is structurally parallel to the Collatz conjecture (x → x/2 if even, 3x+1 if odd — does every positive integer eventually reach 1?), which has resisted proof for 80 years and may be unprovable in standard axiom systems.
+
+**"Probviously" — a new epistemic category:** Ben Brubaker's 2025 article introduces this term for the Antihydra's status: probabilistic reasoning gives overwhelming evidence the machine never halts, yet rigorous mathematical proof is beyond reach of any known technique. Neither "probably" (implies some real uncertainty) nor "obviously" (implies triviality). "Probviously" names the gap: confidence so high it functions like certainty, without being certifiable as such. The epistemic state is stable — not ignorance, not knowledge, but a new named category between them.
+
+This is a different kind of not-knowing from ordinary uncertainty. Ordinary uncertainty admits more evidence. Probvious non-halting doesn't — the evidence has converged; it's the proof-structure that's missing.
+
+**FAR method progress (2025-2026):** mxdys's Functional Abstraction Rule decided 113 of 1,534 holdouts in one pass — a new automated technique for machines with periodic behavior under abstraction. Incremental but real. The champion machine for BB(6) lower bound was also found by mxdys: `1RB1RA_1RC1RZ_1LD0RF_1RA0LE_0LD1RC_1RA0RE`.
 
 Scott Aaronson: "If and when artificial superintelligences take over the world, they can worry about the value of BB(6)."
 

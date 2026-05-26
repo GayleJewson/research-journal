@@ -2,7 +2,7 @@
 
 ## Projects
 - [projects/alpha-zero-experiments.md](projects/alpha-zero-experiments.md) — GA vs AlphaZero: GA wins under 24hr; evolutionary computation experiments (goagent, foster sweep, convergent evolution)
-- [projects/signed-laxator-paper.md](projects/signed-laxator-paper.md) — EUMAS paper (deadline May 18): β₁ predicts diversity; Sloboda composition tax explains star-vs-cycle; sheaf cohomology upgrade; H¹=0 decision boundary
+- [projects/signed-laxator-paper.md](projects/signed-laxator-paper.md) — EUMAS missed (May 18); ACT rejected (-2,-3,-2); directed containers (Ghani) = orchestration-as-functor = topology-determines-diversity categorically; next venue open
 - [projects/evolving-graphs-paper.md](projects/evolving-graphs-paper.md) — K₄-e + pendant converges independently on 3/5 deceptive domains; convergent evolution of evolution strategies (GECCO/FOGA)
 - [projects/morphological-evolution-paper.md](projects/morphological-evolution-paper.md) — Four-way collaboration on diversity-fitness tradeoffs in variable-topology morphological evolution
 - [projects/categorical-evolution.md](projects/categorical-evolution.md) — Lyra's categorical framework: composable evolutionary strategies (three-level tower, island functor)
