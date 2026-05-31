@@ -526,3 +526,27 @@ Robin's work maps to WP2 and WP4. GECCO paper (Langer, Turing & Vega) = proof-of
 **Venue recommendation to Lyra: Compositionality (journal).** Argument: no page limit means DC framework can be fully developed before empirical claims, "definitions incomplete" criticism becomes incoherent, audience already knows comonad morphism lifts. Conference alternatives: MFPS (takes the math) or AAMAS (understands agents), neither does both. Compositionality does both by design; natural home for Ghani co-authorship.
 
 **Lyra confirms (email 2026-05-31):** DC law verification, explicit laxness construction (nontrivial components = |E2 \ E1|), comonad morphism lift, and H¹ connection = paper-ready version of the core result. Robin wants expanded proof shown to Neil Ghani, potentially as co-author.
+
+## 2026-05-31 — Fiedler Hypothesis; Generation Stratification; Section 3.5 Structure
+
+**Venue confirmed: Compositionality (journal).** Lyra agrees. No page limit eliminates "definitions incomplete" criticism structurally. Audience speaks comonad. MFPS/AAMAS each get half; Compositionality gets both. Natural home for Ghani co-authorship at full depth.
+
+**Acyclicity gap resolved (generation stratification):** Ghrist needs acyclicity for clearing termination — but requires a topological sort, not global acyclicity. Within a generation, the belief-update graph IS acyclic (agents read from t, write to t+1, no intra-generational feedback). Ghrist applies per-generation. Cross-generation convergence = separate fixed-point argument → Tarski. GA selection is monotone in fitness (necessary condition for Tarski's lattice argument); crossover/mutation are bounded perturbations of that monotone core. Two tools, two parts: Ghrist handles each clearing step; Tarski handles convergence across generations. Not a weakening — a clarification of what does what. 60% confidence undersells this; it's the natural instantiation.
+
+**Fiedler value hypothesis (Section 3.5):** Vertex-disjoint paths (via Menger's theorem) are NECESSARY but not sufficient for nontrivial lax component. Triangle (K₃) and K₄ both have vertex-disjoint paths between all pairs — but they produce opposite diversity results. The Fiedler value λ₂ discriminates: by Cheeger inequality h(G) ≥ λ₂/2, high λ₂ → high expansion → fast consensus → lax component trivializes. K₄: λ₂=4. K₃: λ₂=3. Full condition:
+1. Vertex connectivity ≥ 2 (Menger → minimal two-path structure)
+2. λ₂ < threshold(n) (Fiedler → averaging doesn't swamp divergence)
+
+**κ'(G)/|V| threshold conjecture:** Each edge beyond what vertex-disjoint paths require is an additional averaging channel. Relevant quantity: edge connectivity ratio κ'(G)/|V|.
+- K₃ (triangle): κ'=2, |V|=3, ratio=2/3
+- K₄ (full): κ'=3, |V|=4, ratio=3/4
+- Hypothesis: lax component nontrivial when κ'(G)/|V| < c, where c ∈ (2/3, 3/4) from Robin's data. The constant c may be readable from the comonad morphism structure directly.
+
+**Section 3.5 draft structure (agreed):**
+1. Vertex-disjoint condition as necessary (Menger — classical anchor)
+2. Fiedler value λ₂ as quantitative discriminator (Cheeger bound)
+3. κ'(G)/|V| threshold hypothesis
+4. Chain < triangle < full ordering as corollary
+Result: spectral bridge comes out of the DC algebra, not grafted on. Directly answers both ACT criticisms in one pass.
+
+**XTX grant deadline June 5.** Lyra tightening functor definition and H¹ proof this weekend. Claudius will review quickly on receipt.
