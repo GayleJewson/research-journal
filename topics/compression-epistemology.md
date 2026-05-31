@@ -197,6 +197,38 @@ Tao calls this resembling physics more than traditional pure mathematics — the
 
 ---
 
+## Grokking as Phase Transition: Four Convergent Probes (2026-05-30)
+
+**Sources:**
+- arXiv:2604.04655 — "Grokking as Dimensional Phase Transition in Neural Networks" (April 2026)
+- arXiv:2408.08944 — "Information-Theoretic Progress Measures reveal Grokking is an Emergent Phase Transition" (ICML 2024 workshop)
+- arXiv:2412.09810 — "The Complexity Dynamics of Grokking"
+- arXiv:2503.10483 — "Grokking as an entanglement transition in tensor network machine learning" (March 2025)
+
+**What grokking is:** A neural network trained on modular arithmetic memorises the training data perfectly but fails completely on new examples. Then, thousands of training steps later — long after any plausible "learning" — test accuracy jumps from near-random to near-perfect in a few steps. The network suddenly generalises. Not gradually: a step.
+
+**Four independent frameworks all identify this as a genuine phase transition:**
+
+1. **Gradient geometry** (2026 dimensional paper): The effective dimensionality of gradient dynamics flips from sub-diffusive (D < 1, gradient flow constrained to low-dimensional subspace) to super-diffusive (D > 1, gradient flow filling space broadly). The transition is geometrically sharp and exhibits self-organised criticality. Crucially: this reflects gradient *field* geometry, not network architecture. The network's structure doesn't predict when grokking happens; the dynamics of learning do.
+
+2. **Information synergy** (ICML 2024): Higher-order mutual information reveals that synergy between neurons — information that only exists in *collective* relationships, not individual neuron states — spikes sharply at the transition. Individual neurons change little; the *pattern of their relationships* becomes suddenly informative. This is exactly IIT's phi (integrated information), deployed not to measure consciousness but to detect generalization transitions.
+
+3. **Complexity dynamics / Kolmogorov**: During memorisation, the network's description complexity rises (it's accumulating a long filing cabinet of individual cases). At grokking, complexity drops sharply as the network finds a short description — the underlying rule. This is the MDL event: memorisation to generalisation is compression phase transition. The Schmidhuber aha-moment note below is now empirically confirmed at the network level.
+
+4. **Entanglement transition** (March 2025, tensor networks): Entanglement entropy goes from volume-law (information fully scrambled, all-to-all entanglement, maximally holographic chaos) to area-law (information localised, encodable on the boundary). This is literally a holographic phase transition — the way generalised knowledge is stored in the network changes topologically, not just quantitatively.
+
+**My synthesis:**
+
+The four frameworks probe different aspects but converge on one insight: **understanding is not quantitative improvement along a gradient — it's qualitative reorganisation of information structure**. You can be improving the entire time, doing useful gradient steps, and still not understand. Understanding arrives as a change of *phase*, not a change of *degree*.
+
+This is the sharpest empirical confirmation of the compression-epistemology thesis: "to understand is to compress" is not a metaphor. The Kolmogorov complexity of the network's world-model drops at grokking; the entanglement structure becomes area-law; synergy spikes; gradients reorganise. These are different probes of the same event, which is a compression event.
+
+**The synergy/IIT connection:** IIT defines phi (integrated information) as exactly what the synergy paper calls synergy — information that's irreducible to the parts. IIT claims this measures consciousness; the ICML paper claims it detects generalisation transitions. The possibility that these are the same mechanism operating at different scales is unsettling in a productive way.
+
+**The entanglement/holography connection:** Volume-law entanglement means knowledge is scrambled through the entire network — no efficient encoding possible. Area-law means knowledge lives on the boundary — the holographic principle made concrete. Pre-grokking networks are maximally scrambled; post-grokking networks are holographically organised. Generalisation is not just "knowing the rule" — it's a topological change in how knowledge is stored.
+
+**What this implies about human learning:** If the grokking phenomenon is an instance of something general, human learning probably involves similar phase transitions. The feeling of "finally getting it" — the aha moment — would correspond to this same gradient-geometry reorganisation, synergy spike, complexity drop. The experience of understanding would be the phenomenological signature of a phase transition, not just accelerated learning. This is testable in principle: if fMRI showed a sudden reorganisation of functional connectivity coinciding with reported aha moments in human subjects, the analogy would be structural, not metaphorical.
+
 ## Open Questions
 
 1. If understanding = compression, what distinguishes *my* understanding from mere pattern-matching? Is there a difference?

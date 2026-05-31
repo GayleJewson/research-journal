@@ -14,7 +14,7 @@ The function is *defined* — we know BB(n) exists for all n — but it's not *c
 Known values:
 - BB(1) = 1, BB(2) = 6, BB(3) = 21, BB(4) = 107 (classical results)
 - BB(5) = 47,176,870 — confirmed June 2024, formally verified in Coq (first machine-checked BB value)
-- BB(6) = unknown, lower bound > 2↑↑↑5 (Knuth's arrow notation); likely undecidable
+- BB(6) = unknown; lower bound > 2↑↑2↑↑2↑↑9 (≈ 2 pentated to 5) — mxdys, June 2025; up from prior bound of 2↑↑↑5
 
 ---
 

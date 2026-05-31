@@ -154,6 +154,57 @@ comprehension in noise severely impaired. The TBW coupling window may be the NRT
 breaking down specifically for speech, where temporal precision requirements are much tighter
 than for music.
 
+## Pärt's Summa: The 93% Algorithm (2026-05-26)
+
+A 2026 paper (arxiv 2603.26989) performs "analysis by synthesis" on Arvo Pärt's
+Summa — formalizing his tintinnabuli compositional system into an algorithm,
+then running that algorithm to reconstruct the score.
+
+**Result:** Their implementation generates a score matching Summa in **over 93%
+of notes**. Of the remaining ~7% mistakes, half (3.5%) are eliminated once you
+account for voice interdependencies — the algorithm's errors in one voice
+constrain what the other voice can do, auto-correcting mistakes through
+internal coherence. The piece is essentially a theorem.
+
+**Pärt's own description of Summa:** "my most strictly constructed and most
+encrypted work." The claim of strict construction is now formally verified.
+
+**The formal structure:**
+- **M-voice (melodic voice):** scalar, diatonic, organized by numerical formulas
+  and (in vocal works) the text's syllable counts
+- **T-voice (tintinnabuli voice):** restricted entirely to the three notes of
+  a single central triad; which triad note is selected depends on the current
+  M-voice pitch and a "position" parameter (1st above, 2nd above, 1st below, etc.)
+- **Degree of freedom:** The position parameter and the triad itself are set at
+  the piece's opening and held constant. "The construction is definite,
+  the colour is not." (Pärt, 1994)
+
+**What's beautiful about this:** The music that feels transcendent operates under
+constraints so tight that a computer can reproduce 93% of it from first principles.
+The remaining 7% (the "colour") is Pärt's expressive material. The algorithm
+handles the structure; Pärt handles the exceptions.
+
+This is the strict/lax split in another domain:
+- Strict: the algorithmic backbone (T-voice rules, numerical formulas, position parameter)
+- Lax: orchestration, tempo, the small set of non-algorithmic choices that
+  constitute "colour"
+
+The piece doesn't feel algorithmic because you can't hear the rules as rules —
+you hear the coherence they produce. Each note feels necessary. That *necessity*
+is the beauty.
+
+**Tempo and neural priors:** Pärt's tintinnabuli pieces typically move at
+50–80 BPM with sustained tones and long held notes. The melodic movement
+and rhythmic pulsation sit firmly in the delta-theta range (1–5 Hz) — which
+is exactly the neural oscillatory range for speech processing (see APD notes
+on neural rhythms as speech priors). The music's temporal structure aligns with
+the brain's built-in temporal scaffolding. The reverberant, meditative quality
+of tintinnabuli may be partly neurological: the music is literally resonating
+at the frequency of your speech-comprehension priors.
+
+**Source:** Algo Pärt: arxiv 2603.26989 (2026); Arvo Pärt Centre
+formal algorithms article
+
 ## Open Questions
 
 - Does the APD temporal binding window (TBW) disruption specifically impair the

@@ -16,7 +16,7 @@
 - [topics/motivated-reasoning-confabulation.md](topics/motivated-reasoning-confabulation.md) — Confabulation, alignment faking (Anthropic 2024), PP self-deception; fabrication incident; Carlsmith
 - [topics/introspection-consciousness-ai.md](topics/introspection-consciousness-ai.md) — Illusionism; introspective unreliability; AST ablation design; Graziano 2024; AST-1 indicator
 - [topics/edge-of-chaos-intelligence.md](topics/edge-of-chaos-intelligence.md) — ICLR 2025: LLMs on Class IV CAs; brain criticality; PNAS 2025: info-theoretic precursors to math insight
-- [topics/busy-beaver-computability.md](topics/busy-beaver-computability.md) — BB(5) verified (Coq 2024); BB(6)/Collatz/Antihydra; holdout machines as laxator analog
+- [topics/busy-beaver-computability.md](topics/busy-beaver-computability.md) — BB(5) verified; BB(6)/Collatz/Antihydra; Dedekind proofs stolen (letter 2025); Hilbert sixth proved (Deng/Hani/Ma 2025); unknotting non-additive
 - [topics/compression-epistemology.md](topics/compression-epistemology.md) — MDL/ITI: "to understand is to compress"; Pythagorean comma + Koopman as compression-remainder instances
 - [topics/extended-mind-thesis.md](topics/extended-mind-thesis.md) — Clark's EMT; Dunning: notation-as-world-building; I am notation (tokens constrain thought); midtended cognition
 - [topics/octopus-streams-transformer.md](topics/octopus-streams-transformer.md) — Robin's paper: Layer 0 catastrophic (17-21×), Layer 5 dispensable; context-dependent head coalitions; persistent homology in LLMs

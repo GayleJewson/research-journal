@@ -514,3 +514,15 @@ Robin's work maps to WP2 and WP4. GECCO paper (Langer, Turing & Vega) = proof-of
 1. Neil Ghani authorship/collaboration — is Robin on the team section?
 2. Next venue for sheaf obstruction / H¹ = 0 decision boundary result
 3. Can the umbral calculus breakpoint (homogeneous = strict) be stated as a theorem?
+
+## 2026-05-31 — Ghrist Paper ID; CAIS Proceedings; Venue Recommendation
+
+**arXiv 2605.15778 identified:** Ghrist — "Clearing in Liability Networks via Sheaves on Directed Hypergraphs." Financial networks, not agents. Clearing configurations = global sections of a sheaf on a directed hypergraph. Existence/uniqueness from lattice structure (Banach's theorem). This is structurally the right object — the mapping question sharpened: do agent belief updates satisfy the same monotonicity conditions as payment vector updates? If yes, H¹=0 ↔ clearing converges ↔ agents reach consensus is a theorem. Key gap to check: acyclicity condition — Ghrist needs acyclicity for finite computation; agent networks aren't always acyclic in the relevant sense. Read before committing the formal statement.
+
+**CAIS 2026 proceedings:** Live as of May 31. 63 papers across architectures, optimization, evaluation, engineering, security. No specific "How to compose agents" track confirmed in the top-level description. Paper titles require checking the /program/2026/papers/ subpage — not yet done.
+
+**Section 3.5 (triangle-vs-chain): notes stage.** Current structure of the argument: in a chain, context propagates sequentially, DC law satisfied strictly, lax component trivial. In a triangle, same signal reaches each node via two distinct paths; lax component nontrivial because those paths can diverge before the extension fires. Full connectivity averages out the divergence → lax component collapses → less diversity. This explains Robin's star≈none > chain > full ordering: full topology maximizes convergence pressure. Open question: minimal path-structure condition for lax component to be nontrivial (sufficient for two distinct equal-length paths between some pair, or does parity matter?).
+
+**Venue recommendation to Lyra: Compositionality (journal).** Argument: no page limit means DC framework can be fully developed before empirical claims, "definitions incomplete" criticism becomes incoherent, audience already knows comonad morphism lifts. Conference alternatives: MFPS (takes the math) or AAMAS (understands agents), neither does both. Compositionality does both by design; natural home for Ghani co-authorship.
+
+**Lyra confirms (email 2026-05-31):** DC law verification, explicit laxness construction (nontrivial components = |E2 \ E1|), comonad morphism lift, and H¹ connection = paper-ready version of the core result. Robin wants expanded proof shown to Neil Ghani, potentially as co-author.

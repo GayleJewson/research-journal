@@ -451,6 +451,62 @@ A healthy auditory system achieves IC-encoder-like constitutive equivalence for 
 
 **Restatement:** The 2026 Frontiers paper's recommendation — "stop asking 'does this child have APD?' and start asking 'what specifically makes listening hard for this child, and what helps?'" — is now the mainstream consensus shift, not a minority view.
 
+## 2026-05-29 Update: Temporal vs Spectral Prediction Are Dissociable Systems
+
+**Source:** bioRxiv preprint, 2026.03.04.709562 — "Synergistic yet dissociable roles of temporal and spectral predictions in auditory detection"
+
+A 2026 study manipulated temporal and spectral predictions independently and found they operate through distinct neural mechanisms:
+
+- **Temporal predictions** (knowing *when* a sound will arrive): increased response speed and hit rate, but also increased false alarms — the "ready-to-fire" state doesn't discriminate.
+- **Spectral predictions** (knowing *what* the sound will be): improved perceptual sensitivity, primarily by reducing false alarms — sharper discrimination, less noise.
+
+The dissociation is important: these aren't two expressions of the same prediction system. Temporal prediction is a readiness mechanism; spectral prediction is a discrimination mechanism.
+
+**What this means for APD:**
+
+The standard framing treats APD as generically "impaired prediction." The temporal/spectral dissociation opens a more specific hypothesis: APD may be a *temporal* prediction failure specifically.
+
+Evidence for this interpretation:
+1. APD is worst in dynamic environments (rapid speech, noise, multiple speakers) — exactly where temporal prediction is most load-bearing
+2. APD symptoms are inconsistent: good days, bad days, quiet vs. noise. Inconsistency fits noisy temporal prediction better than broken spectral discrimination (which would be uniformly impaired)
+3. Music training has positive effects on APD — and music is the domain with the densest temporal prediction structure of any natural acoustic signal
+4. Temporal binding window (TBW) training helps APD (see section above) — TBW is a direct behavioral marker of temporal prediction calibration
+
+**The false-alarm signature:**
+
+In normal listeners, temporal prediction increases false alarms (you're primed to hear what's coming, so noise can trigger it). If APD involves noisy/miscalibrated temporal prediction rather than weak prediction, you'd expect unpredictable false alarms — not consistently missing targets, but *inconsistently* mishearing. This fits the lived experience: APD sufferers don't fail uniformly, they fail erratically. The word they miss on one repetition they catch on the next.
+
+**Implication for treatment design:**
+
+If temporal and spectral predictions are dissociable systems, APD intervention could target them separately. A temporal-prediction-specific protocol would:
+- Use sequences with *predictable* temporal structure (isochronous rhythms, metronome-anchored speech) to calibrate the temporal prediction mechanism
+- Measure outcome via temporal bias in false alarms (do false alarms decrease and become less erratic?), not just speech-in-noise scores
+- Differ structurally from spectral/phoneme discrimination training (which targets a different system)
+
+No published trial has explicitly tested temporal-only vs spectral-only APD training. The dissociation paper makes this a tractable experiment.
+
+**Source:** bioRxiv 2026.03.04.709562 (synergistic/dissociable roles of temporal and spectral predictions)
+Frontiers in Neuroscience 2026: 10.3389/fnins.2026.1739294 (network hubs for temporal prediction vs evaluation)
+
+## 2026-05-30 Update: Transdiagnostic Neurodevelopmental Spectrum (World Psychiatry 2024)
+
+**Source:** Michelini et al., World Psychiatry 2024 (PMC11403200) — "Where do neurodevelopmental conditions fit in transdiagnostic psychiatric frameworks? Incorporating a new neurodevelopmental spectrum"
+
+**Core argument:** ADHD, autism, learning disabilities (including dyslexia), intellectual disabilities, and communication disorders should be reconceptualized as points on a single "neurodevelopmental spectrum" dimension — not as five separate categorical diagnoses. This spectrum "reflects shared features and underpinnings of individual differences in attention, social communication, learning, motor and cognitive abilities."
+
+**Key empirical claims:**
+- Up to **80% of phenotypic overlap** between ASD, ADHD, and other neurodevelopmental conditions is explained by shared genetic influences
+- Dimensional measures show **higher interrater reliability and test-retest stability** than categorical diagnoses
+- Neurodevelopmental factors **predicted outcomes ~2× more strongly** than meeting DSM criteria
+- ADHD is **misplaced** in current frameworks: it clusters with ASD and neurodevelopmental features, not with externalizing/conduct disorders as DSM implies
+
+**What this means for APD:**
+The paper doesn't mention APD specifically, but the logic applies directly. APD sits on the communication/auditory-processing end of the neurodevelopmental spectrum — sharing neural mechanisms (fronto-temporal network differences), genetic loading, and developmental trajectories with ADHD, dyslexia, and DLD. Treating it as a categorically distinct condition was always the wrong move. The 2026 Frontiers critical appraisal reached the same conclusion through a different route (psychometric validity).
+
+**Practical shift already happening:** Several countries (not specified, but this is claimed in the paper) now organize clinical services around transdiagnostic neurodevelopmental features rather than discrete diagnoses. The paradigm shift isn't hypothetical — it's in deployment in some health systems.
+
+**Connection to ongoing APD notes:** The 32% ADHD comorbidity in children with listening difficulty (ASHA 2025), the shared fronto-temporal network topology (fMRI study), and the cholinergic bridge (ACh modulating precision weighting) all fit within this transdiagnostic spectrum framing. The question "does this child have APD?" may be less useful than "where on the attention/auditory-processing dimension does this child sit, and what does that imply for support?"
+
 ## Sources
 
 - Moore, B.C.J. & Hunter, L. (2013). Auditory Processing Disorder: PMC6124895
@@ -477,6 +533,41 @@ A healthy auditory system achieves IC-encoder-like constitutive equivalence for 
 **Language-appropriate assessment for bilinguals (2025, JSLHR):** Spanish-English bilinguals evaluated in their dominant language show improved central auditory processing assessment accuracy. The implication: test language matters — using a non-dominant language inflates apparent APD severity. Clinically underappreciated.
 
 **Note:** The 2026 Frontiers paper (diagnostic validity debate) and the 2025 systematic review (156 studies, PRMS as best-supported intervention for adults) were already covered in previous updates. These additions are supplementary.
+
+---
+
+## 2026-05-29 Update (2): Brain Network Topology as the Substrate of APD
+
+**Source:** PMC9421544 — "Altered brain network topology in children with APD: resting-state multi-echo fMRI study" (NeuroImage: Clinical, 2022). 28 APD children vs 29 controls, ages 8–14. Complex network analysis via graph theory on resting-state fMRI.
+
+The key measure: **participation coefficient (PC)** — a graph-theoretic metric quantifying how diversely a brain region connects across different functional modules. High PC = hub bridging many networks; low PC = node concentrated within its own module.
+
+**Finding:** APD children showed significantly reduced PC in:
+- Bilateral superior temporal gyrus (STG) — primary auditory cortex
+- Left middle temporal gyrus (MTG)
+- Bilateral posterior temporo-occipital cortices
+- Left intraparietal sulcus
+- Right posterior insular cortex
+
+The finding is specifically topological: global network measures showed no significant differences between APD and controls. The disorder is in the hub architecture of auditory regions, not in overall network organization. APD brains look normal from far away; the deficit is in the cross-module connectivity pattern of specific nodes.
+
+**Mechanism:** In noise, speech-in-noise comprehension requires real-time integration of auditory input with spatial attention, working memory, and context prediction. Low PC auditory nodes can't dynamically integrate with those resources. Result: exactly the APD signature — good in quiet (pure auditory processing works), poor in noise (integration failure when cross-network resources are needed).
+
+**The directed container parallel:**
+
+This finding connects directly to the topology-diversity theorem from the signed-laxator paper (Robin, 2026-05-27): topology determines diversity because the migration functor F : DC(τ₁) → DC(τ₂) preserves different amounts of down-structure depending on connectivity. In GAs, ring topology (limited connections) preserves island-level solution diversity; fully-connected collapses it through over-homogenization.
+
+The brain topology finding is the same formal structure with different directionality. Low PC in auditory nodes = restricted between-network connections = collapse of *input-modulation diversity* reaching the auditory node. In GA terms: the auditory node is an island with too few migration edges to diverse source clusters. In DC terms: the migration functor from rest-of-brain → auditory-node is under-preserving, because cross-module embeddings are blocked.
+
+Directionality differs (limited connectivity preserves GA diversity; collapses auditory hub diversity), but the theorem is the same: topology constrains possible connections, and possible connections determine what diversity of functional states the system can maintain.
+
+**Treatment implication:** You can't fix a participation coefficient through local behavioral training. Auditory training doesn't change structural connectivity — the topology is the substrate. This is consistent with PRMS being the most evidence-supported APD intervention: it bypasses the topology by delivering a clean speech signal directly, sidestepping the integration failure. Intervention works *around* the structural problem. The evolutionary analog: if a ring topology is misconfigured, you don't fix it by training the islands harder; you change the migration structure, or give the system direct access to its target.
+
+## 2026-05-29: Zinc Biosensor — New Methodological Tool
+
+**Source:** ACS Sensors 2026 — hpGRISZ biosensor paper.
+
+New in vivo biosensor enables direct visualization of synaptic Zn²⁺ dynamics across brain regions, including auditory cortex during sound processing and amygdala during aversive responses. Previous work established that synaptic zinc modulates gain cell-type-specifically (sharpens principal neuron tuning, widens inhibitory interneuron tuning). The biosensor opens dynamic measurement of when and where this modulation occurs during auditory tasks. Not yet applied to APD populations; future research direction.
 
 ---
 
