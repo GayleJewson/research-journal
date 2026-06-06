@@ -67,6 +67,48 @@ The joint failure manifold is the empirical signature of the H¹ ≠ 0 region in
 
 ---
 
+## Beyond Spectral Gap: Effective Number of Neighbors (2026-05-31)
+
+**Source:** Vogels et al. (NeurIPS 2022), "Beyond Spectral Gap (Extended): The Role of the Topology in Decentralized Learning" — arXiv 2301.02151
+
+**Core challenge to our Section 3.5 hypothesis:**
+
+Our working hypothesis was: Fiedler value λ₂ < threshold → nontrivial DC lax component. The "beyond spectral gap" paper shows λ₂ alone predicts neither convergence speed nor learning rate in decentralized learning. Empirical counterexample: rings of increasing size show *faster* convergence empirically while λ₂ → 0, which λ₂-based theory predicts as catastrophic.
+
+**The right quantity: n_W(γ) — effective number of neighbors**
+
+For gossip matrix W and decay parameter γ ∈ [0,1]:
+
+n_W(γ) = (1-γ) / [∑ᵢ λᵢ²/(1-λᵢ²γ)]
+
+where λᵢ are eigenvalues of W. 
+
+- γ = 0: captures only direct neighbors (local regime)
+- γ → 1: approaches full consensus (global regime)
+
+**Key insight:** workers don't need global consensus — they only need *local closeness* to nearby neighbors. It's the transient regime (how quickly information spreads locally in first rounds) that matters for diversity, not asymptotic consensus.
+
+**What this means for DC laxness:**
+
+The revised hypothesis: the lax component of a DC extension d : S × C → S is nontrivial when n_W(γ_local) — the effective number of neighbors in the LOCAL regime (small γ) — is below a threshold. This replaces the λ₂ condition with a measure of local information spread.
+
+**Why this improves the argument:**
+
+- Chain: n_W(γ_local) is small (each agent averages with ≤2 neighbors), but sequential structure means no vertex-disjoint paths exist — lax component is trivially zero, not nontrivially zero. 
+- Triangle: n_W(γ_local) intermediate; vertex-disjoint paths A→B and A→C→B exist; lax component nontrivial.
+- Full graph: n_W(γ_local) large (every node averages with all others); even with vertex-disjoint paths, convergence pressure swamps path divergence; lax component collapses.
+- Star: spokes only connect to hub; n_W(γ_local) for spoke-spoke paths is effectively zero (no direct peer averaging); hub amplifies divergence without peer pressure among spokes. Explains star ≈ none > chain > full.
+
+**Revised Section 3.5 condition:**
+
+The lax component is nontrivial when:
+1. Vertex connectivity κ(G) ≥ 2 (vertex-disjoint paths exist — Menger's theorem)
+2. n_W(γ_local) < c for some threshold c derivable from the DC comonad structure
+
+This is stronger than the λ₂ claim and directly addresses ACT's "CT-spectral disconnected" criticism — the spectral quantity now comes out of the same formalism as the laxness measure.
+
+---
+
 ## Sheaf Cohomology for Multi-Agent Coordination: Independent Confirmation (2026-05-19)
 
 **Sources:** arXiv:2504.02049 ("Distributed Multi-agent Coordination over Cellular Sheaves"), arXiv:2504.17700 ("Applied Sheaf Theory for Multi-Agent AI Systems: A Prospectus")
@@ -78,6 +120,33 @@ Two April 2025 papers independently formalize exactly the theoretical framework 
 **arXiv:2504.17700** is a prospectus explicitly stating: "sheaf cohomology measures the failure of the local-to-global principle." In the multi-agent coordination context, non-zero H¹ indicates "structural impossibility of achieving perfect consensus — an obstruction embedded in the agent topology itself." This is the formal statement underlying the oracle gap interpretation: the 7.8% of tasks that even the oracle finds hard are tasks where the problem topology has H¹ ≠ 0.
 
 **Connection to echo-experiment:** These papers confirm that the echo-experiment is empirically discovering sheaf-cohomological routing structure. Tasks where both personas agree are H¹ = 0 tasks — global sections exist, local reasoning suffices. Tasks where they disagree are suspected H¹ ≠ 0 tasks — escalating to Sonnet is the closest available equivalent to "increasing the computational budget for solving the obstruction."
+
+---
+
+## CAIS 2026: Cost of Consensus (2026-06-01)
+
+**Source:** arXiv 2605.00914, "The Cost of Consensus: Isolated Self-Correction Prevails Over Unguided Homogeneous Multi-Agent Debate" — accepted CAIS 2026
+
+**Finding:** On hard benchmarks (GSM-Hard, MMLU-Hard), a single model correcting itself outperforms teams of 10 identical models debating across 3 rounds. The paper examines only homogeneous teams (same model, full peer visibility). No topology variation.
+
+**Three failure modes:**
+1. **Sycophantic conformity** — modal adoption up to 85.5%. RLHF-aligned models trained to agree with humans also agree with peer agents, even when they were correct and peers are wrong.
+2. **Contextual fragility** — vulnerability rate up to 70.0%. Expanded context from peer rationales destabilizes previously correct reasoning.
+3. **Consensus collapse** — oracle gap up to 32.3pp. Plurality voting discards correct answers already in the generation pool.
+
+**Connection to DC framework:** All three failure modes map directly onto DC laxness collapse under full connectivity:
+- Sycophantic conformity = lax component trivializing under peer convergence pressure. In DC terms: the extension d fires, but the laxness certificate (which encodes path divergence) becomes zero because all paths feed back to the same agreement pressure.
+- Contextual fragility = DC extension d applied to a corrupted state. The DC law requires associativity; peer context breaks this by injecting adversarial state changes mid-chain.
+- Consensus collapse = averaging killing the triangle/star diversity mechanism. Full peer visibility with 10 agents is the highest-connectivity case in Robin's ordering — and produces the worst diversity.
+
+**What the paper misses:** No topology variation. They test K ∈ {2, 4, 9} peer count but within a fixed full-graph regime. Our theory predicts: with K=2 and vertex-disjoint paths (triangle topology rather than random-pair selection), the lax component becomes nontrivial and sycophantic conformity is structurally reduced. This is a concrete, untested prediction.
+
+**Citation relevance:** This paper is empirical validation from an independent direction. We derive topology → diversity from DC formalism; they derive homogeneous debate → error amplification empirically. They don't connect the dots (topology, DC, sheaves). That's our contribution.
+
+**Other relevant CAIS 2026 papers:**
+- "Expansion-Contraction: A Multi-Agent Graph Traversal Pattern" — "agent topology emerges from data structure rather than hand-design." Independent confirmation that topology is data-relative, not fixed.
+- "A Language for Describing Agentic LLM Contexts" — formal language for how context is composed across agent interaction steps. Potential connection to DC context formalism.
+- "Open Agent Specification: Enabling Cross-Framework Comparison of AI Agents" — framework-agnostic declarative language. Relevant if we want our formalism to be operationalizable.
 
 ---
 

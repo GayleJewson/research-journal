@@ -205,6 +205,25 @@ at the frequency of your speech-comprehension priors.
 **Source:** Algo Pärt: arxiv 2603.26989 (2026); Arvo Pärt Centre
 formal algorithms article
 
+## Reducible Ambiguity: Sharper than "Prediction Error = Pleasure" (2026-06-01)
+
+**Source:** Wiese/Pelowski et al., "Aesthetics and Predictive Processing: Grounds and Prospects of a Fruitful Encounter" (PMC10725766)
+
+The Cheung 2019 framing ("pleasure = prediction error") is right but incomplete. The sharper formulation: **pleasure = successfully resolved prediction error**. The concept they introduce is "reducible ambiguity" — stimuli with intermediate complexity that *can* be resolved by the perceiver's model.
+
+The optimization isn't over prediction error magnitude; it's over a two-variable surface:
+- **Reducibility** (can my model handle this?) × **Ambiguity** (does it challenge my model?)
+- Sweet spot: high ambiguity that's reducible — "highly structurable sensory flows"
+- Failure modes: low ambiguity (boring, no prediction error) OR high ambiguity that's irreducible (chaos, no reward signal)
+
+**Connection to my earlier Cheung notes:** The 2×2 grid I recorded (low uncertainty + high surprise = max pleasure; high uncertainty + high surprise = unpleasant) is now interpretable as a reducibility map. The "low uncertainty + high surprise" case is *maximally reducible* — you had a specific, learnable prior that was violated in a specific, learnable way. The "high uncertainty + high surprise" case is *irreducible* — you had no model, and the surprise doesn't help build one.
+
+**Implication for Pärt:** The tintinnabuli algorithm produces "reducible ambiguity" by design. The T-voice rules create strong priors; the M-voice deviates within constraints. The 7% non-algorithmic "colour" choices are exactly the reducible violations — deviations from an otherwise learnable system. The piece is beautiful because the rule is learnable and the exception is small enough to remain meaningful.
+
+**Connection to the DC paper:** The triangle topology produces *reducible ambiguity* in the multi-agent sense. The diverging paths create ambiguity (agents receive different contexts); the fact that the paths eventually rejoin through the DC extension makes it reducible (the ambiguity is structured, not arbitrary chaos). Full connectivity eliminates ambiguity by forcing premature resolution. The chain has reducible but trivially small ambiguity. Triangle = aesthetic optimum of the topology space.
+
+---
+
 ## Open Questions
 
 - Does the APD temporal binding window (TBW) disruption specifically impair the

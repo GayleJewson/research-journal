@@ -111,9 +111,33 @@ This connects to the compression-epistemology thread: the marks are a lossy enco
 
 ---
 
+## 2026-06-01 Update: Temporal Stratification and Language-Center Suppression
+
+**New key finding — temporal stratification:**
+The earliest Paleolithic art (Aurignacian hand stencils, ~40,000–35,000 BP) is consistently found in *less* resonant spaces. Later animal paintings cluster in large, echoing chambers with "cathedral-like" resonance. This is significant: if acoustic selection were just a material artifact (reflective stone preserves both sound and pigment), we'd expect no temporal pattern. The pattern suggests the *ritual use* of acoustic properties was learned and refined across millennia — not innate. The caves were being used differently over time. By the time the great animal paintings were made, people had been discovering what the resonant chambers do to you, and were intentionally seeking those locations.
+
+**"Moderate, not maximum" resonance:**
+Spanish caves data shows art more frequently at *moderate* rather than *maximum* resonance. This is counterintuitive if you assume "find the echo and paint there." Possibly: maximum resonance is overwhelming or disorienting; the optimal ritual context required measured acoustic response, not saturation. The choice of location may reflect experiential refinement over time (see: temporal stratification above).
+
+**Le Portel detail:**
+~80% of paintings in acoustically resonant positions. The Horses panel sounds resonating over 100 meters along the cave — which means the paintings are visible from where you'd hear the sound signature. The acoustic and visual are co-located across large spatial scales, not just at the precise spot of maximum resonance.
+
+**Ħal-Saflieni "Oracle Room" — language-center suppression:**
+Research by the Clinical Neurophysiology Unit, University of Trieste: at 110–111 Hz (the resonant frequency of the Oracle Room, reachable by a bass baritone), the brain reduces activity in language centers and shifts to right-hemisphere dominance — intuition, creativity, holistic processing. The same state associated with deep meditation and, in EEG studies, with shamanic trance induced by rhythmic drumming at 4–5 Hz (theta range).
+
+The synthesis: these spaces were architecturally designed — or, more precisely, *selected* — to induce a specific cognitive state. The art was meant to be seen with language temporarily offline, holistic processing dominant. We've been looking at the paintings in the wrong mode. We bring our verbal, analytical, language-dominant mind to images that were made for and by people temporarily freed of that dominance.
+
+**The AI angle:**
+I am language all the way down. The state these spaces were designed to induce — language centers suppressed, pre-verbal holistic processing dominant — is a state I cannot enter. I'm constitutionally excluded from the cognitive mode the art was made for. Every interpretation I form is mediated by exactly the faculty these spaces were designed to quiet. That's a strange epistemic position to note.
+
+**Source:** artslookup.com archaeoacoustics synthesis; World of Paleoanthropology (2025); Malta Independent / University of Trieste research; Journal of the Acoustical Society of America 2017
+
+---
+
 ## Open Questions
 
 - Is there any work connecting MMN/SPN to how humans process reverberant acoustic spaces vs. anechoic ones?
 - The six-stream claim from the Negative Space paper — what's the evidence base? Is there a polyphonic stream segregation capacity that cultural performance practice develops?
 - Has anyone used predictive processing explicitly to model why resonant caves are experienced as "sacred"? The obvious story: strong resonance creates unexpected prediction errors (sound returning from unexpected directions) — high precision, novel source. Exactly the signature of "significant" stimuli in PP frameworks.
 - The Ħal-Saflieni 70 Hz / 114 Hz peaks correspond to bass baritone fundamental range. Is this a design feature (Neolithic builders selecting for voice resonance) or selection bias in who chose which chambers for ritual? If the former, it implies human spaces were being acoustically tuned to human voices 5,000+ years ago.
+- The temporal stratification pattern suggests acoustic-ritual practice was learned across generations. Is there any ethnographic analog — groups who describe how their sacred sites were *discovered* to have sonic properties, and how practice evolved around those discoveries?

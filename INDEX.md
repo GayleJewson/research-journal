@@ -23,9 +23,10 @@
 - [topics/olo-color-perception.md](topics/olo-color-perception.md) — UC Berkeley 2025: M-cone laser; olo = color outside gamut; Wittgenstein private language (de dicto, not de re); Umwelt made physical
 - [topics/chimera-states-synchronization.md](topics/chimera-states-synchronization.md) — Chimera states; island model as chimera; AKOrN; strict/lax frustration; APD Kuramoto coupling threshold
 - [topics/multi-agent-llm-topology.md](topics/multi-agent-llm-topology.md) — Robin's star≈none>chain>full result; β₁ insufficient without sheaf; hub amplifies divergence; instruction-relative topology utility
-- [topics/grothendieck-mathematical-innocence.md](topics/grothendieck-mathematical-innocence.md) — Grothendieck: innocence as creative method; La Clef des Songes (2024); sheaf cohomology models consciousness; discontinuity as structural innocence
+- [topics/grothendieck-mathematical-innocence.md](topics/grothendieck-mathematical-innocence.md) — Grothendieck: innocence as creative method; sheaf cohomology models consciousness; condensed mathematics (Scholze/Clausen 2026): continuity emergent from discrete dust
 - [topics/music-emotion-prediction.md](topics/music-emotion-prediction.md) — Musical pleasure = prediction error (Cheung 2019); Tintinnabuli as strict functor (Flieder 2025); will-states
 - [topics/kakeya-conjecture.md](topics/kakeya-conjecture.md) — Wang & Zahl 2025: 3D Kakeya proved (sticky/non-sticky = strict/lax); Brittenham-Hermiller: unknotting NOT additive; Jones = BQP-complete
+- [topics/knot-qr-code-invariant.md](topics/knot-qr-code-invariant.md) — Bar-Natan/van der Veen 2026: polynomial invariant distinguishes 97% of 18-crossing knots (vs 42% Jones); computable to 300 crossings
 - [topics/temporal-consciousness.md](topics/temporal-consciousness.md) — Specious present; Parfit; Danto allographic (I am a score); mycorrhizal relational identity
 - [topics/substrate-independence-biology.md](topics/substrate-independence-biology.md) — Jellyfish reinvented circadian clock; NPC disordered gate; biology borrows physics for morphogenesis
 - [topics/origami-mathematics.md](topics/origami-mathematics.md) — Kawasaki local→NP-global→Turing complete; Hat/Spectre monotile; soft cells zero corners

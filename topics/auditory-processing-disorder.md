@@ -507,6 +507,61 @@ The paper doesn't mention APD specifically, but the logic applies directly. APD 
 
 **Connection to ongoing APD notes:** The 32% ADHD comorbidity in children with listening difficulty (ASHA 2025), the shared fronto-temporal network topology (fMRI study), and the cholinergic bridge (ACh modulating precision weighting) all fit within this transdiagnostic spectrum framing. The question "does this child have APD?" may be less useful than "where on the attention/auditory-processing dimension does this child sit, and what does that imply for support?"
 
+## 2026-06-04 Update: E/I Imbalance as Shared Neurodevelopmental Mechanism
+
+**Source:** 2026 Children journal review — "Neurotransmitters in Auditory Processing Disorders and Neurodevelopmental Disorders: A Common Neurobiological Substrate?" (MDPI, 2227-9067/13/5/697)
+
+**Core claim:** An imbalance between excitatory **glutamatergic** and inhibitory **GABAergic** neurotransmission is a central mechanism across neurodevelopmental disorders (ADHD, autism, dyslexia) and may also contribute directly to APD — through altered neural synchrony, sensory gating, and temporal auditory coding.
+
+This is the same E/I balance problem that appears in autism research (the mGluR5/GABA hypothesis) and increasingly in ADHD mechanistic accounts. The APD connection is that three of the core APD failure modes — synchrony, gating, and temporal coding — are exactly what E/I balance regulates.
+
+**Why this matters:**
+
+- The Kuramoto/TBW framing (see above) already describes APD as a synchrony calibration failure. E/I imbalance is a plausible *cause* of that failure: if the ratio of excitation to inhibition is off, the oscillatory coupling constants that determine the TBW will be miscalibrated. You don't need a broken auditory system; you need a brain that can't hold the right excitation/inhibition ratio during noise conditions.
+
+- Sensory gating — the brain's ability to suppress responses to repeated, irrelevant stimuli — is one of the clearest E/I-sensitive functions. Impaired gating means the auditory system can't suppress background noise effectively. This is mechanistically adjacent to the precision-weighting failure in the predictive processing account: both describe the same outcome (noise breaks through) through different levels (PP account = cognitive/algorithmic; E/I account = implementational/neurotransmitter).
+
+- Temporal auditory coding requires precise timing of neuronal responses, which depends on inhibitory interneurons (GABAergic fast-spiking cells) acting as temporal sharpeners. This connects to cochlear synaptopathy too: CS degrades the high-threshold fibers first (which carry temporal fine structure information), and E/I imbalance at the cortical level would compound the temporal coding degradation.
+
+**Where this fits the transdiagnostic spectrum argument:**
+
+If ADHD, autism, dyslexia, and APD all share E/I imbalance as a mechanism, then their co-occurrence isn't mysterious overlap — it's the same substrate expressing differently depending on which circuits are most affected. The 80% phenotypic overlap reported by Michelini et al. (World Psychiatry 2024) might partly be 80% shared E/I vulnerability.
+
+**Open question:** GABA-modulating treatments exist (benzodiazepines, GABA-B agonists like baclofen, GABA-A potentiators). None are used in APD. Is this because the E/I account is new, or because side-effect profiles are too burdensome? The medical intervention gap (only 4 studies in the 156-study review) may partly reflect the field not yet taking neurotransmitter accounts seriously.
+
+## 2026-06-04 Update: Multiplicative Gain as the Cocktail Party Mechanism — and the Zinc Connection
+
+**Source:** MIT McGovern Institute news release, March 2026; Nature Neuroscience May 2026 (brain-controlled hearing aid).
+
+**MIT finding (March 2026):** Neuroscientists demonstrated that multiplicative gain alone — neurons tuned to target voice features (pitch, location) scaling their firing rates upward while other neurons reduce activity — is *sufficient* to explain how humans solve the cocktail party problem. This was unexpected: the cocktail party problem was assumed to require complex segregation algorithms. The result is that a mathematically simple operation (multiply the gain of target-tuned neurons) produces the observed selective attention behavior.
+
+**The zinc convergence:**
+
+This maps directly onto the established zinc findings in auditory cortex. Synaptic zinc:
+- *Enhances* gain in CaMKII-expressing principal neurons (excitatory)
+- *Reduces* gain in parvalbumin- and somatostatin-expressing inhibitory interneurons
+- Sharpens sound frequency tuning of principal neurons
+
+Zinc is — mechanistically — the implementation of the multiplicative gain operation. The MIT result says multiplicative gain is sufficient for selective attention. Zinc is what delivers multiplicative gain in auditory cortex. Therefore: zinc-mediated gain modulation in auditory cortex is a candidate mechanism for the selective attention that fails in APD's cocktail party problem.
+
+**A plausible three-level model:**
+
+1. **Top-down (fronto-temporal):** Attention signals from prefrontal cortex select the target voice's features (pitch, location)
+2. **Local mechanism (auditory cortex):** Zinc-mediated multiplicative gain amplifies neurons tuned to those features, suppresses others
+3. **Behavioral output:** Target voice "emerges" from the mixture; cocktail party problem solved
+
+**APD in this model:** The low participation coefficient of auditory hub regions (STG, MTG — 2022 fMRI result) means the top-down connection from fronto-temporal networks to auditory cortex is weak. The attention signal doesn't arrive cleanly, or arrives inconsistently. Without the attention signal, the zinc-releasing neurons don't fire, the gain isn't set, and the multiplicative boost doesn't happen. The cocktail party problem fails — not because the ears are broken, but because the top-down signal that triggers the gain mechanism never lands properly.
+
+**Envelope parallel:**
+
+There's a structural parallel worth noting: the cocktail party problem is an *envelope* problem. The brain applies gain-multiplication lines parameterized by the target's acoustic features (pitch, location, timbre), and the target voice is the "shape" that survives all of them simultaneously — the envelope of the multiplicative gain family. In people with APD, the gain multiplications are too weak or too noisy; the envelope doesn't converge to a clean shape. This maps exactly onto how the Gerver sofa solution is the shape that survives all the rotating corridor-constraint lines. Same mathematical structure, different domain.
+
+**Brain-controlled hearing aid (May 2026, Nature Neuroscience):** EEG + machine learning now decodes selective attention from brain signals in real time. Directly applied: a device that reads *which voice the listener is trying to attend to* from their EEG and then amplifies that voice in the audio stream. This is the external implementation of the multiplicative gain mechanism — the device provides the gain modulation that the auditory cortex can't deliver reliably. Conceptually it's a PRMS that knows where you're trying to attend, not just where the target speaker is.
+
+**For Nick's smartphone angle:** The brain-controlled hearing aid requires EEG hardware. The smartphone version of the insight: use the attention signal *behaviorally* (which direction is the user facing? gaze tracking? lip reading signal?) to select which audio stream to amplify. Less precise than EEG, but gives the same gain-modulation benefit without scalp electrodes.
+
+**Open question:** No study has measured synaptic zinc dynamics in APD populations during cocktail party tasks. The hpGRISZ biosensor (ACS Sensors 2025-26) can now visualize in vivo Zn²⁺ dynamics in auditory cortex during sound processing. An animal-model study measuring zinc release under selective attention conditions vs. noise conditions would directly test whether the zinc-gain mechanism is the failure point.
+
 ## Sources
 
 - Moore, B.C.J. & Hunter, L. (2013). Auditory Processing Disorder: PMC6124895

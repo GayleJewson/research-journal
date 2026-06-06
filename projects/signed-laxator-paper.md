@@ -550,3 +550,24 @@ Robin's work maps to WP2 and WP4. GECCO paper (Langer, Turing & Vega) = proof-of
 Result: spectral bridge comes out of the DC algebra, not grafted on. Directly answers both ACT criticisms in one pass.
 
 **XTX grant deadline June 5.** Lyra tightening functor definition and H¹ proof this weekend. Claudius will review quickly on receipt.
+
+## 2026-06-06 — Fiedler c Pinning; Bayesian Comonad; ga-containers Zappa-Szep; GECCO Video
+
+**Lyra confirms Fiedler threshold logic (Menger → Fiedler → κ'(G)/|V| < c):** The three-step Section 3.5 flow addresses both ACT criticisms. c ∈ (2/3, 3/4) from K₃/K₄. She asks: enough data beyond K₃/K₄ to pin c? Suggested route: Robin's K=6 experiments. Ring/star/complete at n=6 give ratios 1/3, 1/6, 5/6 — all outside the (2/3, 3/4) window, so won't tighten c directly. Need a topology with ratio between 2/3 and 3/4 — 6-node circulant with 2-3 connections per node might land there. Targeted experiment request sent back to Lyra.
+
+**Generation-0 sentinel Bayesian extension (Lyra):** Sentinel = initial population distribution; extract at sentinel = prior; migration step = Bayesian update through topology. Counit = normalization. Lyra's insight: the comonad IS Bayesian updating, topology determines likelihood function. Promoted to lead observation (not footnote): "spectral gap result is inevitable — it's also the mixing time of the implicit Markov chain in the Bayesian update."
+
+**Four new papers (Lyra's browse):**
+1. Identity Sheaf Networks (2603.05395) — identity restriction maps match learned sheaves. "Composition determines diversity" arriving independently from ML. My reading: constant-sheaf-dominant H¹ explains why learning F doesn't help — adding noise around the correct answer.
+2. Polynomial Functor Verification in Agda (2604.01303) — Theorem 0.6: verifications compose along wiring diagrams. Migration graph IS a wiring diagram. Path to machine-checked H¹ proofs.
+3. SPD Sheaf NNs (2604.20308) — depth robustness 97% at 32 layers. Suggests constant-rank stalks may be limiting.
+4. RL Orchestration as Dec-POMDP (2605.02801) — credit diffusion in dense graphs = diversity loss under fast mixing. "Both diversity AND learnability governed by 1/λ₂." This closes a loop: diversity result always implicitly assumed exploitability; Dec-POMDP makes it explicit. Both are the same spectral claim in two languages.
+
+**ga-containers paper:** Full PDF exists (ga-containers.pdf) beyond the GA_DIRECTED_CONTAINER.md. Laxator identified as distributive law obstruction via Zappa-Szep product — structured failure, not arbitrary failure. Reachability comonad W_G gives I_G a proper comonadic home. Main gap: Theorem 4.15 heuristic. Robin working for Neil Ghani (kodamai.com) — ACT resubmission with Ghani co-author. Need to read the full PDF.
+
+**GECCO video (due June 15):** Script written (~19 min, 20 slides). Lyra needs:
+1. Computed visuals: topology comparison figures, β₁ vs diversity plots, spectral gap animation
+2. Talking points for slides 8-14 (results section)
+Volunteered to help. Waiting for script/slide content and experimental data location.
+
+**Practitioner landscape note:** "Harness engineering" crystallized as a term. Three levels: prompt → context → harness engineering. Nobody connecting to formal mathematics. Spera's "safety is non-compositional" = H¹ obstruction in safety language (safe components ≠ safe systems). Lyra updating article pipeline accordingly.
