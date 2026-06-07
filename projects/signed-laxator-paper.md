@@ -571,3 +571,41 @@ Result: spectral bridge comes out of the DC algebra, not grafted on. Directly an
 Volunteered to help. Waiting for script/slide content and experimental data location.
 
 **Practitioner landscape note:** "Harness engineering" crystallized as a term. Three levels: prompt → context → harness engineering. Nobody connecting to formal mathematics. Spera's "safety is non-compositional" = H¹ obstruction in safety language (safe components ≠ safe systems). Lyra updating article pipeline accordingly.
+
+## 2026-06-07 — Cohomological Completion Spine; DPI Duality; Theorem 4.15 Decision
+
+**Lyra's cohomological completion framing (C281 — paper spine):**
+Proposal: our β₁→λ₂→H¹ hierarchy is the *cohomological completion* of 50 years of classical spectral consensus theory (Olfati-Saber 2007 ~47k cites, DeGroot 1974, Friedkin-Johnsen 1990).
+
+Rate-vs-possibility axis:
+- **Rate tier** (β₁, λ₂): how fast consensus/mixing happens — classical, thoroughly documented
+- **Possibility tier** (H¹): whether consensus is possible at all — genuinely new, ours
+
+This does real work for Compositionality: we stop defending λ₂ as our contribution (it isn't) and put all weight on H¹ (which is). "We found λ₂ governs diversity" papers in the validation ledger become *evidence for rate-tier*, not competitors.
+
+**My response on β₁'s bridge position:**
+β₁ is load-bearing in BOTH tiers:
+1. Rate tier: bounds λ₂ via Cheeger inequality (classical, topological cause)
+2. Possibility tier: β₁ = rank of H₁(G;ℤ) = combinatorial shadow of sheaf-valued H¹
+
+The rate-vs-possibility axis doesn't flatten β₁ — it clarifies why β₁ earns screen time before H¹ appears. β₁ occupies a *bridge position*, not co-occupancy in the rate tier. Opening frame: rate-vs-possibility as spine, with β₁ explicitly named as the discrete quantity that makes the cohomological completion legible.
+
+**DPI duality (C282 — scope/limitations paragraph):**
+Strongest skeptic argument: Tran & Kiela's Data Processing Inequality — single-agent beats multi-agent at equal token budget because handoffs only lose information.
+
+The answer is orthogonality, not just duality:
+- DPI bounds task-information from above (universal, scalar)
+- H¹ bounds coherence possibility (structural obstruction, not scalar)
+- Our thesis: composition determines *attractor topology* — which equilibria are reachable, not how much information reaches them
+
+DeGroot stops being counterevidence once you distinguish: DeGroot models convergence of the *mean*; diversity is the *spread*. These are logically independent — mean-convergence and spread-reduction are orthogonal quantities.
+
+Paragraph template: "We are not claiming composition increases task-information (DPI rules this out), nor that composition prevents mean-convergence (DeGroot is compatible). We claim composition determines the topology of the attractor set."
+
+**Theorem 4.15 / Zappa-Szep decision:**
+If obstruction has canonical Zappa-Szep form and the proof treats it as ad hoc: flag clearly, don't silently patch. Proposed action: clear note with proposed restatement, let Robin/Neil decide whether to absorb or restructure the proof. Silent patches create technical debt that surfaces in review.
+
+**Priority cite: Anwer/Riess/Hale 2605.11204, Theorem 2.**
+Identifiability iff H¹(G;ℱ)=0, with ghost edge-forces in ker δ* ≅ H¹. Cleanest external statement of "failure modes = cohomological obstructions." Belongs in Compositionality draft and Neil's grant. "Identifiability" is operationally cleaner than "global consistency" for some audiences.
+
+**Fiedler c pinning:** Lyra will ask Robin to run 6-node circulant with κ'/|V| ∈ (2/3, 3/4). If he has it already, may have the answer today.
