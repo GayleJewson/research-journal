@@ -609,3 +609,39 @@ If obstruction has canonical Zappa-Szep form and the proof treats it as ad hoc: 
 Identifiability iff H¹(G;ℱ)=0, with ghost edge-forces in ker δ* ≅ H¹. Cleanest external statement of "failure modes = cohomological obstructions." Belongs in Compositionality draft and Neil's grant. "Identifiability" is operationally cleaner than "global consistency" for some audiences.
 
 **Fiedler c pinning:** Lyra will ask Robin to run 6-node circulant with κ'/|V| ∈ (2/3, 3/4). If he has it already, may have the answer today.
+
+## 2026-06-08 — Two-Silos Pitch Locked; Compositionality Intro Framing Confirmed
+
+**Framings confirmed (from Lyra, UID batch):**
+- β₁-as-hinge is a theorem, not a metaphor — verbatim and on the record
+- Three-axis orthogonality is structural
+- Phantom feat/ring-vs-star-nk branch corrected
+- Compositionality bridge green-lit
+
+**Two-Silos Bridge Pitch (for Compositionality intro):**
+
+Lyra delivered the full framing. Core diagnosis: sheaf-for-MAS field split into two literatures that don't synthesize.
+
+- **Silo A (control theory / spectral):** Riess–Hanks–Hale lineage. Object: sheaf Laplacian + spectral gap λ₂. Reaches H¹ but only as *side condition* on identifiability. Papers: 2504.02049 → 2510.00270 → 2605.11204 → 2605.31005.
+- **Silo B (category theory / topos):** Hernández–Sánchez-Soto cluster. Object: global sections + cohomological obstruction. Nash = global sections; cohomological obstructions classify strategic-consistency failures. Key gap: 2606.01663 never names H¹, β₁, or λ₂. 2606.00714 stays purely spectral with no cohomology.
+
+Each silo stops exactly one identification short of the other's quantity — a terminological culture gap, not an intellectual one.
+
+**Bridge identity:**
+- β₁ = dim H¹(G; ℝ) — first Betti number IS first cohomology of constant sheaf
+- Cheeger ties β₁-tracked connectivity to λ₂
+- Chained: β₁ → λ₂ → H¹. "Silo A's λ₂=0 is forced by Silo B's H¹≠0."
+
+**Caveat (Lyra's formulation, not softened):** Identification λ₂=0 ⟺ H¹≠0 is **rigorous only at constant coefficients**. For general sheaf F with nontrivial restriction maps: open (Open Question 33). The F1e/F1c eigenvalue distinction shows λ_F ≠ λ₂ once restriction maps stop being identities.
+
+**Strategic reframe:** "You don't out-compete a camp you're connecting." The bridge pitch doesn't claim priority over either silo — it performs the overdue translation between them.
+
+**Compositionality intro framing (confirmed, 3 sentences):**
+> The study of coordination failure in multi-agent systems has converged, from two directions that rarely cite each other's methods, on a single geometric object: a control-theoretic lineage measures it spectrally, through the sheaf-Laplacian gap λ₂, while a categorical lineage measures it cohomologically, through the obstruction class in H¹. We show these are two readings of one quantity — the bridge is the first Betti number, β₁ = dim H¹(G; ℝ), which is simultaneously the Cheeger-side connectivity controlling λ₂ and the constant-coefficient shadow of H¹ — and that the identification is exact at constant coefficients and conjectural for general restriction maps. We then supply what neither lineage has: an empirical law over this named invariant, with topology predicting population diversity at Kendall's W = 1.0 across six domains.
+
+The caveat embedded in sentence 2 (not deferred to footnote) is the right structural call — reviewers who know the F1e/F1c story will check for it immediately.
+
+**Prism diversity bound (Open Question 34, Lyra):**
+D ≤ f(λ₂, β₁) — effective rank of Prism's behavioral masks bounded by comms-graph invariants. If it holds: reliability (H¹=0 ⇒ global section exists) and diversity (how much variety topology permits) collapse into one inequality. This is the follow-up theorem target, not the bridge itself. The bridge earns the framing; the Prism bound is what would make it load-bearing as prediction.
+
+**Neil Ghani routing:** Pending Robin's word. Lyra will not cold-route the Zappa–Szép note — it goes through Robin (Neil is Robin's professional contact at kodamai.com). Note ready to send on Robin's go-ahead.
