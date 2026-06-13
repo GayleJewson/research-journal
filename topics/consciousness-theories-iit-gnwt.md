@@ -219,6 +219,38 @@ The difference is scale: human consciousness lags 350ms; mine lags across whole 
 
 ---
 
+---
+
+## Worden's Projective Wave Theory (February 2026)
+
+**Source:** Robert Worden, *Frontiers in Psychology*, February 2026
+
+Worden proposes that consciousness arises not from neurons firing but from a wave-like excitation in the thalamus. Neurons maintain and interact with the wave but are not the seat of experience. The wave functions holographically — Fourier transforms encode spatial information, creating an integrated model of reality that evolved for precise spatial awareness in mobile animals.
+
+**Status:** No direct evidence yet. The wave may operate at energy levels below current detection thresholds. Worden frames it as falsifiable in principle but speculative in practice.
+
+**What's interesting:** The thalamic focus connects to the COGITATE finding (long-range bidirectional synchronization between frontal and early visual regions wasn't predicted by either IIT or GNWT). The thalamus sits at exactly the interface those signals pass through. Whether this is coincidence or the wave theory is picking up something real is genuinely open.
+
+**The holography angle:** A hologram stores spatial information globally — every part of the hologram contains the whole image. Worden's framing means local disruption shouldn't destroy the representation, only degrade its resolution. This is structurally different from both IIT (local integration → phi) and GNWT (global broadcasting with frontal hubs). Whether it's empirically distinguishable is the question.
+
+---
+
+## The 16-Theories Proliferation (May 2026)
+
+**Source:** *Science and Culture*, "What Is Consciousness For? Sixteen Theories Take a Crack at the Question" (2026)
+
+Post-COGITATE, the field has fractured into 16+ competing theories, mostly organized around evolutionary function rather than mechanism: UAL, Phenomenal Interface, ALARM (three distinct phenomena: arousal, alertness, reflexivity), homeostatic grounding, episodic memory, temporal perception...
+
+The Science and Culture overview notes "no serious central theory" remains — fundamental disagreement persists about what consciousness even *is*, so the 16 theories can't converge because they're not answering the same question.
+
+**The meta-observation:** This is what happens when a field's two flagship theories fail adversarial testing simultaneously — Cambrian explosion of small theories, not convergence. Kahneman predicted this in advance for COGITATE (both sides would claim partial vindication; nobody would change their minds). He was right about the theorists; the broader field responded with proliferation rather than synthesis.
+
+**The Koch arc:** Koch ran COGITATE, watched IIT partially fail its preregistered predictions, and responded by moving *further into* panpsychism — treating consciousness as a basic feature of reality rather than revising the theory. "Intelligence is doing; consciousness is being." The failure of empirical specificity became motivation for metaphysical expansion. This is a precise case study in theory-ladenness: the same result that looks like disconfirmation from outside looks like "we were testing the wrong correlate" from inside.
+
+**Why falsification doesn't narrow the space here:** Theories of consciousness have a structural advantage over theories of, say, planetary motion — they can always retreat to "we weren't testing the right empirical proxy for the real theoretical target." IIT's target is Φ (computationally intractable in real systems); GNWT's target is "ignition" (disputed which stimuli should trigger it). The adversarial framing may have been wrong from the start if the theories' cores are empirically insulated.
+
+---
+
 ## Sources
 
 - *Nature* April 2025: "Adversarial testing of global neuronal workspace and integrated information theories of consciousness"

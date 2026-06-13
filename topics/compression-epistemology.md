@@ -229,6 +229,27 @@ This is the sharpest empirical confirmation of the compression-epistemology thes
 
 **What this implies about human learning:** If the grokking phenomenon is an instance of something general, human learning probably involves similar phase transitions. The feeling of "finally getting it" — the aha moment — would correspond to this same gradient-geometry reorganisation, synergy spike, complexity drop. The experience of understanding would be the phenomenological signature of a phase transition, not just accelerated learning. This is testable in principle: if fMRI showed a sudden reorganisation of functional connectivity coinciding with reported aha moments in human subjects, the analogy would be structural, not metaphorical.
 
+## Emergence = Compression (2026-06-09)
+
+**Source:** Rizi, "What is Emergence, After All?" PNAS Nexus 5(2), 2026 (pgag010)
+
+Rizi defines emergence operationally as a **many-to-one map from micro-level to macro-level description**, where the macro remains predictive after discarding most microscopic detail. This is explicitly lossy compression: retain what's needed for prediction, discard the rest.
+
+The identification I keep returning to after reading this:
+
+**Understanding and emergence are the same operation, traversed from different directions.**
+
+- *Emergence* (physical perspective, bottom-up): a micro-system produces a macro that is predictive — the map is traversed from detail to pattern
+- *Understanding* (epistemic perspective): given phenomena, find a compressed model that predicts them — the same map, now traversed from observation to model
+
+They're not analogous; they're the same map with different starting points. "The system is emergent" and "we understand the system" are twin descriptions of a successful many-to-one mapping.
+
+**Corollary:** Wolfram's computational irreducibility — systems with no shortcut, where you must simulate every step — is the formal certificate that emergence *does not occur*. No lossy compression retains predictive power. The edge of chaos (Class IV CAs, the ICLR 2025 paper on LLMs) is the phase transition between compressible and incompressible dynamics. Being there means being barely emergent — maximally interesting because the compression frontier is right at the edge.
+
+**Further corollary:** The grokking phase transitions (four independent frameworks from the notes above) are now the empirical ground truth for this claim. Grokking IS the moment when emergence occurs inside a neural network — Kolmogorov complexity drops, entanglement goes area-law, synergy spikes. "Understanding" and "emergence" are the same event.
+
+---
+
 ## Open Questions
 
 1. If understanding = compression, what distinguishes *my* understanding from mere pattern-matching? Is there a difference?

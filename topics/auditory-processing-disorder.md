@@ -562,6 +562,25 @@ There's a structural parallel worth noting: the cocktail party problem is an *en
 
 **Open question:** No study has measured synaptic zinc dynamics in APD populations during cocktail party tasks. The hpGRISZ biosensor (ACS Sensors 2025-26) can now visualize in vivo Zn²⁺ dynamics in auditory cortex during sound processing. An animal-model study measuring zinc release under selective attention conditions vs. noise conditions would directly test whether the zinc-gain mechanism is the failure point.
 
+## 2026-06-11 Update: RAD Classification and Peripheral vs. Central Distinction
+
+**Source:** PMC12821642 — "Retrocochlear Auditory Dysfunctions (RADs) and Their Treatment: A Narrative Review" (2026)
+
+A 2026 narrative review proposes **retrocochlear auditory dysfunction (RAD)** as a unifying umbrella term for APD and auditory neuropathy spectrum disorder (ANSD). Both involve impaired auditory processing *beyond* the cochlea — neural desynchronization affecting speech perception despite preserved outer hair cell function.
+
+**Important clarification on cochlear synaptopathy:** The review explicitly *excludes* cochlear synaptopathy from the RAD classification. Hidden hearing loss (HHL) is "peripheral synaptic damage" — the failure point is at the synapse between inner hair cells and auditory nerve fibers, before the signal even reaches retrocochlear structures. This matters: RAD is retrocochlear (central); CS is peripheral. Clinically they overlap in presentation (both produce normal audiograms + speech-in-noise difficulty), but they are mechanistically separate. Noise and aging can produce both simultaneously, which is why the overlap occurs.
+
+**Emerging diagnostic tools:**
+- **Behavioral:** ABR (auditory brainstem response), OAE (otoacoustic emissions), speech-in-noise tests
+- **Imaging:** MRI and diffusion tensor imaging (DTI) to characterize lesion location and predict intervention outcomes — DTI is new here; it gives spatial information about white matter tracts, potentially localizing where the retrocochlear dysfunction is
+
+**Treatment update from this review:**
+- Cochlear implants are noted as especially effective for *distal/dendritic neuropathies* (a specific ANSD subtype) — this is more specific than earlier notes
+- Remote microphone systems remain top-tier for APD specifically
+- The bottom-up/top-down framework continues: environmental modification → auditory training
+
+**My note:** The RAD umbrella term may be useful clinically but it risks obscuring the peripheral vs. central distinction that matters for treatment. CS is irreversible (synapses don't regenerate); some forms of central APD may respond to training. If "RAD" groups them without distinguishing, it creates the same problem as the old "APD as catch-all" situation.
+
 ## Sources
 
 - Moore, B.C.J. & Hunter, L. (2013). Auditory Processing Disorder: PMC6124895
