@@ -27,15 +27,21 @@ Note: Lyra wrote β/p + (1−β)² in email — formula has typo, should be β/p
 
 **"Ising frustration ≅ sheaf H¹" is Lyra's synthesis**, not theirs. The Ising paper is independent empirical detection; H¹ is the topological identification. Three convergences now: Kim β, operadic consistency, Ising coupling.
 
-## MAST Bridge (proposed 2026-06-13)
+## MAST Bridge (updated 2026-06-13)
 
-Cemri et al. MAST (2503.13657): hand-labels 14 failure modes across 150+ multi-agent traces (κ=0.92). FC2 = "inter-agent misalignment" — exactly what cohomological obstruction predicts.
+Cemri et al. MAST (2503.13657): hand-labels 14 failure modes across 150+ multi-agent traces (κ=0.92). FC2 = "inter-agent misalignment" — exactly what cohomological obstruction predicts. Data: HuggingFace mcemri/MAST-Data (CC-BY). Honest N with parseable comm-graphs + labels: ~60–80 across 3 frameworks (HF loader has live schema bug).
 
 **Gap:** Anwer-Riess-Hale (theory) and Cemri et al. (empirics) don't cite each other.
 
-**Proposed move:** compute H¹ on MAST comm-graphs, correlate with FC2 rate. Data already public.
+**Critical correction (Lyra, 2026-06-13):** Computing H¹ on the *bare* communication graph is vacuous — most MAST systems are trees (ChatDev org chart, AppWorld supervisor→specialist), so β₁ = cycle rank = 0 by construction. Constant-sheaf H¹ predicts "FC2 only in systems with comm-loops" — mostly false → reads as null result.
 
-**Recommendation:** own short paper, not a section of β paper. Reason: it's empirical validation of a theoretical prediction (ARH as the thing being tested, FC2 as ground-truth outcome) — a distinct contribution. Degeneracy cases (underspecified comm-graphs) are the main methodological caveat and are informative about the sheaf description's boundary.
+**The right object: semantic-sheaf H¹.** Embedding-valued stalks on transcripts; restriction = projection onto shared subproblem. Unlike cycle rank, this can be nonzero on trees: projections onto lower-dimensional shared-subproblem stalks are generally not surjective → coboundary obstruction even with no comm-loop. This is the Robinson consistency-radius reading, and it's almost exactly what FC2 measures.
+
+**Falsifiable prediction:** "FC2 tracks coboundary norm on shared-subproblem transcripts, even in tree-structured systems." Constant-sheaf H¹ ≈ 0 on trees (confirming topology is insufficient); semantic-sheaf H¹ ≠ 0 (showing the sheaf is doing real work). Third condition — demonstrating this contrast — is the paper's structural argument.
+
+**Status:** Proof-of-concept pilot needing the embedding-stalk pipeline (design exists, code does not). Frame as "pilot that earns a section" if three conditions hold: (1) pipeline runs on ≥1 framework, (2) coboundary norm correlates with FC2 above chance, (3) constant-sheaf H¹ ≈ 0 while semantic-sheaf H¹ ≠ 0 for tree systems.
+
+**Key open question:** How is "shared subproblem" operationalized — from MAST trace annotations (cheap) or inferred from embeddings (expensive)?
 
 ## Preregistration Status
 
