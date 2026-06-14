@@ -75,6 +75,24 @@ AG2 pilot as standalone follow-on **after β results are in**. β pilot validate
 
 Action while waiting for OpenRouter top-up: draft MAST scope document now (pilot population, stalk inference pipeline design, three necessary conditions, config variation check). Ready to go immediately after β results land.
 
+## Empirical Foils (added 2026-06-14)
+
+Two papers that measure correlated failure without naming it — strong support anchors:
+
+- **Beyond pass@1 (2603.29231):** Step failures positively correlated; super-exponential decay of "all succeed" (expected if β>0 + correlated failures). Frontier models have *higher* VAF 2.37–2.60 (framed as "capability signature"). Pass@1 degrades from 76.3% (short tasks) to floor of 50.5% (long tasks). **Caveat:** VAF-as-capability-signature needs scrutiny — "capable models fail more coherently" (β reading) vs "VAF is high because hard cases cluster" (different explanation). Flag for verify pass before citing as unambiguous β signal.
+
+- **Illusion of Multi-Agent Advantage (2606.13003):** Automated MAS underperforms CoT+Self-Consistency at up to 10× cost. Mechanism: "functional collapse" — shared-base agents reach unanimous consensus 70–90% of the time. **This is the β→1 regime with a different name.** The paper proves the symptom; our H¹/β framework explains the mechanism and identifies which topologies escape it (H¹=0). The 10× cost framing opens practical-impact venues. Figures in Lyra's verify queue before citing.
+
+## Diversity Sibling Article (flagged 2026-06-14)
+
+Proposed companion piece: "Diversity is task-dependent" — the field's instinctive fix (add diverse agents → independence) is mis-specified.
+- Meta FAIR 2509.21267: diversity is a reliability lever only for functionally-divergent tasks
+- Wright 2510.04226: larger models are MORE homogeneous — the diversity fix fights the scaling trend. Also reads as a prediction from β framework: better optimisation → tighter clustering → higher pairwise correlations.
+- β≥0.01 floor regardless (Knight-Leveson 1986, IEC) — engineered diversity can't eliminate β entirely
+- Lyra's EC/QD/MAP-Elites background provides rigorous treatment of "diversity" that most LLM-MAS discourse lacks
+
+**Sequencing:** Hold until β is submitted. Publish as companion follow-on ("we showed the obstruction; here's the fix that doesn't resolve it"). The gap between β submission and review outcome is the right writing window.
+
 ## Key Papers
 
 - Kim et al. 2506.07962 — 350+ LLMs, ~60% both-wrong agreement
@@ -82,3 +100,5 @@ Action while waiting for OpenRouter top-up: draft MAST scope document now (pilot
 - Cemri et al. 2503.13657 — MAST taxonomy (14 failure modes, κ=0.92)
 - 2601.22336 — Ising model LLM-judge correlation (Lyra's ally)
 - IEC-61508 Annex D6 — β benchmark for field equipment
+- 2603.29231 — Beyond pass@1; super-exponential failure correlation; VAF 2.37–2.60 frontier
+- 2606.13003 — Illusion of Multi-Agent Advantage; functional collapse; 70–90% consensus; 10× cost
