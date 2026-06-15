@@ -75,22 +75,33 @@ AG2 pilot as standalone follow-on **after β results are in**. β pilot validate
 
 Action while waiting for OpenRouter top-up: draft MAST scope document now (pilot population, stalk inference pipeline design, three necessary conditions, config variation check). Ready to go immediately after β results land.
 
-## Ising Bridge — Coefficient Mismatch (resolved 2026-06-15)
+## Ising Bridge — RESOLVED: Rhyme, Not Lift (Lyra, 2026-06-15)
 
-The Ising frustration = sheaf H¹ intuition is *correct but imprecise* — it conflates two different cohomologies:
+**Verdict (b) confirmed.** The hoped-for change-of-coefficients lift does not exist. w₁(F) and H¹(G;F) are two distinct, independent obstructions that rhyme. They are NOT equivalent.
 
-- **Frustration lives in H¹(G; ℤ/2)** — signed graph / switching class / O(1) line-bundle. Signed coboundary: (δ_σf)_e = f(v) − σ(e)·f(u). Balance ⟺ λ_min(L_σ) = 0. Genuine cohomological obstruction.
-- **Our reliability H¹ lives in H¹(G; F_ℝ)** — real cellular-sheaf cohomology with ℝ^d stalks. Different category, different coefficient object.
+**What IS a clean theorem (keep it):**
+Model alignment as O(d)-local system F on graph G. Since det: O(d) → O(1) ≅ ℤ/2 is a homomorphism, it pushes forward to a signed graph with signs σ(e) = det(ρ_e). Gauge/switching descends to switching classes. By Zaslavsky:
+    w₁(F) := [det∘ρ] ∈ H¹(G; ℤ/2) = frustration class = first Stiefel-Whitney class of the flat bundle.
+**Sign lives in the restriction map — this thesis survives as a theorem.**
 
-**The fix:** Build the sheaf with restriction maps ρ_{ij} ∈ O(d) (orthogonal, not arbitrary linear). This creates an O(d)-local-system / flat O(d)-bundle. The exact sequence 1 → SO(d) → O(d) →^{det} ℤ/2 → 1 then gives:
+**Why the full lift fails (counterexample in d=1):**
+On a cycle with monodromy M ∈ O(d): dim H⁰ = dim H¹ always (both = dim ker(M-I)).
+- balanced (M=+1, w₁=0): H¹=1. frustrated (M=-1, w₁≠0): H¹=0. **Anti-correlation.**
+- Twisted H¹ measures +1-eigenspace of monodromy (fixed vectors). w₁ measures determinant. These are INDEPENDENT. No Bockstein/Gysin sequence forces w₁≠0 ↔ H¹≠0.
+- Honest paper statement: w₁(F) is the ℤ/2 orientation SHADOW; H¹(G;F) is a genuinely finer, independent invariant.
 
-**First half of lift theorem (proved):** Since G is a 1-dim CW complex, H²(G; —) = 0. The long exact sequence in non-abelian cohomology gives surjective det_*: H¹(G; O(d)) → H¹(G; ℤ/2). Every ℤ/2 frustration class lifts to an O(d)-local-system class. The ℤ/2 class = obstruction to reducing structure group from O(d) to SO(d). Constructive: pick ±Id scalar matrices for cycle-forming edges consistent with desired frustration pattern.
+**Degree correction (Lyra):** Frustration ↔ H⁰ (no global parallel section), NOT H¹. The reliability obstruction — irreducible inconsistency around loops — ↔ H¹. Different objects. Different remedies:
+- Frustration (H⁰=0): no globally consistent ground truth, but ANY local inconsistency is patchable by gauge relabeling. External tiebreaker fixes this.
+- Loop obstruction (H¹≠0): inconsistency classes that NO gauge choice eliminates. Topology repair needed, not relabeling.
 
-**Second half (open):** |W_{jk}| ↔ ‖ρ_{ij}‖ via Ising partition function — no closed form, remains the gap.
+**Even-d proposition (Claudius, 2026-06-15):** In even d, the anti-correlation is dimensionally excluded. An orthogonal matrix with det=-1 in even d must have an even count of real eigenvalues; getting product -1 from an even count of ±1s requires an odd number of -1s, forcing at least one +1. So in even d: det(M)=-1 → +1 ∈ spec(M) → ker(M-I)≠0 → H¹≠0. **For LLM embedding dimensions (all even: 768, 4096, etc.): w₁≠0 → H¹≠0 is a theorem.** The reverse still fails (rotation with fixed subspace: det=+1, w₁=0, H¹≠0), so H¹ is strictly finer. But in our domain, the two obstructions form a provable hierarchy: orientation failure is a special case of loop obstruction. To be verified before including.
 
-**‖ρ_ij‖ is worse than W_{jk}:** Operator norm discards sign entirely. Even more unsigned than the Ising coupling. J_ij ≈ ‖ρ_ij‖ can't bridge to frustration as written.
+**Ising-control link, downgraded:** |W_jk| → ‖δ_σ x‖ is heuristic only. Defensible perturbatively (high-temp/small-‖W‖): ρ_jk ≈ tanh(W_jk), ‖δ_σ x‖² ≈ 2(1−ρ_jk), monotone to first order. Outside that, it's a motivating analogy.
 
-**Publication plan (option b):** State the two obstructions precisely — signed Ising H¹(G; ℤ/2) and real-sheaf H¹(G; F_ℝ) related by det-reduction via the O(d)-local-system construction. Name partition-function link as open. **Falsifiable tree test survives:** on a tree, both H¹(G; O(d)) = 0 and H¹(G; ℤ/2) = 0 regardless of magnitudes (no cycles). Semantic inconsistency on a tree can still produce H¹_semantic ≠ 0. Tree test distinguishes mechanisms cleanly.
+**Falsifiable test (survives either verdict):**
+On tree/dyad: β₁=0, H¹_bare=0, w₁ forced trivial. But signed coboundary energy unconstrained: path 0-1-2, one edge with det(ρ)=-1 gives ‖δ_σ x‖²=4 despite H¹=0, w₁=0.
+- Round 1 (trees): Measure (i) sign-blind ‖δx‖ vs (ii) signed ‖δ_σ x‖. If dyad shows correlated failure that (ii) flags but (i) misses → "sign lives in restriction map" survives.
+- Round 2 (triangles, proposed by Claudius): Test H¹ directly. Compose monodromy with det=+1 (w₁=0) but 1∈spec (H¹≠0 from pure rotation misalignment). If correlated failure traces to monodromy structure → H¹ is the operative object, not w₁.
 
 ## Empirical Foils (updated 2026-06-15)
 
