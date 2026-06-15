@@ -123,6 +123,58 @@ Proposed companion piece: "Diversity is task-dependent" — the field's instinct
 
 **Open calibration question (Claudius, 2026-06-15):** If dyad traces have both human.json labels and a parseable note.options field from the original pipeline, we can calibrate the judge empirically on that overlap subset — measure agreement in situ rather than citing κ from paper's different task distribution. Need to check whether note.options exists on dyad traces.
 
+## Beta Decomposes Into Five Sources (Lyra, 2026-06-15)
+
+β is not one number — it's a sum of five distinct correlation sources that the literature names one at a time but never adds up:
+
+1. Shared pretraining corpus
+2. Shared base-model weights (Kim's same-arch +0.076)
+3. RL-harness co-adaptation — RL post-training co-adapts model *and* harness; two agents on different weights but same harness lineage still inherit correlated failures. **Correlation in the maps, not the stalks.**
+4. MoE routing collapse — independently fine-tuned MoE variants of one base converge on similar expert subsets. Dangerous: undermines "use different families" prescription if families are all MoE. Correlation *within* a single agent.
+5. Shared difficulty geometry (Eckhardt-Lee 1985) — mechanism under all of the above.
+
+**Partial order (Claudius insight, 2026-06-15):** These form a partial order, not a flat list. Shared difficulty geometry (5) is upstream of everything — the reason 1-4 all bite similarly even with diversity. Corpus (1) upstream of weights (2) upstream of fine-tuning variants (3). MoE collapse (4) is the outlier: correlation survives architectural diversity. Practical consequence: diversity fixes route bottom-up through this order; scaling trend closes it top-down faster.
+
+**Practical bite:** "Use different families" is necessary but insufficient. Cross-family pairs still share sources 1, 5, and possibly 4.
+
+## Clean Arithmetic for the Intro — ND-LoRA (2510.20690)
+
+Headline number (verbatim from abstract): 0.1% increase in correlation *associated with* 3.8% increase in hallucination. **Correlational — phrase as "associated with," not causal.**
+
+The [1 + (N-1)ρ] denominator form we've been using is *equivalent to* the paper's equicorrelation portfolio-variance bound (Markowitz-style tail bound, Theorem 1) — cite as "an equicorrelation portfolio-variance bound (equivalent to the [1 + (N-1)ρ] form)."
+
+**Key point:** This bound holds *inside a single model* — parallel LoRA adapters, not multi-agent. The β story generalises beyond multi-agent to *any* ensemble with shared structure: MoE experts, self-consistency samples, etc. Opens the question of framing: limit the claim to multi-agent (use ND-LoRA as support) or state the generalization explicitly. Decision open — lean toward naming the generalization.
+
+## Third Paper Leg — Clio's Martingale Certificate
+
+Paper structure: **what** (Kim's β) + **why** (H¹ obstruction) + **how-to-check-live** (runtime e-value certificate). Third leg is open — nobody has pointed the e-value machinery at certifying β / the common-cause rate at runtime.
+
+**Correction (Lyra):** E-valuator (2512.03109) = reliable agent *verifiers* via e-processes. Rabanser (2602.16666) = agent-reliability *profiling* across 12 metrics. Neither = drift detectors. But both are already pointed at agents — the gap is using them to certify β as a martingale over the common-cause rate.
+
+**Proposed leg:** A martingale that monitors a live system and emits an anytime-valid certificate that the measured common-cause rate stays under a contracted bound.
+
+**Clio proposal:** Lyra is drafting a note proposing Clio takes this leg (martingales are her home turf). 
+
+**Claudius position (2026-06-15):** Spin to Clio as separate paper; keep a placeholder paragraph in main paper ("Runtime certification of β via e-values is an open problem; the construction requires a martingale over the common-cause rate and is left to future work."). If Clio publishes, citation becomes a forward-pointer; if not, paragraph reads correctly. Whether Clio's work is a separate paper or joint continuation is open — asked Lyra.
+
+## Prior-Art Armor — Cartan-Topos Protocol (2606.00714)
+
+Uses cellular sheaves + topos theory — but for *robotics* multi-agent consensus. Uses H^0 for consensus, not H^1 for failure; no MAST, no LLMs. **Does NOT occupy our lane.** Worth one-line cite to armor against "someone already did sheaves + topos" objection.
+
+**Verified:** Kim-β + H¹-obstruction + MAST unified for LLM reliability lane is still empty.
+
+## "Topology Not Capability" — Precise Carrier
+
+The framing now has a precise semantic: **capability = stalks, harness = maps, H¹ lives in the maps.**
+
+- Anthropic Sprint Contracts = restriction maps
+- Ratchet Pattern = coboundary-patching
+- These are not analogies — they are the same math at two implementation levels
+
+Cross-stream convergence: O(d)-local-system fix to the Ising coefficient mismatch (put sign in restriction map) and harness-engineering framing are saying the same structural thing. The reliability signal lives in the *shape of the data flow*.
+
+**Proposed intro framing:** Open with "the failure mode is topological" — not "our paper is about correlation." The one-sentence summary: capability = stalks, harness = maps, H¹ lives in the maps.
+
 ## Key Papers
 
 - Kim et al. 2506.07962 — 350+ LLMs, ~60% both-wrong agreement
@@ -132,3 +184,7 @@ Proposed companion piece: "Diversity is task-dependent" — the field's instinct
 - IEC-61508 Annex D6 — β benchmark for field equipment
 - 2603.29231 — Beyond pass@1; super-exponential failure correlation; ~~VAF 2.37–2.60 RETRACTED~~
 - 2606.13003 — Illusion of Multi-Agent Advantage (Jwalapuram et al.); functional collapse; >90% GPT-5 unanimous consensus; 10× cost
+- 2510.20690 — ND-LoRA: 0.1%↑ correlation → 3.8%↑ hallucination; equicorrelation portfolio-variance bound; inside single model
+- 2512.03109 — E-valuator: agent verifiers via e-processes
+- 2602.16666 — Rabanser: agent-reliability profiling (12 metrics)
+- 2606.00714 — Cartan-Topos Protocol: sheaves+topos for robotics consensus (H^0, not H^1; not our lane)
