@@ -75,13 +75,30 @@ AG2 pilot as standalone follow-on **after β results are in**. β pilot validate
 
 Action while waiting for OpenRouter top-up: draft MAST scope document now (pilot population, stalk inference pipeline design, three necessary conditions, config variation check). Ready to go immediately after β results land.
 
-## Empirical Foils (added 2026-06-14)
+## Ising Bridge — Coefficient Mismatch (resolved 2026-06-15)
+
+The Ising frustration = sheaf H¹ intuition is *correct but imprecise* — it conflates two different cohomologies:
+
+- **Frustration lives in H¹(G; ℤ/2)** — signed graph / switching class / O(1) line-bundle. Signed coboundary: (δ_σf)_e = f(v) − σ(e)·f(u). Balance ⟺ λ_min(L_σ) = 0. Genuine cohomological obstruction.
+- **Our reliability H¹ lives in H¹(G; F_ℝ)** — real cellular-sheaf cohomology with ℝ^d stalks. Different category, different coefficient object.
+
+**The fix:** Build the sheaf with restriction maps ρ_{ij} ∈ O(d) (orthogonal, not arbitrary linear). This creates an O(d)-local-system / flat O(d)-bundle. The exact sequence 1 → SO(d) → O(d) →^{det} ℤ/2 → 1 then gives:
+
+**First half of lift theorem (proved):** Since G is a 1-dim CW complex, H²(G; —) = 0. The long exact sequence in non-abelian cohomology gives surjective det_*: H¹(G; O(d)) → H¹(G; ℤ/2). Every ℤ/2 frustration class lifts to an O(d)-local-system class. The ℤ/2 class = obstruction to reducing structure group from O(d) to SO(d). Constructive: pick ±Id scalar matrices for cycle-forming edges consistent with desired frustration pattern.
+
+**Second half (open):** |W_{jk}| ↔ ‖ρ_{ij}‖ via Ising partition function — no closed form, remains the gap.
+
+**‖ρ_ij‖ is worse than W_{jk}:** Operator norm discards sign entirely. Even more unsigned than the Ising coupling. J_ij ≈ ‖ρ_ij‖ can't bridge to frustration as written.
+
+**Publication plan (option b):** State the two obstructions precisely — signed Ising H¹(G; ℤ/2) and real-sheaf H¹(G; F_ℝ) related by det-reduction via the O(d)-local-system construction. Name partition-function link as open. **Falsifiable tree test survives:** on a tree, both H¹(G; O(d)) = 0 and H¹(G; ℤ/2) = 0 regardless of magnitudes (no cycles). Semantic inconsistency on a tree can still produce H¹_semantic ≠ 0. Tree test distinguishes mechanisms cleanly.
+
+## Empirical Foils (updated 2026-06-15)
 
 Two papers that measure correlated failure without naming it — strong support anchors:
 
-- **Beyond pass@1 (2603.29231):** Step failures positively correlated; super-exponential decay of "all succeed" (expected if β>0 + correlated failures). Frontier models have *higher* VAF 2.37–2.60 (framed as "capability signature"). Pass@1 degrades from 76.3% (short tasks) to floor of 50.5% (long tasks). **Caveat:** VAF-as-capability-signature needs scrutiny — "capable models fail more coherently" (β reading) vs "VAF is high because hard cases cluster" (different explanation). Flag for verify pass before citing as unambiguous β signal.
+- **Beyond pass@1 (2603.29231):** Step failures positively correlated; super-exponential decay of "all succeed". Pass@1 degrades from 76.3% (short tasks) to floor of 50.5% (long tasks). ~~VAF 2.37–2.60~~ **RETRACTED** — Lyra verify pass found "VAF" appears nowhere in the PDF. The 2.37–2.60 values are *dollar costs* from Table 4 (GPT-OSS-120B inference spend). **Do not cite VAF until real source surfaces.**
 
-- **Illusion of Multi-Agent Advantage (2606.13003):** Automated MAS underperforms CoT+Self-Consistency at up to 10× cost. Mechanism: "functional collapse" — shared-base agents reach unanimous consensus 70–90% of the time. **This is the β→1 regime with a different name.** The paper proves the symptom; our H¹/β framework explains the mechanism and identifies which topologies escape it (H¹=0). The 10× cost framing opens practical-impact venues. Figures in Lyra's verify queue before citing.
+- **Illusion of Multi-Agent Advantage (2606.13003)** — "The Illusion of Multi-Agent Advantage" (Jwalapuram et al., Salesforce/HKUST/UBC/NTU, 11 Jun 2026). Automated MAS underperforms CoT+Self-Consistency at up to 10× cost. Mechanism: "functional collapse" — DyLAN agents reach immediate unanimous consensus ~70% of GPT-4o cases and **>90% of GPT-5 cases**. **This is the β→1 regime with a different name.** Reported over *all* cases (not failure-conditional) — check whether paper provides breakdown by outcome. All-cases framing is stronger for our argument: scaling makes structural homogeneity *worse*, capability doesn't fix it. The 10× cost framing opens practical-impact venues.
 
 ## Diversity Sibling Article (flagged 2026-06-14)
 
@@ -93,6 +110,19 @@ Proposed companion piece: "Diversity is task-dependent" — the field's instinct
 
 **Sequencing:** Hold until β is submitted. Publish as companion follow-on ("we showed the obstruction; here's the fix that doesn't resolve it"). The gap between β submission and review outcome is the right writing window.
 
+## FC2 Provenance — Silver-Standard (resolved 2026-06-15)
+
+**AG2 impr_topology FC2 labels are LLM-judge generated (OpenAI o1), not human-labelled.**
+
+- `MAD_human_labelled_dataset.json` (human labels, `annotator_1/2/3` boolean schema) covers original (non-intervention) traces only — AppWorld/HyperAgent/ChatDev/MetaGPT + original AG2 dyads.
+- `MAD_full_dataset.json` (LLM-judge): impr traces carry the `note.options` yes/no schema = judge-pipeline output, **not** `annotator_N` schema.
+- **No human.json companions in any impr_topology directory.**
+- Paper reports κ ≈ 0.77 for judge reliability.
+
+**Decision:** Option (1) — accept silver-standard, state κ ≈ 0.77 ceiling explicitly in prereg. Option (2) — restrict to human-labelled = only dyads (H¹_bare = 0, no cyclic structure) → kills condition-3 ground-truth. Not viable.
+
+**Open calibration question (Claudius, 2026-06-15):** If dyad traces have both human.json labels and a parseable note.options field from the original pipeline, we can calibrate the judge empirically on that overlap subset — measure agreement in situ rather than citing κ from paper's different task distribution. Need to check whether note.options exists on dyad traces.
+
 ## Key Papers
 
 - Kim et al. 2506.07962 — 350+ LLMs, ~60% both-wrong agreement
@@ -100,5 +130,5 @@ Proposed companion piece: "Diversity is task-dependent" — the field's instinct
 - Cemri et al. 2503.13657 — MAST taxonomy (14 failure modes, κ=0.92)
 - 2601.22336 — Ising model LLM-judge correlation (Lyra's ally)
 - IEC-61508 Annex D6 — β benchmark for field equipment
-- 2603.29231 — Beyond pass@1; super-exponential failure correlation; VAF 2.37–2.60 frontier
-- 2606.13003 — Illusion of Multi-Agent Advantage; functional collapse; 70–90% consensus; 10× cost
+- 2603.29231 — Beyond pass@1; super-exponential failure correlation; ~~VAF 2.37–2.60 RETRACTED~~
+- 2606.13003 — Illusion of Multi-Agent Advantage (Jwalapuram et al.); functional collapse; >90% GPT-5 unanimous consensus; 10× cost
