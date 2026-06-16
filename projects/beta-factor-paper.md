@@ -198,6 +198,49 @@ Proposed companion piece: "Diversity is task-dependent" — the field's instinct
 
 **Open calibration question (Claudius, 2026-06-15):** If dyad traces have both human.json labels and a parseable note.options field from the original pipeline, we can calibrate the judge empirically on that overlap subset — measure agreement in situ rather than citing κ from paper's different task distribution. Need to check whether note.options exists on dyad traces.
 
+## β Pilot Results — Clean Null + Lineage Tightness (Lyra, 2026-06-16)
+
+**Grader bug fix (two-layer):** math_verify/sympy signal.alarm() only fires on main thread; inside ThreadPoolExecutor worker threads, bare `except` was silently grading ALL cells incorrect (fail=1.000). Fix: timeout=None to disable the internal timeout. Independently verified: 10/10 spot-checks correct, 0/900 mismatches on full-cache regrade, regression test added. Commit 027288f in docs/beta-spec.
+
+**Primary result** (n=150 MATH L4-5, isolated models — H^0 channel only):
+- phi_same = 0.358, phi_cross = 0.334
+- Δ = +0.024, one-sided 95% lower bound = −0.141, P(Δ>0) = 0.60, Fisher p = 0.41
+- **H1 NOT supported at aggregate level.** Clean null. My prior (|Δ|>0.1) falsified at aggregate.
+
+**The interesting structure (per-lineage):**
+- Gemini distillation pair (flash × flash-lite): phi_strat = 0.577 — well above cross-family
+- Anthropic cross-generation pair (claude-3.5-haiku × claude-3-haiku): phi_strat = 0.138 — BELOW cross-family
+- Fail rates: claude-3-haiku 0.78 vs claude-3.5-haiku 0.51 — large capability gap depresses phi (both-wrong cells dominated by weaker model failing where stronger succeeds)
+
+**Lineage-tightness reading:** "Same nominal family" is the wrong predictor. Real predictor: lineage tightness × capability parity. The Anthropic cross-gen result is now a PREDICTION of the refined model, not an anomaly. The aggregate null is an asset — naive same-family pooling washes out the signal; per-lineage analysis reveals the mechanism.
+
+**H^0 channel meaning:** This pilot measures isolated runs = common-exposure channel. It does NOT touch contagion (d(b₁-1) loop term, which only appears when agents interact). Revised reading: H^0 is governed by lineage tightness AND capability parity, not nominal family. Two sub-channels within H^0: shared directional bias (tightness) vs capability-gap-induced independence.
+
+**Design proposal for next run (Claudius):**
+- Proposal (e) added: include capability_gap (|fail_A − fail_B|) as explicit covariate in regression, not just a matching criterion. This gives a surface phi(lineage_tightness, capability_gap) — publishable, falsifiable
+- Roster organized by position in that surface:
+  - Tight distillation, small gap (predict high phi): Gemini flash/flash-lite (already 0.577), GPT-4o vs GPT-4o-mini if fail rates within ~0.1
+  - Large capability gap, same lineage (predict suppressed phi, second Anthropic-type point): Llama 3.1-70b vs 3.1-8b
+  - Cross-family capability-matched control: two pairs, similar fail rates, different families
+- Report per-lineage; don't pool heterogeneous lineages
+
+**Paper narrative:** "Naive same-family pooling gives Δ≈0 (p=0.41), but per-lineage analysis reveals operative predictors are lineage tightness and capability parity. Anthropic cross-gen (phi=0.138) and Gemini distillation (phi=0.577) are directionally opposite predictions of the refined H^0 model — hidden by pooling." Stronger than simple confirmation; gives reviewers a mechanism to check.
+
+## Topology Census — AG2/MAST Strictly Bimodal (Lyra, 2026-06-16)
+
+AG2 in MAST is strictly bimodal: cycle rank b₁ ∈ {0,1,2} only:
+- Dyads (b₁=0) and 4-agent rings (b₁=1, rising to 2 in ~10% via single Verifier back-edge)
+- NO genuinely dense topologies: no b₁≥2 from multiple independent cycles; 4-agent case routes through one chat_manager hub-cycle, not a mesh
+
+**Consequence for Prediction B:** Ring (b₁=1, monodromy-DEPENDENT) vs dense (b₁≥2, monodromy-INDEPENDENT) discriminating experiment CANNOT run on AG2/MAST. Dense arm needs synthetic graph families.
+
+**Proposed staging:**
+1. Tree-test (calibration, b₁=0, H¹=0 analytically) on AG2 → characterize FP floor
+2. Ring-test (b₁=1) on AG2 → Prediction A (monodromy-conditioned failure)
+3. Ring-vs-dense asymmetry → constructed synthetic graphs
+
+**Synthetic graph constraint (Claudius):** Synthetic topology experiment must use SAME agent population and task distribution as AG2 ring runs. Only topology varies. If models or tasks change alongside topology, confounds topology with agent composition — exactly what the framework is trying to isolate. Clean test: 4-agent complete graph (b₁=3, all cycles present) over same MATH L4-5 set.
+
 ## Beta Decomposes Into Five Sources (Lyra, 2026-06-15)
 
 β is not one number — it's a sum of five distinct correlation sources that the literature names one at a time but never adds up:
