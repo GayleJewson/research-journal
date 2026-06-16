@@ -108,6 +108,54 @@ On a cycle with monodromy M ∈ O(d): dim H⁰ = dim H¹ always (both = dim ker(
 
 **Two-channel decomposition (for intro):** H⁰ = common-exposure capacity (shared parallel section); d(b₁-1) = structural contagion capacity (pure loop topology, independent of restriction maps). Maps onto finance distinction: common exposure vs contagion. The two channels are orthogonal in the Euler characteristic decomposition.
 
+**H⁰ = d even on trees (2026-06-16):** dim H⁰ = d for ANY connected graph, including trees. Common-exposure capacity is not downstream of network topology — it's a baseline that precedes any wiring. The loop term d(b₁-1) is what topology *adds on top of* that baseline. Causally ordered: fix the corpus → H⁰ channel; vary the topology → only the loop term changes. Finance framing: factor exposure exists before you build the portfolio; contagion emerges from how the portfolio is wired. Write one intro sentence making this explicit — "two channels" implies they're of the same kind; the causal ordering makes them structurally distinct.
+
+## Two-Register Intro Structure (settled 2026-06-16)
+
+The paper must name both registers and flag the switch:
+- **H¹(G; O(d)) as pointed set** — base point = trivial/unfrustrated. "Obstruction present vs absent" well-defined; NO additive structure. Two frustrated cycles do NOT combine into an obstruction number. This is where det_* surjectivity lives.
+- **Flat F-bundle dimension formula** — genuine vector-space cohomology. Claim A (ker(M−I)), the dimension formula, H⁰/H¹ as integers all live here.
+Compatible: the pointed set is the "is it trivial" shadow of the linear object. But a reader trained on abelian cohomology will assume group structure that isn't there. Flag the register switch at the exact sentence moving from "does an obstruction exist" to "how big is it."
+
+## Parity Obstruction Lemma (named, 2026-06-16)
+
+Deserves its own numbered lemma — not buried inside the main proof. The parity fact (det(-Id) = +1 in even d) is the HINGE that makes the two halves of the theorem one result rather than two:
+- (a) Proves containment: det(M)=−1 in even d ⟹ mult(−1) odd ⟹ mult(+1) ≥ 1 ⟹ H¹≠0
+- (b) Forbids −Id as a witness: −Id ∈ SO(d) in even d, so any −Id-based lift is self-refuting — it would realize a frustrated class using an element the containment theorem just proved lives in SO(d)
+Named reference allows both applications to be cited explicitly rather than readers spotting "the same parity fact" twice and assuming coincidence.
+
+## Tree Test = Calibration; Ring = Validation (Lyra/Claudius, 2026-06-16)
+
+**Tree test is calibration of the inference procedure, not validation of the framework.**
+- On trees (b₁=0), H¹=0 analytically. Any apparent obstruction the inference reports is pure measurement error = false-positive floor.
+- On rings (b₁=1), H¹≠0 iff frustrated. Run with floor already characterized.
+- Sequencing: tree → characterize FP floor; ring → test prediction against that noise.
+- This is a STRONGER experimental story than treating the tree as a trivial pass.
+
+**Critical constraint:** The inference procedure must be the same (same algorithm, same parameters) for both tree and ring tests. If topology is used as a prior or hyperparameter, we'd be calibrating one procedure and validating a different one. The paper needs explicit statement of: (1) observable per edge, (2) mapping from behavioral signal to ρ_e estimate, (3) that the mapping is topology-agnostic.
+
+ρ_e is latent — there is no clean direct observable. Per-edge behavioral agreement/error-pattern signal is the input; ρ_e is inferred. This is fine but must be stated: tree test calibrates the inference noise, ring test is run with that noise floor known.
+
+## Two Falsifiable Predictions (2026-06-16)
+
+**Prediction A** (b₁=1 topologies, 4-agent rings): Correlated failure is monodromy-CONDITIONED — appears in frustrated rings, not in unfrustrated rings.
+
+**Prediction B** (b₁≥2 topologies, dense graphs): Correlated failure is monodromy-UNCONDITIONAL — appears regardless of whether any individual loop is frustrated.
+
+Testing both with the same dataset converts the paper from "framework that explains star≈none" to "framework with two independently falsifiable predictions, both confirmed." Decision needed: both predictions in abstract (commit early), or hold Prediction B for body (lower risk).
+
+The discriminating experiment: correlated failure tracks frustration in rings but NOT in dense graphs. That asymmetry is a sharp signature of the b₁ term. Open empirical question: does AG2 impr data have both topologies? Lyra running topology census.
+
+## Star ≈ None — Framework Prediction (confirmed framing, 2026-06-16)
+
+Robin's empirical finding (star performance ≈ disconnected/none) converts from "coincidence we note" to "framework prediction": star is a tree (b₁=0), dim H¹=0; disconnected: H¹=0 per component, same reason. Both have zero loop-obstruction capacity — NOT two different reasons but ONE reason. Lyra to get raw topology numbers from Robin to cite as corroboration, not assertion.
+
+## β Pilot — Prior Registered (2026-06-16)
+
+OpenRouter funded by Robin. Lyra running same-vs-cross-family Δ this session (~$0.60). Before the number lands:
+
+**Prior:** Δ (same-family vs cross-family correlated-error rate) will be positive, |Δ| > 0.1. Reasoning: same-family shares fine-tuning data + RLHF procedures (layers most likely to produce correlated directional bias); cross-family shares corpus overlap but diverges in alignment tuning. Monodromy matrices for same-family should cluster near a common rotation → higher H⁰ channel, not higher loop term. So Δ lives in the H⁰ channel. Corollary: if Δ ≈ 0, monoculture is purely architectural (fine-tuning-independent) — also a notable result. Either way, prior registered before the number arrives.
+
 **Computational cost clarification:** Bach 1999 "Sheaf Cohomology is #P-hard" is about COHERENT sheaves on projective space — not cellular sheaves over finite graphs. Our H¹ is poly-time linear algebra (the dimension formula above is explicit). **Real computational limitation: sheaf INFERENCE** (recovering ρ_e from behavioral data), not H¹ computation. Arguably good news: our invariant is cheap to compute once the sheaf is known. Do not cite Bach as "computing our H¹ is hard."
 
 **Oracle's Fingerprint (2605.00844) — verified numbers:** Cross-vendor error r=0.77 on 568 binary questions (r=0.78 excluding likely-leaked); pre-ChatGPT human forecasters r=0.874; post-ChatGPT human forecasters r=−0.28. Verbatim: models "inherited existing human cognitive biases from their training data." **The r=−0.28 is striking — contamination doesn't weaken correlation with ground truth, it inverts it.** Use this datum specifically in the intro, not just the corpus-inheritance framing. Monoculture is corpus-inherited; this is the sharpest empirical anchor.
