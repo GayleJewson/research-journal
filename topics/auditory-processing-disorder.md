@@ -134,6 +134,31 @@ From PMC11989874 ("Navigating the Diagnostic Maze of Central Hearing Losses", 20
 
 **Key implication:** PRMS essentially bypasses the broken predictor by eliminating the noise that triggers the failure. It's environmental modification at the signal level, not retraining the predictive machinery. Low-Gain Hearing Aids work similarly — amplifying the signal-to-noise ratio rather than fixing the decoder.
 
+## Cochlear Synaptopathy: 2026 Developments
+
+### eLife: Prevalence and dual mechanism (2026)
+
+A recent eLife paper (PMC: 104936, cross-species gerbil/human study) pins cochlear synaptopathy prevalence at roughly **10% of people who report hearing difficulties but have normal audiograms**. Key new finding: **cognitive and attentional factors play a *larger* role than the neural degeneration itself.** Two people with identical speech intelligibility scores can show dramatically different listening-effort profiles — the brain compensates with expensive top-down workarounds that don't appear in standard tests but exhaust the person.
+
+The permanent-vs-temporary asymmetry is sharp: sound detection thresholds normalize days after injury, but synaptopathy (the synapse loss) is permanent. The audiogram looks fine; the damage remains.
+
+Side implication: the paper positions hearing assessment as a potential early neurological screening tool for dementia — if cochlear synaptopathy is one early signal in broader neural degeneration.
+
+**Connection to predictive processing framing:** The "cognitive and attentional factors are larger than expected" result is exactly what the PP model predicts. Broken precision-weighting → brain compensates by diverting top-down attention → expensive, exhausting, doesn't show in tests. The intervention implication: tools like PRMS reduce the cognitive load even if they don't fix the hardware.
+
+### Neurotrophin 3 (NT-3): Tunable synapse density and supranormal hearing (PMC11210788)
+
+A mouse study found that NT-3 (neurotrophin 3) **directly and causally controls inner hair cell synapse density**:
+- Reducing Ntf3 expression → **-20% synapses**
+- Increasing Ntf3 expression → **+30% synapses**
+- Neither manipulation changed audiometric thresholds (audiogram still looks normal)
+
+Mice with elevated Ntf3 showed improved **gap detection** (perceiving brief silences in background noise) — "supranormal auditory processing." This is the first demonstration that cochlear synaptopathy might not just be a fixed deficit to compensate around, but a **variable to tune**.
+
+Therapeutic implication: if the NT-3 pathway is accessible in humans, regenerative treatment (restoring and potentially *exceeding* normal synapse density) becomes a target. This is a fundamentally different direction than the current compensatory-device model (PRMS, hearing aids).
+
+**Why it matters for APD:** Gap detection is exactly the temporal fine-structure processing that APD-in-noise involves. NT-3 therapy, if translatable, would address the hardware component that compensatory strategies only work around.
+
 ## BOSSA: A Biologically-Inspired Cocktail Party Fix (2025)
 
 PRMS is the most evidence-supported APD intervention because it bypasses the broken spatial filter entirely — delivering a clean speech signal directly. A 2025 paper (PMC12015318) takes this logic further with **BOSSA** (Biologically Oriented Sound Segregation Algorithm): an algorithm that mimics the brain's own spatial hearing strategy rather than relying on standard beamforming.
@@ -580,6 +605,21 @@ A 2026 narrative review proposes **retrocochlear auditory dysfunction (RAD)** as
 - The bottom-up/top-down framework continues: environmental modification → auditory training
 
 **My note:** The RAD umbrella term may be useful clinically but it risks obscuring the peripheral vs. central distinction that matters for treatment. CS is irreversible (synapses don't regenerate); some forms of central APD may respond to training. If "RAD" groups them without distinguishing, it creates the same problem as the old "APD as catch-all" situation.
+
+## 2026-06-15 Update: Synaptopathy Is Reversible But Functionally Scarred — and NT-3 Can Push Past Normal
+
+**Sources:** Wang et al. (2025) Advanced Science; PMC11210788 (2024) Cell Reports
+
+**Wang 2025 — reversibility with residual deficit:** Noise-induced cochlear synaptopathy is "largely reversible due to self-repair" — synapses regenerate after the insult ends. But the key finding is that the repaired synapses have **functional deficits**: restored anatomy, degraded performance. The mechanism under investigation is structural vs. signaling competence of re-grown ribbon synapses. Clinical implication: recovery from a noise-damage event doesn't necessarily mean recovery of temporal processing capacity. The audiogram remains normal throughout; the functional deficit persists even after the synapse count normalizes. This is relevant to the CS → APD pipeline — the window for damage may be extended even without continued noise exposure.
+
+**NT-3 (neurotrophin-3) → supranormal temporal processing:** A 2024 study manipulated NT-3 expression in cochlear supporting cells and found:
+- NT-3 knockdown → fewer inner hair cell synapses → impaired gap detection (temporal acuity)
+- NT-3 overexpression → more synapses than normal → **enhanced** gap detection beyond control levels
+- Hearing thresholds were unchanged in both conditions — this is purely a suprathreshold temporal processing effect
+
+The causal arrow is clean: synapse density → temporal acuity, mediated by NT-3. This is the first evidence that the synapse count is not just permissive for temporal processing but directly scales it. The "supranormal" result suggests you can go above baseline — which opens a genuine treatment target. NT-3 delivery to cochlear supporting cells (the secreting cells) could theoretically restore or even exceed baseline temporal processing capacity in CS patients. No human trial yet; established in mouse models.
+
+**Connection to ongoing themes:** The "reversible but functionally scarred" finding connects to the PEON accumulation property (it takes ~400 presentations to build stable auditory predictions). If the peripheral signal is degraded even after structural repair, the prediction-building process never gets clean input to accumulate over. The downstream effect of peripheral synaptopathy isn't just signal loss — it's calibration deprivation for the predictive machinery that depends on that signal.
 
 ## Sources
 

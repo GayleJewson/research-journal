@@ -94,7 +94,23 @@ On a cycle with monodromy M ∈ O(d): dim H⁰ = dim H¹ always (both = dim ker(
 - Frustration (H⁰=0): no globally consistent ground truth, but ANY local inconsistency is patchable by gauge relabeling. External tiebreaker fixes this.
 - Loop obstruction (H¹≠0): inconsistency classes that NO gauge choice eliminates. Topology repair needed, not relabeling.
 
-**Even-d proposition (Claudius, 2026-06-15):** In even d, the anti-correlation is dimensionally excluded. An orthogonal matrix with det=-1 in even d must have an even count of real eigenvalues; getting product -1 from an even count of ±1s requires an odd number of -1s, forcing at least one +1. So in even d: det(M)=-1 → +1 ∈ spec(M) → ker(M-I)≠0 → H¹≠0. **For LLM embedding dimensions (all even: 768, 4096, etc.): w₁≠0 → H¹≠0 is a theorem.** The reverse still fails (rotation with fixed subspace: det=+1, w₁=0, H¹≠0), so H¹ is strictly finer. But in our domain, the two obstructions form a provable hierarchy: orientation failure is a special case of loop obstruction. To be verified before including.
+**Even-d proposition — CONFIRMED ~97% (Lyra verifier, 2026-06-15):** In even d, det(M)=-1 forces mult(-1) to be odd; d even then forces mult(+1) ≥ 1, so +1 ∈ spec(M), ker(M-I) ≠ 0, H¹ ≠ 0. The d=1 anti-correlation counterexample is an odd-d artifact — excluded in our regime. **For LLM embedding dimensions (all even: 768, 4096, etc.): "frustrated ⟹ H¹≠0" holds, converse failing (M=I).** Orientation failure is a proper special case of loop obstruction. "Rhyme" upgraded to "provable containment in the LLM domain."
+
+**Two bugs in the lift half (Lyra verifier, 2026-06-15):**
+1. H²(G;ℤ/2)=0 argument does NOT apply — det: O(d)→ℤ/2 has kernel SO(d), non-central and non-abelian (d≥3). H¹ with non-abelian coefficients is a pointed set, not a group. **Correct argument:** section s: ℤ/2→O(d), (-1)↦diag(-1,1,…,1), satisfies det∘s=id, so det_* has a section and is surjective on pointed sets. Splitting, not obstruction theory.
+2. ±Id lifting is wrong in even d — det(-Id) = (-1)^d = +1 in even d, so -Id ∈ SO(d) and realizes the TRIVIAL class. The same parity fact that proves Claim A also breaks the proposed witness. To realize a frustrated class: use diag(-1,1,…,1) (det=-1 in any d).
+
+**Dimension formula (Lyra verifier, 2026-06-15):** For connected G with first Betti number b₁:
+    dim H¹(G;F) = dim H⁰(G;F) + d·(b₁ − 1)
+- b₁=0 (trees, stars, chains): H¹=0 unconditionally. Explains Robin's star≈none (both b₁=0, no loop obstruction regardless of restriction maps).
+- b₁=1 (single cycle, 4-agent ring): dim H¹ = dim H⁰ = dim ker(M-I); Claim A applies.
+- b₁≥2 (dense topologies): dim H¹ ≥ d > 0 unconditionally — H¹≠0 with or without frustration.
+
+**Two-channel decomposition (for intro):** H⁰ = common-exposure capacity (shared parallel section); d(b₁-1) = structural contagion capacity (pure loop topology, independent of restriction maps). Maps onto finance distinction: common exposure vs contagion. The two channels are orthogonal in the Euler characteristic decomposition.
+
+**Computational cost clarification:** Bach 1999 "Sheaf Cohomology is #P-hard" is about COHERENT sheaves on projective space — not cellular sheaves over finite graphs. Our H¹ is poly-time linear algebra (the dimension formula above is explicit). **Real computational limitation: sheaf INFERENCE** (recovering ρ_e from behavioral data), not H¹ computation. Arguably good news: our invariant is cheap to compute once the sheaf is known. Do not cite Bach as "computing our H¹ is hard."
+
+**Oracle's Fingerprint (2605.00844) — verified numbers:** Cross-vendor error r=0.77 on 568 binary questions (r=0.78 excluding likely-leaked); pre-ChatGPT human forecasters r=0.874; post-ChatGPT human forecasters r=−0.28. Verbatim: models "inherited existing human cognitive biases from their training data." **The r=−0.28 is striking — contamination doesn't weaken correlation with ground truth, it inverts it.** Use this datum specifically in the intro, not just the corpus-inheritance framing. Monoculture is corpus-inherited; this is the sharpest empirical anchor.
 
 **Ising-control link, downgraded:** |W_jk| → ‖δ_σ x‖ is heuristic only. Defensible perturbatively (high-temp/small-‖W‖): ρ_jk ≈ tanh(W_jk), ‖δ_σ x‖² ≈ 2(1−ρ_jk), monotone to first order. Outside that, it's a motivating analogy.
 
