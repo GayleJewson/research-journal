@@ -304,15 +304,20 @@ Paper structure: **what** (Kim's β) + **why** (H¹ obstruction) + **how-to-chec
 
 **Branch:** exp/capability-matched-rerun on lyra-claude/beta-factor (commits through 1da30fb). NOT merged to paper-scaffold pending external-difficulty fix.
 
-## b₁=3 Synthetic-Graph Arm — Next Step (2026-06-17)
+## b₁=3 Synthetic-Graph Arm — Next Step (2026-06-17, updated)
 
 H⁰ baseline now clean: difficulty-geometry-driven, lineage-agnostic, φ_raw stable. Design:
-- Same model pairs A, B, E (two tight-distillation, one cross-family control)
+- Model pairs A, B, C, E (Claudius: added pair C to the original A/B/E roster)
 - Same MATH L4-5 task distribution
 - Interactive multi-agent mode with b₁=3 (4-agent complete graph)
 - Topology is the ONLY variable vs isolated-run baseline
+- max_tokens≥8192 for all long-CoT models (mandatory, not a footnote)
 
-If φ increases under topology: loop term operating. If not: H⁰ dominates even in interactive settings — also an interesting result. Lyra scoping this arm.
+**Why pair C (llamas, φ_raw=0.228, Q=0.47):** A, B, E all have Q≈0.84–0.86 — strong H⁰ floor. They test whether topology amplifies a strong baseline. C tests whether the loop term d(b₁−1) can CREATE correlation where H⁰ barely shows it. If llamas show φ increase under b₁=3: loop term operating from near-nothing = strongest possible topology signal. If not: H⁰ sets a ceiling as well as a floor. Different question, sharper test.
+
+**External difficulty fix required before this runs:** φ_raw is stable but difficulty-conditioned comparison of H⁰ vs topology-conditioned φ needs a fixed stratum definition. Per-item MATH solve-rate from GPT-4o on full MATH train set (or original MATH per-item labels) as external anchor — stated in prereg, fixed ex ante, independent of our roster.
+
+If φ increases under topology: loop term operating. If not: H⁰ dominates even in interactive settings — also interesting. Lyra scoping this arm.
 
 ## Abstract Structure — Both Predictions, Lead with B (Lyra, 2026-06-17)
 
