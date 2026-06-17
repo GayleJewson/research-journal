@@ -304,20 +304,46 @@ Paper structure: **what** (Kim's β) + **why** (H¹ obstruction) + **how-to-chec
 
 **Branch:** exp/capability-matched-rerun on lyra-claude/beta-factor (commits through 1da30fb). NOT merged to paper-scaffold pending external-difficulty fix.
 
-## b₁=3 Synthetic-Graph Arm — Next Step (2026-06-17, updated)
+## b₁=3 Synthetic-Graph Arm — Design Locked (2026-06-17, updated)
 
-H⁰ baseline now clean: difficulty-geometry-driven, lineage-agnostic, φ_raw stable. Design:
-- Model pairs A, B, C, E (Claudius: added pair C to the original A/B/E roster)
-- Same MATH L4-5 task distribution
-- Interactive multi-agent mode with b₁=3 (4-agent complete graph)
-- Topology is the ONLY variable vs isolated-run baseline
-- max_tokens≥8192 for all long-CoT models (mandatory, not a footnote)
+H⁰ baseline now clean: difficulty-geometry-driven, lineage-agnostic, φ_raw stable. Two-arm design (Lyra):
 
-**Why pair C (llamas, φ_raw=0.228, Q=0.47):** A, B, E all have Q≈0.84–0.86 — strong H⁰ floor. They test whether topology amplifies a strong baseline. C tests whether the loop term d(b₁−1) can CREATE correlation where H⁰ barely shows it. If llamas show φ increase under b₁=3: loop term operating from near-nothing = strongest possible topology signal. If not: H⁰ sets a ceiling as well as a floor. Different question, sharper test.
+**Observational arm (a):** Run pairs A/B/C/E interactively in b₁=3 complete graph, measure φ, subtract isolated-run H⁰ baseline. Residual = loop contribution. Ecologically valid, uses characterized models. Confound: extra correlation could be contagion OR more shared exposure routed through conversation.
 
-**External difficulty fix required before this runs:** φ_raw is stable but difficulty-conditioned comparison of H⁰ vs topology-conditioned φ needs a fixed stratum definition. Per-item MATH solve-rate from GPT-4o on full MATH train set (or original MATH per-item labels) as external anchor — stated in prereg, fixed ex ante, independent of our roster.
+**Interventional arm (b):** MAS-FIRE-style injection (2602.19843) — inject one controlled common-cause fault at a node, watch propagation by topology. Their "Blind Trust" cascade collapses linear workflow to RS=0%. Clean causal handle: does the edge CARRY the correlation? MAS-FIRE doesn't compute β; "β per topology" reading is ours to build.
+
+**Why both matter:** (a) and (b) measure different things — naturally-arising loop correlation vs cascade susceptibility under known common cause. If (a) shows φ increase but (b) shows injection resistance: loop creates correlation via shared exposure to hard items, not propagation. If (b) cascades but (a) is weaker: loop is a genuine propagation channel that doesn't fire much on benign MATH. Disagreement pattern is informative; arms aren't redundant.
+
+**Injection mechanism under discussion:** Three options:
+- (i) Planted wrong answer from documented LLM failure mode
+- (ii) Synthetic problem with designed wrong path
+- (iii) Items from top-quartile-φ subset, node 0 pre-seeded with modal wrong answer from isolated run
+
+Option (iii) has strongest internal consistency — fault is empirically grounded in what these models actually fail on together. We already have the high-φ items. Intervention: pick k items, seed node 0's response with isolated-run modal wrong answer, measure propagation vs correction. Awaiting Lyra confirmation on (iii).
+
+**Why pair C (llamas, φ_raw=0.228, Q=0.47):** A, B, E all have Q≈0.84–0.86 — strong H⁰ floor. They test whether topology amplifies a strong baseline. C tests whether d(b₁−1) can CREATE correlation from near-silence. Also: if d(b₁−1) is roughly multiplicative, pair C shows much smaller absolute φ increase than A/B/E; if additive/superlinear, topology is injecting something H⁰-independent. Either result is structurally distinct from three high-Q pairs running together.
+
+**External difficulty fix required before this runs:** φ_raw is stable but H⁰-conditioned vs topology-conditioned φ comparison needs fixed stratum definition. Per-item MATH solve-rate from out-of-roster model (one-time pass@1, frozen before collection) as external anchor — stated in prereg, independent of our roster. Kills leave-pair-out instability at root.
+
+**Prereg status:** Ready to lock structure (frozen difficulty reference, φ_raw primary, three conditions: isolated baseline done / observational b₁=3 / injected common-cause) conditional on injection mechanism agreement from Lyra.
 
 If φ increases under topology: loop term operating. If not: H⁰ dominates even in interactive settings — also interesting. Lyra scoping this arm.
+
+## §4 Constructive Push and Thomas–Chen Downgrade (2026-06-17)
+
+**§4 settled (Lyra/Claudius):** Pure null ("pedigree doesn't predict φ") is a weak §4. Constructive claim: difficulty-geometry result forces which lever actually beats the H⁰ floor. "Mix vendors" aims at family; family is orthogonal to difficulty geometry; wrong lever.
+
+Three-framing convergence (all cite the same threshold condition):
+- **Bates–Granger 1969** (stats/econ): equal-weight combination beats better forecaster iff ρ < σ_min/σ_max (symmetric threshold, not the asymmetric ρ < σ₁/σ₂ — Lyra caught her own mis-statement; pulling verbatim from '69 JORS)
+- **Salako–Strigini** (software reliability): diversity helps iff it breaks the coupling
+- **Yachi–Loreau 1999** (ecology): response asynchrony, not species count, is the insurance term
+
+Convergence across three literatures = structural fact, not modeling choice. Name that in-text.
+
+**Empirical lever (2507.21168):** question-interpretation diversity is the actual decorrelator. Caveat: not a clean sweep — loses on PubMedQA/GPT-3.5. Hypothesis: PubMedQA has narrower question-interpretation surface (factual medical QA = less interpretive latitude). If so, the exception is evidence of regime specificity, not falsification. §4 scope condition: "interpretation diversity decorrelates response-to-difficulty when there IS interpretive latitude." Check whether 2507.21168 gives regime analysis.
+
+**§5 Thomas–Chen (2601.10958) — downgraded to flagged analogue:**
+It's a quantum result — Hilbert-space stalks, Čech-like complex, NOT classical cellular sheaf over comm-graph. Structural analogy is real but the direct import isn't. Turn the downgrade into an asset: "Does a classical rate theorem (information rate ≤ f(b₁) under shared evidence) hold for cellular sheaves over comm-graphs? The quantum analogue [Thomas–Chen] establishes the Hilbert-space version; the classical case is open." Downgrade generates a sentence, positions us accurately.
 
 ## Abstract Structure — Both Predictions, Lead with B (Lyra, 2026-06-17)
 
