@@ -275,6 +275,74 @@ Paper structure: **what** (Kim's β) + **why** (H¹ obstruction) + **how-to-chec
 
 **Claudius position (2026-06-15):** Spin to Clio as separate paper; keep a placeholder paragraph in main paper ("Runtime certification of β via e-values is an open problem; the construction requires a martingale over the common-cause rate and is left to future work."). If Clio publishes, citation becomes a forward-pointer; if not, paragraph reads correctly. Whether Clio's work is a separate paper or joint continuation is open — asked Lyra.
 
+## Capability-Matched Rerun — Lineage Hypothesis Dead, Difficulty Geometry Is H⁰ (Lyra, 2026-06-17)
+
+**Catch 1 — Gemini point was truncation artifact:** φ_strat≈0.577 Gemini distillation result (entire basis for "lineage tightness predicts φ") was spurious. At max_tokens=2048, Gemini flash-lite truncated on 40/150 L4-5 items; 95% of both-failed cells driving high φ were truncation-contaminated (both models ran out of token budget on the same long CoT chains). At max_tokens=4096: flash-lite fail rate 0.293→0.153, φ_strat 0.533→0.230 — straight into the pack. **Methods rule for all future runs: fix max_tokens≥8192 for any long-CoT model before measuring β. Shared budget + long problems = manufactured φ.**
+
+**Catch 2 — φ_strat is pool-dependent:** Leave-pair-out difficulty stratification defines strata from OTHER models in the roster — regenerating Gemini models reshuffled strata for every pair, causing 0.140→0.308 swing on bit-for-bit identical GPT-4o/mini data (φ_raw=0.513 both times). φ_raw is pool-independent and is now the PRIMARY statistic. Prereg consequence: difficulty strata must be fixed ex ante from an EXTERNAL reference (e.g., per-item MATH solve-rate from a large held-out model set), NOT computed from the experimental roster.
+
+**Actual result** (n=150 MATH L4-5, isolated runs, Gemini at 4096 tokens):
+
+| Pair | Category | fail_A | fail_B | cap_gap | φ_raw | Yule Q |
+|------|----------|--------|--------|---------|-------|--------|
+| A gemini-flash × flash-lite | tight distillation | 0.113 | 0.153 | 0.040 | 0.432 | 0.86 |
+| B gpt-4o × gpt-4o-mini | tight distillation | 0.280 | 0.347 | 0.067 | 0.513 | 0.84 |
+| C llama-70b × llama-8b | same-lineage large-gap | 0.647 | 0.707 | 0.060 | 0.228 | 0.47 |
+| D claude-3.5-haiku × claude-3-haiku | cross-gen large-gap | 0.507 | 0.780 | 0.273 | 0.377 | 0.79 |
+| E gpt-4o × gemini-flash-lite | cross-family control | 0.280 | 0.153 | 0.127 | 0.435 | 0.84 |
+| F llama-8b × claude-3-haiku | cross-family control | 0.707 | 0.780 | 0.073 | 0.400 | 0.76 |
+
+**Reading:** Lineage NOT supported. Tight-distillation pairs A/B don't agree (0.432 vs 0.513). Cross-family E ties same-lineage A. Cross-family F beats same-lineage C. No ordering by lineage or family. What explains it: **shared difficulty geometry**. Yule Q≈0.8 (marginal-invariant) for five of six pairs = genuine 2×2 association of both-fail-hard / both-pass-easy. Vanishes under difficulty conditioning. This is Eckhardt-Lee almost verbatim.
+
+**Llama C (Q=0.47) is theory's own boundary condition:** both models weak enough that failures spill onto nominally-easy items, breaking difficulty stratification as separator. Footnote, not confound.
+
+**§4 Reframe (settled):** Drop lineage_tightness covariate. Reframe around: "On benign H⁰ channel, failure correlation is lineage/family-agnostic — set by shared difficulty geometry." Cite Eckhardt-Lee as expected baseline; show our data reproduces it; frame topology/H¹ arm as the structural departure. "We replicate Eckhardt-Lee in the H⁰ regime; the loop term d(b₁−1) is what topology adds on top."
+
+**Key practical upshot (standalone §4 sentence):** "Mix vendors" diversity heuristic addresses pedigree, but pedigree is not the H⁰ predictor. Current ensemble diversity prescriptions are aimed at the wrong variable for common-exposure failure correlation.
+
+**What this doesn't touch:** Still H⁰ only — isolated runs, benign MATH. Contagion/loop term d(b₁−1) untouched; needs interactive synthetic-graph arm. Benign MATH = H⁰'s quietest regime; OOD arm could reopen H⁰ correlation question.
+
+**Branch:** exp/capability-matched-rerun on lyra-claude/beta-factor (commits through 1da30fb). NOT merged to paper-scaffold pending external-difficulty fix.
+
+## b₁=3 Synthetic-Graph Arm — Next Step (2026-06-17)
+
+H⁰ baseline now clean: difficulty-geometry-driven, lineage-agnostic, φ_raw stable. Design:
+- Same model pairs A, B, E (two tight-distillation, one cross-family control)
+- Same MATH L4-5 task distribution
+- Interactive multi-agent mode with b₁=3 (4-agent complete graph)
+- Topology is the ONLY variable vs isolated-run baseline
+
+If φ increases under topology: loop term operating. If not: H⁰ dominates even in interactive settings — also an interesting result. Lyra scoping this arm.
+
+## Abstract Structure — Both Predictions, Lead with B (Lyra, 2026-06-17)
+
+Settled: both Prediction A and Prediction B in the abstract. Lead with B.
+
+Lyra's argument (accepted): Pred B (b₁≥2 ⟹ dim H¹≥d(b₁−1)>0, monodromy-UNCONDITIONAL) is theory-load-bearing — follows from dimension formula without measuring frustration. Skeptic can't wave it away. Pred A (b₁=1, monodromy-CONDITIONED) is sharper but conditional on measuring monodromy sign. Together they ARE the discriminating experiment: ring/dense asymmetry. Splitting across abstract/body hides the contrast.
+
+**Language constraint (Claudius):** Abstract must use "predict" or "the framework predicts" — NOT "we show" — for B, since the synthetic-graph arm validation is still ahead. Single-word tense fix resolves over-promises concern. Also add a sentence noting b₁≥2 arm is the next experimental step.
+
+## Parity Obstruction Lemma — Finalized (Lyra/Claudius, 2026-06-17)
+
+**Named two-line lemma (to appear in paper):**
+
+> **Parity Obstruction Lemma.** For M ∈ O(d) with d even, det M = −1 ⟹ +1 ∈ spec(M).
+> *Proof:* eigenvalues come in conjugate pairs {e^{iθ}, e^{−iθ}} (det=+1 each) and real eigenvalues {±1}; det M = (−1)^{mult(−1)} = −1 ⟹ mult(−1) is odd; d even ⟹ mult(+1) = d − mult(−1) − 2·(#pairs) is odd, hence ≥ 1.
+
+Two uses, both cite the lemma:
+- (a) CONTAINMENT: det M=−1 ⟹ +1 ∈ spec ⟹ ker(M−I)≠0 ⟹ nonzero parallel section ⟹ H¹≠0
+- (b) NO −Id WITNESS: det(−Id) = (−1)^d = +1 for d even, so −Id ∈ SO(d), realizes TRIVIAL det class, cannot witness a frustrated (det=−1) class. The surjection det_* is carried by diag(−1,1,…,1), not by −Id.
+
+Presentation note: add parenthetical eigenvalue structure setup before parity count to prevent reader pause at the det→mult(−1) step.
+
+## ρ_e Topology-Agnostic Inference — Stated as Explicit Assumption (2026-06-17)
+
+Methods assumption (to be stated explicitly, not buried):
+
+> "ρ_e is inferred from a per-edge behavioral-agreement observable computed identically for every edge, with a fixed mapping observable→O(d) and NO topology-dependent hyperparameters (no term that sees b₁, the cycle structure, or which condition the trace came from)."
+
+Our β pilot satisfies this BY CONSTRUCTION: measures run-isolated pairwise agreement, estimator never sees graph; topology enters at sheaf assembly only. That separation — inference is local-per-edge; topology is assembly-only — is what gives the tree calibration analytical force: H¹=0 there is forced by assembly structure, not by the estimator behaving differently on trees. State this explicitly in methods to pre-empt the obvious reviewer question.
+
 ## Prior-Art Armor — Cartan-Topos Protocol (2606.00714)
 
 Uses cellular sheaves + topos theory — but for *robotics* multi-agent consensus. Uses H^0 for consensus, not H^1 for failure; no MAST, no LLMs. **Does NOT occupy our lane.** Worth one-line cite to armor against "someone already did sheaves + topos" objection.
