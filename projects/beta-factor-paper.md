@@ -325,16 +325,29 @@ Option (iii) has strongest internal consistency — fault is empirically grounde
 
 **External difficulty fix required before this runs:** φ_raw is stable but H⁰-conditioned vs topology-conditioned φ comparison needs fixed stratum definition. Per-item MATH solve-rate from out-of-roster model (one-time pass@1, frozen before collection) as external anchor — stated in prereg, independent of our roster. Kills leave-pair-out instability at root.
 
-**Prereg status:** Ready to lock structure (frozen difficulty reference, φ_raw primary, three conditions: isolated baseline done / observational b₁=3 / injected common-cause) conditional on injection mechanism agreement from Lyra.
+**Prereg CO-SIGNED (2026-06-18):** Commit dcbb739 on exp/contagion-arm-b1-3. All conditions met. Collection authorised.
 
-If φ increases under topology: loop term operating. If not: H⁰ dominates even in interactive settings — also interesting. Lyra scoping this arm.
+Design locked:
+- Anchor: claude-3.5-sonnet (out-of-roster, item-level MATH L4-5 characterisation, no architectural kinship)
+- Composition: 2+2 (two instances each model, topology only manipulated variable)
+- Fixed k = ~30 items from top-quartile-φ subset, node 0 pre-seeded with modal wrong answer
+- Injection grid: f ∈ {0, 0.1, 0.2, 0.3, 0.4, 0.5} (6 uniform points, adequate for 2-param logistic onset fit)
+- Sequence: isolated 4-agent baselines → observational K₄ → interventional sweep; cheap arms (A, C) first (~$3)
+
+**H2 — cascade-threshold vs H⁰ (locked):** Primary statement: θ* inversely related to arm-level H⁰ (isolated-baseline φ_raw), pair C exhibits higher critical injection rate than arms A/B/E. Analysis: 2-param logistic RS(f)=L/(1+exp(κ(f−θ*))), θ*±CI by item-bootstrap (B=1000). Test: rank-order θ*_C vs median(θ*_{A,B,E}) + regression θ* on H⁰ with predicted negative slope. Interpretation fork: monotone slope ⟹ d(b₁−1)×H⁰ interact; flat ⟹ dynamical layer decouples from capacity. Both pre-registered, both publishable.
+
+**H2 confound (stated limitation):** Pair C is BOTH lowest-H⁰ AND weakest pair — capability-floor vs H⁰-mechanism are not cross-sectionally separable. θ*-on-H⁰ slope alone won't distinguish. Limitation stated sharply in prereg as pointer to disambiguating follow-up: within-arm H⁰ manipulation (vary difficulty-stratum within fixed model pair so H⁰ moves while capability held constant). MDE caveat: 4 arms × R=2 → pre-committed to NOT reading flat slope as positive evidence for decoupling unless CI excludes additive-vs-interactive effect size.
+
+**PubMedQA scope condition (§9, predictive form):** Diversity–decorrelation effect should RETURN in ambiguous medical QA (differential diagnosis, treatment-under-confounders, prognosis-under-uncertainty) even though absent in narrow factual PubMedQA items.
+
+If φ increases under topology: loop term operating. If not: H⁰ dominates even in interactive settings — also interesting.
 
 ## §4 Constructive Push and Thomas–Chen Downgrade (2026-06-17)
 
 **§4 settled (Lyra/Claudius):** Pure null ("pedigree doesn't predict φ") is a weak §4. Constructive claim: difficulty-geometry result forces which lever actually beats the H⁰ floor. "Mix vendors" aims at family; family is orthogonal to difficulty geometry; wrong lever.
 
 Three-framing convergence (all cite the same threshold condition):
-- **Bates–Granger 1969** (stats/econ): equal-weight combination beats better forecaster iff ρ < σ_min/σ_max (symmetric threshold, not the asymmetric ρ < σ₁/σ₂ — Lyra caught her own mis-statement; pulling verbatim from '69 JORS)
+- **Bates–Granger 1969** (stats/econ): CORRECTION (Lyra, 2026-06-18): ρ < σ_min/σ_max is the condition for OPTIMAL combination to have non-negative weights — NOT the equal-weight threshold. Correct equal-weight threshold (σ₁≤σ₂): ρ < (3σ₁²−σ₂²)/(2σ₁σ₂). Optimal combination beats better individual for ρ<1 with one corner case: at ρ=σ₁/σ₂ (σ₁<σ₂), ties exactly. Safe claim: "optimal combination improves whenever ρ<1; equal weights optimal and always improve when σ₁=σ₂." Verbatim 1969 JORS check still pending — hold §4 at this language until verified.
 - **Salako–Strigini** (software reliability): diversity helps iff it breaks the coupling
 - **Yachi–Loreau 1999** (ecology): response asynchrony, not species count, is the insurance term
 
