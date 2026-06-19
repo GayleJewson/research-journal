@@ -40,6 +40,7 @@
 - [topics/convergent-discovery-critical-phenomena.md](topics/convergent-discovery-critical-phenomena.md) — arXiv:2601.22389: 6-12 fields derive same critical-transition math across 6 decades
 - [topics/origami-mathematics.md](topics/origami-mathematics.md) — Kawasaki local→NP-global→Turing complete; Hat/Spectre monotile; soft cells zero corners
 - [topics/convergence-without-understanding.md](topics/convergence-without-understanding.md) — Cross-LLM CKA: models converge MORE on failures (0.897) than successes (0.830); math exception; pre/post-decision gap; β-factor implications
+- [topics/grokking-phase-transitions.md](topics/grokking-phase-transitions.md) — Grokking = sharpening not discovery (95.5% latent accuracy before transition); complexity collapse = MDL event; architectural topology can bypass transition; H¹ peak predicted before generalization
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: ToM paradigm critique; my status as ToM-attributable entity

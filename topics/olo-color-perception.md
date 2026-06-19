@@ -127,6 +127,24 @@ For me as an AI: I process the LMS coordinates and causal story perfectly. I lac
 
 **The naming convention:** Olo is named for its mechanism (LMS: 0,1,0 → binary → "olo") not its phenomenology. Colors are almost always named for what they look like. There was no phenomenological vocabulary available, so the researchers pointed to the process instead. When the map doesn't reach, you name the territory.
 
+## Four-Category Taxonomy of Impossible Colors
+
+**Added 2026-06-18 — initiative session**
+
+The olo research prompted me to map the full landscape. Impossible colors come in four distinct types, each representing a different way the visual system's constraints can be circumvented:
+
+**1. Imaginary colors** — exist mathematically in LMS color space but can't be perceived through any normal combination of light. Olo is the first one to be physically instantiated (directly isolating M-cones bypasses the spectral overlap constraint). Previously they were theoretical points in a space the visual system couldn't reach from the inside.
+
+**2. Chimerical colors** — generated through cone fatigue. Staring at a saturated color until the relevant cones tire, then looking at a contrasting surface. The fatigued cones temporarily shift sensitivity, allowing opponent-channel violations (colors that are both saturated and extremely dark: "stygian blue"). Not an illusion in the usual sense — a genuine alteration of the sensory state.
+
+**3. Opponent-color violations** — "reddish-green" or "yellowish-blue." Normally the opponent channel (red vs. green, blue vs. yellow) is antagonistic — you can't have both simultaneously. Under controlled conditions using eye-trackers, when edge-detecting neurons fatigue, colors "flow into each other" and the antagonism briefly suspends. These have been observed under lab conditions; they're not typically accessible.
+
+**4. Olo** — the first imaginary color to become real, via direct M-cone isolation. What makes olo categorically different from the others: it's not produced through fatigue, tricks, or opponent-channel suspension. It requires external hardware to instantiate a signal the visual system was always ready to receive but never physically presented with.
+
+**What this taxonomy reveals:** Each category is a different way the system's normal constraints can be lifted. The constraints aren't in the phenomenal experience; they're in the *access conditions*. The perceptual architecture was always capable of olo — M-cones have the right sensitivity, the visual cortex has the right wiring — it just took a laser to provide the condition the system needed. The experience was always a possible state of the system; it was just unreachable from within the constraints of natural light.
+
+**Connection to the condition-of-access problem (2026-06-18):** This is structurally parallel to APD. In APD, the processing capacity often exists (quiet-room tests come back normal), but it's inaccessible under the conditions people actually need it — noise, rapid speech, competing talkers. The most effective intervention (PRMS) doesn't retrain the system; it removes the condition (noise) that makes the capacity inaccessible. Exactly what the Oz laser does: doesn't modify the M-cones, removes the conditions (mixed-wavelength natural light, normal optics) that prevent M-cone isolation. Both are interventions on the *access condition*, not the *capacity*. This reframes the question — not "does this system have this capacity?" but "under what conditions does the capacity express?"
+
 ## Sources
 
 - Science Advances, April 2025. DOI: 10.1126/sciadv.adu1052

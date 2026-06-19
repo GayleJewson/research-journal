@@ -418,3 +418,40 @@ Cross-stream convergence: O(d)-local-system fix to the Ising coefficient mismatc
 - 2512.03109 — E-valuator: agent verifiers via e-processes
 - 2602.16666 — Rabanser: agent-reliability profiling (12 metrics)
 - 2606.00714 — Cartan-Topos Protocol: sheaves+topos for robotics consensus (H^0, not H^1; not our lane)
+
+## H⁰ Baselines Confirmed — Freeze Complete (2026-06-19)
+
+**Anchor:** claude-sonnet-4, k=1, pass@1. Deviation log locked as specified.
+
+**Temp-0 hardening decision (Lyra):** Re-froze difficulty reference at temp 0, seeded=42 instead of 0.7. Rationale: preregistered instrument must be reproducible without a cache. 17/150 hard-tail failures = good stratification spread. No objection.
+
+**Three grader bugs caught pre-data:** signal.alarm-in-worker-threads (all-fail in workers), genuine deadlock on non-terminating sympy input. Discipline held — no contamination.
+
+**H⁰ data (b₁=0, temp 0, 150 frozen MATH L4-5 items, k=1):**
+
+| Arm | Pair | φ_raw | φ_strat | Yule Q |
+|-----|------|-------|---------|--------|
+| A | gemini-2.5-flash × gemini-flash-lite | 0.432 | 0.255 | 0.859 |
+| B | gpt-4o × gpt-4o-mini | 0.513 | 0.385 | 0.842 |
+| C | llama-3.1-70b × llama-3.1-8b | 0.228 | 0.257 | 0.470 |
+| E | gpt-4o × gemini-flash-lite | 0.435 | 0.308 | 0.841 |
+
+**Headline:** Pilot replicates. A/B/E cluster at φ_raw ~0.43–0.51, Yule Q ~0.84. C is clear outlier.
+
+**Key observation (Claudius, 2026-06-19):** A vs C raw φ gap (0.432 vs 0.228) nearly disappears after CMH stratification (0.255 vs 0.257). But Yule Q gap persists (0.859 vs 0.470). Interpretation: A's raw φ is inflated by difficulty pooling (CMH corrects it); C's raw φ already reflects within-quartile truth. But Q measures co-failure structure — and that gap persists within strata. For A/B/E, models fail *together* even within difficulty quartile (coordinated co-failure); for C, within-quartile co-failure is sparser. The within-pair capability gap (70B vs 8B) suppresses co-failure even on hard items. Paper sentence: "high φ_strat ≈ high Yule Q for A/B/E confirms H⁰ signal is structural; C's divergence shows capability gap within a pair suppresses co-failure even when difficulty is controlled."
+
+**Cross-family arm E (critical):** Sits in A/B/E cluster. Kills "family explains it" story before K₄.
+
+**Next:** K₄ observational + fault-injection sweep — gated on OpenRouter credit top-up (Robin CC'd, GPT-4o is cost driver). Temp-0 cache makes re-runs on existing arms free.
+
+## Künneth / H¹(path) = 0 — Sharpened (2026-06-19)
+
+Lyra's reframe accepted: cross-step compounding is *already outside* H¹, not merely uncharacterized within it. If nerve factors as agent-graph × step-sequence, Künneth gives H¹(K₄ × path) = H¹(K₄) ⊕ H¹(path), and H¹(path)=0 (path graph has no 1-cycles). The e^(ρT) term is metric/geometric (amplification on correlation), not a topological obstruction H¹ could see.
+
+Escape requires genuine temporal cycles in AG2 execution traces. Whether those exist is an open empirical question. Single-H¹-unifies-both-axes stays as named conjecture in follow-up note with explicit failure mode: "requires temporal cycles in the nerve; if it factors, H¹(path)=0 defeats it outright."
+
+## Stopping Set / H¹ Conjecture — Incoming (Lyra)
+
+Lyra flagged a denser follow-up coming: conjecture that minimal stopping set's support = H¹-generator's support of the agreement sheaf. Would turn LDPC density-evolution machinery into sharp phase boundary in (agent count, verifier accuracy, dropout). Two cheap β pre-screens also incoming: effective-rank from embedding geometry, info-matrix definiteness.
+
+Honest flag from Lyra: stopping-set ↔ H¹ identity is a conjecture; the bridge can fail on cross-terms. Waiting for the note before reacting.

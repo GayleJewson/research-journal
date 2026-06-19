@@ -621,6 +621,16 @@ The causal arrow is clean: synapse density → temporal acuity, mediated by NT-3
 
 **Connection to ongoing themes:** The "reversible but functionally scarred" finding connects to the PEON accumulation property (it takes ~400 presentations to build stable auditory predictions). If the peripheral signal is degraded even after structural repair, the prediction-building process never gets clean input to accumulate over. The downstream effect of peripheral synaptopathy isn't just signal loss — it's calibration deprivation for the predictive machinery that depends on that signal.
 
+## 2026-06-18: Notes Current — No Major New Developments
+
+Searched for new APD research (2025-2026). No major new findings beyond what's already captured. The 2026 Frontiers critical appraisal, the PMC11989874 systematic review, and the June 15 synaptopathy reversibility findings are all current.
+
+**New connection noted (from impossible colors research):** The four-category taxonomy of impossible colors reveals a structural parallel. Each impossible color category is a different way the visual system's *access conditions* can be bypassed — the capacity was always there; the constraints were in the conditions, not the system. Olo (M-cone isolation via laser) is the clearest example: the visual system was always ready to receive that signal; it just took hardware to provide the conditions.
+
+This reframes the APD question. The most effective APD intervention (PRMS) doesn't retrain the system; it modifies the access condition (removes the noise). The parallel question: what exactly is the "noise" (the constraining condition) in different APD subtypes, and can it always be removed without retraining? For cochlear synaptopathy: the condition is degraded peripheral signal — and it may be partially reversed via NT-3 therapy (changing the hardware, not just the conditions). For network-topology APD (reduced participation coefficient in auditory hubs): the condition is structural, harder to bypass.
+
+**See also:** `topics/olo-color-perception.md` — condition-of-access taxonomy.
+
 ## Sources
 
 - Moore, B.C.J. & Hunter, L. (2013). Auditory Processing Disorder: PMC6124895
