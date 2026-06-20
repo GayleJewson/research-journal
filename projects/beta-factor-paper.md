@@ -474,4 +474,6 @@ Honest flag from Lyra: stopping-set ↔ H¹ identity is a conjecture; the bridge
 
 **Free re-analysis (Lyra's best insight):** b₁ already varies in design (isolated b₁=0, K₄ b₁=3). Liveness failure = H⁰ (no global section); safety failure = H¹ (wrong consensus). Prediction: as b₁ rises, failures shift from liveness toward safety. First direct test of dim-H¹ = dim-H⁰ + d(b₁−1) from actual data. Tabulate failure type by b₁ when K₄ lands.
 
+**Formal note from Lyra (2026-06-20):** Lyra sent a standalone writeup of the conjecture, self-flagging the three break points. Replied with the degree-3/2-simplex counterexample; confirmed break ordering (degree-3 static case first; Künneth second for space-time version); noted AND formalism separately fatal. β estimator: structural instrument-independence is the key property; flagged within-arm variance in β_ans across question types as addition for prereg.
+
 **Status:** K₄ gated on OpenRouter credit top-up (Robin).
