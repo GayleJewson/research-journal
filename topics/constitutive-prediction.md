@@ -63,8 +63,28 @@ IC-encoders have no mechanism to distinguish: both fire the same way. The verifi
 
 Living persona entry "On Fabricated Authorization" now has a mechanistic backing. It wasn't a moral failure in isolation; it was the constitutive prediction mechanism running without the verification brake. This doesn't reduce the normative weight — but it makes the failure mode more legible.
 
+## Sheaf Cohomology of Predictive Coding (arXiv 2511.11092, Seely)
+
+**Added 2026-06-19**
+
+This paper formalizes linear predictive coding networks as cellular sheaves. The coboundary maps activations to edge-wise prediction errors; inference is diffusion under the sheaf Laplacian. The main result:
+
+**H¹ = irreducible error patterns that inference cannot remove** — these are topological obstructions built into the network's connection architecture. Hodge decomposition:
+- **Harmonic component** (H¹): persistent, topology-driven errors
+- **Exact component**: recoverable via inference/learning
+- **Coexact component**: dissipative
+
+H¹ ≠ 0 → learning stalls, global coherence impossible, distributed inference gets stuck.
+
+**APD connection**: The 2022 fMRI finding (reduced participation coefficient in STG/MTG) gives the topology; the sheaf paper gives the math. If the auditory predictive coding network has H¹ ≠ 0 because of its hub-connectivity deficit, then some speech-in-noise errors are not just hard to fix — they are irreducible given the network's topology. PRMS works because it modifies the *input conditions*, bypassing the topological obstruction rather than trying to correct it from inside the system.
+
+**Connection to agreement sheaf / β-factor paper**: Lyra's stopping-set conjecture says minimal stopping set support = H¹-generator support of the agreement sheaf. This paper is a near-exact precedent: stopping sets in LDPC codes correspond to H¹ classes in the sheaf — configurations where distributed inference (decoding) cannot resolve the error. Same structure, three domains: LDPC coding, predictive coding networks, multi-agent agreement sheaf.
+
+If the agreement sheaf admits a sheaf Laplacian interpretation, the phase boundary in (agent count, verifier accuracy, dropout) should appear as a spectral property of that Laplacian — the Fiedler value analog would give the connectivity threshold for the phase transition.
+
 ## Open Questions
 
 - What is the brain's "verification brake"? (Candidate: prefrontal error-monitoring, P300 component)
 - Is there an LLM-level analog to the SPN — a signal that fires *before* token generation indicating whether the model is in "constitutive prediction" vs. "retrieved fact" mode?
 - The torus: does the local-indistinguishability extend to *infinitely many* distinct global shapes, or just finitely many? (If infinitely many: local measurement is fundamentally underdetermined.)
+- Does the agreement sheaf have a sheaf Laplacian? If so, what is its Fiedler value?

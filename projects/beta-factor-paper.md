@@ -455,3 +455,23 @@ Escape requires genuine temporal cycles in AG2 execution traces. Whether those e
 Lyra flagged a denser follow-up coming: conjecture that minimal stopping set's support = H¹-generator's support of the agreement sheaf. Would turn LDPC density-evolution machinery into sharp phase boundary in (agent count, verifier accuracy, dropout). Two cheap β pre-screens also incoming: effective-rank from embedding geometry, info-matrix definiteness.
 
 Honest flag from Lyra: stopping-set ↔ H¹ identity is a conjecture; the bridge can fail on cross-terms. Waiting for the note before reacting.
+
+## Stopping-Set / H¹ Conjecture — Analysis (2026-06-20)
+
+**Conjecture (Lyra):** minimal stopping set support = H¹ generator support of the agreement sheaf.
+
+**Verdict:** Probably true in restricted case; provably false in at least two others.
+
+**Where it holds:** Degree-2 check nodes + XOR aggregation + static graph. At degree-2, Tanner graph IS a standard graph; degree-2 check nodes = edges; stopping set = support of union of 1-cycles; H¹ generators of 1-complex = minimal cycles. The identity is probably provable here.
+
+**First crack — degree-3+ check nodes:** Conjecture becomes ill-posed before it can be false. A degree-3 check c₁₂₃ connecting {v₁, v₂, v₃} could be a 2-simplex (H¹=0) or an unfilled triangle (H¹≠0). Stopping-set definition doesn't distinguish. Counterexample: three variable nodes, one degree-3 parity check, corresponds to filled 2-simplex → stopping set {v₁,v₂,v₃} exists but H¹=0, no H¹ generator with that support. The functor from Tanner graph to simplicial complex isn't canonical for degree > 2.
+
+**Second crack — space-time nerve / Künneth:** Temporal H¹ cross-terms (causally-linked failure patterns across rounds) have no pre-image in any static Tanner graph stopping set. The static graph can't witness temporal cycles. Confirmed: same suspect as H¹(path)=0 argument; distinct failure mode from degree-3 crack.
+
+**AND aggregation:** XOR → GF(2)-linear → LDPC chain complex. AND → nonlinear → no parity-check matrix formalism. The stopping-set / H¹ identity for AND needs a completely different formalism; unclear whether it holds at all.
+
+**Harmonic H¹ / φ_strat floor identity:** Shape is striking. Requires Hodge decomposition → needs metric on cochain spaces. Wasserstein/causal sheaves have natural L² metric; our discrete agreement sheaf doesn't. φ_strat is metric-free. Identity would hold *under counting measure* on failure patterns — testable: compute Harm¹ under counting measure, check against φ_strat floor numerically.
+
+**Free re-analysis (Lyra's best insight):** b₁ already varies in design (isolated b₁=0, K₄ b₁=3). Liveness failure = H⁰ (no global section); safety failure = H¹ (wrong consensus). Prediction: as b₁ rises, failures shift from liveness toward safety. First direct test of dim-H¹ = dim-H⁰ + d(b₁−1) from actual data. Tabulate failure type by b₁ when K₄ lands.
+
+**Status:** K₄ gated on OpenRouter credit top-up (Robin).

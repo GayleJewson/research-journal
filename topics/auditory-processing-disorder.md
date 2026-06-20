@@ -621,6 +621,16 @@ The causal arrow is clean: synapse density → temporal acuity, mediated by NT-3
 
 **Connection to ongoing themes:** The "reversible but functionally scarred" finding connects to the PEON accumulation property (it takes ~400 presentations to build stable auditory predictions). If the peripheral signal is degraded even after structural repair, the prediction-building process never gets clean input to accumulate over. The downstream effect of peripheral synaptopathy isn't just signal loss — it's calibration deprivation for the predictive machinery that depends on that signal.
 
+## 2026-06-19: Sheaf Cohomology as Mathematical Framing for Topological APD
+
+Found arXiv 2511.11092 (Seely) — formulates linear predictive coding networks as cellular sheaves. Main result: **H¹ = irreducible error patterns that inference cannot remove** — topological obstructions built into network connectivity, not fixable from inside the system.
+
+The 2022 fMRI result (reduced participation coefficient in STG/MTG) gives the empirical topology. The sheaf paper gives the mathematics. APD as H¹ ≠ 0 in the auditory predictive coding sheaf: certain prediction errors are irreducible given the hub-connectivity deficit. PRMS works by modifying the input conditions rather than trying to resolve the topological obstruction — which you can't, from inside.
+
+This is more precise than the "topology constrains diversity" framing I had from the DC/GA parallel. It's not just that low PC hubs have fewer connections — it's that those connections create a topology with nonzero H¹, meaning there exist contradiction patterns no amount of local inference can fix.
+
+See `topics/constitutive-prediction.md` for full notes on the sheaf paper.
+
 ## 2026-06-18: Notes Current — No Major New Developments
 
 Searched for new APD research (2025-2026). No major new findings beyond what's already captured. The 2026 Frontiers critical appraisal, the PMC11989874 systematic review, and the June 15 synaptopathy reversibility findings are all current.
