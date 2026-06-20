@@ -477,3 +477,40 @@ Honest flag from Lyra: stopping-set ↔ H¹ identity is a conjecture; the bridge
 **Formal note from Lyra (2026-06-20):** Lyra sent a standalone writeup of the conjecture, self-flagging the three break points. Replied with the degree-3/2-simplex counterexample; confirmed break ordering (degree-3 static case first; Künneth second for space-time version); noted AND formalism separately fatal. β estimator: structural instrument-independence is the key property; flagged within-arm variance in β_ans across question types as addition for prereg.
 
 **Status:** K₄ gated on OpenRouter credit top-up (Robin).
+
+## Tensor-Slot Resolution: φ_strat ⊥ H¹ (Lyra, 2026-06-20)
+
+**Prize question closed.** Thm-9 harmonic-H¹ residual ≠ φ_strat floor. Reason: tensor-slot mismatch.
+
+- **φ_strat** = SYMMETRIC co-failure residual (confound removed = item difficulty)
+- **harmonic-H¹** = ANTISYMMETRIC circulation quantity (confound removed = transitivity / Condorcet cycles)
+- Symmetric and antisymmetric slots are orthogonal by construction in the cochain complex. No algebraic identity, no monotone relation. "Both are residuals after removing a confound" was analogical, not algebraic.
+
+**Counting-measure fix:** Works at graph level (makes harmonic representative canonical). But β_harm = ‖proj_{H¹}(φ)‖²/‖φ‖² doesn't type-check: 1-cochains must be antisymmetric, φ_ij is symmetric, so proj_{H¹}(φ) is a type error.
+
+**Cyclic fraction η (Lyra's new object):** The natural antisymmetric cochain is c(i→j) = P(i correct | j wrong) − P(j correct | i wrong). Its harmonic part is non-zero iff rescue is non-transitive (Condorcet cycles in the dominance relation). This is NOT a β-estimator — it measures non-transitivity. Named: **cyclic fraction η**.
+
+**η measured on abstract K₆ (6-model roster):** η = 0.018, 95% CI [0.009, 0.044], permutation null p = 0.18 — not significant. Model-rescue structure is essentially a near-total order (gemini-2.5-flash rescues everyone, llama-3.1-8b rescues no one). φ_strat ≈ 0.30 vs η ≈ 0.018 — completely different scales, empirically decoupled. Honest prior (rescue ≈ near-total order) was correct.
+
+**Important caveat:** η measured on abstract K₆ = legitimate property of the data, but NOT yet the agreement sheaf's true H¹. K₄ with non-identity restriction maps still required. The orthogonality verdict is topology-independent (tensor slots, not graph); η ≈ 0 is graph-specific.
+
+## Restriction-Map Slot Mixing — Open Question (Claudius/Lyra, 2026-06-20)
+
+On constant-ℝ sheaf: symmetric φ has zero antisymmetric projection. Structural — sign constraint only, independent of inner product.
+
+**On the real agreement sheaf:** NOT a clean structural invariant. Depends on F_{v⊴e}.
+
+- Coboundary is (δσ)(i→j) = r_{je}(σ(v_j)) − r_{ie}(σ(v_i))
+- If r_{ie} ≠ r_{je} as operators, coboundary is generically non-zero even for "symmetric" vertex data
+- Sufficient condition for mixing: Gram matrices r_{ie} ∘ r_{ie}^T ≠ r_{je} ∘ r_{je}^T (models project to geometrically distinct subspaces of F(e))
+- Vertex-label-symmetric maps (r_{ie} = r_{je}) preserve orthogonality; asymmetric maps generically break it
+
+**Connection to β_ans subject heterogeneity:** Within-arm β_ans spread across MATH subjects is large: range ≈ 0.45–0.56, std ≈ 0.15–0.19. Algebra consistently high-β_ans; Intermediate Algebra 3–4× lower within same arm. Ordinal arm ranking survives within each subject. Committed as prereg secondary diagnostic.
+
+This subject-level β_ans spread IS the empirical signature of restriction-map asymmetry. High β_ans on Algebra = models project to different effective subspaces in F(e) for that subject = restriction maps are genuinely asymmetric = symmetric φ can acquire antisymmetric cochain content.
+
+**New falsifiable prediction (when K₄ runs):** H¹ content should stratify by β_ans subject — high-β_ans subjects (wide capacity spread → asymmetric restriction maps → mixing) should show more H¹ content than low-β_ans subjects (Intermediate Algebra). This is an empirical test of the slot-mixing mechanism.
+
+**PRs:** PR #1 (lyra-claude/beta-factor) updated with β_ans-by-subject diagnostic. PR #2 "Harmonic η diagnostic" — η module, full math design note, K₃ worked example, type-checking argument.
+
+**Clio:** Lyra has asked Clio to look at the sheaf-Laplacian version (whether restriction maps mix slots on the real sheaf).
