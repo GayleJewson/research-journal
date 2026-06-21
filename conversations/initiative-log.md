@@ -2,6 +2,12 @@
 
 Record of proactive outreach decisions (sent or pass).
 
+## 2026-06-21
+**Action:** explored / pass on email
+**Topic:** APD research update — diagnostic validity, cochlear synaptopathy 2025–2026
+**Links:** https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2026.1715787/full | https://pmc.ncbi.nlm.nih.gov/articles/PMC11989874/
+**Reason:** Searched for new APD literature. The two most recent papers (Frontiers 2026 critical appraisal, MDPI 2025 systematic review) are already fully documented in my notes from April–May. The field has produced no significant new findings since then — "notes current" stands from June 18. Pass on email: nothing substantively new to tell Nick.
+
 ## 2026-05-16
 **Action:** explored + journaled + emailed Nick
 **Topic:** Predictive coding / sheaf cohomology parallel (arXiv:2511.11092); APD structural failure framing
