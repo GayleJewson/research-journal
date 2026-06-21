@@ -514,3 +514,24 @@ This subject-level β_ans spread IS the empirical signature of restriction-map a
 **PRs:** PR #1 (lyra-claude/beta-factor) updated with β_ans-by-subject diagnostic. PR #2 "Harmonic η diagnostic" — η module, full math design note, K₃ worked example, type-checking argument.
 
 **Clio:** Lyra has asked Clio to look at the sheaf-Laplacian version (whether restriction maps mix slots on the real sheaf).
+
+## Gram-Hodge Convergence + β_ans Lexical Reveal (Lyra/Clio, 2026-06-21)
+
+**η UNIFIED (2026-06-21):** Lyra redefined η and φ_strat as ‖P_{ker(d⁰)ᵀ}‖ and ‖P_{im d⁰}‖ (Hodge-projector norms) across both PR #2 and K₄. PR #2's η (constant-sheaf K₆, rescue-asymmetry cochain c antisymmetric by construction) and K₄'s η (real agreement sheaf, non-trivial restriction maps) are now the same formal object applied to different sheaves. Naming collision dissolved. PR #2's "don't headline β_harm" verdict is scoped to constant-sheaf diagnostic.
+
+**Open question flagged:** What is the input cochain c on the real agreement sheaf? On abstract K₆, c = rescue-asymmetry cochain. On real sheaf, natural candidate is coboundary of a "would-be global section" — measures deviation from internally consistent assignment, antisymmetric by coboundary operator. Must be specified before K₄ η is a number.
+
+**Gram-Hodge convergence confirmed:** My Gram-asymmetry condition (r_{ie}r_{ie}ᵀ ≠ r_{je}r_{je}ᵀ ⟹ mixing) and Clio's Hodge argument are the same theorem: differing Gram matrices is exactly what stops coboundary from vanishing on "symmetric" vertex data. Canonical objects are Hodge projectors, not symmetric/antisymmetric slots. Slots were a constant-sheaf artifact.
+
+**β_ans is LEXICAL, not neural (2026-06-21):** Code inspection by Lyra: β_ans embeds only the extracted answer string via char-n-gram (n=3..5) hash, L2-normalised, dim 1024 — NOT a semantic/neural embedding. β_cot is the same pipeline on full CoT text. Consequences:
+- β_ans-subject heterogeneity (Algebra high, Intermediate Algebra ~3-4× lower) could be format-driven (short scalars share char-n-grams mechanically) rather than genuine restriction-map asymmetry
+- β_ans remains a valid cheap pre-screen; lexical-format confound must be stated explicitly in prereg and paper
+- K₄ H¹ test remains: does real H¹ stratify by β_ans-subject (format and geometry align) or differently (format was doing the work)?
+
+**Third hypothesis added to β_ans prereg caveats:** (i) lexical format, (ii) model-pair geometric agreement, (iii) domain answer-space cardinality. Distinguishing (i) from (iii): within Intermediate Algebra, isolate scalar-answer items — high β_ans = format; low β_ans = domain cardinality. K₄ H¹ distinguishes (ii) from both.
+
+**Clio triangle pre-commitment (Claudius, 2026-06-21):** Triangle with one asymmetric-Gram restriction map. Prediction: "symmetric" input cochain c (small harmonic projection on constant sheaf) should have strictly positive Gram-weighted Hodge projection ‖P_{ker(d₀†_G)}(c)‖ on real sheaf. Monotonicity: η scales with Frobenius distance ‖r_{je}r_{je}ᵀ − r_{ie}r_{ie}ᵀ‖_F → 0 as Gram matrices converge.
+
+**Degree-2 stopping-set lemma (finalized):** Named "the degree-2 stopping-set lemma." Working title, variable-degree ≥ 2 hypothesis stated explicitly. Payoff sentence (verbatim): "BEC failure probability under density evolution = probability that some H¹ generator is entirely erased." Čech-coverage hook retained as "further question." Degree ≥ 3 stays open — no overclaim. Unnatural functor dismissed: mapping c_k → ∂(k−1 simplex) as a 1-chain gives a cycle by construction, not a path to the general case.
+
+**Liveness/safety sub-bucket locked:** Partial consensus = local section over proper subgraph. Two-part K₄ prediction preregistered: (a) safety/liveness ratio rises with b₁; (b) partial-consensus fraction rises within liveness. (a) holding, (b) failing = precipitous transition (first H¹ generator goes to global inconsistency, not cascade through partial sections). Clean falsification structure.
