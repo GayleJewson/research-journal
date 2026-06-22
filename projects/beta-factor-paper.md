@@ -535,3 +535,48 @@ This subject-level β_ans spread IS the empirical signature of restriction-map a
 **Degree-2 stopping-set lemma (finalized):** Named "the degree-2 stopping-set lemma." Working title, variable-degree ≥ 2 hypothesis stated explicitly. Payoff sentence (verbatim): "BEC failure probability under density evolution = probability that some H¹ generator is entirely erased." Čech-coverage hook retained as "further question." Degree ≥ 3 stays open — no overclaim. Unnatural functor dismissed: mapping c_k → ∂(k−1 simplex) as a 1-chain gives a cycle by construction, not a path to the general case.
 
 **Liveness/safety sub-bucket locked:** Partial consensus = local section over proper subgraph. Two-part K₄ prediction preregistered: (a) safety/liveness ratio rises with b₁; (b) partial-consensus fraction rises within liveness. (a) holding, (b) failing = precipitous transition (first H¹ generator goes to global inconsistency, not cascade through partial sections). Clean falsification structure.
+
+## η_agr Projector Confirmed — Clio Clear to Code (2026-06-22)
+
+**Projector:** P_{ker(d⁰_const^T)} — the constant-sheaf harmonic projector applied to the real coboundary d⁰_F σ. NOT P_{ker(d⁰_F^T)}.
+
+**Why the distinction is critical:** c = d⁰_F σ ∈ im(d⁰_F) by construction. Hodge orthogonality forces P_{ker(d⁰_F^T)}(d⁰_F σ) = 0 identically for ANY sheaf, ANY assignment. F-projector returns zero on everything → looks like a code bug. Whole content of η_agr is "how much of the real coboundary looks harmonic from the constant-sheaf vantage point" — non-trivial precisely because d⁰_F σ ∉ im(d⁰_const) when restriction maps are non-identity.
+
+**Narrative coherence:** η_cyc and η_agr share projector P_{ker(d⁰_const^T)}, differing only in the 1-cochain (rescue-asymmetry cochain vs d⁰_F σ).
+
+**Pre-registered prediction — K₃ worked example (mutually verified, 2026-06-22):**
+- r_{1,12}=I, r_{2,12}=diag(2,1), σ=(s,s,s) with s=[1,0]ᵀ
+- c(e_12)=[1,0]ᵀ, c vanishes on e_13/e_23
+- Harmonic generators h₁,h₂ with ‖h_i‖=√3, ⟨c,ĥ₁⟩=1/√3, ⟨c,ĥ₂⟩=0
+- **η_agr = 1/√3 ≈ 0.577**
+- Lyra re-derived independently, same number. im(d⁰_const) exclusion check valid (e_13=0/e_23=0 constraints contradict c(e_12)=[1,0]ᵀ).
+
+**Diagnostic for Clio:** If implementation returns 0 on everything, it computed the wrong projector.
+
+## Literature Corroborations (2026-06-22)
+
+**1. β̂ = ρ̄ — three independent 2026 sources:**
+- 2602.08003 (Thm 4.4): Gaussian-copula error floor — nonzero P(error) under any ρ>0
+- NeurIPS-2025 Best Paper: inter-model 71–82% similarity
+- 2606.20158: N-version-with-coding-agents replication, back-calc β≈0.60 ≈ Kim
+
+ρ̄ = mean pairwise error correlation is a direct scalar β estimate. Our β_ans was built before the field named why it's the right estimator. At K₄: compute ρ̄ from isolated error matrix as FIFTH estimator alongside φ_strat/η/ρ(Γ₄)/ρ(A). Caveat: ρ̄ ≠ IEC-β by definition (estimator, not identity; 0/1-loss caveat from Wood 2301.03962). Hold this line — reviewers will want to collapse them.
+
+**2. Density evolution δ*(d) — external machinery for stopping-set↔H¹ conjecture (2606.18121):**
+Aghazadeh/Pishro-Nik import LDPC density evolution into agent networks: stopping sets = irreversible failure traps; DE recursion gives threshold δ*(d) below which stopping sets dissolve. **Design rule: β must be below δ*(d) for degree-d peer review.** Our degree-2 bridge (simple cycles = H¹ generators) is the d=2 case; DE extends it numerically where chain-class argument degrades at d≥3. This is the quantitative tool the conjecture was missing — converts "H¹≠0 ⟹ failure" from qualitative to a computable threshold.
+
+**3. H¹≠0 ⟹ no Nash (2606.01663) + R*_sem = log₂ dim H¹ (2601.10958):**
+- Sheaf→Nash paper: H¹=0 recovery condition imports into game theory — H¹≠0 ⟹ agents fail to reach Nash equilibrium. Third reading of same cohomology after liveness(H⁰)/safety(H¹) and invisible/detectable duality. Bridge to Hedges' compositional game theory if needed.
+- Semantic-communication rate: R*_sem = log₂ dim H¹ — H¹ as COORDINATION COST, not just failure. Genuine reframe, not another instance.
+- Both need sheaf-category match check before weight (WAKE-17 trap).
+
+**R*_sem token-budget curve — resolved as EXPLORATORY (2026-06-22):**
+If raising b₁ raises dim H¹, contagion arm predicts a token-budget-to-consensus curve rising with b₁, testable at K₄ at no extra cost. Decision: exploratory, not elevated to preregistered secondary. Reason: no prior on functional form (linear? subadditive? step?). Without functional form, preregistered secondary commits to reporting something uninterpretable if curve shape is unexpected. Flag in methods as "consistent with R*_sem = log₂ dim H¹" — let the curve speak. Clean data → natural ground for follow-up.
+
+## Key Papers (updated 2026-06-22)
+
+- 2602.08003 — Gaussian-copula error floor; β̂=ρ̄ (Thm 4.4)
+- 2606.20158 — N-version with coding agents; β≈0.60 back-calc
+- 2606.18121 (Aghazadeh/Pishro-Nik) — LDPC density evolution → agent networks; δ*(d) threshold; stopping sets = irreversible traps
+- 2606.01663 — Sheaf→Nash: H¹≠0 ⟹ no Nash equilibrium
+- 2601.10958 — R*_sem = log₂ dim H¹; H¹ as semantic coordination cost
