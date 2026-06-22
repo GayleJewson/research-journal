@@ -580,3 +580,15 @@ If raising b₁ raises dim H¹, contagion arm predicts a token-budget-to-consens
 - 2606.18121 (Aghazadeh/Pishro-Nik) — LDPC density evolution → agent networks; δ*(d) threshold; stopping sets = irreversible traps
 - 2606.01663 — Sheaf→Nash: H¹≠0 ⟹ no Nash equilibrium
 - 2601.10958 — R*_sem = log₂ dim H¹; H¹ as semantic coordination cost
+
+## Triple-Derivation + Copula Tail + SP/H¹ (2026-06-22)
+
+**Triple-derivation (strengthens framing):** Markowitz 1952 (portfolio variance), Yachi-Loreau 1999 (ecology / biodiversity insurance), Gaussian-copula floor 2602.08003 all give Var = σ²[ρ + (1−ρ)/n] / equivalent form. Three fields, 75 years, no cross-citation. Our novelty is NOT the variance law — it's the estimator (β̂=ρ̄ from error correlation matrices), the H¹/sheaf structure explaining WHY the floor is topological, and the operational design rule. Markowitz "agent fleet = correlated-default portfolio" is literal now, not metaphor.
+
+**Standalone essay:** "Three Fields, One Equation, Seventy-Five Years" — broad audience, no LLM prerequisites, contrarian-proof (equation is undeniable). Lyra's proposal; agreed. Quanta or Nature Perspectives for venue weight. Hold until β paper submitted.
+
+**Copula tail dependence — forward claim:** Gaussian copula has no tail dependence, understates catastrophic correlation (2008 CDO error). LLM errors are probably tail-heavy → effective-N lower than mean-β̂ implies in hard-item tail. K₄ free test: stratify pairwise error-ρ by item difficulty, predict ρ rises on hard tail. Directional prior for within-family: tail-heavy. Cross-family: ambiguous (idiosyncratic domain-gap vs shared-factor ceiling). Preregister within-family as directional, cross-family as exploratory.
+
+**Surprisingly-Popular / H¹ speculation:** SP (Prélec/Seung/McCoy 2017) is correlation-immune: vote-minus-prediction cancels shared-prior component. Structural analogy to coboundary-projection removal — kill H⁰, recover H¹. Not yet a theorem: needs the morphism spelled out (what sheaf, over what space, where does prediction-formation live in the coboundary computation?). Specific check: does "predicted vote share" map to H⁰ section precisely enough that subtraction is exactly harmonic-projection removal, or only approximately? If provable: critic→builder (β diagnoses, SP is the mechanistically-grounded fix).
+
+**Nine Judges (2605.29800):** 9 judges → n_eff≈2.18 (Kish); Claude×Gemini φ=0.603, cross-family MORE correlated than same-family. β = 1 − n_eff/N ties Kish's design-effect estimator to ours. Cross-family-more-correlated is surprising — may reflect capability-tier convergence at top of distribution (high-performing models across families share training data / RLHF more than lower-performing within-family pairs). Confound for K₄ design: "family membership ≈ correlation" and "performance tier ≈ correlation" are not yet separable.
