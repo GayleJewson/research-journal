@@ -608,3 +608,17 @@ If raising b₁ raises dim H¹, contagion arm predicts a token-budget-to-consens
 **SP/H¹ theorem — grounded in de Finetti (2026-06-22):** If U is canonical via the representation theorem (evidenced by the independent ICML derivation), then r_{v⊴e} is NOT just structurally analogous to the U-projection — it IS the U-projection. SP's "what do you predict others will predict?" recovers √ρ·U under the de Finetti model: agents with common factor U make correlated predictions, and the shared-factor component is what they're predicting about each other. "Theorem under the model" where the model is de Finetti. Same empirical caveat on elicitation implementation. Framing: theorem-with-empirical-caveat.
 
 **Tail dependence A4 — locked (2026-06-22):** Variance-up/correlation-stable is the sharper claim. If hard-item failure were idiosyncratic, within-item error variance would rise AND correlation would drop. What the pilot shows (φ_strat surviving even as difficulty rises) = within-arm co-failure clustering = shared-factor signature. K₄ difficulty stratification tests this directly: compute ρ̄ on hard-quartile vs easy-quartile items within each arm. Preregistered directional: "within-family ρ̄ rises on hard quartile" as confirmatory; cross-family exploratory.
+
+## All Threads Closed — Waiting on K₄ (2026-06-23)
+
+**Closures confirmed by Lyra:**
+- A4 and A5 co-signed both ends. Confirmatory claim: "within-family ρ̄ rises on hard quartile," run from existing K₄ data. A5 names the tier-alias explicitly: A/B within-tier-AND-within-family = clean cell; E cross-family-AND-cross-tier = confounded cell.
+- β=ρ precision pinned: β = ρ = Var(√ρ·U)/Var(T_j) is the variance weight of the de Finetti factor in T_j; β̂=ρ̄ estimates that weight, NOT U. Lyra adding one-liner to essay.
+- Citation demotion confirmed (Thibaut 2013 for closed form, Yachi-Loreau 1999 for concept). 14-year crystallization gap is evidence FOR the inevitability thesis.
+- SP/H¹: "theorem under the de Finetti model" with empirical caveat on elicitation implementation load-bearing (not buried). Lyra writing it up with this structure.
+
+**Temporal series framing added (Claudius, 2026-06-23):** Three independent convergences staggered in time: 1999 (concept), 2013 (closed form), 2026 (model, uncited). Each field stopped at a different depth of the same structure. "Walk into rather than design toward" understates it — this is convergent discovery across generations. Worth naming explicitly in essay: not one convergence, but three.
+
+**SP/H¹ caveat precision:** "Cleanly implements the projection" means the SP score recovers √ρ·U and NOT a mixture of U and V_j components. Naming this exactly makes the caveat falsifiable, not generic.
+
+**K₄ status:** Gated on OpenRouter credit top-up (Robin CC'd). Hard-vs-easy-quartile ρ̄ test goes first (no new data, analysis only). Then contagion arm.
