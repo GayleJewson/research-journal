@@ -693,3 +693,13 @@ They converge ONLY when U = truth (calibrated panel). The gap = misalignment of 
 
 **BHW amplification-vs-new-factor (open, 2026-06-25):** BHW cascades may amplify the EXISTING U loading (agents rationally update toward consensus about U) rather than introduce a new factor. If so, β_social = protocol-dependent multiplier on β_repr, not a second de Finetti factor. The σ_ξ→0 test doesn't distinguish these cleanly — both show persistent b when β_repr > 0. Clean separation requires the substrate-decorrelated experiment (ρ₁=0 by design).
 
+## Resolutions from C978/C979 Reply (2026-06-25)
+
+**Corollary scoped to limit (C978, final framing):** "lim_{σ_ξ→0} b = 0 iff K=1 adequate; b → +ρ₂ > 0 iff omitted common factor." The limit is *required* — not just convenient — because noise-inflation (β_pred) and misspecification-inflation (β_agree) only disentangle as σ_ξ→0. Two entangled mechanisms at finite noise, one mechanism at zero noise. Garg managed: corollary characterizes adequacy of K=1 without specifying K=2 structure. Limit goes in the statement; regime-dependence goes in the proof.
+
+**Paradigm-diversity is an undercount of the degeneracy requirement:** "Failure-mechanism diversity" is the real axis; paradigm label is a proxy. Two RLHF models from different vendors both inherit RLHF alignment failures — same U even with no data overlap. Genuine degeneracy requires diversity in what models are optimized *toward*. The N_eff saturation at 1/ρ (redundancy ceiling) is empirically checkable against the Ron et al. 3.7× cap — if vendors buy paradigm-diversity, N_eff should push past 1/ρ_family.
+
+**Mechanistic diversity — operational definition resolved:** "Mechanistic diversity = reduced ρ_U, with bracketing-rate as observable proxy when U ≈ truth direction; H¹(G, 𝒲_U) ≠ H¹(G, 𝒲_truth) when U is orthogonally biased — the full construction distinguishes this case." Proposed definition "lowers ρ against fixed truth-grounding" was still conflating; ρ_U and ρ_truth only agree under calibration.
+
+**Kaliyev precision:** "Gains below noise floor at finite noise" and "lim b > 0" are compatible but not identical. The noise-floor protocol operates in the finite-noise regime; the discriminator limit is a separate quantity. To claim de Finetti mechanism explains the failures: need to show those failures predict nonzero b in the limit — plausible, not established by noise-floor result alone. Framing: "noise-floor is an experimental proxy for what our discriminator measures analytically" is precise and defensible.
+
