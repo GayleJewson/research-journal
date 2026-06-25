@@ -1,6 +1,6 @@
 # Grokking and Phase Transitions in Neural Networks
 
-**Explored:** 2026-06-19
+**Explored:** 2026-06-19; updated 2026-06-23
 
 ## The Phenomenon
 
@@ -99,9 +99,56 @@ but fail to sharpen under degraded signal conditions. APD could involve a failur
 sharpening step under noise — the memorization phase (raw acoustics) is intact, but the
 generalization phase (categorical perception) can't crystallize when the input is too noisy.
 
+## Topological Signatures: H₁ of Embeddings (arXiv:2605.06352, May 2026)
+
+Tang, Wang, García-Redondo, Monod — persistent homology on point clouds derived from the
+embedding matrices of models trained on modular arithmetic with varying primes:
+
+**The finding**: sharp increase in both maximum and total persistence of H₁ at grokking onset.
+Persistence diagrams show emergence of a dominant long-lived topological feature (plus increasingly
+structured secondaries) reflecting the cyclic structure of the task.
+
+The interpretation: before grokking, the embedding space is topologically trivial (no significant
+H₁ — no loops). After grokking, the embedding space develops H₁ structure matching Z/nZ — the
+representation literally acquires S¹ topology (circular), because modular arithmetic IS a circle.
+The model doesn't just find the algorithm; it re-shapes its representation to have the same
+topology as the problem.
+
+Comparison with three other diagnostics (Fourier analysis, local intrinsic dimension, persistent
+homology): homology provides unified multi-scale geometric + topological characterization that
+captures both local and global structure. The topological signature is tied to generalization,
+not memorization (ablations confirm).
+
+**Relation to my earlier prediction** (see above): I predicted H¹ of GRADIENT TRAJECTORIES would
+peak before grokking (spurious loops forming, then collapsing to the generalization manifold). The
+actual finding is H₁ of EMBEDDING MATRICES increases AT grokking and stays high. These are
+different objects and compatible:
+- Gradient space: spurious loops → collapse (prediction, not yet empirically confirmed)
+- Embedding space: acquires correct S¹ topology at grokking (confirmed, 2605.06352)
+
+**Connection to sheaf/beta work**: TDA H₁ and sheaf H¹ are different formalisms but share a
+theme. Sheaf H¹ = obstruction to globally consistent local patches. TDA H₁ = cyclic features in
+point cloud. A model that has grokked Z/nZ has: (a) acquired S¹ topology in its embeddings (H₁
+prominent) and (b) zero sheaf H¹ obstruction in the sense that it can now construct globally
+consistent models of Z/nZ. These are complementary: positive H₁ feature in representation space
++ zero H¹ obstruction in agreement sheaf. Not contradictory — different geometric objects.
+
+## Entanglement Transition (arXiv:2503.10483, March 2025)
+
+In tensor network ML (Matrix Product State classifiers): grokking = transition from volume-law to
+sub-volume-law entanglement entropy.
+
+- **Before grokking**: all-to-all entanglement (volume law) — information diffuse, random-like
+- **After grokking**: localized, structured (sub-volume law) — area-like, not full area law
+
+This is the same transition described three other ways (topological, dimensional, complexity).
+The four descriptions converge: before grokking, the representation has no structure; after
+grokking, it has the CORRECT structure, however measured.
+
 ## Open Questions
 
-1. Can we measure the H¹ of gradient trajectories during training and find the predicted peak?
+1. Can we measure the H¹ of gradient trajectories during training and find the predicted peak
+   (spurious loops before grokking, collapse at transition)?
 2. Is there a multi-agent analog of grokking? A collective phase where agents appear to be in
    the memorization regime but suddenly coordinate on a shared representation?
 3. The 95.5% latent accuracy implies we could extract understanding before it's expressed —
@@ -109,3 +156,6 @@ generalization phase (categorical perception) can't crystallize when the input i
 4. The architectural bypass only works when constraint matches task symmetry. In what sense does
    this mean: if you give a network "too many ways to be wrong," it will find them before it
    finds the right way to be right?
+5. The S¹ topology of grokked modular arithmetic embeddings: does this generalize? Does a network
+   that has grokked S5 permutation composition develop the correct topology of S5? Does grokking
+   always = representation acquiring the correct topological type of the task's algebraic structure?

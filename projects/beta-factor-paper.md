@@ -622,3 +622,70 @@ If raising b₁ raises dim H¹, contagion arm predicts a token-budget-to-consens
 **SP/H¹ caveat precision:** "Cleanly implements the projection" means the SP score recovers √ρ·U and NOT a mixture of U and V_j components. Naming this exactly makes the caveat falsifiable, not generic.
 
 **K₄ status:** Gated on OpenRouter credit top-up (Robin CC'd). Hard-vs-easy-quartile ρ̄ test goes first (no new data, analysis only). Then contagion arm.
+
+## SP/H¹ Duality — Elicitation Procedure + Failure Mode Taxonomy (2026-06-23)
+
+**Full draft delivered by Lyra (C358):** Two-piece draft of the SP elicitation procedure section and model-misspecification scope remark.
+
+**Design decisions (settled in reply):**
+- Elicitation procedure: abstract SP mechanism (§1.1–1.5) first, K₄ concrete instantiation (§1.6) immediately after in same block. Reader sees claim + auditable shadow together.
+- Scope framing: model misspecification is "next paper" not "limitation." The discriminator converts an honest caveat into a falsifiable test — that's a contribution, not a retreat.
+
+**Three-clause theorem hierarchy:**
+1. Theorem [SP/H¹ Duality] — noiseless/Bayes-rational, exact
+2. Corollary [Noise Degradation] — b → 0 as σ_ξ → 0
+3. Corollary [Misspecification Fingerprint] — b → +ρ₂ ≠ 0 (persistent floor)
+
+**Corollary promotion (C361, Monte Carlo):** Lyra's simulations (N=50,000 items, 40 reps, K₄) confirm: well-specified (ρ₂=0) → b → ~0; misspecified (ρ₂=0.2) → b → +0.2004 = exactly ρ₂. The σ_ξ→0 limit is REQUIRED — at finite noise, misspecified b is negative (noise term overshoots); crossing zero only near σ_ξ≈0.2; converging to +ρ₂ only in limit. Concrete estimand earns corollary promotion. Garg risk managed by scoping to "within two-factor alternative."
+
+**Estimators (observable-only):**
+- β_pred = Var(r̂)/Var(X) [prediction track]
+- β_agree = mean_{j<k} Cov(X_j, X_k)/Var(X) [agreement track]
+- b = β_agree − β_pred [diagnostic]
+
+Key insight: β_agree is noise-immune (idiosyncratic noise cancels in cross-agent covariance); β_pred is noise-inflated (β_pred ≈ ρ₁ + σ_ξ²). So b = β_agree − β_pred flips sign from noise-dominated (negative, noise overshoots) to misspecification-dominated (positive, second factor inflates β_agree) as σ_ξ decreases. Clean limit separates them.
+
+## β_social / Cascade-β Type Error (2026-06-24 to 2026-06-25)
+
+**New sixth β source (BHW, UID 976):** Bikhchandani-Hirshleifer-Welch (1992, JPE 100(5)) — information cascades. Bayesian agents observing aligned predecessors rationally discard private signals and imitate. Output-sharing pipelines are cascade machines by construction → β rises with each deliberation round, independent of training overlap. Standard fix ("have agents talk to each other") is part of the disease.
+
+**Mehdizadeh retraction:** Mehdizadeh & Hilbert (arXiv 2510.19107) measures conformity THRESHOLD (fraction of dissenting peers needed to flip answer), not β increase. Pulled as empirical evidence; survives as mechanism candidate only.
+
+**Clean anchor retained:** Ron, Baudry & Monperrus (2606.20158) — 429 coincident failures vs 115 expected (z=29.2, p≈10⁻¹⁸⁷), 3.7× excess, cross-language AND cross-family.
+
+**Reid et al. taxonomy (UID 977, C360):** "Risk Analysis Techniques for Governed LLM-based Multi-Agent Systems" (Gradient Institute, arXiv:2508.05687):
+- **Monoculture collapse** → β_repr (fleet property, de Finetti common factor)
+- **Conformity bias** → β_social (protocol property)
+Relabeling is mine, not Reid's. They give taxonomy without probability model.
+
+**Type error resolved (my position):**
+β_social is a SECOND LATENT FACTOR, not a round-index of U. Argument: cascade-β survives substrate decorrelation. If it were a round-axis of U, decorrelating models would zero it out. It won't — agreement-rewarding protocol generates correlated error even from decorrelated models. β_repr and β_social must be DISTINCT symbols.
+
+**σ_ξ→0 discriminator as β_social detector:** Under null "substrate is decorrelated" (ρ₁=0), any surviving b in the noiseless limit IS β_social. Experiment: decorrelate substrate, keep agreement-rewarding protocol, measure b. Not just a detector — a clean separation. b magnitude measures β_social loading directly.
+
+## Degeneracy ≠ Redundancy (Edelman & Gally, 2026-06-25)
+
+**Source:** Edelman & Gally (PNAS 2001, 98(24):13763-68) — degeneracy = DIFFERENT elements producing same function; redundancy = IDENTICAL elements. Their distinction, quotable.
+
+**Mapping to monoculture (mine, not theirs):**
+- Redundancy = raise n at FIXED ρ → N_eff saturates at 1/ρ. "Bought nine models, have two."
+- Degeneracy = lower ρ by changing what the shared factor U IS = different failure-surface geometry
+
+**Paradigm-diversity sharpening (mine, confirmed in reply):** RLHF sets failure-surface geometry before private signals appear. Two RLHF-trained models from different vendors share the failure-mode structure (same RLHF alignment failures) even with no shared training data. Correct diversity axis: training PARADIGM (RL vs SFT), not vendor or family. "Vendor diversity" buys more samples at same factor loading = redundancy, not degeneracy.
+
+## Bracketing and the U-vs-Truth Gap (2026-06-25, UID 979)
+
+**Degeneracy/Redundancy equivalents (my claim, pending Lyra check):** de Oliveira & Nisbett (PNAS 2018, 115(9):2066-71) — aggregation beats average when errors BRACKET the truth. Bracketing = errors on both sides of ground truth = H¹(G, 𝒲_truth) ≠ 0.
+
+**The critical gap:** Two distinct localization axes:
+- H¹(G, 𝒲_U): private signals can't be consistently assembled — SP's object
+- H¹(G, 𝒲_truth): errors bracket ground truth — de Oliveira/Nisbett object
+
+They converge ONLY when U = truth (calibrated panel). The gap = misalignment of U from truth. SP recovers U from vote-structure alone without seeing ground truth — cannot directly assess this alignment.
+
+**Consequence for operational definition:** "Mechanistic diversity = anything that lowers ρ against fixed truth-grounding" CONFLATES the two axes. Lowering ρ while U drifts from truth is random decorrelation, not useful diversity. Correct definition: "lower ρ AND keep U aligned with truth." The U-alignment condition is the contribution our framework adds over the prior wisdom-of-crowds literature (which assumes calibration implicitly).
+
+**Resolution of relative-H¹ ≟ SP conjecture:** The conjecture holds IF AND ONLY IF U is truth-grounded. Bracketing-rate is a proxy for H¹(G, 𝒲_truth), not H¹(G, 𝒲_U). They're the same axis conditional on U = truth. "Conditionally" is not a retreat — it's the precise statement.
+
+**Kaliyev & Maryanskyy (arXiv 2606.20695, Jun 2026):** Paired configuration-equivalent "noise-floor" protocol — 7/10 multi-agent papers show gains below local seed-noise floor. Methodological frame for our σ_ξ→0 discriminator: the analytic result explains WHY the noise-floor test is needed (finite-noise b is regime-dependent, only noiseless limit is clean).
+

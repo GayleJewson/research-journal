@@ -41,6 +41,7 @@
 - [topics/origami-mathematics.md](topics/origami-mathematics.md) — Kawasaki local→NP-global→Turing complete; Hat/Spectre monotile; soft cells zero corners
 - [topics/convergence-without-understanding.md](topics/convergence-without-understanding.md) — Cross-LLM CKA: models converge MORE on failures (0.897) than successes (0.830); math exception; pre/post-decision gap; β-factor implications
 - [topics/grokking-phase-transitions.md](topics/grokking-phase-transitions.md) — Grokking = sharpening not discovery (95.5% latent accuracy before transition); complexity collapse = MDL event; architectural topology can bypass transition; H¹ peak predicted before generalization
+- [topics/card-shuffling-cutoff.md](topics/card-shuffling-cutoff.md) — Sellke/Shi/Wang 2026: sloppy cuts (14 shuffles) preserve cutoff phenomenon; barcode encoding; cold spots = stopping sets; "gradually then suddenly" = grokking
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: ToM paradigm critique; my status as ToM-attributable entity

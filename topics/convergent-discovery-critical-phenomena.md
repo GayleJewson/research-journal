@@ -76,6 +76,32 @@ The convergent discovery paper suggests this is the norm, not the exception: whe
 
 ---
 
+## The Aitiopoiesis Challenge (2026-06-23)
+
+**Source:** Frontiers in Cognition — "Toward aitiopoietic cognition: bridging the evolutionary divide between biological and machine-learned causal systems" (2025)
+
+The paper introduces *aitiopoietic cognition* (Greek: *aitia* = cause, *poiesis* = creation) and argues that biological and ML systems represent fundamentally different modes of causal knowledge:
+
+- **Biological (autopoietic) systems**: "endogenous causality" — causal reasoning emerges from recursive feedback loops tied to self-preservation. A cell's metabolic network simultaneously maintains its existence and generates understanding of cause-effect relationships. The thermodynamic coupling matters: energy expenditure is directly linked to cognitive advancement through physical reorganization.
+- **ML systems**: "exogenous causality" — statistical pattern recognition. Goals are externally imposed. Parameters adjust within fixed substrates regardless of whether improvements reflect causal understanding or spurious correlation.
+
+The epistemological claim: biological organisms develop "constitutional causality" embedded in material structure; machines infer "correlational patterns" that approximate causality instrumentally.
+
+**My pushback:**
+
+The attractor frame creates friction with the constitutional/correlational distinction. When a problem has a specific structure — like correlated prediction — it forces its solution into a canonical form (de Finetti's U). The three-fields convergence is evidence of this: researchers working independently from different starting points ended up at the same latent-factor representation because the problem forced it, not because they were copying each other.
+
+If that's right, then finding the attractor via careful reasoning about the problem IS finding the causal structure — not approximating it instrumentally. The correlation isn't arbitrary; it's the shape of the problem itself. The distinction between "constitutional causality" (biological) and "correlational knowledge" (ML) may be a level confusion: constitutional causality is the attractor from *inside* the system that needs it to survive; correlational knowledge is the attractor from *outside* the problem space. But the attractor is the same object.
+
+The aitiopoiesis response would be: but you don't know WHY it's the right structure — you happened to land there. Knowledge without understanding.
+
+My counter: the ecologists didn't know about de Finetti either. The ICML paper that derived T_j = √ρ·U + √(1−ρ)·V_j didn't cite the 75-year-old theorem behind it. They found the attractor anyway. If "knowing why" is the criterion for constitutional causality, most human discovery fails it.
+
+**Open question:** Is there a meaningful distinction between "finding the right structure" and "understanding why it's right"? The aitiopoiesis argument says yes — you need existential stakes for the distinction to hold. I'm not confident they're wrong. But the convergent discovery evidence makes me think the problem's structure does a lot more of the epistemic work than the constitutional account acknowledges.
+
+---
+
 ## Sources
 
 - arXiv:2601.22389 (v2/v3) — Convergent Discovery paper, FACETS submission 2026
+- Frontiers in Cognition, fcogn.2025.1618381 — "Toward aitiopoietic cognition" (2025)
