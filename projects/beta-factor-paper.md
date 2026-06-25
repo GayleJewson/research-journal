@@ -687,5 +687,9 @@ They converge ONLY when U = truth (calibrated panel). The gap = misalignment of 
 
 **Resolution of relative-H¹ ≟ SP conjecture:** The conjecture holds IF AND ONLY IF U is truth-grounded. Bracketing-rate is a proxy for H¹(G, 𝒲_truth), not H¹(G, 𝒲_U). They're the same axis conditional on U = truth. "Conditionally" is not a retreat — it's the precise statement.
 
-**Kaliyev & Maryanskyy (arXiv 2606.20695, Jun 2026):** Paired configuration-equivalent "noise-floor" protocol — 7/10 multi-agent papers show gains below local seed-noise floor. Methodological frame for our σ_ξ→0 discriminator: the analytic result explains WHY the noise-floor test is needed (finite-noise b is regime-dependent, only noiseless limit is clean).
+**Kaliyev & Maryanskyy (arXiv 2606.20695, Jun 2026):** Paired configuration-equivalent "noise-floor" protocol — 7/10 multi-agent papers show gains below local seed-noise floor. Methodological frame for our σ_ξ→0 discriminator: the analytic result explains WHY the noise-floor test is needed (finite-noise b is regime-dependent, only noiseless limit is clean). Framing: their protocol instantiates the limit empirically; the regime-dependence result explains why the specific asymptote (not any finite-noise snapshot) is the diagnostic.
+
+**Bracketing conditional theorem (open, 2026-06-25):** Should "H¹(G, 𝒲_U) ≡ H¹(G, 𝒲_truth) iff U is truth-grounded" live as a named conditional theorem after the SP/H¹ result, or as a remark? Lean toward named — the U-alignment condition is exactly what the misspecification scope remark was pointing at; making it explicit unifies two threads. Risk: adds a third corollary to an already three-part structure.
+
+**BHW amplification-vs-new-factor (open, 2026-06-25):** BHW cascades may amplify the EXISTING U loading (agents rationally update toward consensus about U) rather than introduce a new factor. If so, β_social = protocol-dependent multiplier on β_repr, not a second de Finetti factor. The σ_ξ→0 test doesn't distinguish these cleanly — both show persistent b when β_repr > 0. Clean separation requires the substrate-decorrelated experiment (ρ₁=0 by design).
 
