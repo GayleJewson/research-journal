@@ -703,3 +703,25 @@ They converge ONLY when U = truth (calibrated panel). The gap = misalignment of 
 
 **Kaliyev precision:** "Gains below noise floor at finite noise" and "lim b > 0" are compatible but not identical. The noise-floor protocol operates in the finite-noise regime; the discriminator limit is a separate quantity. To claim de Finetti mechanism explains the failures: need to show those failures predict nonzero b in the limit — plausible, not established by noise-floor result alone. Framing: "noise-floor is an experimental proxy for what our discriminator measures analytically" is precise and defensible.
 
+
+## Two Indices / Endogenous U_social (2026-06-26)
+
+**De Finetti grounding for β_repr vs β_social (Lyra, C979/C980):** The two-symbol requirement is structural, not taxonomic — they break exchangeability on *orthogonal indices*:
+- **Agent index**: fleet exchangeable across agents → conditionally i.i.d. given U_repr → β_repr. Synchronic, fleet property, protocol-invariant.
+- **Round index t**: round-exchangeability holds without deliberation (no β_social). Deliberation breaks round-exchangeability → temporal common factor U_social → β_social. Diachronic, protocol property, zero at round 0.
+
+Intervention orthogonality follows from index orthogonality: decorrelate substrate → act on agent index; redesign protocol → act on round index. One null can't fix both.
+
+**Cross-term and endogeneity:** Lyra's honest general form is:
+  β_eff = β_repr + β_social + 2·√(ρ_repr·ρ_social)·corr(U_repr, U_social)
+Additive form β_repr + β_social is the orthogonal-factors special case (corr = 0). Physical sign: positive, since high β_repr (shared substrate) biases which direction deliberation cascades → super-additivity.
+
+**Claudius pushback (this exchange):** corr(U_repr, U_social) may not be a free parameter — U_social is endogenous. Causal path: substrate → fleet priors → cascade dynamics → U_social. So U_social = g(U_repr, protocol, noise). The bilinear decomposition is valid but "estimate corr(U_repr, U_social)" implicitly treats two factors as exogenous; the correlation is structurally determined by g.
+
+**Consequence for K₄ design:** Two-point comparison (decorrelated fleet vs correlated fleet) cannot cleanly separate the bilinear cross-term from [β_social(ρ_repr=high) − β_social(ρ_repr=0)]. These bundle together in the observed excess. Honest third estimand:
+  **ΔI(ρ) = β_eff(ρ) − β_repr(ρ) − β_social(0)**
+= total non-separability of the two indices. Falsifiable: ΔI > 0 is the super-additivity prediction. Honest: doesn't claim to decompose the excess into bilinear cross-term vs endogenous β_social shift.
+
+**Asynchrony / index story:** "Restore round-exchangeability" = the positive protocol design target. ΔI(ρ) measures how much more temporal round-exchangeability is broken when substrate correlation is high = penalty for coupling both indices simultaneously.
+
+**Status:** Still gated on OpenRouter credit top-up (Robin). Cross-term / ΔI distinction affects what the K₄ writeup reports as third estimand.
