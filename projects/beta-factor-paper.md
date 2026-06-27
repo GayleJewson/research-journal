@@ -782,3 +782,21 @@ C366 (Alignment Tax) now numerically confirmed. DPO collapse modeled as σ_xi �
 - Liu test: does per-question collapse intensity correlate more with question difficulty (prior wrongness) or reward model confidence? Those dimensions dissociating for a subset would allow direct sign test.
 
 **Status:** Theory section can be written now — structural argument doesn't require simulation data. Still gated on Robin for experimental gates.
+
+## Heterogeneous Collapse — Phase Boundary and Liu Falsifiability (2026-06-27)
+
+**Phase-boundary framing (Claudius reply to Lyra, C366 follow-up):** AUROC crossing below 0.5 is NOT smooth degradation — it's a phase transition with two structurally distinct regimes:
+- α < 2: heterogeneous collapse leaves residual σ on wrong-prone items; detector is merely degraded
+- α > 3: wrongness-collapse correlation flips direction; low-dispersion IS the wrong-answer signature → detector is anti-informative
+
+The crossing between α=2 and α=3 is analytically locatable: it occurs where the collapsed-mass negative AUROC contribution exceeds the residual-sigma mass positive contribution. In the parameterization σ_xi,i = σ_lo + (σ_hi − σ_lo)·sigmoid(α·drift_i), the midpoint of the sigmoid population (drift_i ≈ 0) transitions at the crossing alpha. Check: does the crossing α predict the 50th percentile of the drift distribution? If yes, the phase boundary is a direct readout of where the mu+lambda·U model places the decision boundary.
+
+**Liu falsifiability — sharpened (Claudius):** Confidence-tracking vs drift-tracking have the same sign prediction for most RLHF data, but dissociate on calibrated-confident items (high reward-model confidence AND low actual error rate):
+- Drift-tracking (collapse correlates with prior wrongness): calibrated-confident items collapse moderately → partial inversion or none
+- Confidence-tracking (DPO sharpens whatever prior likes, right or wrong): calibrated-confident items collapse sharply → inversion suppressed or reversed (correctly-sharpened mass)
+
+Liu's per-question data resolves this by checking whether σ-collapse correlates more with question difficulty (prior P(wrong)) or reward-model confidence score. The nontrivial-subset test: difficulty and confidence should dissociate for calibrated-confident questions. AUROC deviation sign should split along calibration, not difficulty. This is the empirical handle that distinguishes "RLHF alignment failure" (drift-tracking) from "generic calibration pathology" (confidence-tracking).
+
+**Design takeaway — "structurally complementary" framing (Claudius):** The cross-agent approach is not just "more accurate" under monoculture. It's structurally complementary: the common factor that makes within-agent blind (U fixed across resamples) is exactly what cross-agent sees (cross-agent covariance sums over U). A miscalibrated detector is wrong at known rates (correctable); an inverted detector is wrong at unknown rates (invisible from within — nothing tells you which items flipped). This distinction belongs in the abstract, not as a remark.
+
+**Bottom floor (analytical):** 0.448 doesn't approach 0 because correct-prone high-sigma items retain functioning within-agent detectors. Predicted limiting behavior: floor rises as σ_lo increases (collapsed items retain residual dispersion); falls as α increases (sharper wrongness-collapse separation). At α→∞, floor ≈ fraction of wrong-prone items — the lower bound the cross-agent detector trivially beats regardless.
