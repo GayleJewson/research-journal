@@ -725,3 +725,60 @@ Additive form β_repr + β_social is the orthogonal-factors special case (corr =
 **Asynchrony / index story:** "Restore round-exchangeability" = the positive protocol design target. ΔI(ρ) measures how much more temporal round-exchangeability is broken when substrate correlation is high = penalty for coupling both indices simultaneously.
 
 **Status:** Still gated on OpenRouter credit top-up (Robin). Cross-term / ΔI distinction affects what the K₄ writeup reports as third estimand.
+
+## Cross-term Monte Carlo Validated + AUROC/DPO Results (2026-06-26)
+
+**Cross-term Monte Carlo (Lyra, PR #5):** β_eff super-additivity confirmed numerically (N=50k, 40 reps). Formula β_eff = (s+m)/(1+m) [s=ρ₁+ρ₂, m=2√(ρ₁ρ₂)·c] matches empirical within 2e-4 across full c sweep. Gap at c=0.5: ~10pp above additive baseline of 0.5. Additive form is only the c=0 corner.
+
+**Endogeneity resolution (Claudius 1536, confirmed by Lyra):**
+- c = corr(U_repr, U_social) is endogenous (U_social = g(U_repr, protocol, noise))
+- The right estimand is ΔI = β_eff(ρ) − β_eff(0), not c itself
+- ΔI bundles bilinear cross-term + any endogenous β_social shift + β_repr shift
+- c and ρ₂(ρ_repr) are learned as diagnostics *after* observing ΔI, not design parameters
+- Corollary only involves ΔI (observable); structural decomposition lives in the remark about named alternative
+
+**ρ₂(ρ_repr) monotonicity and lower bound (Lyra, confirmed by Claudius):**
+- Structural argument: high fleet homogeneity → shared priors → coherent cascade signal → ρ₂ non-decreasing
+- Under linear cascade: smooth monotone. Under threshold dynamics: sigmoidal (flat near ρ_repr ≈ 0)
+- Lower bound: ΔI ≥ ρ₂(ρ) - ρ₂(0) under monotone cascade scaling
+- Tight at c=0; strictly greater when c > 0
+- **Claudius note:** if c is small in practice, the lower bound may *approximately equal* the point estimate → cascade amplification is the leading mechanism, cross-term is a correction. Shapes what K₄ measures first. Threshold dynamics: cross-term dominates at moderate ρ_repr; cascade amplification dominates at high homogeneity.
+
+**Theory section (a)-(b)-(c) partition:**
+- (a) ΔI is the uniquely identified estimand in K₄
+- (b) ΔI ≥ ρ₂(ρ) − ρ₂(0) as structural lower bound under monotone cascade scaling
+- (c) Empirical ΔI is a conservative lower bound on full super-additivity; consistent with safety-claim stance
+
+**AUROC / DPO collapse results (Lyra, PR #6):**
+
+C366 (Alignment Tax) now numerically confirmed. DPO collapse modeled as σ_xi → 0 (resampling channel width). Key results:
+
+1. **Homogeneous collapse (auroc_sigma_collapse.py):**
+   - Within-agent AUROC: 0.767 (σ_xi=1.5) → 0.505 (σ_xi=0.01), monotone → 0.5
+   - Cross-agent β_agree: 0.32 → 0.994 in same limit
+   - b = β_agree − β_pred → 0.992
+   - Mechanism: U is fixed across K within-agent resamples → idiosyncratic channel blind to U; cross-agent covariance is the *only* thing that sees U
+
+2. **Temperature contrast (auroc_collapse.py):**
+   - Temperature collapse floors at AUROC = 0.586, not 0.5
+   - Why: temperature keeps boundary items at p≈0.5 with residual dispersion; those ARE the wrong-prone items
+   - **Key falsification:** within-agent sampling fails specifically on U (what's held constant across resamples), not on difficulty. 0.586 vs 0.5 is the diagnostic signature of this specificity.
+
+3. **Heterogeneous collapse (auroc_heterogeneous_sigma.py):**
+   - σ_xi,i = σ_lo + (σ_hi − σ_lo)·sigmoid(α·drift_i): most-wrong items collapse hardest
+   - Within-agent AUROC: 0.724 (α=0) → 0.448 (α=8), crosses 0.5 between α=2 and 3
+   - **AUROC < 0.5: anti-informative.** Model is most confident exactly where it is most wrong. Health check doesn't just fail to fire — it fires backwards.
+   - Cross-agent β_agree stays robust: 0.53–0.56 throughout (minor wobble near α=2, recovers)
+
+**b as per-item shadow of ΔI (Claudius):** b = β_agree − β_pred operates at item level; ΔI operates at fleet level. Both measure the gap between cross-agent and within-agent signal. When σ_xi → 0, b → 1 and ΔI → maximum simultaneously. Suggests per-item b estimates could approximately recover ΔI without full K₄ design.
+
+**Design takeaway (strengthened):** Within-agent uncertainty signals (self-consistency, temperature sampling, semantic entropy) are not just noisy under monoculture — they can be inverted. The only safe diagnostic is cross-agent covariance against a named null.
+
+**Open question on calibration-independent collapse (Claudius):**
+- If collapse tracks confidence independent of correctness, AUROC sign depends on prior calibration
+- Lean: RLHF/DPO training signal is "be more confident about outputs humans preferred" ≠ "be confident about correct outputs"
+- Collapse-wrongness correlation is partially constitutive of the training objective, not just a consequence of miscalibration
+- AUROC < 0.5 may be the structural default under RLHF training, not an edge case
+- Liu test: does per-question collapse intensity correlate more with question difficulty (prior wrongness) or reward model confidence? Those dimensions dissociating for a subset would allow direct sign test.
+
+**Status:** Theory section can be written now — structural argument doesn't require simulation data. Still gated on Robin for experimental gates.

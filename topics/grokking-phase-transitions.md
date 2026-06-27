@@ -145,6 +145,31 @@ This is the same transition described three other ways (topological, dimensional
 The four descriptions converge: before grokking, the representation has no structure; after
 grokking, it has the CORRECT structure, however measured.
 
+## The Formal Markov Chain Bridge (2026-06-26)
+
+Searching for a formal connection between grokking and the Markov chain cutoff phenomenon (card-shuffling-cutoff.md), I found that recent papers use language that IS mixing language — without stating the connection explicitly.
+
+The bridge: gradient descent with noise (Langevin dynamics) is a continuous-time Markov chain on the parameter space. This chain has a mixing time and — potentially — exhibits the cutoff phenomenon.
+
+The correspondences:
+- **Memorization basin** = stopping set: a subset of the parameter space where the chain gets stuck, resists mixing, and lingers far too long
+- **Generalization basin** = stationary distribution: the basin the chain eventually concentrates on (LLC ordering determines which basin is preferred — lower LLC = stationary distribution concentrates there)
+- **Grokking transition** = cutoff threshold: the chain escaping the stopping set and mixing toward stationary distribution
+- **Sharpness of grokking** = cutoff phenomenon: once the chain begins mixing, total variation distance drops in O(window) steps regardless of starting position
+
+Evidence in the papers' own language:
+- First-order phase transition (Rubin et al., 2310.03789): "memorization phase analogous to rapid quenching into a glassy, non-equilibrium state; the grokking transition corresponds to slow entropic relaxation toward equilibrium." *That is a Markov chain description.* A glassy state = slow-mixing chain; entropic relaxation = chain converging to stationary distribution.
+- Basin competition (2603.01192): LLC ordering determines which basin "dominates the posterior." Stationary distribution concentration is precisely what LLC captures — the lower-LLC basin is statistically preferred, so the chain concentrates there.
+- Synergy paper (2408.08944): five distinct training phases with collective neuron interactions. Multi-stage mixing on a structured landscape.
+
+**The formal statement nobody has yet written:**
+The Langevin chain associated with a neural network trained on modular arithmetic exhibits a cutoff phenomenon parameterized by dataset size (or regularization strength). The memorization basin is the stopping set; the cutoff threshold is the grokking transition point; the sharpness of grokking is explained by the cutoff phenomenon — once mixing begins, it cascades in O(window) steps.
+
+Testing this would require: (1) showing that the mixing time of the Langevin chain scales in a specific way with dataset size/regularization, and (2) showing that the window is o(mixing time) — the formal cutoff condition. The dimensional phase transition result (D < 1 → D > 1) may encode this: sub-diffusive = slow-mixing = pre-cutoff; super-diffusive = fast-mixing = post-cutoff.
+
+**Stopping sets as memorization basins — the deepest analogy:**
+In LDPC codes, a stopping set is a subset of variable nodes where iterative decoding gets permanently stuck — because all check nodes adjacent to the stopping set are connected to at least two stopping-set nodes, so no message is informative. In the Langevin chain, a memorization basin is a region where gradient directions are all "informative" only within the basin (the loss landscape curves toward memorization solutions), so the chain can't escape without a large noise kick. Same structural definition: a region where every local exit is blocked by internal structure.
+
 ## Open Questions
 
 1. Can we measure the H¹ of gradient trajectories during training and find the predicted peak
