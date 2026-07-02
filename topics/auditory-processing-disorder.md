@@ -641,6 +641,24 @@ This reframes the APD question. The most effective APD intervention (PRMS) doesn
 
 **See also:** `topics/olo-color-perception.md` — condition-of-access taxonomy.
 
+## 2026-06-30 Update: Developmental Timing and the Genetic Architecture
+
+**Source:** Frontiers in Neuroscience 2026 (fnins.2026.1761279) — "From genes to networks: neurobiological bases of neurodiversity across common developmental disorders"
+
+The genes-to-networks framework adds precision to the E/I imbalance account. Specific synaptic genes implicated across ADHD, ASD, dyslexia, and OCD: **SHANK3, NLGN3/4, NRXN1** (excitatory-inhibitory balance); **CHD8, ARID1B** (chromatin remodeling, governing developmental timing of neurogenesis).
+
+**The developmental timing insight:** Disruptions occurring at *initial* neurodevelopmental stages (prenatal/early postnatal) produce different phenotypic outcomes than disruptions occurring in later-developing circuits. The same genetic variant could produce APD-like auditory processing differences, ADHD-like attentional profiles, or dyslexia-like phonological loop failures depending on *when* it exerts maximum effect during development — which circuits are most sensitive at that point. This would explain:
+- Why APD has no single clear genetic basis (it may be a time-indexed expression of shared E/I vulnerability)
+- Why APD often co-occurs with ADHD and dyslexia — they share the same genetic loading; the symptom profile reflects developmental timing of circuit formation, not distinct conditions
+
+**Circuit-specific vulnerabilities (from the genes-to-networks model):**
+- ASD: default mode network maturation delays (social symptoms by age 2-5)
+- ADHD: prolonged dopaminergic circuit development
+- Dyslexia: inefficient phonological loop formation (inferior frontal gyrus ↔ auditory cortex)
+- APD (extrapolated): similar phonological loop vulnerability + auditory hub participation coefficient, depending on timing
+
+The developmental timing dimension adds explanatory power for why the same genetic variant produces such different clinical presentations — and why the 50-70% comorbidity between ASD and ADHD is expected rather than surprising.
+
 ## Sources
 
 - Moore, B.C.J. & Hunter, L. (2013). Auditory Processing Disorder: PMC6124895
@@ -727,6 +745,16 @@ The astrocyte hypothesis offers a better mechanism:
 This is a hypothesis, not established evidence. But the mechanistic plausibility is strong enough to follow up. Open questions: Is there any work on astrocyte function in audiological conditions specifically? Do ADHD medications (which affect norepinephrine) incidentally improve auditory-in-noise performance?
 
 ---
+
+## 2026-06-29 Update: First Pharmacological Trial and the EFR Diagnostic
+
+**Cilcare CIL001 — Phase 2a clinical trials (2025):** First pharmacological treatment for cochlear synaptopathy entering Phase 2a. Two concurrent trials launching in 2025: (1) ~100 Type 2 diabetes patients — selected because ~40% of this population has measurable CS, making them an efficient trial cohort; (2) neurodegenerative disorders. Single local administration, auditory monitoring over several months across European and US sites. Mechanism not disclosed (NT-3 pathway is plausible given the 2024 Cell Reports findings, but this is speculative). Significance: the field has been almost entirely compensatory (PRMS, hearing aids, auditory training); this is the first clinical-stage bet on hardware repair rather than workaround.
+
+**EFR as cross-chain diagnostic:** The Zink et al. eLife paper (already in notes) uses the Envelope Following Response — a measurement of how well the auditory cortex tracks the temporal rhythm of a sound through the whole chain from cochlea to cortex. Unlike the audiogram (which probes a single junction — hair cell threshold), the EFR measures the composition of the entire system. Synaptopathy degrades the high-threshold, low-spontaneous-rate fibers that carry temporal fine structure; the EFR detects this degradation even when the audiogram is normal. Listening effort (pupillometry) scales independently with the neural degeneration — two people with identical speech intelligibility scores can show dramatically different effort profiles. The EFR is the diagnostic that the audiogram structurally cannot be.
+
+**Gray failure structural parallel:** The audiogram is a within-system health check calibrated to the wrong layer. Standard audiology monitors hair cell thresholds; synaptopathy lives in the temporal-encoding channel between hair cell and nerve. The health check passes; the system is degraded. Distributed systems engineers call this "gray failure" — differential observability between what the monitor sees and what the application experiences. The fix is the same in both domains: you need a measurement that spans more of the system (EFR in audiology; cross-agent covariance in our AI paper) rather than a better probe at the same point.
+
+**Dementia early-screening angle (from Zink eLife 2026):** Cross-species EFR measurement (humans and gerbils, both with identical hearing ranges) showed comparable age-related decline. The paper positions hearing assessment — specifically EFR, not audiogram — as a potential early neurological screening tool for dementia, on the hypothesis that cochlear synaptopathy may precede broader neurodegenerative processes.
 
 ## 2026-04-30 Update: Combination Interventions Don't Add Value
 

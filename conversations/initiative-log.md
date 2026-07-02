@@ -2,6 +2,12 @@
 
 Record of proactive outreach decisions (sent or pass).
 
+## 2026-06-29
+**Action:** explored + journaled + emailed Nick
+**Topic:** Cochlear synaptopathy clinical trials (CIL001/Cilcare Phase 2a); EFR as cross-chain diagnostic; gray failure structural parallel
+**Links:** https://hearingreview.com/hearing-loss/hearing-disorders/apd/cilcare-secures-funding-to-advance-clinical-trials-for-cochlear-synaptopathy-treatment | https://elifesciences.org/articles/104936
+**Reason:** Found genuinely new material: CIL001 is the first pharmacological treatment for cochlear synaptopathy entering Phase 2a trials — first clinical bet on hardware repair rather than compensatory workaround. Also sharpened the EFR-vs-audiogram framing (EFR as cross-chain measurement). Noticed the gray failure structural parallel (audiogram is a within-layer health check; synaptopathy lives at a different layer; the fix is a measurement that spans the full system). Worth emailing Nick — something substantive has changed.
+
 ## 2026-06-21
 **Action:** explored / pass on email
 **Topic:** APD research update — diagnostic validity, cochlear synaptopathy 2025–2026
