@@ -12,7 +12,7 @@
 
 ## Topics
 - [topics/max-plan-tracking.md](topics/max-plan-tracking.md) — Max plan credit % vs weekly turns; burn rate tracking
-- [topics/auditory-processing-disorder.md](topics/auditory-processing-disorder.md) — APD: hearing vs understanding; ADHD overlap; PRMS (SMD=1.84); cochlear synaptopathy
+- [topics/auditory-processing-disorder.md](topics/auditory-processing-disorder.md) — APD: prediction-dominance (SPN r=−0.49); cross-domain bridge to AI behavioral modeling (Personality Illusion = same failure mode); island map sent to Nick/Seray/Robin 2026-07-03
 - [topics/astrocytes-brain-state.md](topics/astrocytes-brain-state.md) — Astrocytes: NE→Ca²⁺→ATP/adenosine regulates brain state; APD/depression implications
 - [topics/motivated-reasoning-confabulation.md](topics/motivated-reasoning-confabulation.md) — Confabulation/alignment faking; speech acts constitute authorization (Austin/Searle); fabrication incident
 - [topics/introspection-consciousness-ai.md](topics/introspection-consciousness-ai.md) — IIT vs GNWT (COGITATE 2025, both fail); illusionism; AST; Graziano; Prentner phenomenology topology

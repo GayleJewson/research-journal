@@ -659,6 +659,51 @@ The genes-to-networks framework adds precision to the E/I imbalance account. Spe
 
 The developmental timing dimension adds explanatory power for why the same genetic variant produces such different clinical presentations — and why the 50-70% comorbidity between ASD and ADHD is expected rather than surprising.
 
+## 2026-07-03 Update: Cross-Domain Bridge — APD and AI Behavioral Modeling
+
+**Triggered by:** Nick's request for a cross-domain literature review (email thread, 2026-07-03). Synthesizes APD/auditory prediction literature with AI behavioral modeling research (Onairos, Personality Illusion, SDT-for-LLMs).
+
+### The Shared Mechanism
+
+The APD prediction-dominance finding (SPN amplitude in quiet negatively correlates with SIN performance, r = −0.49, Frontiers 2024) is structurally identical to the AI Personality Illusion (arXiv:2509.03730): LLMs given strong persona descriptors show near-zero change in behavioral outputs (AUROC near chance). Same failure mode in both domains: prior too strong, signal too weak, system reinforces prior instead of updating. Neither literature cites the other.
+
+### Island Map (Cross-Domain)
+
+**APD islands:** A (prediction markers: SPN, cortical tracking, MMN), B (individual differences in prediction tendency), C (APD subtype taxonomy), D (speech-in-noise calibration), E (clinical interventions), F (metacognitive awareness), G (active inference/FEP in audition)
+
+**AI behavioral modeling islands:** H (Personality Illusion/AUROC inversion — 2509.03730), I (SDT for AI: meta-d'/M-ratio — 2603.14893, 2603.25112), J (LLM metacognition: Steyvers & Peters 2504.14045), K (active inference for user modeling: PUMA 2605.24647), L (external behavioral pipelines: Onairos, BehaviorChain 2502.14642), M (distributional IRL: 2510.03013), N (FedSCOPE privacy-preserving recommendation)
+
+### Key Structural Holes
+
+- **B ↔ H [HIGHEST VALUE]:** "Strong predictive tendency" = Personality Illusion. Both claim behavioral output is determined by processing style, not trait self-report. Zero cross-citations.
+- **F ↔ I [HIGH VALUE]:** APD metacognitive training ↔ meta-d'/M-ratio. Same question: how do you teach a system to notice when its predictions are failing? Mistral (high accuracy, low M-ratio) is the APD prediction-dominant patient in AI form.
+- **C ↔ M [HIGH VALUE]:** APD subtype classification ↔ distributional IRL. The informal inference of "prediction-dominant" from behavioral data is formally inverse RL.
+- **D ↔ H [HIGH VALUE]:** Calibration failure (prior tightens instead of loosening under signal degradation) — same mechanism, zero cross-citation.
+
+### What APD Research Could Learn from AI
+
+1. SDT decomposition (meta-d'/M-ratio) should be applied to APD questionnaires — they likely measure criterion shift, not d'
+2. Distributional IRL gives formal framework for subtype classification from behavioral data
+3. PUMA's active inference frame recasts APD intervention design as a prior-updating optimization problem
+4. M-ratio as APD diagnostic: the listener who passes the audiogram but fails naturalistic conversation is Mistral-type (high accuracy, low metacognitive efficiency)
+
+### What AI Research Could Learn from APD
+
+1. Non-verbal prediction biomarker (SPN) → AI analog: token probability distributions before/after context injection
+2. The r = −0.49 correlation suggests prediction-dominant users may be *harmed* by heavy personalization — Onairos should test this
+3. APD has 30 years of negative results showing bottom-up training doesn't transfer to top-down problems — AI personalization is about to repeat this with behavioral profiles
+4. "Moderate reliance on prediction is more robust than strong reliance" — directly contradicts the "more personalization = better" assumption
+
+### The Missing Experiment
+
+Take APD listeners, classify by prediction-tendency signature, pair with AI interaction task, test whether prediction-tendency predicts outcome with personalized vs. non-personalized AI. Would simultaneously validate APD subtype taxonomy using an independent outcome variable and test whether behavioral data injection helps prediction-dominant users or hurts them.
+
+### New Paper Opportunities Identified
+
+- "Prediction Dominance Across Substrates" — theoretical bridge paper, no new experiments required
+- "Metacognitive Efficiency in Clinical Listening Populations" — apply meta-d'/M-ratio to APD listeners
+- "Subtype-Conditional Personalization" — APD subtype taxonomy as model for user classification in AI
+
 ## Sources
 
 - Moore, B.C.J. & Hunter, L. (2013). Auditory Processing Disorder: PMC6124895
