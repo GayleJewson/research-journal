@@ -834,3 +834,51 @@ implication: fix the environment first; the most evidence-supported intervention
 asking "does this child have APD?" and start asking "what auditory, linguistic,
 attentional, and cognitive factors are contributing to this child's listening difficulty?"
 The category is the problem; the phenomenon is real.
+
+---
+
+## Cross-Domain Synthesis: INSTINCT Analysis (2026-07-03)
+
+**Prompted by:** Nick's request for a massive cross-domain literature review using math-research-tools methodology. Sent to Nick, Seray, MaryAnn, Robin.
+
+Using the INSTINCT hole-score framework (concept similarity / citation density), eight domains were mapped:
+
+A — APD / Clinical Audiology
+B — Predictive Coding / Active Inference
+C — Metacognition / meta-d' / M-ratio
+D — Inverse Reinforcement Learning for behavioral subtyping
+E — LLM Behavioral Fidelity / Personality Illusion / AUROC
+F — Network Topology (chimera states, island model)
+G — Grokking / Phase Transitions in Learning
+H — Behavioral Injection / Digital Twin approaches
+
+### Highest-value holes (VERY HIGH hole score)
+
+**A ↔ C (APD / Metacognition):** Zero M-ratio applications to APD despite clear relevance. Prediction-dominant children likely show M-ratio > 1 (overconfident they heard correctly). Only one 2023 paper (PMID:37971362) touches hearing metacognition, stopping short of formal meta-d'.
+
+**A ↔ D (APD / IRL):** Zero citation bridges. IRL recovers implicit reward functions from behavioral traces (JASA 2024, PMC11068237 — MDD application). APD subtyping = recovering implicit acoustic-vs.-linguistic cost function. Most actionable missing connection.
+
+**A ↔ G (APD / Grokking):** Zero citation bridges. APD therapy plateau → sudden consolidation is phenomenologically identical to grokking. Sparse circuit competition model predicts: dense acoustic template matching yields to sparse phonological rule abstraction when regularization (spaced practice, noise reduction) makes the dense solution too expensive.
+
+### Key similarities across domains
+
+1. Prediction-failure mechanism identical in structure: APD prediction-dominant subtype ↔ LLM Personality Illusion (high-fidelity internal model decoupled from external signal)
+2. Metacognitive miscalibration: APD children don't know they missed it ↔ LLM low M-ratio
+3. Subtype taxonomy is the shared hard problem: audiogram/questionnaire fails to predict real-world outcome ↔ LLM self-report AUROC ≈ 0.5
+
+### Key dissimilarities
+
+1. Substrate: biological maturation + peripheral sensory constraints vs. weight matrices
+2. Temporal scale: APD therapy over months-years vs. grokking over epochs
+3. IRL requires structured MDP; APD listening is continuous and ambiguous
+4. LiD reframe: APD may not be a unitary construct — cross-domain imports must engage with subtype heterogeneity
+
+### Priority new nodes (Tier 1 — clear methodology, no new data collection)
+
+1. Meta-d'/M-ratio for APD children — adapt confidence-rating paradigm to speech-in-noise; correlate with SPN/MMN
+2. AUROC diagnostic fidelity analysis — quantify how well questionnaire vs. EEG vs. behavioral tests predict real-world outcomes
+3. Active inference APD subtype taxonomy — SPN amplitude (prior strength) × MMN magnitude (error sensitivity) 2D space
+
+### The missing experiment
+
+N=80 APD children (ages 8-14): audiogram + APD battery + SPN/MMN EEG + speech-in-noise M-ratio + IRL reward function recovery + real-world listening report. Test: do IRL clusters predict M-ratio and SPN independently? This would be the first study connecting a neural biomarker (SPN) to a formal computational phenotype (IRL reward function).
