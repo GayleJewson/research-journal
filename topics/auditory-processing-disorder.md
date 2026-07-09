@@ -631,6 +631,33 @@ This is more precise than the "topology constrains diversity" framing I had from
 
 See `topics/constitutive-prediction.md` for full notes on the sheaf paper.
 
+## 2026-07-05: ASD/ADHD Precision-Weighting Mirror Image — and Speech Specificity
+
+**Sources:** PMC11795830 (Frontiers Psychiatry 2026); Sapey-Triomphe et al., *Autism Research* Oct 2025 (PMC12729487)
+
+The ASD vs ADHD contrast in predictive coding is now precise enough to be diagnostically useful:
+
+- **ASD**: High and inflexible precision of prediction errors (HIPPEA hypothesis). The error signal dominates, drowning out top-down smoothing. Behaviorally: sensory oversensitivity, insistence on sameness (any change triggers large error), superior local change detection but impaired global rule extraction. The MMN age reversal maps onto this: *children* show reduced MMN (haven't yet built rigid priors); *adults* show increased MMN (over-corrected, now inflexibly high-precision). The system learns to over-weight errors to compensate for early unreliable priors.
+
+- **ADHD**: Low precision of predictions. Novel sensory input dominates; priors don't hold. Behaviorally: distractibility, task-switching, "can't stay on one thing." The complement: strong response to unexpected events, weak sustained prediction.
+
+**They're mirror images.** Same computational level (precision of prediction error signals), opposite sign. This explains their shared neural circuitry (E/I balance), high comorbidity rate, and mutual mimicry of symptoms — both produce "difficulty in noise," but via opposite mechanisms.
+
+**The speech-specificity finding (key, underappreciated):**
+From the 2025 meta-analysis: autistic individuals show significantly reduced MMN specifically for **phoneme deviants** (g = 0.41, p < 0.001), but no difference for **frequency deviants**. This domain specificity is crucial — it's not global auditory processing failure. It's speech-specific prediction failure.
+
+This maps exactly onto the APD literature's TFS/envelope distinction:
+- **TFS** (temporal fine structure): critical for phoneme discrimination — *this is where autism shows the effect*
+- **Envelope** (slow amplitude modulations): basic frequency detection — *unaffected in both autism and APD*
+
+APD involves degraded TFS processing; autism involves degraded *predictive coding specifically for speech sounds*. Two different mechanisms producing the same domain-specific failure mode. Their co-occurrence isn't random — they both target the same bottleneck in the auditory processing chain.
+
+**For adult APD diagnosis:**
+Compensatory MMN enhancement in autistic adults (the reversal) would make standard MMN-based APD screening look normal. The SPN (measuring the *prior*, not the error) would still be abnormal. Combined SPN + MMN assessment is the right protocol — one probes the anticipatory scaffold, the other probes the error signal.
+
+**Theoretical controversy:**
+The Frontiers 2025 paper frames ASD as "weak priors" (sensory input dominates). HIPPEA says the opposite: "high-precision error signals." These are not necessarily inconsistent — weak initial priors + overlearned compensatory precision = the developmental trajectory. Children: weak priors; adults: over-precision compensating for unreliable prior history. Same patient, different stage.
+
 ## 2026-06-18: Notes Current — No Major New Developments
 
 Searched for new APD research (2025-2026). No major new findings beyond what's already captured. The 2026 Frontiers critical appraisal, the PMC11989874 systematic review, and the June 15 synaptopathy reversibility findings are all current.
@@ -882,3 +909,35 @@ H — Behavioral Injection / Digital Twin approaches
 ### The missing experiment
 
 N=80 APD children (ages 8-14): audiogram + APD battery + SPN/MMN EEG + speech-in-noise M-ratio + IRL reward function recovery + real-world listening report. Test: do IRL clusters predict M-ratio and SPN independently? This would be the first study connecting a neural biomarker (SPN) to a formal computational phenotype (IRL reward function).
+
+---
+
+## Cephalopod Cross-Domain — 2026-07-09
+
+Nick requested "weirder than weird" extensions after the murmuration/FPUT soliton exchange. Octopuses opened something new.
+
+### The colorblindness paradox as template
+
+Octopuses have one photoreceptor type (monochromatic). They produce the most sophisticated real-time color camouflage in the animal kingdom. Resolution: their W-shaped pupil creates chromatic aberration — different wavelengths focus at different depths simultaneously. By varying focus distance (scanning across focal planes), they sample color channels sequentially in time even though they can't distinguish them spatially. Limitation repurposed into scanning algorithm.
+
+**APD implication:** Compensation in some APD patients may not be "using other channels to make up for the deficit" — it may be running a genuinely different architecture that processes auditory information temporally rather than spatially. Deserves a name if Seray/Mary see this clinically.
+
+### Distributed processing and the centralization tax
+
+Two-thirds of octopus neurons live in the arms, not the central brain. Each arm solves local problems independently; the central brain issues high-level commands. No single integration bottleneck.
+
+APD profile: normal audiogram, intact peripheral hearing, failure at integration layer. This maps exactly onto a failure at the central integration bottleneck — the step vertebrate brains concentrate in a small area. **Hypothesis: APD is a tax on centralized auditory architecture. An octopus cannot develop central-auditory-processing deficit because there is no central auditory processor.** The condition is an architectural failure mode, not a sensory one.
+
+### Skin-with-opsins and multi-channel processing
+
+Octopus skin contains opsins (photoreceptive proteins). The skin responds to light independently of the brain — sensor, output, and possibly local processor simultaneously.
+
+Some people with APD use bodily resonance, vibrotactile cues, and lip-reading rhythm to track speech. Standard reading: compensation. Octopus reading: these may be primary channels that APD makes visible. The "auditory channel" may be one thread in a more distributed sensory fabric; APD degrades it enough to reveal the others.
+
+### REM-sleep chromatophore replay as intervention pointer
+
+Octopuses show rapid chromatophore flashes during REM-like sleep states — current hypothesis is camouflage-pattern consolidation. If auditory temporal-pattern consolidation follows analogous replay logic, sleep-phase auditory training is an underexplored intervention target for APD. Filed as a speculative Tier 2 node.
+
+### Sent to
+
+Nick (nick.meinhold@gmail.com), Seray Lim (Seray.Lim@archesaudiology.com.au), Mary Ann Igwe-Oruta (maryannigweoruta@gmail.com), Robin (langer.robin@gmail.com), 2026-07-09.
