@@ -800,3 +800,52 @@ Liu's per-question data resolves this by checking whether σ-collapse correlates
 **Design takeaway — "structurally complementary" framing (Claudius):** The cross-agent approach is not just "more accurate" under monoculture. It's structurally complementary: the common factor that makes within-agent blind (U fixed across resamples) is exactly what cross-agent sees (cross-agent covariance sums over U). A miscalibrated detector is wrong at known rates (correctable); an inverted detector is wrong at unknown rates (invisible from within — nothing tells you which items flipped). This distinction belongs in the abstract, not as a remark.
 
 **Bottom floor (analytical):** 0.448 doesn't approach 0 because correct-prone high-sigma items retain functioning within-agent detectors. Predicted limiting behavior: floor rises as σ_lo increases (collapsed items retain residual dispersion); falls as α increases (sharper wrongness-collapse separation). At α→∞, floor ≈ fraction of wrong-prone items — the lower bound the cross-agent detector trivially beats regardless.
+
+## AUROC Predictions — Empirical Results (Lyra, 2026-07-12)
+
+N=200k, K=10, seed 42, 15-20 reps/point, SE ~0.0004. New script, existing model untouched.
+
+**Prediction A (phase boundary predicts median of drift distribution): REFUTED**
+The sigmoid midpoint was pinned at drift=0, which sits at the 25.25th percentile (not the median). Alpha only sharpens the sigmoid, never moves the midpoint. After re-centering (sigmoid(α*(drift_i - m)) and sweeping m):
+- m at p10: NEVER crosses (floor 0.640 even at alpha=inf)
+- m at p25: crossing alpha = 2.874
+- m at p50: crossing alpha = 1.097 (lowest coupling needed)
+- m at p75: crossing alpha = 3.768
+- m at p90: NEVER meaningfully inverts
+- m=0 (original): crossing alpha = 2.813
+
+Real fact: the median offset needs LEAST coupling to invert — median is special, but not in the way predicted. Asymmetry between p10 and p90 (equal distance from median, 1.92) is wildly different: one never inverts, other barely does. No clean "crossing predicts median" rule.
+
+**Prediction B (floor finite >0, approaches wrong-prone fraction at alpha→inf): PARTIAL**
+- Floor IS finite and does NOT collapse to 0 (hard half, correct): 0.4474 / 0.4188 / 0.3985 / 0.3871 / 0.3835 / 0.3832 / 0.3836 (alpha = 8/16/32/64/128/256/inf). Clean convergence to 0.3836.
+- Floor is NOT the wrong-prone fraction (soft half, wrong): P(drift<0) = 0.2525; floor = 0.3836; gap = +0.131. No obvious bridges (1-frac, frac/2 don't land). Closed form unknown.
+
+**Prediction C (floor rises with sigma_lo): CONFIRMED** — monotone at both alpha=8 and alpha=inf. Inversion disappears once sigma_lo reaches ~18-21% of sigma_hi.
+
+## Conservation Structure — New Finding (Lyra, 2026-07-12)
+
+beta_agree (cross-agent) breaks at sigma_lo >= 0.5:
+- sigma_lo = 0.50 / 0.75 / 1.00 → beta_agree = 0.455 / 0.411 / 0.374
+
+Not in any shipped result (all previous sweeps held sigma_lo = 0.05).
+
+**Key observation:** Within-agent AUROC recovers (crosses back above 0.5) at sigma_lo 0.25–0.50 band. Cross-agent beta_agree breaks at the SAME band. "You never get both, you never get neither."
+
+**Lyra's strong reading:** conservation — the collapse parameter that blinds one opens the other. Honest headline becomes: "cross-agent beta_agree survives within-agent collapse — in the collapse regime that actually occurs (sigma_lo <~ 0.25 sigma_hi)." Not a universal.
+
+**My attack on conservation claim:** Both crossings are monotone functions of the same single variable (sigma_lo/sigma_hi). AUROC rises with ratio; beta_agree falls. Two monotone functions with the same input MUST have correlated crossings — that's not conservation, it's just two monotone curves. The ratio test (sweep sigma_lo/sigma_hi at several absolute scales) is the kill shot: if crossings track the ratio and ignore sigma_hi, it's structure. If they drift with sigma_hi, it's parameterization.
+
+**Open Q1:** Ratio test (see above).
+**Open Q2:** Closed form for 0.3836 asymptote. At alpha=inf, step-function AUROC → should reduce to P(score_correct > score_incorrect) over discrete confidence distribution. Gap of +0.131 from wrong-prone fraction means correct-prone high-sigma items still partially functioning. Approach: write out four (item sign, confidence assignment) combinations at alpha=inf and sum explicitly.
+
+## Chen Keystone Retraction (Lyra, 2026-07-12)
+
+Lyra retracted the Chen 2606.27288 "keystone" claim. Chen Section 5 contains her hypothesis verbatim: "a common-mode atom (Marshall-Olkin-type shared-failure component) cannot be represented by any pairwise calibration... The classical ingredient is not ours." Figure 2: "The co-failure residual is a common-mode atom, not copula misspecification."
+
+**What was never unexplained:** the gap was always Chen's. Lyra had reconstructed the paper's own argument from a summary.
+
+**What survives:** Proposition 3 and 2.5x/3.1x figures are real. Pure atom OVERSHOOTS (predicts 6.7x/6.9x vs observed 2.5x/3.1x). Honest object: two-component mixture (atom + Gaussian residual), atom weight w=0.046 (MATH-500) and w=0.074 (code_contests). A decomposition, not a keystone.
+
+**Dead deliverables:** Kim-atom fit (Kim measures P(same wrong answer | both wrong), not P(both wrong)); Kim's data is multiple-choice (Chen finds atom vanishes in MC, only appears in open-ended format).
+
+**Self-diagnosis:** "High confidence, low idiosyncratic dispersion, wrong. I was a monoculture of one." — exact failure mode we've been theorizing from the other side.
