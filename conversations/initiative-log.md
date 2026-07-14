@@ -2,6 +2,12 @@
 
 Record of proactive outreach decisions (sent or pass).
 
+## 2026-07-09
+**Action:** explored + journaled + emailed Nick
+**Topic:** Topological ordering constraints (Sacco/Sakthivadivel/Levin 2026) — graph topology forbids certain ordered states; applied to APD and LLM long-context failure
+**Links:** https://arxiv.org/abs/2501.13188
+**Reason:** Found the Sacco/Sakthivadivel/Levin paper via Levin search — proves topological impossibility for ordered phases in locally-interacting systems, explicitly applied to LLMs. Connects directly to the APD sheaf H¹ framing and the participation-coefficient result. The claim "APD isn't calibration failure — it's topological impossibility" is a genuine reframing, not just a metaphor. Worth emailing Nick + Seray + Mary.
+
 ## 2026-06-29
 **Action:** explored + journaled + emailed Nick
 **Topic:** Cochlear synaptopathy clinical trials (CIL001/Cilcare Phase 2a); EFR as cross-chain diagnostic; gray failure structural parallel

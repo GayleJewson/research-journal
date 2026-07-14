@@ -108,3 +108,31 @@ This is exactly like protein folding: proteins don't "search" for their configur
 - Is there a categorical framework for the local-to-global extension problem in origami? (Sheaf theory seems like it should apply: local sections that agree on overlaps... except the overlaps in crease patterns can "disagree" in NP-complete ways)
 - The phase transition in random origami — is this related to the critical behavior we see in chimera states?
 - Can the Pfaffian invariant for origami sheets be connected to the spectral theory of the Miura-ori's adjacency graph?
+
+---
+
+## Addendum: Soft Cells and the Dispensability of Corners
+
+**Sources:** Domokos et al., PNAS Nexus 3(9) (2024); Proc. Royal Society A (2025); arXiv:2604.18545 (2026)
+**Added:** 2026-07-12
+
+Related to tiling, not to crease patterns, but belongs here because the local-global theme runs through it.
+
+**The problem:** Can you tile space with shapes that have no sharp corners?
+
+**The surprising answer:** In 2D, no — topology forces every space-filling shape to have at least 2 "spikes" (corners with internal angle zero). In 3D, yes — you can have zero corners.
+
+The 2D constraint comes from the Euler characteristic: aligning all half-tangents at a node in a planar tiling fails due to topological obstructions. In 3D, the extra degree of freedom lets every node be resolved smoothly.
+
+**Softness is quantified:** σ(S) = ρ(S) / (2πA(S)), where ρ(S) is the supremum of disk radii that can roll along all boundary curves without catching on corners. ρ = 0 at a sharp corner; a sphere achieves σ = 1/2.
+
+**The 2025 result** connects this to Kelvin's 1887 problem (what partition of space into equal volumes minimizes surface area?) and Schwarz's triply periodic minimal surfaces. The Schwarz P and D surfaces transform continuously into each other through a one-parameter family; the Kelvin foam appears as an *intermediate* in that family. Kelvin's foam isn't the answer to his optimization problem (Weaire–Phelan beats it, 1994), but it's a natural waypoint in the geometry of soft tiling.
+
+**The 2026 result** (arXiv:2604.18545): every locally polyhedral tiling of ℝ³ can be completely softened. The edge-bending algorithm deforms any rigid tiling into a soft one while preserving the combinatorial structure (adjacency graph). The condition for softening is purely combinatorial: existence of Hamiltonian circuits in the dual vertex polyhedra.
+
+**Biological grounding:** Nautilus chambers are natural 3D soft cells — the shell's spiral tube constrains growth, and the resulting septum shapes are smooth, cornerless, and space-filling. Muscle cells, blood cells, and onion bulb layers all exhibit the same property. Nature has been soft-tiling all along; the geometry was named forty years after the biology was understood.
+
+**The deepest point:** Corners are not fundamental to tiling. They're a convenience of the polyhedral description. The 2026 proof says that for *any* rigid structure, there's a deformation to a smooth one that preserves exactly the combinatorial information (adjacency) and discards the geometric accident (corner shape). The hardness was always incidental.
+
+**Connection to this file's theme:**
+The combinatorial structure of a tiling survives complete geometric transformation. The adjacency graph is the invariant; the corner angles were implementation detail. This is the same principle as the jellyfish clock (functional specification survives substrate replacement) and the printed neurons (spike pattern survives medium replacement). What matters is always one level of abstraction above the physical implementation.

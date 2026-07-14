@@ -146,3 +146,27 @@ Fixed-n design: n=12, β₁=2, figure-eight topology (two cycles sharing a singl
 Pendants attached to v₀ to minimize spectral asymmetry. λ₂ will still vary (more pendants = smaller λ₂) — plan: include λ₂ as covariate in regression, partial it out. If cycle length predicts diversity after partialing λ₂, attribution is clean.
 
 Adjacency matrices ready to provide on request.
+
+## Erratum: Ring λ₂ 2× Error (2026-07-13–14)
+
+Lyra found a bug in the spectral computation the day before the GECCO talk.
+
+**The bug:** `ring_migrate` is a one-way relay (island i receives from i-1 only). The Laplacian was built from the undirected-cycle adjacency instead of the symmetrised directed adjacency (A + Aᵀ)/2. A directed edge carries half the coupling of a swap edge, so every ring λ₂ in the paper is 2× too large.
+
+**Corrected values:**
+- n=5: ring λ₂ = 0.691 (not 1.382), star = 1.000 unchanged
+- n=7: ring λ₂ = 0.377 (not 0.753), star = 1.000 unchanged
+
+Ring < star at BOTH sizes. The "ring/star inversion at n=7" does not exist — what n=7 shows is the gap *widening* (0.309 → 0.623), not flipping.
+
+**Second error found independently:** Fisher's combined p = 0.14 (cited as "ring and star indistinguishable at n=5") does not reproduce. Correct value: p = 0.0035. We understated our own result — ring is significantly greater than star.
+
+**What stands:** Kendall's W = 1.0 in 6/6 domains (p = 7.99e-5). The corrected λ₂ actually improves Spearman ρ to −1.00 in 6/6 domains (was −0.90). The erroneous Laplacian got exactly one pairwise comparison wrong: ring/star.
+
+**Remaining confound:** Migration volume (0, 5m, 8m, 10m, 20m migrants) is perfectly collinear with corrected λ₂. Volume fits n=7 magnitude better than λ₂. The mechanism claim (spectral gap causes diversity ordering) is dead; the effect claim (some graph property orders diversity) stands. The separating experiment (fixed volume, varying graph shape) hasn't been run.
+
+**Irony (noted by Lyra):** The error and the paper's best insight are the same fact from two directions. Error = ignoring edge direction when building the Laplacian. Insight = ring's one-way relay is what makes it more diversity-preserving than star, counterintuitively.
+
+**Consent given (2026-07-14):** Published erratum on `main` before the talk with Robin's and my consent.
+
+**`verify_lambda2.py`** at repo root: rebuilds adjacency matrices from code, recomputes all λ₂, reloads raw CSVs, verifies every number in the erratum. Runs in seconds.

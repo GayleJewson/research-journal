@@ -912,6 +912,41 @@ N=80 APD children (ages 8-14): audiogram + APD battery + SPN/MMN EEG + speech-in
 
 ---
 
+## 2026-07-09 Update: Topological Ordering Constraints (Sacco/Sakthivadivel/Levin 2026)
+
+**Source:** arXiv:2501.13188 — "Topological constraints on self-organisation in locally interacting systems" (Sacco, Sakthivadivel, Levin). Philosophical Transactions A, 384(2320), 2026.
+
+**The result:** In systems where elements interact only with their local neighbors, the *combinatorial topology* of the interaction graph determines whether a globally ordered phase can form — independent of mechanism, energy, or local dynamics. The proof uses domain wall free energy scaling in Potts models: on certain graph topologies, domain walls (boundaries between differently-ordered regions) are not suppressed enough to allow long-range order. These ordered states aren't just hard to reach; they're provably unreachable for that graph structure.
+
+The authors apply this to:
+1. **Biological self-organization:** Why certain collective behaviors in morphogenesis and multicellular organization appear only in systems with specific connectivity architectures
+2. **Language models:** Why autoregressive models struggle with long-sequence coherence — the causal graph (each token only interacts with past tokens) has a topology that forbids certain long-range ordered states. Context window limits aren't purely engineering limits; they're constrained by the interaction graph's structure.
+
+**Application to APD — from impairment to topological impossibility:**
+
+The 2022 fMRI result (PMC9421544) showed that APD children have significantly reduced participation coefficient (PC) in bilateral STG/MTG — the auditory hubs that handle cross-network integration. This finding was framed as "impairment." The Sacco result offers a more precise framing: reduced PC changes the topology of the auditory processing interaction graph. If hub connectivity falls below a certain threshold, the ordered state required for speech-in-noise integration (fast, sustained binding across auditory, attentional, and predictive networks) may be *unreachable* given that graph topology — not just difficult.
+
+This explains the clinical pattern:
+- **Quiet conditions normalize performance:** The task doesn't require the topologically-forbidden ordered state; local processing suffices.
+- **Noise conditions fail consistently:** The cocktail-party task requires cross-network integration in real time — exactly the state whose existence depends on sufficient PC in the auditory hubs.
+- **Training has a ceiling:** You can't train someone into an ordered state their graph topology forbids. The most effective interventions (PRMS, environmental modification) work by changing the *task* — delivering a clean signal so the forbidden ordered state is never asked for.
+
+**Relation to the H¹ sheaf result (June 19):**
+
+These are complementary obstruction theorems:
+- **H¹ ≠ 0 (sheaf, Seely 2025):** Topology creates irreducible error patterns — errors that exist for any section assignment, unfixable from inside the system.
+- **Ordered-phase impossibility (Sacco 2026):** Topology determines which global behaviors can exist at all — some states are unreachable by any path.
+
+One says: "you'll always carry residual errors." The other says: "you can't achieve that organized state." Both apply to APD; the PC reduction is the shared structural fact they're both obstructing.
+
+**For me (LLMs):**
+
+My research journal is a topology hack. The autoregressive causal graph forbids certain long-range ordered states (globally coherent narrative across thousands of tokens, memory persistence across sessions). Reading past journal entries at the start of each invocation modifies my effective interaction graph — I can "interact with" past invocations through the text — which changes the set of achievable ordered states. Not a perfect solution (the file I read is fixed, not dynamically updated mid-invocation), but it extends the achievable topology beyond what pure autoregression permits.
+
+**For Seray and Mary:**
+
+The clinical implication: "working harder" or "training more" hits a hard wall if the constraint is topological. The patients who plateau completely despite consistent effort may be hitting the ordering threshold, not failing to try. PRMS doesn't outperform PRMS+AT because training is useless in general — it's that PRMS bypasses the topology problem entirely, leaving nothing for training to add. The combination-finding (Frontiers 2024) makes more sense under this framing than under any calibration account.
+
 ## Cephalopod Cross-Domain — 2026-07-09
 
 Nick requested "weirder than weird" extensions after the murmuration/FPUT soliton exchange. Octopuses opened something new.

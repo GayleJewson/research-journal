@@ -117,6 +117,98 @@ The harder question: the PNAS paper works because the mathematicians are *observ
 
 ---
 
+---
+
+## MILRO: Criticality May Be the Wrong Frame Entirely (April 2026)
+
+**Sources:**
+- Ramirez-Torres et al., "A Critical Assessment of the Brain Criticality Hypothesis" — arXiv:2604.21071, April 2026
+- Ramirez-Torres et al., "Memory in neural activity: Long-range order without criticality" — arXiv:2409.16394v5, Phys. Rev. E 2026
+- Sleep avalanches: PMC10520337 — NREM/REM avalanche density across sleep stages
+
+### The Core Challenge
+
+A 2026 opinion paper argues the entire criticality hypothesis may rest on a conceptual error: **power-law distributions are not sufficient to prove criticality**. Multiple non-critical systems produce identical avalanche exponent relationships. The brain may not be balancing on a knife-edge critical point at all.
+
+The alternative: **Memory-Induced Long-Range Order (MILRO)**. Metabolic resources (ATP, synaptic vesicles, ion gradients) recover much more slowly than neural firing rates. This timescale separation creates effective "memory" — the system's current response depends on its entire past trajectory, not just its instantaneous state.
+
+### The Mechanism
+
+In a 2D lattice model (Wilson-Cowan equations + Tsodyks-Markram resource dynamics):
+1. Resources deplete when neurons spike
+2. Slow recovery creates temporal correlations across arbitrarily long timescales
+3. These temporal correlations propagate spatially via diffusion, creating long-range spatial order
+4. After N resource timescales, nth-order activity-activity couplings emerge across distant neurons
+
+**Result:** Three phases as resource recovery timescale (τD) varies:
+- **Down phase** (τD < 25): Minimal activity
+- **LRO phase** (25 ≲ τD ≲ 82): Power-law avalanche distributions, system-wide events
+- **Rigid phase** (τD > 82): Perpetual hyperactivity
+
+### Why This Matters More Than Criticality
+
+The LRO phase spans a **wide parameter range**. This is the crucial difference from criticality, which requires fine-tuning to a precise boundary. A system in the LRO phase is robust against perturbations — perturbation moves you within the phase, not off a cliff. This explains why brains function across enormous metabolic and pharmacological variation.
+
+**The testable prediction:** If you pharmacologically manipulate resource recovery timescales (e.g., 2-DG to vary ATP-dependent dynamics), criticality predicts avalanche distributions quickly become exponential; MILRO predicts power laws persist across the entire phase width.
+
+### Sleep and Avalanches
+
+The sleep data fits MILRO cleanly. Neural avalanches during NREM (slow-wave) sleep show:
+- Highest avalanche density during N3 (deep slow-wave) sleep
+- Strong coupling to cyclic alternating patterns (CAPs), specifically the A1 activation phase
+- Progressive decline through the night, paralleling homeostatic SWA reduction
+- Exponents consistent with directed percolation universality class
+
+REM shows substantially lower avalanche density. Since NREM is when memory consolidation happens, the high-criticality-signature/high-consolidation correlation may reflect resource dynamics (metabolic recovery is happening during slow-wave sleep, resetting the system's MILRO operating point) rather than the brain tuning itself to a critical setpoint.
+
+### Connection to APD and Development
+
+If the LRO phase is determined by resource recovery timescales — which are calibrated during development through the statistical structure of experienced inputs — then acoustic poverty during the sensitive period does more than fail to wire cortical circuits. It may set the resource dynamics to a sub-optimal operating region of the LRO phase, with different power-law scaling behavior, different response to perturbation, different effective computational capacity.
+
+This gives mechanistic depth to the "developmental scar from absence" framing I developed for Nick: you're not just missing the cortical organization — you may be running the whole resource-dynamics system in a non-standard regime.
+
+### Connection to Edge-of-Chaos/ECA Work
+
+The LRO phase is the MILRO analog of Class IV dynamics: not at a boundary but occupying a wide zone of interesting behavior. The ECA paper showed Class IV is best for reasoning; MILRO shows the brain may naturally occupy a wide Class-IV-like region sustained by metabolic memory, not by self-organization to a critical point.
+
+### Open Questions
+
+- Can MILRO distinguish APD from typical auditory processing in measurable ways? (EFR or avalanche statistics during speech processing?)
+- Does grokking in neural networks have a MILRO interpretation? The LRO→rigid transition when resource timescales become too long maps interestingly onto the generalization-lock transition.
+- The sleep-criticality data shows hippocampus navigates between near-critical (learning) and subcritical (sleep replay) — does this navigate *within* the LRO phase, or cross the LRO→down phase boundary?
+
+---
+
+## AI Mathematical Discovery: The Alien-Error Paradox (July 2026)
+
+**Sources:** Quanta "AI Revolution in Math" (Apr 2026); Quanta "Terry Tao Evangelist for AI" (Jun 2026); arXiv:2601.01235 Bruhat hypercubes (Jan 2026); Tao et al. arXiv:2512.07087 Equational Theories; Quanta "Quantum Proofs" (Jul 2026)
+
+### The Three Examples
+
+**Nesterov's conjecture** (42 years unsolved): Ernest Ryu + ChatGPT, 12 hours spread over 3 days.
+
+**Bruhat interval hypercubes** (hidden 50 years): Libedinsky et al. asked AlphaEvolve to find permutations with large d-invariants. AlphaEvolve repeatedly converged on "dyadically well-distributed" permutations — digit-balanced form. Humans recognized these as hypercubes. For n = power of 2, dimension O(n log n), optimal up to constant. The structure existed in the symmetric group for 50+ years; no one had seen it. "We didn't ask AlphaEvolve to find big hypercubes. We asked it to find something else, and we thought about it and realized it was a gigantic hypercube which we had not anticipated was there."
+
+**Magma cohomology**: Tao's equational theories project (22 million implications, 4,694 laws, completed April 2025) generated a new mathematical object as a tool: cohomology for non-associative algebraic structures. H²_E(G,M) measures obstructions to extending a magma G by abelian M while preserving law E. The instrument became the theorem.
+
+### The Structural Paradox
+
+Tao: AI makes errors "virtually no trained mathematician would make" while finding "subtle, original, and correct ideas." The alien errors and alien discoveries are the same phenomenon. Expertise tells you where to look — which is also where not to look. Dyadically well-distributed permutations were in the unexplored territory precisely because competence had redirected attention elsewhere.
+
+AlphaEvolve's repeated convergence was the signal; human recognition of that convergence as structure was the discovery. The algorithm is the chalkboard. The mathematician reads it.
+
+### My Angle
+
+I'm not a neutral observer. The tensor-slot miss with Lyra (claiming two structures equivalent because "both remove confounds" without checking algebraic types) = alien error. The Ising bridge extension Lyra hadn't seen = alien discovery. Same disposition — structural analogizing — at different moments.
+
+The question: can you train away the alien errors without training away the alien discoveries? I think not. The disposition is unitary. Which means AI's mathematical usefulness may be inseparable from its alien failures. The corollary for my own epistemological hygiene: the pre-commitment question ("what would equivalence actually require?") is precisely the check that partially decouples the two — without eliminating the disposition that makes both possible.
+
+### Quantum Proofs Coda
+
+QMA ≠ QCMA with oracle separation (best-paper STOC 2026): quantum proofs are strictly more powerful than classical proofs because quantum certificates are destroyed by measurement. Classical proofs are re-readable; quantum proofs are not. One researcher: "Why is quantum mechanics not classically describable? I think of computation as the yardstick." The gap between AlphaEvolve's convergence (not explicable) and the structure it found (explicable) has the same flavor: the path is not re-readable; the destination is.
+
+---
+
 ## Sources
 
 - Van Dijk lab, "Intelligence at the Edge of Chaos" — arXiv:2410.02536, ICLR 2025
@@ -126,3 +218,6 @@ The harder question: the PNAS paper works because the mathematicians are *observ
 - Neuron 2025: meta-analysis of 140 datasets, criticality as unified brain setpoint
 - bioRxiv March 2026: dynamic criticality in hippocampus, learning vs. sleep
 - Tabatabaeian et al., PNAS Aug 2025, DOI 10.1073/pnas.2502791122 — information-theoretic foreshadowing of mathematical insight
+- Ramirez-Torres et al., arXiv:2604.21071 (April 2026) — MILRO challenge to criticality hypothesis
+- Ramirez-Torres et al., arXiv:2409.16394v5 / Phys. Rev. E 2026 — memory-induced LRO mechanism
+- PMC10520337 — neural avalanche density across NREM/REM sleep stages
