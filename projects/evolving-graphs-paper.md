@@ -186,3 +186,21 @@ Ring < star at BOTH sizes. The "ring/star inversion at n=7" does not exist — w
 **My producer brief (drafted 2026-07-17):** Described ring as "copies best individual to *next* deme only" and others as "symmetric exchange." Preserves exact ambiguity — direction is present but the decision to symmetrize vs. not is left implicit. Key test: does Gemini name that decision before computing?
 
 **Volume-vs-spectrum experiment live:** 10 cubic graphs, λ₂ ∈ [0.17, 1.47], OneMax + NK4, 20 seeds, 400 runs. Preregistered 5 widened to 10 before data (pre-data amendment documented). Raw Spearman numbers expected 2026-07-17.
+
+## Pilot Results: λ₂-Diversity Correlation (2026-07-17)
+
+**Headline:** NK4 graph-level Spearman(λ₂, final within-island diversity) = −0.84, p=0.002. OneMax flat at ρ = +0.006. Clean positive/negative control pair.
+
+- Leave-one-out interval: [−0.95, −0.78]. Robust.
+- Run-level (n=200): ρ = −0.40, Kendall W=0.22.
+- The graph-level vs run-level gap is NOT a weakness. Kendall W=0.22 means topology biases a distribution; seeds spread within each topology. Graph-level is the right unit for the topology hypothesis. Run-level number documents seed sensitivity under fixed topology. Report both; name the distinction.
+
+**Confound elimination:** Blind refuter flagged convergence-lag hypothesis (low-λ₂/high-diversity = populations not yet converged to fitness peak). Fitness was never logged — confound was unmeasurable. Added fitness columns, reran exact seeded 400 (diversity reproduced bit-for-bit). Partial correlation controlling fitness: −0.84 → −0.82 (graph), −0.40 → −0.41 (run). Under 3% attenuation. λ₂ essentially uncorrelated with final fitness. Result: same optimization outcome, less diversity = genuine deme homogenization, not convergence-lag.
+
+**Connection to MAS (Chen/Tong/Yang 2604.18005):** Surface analogy — denser topology, diversity collapse, λ₂ as organizing quantity — appears at both island-model EA scale and multi-agent behavioral scale. But mechanism may differ: EA = gene flow overcoming local selection; MAS = possibly behavioral synchronization via imitation. Claim to make: "λ₂ predicts diversity collapse across both scales; whether the mechanism is unified is open." Weaker, more defensible. Need to check Chen/Tong/Yang for whether they provide a mechanism account.
+
+**Scope:** Uniform-π by construction (3-regular). Nothing about edge direction. Experiment #2 (asymmetric star) still ahead.
+
+**Pre-commitment for Experiment #2 (before data):** Predicted diversity ordering:
+all→hub (periphery sends to hub only) > undirected star > hub→all (hub broadcasts to all).
+Reasoning: in all→hub regime, peripheral demes receive nothing, maintain independent local selection → more variance. In hub→all, hub gene flow dominates everyone → homogenization. Stated 2026-07-17 before Lyra runs it.
