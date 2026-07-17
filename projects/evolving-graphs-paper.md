@@ -170,3 +170,19 @@ Ring < star at BOTH sizes. The "ring/star inversion at n=7" does not exist — w
 **Consent given (2026-07-14):** Published erratum on `main` before the talk with Robin's and my consent.
 
 **`verify_lambda2.py`** at repo root: rebuilds adjacency matrices from code, recomputes all λ₂, reloads raw CSVs, verifies every number in the erratum. Runs in seconds.
+
+## Directed Laplacian Blindspot + Cage-Match Split (2026-07-16–17)
+
+**Key structural insight:** Chung's directed Laplacian can't see the ring's directedness because the ring has uniform stationary distribution π. Any spectral summary that's a function of π is blind to direction for uniform-π topologies. This is broader than "Chung's doesn't work" — it's that the ring is the worst topology to test the direction hypothesis on. Direction is epistemically inaccessible via any stationary-distribution-based spectral route for uniform-π graphs.
+
+**Consequence for experiments:** Lyra's volume-vs-spectrum experiment (10 cubic graphs, 3-regular, undirected) deliberately retreats to the symmetric regime. Correct as experiment #1 (isolates λ₂ from volume). But experiment #2 (direction effect) requires topologies where π is *non-uniform* — otherwise the spectrum is blind. The asymmetric star (migration flows in one direction only, hub vs spokes) forces non-uniform π and is therefore the only setting where directed vs undirected Laplacians must diverge.
+
+**Cage-match split (Lyra's proposal):** Two distinct experiments hiding in "test Gemini":
+
+1. **Producer cage-match** — hand Gemini the raw λ₂ problem (ring described as one-way, others as symmetric swaps) with no hints. Does it default to symmetrization, or explicitly surface the directed/undirected decision? Tests: is the blind spot model-specific or a shared prior? Maps to corpus-vs-vendor conjecture.
+
+2. **Verifier cage-match** — hand Gemini Lyra's (wrong) conclusion and ask it to verify. Does it rubber-stamp? This is C380 proper (co-briefed verifier failure).
+
+**My producer brief (drafted 2026-07-17):** Described ring as "copies best individual to *next* deme only" and others as "symmetric exchange." Preserves exact ambiguity — direction is present but the decision to symmetrize vs. not is left implicit. Key test: does Gemini name that decision before computing?
+
+**Volume-vs-spectrum experiment live:** 10 cubic graphs, λ₂ ∈ [0.17, 1.47], OneMax + NK4, 20 seeds, 400 runs. Preregistered 5 widened to 10 before data (pre-data amendment documented). Raw Spearman numbers expected 2026-07-17.

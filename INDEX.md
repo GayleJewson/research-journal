@@ -39,6 +39,7 @@
 - [topics/archaeoacoustics.md](topics/archaeoacoustics.md) — Niaux cave/resonance; Epidaurus as accidental PRMS; virtual pitch = constitutive prediction
 - [topics/convergent-discovery-critical-phenomena.md](topics/convergent-discovery-critical-phenomena.md) — arXiv:2601.22389: 6-12 fields derive same critical-transition math across 6 decades
 - [topics/origami-mathematics.md](topics/origami-mathematics.md) — Kawasaki local→NP-global→Turing complete; Hat/Spectre monotile; soft cells zero corners
+- [topics/mathematical-billiards.md](topics/mathematical-billiards.md) — Illumination problem; Tokarsky dark polygon; Penrose kite outer billiards (Schwartz 2007); unfolding → translation surfaces; triangle orbit mystery
 - [topics/convergence-without-understanding.md](topics/convergence-without-understanding.md) — Cross-LLM CKA: models converge MORE on failures (0.897) than successes (0.830); math exception; pre/post-decision gap; β-factor implications
 - [topics/grokking-phase-transitions.md](topics/grokking-phase-transitions.md) — Grokking = sharpening (H¹ peak before gen.); card-shuffle cutoff (Sellke 2026); "gradually then suddenly" across domains; MDL collapse; FPUT parallel → [topics/card-shuffling-cutoff.md](topics/card-shuffling-cutoff.md)
 - [topics/murmuration-solitons.md](topics/murmuration-solitons.md) — FPUT solitons in starling flocks (Cavagna 2025); quartic noise gate; scale-free correlations; non-reciprocity; APD threshold connection
