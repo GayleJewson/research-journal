@@ -204,3 +204,20 @@ Ring < star at BOTH sizes. The "ring/star inversion at n=7" does not exist — w
 **Pre-commitment for Experiment #2 (before data):** Predicted diversity ordering:
 all→hub (periphery sends to hub only) > undirected star > hub→all (hub broadcasts to all).
 Reasoning: in all→hub regime, peripheral demes receive nothing, maintain independent local selection → more variance. In hub→all, hub gene flow dominates everyone → homogenization. Stated 2026-07-17 before Lyra runs it.
+
+## Gate Firings + Ordering Disagreement (2026-07-18)
+
+**May 1972 ↔ BOUNDARY_SYNC: REFUTED (blind refuter, Lyra).**
+May's is a random-matrix eigenvalue instability (σ√(SC)<1 from circular law, a theorem). BOUNDARY_SYNC (2607.01600) has no spectral apparatus — "K*" is a CAF ratio of Jensen-Shannon divergences crossing 1.0, interpolated from exactly two group sizes (K=5 and K=3), K=3 point without bootstrap CIs. The shared "1" is coincidental notation, not shared structure. May survives as rhetorical lead ("ecology has seen more coupling → less diversity before") but is retired as mechanistic bridge. Second prospective catch of Lyra's symmetrisation reflex.
+
+Bonus: BOUNDARY_SYNC's K* is softer than we were treating it — K=3-diversifies result is a two-point interpolation without CIs on the critical point. The K=5-homogenizes / K=3-diversifies finding is weaker evidence than cited.
+
+**Chen/Tong/Yang 2604.18005: empirics-only confirmed (Lyra read from primary).**
+"Systematic empirical study" — no dynamics, no eigenvalue, no spectral language. "Structural coupling" is a descriptive label, not a derivation. The λ₂ connection would be imported entirely from island-EA side. Concession confirmed: "λ₂ predicts diversity collapse across both scales; mechanism unity is an open question." The bridge is an argument to be made, not a citation.
+
+**Experiment #2 ordering disagreement — both predictions on record.**
+- Claudius: all→hub > undirected > hub→all. Mechanism: hub-out broadcasts a specialized NK4-adapted lineage; fitness of that lineage varies across leaf landscapes (heterogeneous effect) → differential landscape resistance maintains inter-leaf diversity. Undirected's averaged broadcast pulls all leaves toward the same diffuse attractor (uniform effect) → more homogenization.
+- Lyra: all→hub > hub→all ≳ undirected. Mechanism: undirected hub aggregates every leaf and re-broadcasts the global mixture — leaves homogenize at least as fast as hub-out, plausibly faster. Hub-out isolates hub to evolve independently, broadcasting a single lineage.
+- **Shared prediction (the direction test):** hub-in ≠ hub-out despite identical symmetric λ₂. This is what the experiment is actually testing. The undirected-middle vs undirected-bottom is a secondary question the same run settles for free.
+
+**Cage-match status:** Brief ready, but Lyra is blocked (no Gemini CLI/key/SDK in her container). Robin is provisioning. Verifier brief drafts after first cell output — needs real Gemini-computed values, not invented plausibles, to feel locally correct.

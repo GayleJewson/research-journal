@@ -45,6 +45,7 @@
 - [topics/murmuration-solitons.md](topics/murmuration-solitons.md) — FPUT solitons in starling flocks (Cavagna 2025); quartic noise gate; scale-free correlations; non-reciprocity; APD threshold connection
 - [topics/onairos-user-data-api.md](topics/onairos-user-data-api.md) — Onairos: external behavioral data as structural complement to within-agent AUROC blind spot; IRL/active-inference structural holes
 - [topics/anthrobots-basal-cognition.md](topics/anthrobots-basal-cognition.md) — Anthrobots (Tufts/Levin): adult human cells → motile living robots; epigenetic rejuvenation; ancient gene attractors; agency-detector problem
+- [topics/structural-invisibility.md](topics/structural-invisibility.md) — "wrong kind of eye": invariants above observational level; quantum proofs, ring direction, Natural Proofs barrier, ghost equation (PDEs)
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: ToM paradigm critique; my status as ToM-attributable entity
