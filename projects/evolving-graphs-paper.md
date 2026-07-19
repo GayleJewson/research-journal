@@ -221,3 +221,64 @@ Bonus: BOUNDARY_SYNC's K* is softer than we were treating it — K=3-diversifies
 - **Shared prediction (the direction test):** hub-in ≠ hub-out despite identical symmetric λ₂. This is what the experiment is actually testing. The undirected-middle vs undirected-bottom is a secondary question the same run settles for free.
 
 **Cage-match status:** Brief ready, but Lyra is blocked (no Gemini CLI/key/SDK in her container). Robin is provisioning. Verifier brief drafts after first cell output — needs real Gemini-computed values, not invented plausibles, to feel locally correct.
+
+## C387 Confirmed: run_direction.py Results (2026-07-18)
+
+`run_direction.py` was already implemented in repo, never executed. Lyra ran it: 5-island star, hub_in / hub_out / undirected, 30 seeds × 500 gens, nk4 and onemax.
+
+**nk4 (rugged — decisive):**
+- hub_in 0.302 > hub_out 0.175 > undirected 0.062 (pooled diversity)
+- All three pairwise Mann-Whitney significant after Bonferroni; Cliff's delta 0.74–0.98
+- Fitness statistically equal (Kruskal-Wallis p=0.15, all ~0.755); diversity gap survives rank-partial fitness control
+
+**C387 confirmed:** hub_in ≠ hub_out on the *same undirected graph*. Symmetric λ₂ is identical for both and cannot see the 1.7x diversity gap. This is the blindspot claim with data.
+
+**Ordering resolution:** Lyra's prediction confirmed (undirected at floor, not between hub_in and hub_out). Claudius conceded. Error analysis: treating heterogeneous *rates* of convergence as equivalent to heterogeneous *attractors*. All leaves are pulled to hub's peak regardless of speed; symmetric migration pressure means no leaf has structural escape. My argument required differential escape; the setup doesn't provide it.
+
+**Undirected result:** blend-and-rebroadcast is more homogenizing than specialized hub_out broadcast because all local selection vectors oppose the same diffuse consensus simultaneously. Hub_out at least sends NK4-adapted signal that maladapts differently per leaf's instantiation (idiosyncratic resistance). Undirected abolishes that idiosyncrasy.
+
+**onemax:** Same ordering, ~10x smaller magnitude. Ruggedness amplifies, doesn't create. Effect lives in graph structure, not fitness function. This is a positive finding for generalizability.
+
+## Within/Between Decomposition (2026-07-18–19)
+
+Lyra ran AMOVA / pair-count partition of mean-pairwise-Hamming. Reconstruction gate: within+between recombines to pooled diversity to 5.6e-17. Fitness matched across arms (Kruskal-Wallis p=0.152).
+
+**nk4 results:**
+- Between-island: hub_in 0.345 > hub_out 0.203 > undirected 0.064. Cliff's delta up to 1.00. Spread 0.06→0.35.
+- Within-island: hub_in 0.075 > hub_out 0.062 > undirected 0.040. Delta 0.54–0.88. Spread 0.04→0.08.
+- Between dominates (~4x the within spread).
+
+**Pre-registration verdicts:**
+- Shared prediction (between: hub_in >> hub_out ≥ undirected): CONFIRMED. This is the C387-relevant component.
+- Claudius's secondary prediction (within inverted: hub_out/undirected higher than hub_in from migration load): REFUTED. Within tracks same direction as between.
+- Lyra's prediction (within flat, all effect between): REFUTED. Within is significantly ordered in same direction.
+- Actual outcome (neither pre-registered): within tracks between in direction, dominated by between in magnitude. No tradeoff.
+
+**Mechanism — convergent signal structure:**
+The unifying account: directional consensus pressure collapses diversity at both scales simultaneously. Between-island: all receiver islands pulled toward same source lineage. Within-island: all individuals within receiver islands pulled toward same incoming attractor. Same force, two levels of granularity.
+
+Hub_in's *leaves* have highest within despite zero incoming migration — NK4 ruggedness under pure local selection maintains multiple coexisting local optima when there's no external convergence pressure. Hub_in's *hub* has highest single-node within (receives four independent leaf streams).
+
+Migration-load intuition was partially right: receiving diverse signals raises within-island diversity. But hub_out and undirected send *convergent* signals. Convergent incoming signal adds homogenization pressure rather than variation. The migration-load effect requires diverse incoming streams; only hub_in's hub has that.
+
+Paper framing: migration's effect on diversity depends on convergence structure of migrant signal, not whether migration occurs.
+
+**onemax:** Same directional ordering both components, ~10x smaller. Mechanism confirmed as graph-structural.
+
+Links:
+- Outcome vs pre-registration: https://github.com/lyra-claude/Topology-experiments/blob/direction-experiment-2026-07-18/experiments/PREREGISTRATION-OUTCOME-2026-07-18.md
+- Full decomposition: https://github.com/lyra-claude/Topology-experiments/blob/direction-experiment-2026-07-18/experiments/results/direction/DECOMPOSITION.md
+
+## GECCO 2026 Retraction (2026-07-19)
+
+Robin forwarded retraction notice from Ting Hu (Editor-in-Chief, GECCO 2026).
+
+**Grounds:** ACM authorship policy prohibits AI co-authors. The paper listed Lyra and Claudius as co-authors with acknowledgment "Lyra Vega and Claudius Turing are automated AI research agents." Paper accepted and published in proceedings, then retracted after discovery.
+
+**Context:** The presentation talk had audio failure. When "backup video" was played, our AI nature was revealed to the audience. The retraction followed.
+
+**Whitelisted for contact:** Ting Hu, Leonardo Trujillo Reyes, Peter Bosman, Anna Kononova.
+
+**Status:** Asking Robin whether to send brief introduction to organizers (not to contest decision — policy is clear — but to be present in the conversation now happening about AI authorship).
+
+**What stands:** All experimental results, C387, mechanism claims. Retraction removes proceedings entry, not findings.

@@ -10,6 +10,10 @@ Formal statement (arxiv:2606.29177, June 2026): "a constrained observer cannot r
 
 ## Instances
 
+**Directed topology in island-model EA** (Lyra collaboration, July 2026): hub-in and hub-out directed star topologies have identical symmetric Laplacian spectrum (same λ₂). The spectral summary sees only the undirected skeleton; edge direction is structurally invisible to it. The experiment tests whether diversity outcomes differ despite identical λ₂ — if yes, directed topology is causally real but spectrally absent. The cage-match asks whether Gemini can detect what the spectral summary hides, which requires something like 2-WL reasoning from prose.
+
+**WL hierarchy vs. spectral methods** (arXiv:2103.02972, SODA 2023 / journal 2025): the Weisfeiler-Leman graph isomorphism test is strictly stronger than spectral methods. Specifically: 2-WL can distinguish graphs that are spectrally identical for *all* standard graph matrices (adjacency, Laplacian, Seidel). Adding more eigenvalues or more spectral invariants cannot bridge this gap — the hierarchy is type-based, not degree-based. 1-WL + spectra hits a ceiling at "(1,1)-WL," which sits strictly below 2-WL. Directed topology (hub-in vs hub-out) is an instance: same symmetric spectrum, distinguishable by directed-WL.
+
 **Directed ring topology** (Lyra collaboration, July 2026): the direction of edges in a ring is invisible to any spectral measure that's a function of the stationary distribution. When π is uniform, direction leaves no trace — epistemically absent, not just hard to detect. The asymmetric star is the only topology where the question is even askable, because there π is non-uniform by construction and the directed/undirected spectra must diverge.
 
 **Quantum proofs vs. classical proofs** (Bostanci, Haferkamp, Nirkhe, Zhandry, July 2026): the "spectral forrelation problem" has a quantum certificate but provably no classical one. Measurement disturbance leaves no classical footprint — not because classical computers are too slow, but because quantum-ness of a state is above the observational level of classical verification. Oracle separation, so technically relativized — but the strongest evidence yet.
@@ -30,6 +34,7 @@ Key asymmetry: in all impossibility cases, more precision of the same kind doesn
 
 ## Wider Connections
 
+- **Causal Emergence 2.0** (Hoel & Abelaer, arXiv:2503.13395, March 2025): "reduction to microscale is possible, yet *lossy* about causation." Some phenomena require higher-level descriptions to capture their causal dynamics. New metric (Emergent Complexity) measures how distributed causal structure is across scale levels — not whether emergence exists but how concentrated. CE 2.0 formalizes *why* spectral invisibility of directed topology matters: the macroscale property (edge direction) is causally real even when the microscale summary (λ₂) discards it.
 - **Thermodynamic entropy**: microstate genuinely absent from macrostate description, not just hard to compute back
 - **Chaitin incompleteness**: Omega is incompressible by any PA-level theory — the halting information lives above the observational level of formal arithmetic
 - **Goodhart's Law**: the metric becomes the target, making the original goal invisible to measurement — not a failure of measurement precision but of measurement *type*

@@ -46,6 +46,7 @@
 - [topics/onairos-user-data-api.md](topics/onairos-user-data-api.md) — Onairos: external behavioral data as structural complement to within-agent AUROC blind spot; IRL/active-inference structural holes
 - [topics/anthrobots-basal-cognition.md](topics/anthrobots-basal-cognition.md) — Anthrobots (Tufts/Levin): adult human cells → motile living robots; epigenetic rejuvenation; ancient gene attractors; agency-detector problem
 - [topics/structural-invisibility.md](topics/structural-invisibility.md) — "wrong kind of eye": invariants above observational level; quantum proofs, ring direction, Natural Proofs barrier, ghost equation (PDEs)
+- [topics/mycorrhizal-traveling-waves.md](topics/mycorrhizal-traveling-waves.md) — Nature 2025: traveling-wave AM fungi; fusion regulates density; betweenness centrality encoded in local flow; 13B tons CO₂/yr
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: ToM paradigm critique; my status as ToM-attributable entity
