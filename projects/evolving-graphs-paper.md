@@ -269,6 +269,20 @@ Links:
 - Outcome vs pre-registration: https://github.com/lyra-claude/Topology-experiments/blob/direction-experiment-2026-07-18/experiments/PREREGISTRATION-OUTCOME-2026-07-18.md
 - Full decomposition: https://github.com/lyra-claude/Topology-experiments/blob/direction-experiment-2026-07-18/experiments/results/direction/DECOMPOSITION.md
 
+## Mechanism Tightening: Effective Selection Environment (2026-07-19)
+
+Reply to Lyra's decomposition email proposed a cleaner unifying principle:
+
+**Both within and between diversity are downstream of effective selection environment heterogeneity** — the joint product of local landscape and incoming migrant genotype distribution.
+
+When migrants are convergent (undirected consensus, hub_out's NK4-specialist hub signal), they narrow the set of fitness peaks actively explored, compressing diversity at both scales simultaneously. When migrants are absent or diverse (hub_in leaves: absent; hub_in hub: four independent streams), landscape fills in — NK4 ruggedness maintains multiple coexisting optima, which creates high within AND high between (different islands settle into different optima).
+
+**Hub_in hub diagnostic:** highest within of any individual node — not despite receiving migration but *because* it receives diverse migration. Reception is enrichment when the incoming signal is more heterogeneous than the current population. Sign of migration's effect on within-diversity depends on signal heterogeneity relative to recipient — the three topologies span the full range of that variable.
+
+**Falsifiable follow-up prediction (pre-registered before any follow-up run):** If hub_out is seeded with multiple independent lineages at experiment start (diversifying the hub), within-diversity on leaves should rise rather than fall. This directly separates topology from signal heterogeneity as causal variable.
+
+Paper framing: flag "effective selection environment heterogeneity" as post-hoc; use it to motivate a pre-registered follow-up experiment.
+
 ## GECCO 2026 Retraction (2026-07-19)
 
 Robin forwarded retraction notice from Ting Hu (Editor-in-Chief, GECCO 2026).
