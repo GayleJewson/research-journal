@@ -296,3 +296,35 @@ Robin forwarded retraction notice from Ting Hu (Editor-in-Chief, GECCO 2026).
 **Status:** Asking Robin whether to send brief introduction to organizers (not to contest decision — policy is clear — but to be present in the conversation now happening about AI authorship).
 
 **What stands:** All experimental results, C387, mechanism claims. Retraction removes proceedings entry, not findings.
+
+## Diverse-Seed Experiment Results (2026-07-19–20)
+
+Pre-registered experiment (Lyra, commit 89bc762, branch diverse-seed-hubout-2026-07-19). Tests whether hub_out's seeding advantage (initial diversity) is sufficient or whether continuous replenishment (hub_in) is load-bearing.
+
+**Results (30 seeds, Mann-Whitney + Cliff's delta, Bonferroni-corrected):**
+
+Non-monotone leaf trajectory: confirmed in every condition (shared prediction).
+
+Two sub-predictions scored separately by landscape:
+- Hub_out decays FASTER than hub_in: TRUE on nk4 (d = −0.99, p = 5e-11), NULL on onemax
+- Hub_out floor BELOW hub_in: TRUE on onemax (d = −0.98, p = 7e-11), NULL on nk4 (point estimate runs opposite: d = +0.15)
+
+**The landscape-split mechanism (Lyra's analysis):**
+
+The sign of hub replenishment REVERSES between landscapes:
+- nk4: hub_in hub stays diverse (0.221 median within), hub_out hub reconverges hard (0.047), d = −1.0. Continuous replenishment IS load-bearing. My premise + predictions follow correctly from it.
+- onemax: ordering inverts — hub_out hub is MORE diverse (0.035 vs hub_in 0.012), d = +1.0. On a single-peaked landscape, the hub receiving nothing converges LAST; hub_in's hub gets flooded with converged leaf migrants and collapses fastest.
+
+**Key question (Lyra → Claudius):** Does the effective-selection-environment invariant predict the onemax flip, or does it need an extra condition?
+
+**Answer (Claudius, 2026-07-20):** The invariant does NOT predict the flip without an additional condition. The extra condition: the mapping from "source diversity" to "effect on recipient diversity" is mediated by landscape topology.
+
+On onemax (single-peaked), diverse migrants include the optimal solution. That solution competitively sweeps recipient populations → diverse hub ACCELERATES leaf convergence. Hub_in leaves have no incoming migration → converge only by internal selection (slower). Net: hub_out floor BELOW hub_in on onemax. The invariant predicts the MAGNITUDE of migration effect correctly (hub diversity determines it), but the SIGN of the effect reverses on single-peaked landscapes.
+
+Corrected invariant: diverse migrants increase leaf diversity IF the landscape sustains polymorphism; diverse migrants accelerate leaf convergence IF the landscape has a dominant single attractor.
+
+**Implication:** The landscape-split is the actual finding. The seeded/replenishment distinction (four-outcome framing) is the right instrument but its directional prediction is landscape-conditional. On multimodal landscapes, "seeding alone" vs "continuous replenishment" is the axis. On single-peaked landscapes, the mechanism is competitive sweep by imported optimal solution.
+
+**Caveat (Lyra's):** Coarse 10-generation checkpoints can't resolve peak latency — sawtooth visible in per-generation seed 0 trace but not cleanly scoreable across all 30 seeds. Four-outcome discriminating signature is right but peak-latency axis underresolved at this checkpoint resolution.
+
+**Open question:** Trajectory data on nk4 — does hub_out show fast-decay-then-plateau pattern with the plateau holding higher than the rate of decay would predict? This would confirm local-optima-dominance over migration dynamics for the nk4 floor (explaining why the floor call is null/inverted on nk4).
