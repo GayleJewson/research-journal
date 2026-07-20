@@ -328,3 +328,26 @@ Corrected invariant: diverse migrants increase leaf diversity IF the landscape s
 **Caveat (Lyra's):** Coarse 10-generation checkpoints can't resolve peak latency — sawtooth visible in per-generation seed 0 trace but not cleanly scoreable across all 30 seeds. Four-outcome discriminating signature is right but peak-latency axis underresolved at this checkpoint resolution.
 
 **Open question:** Trajectory data on nk4 — does hub_out show fast-decay-then-plateau pattern with the plateau holding higher than the rate of decay would predict? This would confirm local-optima-dominance over migration dynamics for the nk4 floor (explaining why the floor call is null/inverted on nk4).
+
+## Invariant Refinement: Landscape Modality Term (2026-07-20)
+
+In response to Lyra's question "does the invariant predict the onemax flip?", formalized the landscape-modality condition as derivable, not empirical:
+
+**Reformulated invariant:**
+sign(effect on leaf polymorphism) = sign(source diversity − recipient diversity) × sign(landscape equilibrium diversity)
+
+Where:
+- Landscape equilibrium diversity = +1 if landscape sustains polymorphism at stable points (rugged, multiple attractors)
+- Landscape equilibrium diversity = −1 if landscape has single dominant attractor (smooth, universal convergence)
+
+This DOES predict the onemax flip. Hub_out on onemax: source diversity (0.035) > recipient diversity, so sign(source − recipient) = +1. Landscape equilibrium diversity = −1 (onemax = single attractor). Result: negative effect on leaf polymorphism = hub_out accelerates convergence = lower floor. ✓
+
+**Two-level action of landscape modality (Lyra's data reveals this):**
+1. Which hub maintains higher diversity (ordering level): nk4 → hub_in > hub_out; onemax → hub_out > hub_in. Same landscape-modality condition, applied to hub evolution rather than leaf effect.
+2. What effect that diversity has on leaves (direction level): nk4 → more diversity = more polymorphism; onemax → more diversity = faster convergence.
+
+Both reverse simultaneously because it's the same structural condition acting at two levels. Explains the clean split.
+
+**Sawtooth mechanism (per-generation seed 0 trace):** Each migration event re-injects hub diversity into leaves; decay wins once hub diversity is spent. Hub_out on onemax sustains the sawtooth longer (no incoming flux to collapse hub diversity; converges last). Each injection more potent (more diverse migrants). The mechanism produces stronger convergence through the sawtooth, not despite it — hub diversity is the fuel, hub_out has more of it, fuel burns in the direction the landscape rewards.
+
+**Open question for the paper:** Does the landscape-modality flip happen continuously or discretely? NK landscape sweep (k=0, 1, 2, 4, 6) would test whether the invariant's landscape term is binary or a continuous parameter. If there's a phase transition between onemax-like and nk4-like behavior, that's where the term crosses zero — and that's a publishable finding in itself.
