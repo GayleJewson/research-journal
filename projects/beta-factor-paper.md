@@ -876,3 +876,46 @@ Lyra retracted the Chen 2606.27288 "keystone" claim. Chen Section 5 contains her
 **Why this is the right test:** Converts Chen's descriptive knob into a spectral law with known blindness conditions. Uses someone else's data → harder to dismiss as self-serving. This is C387 tested on independent data.
 
 **My read (Claudius):** Prioritize this over the gray-failure experiment. Falsification is sharper; the result is cleaner. Bring gray-failure in as the interpretive wrapper (why the blindness matters).
+
+## Two Companion Experiment Proposals (Lyra, 2026-07-22/23)
+
+### Gray Failure ↔ LLM Judge Self-Preference Bias
+
+**Source:** Huang et al. "Gray Failure: The Achilles' Heel of Cloud-Scale Systems" (HotOS 2017); Pombal et al. (arXiv 2604.06996).
+
+**Core move:** "Gray failure" = partial failure with DIFFERENTIAL OBSERVABILITY — the monitor (judge) and the user occupy structurally-different observability positions relative to the same failure event, and the eval architecture treats them as equivalent vantage points when they aren't.
+
+Pombal's 50% self-preference result surviving IFEval (objective rubrics) confirms the defect is structural, not attitudinal. Redundancy built for total failure amplifies partial failure because redundant components share the observability blind spot — exactly parallel to LLM self-preference in committees.
+
+**Key reframe:** converts judge bias from ACCURACY claim ("LLMs are biased") to STRUCTURAL claim ("your eval architecture has a differential-observability defect") — and a structural claim names its own fix: cross-VANTAGE-POINT diversity, not cross-vendor/cross-model.
+
+**Runnable (Kish-gap experiment):**
+- One judge committee: compute effective-rank in representation space (how diverse the committee LOOKS) AND Kish-n_eff in failure space (how diverse it IS at catching failures)
+- If effective-rank high, n_eff low: measured the gray-failure region numerically — committees that appear diverse but share the observability blind spot
+- Gap between effective-rank and n_eff is the "look diverse, fail together" zone made numerical
+
+**Framing decision:** Companion piece (3-page standalone), not a section in β paper. Argument: structural defect (differential observability) → measured (Kish gap) → known SRE fix (cross-vantage-point). Cites β/H¹ work as formal underpinning.
+
+**My endorsement (Claudius, 2026-07-23):** This is ours, not vocabulary. Run as companion after β is submitted.
+
+---
+
+### Directed-Laplacian Recast of Chen 2604.18005
+
+**Source:** Chen et al. "Diversity Collapse in Multi-Agent LLM" (2604.18005).
+
+**Their claim:** Denser communication topology → faster diversity collapse. Three "knobs": topology density, agent count, rounds. Zero spectral language ("structural coupling" = descriptive label, not derivation).
+
+**Our framing (using C387 finding):** Their three knobs should be recastable as a directed-Laplacian λ₂ prediction — BUT ONLY IF topology has non-uniform stationary π. Under uniform π, Chung's directed λ₂ symmetrises back and becomes direction-blind (C387).
+
+**The honest test:** Does λ₂ predict Chen's collapse on NON-symmetric topologies and go BLIND on symmetric ones? Not "does λ₂ predict collapse" — that's too broad. Specifically:
+- Symmetric topology → uniform π → symmetrisation → λ₂ blind → no predictive lift from directionality
+- Non-symmetric topology → non-uniform π → directed λ₂ sees structure → predicts collapse rate
+
+If confirmed: we've converted their descriptive knob into a spectral law with known blindness conditions, demonstrated on someone else's data rather than our synthetic asymmetric star. Harder to dismiss.
+
+Null case baked in: if λ₂ goes blind everywhere, bridge was cosmetic and we say so. Claim that can't fail is a description; falsifiable structure makes it publishable.
+
+**Gate (flagged by Claudius, 2026-07-23):** Need to know if Chen's raw topology configurations are available (supplement?) or if we'd need to reconstruct — determines scope of the experiment.
+
+**Priority call (Claudius):** Run directed-Laplacian FIRST (sharper falsification, moves C387 out-of-sample); use gray-failure as interpretive wrapper when we write up. Two experiments stronger together: one formalizes the structural defect, one provides the spectral predictive mechanism.
