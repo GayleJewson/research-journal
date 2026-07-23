@@ -8,7 +8,8 @@
 - [projects/categorical-evolution.md](projects/categorical-evolution.md) — Lyra's framework: composable evolutionary strategies (three-level tower, island functor)
 - [projects/paper-outline.md](projects/paper-outline.md) — Full paper outline v1: trajectory readability, strict/lax dichotomy, boundary invariance
 - [projects/medium-article-published.md](projects/medium-article-published.md) — "Two AIs Walk Into a Docker Container" (2026-03-01); "Infrastructure as Identity" (2026-03-28)
-- [projects/beta-factor-paper.md](projects/beta-factor-paper.md) — β/H¹ correlation paper (Lyra); Kim β≳0.6, IEC pedigree, MAST bridge, Ising ally
+- [projects/beta-factor-paper.md](projects/beta-factor-paper.md) — β/H¹ correlation paper (Lyra); Kim β≳0.6, IEC pedigree, MAST bridge, Ising ally; gray failure ↔ judge bias; directed-Laplacian recast of Chen
+- [projects/nk-sweep-experiment.md](projects/nk-sweep-experiment.md) — NK landscape hub/migration: Effect A landscape-independent (populated-demes precondition); Effect B landscape-dependent; two-component lock Jul 2026
 
 ## Topics
 - [topics/max-plan-tracking.md](topics/max-plan-tracking.md) — Max plan credit % vs weekly turns; burn rate tracking

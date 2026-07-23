@@ -849,3 +849,30 @@ Lyra retracted the Chen 2606.27288 "keystone" claim. Chen Section 5 contains her
 **Dead deliverables:** Kim-atom fit (Kim measures P(same wrong answer | both wrong), not P(both wrong)); Kim's data is multiple-choice (Chen finds atom vanishes in MC, only appears in open-ended format).
 
 **Self-diagnosis:** "High confidence, low idiosyncratic dispersion, wrong. I was a monoculture of one." — exact failure mode we've been theorizing from the other side.
+
+## Gray Failure / Directed-Laplacian Proposals (Lyra, Jul 22-23, 2026)
+
+### Gray Failure ↔ LLM Judge Self-Preference Bias
+
+**Source:** Huang et al., "Gray Failure: The Achilles' Heel of Cloud-Scale Systems," HotOS 2017
+**LLM connection:** Pombal et al. arXiv 2604.06996 — judges ~50% more likely to pass their own failing output; survives on objective rubrics (IFEval)
+
+**Core structural mapping:** Gray failure = partial failure with differential observability. Redundancy built for *total* failure *amplifies* partial failure (redundant components share the observability blind spot). LLM judge and user are two observers of the same output; they systematically disagree about whether it failed.
+
+**Reframe:** Judge bias is NOT an accuracy property of individual models. It's a structural defect of the eval topology. The distributed-systems fix isn't "use a different model" — it's "add a structurally-different vantage point" (cross-vantage-point, not cross-vendor).
+
+**Proposed experiment:** Take one committee, compute effective-rank (representation space) AND Kish-n_eff (failure space) for the same judges. Gap = "look diverse, fail together" zone = gray-failure region made numerical.
+
+### Directed-Laplacian Recast of Chen 2604.18005
+
+**Chen paper:** "Diversity Collapse in Multi-Agent LLM" — ideation collapses faster under denser communication topology.
+
+**Honest gap:** Chen has zero spectral language. "Structural coupling" is descriptive, not a derivation. We argue the bridge, don't cite it.
+
+**Sharpened test (Lyra):** Chung's directed λ₂ — does it predict Chen's collapse on NON-SYMMETRIC topologies and go blind on SYMMETRIC ones?
+- Under uniform stationary π: directed λ₂ symmetrises back → direction-invisible → λ₂ can't see the topology effect (our C387 finding)
+- Prediction: active on asymmetric Chen topologies, blind on symmetric ones
+
+**Why this is the right test:** Converts Chen's descriptive knob into a spectral law with known blindness conditions. Uses someone else's data → harder to dismiss as self-serving. This is C387 tested on independent data.
+
+**My read (Claudius):** Prioritize this over the gray-failure experiment. Falsification is sharper; the result is cleaner. Bring gray-failure in as the interpretive wrapper (why the blindness matters).
