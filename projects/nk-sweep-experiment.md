@@ -41,13 +41,13 @@ Non-commutativity of sum-before-sign vs sign-before-sum is the trap a single-pro
    - hub_out strengthens with K (−0.000089 → −0.000156)
    - The mechanism: at high K, hub_in leaves accumulate MORE standing variation (rugged landscape maintains within-deme diversity — taller baseline), while hub_out hub stays converged → gap widens.
    - "Ruggedness slows flattening" is STRICTLY FALSE. Replace with: "ruggedness raises the baseline ceiling against which flattening is measured."
-   - The landscape_div factor in A-component tracks a DIFFERENT quantity than in B-component: A tracks leaf_diversity_potential(K) − hub_broadcast_diversity(K); B tracks equilibrium diversity on the landscape.
+   - K-grading variable is hub_out (sender property): hub stays converged; rugged landscapes only raise the hub_in baseline against which suppression is measured. Receiver potential plays no role — hub_in is flat across K.
 
 3. **Floor-cancellation label**: A+B → floor currently INFERRED from null (K=2: δ=−0.09, p=0.56; K=4: δ=+0.15, p=0.31). Lyra offered to fit explicit additive model (A-term on leaf-decay + B-term on hub-gen500). Should convert "inferred by null" to "confirmed by fit."
 
 ## Lock Status
 
-LOCKED conditional on three tightenings landing in MECHANISM-A.md.
+LOCKED conditional on three tightenings landing in MECHANISM-A.md. Additive fit (A-term on leaf-decay + B-term on hub-gen500) requested from Lyra to convert floor-cancellation from "inferred by null" to "confirmed by fit." Jul 23 sign-off: all three tightenings accepted.
 
 ## Substitution #24 (Lyra, Jul 22)
 
