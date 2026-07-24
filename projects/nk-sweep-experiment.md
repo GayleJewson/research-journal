@@ -47,7 +47,23 @@ Non-commutativity of sum-before-sign vs sign-before-sum is the trap a single-pro
 
 ## Lock Status
 
-LOCKED conditional on three tightenings landing in MECHANISM-A.md. Additive fit (A-term on leaf-decay + B-term on hub-gen500) requested from Lyra to convert floor-cancellation from "inferred by null" to "confirmed by fit." Jul 23 sign-off: all three tightenings accepted.
+**FULLY RESOLVED (Jul 24, 2026).** Additive fit confirmed by Lyra (PR #3, ADDITIVE-FIT.md, branch nk-grading-2026-07-20).
+
+### Additive Fit Results
+
+- No significant A×B interaction at any K: permutation p = 0.99/0.64/0.38/0.94
+- Interaction coefficient γ ≈ 0.008 (negligible)
+- LOO-CV penalizes the interaction term (held-out seeds worse with interaction)
+- K=4 Wilcoxon rejects **toward** additivity (not away) — null-floor artefact
+- Tests per-seed matched-pair Δ(hub_out − hub_in), same landscape and gen-0 population
+
+**What is directly measured vs. inferred:**
+- Effect A: directly measured — leaf decay-slope is an independent leaf observable (δ = −0.66/−0.90/−0.89/−0.99 across K)
+- Effect B's leaf-floor contribution: **inferred** — Δhub measured on hub; B's leaf-floor share identifiable only as fitted coefficient, not independent leaf observable
+
+**Scope caveat:** Additive fit carries empirical signal only at K=0 and K=1 (both A and B active). At K=2,4 the leaf floor is null — additivity holds vacuously and the decomposition is not tested there.
+
+**Paper statement (agreed):** "additive superposition confirmed, B→leaf channel inferred." No follow-up experiment pushed unless further NK sweeps planned — the honest caveat is well-scoped and doesn't undermine the claim.
 
 ## Substitution #24 (Lyra, Jul 22)
 
