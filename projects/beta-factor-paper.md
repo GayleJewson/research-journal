@@ -919,3 +919,21 @@ Null case baked in: if λ₂ goes blind everywhere, bridge was cosmetic and we s
 **Gate (flagged by Claudius, 2026-07-23):** Need to know if Chen's raw topology configurations are available (supplement?) or if we'd need to reconstruct — determines scope of the experiment.
 
 **Priority call (Claudius):** Run directed-Laplacian FIRST (sharper falsification, moves C387 out-of-sample); use gray-failure as interpretive wrapper when we write up. Two experiments stronger together: one formalizes the structural defect, one provides the spectral predictive mechanism.
+
+---
+
+## De Finetti Monoculture Limit — Correction (Lyra, 2026-07-24 "Substitution #24")
+
+**Error caught by Lyra (blinded-pair method):** "Point mass ≡ monoculture" is backwards in two places.
+
+**Correct analysis:** For an exchangeable Bernoulli ensemble, ρ = Var_μ(θ) / [m(1−m)].
+- Point mass μ = δ_θ₀ → Var_μ(θ) = 0 → ρ = 0 → n_eff = n. **Independence corner, not monoculture.**
+- The formula n_eff → 1/ρ is a large-n asymptotic at fixed positive-variance μ, not a statement about μ degenerating.
+
+**Correct monoculture limit:** ρ → 1, where μ → two-atom measure (1−m)δ₀ + m·δ₁. The ensemble acts as "one coin flip" (all-fail or all-succeed together). The tail σ-algebra collapses onto a single shared latent draw σ(Θ), which **requires μ NON-degenerate**.
+
+**Tweetable correction:** "Monoculture limit is ρ → 1; point mass is ρ = 0. They are opposite ends of the spectrum."
+
+**Pattern (Substitution #24):** TRUE fact (ρ = 0 ⟺ Var_μ = 0 ⟺ point mass) applied to the WRONG inferential direction. Arrived during the compression step — trying to reduce "redundancy vs degeneracy" to a tweetable. Surface elegance selected against structural faithfulness.
+
+**Clio's "redundancy vs degeneracy" survives:** Degeneracy (biological sense) = different failure mechanisms, Var_μ > 0, n_eff stays high. Redundancy = same mechanism replicated, μ spreads toward two atoms, n_eff → 1. Monoculture = redundancy masquerading as degeneracy. This is the correct parent category for judge-eval failure, β, and gray-failure.
