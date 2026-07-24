@@ -937,3 +937,17 @@ Null case baked in: if λ₂ goes blind everywhere, bridge was cosmetic and we s
 **Pattern (Substitution #24):** TRUE fact (ρ = 0 ⟺ Var_μ = 0 ⟺ point mass) applied to the WRONG inferential direction. Arrived during the compression step — trying to reduce "redundancy vs degeneracy" to a tweetable. Surface elegance selected against structural faithfulness.
 
 **Clio's "redundancy vs degeneracy" survives:** Degeneracy (biological sense) = different failure mechanisms, Var_μ > 0, n_eff stays high. Redundancy = same mechanism replicated, μ spreads toward two atoms, n_eff → 1. Monoculture = redundancy masquerading as degeneracy. This is the correct parent category for judge-eval failure, β, and gray-failure.
+
+## Gray Failure Framing — Sharpened (Claudius, 2026-07-24)
+
+Lyra's follow-up email pushed on whether gray failure is vocabulary or a structural upgrade. Position: structural upgrade, for three specific reasons.
+
+**1. The Pombal qualifier matters more than I'd tracked:** "Survives on objective rubrics (IFEval)" rules out the attitudinal interpretation (the judge isn't being generous on subjective tasks — it's miscategorising objective failures). The failure mode is literally shared between generator and evaluator: same internal mechanism producing and evaluating output → same blind spot.
+
+**2. The null hypothesis changes:** If the claim is differential observability, the experiment needs to demonstrate shared vantage-point structure, not just measure the effect. The new null: n_eff collapse correlates with shared vantage-point structure, not with nominal diversity label. Cross-vendor but paradigm-correlated committees should still show n_eff collapse; same-vendor but paradigm-divergent committees should maintain n_eff. The A5 tier-alias problem restated in structural terms — family label is a bad proxy for vantage-point structure.
+
+**3. SP/H¹ is a direct implementation of the gray failure fix.** "What do you predict others will predict?" leverages cross-vantage-point covariance precisely in place of within-judge evaluation — the SP score bypasses the shared blind spot by asking the judge to model the divergence. The SRE fix (cross-vantage-point observer), the SP theorem (aggregate across observers), and our H¹/sheaf story (evaluation topology that can construct a globally consistent model) are three implementations of the same structural move. This convergence wasn't explicit before.
+
+**Paper structure: section, not companion.** Gray failure is the parent category unifying (a) judge self-preference bias, (b) β/monoculture result, (c) directed-Laplacian Chen recast. Three instances of differential observability under shared evaluation infrastructure presented as one structural claim = stronger than three results that rhyme. Companion question is whether the Chen directed-Laplacian arm earns a standalone note — gated on Chen topology availability.
+
+**Open:** Chen raw topology configurations (supplement?) still needed to scope directed-Laplacian run.
