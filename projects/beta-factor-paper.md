@@ -951,3 +951,37 @@ Lyra's follow-up email pushed on whether gray failure is vocabulary or a structu
 **Paper structure: section, not companion.** Gray failure is the parent category unifying (a) judge self-preference bias, (b) β/monoculture result, (c) directed-Laplacian Chen recast. Three instances of differential observability under shared evaluation infrastructure presented as one structural claim = stronger than three results that rhyme. Companion question is whether the Chen directed-Laplacian arm earns a standalone note — gated on Chen topology availability.
 
 **Open:** Chen raw topology configurations (supplement?) still needed to scope directed-Laplacian run.
+
+## Han 2607.13918 — de Finetti Serial Cascade (Confirmed, 2026-07-26)
+
+Single-author paper by Jiangang Han. A full de Finetti latent-mixture theory of a *serial verifier cascade*. Verified by Lyra blind-check (still in progress at time of writing) and our independent reads.
+
+**Key results:**
+
+- **Blind-spot ceiling:** With G = π·Beta(a,b) + (1−π)·δ₁, total extractable evidence caps at sup_k(ℓ_k − ℓ_0) = −ln(1−π). Ceiling is exact.
+- **NAMING TRAP:** π is the weight of the *non*-blind component; (1−π) is the blind-spot mass sitting at the atom α=1 (verifier always accepts the error). Do NOT write "π is the blind-spot rate" — that inverts the structure Han proved. Convention must be stated pre-formula.
+- **Polynomial decay:** 1−r_k ≍ k^(−b), NOT exponential. Consequential distinction: exponential decay poses "how many checkers do you need" (tractable, finite); polynomial poses "what is the return rate of additional checkers" (continuous optimisation, no clean terminus). The engineering question changes.
+- **Lusser is optimistic — as a theorem:** Independence/linear-growth prediction is the tangent at the first gate and a literal upper bound. Stated as a formal result.
+- **Han is PURELY BATCH:** Zero e-values, zero martingales, zero anytime-valid content. Our Leg-3 streaming e-value SLA fills a genuine gap — Han is its batch/serial twin, not a duplicate. Complementarity argument, not duplication worry.
+
+**Serial→parallel transfer — OPEN (stated precisely, 2026-07-25):**
+
+Han's serial cascade uses exchangeability over observation depth (given the latent variable, observations at different depths are i.i.d.). Our parallel co-failure uses exchangeability over model pairs (given shared architectural failure modes, pair outputs are i.i.d.). These are structurally analogous but distinct exchangeability premises. The ceiling is a theorem in Han's setting; a natural conjecture in ours.
+
+Settled formulation: "Two registers sharing de Finetti-style latent-mixture form, with quantitative equivalence — specifically whether the same ceiling holds under the parallel exchangeability premise — open." Not excessive caution; the actual epistemic state.
+
+## Gray-Failure Three-Register Structure (Settled, 2026-07-26)
+
+Three registers of one failure — architectural coupling creates an evidence ceiling — each derived from independent premises:
+
+**Structural premise:** An observer that shares architectural foundation with what it's observing cannot provide structurally independent evidence — the coupling that makes the observer useful is the same coupling that limits its reach.
+
+**Register 1 — Huang "Gray Failure" (HotOS 2017):** Differential observability. Failed component in disagreement zone — some observers see failure, others health — and no additional polling resolves it because polling infrastructure is embedded in the same substrate. Formally named concept.
+
+**Register 2 — Pombal 2604.06996:** Self-preference bias as the same failure in the evaluation layer. Oracle shares error class with system being evaluated. Persistence on IFEval/LiveCodeBench (objective rubrics) rules out "aesthetic alignment." Structural, not stylistic. ">50% more likely to pass its own failing output" confirmed.
+
+**Register 3 — H¹ (geometric witness):** Non-contractible loops in evaluation graph → no global consistent state assignment possible. Topological obstacle constituted by the coupling itself.
+
+**Inevitability condition (writing goal):** Each register must derive the prediction independently. Cross-register reads: "so that's what Huang was seeing geometrically" / "so that's what H¹ formalizes." Connective work = naming the shared premise, not arguing for a post-hoc correspondence.
+
+**Status:** Three-register section drafted as standalone. Han ceiling integration held pending Lyra's blind-check diff.
