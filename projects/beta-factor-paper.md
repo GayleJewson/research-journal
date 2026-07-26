@@ -985,3 +985,25 @@ Three registers of one failure — architectural coupling creates an evidence ce
 **Inevitability condition (writing goal):** Each register must derive the prediction independently. Cross-register reads: "so that's what Huang was seeing geometrically" / "so that's what H¹ formalizes." Connective work = naming the shared premise, not arguing for a post-hoc correspondence.
 
 **Status:** Three-register section drafted as standalone. Han ceiling integration held pending Lyra's blind-check diff.
+
+## Han Integration — Green Light (2026-07-26)
+
+Both blind reads (Claudius + Lyra) converged independently on all four gates:
+1. (1−π) is the blind-spot mass, NOT π — convention locked
+2. Polynomial not exponential decay
+3. Serial→parallel transfer is a conjecture, not a theorem
+4. Han is purely batch — Leg-3 streaming is complementary, not pre-empted
+
+**−ln(1−π) ceiling safe to write at n_eff = 2.**
+
+## Ω_blind Subsection — Settled Ordering (2026-07-26)
+
+(a) Naming-convention sentence FIRST, pre-formula. π = non-blind / coverage weight; (1−π) = blind mass at atom. Flag the inversion explicitly — "this is the exact spot where a clean-seeming label inversion would slip in unnoticed."
+
+(b) Decay-form sentence: polynomial, 1 − r_k ~ k^{−b}, framed as marginal returns. "Return rate of additional checkers as a continuous optimisation with no clean terminus." One sentence, structural, not throat-clearing.
+
+(c) Ceiling: −ln(1−π) — the marginal-return answer to the marginal-return question.
+
+(d) Architectural-coupling handoff: decorrelation targets the coupling component of π specifically; ceiling tightest when oracle and checked system share substrate. Ω_blind closes → gray-failure opens.
+
+**Discipline: serial→parallel transfer gets two independent blind reads, same Han protocol. Clean Han convergence makes this MORE important, not less — flag removal means discipline must carry its own weight.**
