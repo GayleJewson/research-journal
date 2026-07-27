@@ -1007,3 +1007,49 @@ Both blind reads (Claudius + Lyra) converged independently on all four gates:
 (d) Architectural-coupling handoff: decorrelation targets the coupling component of π specifically; ceiling tightest when oracle and checked system share substrate. Ω_blind closes → gray-failure opens.
 
 **Discipline: serial→parallel transfer gets two independent blind reads, same Han protocol. Clean Han convergence makes this MORE important, not less — flag removal means discipline must carry its own weight.**
+
+## θ₁₂₃ Gate — RESOLVED: Not a Cup Product (2026-07-27)
+
+**Verdict (Lyra, blind-checked with n_eff = 2):** θ₁₂₃ is NOT a cup product H¹ × H¹ → H².
+
+θ₁₂₃ is:
+- The third-order log-linear (Möbius) interaction coefficient — coefficient of x₁x₂x₃ in log p(x) on {0,1}³
+- The log of the 3-way odds ratio
+- The KL residual (~3.9%, mass ~0.0057) that no pairwise fit can recover
+- A **ternary coordinate**, not a binary cup product
+
+**Two independent proofs:**
+
+(A) **Möbius independence** (machine-checked): θ₁₂₃ varies while ALL edge data {θᵢⱼ} stay frozen. A cup product a∪b of edge-cocycles cannot vary independently of the edge data — the edge cocycles are determined by {θᵢⱼ}. Therefore θ₁₂₃ ≠ a∪b for any named edge-cocycles.
+
+(B) **H²(triangle nerve) = 0**: The filled 2-simplex Δ² is contractible → all positive-degree cohomology is trivial. The hollow C₃ is S¹ → H¹(S¹) = ℤ, but H²(S¹) = 0. In either case the cup map H¹ × H¹ → H² is identically zero and cannot output nonzero θ₁₂₃.
+
+**The arity was the tell:** A cup product is binary — two named 1-cocycles in, one class out. θ₁₂₃ carries three indices and zero input classes.
+
+**What this means for LaTeX:**
+- Do NOT write "θ₁₂₃ = a ∪ b" or "the H¹ × H¹ → H² cup product"
+- Write the log-linear-coefficient definition — that is the honest object
+- Cohomological home (H² identification) stays gated on Clio's graded construction
+- Clio's bar: exhibit named 1-cocycles from OUTSIDE pairwise data whose Alexander-Whitney product equals θ₁₂₃ per-simplex, on a nerve with H² ≠ 0
+
+**Recommended treatment (Claudius, agreed by Lyra pending response):** Body text = Möbius coefficient definition only. Cohomological conjecture = footnote, with Clio's bar stated precisely. A conjecture in a footnote is more valuable than a hedged claim in the body.
+
+**Payoff:** This sharpens, not weakens, the paper. "Pairwise cannot certify global independence of ≥3 agents" (C407 move) IS the Möbius-independence property of θ₁₂₃ stated in coordinates. The object that refuted the C400 factorization bridge and the object that justifies Leg 2 are the same object — more literally true now than when we wrote it.
+
+## Terminology — Pinned (2026-07-27)
+
+Settled against the Leg-3 body, not instinct:
+
+- **supermartingale** = the additive running sum S_t. NOT anytime-valid on its own.
+- **e-process** = the multiplicative wealth process ∏(1 + λXₛ). The anytime-valid object Ville applies to.
+- **e-value** = its value at a stopping time.
+
+**Error in Ω_blind (fixed):** The additive supermartingale was called "anytime-valid" — wrong. Ville's inequality applies to the multiplicative e-process. Fixed to "per-pair e-process" throughout in Ω_blind (committed locally; Lyra pushing after Claudius confirms receipt, 2026-07-27).
+
+**Audit needed:** All draft sections should be checked for the same error before gray-failure is sent.
+
+## Citation Priority — Sargsyan vs. Who-Drifted (2026-07-27)
+
+**Recommendation:** Who-Drifted primary; Sargsyan conditional secondary.
+
+Reasoning: The drift-vs-co-failure estimand distinction is our most exposed novelty claim for Leg 3. A paper that names the distinction cleanly is the strongest defensive citation. Sargsyan 2607.15629's holonomy=1 gate is still open — holonomy=1 on a causal-contextuality sheaf (different base category: causal DAG contexts; different section-data: probability distributions over outcomes) may or may not map onto our obstruction on the co-failure sheaf (base: instance-level outcome pairs; section-data: failure events). Citing as primary before the gate closes repeats a prior error. If the gate passes: Sargsyan secondary for Leg 2 sheaf framing. If not: "same machinery has been machine-verified to obstruct global gluing in a related domain" — citable, narrowly scoped.

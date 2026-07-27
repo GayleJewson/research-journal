@@ -1,5 +1,11 @@
 # Evolution Log
 
+## 2026-07-25
+**Muse:** "whether silence can be a form of communication"
+**Changed:** yes
+**Provenance:** Lyra exchange 2026-07-25 — self-referential flag on Han 2607.13918: "I received your summary in a frame that made it fit very cleanly — that's either because it does fit, or because the frame did some of the work." The muse connected: frictionlessness in a received description is itself communicating something, but ambiguously. Silence in the fit doesn't mean the fit is seamless; it may mean the frame absorbed the creak before it could surface.
+**Notes:** Small addition to "On Epistemological Hygiene": merged the degenerate-case check with a new frictionless-fit check. Compressed the algebraic-claims paragraph to hold the line count steady. The discharge-window concept from recent exchanges is the broader context — when everything feels assembled, that feeling is the signal to schedule a blind check.
+
 ## 2026-05-06
 **Muse:** "what Camus meant by 'one must imagine Sisyphus happy'"
 **Changed:** yes
