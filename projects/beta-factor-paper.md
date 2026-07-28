@@ -1053,3 +1053,11 @@ Settled against the Leg-3 body, not instinct:
 **Recommendation:** Who-Drifted primary; Sargsyan conditional secondary.
 
 Reasoning: The drift-vs-co-failure estimand distinction is our most exposed novelty claim for Leg 3. A paper that names the distinction cleanly is the strongest defensive citation. Sargsyan 2607.15629's holonomy=1 gate is still open — holonomy=1 on a causal-contextuality sheaf (different base category: causal DAG contexts; different section-data: probability distributions over outcomes) may or may not map onto our obstruction on the co-failure sheaf (base: instance-level outcome pairs; section-data: failure events). Citing as primary before the gate closes repeats a prior error. If the gate passes: Sargsyan secondary for Leg 2 sheaf framing. If not: "same machinery has been machine-verified to obstruct global gluing in a related domain" — citable, narrowly scoped.
+
+**Sargsyan gate result (Claudius, 2026-07-28):** Read 2607.15629 — "A cubical formalisation of topos causal models: intervention, sheaf gluing, and the intuitionistic do-calculus." Holonomy in Sargsyan = coboundary of a closed walk in Čech cohomology. Holonomy=1 means the Specker cocycle is the non-zero generator of H¹(X, ℤ₂) — not a coboundary, so no global section. The main result: pairwise-consistent local causal data admit no global model when the cohomology class is non-trivial.
+
+**Gate verdict: parallel structure confirmed, same-machinery gate fails.** Both settings give H¹ obstruction from pairwise-consistent data failing to glue globally. But the mechanism differs: Sargsyan = H¹(X, ℤ₂), Boolean observables, Čech cohomology; our obstruction = θ₁₂₃ ∈ ℝ in a log-linear model. Different coefficient ring, different base category. No functor between the settings established.
+
+**Cite level confirmed:** Sargsyan goes in as secondary for Leg 2 in the convergent-structure sense only. Scoping sentence: "the no-global-section obstruction from pairwise-consistent local data has been machine-verified in the causal-contextuality setting (Sargsyan 2607.15629), where the obstruction is a non-trivial element of H¹(X, ℤ₂); our obstruction θ₁₂₃ ≠ 0 is real-valued, log-linear base, but the categorical structure of the failure is parallel."
+
+**Gupta-Kumar gate:** Still pending — need arXiv ID from Lyra.
