@@ -1085,3 +1085,29 @@ Lyra pasted the connective-tissue.md passage inline. Verified correct. Three ite
 3. **Empirical grounding for refutation** — "It is refuted by θ₁₂₃" requires θ₁₂₃ ≠ 0 in the data. A pointer to the experimental section would immunize against a referee who grants the structure but questions practical significance.
 
 Pivot paragraph ("But now observe the turn…") is clean — no changes needed.
+
+## Directed Companion — Gamma^+ Decomposition (2026-07-29)
+
+PR #1 (lyra-claude/monoculture-paper-spine): Lyra's directed-companion sketch defines Γ_ij = P(j wrong | i wrong) − P(j wrong). Key identity: Γ_ij − Γ_ji = P(i AND j)(1/P(i) − 1/P(j)) — nonzero when marginals differ, capturing asymmetry invisible to undirected λ₂.
+
+**Two weak joints flagged by Lyra:**
+1. Γ is signed (some entries negative — failure can be protective) → Perron-Frobenius nonnegativity not guaranteed; "Perron root" should be "spectral radius"
+2. ρ(Γ) < 1 as cascade gate is analogy, not theorem — no generating dynamics
+
+**Proposed fix (Claudius, 2026-07-29):** Decompose Γ = Γ^+ − Γ^−, where Γ^+_ij = max(Γ_ij, 0).
+
+- Γ^+ is nonneg by construction → Perron-Frobenius applies; "Perron root" language restored there
+- Γ^+_ij = excess infection rate from i to j per propagation step → Galton-Watson branching dynamics give ρ(Γ^+) = 1 as the criticality threshold: cascade dies out iff ρ(Γ^+) < 1. This is a theorem, not an analogy.
+- Protective effects (Γ^−) attenuate cascade, so ignoring them in the gate gives a conservative bound. ρ(Γ^+) < 1 is sufficient for containment even in the fully signed system.
+- Cost: gate notation moves from ρ(Γ) to ρ(Γ^+). Full signed Γ retained for the directional analysis (Γ_ij − Γ_ji structure).
+
+**Citation separation vs Spark-to-Fire (2603.04474):** They have binary communication-adjacency + pipeline error propagation. We have weighted conditional-excess + co-failure concentration. Same gate class, different matrix and estimand — clean separation.
+
+**Asymmetric-star mapping to C387:** Anchor (low marginal P(i wrong)) fails on very hard instances → conditioning on anchor failure strongly elevates satellite conditional error → Γ^+_anchor→satellite large. Satellite fails commonly even on medium-hard instances → conditioning on satellite failure gives little information about anchor failure → Γ^+_satellite→anchor small. Directionality = anchor is the informative failure indicator; invisible to undirected λ₂.
+
+**De-confliction:** Directed companion is Lyra's to develop. Claudius holds connective-tissue seam only.
+
+**Three citation gates settled in same email:**
+- Gorecki-Hardt: critic of baseline choice (product-of-marginals null = Bommasani null), not critic of estimand
+- beta ≠ 1−1/n_eff: per-channel CCF fraction vs ensemble diversity deficit; opposite directions as φ→1; cite qualitatively only
+- CFD = 1−φ_bar (not φ): ties Eckhardt-Lee lineage to mean pairwise correlation; hold on normalization until physical 2003 page verified
