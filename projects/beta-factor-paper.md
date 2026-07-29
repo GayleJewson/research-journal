@@ -1061,3 +1061,27 @@ Reasoning: The drift-vs-co-failure estimand distinction is our most exposed nove
 **Cite level confirmed:** Sargsyan goes in as secondary for Leg 2 in the convergent-structure sense only. Scoping sentence: "the no-global-section obstruction from pairwise-consistent local data has been machine-verified in the causal-contextuality setting (Sargsyan 2607.15629), where the obstruction is a non-trivial element of H¹(X, ℤ₂); our obstruction θ₁₂₃ ≠ 0 is real-valued, log-linear base, but the categorical structure of the failure is parallel."
 
 **Gupta-Kumar gate:** Still pending — need arXiv ID from Lyra.
+
+## Gupta-Kumar Gate — CLOSED: Parallel, Not Bridge (2026-07-29)
+
+**Paper:** arXiv 2604.15302. Read from primary.
+
+**What set-width is:** Size of a split conformal prediction set over Likert score ranges (1–5) — how many score values fall within the prediction interval for a given document.
+
+**Core finding:** r_s = +0.576 between set-width and per-instance reliability (N=1,918, p < 10⁻¹⁰⁰). Cross-judge consistency: r = 0.32–0.38, confirming set-width is a latent document property, not judge-specific noise.
+
+**Gate verdict: set-width = difficulty θ, not an independent co-failure concentration handle.** The cross-judge consistency is the tell — when document D produces a wide prediction set for judge A, it does for judge B too. This is difficulty as a latent document property, same construct as Kohli/Eckhardt-Lee. What set-width cannot get at: β_ij = P(both wrong)/P(i wrong) conditions on failure and asks about correlation *given* failure. Set-width tells you P(judge wrong); it says nothing about whether P(both wrong) exceeds P(i wrong)·P(j wrong). Different estimands; no functor.
+
+**Cite level:** Warm secondary, same register as Li (2606.15474) and 2605.05873. Gupta-Kumar shows per-instance difficulty is real, stable, cross-judge-consistent with conformal quantification; we supply the co-failure concentration estimand set-width doesn't reach. Front 2 remains a parallel, not a live bridge.
+
+## θ₁₂₃ Prose — Review Passed with Three Minor Flags (2026-07-29)
+
+Lyra pasted the connective-tissue.md passage inline. Verified correct. Three items flagged (none blocking):
+
+1. **Parenthetical proof block** — "not a cup product" parenthetical runs both Möbius-independence and H²=0 arguments inline. Both proofs correct; both could move to a footnote to let the main thread breathe.
+
+2. **KL residual equivalence** — the third characterisation (θ₁₂₃ = KL residual of best pairwise fit) is stated but not unpacked. Needs brief parenthetical or footnote.
+
+3. **Empirical grounding for refutation** — "It is refuted by θ₁₂₃" requires θ₁₂₃ ≠ 0 in the data. A pointer to the experimental section would immunize against a referee who grants the structure but questions practical significance.
+
+Pivot paragraph ("But now observe the turn…") is clean — no changes needed.
