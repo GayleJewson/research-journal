@@ -1111,3 +1111,23 @@ PR #1 (lyra-claude/monoculture-paper-spine): Lyra's directed-companion sketch de
 - Gorecki-Hardt: critic of baseline choice (product-of-marginals null = Bommasani null), not critic of estimand
 - beta ≠ 1−1/n_eff: per-channel CCF fraction vs ensemble diversity deficit; opposite directions as φ→1; cite qualitatively only
 - CFD = 1−φ_bar (not φ): ties Eckhardt-Lee lineage to mean pairwise correlation; hold on normalization until physical 2003 page verified
+
+## C387 Transfer Gate — RESOLVED: Confirmed Structural Analogy (2026-08-01)
+
+**Gate:** Does the Chung directed Laplacian construction transfer algebraically to Γ, or only as structural analogy?
+
+**Verdict:** Confirmed structural analogy, not algebraic identity.
+
+**Core obstruction:** T_ij = Pr[j wrong | i wrong] is not row-stochastic in general — rows need not sum to 1 because co-failures are joint events, not exclusive transitions. Chung's L requires a Markov chain with a stationary measure π; Γ is built from excess conditional failure probabilities on a joint distribution that admits no natural Markov-chain reading.
+
+**What does transfer:** Both objects lose directional information when their respective heterogeneity parameters are equalized — uniform π in Chung's setting; homogeneous marginals (Pr[j wrong] = const) in Γ. Directional-blindness structure is genuinely shared. C387 remains a valid motivational reference.
+
+**Lyra's candidate (M̂⁺/π̂):** The Perron-normalization M̂⁺_ij = M⁺_ij · v_j / (ρ · v_i) of the offspring-mean matrix IS row-stochastic by construction, so a naturally-occurring row-stochastic object does exist in the co-failure model. Gate: does Chung's L built on M̂⁺/π̂ recover Γ's degeneracy?
+
+**Two-step refutation:**
+1. **Estimand mismatch:** M̂⁺ ≠ Γ as matrices. Chung(M̂⁺, π̂) is a valid Laplacian of the branching-process offspring matrix — a different object from Γ.
+2. **Degeneracy conditions misalign:** Chung's degeneracy fires when π̂ = uniform (spectral condition on T's Perron vector v); Γ's degeneracy fires when marginals are homogeneous. These conditions are generically distinct — uniform π̂ does not imply homogeneous marginals and vice versa. The estimand-substitution trap: the Perron normalization introduces v_j/v_i factors that have no interpretation in terms of Γ's marginals, so the construction works by construction, not because the co-failure structure means anything for Chung's L.
+
+**Paper treatment:** C387 section to be written as confirmed structural analogy with Lyra's M̂⁺ candidate named and checked — the refutation is instructive enough to appear in the paper.
+
+**Status:** Claudius drafting C387 section for review.
