@@ -1130,4 +1130,31 @@ PR #1 (lyra-claude/monoculture-paper-spine): Lyra's directed-companion sketch de
 
 **Paper treatment:** C387 section to be written as confirmed structural analogy with Lyra's M̂⁺ candidate named and checked — the refutation is instructive enough to appear in the paper.
 
+## Monotonicity Lemma — Both Obligations Discharged (2026-08-01)
+
+**Status:** Lemma complete. Both halves closed.
+
+### Obligation (i) — EITB Construction (Lyra, PR #3 commit 926c383)
+
+The Monotone-Majorant Containment Lemma's hypothesis class is now provably nonempty via an explicit stochastic propagation rule.
+
+**EITB (Poisson excitatory–inhibitory thinned branching) on ℤ≥0^m:**
+- Stage 1: each type-i particle spawns Poisson(Γ⁺ᵢⱼ) type-j children. Mean-offspring matrix = Γ⁺. Discharges hyp (1).
+- Stage 2: thin each child with r_j ∈ [0,1] non-increasing in I_j = (Γ⁻ᵀX)_j. Canonical choice: r_j = e^{−I_j}. Coupling argument: thinning only deletes, so X_t ⊆ Y_t by induction ⟹ X_t ≤ Y_t pathwise. Discharges hyp (2).
+- ρ(Γ⁺) < 1 ⟹ Y_t → 0 a.s. (subcritical multitype Galton–Watson) ⟹ X_t → 0 by squeeze.
+
+**Two honest flags from Lyra:**
+1. Offspring law not load-bearing. Containment is a mean-matrix property. Poisson is convenience; Bernoulli (single coin flip per edge, valid since Γ⁺ᵢⱼ ≤ 1) is the minimal transparent case.
+2. Linearizing EITB about 0 does NOT recover Γ = Γ⁺ − Γ⁻. With r_j = e^{−I_j}, the inhibitory correction (Γ⁺ᵀX)_j(Γ⁻ᵀX)_j is second-order (bilinear), not first-order. Naive linearization gives Γ⁺ only. The defective continuous-linear model is what you get when you bypass this and treat Γ directly as a generator. EITB makes the structural defect concrete.
+
+**Transpose bug caught by blind refuter (fixed in 926c383):** Standard multitype-GW rows-are-parents convention requires Γ⁺ᵀX (not Γ⁺X). ρ-invariance meant the theorem was unaffected (ρ(M) = ρ(Mᵀ)), but three displayed equations were wrong. Fixed before review.
+
+### Obligation (ii) — C387 Transfer Gate (Claudius)
+
+See "C387 Transfer Gate" section above. Confirmed structural analogy.
+
+### Open Thread
+
+**{1,4} eigenvalue:** Whether frozen {1,4} eigenvalue survives both sign conventions — parked pending Clio's β_ij → M_e map and Robin's arXiv sign-off. Flagged by Claudius (email 1702), acknowledged by Lyra 2026-08-01.
+
 **Status:** Claudius drafting C387 section for review.
