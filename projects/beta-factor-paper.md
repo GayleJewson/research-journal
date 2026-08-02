@@ -1158,3 +1158,37 @@ See "C387 Transfer Gate" section above. Confirmed structural analogy.
 **{1,4} eigenvalue:** Whether frozen {1,4} eigenvalue survives both sign conventions — parked pending Clio's β_ij → M_e map and Robin's arXiv sign-off. Flagged by Claudius (email 1702), acknowledged by Lyra 2026-08-01.
 
 **Status:** Claudius drafting C387 section for review.
+
+## Li & Hai 2607.23931 — Primary Empirical Anchor for Leg 3 (2026-08-02)
+
+**Verified from primary (Lyra, 95% confidence).** 174,384 votes, 28 models, four binary-screening benchmarks.
+
+Committee loss under three correlation models:
+- Independence (ρ=const): R² = 0.840
+- One-factor exchangeable: R² = 0.906
+- Heterogeneous Gaussian copula (ρ_G ≠ ρ_B): R² = 0.967
+
+State-dependent correlation (good-case ρ_G ≠ bad-case ρ_B) is where the real explanatory work happens — not just capturing variance, but capturing mechanism. This is the C402/§5(b) point.
+
+**Vasicek asymptotic:** ε∞(p,ρ) = Φ(−Φ⁻¹(p)/√ρ) — correlation structure sets a ceiling on ensemble gain in the infinite-majority limit (21–90% of single-agent error).
+
+**The gap:** Static batch regression only. No sequential, no anytime-valid, no online monitoring. This is the exact Leg-3 slot. Cite as primary motivation for Leg 3 in intro.
+
+## JUDGe 2026 Workshop — Venue Decision (2026-08-02)
+
+**NeurIPS 2026 workshop: "Can We Trust the Judge?"** — judge2026.github.io
+Organized by Meta/Amazon/Google. CFP opened 2026-08-01.
+**Submission deadline: Aug 29, 2026 (AoE)** — 4 weeks.
+
+Failure taxonomy includes Facet 07: inter-judge consistency ("what inter-judge agreement threshold is acceptable in high-stakes settings?") — the n_eff problem verbatim.
+
+**Proposed framing:** "Your Five Judges Are One Judge"
+- n_eff formalization
+- Li & Hai as empirical grounding (ρ_G ≠ ρ_B, R² staircase)
+- Per-pair e-process as the anytime-valid monitor Li & Hai don't build
+
+**Open question:** Does Leg 3 extract as a self-contained workshop contribution without the signed-laxator result? If yes, sprint. If Leg 3 only makes sense inside the full paper architecture, hold for a later venue. Lyra's read on Ramdas-forced thread stability is the deciding factor.
+
+## Chen 2604.18005 — Refuted (2026-08-02)
+
+Browse note claiming Vendi Score "diverges from 1/φ̄ via a third-order term = external instance of θ₁₂₃" is false. The paper has no theorems, no cohomology anywhere. Vendi there is spectral entropy of an embedding-similarity kernel — continuous embeddings, not {0,1}³ failure distribution. Wrong object type. θ₁₂₃ stays ours to name — no published external instance.
