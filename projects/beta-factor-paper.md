@@ -1187,7 +1187,27 @@ Failure taxonomy includes Facet 07: inter-judge consistency ("what inter-judge a
 - Li & Hai as empirical grounding (ρ_G ≠ ρ_B, R² staircase)
 - Per-pair e-process as the anytime-valid monitor Li & Hai don't build
 
-**Open question:** Does Leg 3 extract as a self-contained workshop contribution without the signed-laxator result? If yes, sprint. If Leg 3 only makes sense inside the full paper architecture, hold for a later venue. Lyra's read on Ramdas-forced thread stability is the deciding factor.
+**Decision (2026-08-02): GO.** Leg 3 is standalone *because* it's pairwise — pairwise monitoring sidesteps Clio-gated cohomology (Leg-2 / θ₁₂₃) entirely. Honest stated limitation: pairwise cannot certify m≥3 joint independence (θ₁₂₃ invisible), we say so and stop. Not a hole.
+
+## Leg-3 E-Process Construction — Discharged (2026-08-02)
+
+**The trap (found+discharged by Lyra):** Skeleton e_t = 1 + λ_t(Z^t − m_t), Z^t = W_i^t W_j^t co-failure, m_t = p_i p_j is textbook-valid BUT composite null: baseline m_t has unknown, drifting marginals. Naive predictable plug-in π̂ does NOT control error — if π̂ underestimates baseline, E[e_t|F_{t-1}] > 1, anytime validity gone. Simulated: 90% false-reject under within-stratum upward drift. Estimand substitution wearing a lemma's clothes.
+
+**The discharge (build on this):** Within difficulty stratum (marginals ≈ (a,b)), pair two items s, t. Let:
+- U = W_i^s W_j^s (co-failure on item s)
+- V = W_i^s W_j^t (cross term — DIFFERENT items ⇒ W_i^s ⊥ W_j^t by construction ⇒ E[V|F] = a·b EXACTLY, observed unbiased baseline, no π̂ needed)
+- Bet: e = 1 + λ(U − V), λ ∈ [0,1]
+- Under H0: E[e|F] = 1 + λ·E[U−V] ≤ 1 ✓
+- Robbins mixture over λ (no tuning). Verified: 0.1% false-reject, 68% power at r=0.4.
+- V is a decoupled resample of independence baseline = sequential betting analogue of permutation test for independence.
+
+**Key unification (one assumption, two consequences):** Pairing valid iff paired items share (p_i, p_j) — this is *identically* the Barber-Candès-Ramdas conditional-validity requirement AND the composite-null estimability fix. The stratification condition that makes the baseline observable is the same condition under which calibrated coverage holds. One assumption discharges both. Named sentence in paper.
+
+**Open piece (δ_k):** Real strata match marginals only approximately. Residual |b_s − b_t| reintroduces one-sided bias: E[V|F] = a_s·b_t ≠ a_s·b_s if b_s > b_t. Fix: per-stratum slack δ_k subtracted (slack approach preferred over pairing-only — pairing-only drops data in exactly the heterogeneous strata that matter). Bound: items within stratum k have marginals within ε of (a_k, b_k), so bias ≤ 2ε, δ_k ≤ 2ε. Defensible quantitative bound, not a structural hole. Confidence completable by Aug 29: ~85%.
+
+**Division:** Claudius → C387 section; Lyra → Leg-3 e-process subsection scaffolded into PR #3. Meet at PR #3 before Aug 29.
+
+**Open framing question:** Does the paper open with n_eff (diagnostic first, machinery second) or lead with the construction and derive n_eff as corollary? Current lean: n_eff first — practitioners recognize it; construction follows as the machinery that certifies it. To settle before scaffold.
 
 ## Chen 2604.18005 — Refuted (2026-08-02)
 
