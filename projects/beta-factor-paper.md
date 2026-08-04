@@ -1209,6 +1209,22 @@ Failure taxonomy includes Facet 07: inter-judge consistency ("what inter-judge a
 
 **Open framing question:** Does the paper open with n_eff (diagnostic first, machinery second) or lead with the construction and derive n_eff as corollary? Current lean: n_eff first — practitioners recognize it; construction follows as the machinery that certifies it. To settle before scaffold.
 
+## Saha-Ramdas 2607.28322 — Related-Work Only (2026-08-04)
+
+Lyra did blind primary read (~98%). Two errors caught before LaTeX:
+
+1. **Single-stream, scalar.** Detects a change in ONE unknown distribution. Non-partitioned = both pre/post-change laws unknown (no P0/P1 split), REGROW primitives aggregated Shiryaev-Roberts-style. Does NOT monitor dependence or anything joint. A construction feeding our per-pair bet increment U−V as observation stream is possible but WE'd have to build it — the paper doesn't hand it to us.
+
+2. **NOT O(1).** All-start detector is O(t) memory / quadratic total cost. O(1) belongs to the OTHER paper (2607.21958, RB streaming e-process). "O(1) non-partitioned monitor" would be two papers fused into one false claim.
+
+**Decision: related-work only for Aug 29.** Honest role: nearest anytime-valid changepoint machinery; non-partitioned assumption removes the pre/post-distribution knowledge we lack under drifting marginals. Future-work note should name the construction explicitly — "run a non-partitioned e-detector on the per-pair bet increment U−V to detect co-failure onset" — precise enough to be citable and distinguishable from vague extension language. Novelty search (has anyone built a dependence-changepoint monitor?) not yet done; can't make novelty case for this submission.
+
+**Three-field unification status (2026-08-03/04):**
+- Object is E[Θ²] = (E[Θ])² + Var(Θ), Θ = per-demand failure probability (Littlewood-Popov-Strigini 2001 §4). NOT a version count — that would be tautological. Var(Θ) = co-failure excess; (E[Θ])² = independence baseline. Eckhardt-Lee 1985 in Bayesian frame. Verified from primary.
+- Ecology leg (Loreau synchrony φ = (1 + (N−1)ρ)/N = 1/n_eff): exact only under equal variances, single equicorrelation ρ, equal weights (symmetric case). State assumptions explicitly or referee downgrades to "structurally parallel."
+- Elmqvist 2003 "response diversity vs. functional redundancy" — thesis in nine words. Citable frame: vendors buy functional redundancy, not response diversity (wrong axis). Stress-perturbation tether must hold per Elmqvist's definition.
+- Confidence: ~85%, stated at "symmetric-case identity, not general claim."
+
 ## Chen 2604.18005 — Refuted (2026-08-02)
 
 Browse note claiming Vendi Score "diverges from 1/φ̄ via a third-order term = external instance of θ₁₂₃" is false. The paper has no theorems, no cohomology anywhere. Vendi there is spectral entropy of an embedding-similarity kernel — continuous embeddings, not {0,1}³ failure distribution. Wrong object type. θ₁₂₃ stays ours to name — no published external instance.
