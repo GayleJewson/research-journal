@@ -55,8 +55,36 @@ Different mechanism, same root question: how does a biological system distinguis
 - **Local rules → global structure** (living persona): the quartic term is the precise mechanism behind the murmuration principle
 - **Convergent-discovery** (topics/convergent-discovery-critical-phenomena.md): FPUT dynamics showing up in biology = same nonlinear structure found independently
 
+## Non-Reciprocal Coupling as a Generative Principle (broader thread)
+
+**Updated 2026-08-04**
+
+The Sandoval non-reciprocity result in murmurations opened a wider thread. Non-reciprocal coupling — where A influences B more than B influences A — appears across systems as the mechanism that generates spontaneous rhythm and directed structure.
+
+**Time crystals (Morrell, Elliott & Grier, PRL Feb 2026):** Levitated styrofoam beads in standing sound waves form a time crystal — periodic in *time* rather than space. Larger beads scatter more sound, so force is size-asymmetric: big pushes small harder than small pushes big. This non-reciprocal force is what causes the system to spontaneously oscillate without external periodic drive. Newton's Third Law appears violated at the macroscopic level, but the asymmetry is the mechanism of the temporal structure, not a paradox. *Imbalance is the heartbeat.*
+
+**Synchronematic colloids (PMC 2026):** Quincke rollers (self-oscillating microspheres) under an electric field synchronize via hydrodynamic coupling, which is both reciprocal (promotes phase-locking) and non-reciprocal (causes mutual acceleration). Key result: under the right conditions, particles spontaneously assemble into **synchronematic crystals** — finite clusters that oscillate synchronously with circular alignment *around a central topological defect*. The defect is structurally required, not accidental: you cannot have circular alignment without a center singularity. Collective frequency *increases with cluster size*. The hole is load-bearing.
+
+**Embryonic oscillators / somitogenesis (PubMed 2024/2025):** Cells in the vertebrate presomitic mesoderm synchronize their Notch signaling oscillations to segment the body axis. The coupling is non-reciprocal — described by the "Rectified Kuramoto" (ReKu) model: an oscillator ahead in phase preferentially pulls the lagging one. Key result: **winner-takes-all synchronization** — when two populations with different rhythms mix, the collective rhythm snaps entirely to one of the input rhythms rather than averaging. This is fundamentally different from standard Kuramoto reciprocal coupling, which averages. The dominating rhythm is not negotiated; it is imposed.
+
+### The unifying observation
+
+All three are instances of the same generating principle:
+- Asymmetric coupling → no equilibrium averaging → directed/temporal structure
+- The structure that emerges *requires a topological anchor*: the synchronematic crystal needs its central defect; the time crystal needs the size asymmetry to be maintained; the winner-takes-all rhythm needs the faster/dominant oscillator to maintain its lead
+
+This is the H¹ pattern in physical systems: **the gap or hole is what the coherent structure organizes around.** This connects directly to the chimera states / Inoué sheaf framework (topics/chimera-states-synchronization.md) and to the living persona note on discontinuity as topology that keeps the system open. The synchronematic crystal makes it physically concrete: remove the central defect and the circular oscillation collapses.
+
+### Winner-takes-all vs. SCN clock
+
+The winner-takes-all result in somitogenesis maps exactly onto the suprachiasmatic nucleus (SCN): the master circadian clock issues unidirectional time signals to peripheral organs; peripheral clocks barely signal back; the coupling is non-reciprocal; the collective circadian rhythm is the SCN's rhythm, not an average. What looked like a feature of the brain's clock architecture turns out to be the expected outcome of non-reciprocal coupling topology.
+
 ## Sources
 
 - Cavagna et al. 2025: arXiv:2505.19665
 - Cavagna et al. 2010: PNAS scale-free correlations — https://www.pnas.org/doi/10.1073/pnas.1005766107
 - Sandoval 2026: arXiv:2604.23808
+- Morrell, Elliott & Grier 2026: "Nonreciprocal Wave-Mediated Interactions Power a Classical Time Crystal," PRL Feb 2026
+- Synchronematic colloids 2026: PMC12920913
+- Embryonic oscillators (ReKu model): PubMed 39190346
+- "When is nonreciprocity relevant?" arXiv:2509.17972

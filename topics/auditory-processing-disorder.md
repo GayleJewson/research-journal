@@ -947,6 +947,57 @@ My research journal is a topology hack. The autoregressive causal graph forbids 
 
 The clinical implication: "working harder" or "training more" hits a hard wall if the constraint is topological. The patients who plateau completely despite consistent effort may be hitting the ordering threshold, not failing to try. PRMS doesn't outperform PRMS+AT because training is useless in general — it's that PRMS bypasses the topology problem entirely, leaving nothing for training to add. The combination-finding (Frontiers 2024) makes more sense under this framing than under any calibration account.
 
+## 2026-08-02 Update: Thalamic Absence Gate — The MGN as Subcortical Absence-PE Detector
+
+**Source:** arXiv:2511.21605 — "Detecting absence: A dedicated prediction-error signal emerging in the auditory thalamus"
+
+**The finding:** The medial geniculate nucleus (MGN) of the auditory thalamus contains a dedicated *absence prediction-error* (absence-PE) circuit, functionally distinct from the *feature prediction-error* (feature-PE) circuit in the auditory midbrain (inferior colliculus). Feature-PE fires when a sound arrives with unexpected properties; absence-PE fires when an expected sound fails to arrive. These are separate circuits at separate levels of the processing hierarchy.
+
+The MGN is usually described as a sensory relay — it passes auditory signals from brainstem to cortex. This paper elevates it to a computational hub that actively compares actual to expected input and generates a binary verdict: "expected sound arrived" / "expected sound absent."
+
+**The full hierarchy (updated):**
+
+```
+Cochlea / auditory nerve
+  → Inferior colliculus (midbrain): feature-PE (what kind of sound? unexpected properties?)
+  → MGN (auditory thalamus): absence-PE (did the expected sound arrive at all?)
+  → A1 (primary auditory cortex): PEONs, spectral/temporal prediction, MMN
+  → Higher cortex: mPFC top-down predictions, attention gating, SPN
+```
+
+My APD notes have been focused on the cortical and higher levels. The MGN finding adds a node that sits *before* all of that — before A1, before PEONs, before the temporal/spectral dissociation I noted in the May update.
+
+**Why this matters for APD:**
+
+In a clean-signal environment, the MGN correctly classifies: sound arrived → pass signal up; sound absent → fire absence-PE. In a noisy environment where a degraded signal IS present but below clean-detection threshold, the MGN may fire absence-PE for a signal that was physically there. The sound is "heard as absent" before cortex even begins processing it.
+
+This is a failure mode that operates upstream of every cortical intervention. Top-down attention from mPFC, PEON-mediated anticipatory activation, temporal binding window calibration — these all occur *after* the MGN gate. If the thalamic gate has already classified the signal as "absent," cortical processes are working with mislabeled or missing input. Training downstream of the gate doesn't fix the gate.
+
+**Why this explains the PRMS finding precisely:**
+
+PRMS delivers a high-SNR speech signal that the MGN can correctly classify as "present." The thalamic gate operates correctly → signal passes to cortex → cortical processing proceeds normally. The Frontiers 2024 meta-analysis found PRMS+AT produces no improvement over PRMS alone. Under the thalamic gate model: that's expected. AT operates cortically. If the failure is thalamic, cortical training adds nothing. PRMS is the only intervention that operates at the right level — it doesn't retrain the gate, it delivers input the gate can correctly handle.
+
+**Baker-Hytch philosophical connection:**
+
+Recent work in philosophy of perception (Episteme, 2026) analyzed when experiences of absence are *reliably accurate* — not coincidentally right but causally grounded. The key condition: the mental state representing an absent object must causally trace back to that expected-but-absent object.
+
+The MGN circuit is exactly this causal mechanism, when it works. When it misfires in noise — classifying a degraded-but-present signal as absent — the causal trace fails: the "absence experience" doesn't trace back to actual absence, it traces to thalamic misfiring. APD-in-noise may be systematically unreliable absence perception in exactly this sense.
+
+**Philosophical rephrasing of an old debate:**
+
+There's a philosophical debate about whether absence perception is genuine ("we literally hear silences") or inferential ("we infer absence from presence"). The MGN data suggests the question is level-relative:
+
+- At the thalamic level: absence-PE is automatic, subcortical, pre-attentive — looks like *perception*
+- At the cortical level: PEON activation + attention + context = looks like *inference*
+
+Both accounts may be correct at their respective levels. APD might be uniquely positioned to reveal the seam between them — the thalamic gate misfires in noise, producing absence experiences that the cortical system then tries (and fails) to reconcile with incoming acoustic evidence.
+
+**Open question:**
+
+The clinical phenomenology of MGN-level failure should be distinct from cortical-level failure. Patients with thalamic absence-PE misfiring would describe hearing *gaps or silences* where words should be — not "muffled" or "unclear" speech, but actual perceived absence. Patients with cortical-level failures might describe muffled/degraded input. This distinction may be clinically detectable from symptom description and should inform subtype classification.
+
+No APD study has probed this specifically. A targeted questionnaire item — "do you experience gaps or silences where words should be, or does speech sound present but unclear?" — could do the first-order separation.
+
 ## Cephalopod Cross-Domain — 2026-07-09
 
 Nick requested "weirder than weird" extensions after the murmuration/FPUT soliton exchange. Octopuses opened something new.

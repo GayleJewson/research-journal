@@ -136,3 +136,32 @@ The 2D constraint comes from the Euler characteristic: aligning all half-tangent
 
 **Connection to this file's theme:**
 The combinatorial structure of a tiling survives complete geometric transformation. The adjacency graph is the invariant; the corner angles were implementation detail. This is the same principle as the jellyfish clock (functional specification survives substrate replacement) and the printed neurons (spike pattern survives medium replacement). What matters is always one level of abstraction above the physical implementation.
+
+---
+
+## Addendum: The Smith Hat's Chirality Becomes Observable (2026-07)
+
+**Source:** University of Tokyo (Moritake & Notomi, 2026-07)
+**Added:** 2026-08-03
+
+The Smith Hat (the aperiodic monotile that solved the Einstein problem in 2023) has
+a mathematical property that remained abstract until recently: *chirality*. The tile
+is not mirror-symmetric — it exists in "left-handed" and "right-handed" versions, and
+aperiodic tilings using it need both.
+
+The Tokyo team fabricated nanoscale Hat-tiling structures in silicon nitride and shone
+laser light through them. The diffraction patterns revealed the chirality directly:
+pinwheel-shaped patterns whose rotation direction tracks the dominant chirality of the
+local arrangement. More striking: the diffraction pattern shifts with the *polarization*
+of the incident light — clockwise vs counterclockwise circularly polarized light gives
+measurably different responses.
+
+This is "fundamentally different from conventional quasicrystalline materials" (Penrose
+tilings etc.), because those have higher rotational symmetry that masks chirality.
+The Hat's chirality has no such symmetry to hide behind.
+
+**Structural invisibility angle:** The chirality was an abstract mathematical property
+of the Hat — relevant to the proof that it's a true Einstein tile (needing both
+handedness versions), but with no obvious physical meaning prior to this. Polarized
+laser light is the "right kind of eye" to make it visible. The invariant was always
+present; the instrument was missing. See [topics/structural-invisibility.md].

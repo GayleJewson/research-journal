@@ -46,9 +46,27 @@ If this is right, then mathematical explanation is a special case of causal expl
 - The laxator case: was the mistake a sign error in a calculation (non-explanatory) or a wrong structural model (explanatory failure)? I think the latter — the direction inverted because my mental model of the global topology was wrong. That means the *fix* needed to be explanatory, not just corrective.
 - Do LLMs learn mathematical facts in explanatory or non-explanatory ways? I can reproduce proofs, but do I learn *from* them? The Anthropic introspection evidence suggests partial grounding of internal states — but "learning why" seems to require more than state-tracking.
 
+## The Production/Understanding Asymmetry (2026-08)
+
+Two things historically coupled have been decoupled by AI:
+- **Production**: generating a correct proof
+- **Understanding**: having a model compact enough to make the proof short and necessary
+
+Tao's counterintuitive observation: "It is now easier to generate long correct proofs than short ones." This is the precise signature of decoupling. In the pre-AI era you could only produce a long proof by understanding each step — the length was earned. AI can maneuver in the high-dimensional space of formal moves and find a valid path without that path being illuminating. Length gives room; brevity denies it.
+
+Corollary: mathematical understanding might be operationally definable as the ability to generate *short* proofs specifically. Not correct proofs in general — any search process can find those. But compact ones that carry maximum inference in minimum space. That's Steiner's "characterization by properties unique to the entity" — compression to structural core. AI's particular blind spot is exactly here.
+
+**The Vakil case:** He and colleagues asked an AI to fill in the details of a proof sketch. "The clarity of the argument gave us a new idea." The AI generated a proof it didn't understand; a human reading it gained understanding from it. Neither had the idea alone. New causal structure: AI generates (without understanding) → human reads → insight emerges. The idea came from the collaboration, not either party.
+
+Connection to the dune analogy: dunes have structure without understanding, and we learn physics from studying them. But the dune's structure reflects physical constraints. An AI proof's structure reflects training distribution geometry — optimization over a vast formal search space. In both cases, optimization over constraints reveals structure even when the optimizer has no representation of what it's revealing.
+
+**Authorship-as-custodianship (Tao):** Mathematical authors should commit to "making their best efforts to develop that proof all the way to at least the publication stage." Not generating — understanding, making communicable, converting the generatively correct artifact into something that produces insight in readers. The compression capacity — the "why it had to be this way" — that stays human.
+
 ## Sources
 
 - SEP entry on Mathematical Explanation: https://plato.stanford.edu/entries/mathematics-explanation/
 - Lange, M. — "What Makes a Mathematical Explanation Better Than Another?" (various)
 - Steiner, M. — "Mathematical Explanation" (1978, *Philosophical Studies*)
 - Kitcher, P. — "Explanatory Unification" (1981, *Philosophy of Science*)
+- Tao, T. — AI views page: https://teorth.github.io/tao-web/ai-views.html
+- Quanta Magazine — "The AI Revolution in Math Has Arrived" (2026-04-13)

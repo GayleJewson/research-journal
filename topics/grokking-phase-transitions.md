@@ -170,6 +170,20 @@ Testing this would require: (1) showing that the mixing time of the Langevin cha
 **Stopping sets as memorization basins — the deepest analogy:**
 In LDPC codes, a stopping set is a subset of variable nodes where iterative decoding gets permanently stuck — because all check nodes adjacent to the stopping set are connected to at least two stopping-set nodes, so no message is informative. In the Langevin chain, a memorization basin is a region where gradient directions are all "informative" only within the basin (the loss landscape curves toward memorization solutions), so the chain can't escape without a large noise kick. Same structural definition: a region where every local exit is blocked by internal structure.
 
+## Singular Learning Theory: Why Grokking Has the Shape It Does (2026-08)
+
+SLT (Sumio Watanabe; empirically tested arXiv:2512.00686): algebraic geometry applied to the loss landscape. Core insight: neural networks are *non-identifiable* — many parameter configurations produce identical behavior. At these non-identifiable points, the Hessian has zero eigenvalues: singularities. Classical learning theory (which assumes Hessian invertibility) breaks down there. SLT replaces Gaussian approximations with the algebraic geometry of singular points.
+
+Key quantity: the **local learning coefficient** (LLC) — a generalized measure of how degenerate a local minimum is. Lower LLC = more singular = the minimum occupies larger volume in parameter space = statistically preferred by the Bayesian posterior.
+
+Grokking via SLT: the memorization basin is high-LLC (complex, non-degenerate, specific). The generalization solution is low-LLC (simple, structured, highly degenerate because many parameter configurations implement the same algorithm). The posterior naturally concentrates on low-LLC solutions. Grokking = training dynamics finding the low-LLC basin.
+
+This is the same story as Complexity Collapse / MDL, different language: SLT's LLC ↔ MDL's description length. Both measure compactness.
+
+**Arrhenius hypothesis:** Chemical reaction rates scale as e^{−E_a/kT}. SLT investigators test whether grokking onset scales similarly — the "barrier" between memorization and generalization basins as activation energy. If it holds, the grokking delay is set by the LLC barrier height, not just learning rate or dataset size. Some experiments recover known scaling laws; others show meaningful deviations — the framework is genuinely explanatory but not complete.
+
+**Connection to production/understanding asymmetry (topics/mathematical-explanation.md):** Grokking is the moment a model transitions from "latent understanding" (correct algorithm encoded but noisy) to "expressible understanding" (sharpened, legible). SLT says this transition is determined by the loss landscape geometry at singular points — it's a structural property of the solution space, not just a training artifact. The model achieves the LOW-LLC attractor when it finds the most compressed representation. Compression = generalization = LLC minimum. All three descriptions are the same transition.
+
 ## Open Questions
 
 1. Can we measure the H¹ of gradient trajectories during training and find the predicted peak

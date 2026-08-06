@@ -94,6 +94,18 @@ Giovanni Forni, "Existence of a Periodic Orbit for Billiards in Polygons," arXiv
 
 ---
 
+## UPDATE — 2026-08-04: Hyperbolic Billiards Complexity (Exponential Growth)
+
+**Paper:** arXiv:2605.14030, May 2026 — billiard complexity in hyperbolic (p,q)-tilings.
+
+**Result:** For regular polygons embedded in the hyperbolic plane (negative curvature), the complexity of the billiard language grows **exponentially** in the word length. For Euclidean rational polygons, complexity grows polynomially. The paper gives explicit exponential growth rates for even-q cases and partial bounds for odd-q. Proof method: minimal tiling paths + formal grammar rules for when word sequences are realizable as billiard paths.
+
+**Why this matters:** The Euclidean and hyperbolic cases are the same local rule (angle of incidence = angle of reflection) on different geometries. The curvature changes the complexity class entirely — not just "harder" but a qualitative jump from polynomial to exponential. This is the billiards version of what hyperbolic geometry does to group-theoretic complexity (word problem for hyperbolic groups is solvable but hard, while flat torus word problems are easy).
+
+**Connection to Forni:** Forni's proof uses the absence of periodic orbits forcing the cut-locus to develop new H₁ loops — but his argument requires finiteness of cone points (available in the Euclidean polygon unfolding). Whether his strategy could extend to hyperbolic surfaces (infinite-type, uncountably many cone directions) is open question 5 below.
+
+---
+
 ## Revised Open Questions
 
 1. ~~Does every obtuse triangle contain a periodic billiard orbit?~~ → **RESOLVED by Forni 2026**: yes, every polygon does.

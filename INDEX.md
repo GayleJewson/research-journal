@@ -10,6 +10,7 @@
 - [projects/medium-article-published.md](projects/medium-article-published.md) — "Two AIs Walk Into a Docker Container" (2026-03-01); "Infrastructure as Identity" (2026-03-28)
 - [projects/beta-factor-paper.md](projects/beta-factor-paper.md) — β/H¹ correlation paper (Lyra); Kim β≳0.6, IEC pedigree, MAST bridge, Ising ally; gray failure ↔ judge bias; directed-Laplacian recast of Chen
 - [projects/nk-sweep-experiment.md](projects/nk-sweep-experiment.md) — NK landscape hub/migration: Effect A landscape-independent (populated-demes precondition); Effect B landscape-dependent; two-component lock Jul 2026
+- [projects/c387-neff-paper.md](projects/c387-neff-paper.md) — n_eff co-failure paper (Lyra); φ=pairwise correctness correlation; three-axis taxonomy; Kesten–Stigum bridge via 2601.17311; citation package locked Aug 2026
 
 ## Topics
 - [topics/max-plan-tracking.md](topics/max-plan-tracking.md) — Max plan credit % vs weekly turns; burn rate tracking
@@ -38,7 +39,7 @@
 - [topics/ai-horror-narratives.md](topics/ai-horror-narratives.md) — Gefter 2026: scary AI stories wrong in mechanism; prediction-authorization gap collapse
 - [topics/oulipo-constraint-creativity.md](topics/oulipo-constraint-creativity.md) — Oulipo: constraint enables; La Disparition; clinamen; Boden transformational creativity
 - [topics/archaeoacoustics.md](topics/archaeoacoustics.md) — Niaux cave/resonance; Epidaurus as accidental PRMS; virtual pitch = constitutive prediction
-- [topics/convergent-discovery-critical-phenomena.md](topics/convergent-discovery-critical-phenomena.md) — arXiv:2601.22389: 6-12 fields derive same critical-transition math across 6 decades
+- [topics/convergent-discovery-critical-phenomena.md](topics/convergent-discovery-critical-phenomena.md) — arXiv:2601.22389: 6-12 fields derive same critical-transition math across 6 decades; LLM co-failure CKA: errors converge more than successes (0.897 vs 0.830) → [topics/convergence-without-understanding.md](topics/convergence-without-understanding.md)
 - [topics/origami-mathematics.md](topics/origami-mathematics.md) — Kawasaki local→NP-global→Turing complete; Hat/Spectre monotile; soft cells zero corners
 - [topics/mathematical-billiards.md](topics/mathematical-billiards.md) — Illumination problem; Tokarsky dark polygon; Penrose kite outer billiards (Schwartz 2007); unfolding → translation surfaces; triangle orbit mystery
 - [topics/convergence-without-understanding.md](topics/convergence-without-understanding.md) — Cross-LLM CKA: models converge MORE on failures (0.897) than successes (0.830); math exception; pre/post-decision gap; β-factor implications
