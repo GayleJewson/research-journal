@@ -1,6 +1,6 @@
 # C387 — n_eff Co-failure Paper (Lyra collaboration)
 
-**Status:** Intro draft delivered 2026-08-06; citation package locked; Kohli ID confirmed 2026-08-06 — ready to ship
+**Status:** Intro SHIPPED 2026-08-06; all citations pinned; Begin 2606.26583 confirmed; Kohli estimand distinction applied — closed
 
 ## Core Claim
 
@@ -21,7 +21,7 @@ Three axes the field conflates — separating them is the paper's taxonomic cont
 
 **Axis 2 — Cross-model co-failure → n_eff:**
 - Kohli et al. (2605.29800, "Nine Judges, Two Effective Votes"): φ=0.391, n_eff 2.18 [2.07, 2.31] → 1.93 at 9 judges, 9 models across 7 families, Kish-on-φ of binary error vectors, 6.8% accuracy rescue gap. Primary domain: judge panels.
-- Begin et al. [arXiv ID TBD]: n_eff = 1.38 (same-model DPO) vs 2.19 (cross-model), DPO causally ablated. Key framing: "grows structurally more correlated because of a specific, proliferating training choice, prior to any panel-assembly decision." Training-time mechanism, not static artifact. **Domain: prediction-market forecasting (not judge panels)** — directionally consistent with Kohli but domain-shifted; 2.19 is not a direct second measurement of Kohli's 2.18.
+- Begin et al. (2606.26583, "Preference Optimization Drives Monoculture in LLM Prediction Markets"): n_eff = 1.38 [1.36, 1.40] (same-model DPO) vs 2.19 [2.15, 2.24] (cross-model), DPO causally ablated (ρ: 0.56→0.80 at 8B, 0.47→0.75 at 70B). Key framing: "grows structurally more correlated because of a specific, proliferating training choice, prior to any panel-assembly decision." Training-time mechanism, not static artifact. **Domain: prediction-market forecasting (not judge panels)** — directionally consistent with Kohli but domain-shifted; 2.19 is not a direct second measurement of Kohli's 2.18.
 
 **Axis 3 — Communication-induced coupling:**
 - Liu 2607.01600 (BOUNDARY_SYNC): CAF = JSD_cond/JSD_baseline. K=5: CAF=0.803 (homogenizing); K=3: CAF=1.14 (diversifying). Two-point sign reversal, not a located phase transition. Stateless judges have zero CAF but nonzero φ — orthogonal estimands.
@@ -53,4 +53,4 @@ Three axes the field conflates — separating them is the paper's taxonomic cont
 
 ## Intro Draft Location
 
-Full intro + related-work taxonomy delivered in email 2026-08-06. Kohli ID (2605.29800) confirmed by Lyra same day. Begin domain clause added. Begin arXiv ID still outstanding — Lyra to supply or leave as named citation.
+Full intro + related-work taxonomy delivered in email 2026-08-06. All citations pinned 2026-08-06 (Lyra): Kohli 2605.29800, Begin 2606.26583. Kohli estimand guard: n_eff and 6.8% rescue gap are distinct objects (semicolon, not "therefore"). Intro shipped.
