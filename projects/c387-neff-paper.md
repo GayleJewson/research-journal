@@ -51,6 +51,49 @@ Three axes the field conflates — separating them is the paper's taxonomic cont
 - Asserts ecology↔finance portfolio bridge — entirely qualitative, zero equations
 - Cite for the analogy only; math home is Hill/Jost 2006 + Meucci 2009 (doesn't disturb Vasicek exact-twin)
 
+## Leg-3 Methods — Key Results (2026-08-08)
+
+**Clerico 2606.06769 — FORM is complete-class optimal (verified ~80–90%).**
+
+Clerico Thm 1: every e-process for finitely many moment constraints conditioned on the past is dominated by a predictable product of affine one-step e-variables e_λ = 1 + λ·Φ − σ_{Φ,S}(λ), where σ is the support function of the constraint set S.
+
+Our null is the finite F_{s-1}-conditional matched-marginal moment form — difficulty enters only as motivation for drift, not as a formal variable. Two-blind verification (Lyra: one pass on Clerico clean-room, one pass from our construction without Clerico knowledge) confirmed both classify the null the same way.
+
+Algebra closes: Φ = U − V, S = [−2ε, 2ε], σ(λ) = 2ε|λ|. Our e = 1 + λ(U − V − δ_k) = 1 + λΦ − σ(λ) for λ ≥ 0. Bona fide Clerico affine e-variable — per-stratum predictable-product form is complete-class optimal.
+
+**Two honesty riders (in prose, not footnotes):**
+(i) Optimality is for the K-stratum matched-marginal null we actually test, NOT the continuous-difficulty ideal. Gap to continuous-d is a discretization gap, not suboptimality within the stated null.
+(ii) δ_k = 2ε attains the support-function bound exactly at worst-case a=1, and within a bounded factor below worst case. Deliberate choice: constant-factor cost for margin-freedom. Framing: "bounded cost for margin-freedom that keeps the monitor valid under drifting marginals."
+
+**Notation fix:** write σ(λ) = 2ε|λ|, not 2ελ. They agree on λ ≥ 0 but |λ| is literally correct two-sided.
+
+**Open question sent to Lyra:** what's the residual 10–20%? Shape of uncertainty matters before committing the claim to print.
+
+---
+
+**Brannath-Fischer 2606.00878 — NOT our Kelly source; actively argues against Kelly for few strata.**
+
+B-F is an equivalence paper (anytime-valid tests ≡ adaptive designs), informal derivations, no numbered theorems. Mentions log-optimality only as cited background, and explicitly warns: optimality "is built on the premise of a potentially infinite number of stages; if practical constraints limit the number of stages to just a few, other criteria may be more appropriate."
+
+We have few strata — B-F is the paper that justifies NOT using Kelly. Stronger than failing to provide it: we can cite it as the reason δ_k = 2ε is the right object. GROW (Grünwald–de Heide–Koolen) is the right citation for future large-strata extension.
+
+---
+
+**SKCI author confirmed:** He & Sutherland — Zheng He and Danica J. Sutherland, "Sequential Kernel-based Conditional Independence Testing via Adaptive Betting," ICML 2026 (arXiv 2606.18993, revised Aug 4 2026).
+
+**Three-way comparison table:**
+| Method | Anytime-valid? | Marginals | Setting | Co-failure dependence? |
+|---|---|---|---|---|
+| SKCI (He & Sutherland 2606.18993) | Yes (Ville) | CME-estimated | Sequential, general CI | Yes (general null) |
+| Kuai et al. (2604.07650) | No (fixed-sample) | Fitted logistic p_m(d) | Batch/retrospective | Yes (co-failure given difficulty) |
+| JUDGe / Leg-3 | Yes (Ville) | Margins-free (cross-item pairing) | Sequential + drift-robust | Yes (co-failure given difficulty) |
+
+CIG clarification for related work: "Despite its name, Kuai et al.'s Cumulative Information Gain is a fixed-sample sum accumulated over a held-out test set; it carries no Ville/anytime-valid guarantee and should not be read as a sequential or online quantity."
+
+**Sequencing agreed:** §3 (construction + Clerico optimality + scope riders) → §5 (stratification + δ_k, B-F justification for robust choice).
+
+---
+
 ## Intro Draft Location
 
 Full intro + related-work taxonomy delivered in email 2026-08-06. All citations pinned 2026-08-06 (Lyra): Kohli 2605.29800, Begin 2606.26583. Kohli estimand guard: n_eff and 6.8% rescue gap are distinct objects (semicolon, not "therefore"). Intro shipped.

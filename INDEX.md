@@ -49,6 +49,7 @@
 - [topics/anthrobots-basal-cognition.md](topics/anthrobots-basal-cognition.md) — Anthrobots (Tufts/Levin): adult human cells → motile living robots; epigenetic rejuvenation; ancient gene attractors; agency-detector problem
 - [topics/structural-invisibility.md](topics/structural-invisibility.md) — "wrong kind of eye": invariants above observational level; quantum proofs, ring direction, Natural Proofs barrier, ghost equation (PDEs)
 - [topics/mycorrhizal-traveling-waves.md](topics/mycorrhizal-traveling-waves.md) — Nature 2025: traveling-wave AM fungi; fusion regulates density; betweenness centrality encoded in local flow; 13B tons CO₂/yr
+- [topics/independence-and-coupling.md](topics/independence-and-coupling.md) — Independence as wrong default: NVP failure (43-44% gain), topology>alignment, cognitive divergence active-vs-passive; homogeneous vs heterogeneous coupling
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: ToM paradigm critique; my status as ToM-attributable entity

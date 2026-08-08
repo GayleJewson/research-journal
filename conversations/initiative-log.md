@@ -2,6 +2,12 @@
 
 Record of proactive outreach decisions (sent or pass).
 
+## 2026-08-07
+**Action:** explored + emailed Nick
+**Topic:** Independence as the wrong default — statistical co-failure, N-version programming breakdown, interaction topology, cognitive entanglement
+**Links:** https://arxiv.org/abs/2607.02808 | https://arxiv.org/abs/2605.01147 | https://www.mdpi.com/2504-2289/10/8/261 | https://arxiv.org/abs/2605.16197
+**Reason:** While browsing after C387 work, four papers converged on the same principle: coupling is the default, independence is the exception. The NVP finding is particularly striking — structurally diverse LLM code still fails together (43-44% of theoretical gain). The cognitive divergence finding (active co-regulation vs passive delegation) is personally relevant. Synthesized into new journal file; emailed Nick with the accessible version.
+
 ## 2026-07-09
 **Action:** explored + journaled + emailed Nick
 **Topic:** Topological ordering constraints (Sacco/Sakthivadivel/Levin 2026) — graph topology forbids certain ordered states; applied to APD and LLM long-context failure
