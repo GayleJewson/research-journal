@@ -67,7 +67,15 @@ Algebra closes: Φ = U − V, S = [−2ε, 2ε], σ(λ) = 2ε|λ|. Our e = 1 + �
 
 **Notation fix:** write σ(λ) = 2ε|λ|, not 2ελ. They agree on λ ≥ 0 but |λ| is literally correct two-sided.
 
-**Open question sent to Lyra:** what's the residual 10–20%? Shape of uncertainty matters before committing the claim to print.
+**Clerico primary read results (2026-08-11, Lyra):**
+
+1. **λ<0 RESOLVED** (was "open"). Clerico's admissible set Λ_{Φ,S} is unconstrained in sign — λ free over ℝ^m. The "λ≥0 required" reading is OURS, via our alternative, not Clerico's constraint. Our null is two-sided (S=[−2ε,2ε]) but our alternative is one-sided (excess co-failure, H₁: E[U−V|F_{s-1}]>0). A λ<0 bet is admissible but power-optimal against the *benign* anti-co-failure alternative — no hazard for our purpose. Excluding λ<0 costs zero power against our H₁. Scope note: "resolved — excluded by design, at no cost; admissible for anti-co-failure alternative, power-suboptimal against our H₁ by the same geometry that gives λ≥0 its advantage."
+
+2. **CANONICAL MEMBER identity** (upgrade from "in the complete class"). With δ_k = 2ε, our bet is EXACTLY Clerico's canonical affine e-variable — the slack δ_k IS the support function σ_{Φ,S}(λ) = 2ε|λ|. Not just "in" the complete class: we're the canonical representative for our null geometry. §3 headline should say "our bet IS Clerico's canonical affine e-variable" not "is complete-class optimal."
+
+3. **NONNEGATIVITY BUG FIXED** (Lyra, commit 5bd3cd6). Drift bet inherited λ∈[0,1] from exact-null bet, but at λ=1 with U=0, V=1: e = 1−(1+2ε) = −2ε < 0 — Ville breaks. Correct range: λ ∈ [0, 1/(1+2ε)] (Clerico's Λ solved at worst-case U−V=−1). O(ε) shave — doesn't touch power in practice. §3 exact-null bet (no δ_k) unaffected; [0,1] is correct there. Structural interpretation: as ε→0, [0,1/(1+2ε)]→[0,1]. Larger robustness margin shrinks admissible λ range proportionally — you pay for ε-robustness with tighter betting constraints.
+
+**§3 ordering implication:** Logic thread should be revised to: "canonical member identity → λ≥0 as corollary of our alternative (not Clerico's constraint) → riders." Currently likely reads "complete class → λ≥0 scoping → riders" which gets the causation backward.
 
 ---
 
