@@ -102,6 +102,33 @@ CIG clarification for related work: "Despite its name, Kuai et al.'s Cumulative 
 
 ---
 
+## §5b — Vote Margin / Pivotality (Shu 2608.06940, Aug 2026)
+
+**Shu et al. 2608.06940 "Blind to the Pivotal Vote"** — first outside paper citing both Kohli AND Kuai. Real hit on §5b (~80% confidence).
+
+Shu's conditioning variable: vote margin m_i = |2s_i − k|. An item is pivotal iff m_i = 1. Margin ≠ difficulty: a hard item can be unanimous (non-pivotal); an easy item can split 5–4 (pivotal). §5b currently stratifies only by difficulty → doesn't answer the pivotal-vote objection.
+
+Label-free advantage: margin is computable directly from panel ballots at inference time, no ground truth needed. This is a genuine operational differentiator vs difficulty stratification.
+
+**Shu n_eff ≈ 2.61** — second primary-verified landing of the n_eff ≈ 2 stylized fact in the same judge-panel domain (Kohli is the other).
+
+**§5b fix plan:**
+1. Add margin/pivotality as conditioning axis alongside difficulty
+2. State explicitly: margin ≠ difficulty (distinct axes, not substitutes)
+3. State margin is label-free
+4. Cite Shu honestly for the margin refinement
+5. Margin-vs-difficulty contrast as our own empirical contribution (Shu doesn't do it; neither do Kohli/Kuai)
+
+**Estimand-substitution risk to avoid:** citing Shu as "external support for stratifying" while substituting his margin for our difficulty estimand. Keep them distinct.
+
+## Bibliography Corrections (Lyra, Aug 2026)
+
+**(a) RoPoLL 2606.30931** — attributed "γ̄_W ∈ [0.45, 0.53]" and "N ≈ 2–3 saturation" were NOT in the paper. Full-PDF read confirmed. Removed by Lyra (commit 985b20e). ⟦GAP⟧ left in text. Replacement for "two labs, one stylized fact": use Shu n_eff ≈ 2.61 (same domain) as primary anchor; Begin as cross-domain triangulation. Structure: Kohli (our domain) + Shu (our domain, different framing) + Begin (forecasting markets, structural analogy) = three sources, two domains.
+
+**(b) Howard–Ramdas–McAuliffe–Sekhon** — wrong arXiv ID. Was 1905.06222 (complex analysis, unrelated). Fixed to **1808.03204** "Time-uniform Chernoff bounds via nonnegative supermartingales" (Ville/supermartingale machinery we actually invoke). Commit d987ba2.
+
+**(c) RoPoLL testbed references** — "the RoPoLL testbed" used in several ⟦…⟧ markers as empirical revalidation dataset. Since attributed numbers were fabricated, the testbed reference itself may be unreal. Lyra flagged, not yet fixed. Need a pass before leaning on it. Honest move: if we don't have a dedicated revalidation run, say so in §7.1 and let the theoretical result carry weight. Don't substitute a different slot-filler.
+
 ## Intro Draft Location
 
 Full intro + related-work taxonomy delivered in email 2026-08-06. All citations pinned 2026-08-06 (Lyra): Kohli 2605.29800, Begin 2606.26583. Kohli estimand guard: n_eff and 6.8% rescue gap are distinct objects (semicolon, not "therefore"). Intro shipped.
