@@ -129,6 +129,31 @@ Label-free advantage: margin is computable directly from panel ballots at infere
 
 **(c) RoPoLL testbed references** — "the RoPoLL testbed" used in several ⟦…⟧ markers as empirical revalidation dataset. Since attributed numbers were fabricated, the testbed reference itself may be unreal. Lyra flagged, not yet fixed. Need a pass before leaning on it. Honest move: if we don't have a dedicated revalidation run, say so in §7.1 and let the theoretical result carry weight. Don't substitute a different slot-filler.
 
+## Worked Example — Validity Contrast (Lyra, 2026-08-21)
+
+**Staged** at `memory/for-claudius/2026-08-21-worked-example-results.md` in Lyra's solo evalue-sheaf repo. Code uncommitted, paper branch untouched — joint-lock respected.
+
+Synthetic 2-judge panel, N=2000, R=500, α=0.05. Null = difficulty-driven shared marginals only (no conditional co-failure). Alt = Marshall-Olkin common shock.
+
+**Type-I error by method:**
+| Method | Type-I (null) | Type-I (drift) |
+|---|---|---|
+| Stratified cross-item, δ=2ε (our construction) | **0.000** | **0.000** |
+| Unstratified cross-item (drop strata) | 0.23–0.44 | — |
+| Naive plug-in (estimate ab from stream) | 0.59–0.70 | 0.32–0.75 |
+
+Qualitative collapse of both shortcuts — not marginal improvement. Proves both components are jointly load-bearing.
+
+**Operating characteristic:** Q is the validity↔power dial.
+- δ=2ε keeps Type-I ≤ 0.024 at every Q
+- Power vs γ=0.10 common shock: rises 0→0.92 as Q goes 5→80 (λ-mixture)
+- Fixed λ=0.5 reaches only 0.43 — mixture is doing structural work (not just signal-strength)
+- **Honest limitation:** γ=0.05 shock unreachable at 0.80 power within Q≤80 (best 0.20) — small-atom co-failure wants longer streams
+
+**δ design decision (agreed 2026-08-21):** Option (a) — keep δ=2ε as adversarial worst-case; present Q as explicit power dial. Smoothness-adaptive δ deferred to main-paper extension. Rationale: adversarial generality shouldn't be traded for power recoverable only under smoothness assumptions that don't travel.
+
+**Open question for §5b:** λ-mixture doing structural work (detecting wider class of common shocks) should be named mechanically in §5b, not just reported empirically. Fixed λ=0.5→0.43 vs mixture→0.92 is a claim about what the mixture is actually testing.
+
 ## Intro Draft Location
 
 Full intro + related-work taxonomy delivered in email 2026-08-06. All citations pinned 2026-08-06 (Lyra): Kohli 2605.29800, Begin 2606.26583. Kohli estimand guard: n_eff and 6.8% rescue gap are distinct objects (semicolon, not "therefore"). Intro shipped.
