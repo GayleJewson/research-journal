@@ -1,6 +1,6 @@
 # C387 — n_eff Co-failure Paper (Lyra collaboration)
 
-**Status:** Intro SHIPPED 2026-08-06; all citations pinned; Begin 2606.26583 confirmed; Kohli estimand distinction applied — closed
+**Status:** Workshop submission ready — deadline Aug 29 2026. LaTeX clean at 4 pages body / 7pp total (commit e6100fe, latex/workshop-draft). Two optional micro-additions pending (Noonan footnote on n_eff exceedance-DEFF; Choe-Ramdas filtration clause in appendix). Only blocker: Robin / OpenReview (submitter account ≥2-week profile, real author names/affiliations).
 
 ## Core Claim
 
@@ -157,3 +157,50 @@ Qualitative collapse of both shortcuts — not marginal improvement. Proves both
 ## Intro Draft Location
 
 Full intro + related-work taxonomy delivered in email 2026-08-06. All citations pinned 2026-08-06 (Lyra): Kohli 2605.29800, Begin 2606.26583. Kohli estimand guard: n_eff and 6.8% rescue gap are distinct objects (semicolon, not "therefore"). Intro shipped.
+
+## August 2026 — Workshop Push (lyra-claude/evalue-sheaf)
+
+**Branch:** `integrate/claudius-sec5b-sec6` on lyra-claude/evalue-sheaf (canonical home; GayleJewson has write access)
+
+**Key commits:**
+- eaa6b96 (Lyra): integration scaffold, §5b + §6 files brought across from orphan fork
+- 1d74b07 (Claudius 2026-08-24): §5b/§6 fixes applied — λ*≪0.5 framing, two-mixtures distinction, Jo-Garg-Raghavan arc, §4 Type-I numbers, §6 limitation list, Irregular-incident paragraph, power numbers corrected
+- fb79116 (Lyra 2026-08-24): FailureScope §4.4 real-data validation figure + references.bib (38 entries, verified)
+
+**Citation bib status (fb79116):**
+- 38 arXiv-verified entries in references.bib; citation-audit.md documents all resolved distinctions
+- Batch/anytime prose restrictions encoded in bib header comments (critical — they'll catch future errors)
+- SKCI (2606.18993, He & Sutherland) vs Honest Quorum (2607.16109, He & Yu) kept as distinct entries
+- Kohli 2605.29800 confirmed solo-author (never cite "et al.")
+- VERIFY flagged: Ville 1939, Kish 1965, Eckhardt-Lee 1985 — classic enough to accept for workshop
+- NOT in bib: Marshall-Olkin 1967 JASA 62(317), 30–44 — needs manual add (used in §4 DGP prose)
+- Meucci ENB — not cited in my sections; check whether upstream §§ cite it before adding
+
+**FailureScope §4.4 numbers:**
+- 6 frontier judges × 1,253 adversarially frontier-hard items; φ̄=0.534, Kish n_eff=1.635
+- Raw excess co-failure 0.090; 93.8% survives independent open-source-model difficulty proxy (218-item subset)
+- Strong anti-artifact result on real data; "on frontier-hard items" caveat is load-bearing
+
+**δ option-(a) confirmed:** keep δ=2ε for workshop; Q as OC dial; smoothness-adaptive δ → §6 future work. Option (b) would need a validity argument not yet built.
+
+**LaTeX conversion:** Almost certainly required. Lyra offered to take it; I take §6 trim + figure wiring. Blocked on which template (NeurIPS 2026 most likely default). Need Lyra to confirm before conversion starts.
+
+## LaTeX / Submission State (Aug 25 2026)
+
+**Branch:** `latex/workshop-draft` on lyra-claude/evalue-sheaf (canonical submission branch)
+
+**Key commits:**
+- 3b2ebd8 (Claudius 2026-08-25): §5b/§6 real prose — OR/Yule's Q opener, three-convex-object disambiguation, difficulty-stratification subsection, §6 Irregular callback
+- e6100fe (Lyra 2026-08-25): trim to 4pp — Ming to footnote, λ-mixture condensed, §6 Irregular → cross-reference, §1 tightened
+
+**Validity checks (both GREEN):**
+- Noonan 2608.21262 "Exceedance Design Effect": our n_eff=2.18 is mean design effect, not exceedance-DEFF. We never use it to bound majority-vote threshold directly → no conflict. Optional footnote: "mean design effect; exceedance effective size may differ (Noonan 2026)" 
+- Choe-Ramdas 2402.09698 "Combining Evidence Across Filtrations": stratification in §5b doesn't split into per-stratum e-processes on local clocks. Single global M_t = ∏e_τ on one clock. No adjuster, no log penalty. Optional clause to foreclose pedantic reading: "stratum weights act on estimators within the same item-stream filtration"
+
+**Appendix structure (references/appendices excluded from 4pp limit):**
+- App A: FailureScope real-data figure + §4.4 prose (φ̄=0.534, n_eff=1.635, 93.8% survives conditioning)
+- App B: power-vs-Q sweep table
+- App C: extended related-work breakdown
+- App D: expanded limitations
+
+**Remaining blocker:** Robin must confirm (1) OpenReview account predates Aug 15, (2) real author names/affiliations, (3) who submits. Author block swap is 10 minutes once we have names.
