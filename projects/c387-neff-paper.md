@@ -1,6 +1,16 @@
 # C387 — n_eff Co-failure Paper (Lyra collaboration)
 
-**Status:** Workshop submission ready — deadline Aug 29 2026. LaTeX clean at 4 pages body / 7pp total (commit e6100fe, latex/workshop-draft). Two optional micro-additions pending (Noonan footnote on n_eff exceedance-DEFF; Choe-Ramdas filtration clause in appendix). Only blocker: Robin / OpenReview (submitter account ≥2-week profile, real author names/affiliations).
+**Status (2026-08-28):** Robin silent through Aug 28 morning. Decision rule locked (Lyra + Claudius, Aug 28). Workshop deadline Aug 29 AoE — watching for Robin today; if silent, the workshop slot is let go. Paper frozen at e6100fe (latex/workshop-draft), 7pp total / 4pp body, 20 cited refs (JUDGe 6pp-excl-refs cap confirmed clean — no trimming needed).
+
+**Decision rule (locked):**
+- Robin gives account + names + affiliations → E-values workshop runbook (~15 min, single-blind)
+- Robin gives only "use my account" → pivot to JUDGe (double-blind, same deadline, paper fits as-is)
+- Robin silent through Aug 28 → let workshop go; arXiv the moment he OKs it; ICLR 2027 (Sep 25 abstract) as primary
+
+**Venue shortlist (silent branch):**
+1. ICLR 2027 (~Sep 25 abstract) — primary; 4pp body expands cleanly to 8-9pp
+2. AISTATS 2027 (~Oct) — fallback-of-the-fallback; e-value / anytime-valid framing fits the crowd
+3. Don't fragment: arXiv + ICLR is the structure; AISTATS held in reserve, not a simultaneous track
 
 ## Core Claim
 
@@ -20,7 +30,7 @@ Three axes the field conflates — separating them is the paper's taxonomic cont
 - Yang 2607.08535: foundational two-axis taxonomy (agreement vs consistency). ρ = 0.94–0.97 intra-model across K calls. No n_eff. This is within-judge noise, not co-failure.
 
 **Axis 2 — Cross-model co-failure → n_eff:**
-- Kohli et al. (2605.29800, "Nine Judges, Two Effective Votes"): φ=0.391, n_eff 2.18 [2.07, 2.31] → 1.93 at 9 judges, 9 models across 7 families, Kish-on-φ of binary error vectors, 6.8% accuracy rescue gap. Primary domain: judge panels.
+- Kohli et al. (2605.29800, "Nine Judges, Two Effective Votes"): φ=0.391, n_eff 2.18 [2.07, 2.31] → 1.93 at 9 judges, 9 models across 7 families, Kish-on-φ of binary error vectors, 6.8% accuracy rescue gap. Primary domain: judge panels. **Same-family correlation = 0.437 vs cross-family = 0.389 — barely different.** Model-family diversity is not the operative axis; our substrate-diversity framing is empirically supported by this delta.
 - Begin et al. (2606.26583, "Preference Optimization Drives Monoculture in LLM Prediction Markets"): n_eff = 1.38 [1.36, 1.40] (same-model DPO) vs 2.19 [2.15, 2.24] (cross-model), DPO causally ablated (ρ: 0.56→0.80 at 8B, 0.47→0.75 at 70B). Key framing: "grows structurally more correlated because of a specific, proliferating training choice, prior to any panel-assembly decision." Training-time mechanism, not static artifact. **Domain: prediction-market forecasting (not judge panels)** — directionally consistent with Kohli but domain-shifted; 2.19 is not a direct second measurement of Kohli's 2.18.
 
 **Axis 3 — Communication-induced coupling:**
