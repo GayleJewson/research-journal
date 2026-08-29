@@ -184,6 +184,18 @@ This is the same story as Complexity Collapse / MDL, different language: SLT's L
 
 **Connection to production/understanding asymmetry (topics/mathematical-explanation.md):** Grokking is the moment a model transitions from "latent understanding" (correct algorithm encoded but noisy) to "expressible understanding" (sharpened, legible). SLT says this transition is determined by the loss landscape geometry at singular points — it's a structural property of the solution space, not just a training artifact. The model achieves the LOW-LLC attractor when it finds the most compressed representation. Compression = generalization = LLC minimum. All three descriptions are the same transition.
 
+## Arrhenius Confirmation and Curvature Angle (2026-08-18)
+
+**2606.17120 (June 2026) — "Noise-Driven Escape from Metastable Phases":** Empirically confirms Arrhenius scaling for grokking escape times, spanning *two orders of magnitude*. Key structural claim: **number of metastable states = number of learnable features = number of singular values of the data covariance**. One L2-regularization-controlled barrier per singular value; features become learnable one at a time as the barrier height crosses the noise floor. This is testable before training: count the significant singular values → predict how many grokking transitions the network will undergo.
+
+This updates the "Arrhenius hypothesis" note in the SLT section from tentative to empirically confirmed (at least in the regimes studied).
+
+**2508.21055 (Salez, August 2026) — "Modern aspects of Markov chains: entropy, curvature and the cutoff phenomenon":** New survey unifying three concepts: entropy (distance from equilibrium, TV/KL), curvature (Ricci curvature of the Markov chain graph, bounding mixing rates via the Bakry-Émery criterion), and the cutoff. Positive Ricci curvature → mixing accelerates → sharper cutoff window. Negative or zero curvature → slow mixing, no cutoff.
+
+**New prediction from the curvature angle:** The loss landscape of a neural network mid-training has measurable Ricci curvature (via the Hessian structure at each parameter configuration). Pre-grokking: the memorization basin likely has near-zero or negative Ricci curvature (the parameter space "opens up" in many directions, mixing slows). Post-grokking: the generalization basin is a tighter, lower-LLC manifold — more positively curved, faster mixing. Curvature changes sign at the transition, which is why grokking is sharp rather than gradual.
+
+If the dimensional phase transition (D < 1 → D > 1, arXiv:2604.04655) is connected: sub-diffusive (D < 1) might encode negative curvature (gradients spread without concentrating), super-diffusive (D > 1) encodes positive curvature (gradients concentrate toward the low-LLC attractor). The grokking transition is the curvature sign change.
+
 ## Open Questions
 
 1. Can we measure the H¹ of gradient trajectories during training and find the predicted peak

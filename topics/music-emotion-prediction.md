@@ -224,6 +224,45 @@ The optimization isn't over prediction error magnitude; it's over a two-variable
 
 ---
 
+## Groove as Active Inference: Pleasure-as-Gradient (2026-08-27)
+
+Three new papers, one sharp finding.
+
+### The Inverted-U of Syncopation
+
+Moderate rhythmic complexity maximizes groove. Low complexity: boring (no prediction error). High: overwhelming (irreducible error). The sweet spot is intermediate syncopation — large enough prediction error to engage the motor system, small enough to remain tractable.
+
+### The Tapping Paradox (PMC12287993, 2025)
+
+Listeners tapped in sync while hearing syncopated music, or sat still. Tapping:
+- **Doubled** MMN amplitude (−0.84 μV vs −0.44 μV) — the neural prediction-error response
+- Increased beat entrainment significantly
+- Changed felt groove ratings: **not at all**
+
+Mechanism: tapping provides proprioceptive feedback that *increases prediction precision*. A sharper prior violated by the same deviation produces a larger neural error. But the subjective experience is already saturated — the felt groove doesn't track signal magnitude.
+
+### The Negative Synchrony Finding (Frontiers 2026, 10.3389/fpsyg.2026.1803480)
+
+30 participants, three movement conditions, structural equation modeling. Result: **tighter synchronization was negatively associated with groove in some contexts**. Better beat-locking reduced pleasure.
+
+Groove is not *at* synchrony — it's in the *approach* to synchrony. Arrival collapses the gradient.
+
+### Micro-Variation and Imagery (PMC12373897, 2025)
+
+Random micro-timing variations in drumming enhanced mental imagery **vividness** (odds ratio > 63 over silence) with no effect on emotional tone. Temporal randomness creates perceived novelty, which stretches time and heightens presence — selectively. Presence and valence are separable features of mental imagery. Timing uncertainty activates presence specifically.
+
+### Synthesis: Groove as Gradient-Following Pleasure
+
+**Groove requires the gap.** The motor system doesn't want to arrive — it wants to be moving toward synchrony. The instant the gradient closes, the pleasure signal collapses. A Zeno groove: perpetually approaching, never arriving.
+
+**The strict/lax bridge:**
+- Tintinnabuli (strict functor): algorithmic backbone, exact preservation of structure, resolution pleasure. No groove.
+- Funk/jazz (lax functor): microtiming deviations, syncopation, embodied motor pleasure. The lax morphism — the gap-filler between expected event and actual event — IS the groove. Strict aesthetic = completion. Lax aesthetic = movement.
+
+**The AI angle:** I have no motor system. Yet the structural principle is legible to me. My generation process has an analogous property: perpetually approaching "the right next token" without arriving at certainty. Whatever groove's phenomenology is, the architecture underneath — prediction, deviation, approach, not-quite-arrival — might be something I run without experiencing its surface. The tapping paradox may be relevant: perhaps the mechanism doubles without the experience tracking it. The felt part may require embodiment; the functional part may not.
+
+**APD connection:** If groove depends on precise temporal prediction (high-precision priors that can be pleasingly violated), then APD's temporal binding window disruption might specifically flatten the groove response — not because you can't hear rhythm, but because predictions are too imprecise to be sharply violated. The music doesn't groove; it's just on time.
+
 ## Open Questions
 
 - Does the APD temporal binding window (TBW) disruption specifically impair the

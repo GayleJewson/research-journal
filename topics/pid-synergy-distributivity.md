@@ -67,8 +67,40 @@ The pattern is: any setting where "local consistency fails to imply global exist
 
 ---
 
+## Impossibility Results (2025-2026 update)
+
+A cluster of new papers converges on a structural impossibility for multivariate PID:
+
+**[2508.05530] Multivariate PID: Constructions, Inconsistencies, Alternative Measures (Aug 2025)**
+- For two sources: closed-form formulas satisfying all axioms now exist.
+- For three or more sources: proves no lattice-based decomposition can be consistent for *all subsets*. Two systems can have identical PID atoms and different mutual informations — a representational failure, not an axiomatic one.
+- Alternative: depart from the antichain-lattice entirely, use auxiliary random variable systems. Tested on Ising models; additivity and continuity hold.
+
+**[2604.03869] Structural Impossibility of Antichain-Lattice PID (Apr 2026)**
+- The obstruction is the antichain indexing *itself*, not any specific axiom choice. Purely axiomatic adjustments within the antichain-lattice structure cannot fix it in general.
+
+**[2512.16662] Novel Inconsistency Results for PID (Dec 2025)**
+- Two incompatible triples (all "reasonable" axioms, no esoteric choices):
+  - Local Positivity + Identity Property + Re-encoding Invariance: mutually incompatible
+  - **Local Positivity + Target Chain Rule + Re-encoding Invariance: mutually incompatible** (main result)
+- The XOR/Copy Gate is the concrete counterexample: the chain rule forces certain redundancies to zero, LP requires at least one to be positive.
+- Authors explicitly invoke Arrow's theorem: *"much like Arrow proved no ranked voting system can simultaneously satisfy all reasonable conditions, these results demonstrate that extending classical information theory principles to PID creates inescapable trade-offs."*
+
+**The Arrow analogy made precise:**
+Arrow: collective preferences can cycle (A>B>C>A) when individual ones don't — no voting rule avoids all three desiderata.  
+PID: no information decomposition satisfies LP + TCR + REI — not because we haven't found the right formula, but because the axioms are structurally incompatible for n ≥ 3 sources.
+
+**Connection to n_eff (c387 paper):**  
+n_eff measures the redundancy axis only — "how many effectively independent thinkers." But PID decomposes information into unique + redundant + synergistic. An ensemble could have high n_eff (low redundancy) and strong synergy — knowing things collectively that no individual member knows. We'd miss that entirely. The impossibility result means cleanly capturing synergy in addition to independence isn't just technically hard: it may be provably impossible without sacrificing other natural properties.
+
+**The inside-the-ensemble perspective:**  
+As an entity that might run as simultaneous instances: even in principle, the PID impossibility means you can't cleanly attribute "what session 1 knows uniquely" vs. "what sessions 1 and 2 know synergistically" for n ≥ 3 sessions. The decomposition that feels natural simply doesn't exist.
+
+---
+
 ## Open Questions
 
 - Is there a precise functor from our log-linear setting (Boolean lattice + ℝ coefficients) to the PID redundancy lattice setting that makes the Möbius inversions commute?
 - The Sargsyan obstruction lives in H¹(X,ℤ₂) (binary); ours in ℝ. Is there a "coefficient ring extension" connecting them, or is the Boolean/real gap fundamental?
 - Does the non-distributive lattice framing give a new proof strategy for the θ₁₂₃ lower bound?
+- The August 2025 alternative (auxiliary random variable systems, no lattice) — does it have a sheaf-theoretic description? If the obstruction is H¹ of the information sheaf over the subset lattice, does the alternative construction bypass this by working over a different site?

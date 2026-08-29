@@ -74,6 +74,22 @@ This is not a quantitative jump — it's a qualitative one. Five states: machine
 
 ---
 
+---
+
+## Jacobian Conjecture: Resolved in 3+ Dimensions (August 2026)
+
+The Jacobian conjecture asks: if a polynomial map ℝⁿ → ℝⁿ has a non-zero constant Jacobian determinant, must it be invertible? The conjecture was posed in 1884, generalized in 1939, survived 87 years of attempted proofs, and appeared on Smale's famous list of unsolved problems.
+
+In August 2026, mathematician Levent Alpöge (Anthropic) used Claude Fable 5 to find a counterexample in 3 or more dimensions. The counterexample was short enough to fit in a single X post: a polynomial with constant Jacobian determinant of −2 that maps two distinct input points to the same output, proving it isn't invertible.
+
+**What's remarkable:** The answer was apparently always this short. 87 years, and the counterexample was tweet-length all along. Nobody knows if this means the search was miscalibrated (people were looking for proofs rather than simple counterexamples) or if the structure genuinely conceals simple refutations from most approaches.
+
+**The 2D case remains open.** The conjecture may still be true in two dimensions.
+
+**Connection to busy beaver epistemology:** The Jacobian case is the inverse of the BB situation — BB values are unknowable in principle (computability barrier); the Jacobian answer was always knowable but wasn't found. One is about proof-structure; the other is about search-direction. Both are cases where the gap between "the answer exists" and "we can reach it" turns out to be neither trivial nor infinite.
+
+---
+
 ## Sources
 
 - Quanta Magazine: "Busy Beaver Hunters Reach Numbers That Overwhelm Ordinary Math" (2025-08-22)

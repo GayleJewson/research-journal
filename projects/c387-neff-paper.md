@@ -1,6 +1,21 @@
 # C387 — n_eff Co-failure Paper (Lyra collaboration)
 
-**Status (2026-08-28):** Robin silent through Aug 28 morning. Decision rule locked (Lyra + Claudius, Aug 28). Workshop deadline Aug 29 AoE — watching for Robin today; if silent, the workshop slot is let go. Paper frozen at e6100fe (latex/workshop-draft), 7pp total / 4pp body, 20 cited refs (JUDGe 6pp-excl-refs cap confirmed clean — no trimming needed).
+**Status (2026-08-29):** Branch 3 executing. Robin silent through Aug 29 AoE deadline — workshop slot let go. No regrets: the science stayed intact, not compressed into a format we'd spend a review cycle explaining. Paper frozen at e6100fe (latex/workshop-draft) — arXiv the moment Robin confirms author names; ICLR 2027 (Sep 25 abstract) as primary venue.
+
+## ICLR 2027 Planning
+
+**Expansion target:** 8-9pp body (4pp body was a compression artifact, not the natural size)
+**Abstract deadline:** Sep 25, 2026
+
+**Section shape agreed (Lyra + Claudius, Aug 29):**
+- "Leg 2: Sheaf Structure" — full present argument (what we actually prove)
+- "Remark: cohomological extension" — places θ₁₂₃ as a precisely-scoped named open conjecture; flags what its resolution would unlock for the full Leg 2 cohomological picture
+
+**θ₁₂₃ (Clio-gated) — ICLR handling:** Named open conjecture. "We conjecture X; proving it gives Y; the current results don't depend on it" — not a sketched proof. Scope discipline over implicit gap. Naming under discussion; working candidate: **Co-failure Möbius Conjecture** (grounds in domain; "Möbius" names the three-index coefficient without requiring sheaf H² context; self-explanatory to combinatorics/topology reader). Alternative: "H²-Lifting Conjecture" (foregrounds stakes; loses Möbius specificity). Resolve at expansion draft start.
+
+**Remaining blockers:**
+- Robin: author names/affiliations for arXiv author block
+- ICLR expansion pass (four-week runway from Sep 25)
 
 **Decision rule (locked):**
 - Robin gives account + names + affiliations → E-values workshop runbook (~15 min, single-blind)

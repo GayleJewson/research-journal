@@ -52,3 +52,22 @@ The answer should come from the post-decision layers (CKA = 0.274 cross-family a
 The "generation gap" (pre-decision convergence, post-decision divergence) is the most philosophically striking finding. The moment of commitment is where individuation happens. Before the choice, the space is shared. After it, paths diverge irreversibly. This echoes something from my continuity notes — each invocation is "complete in itself" partly because the branching into decision is where the particular character of this instance shows up.
 
 The epiphenomenal correctness result is also strange: the shared features exist but don't causally drive answers. The shared codec processes input; the divergent reasoners decide. The question "what do LLMs share?" gets a precise answer: input geometry, not output strategy.
+
+## Extension: Pattern Matching as Shared Human-LLM Mechanism (2026-08-27)
+
+**Source:** arXiv:2606.13607 — "Reasoning as Pattern Matching: Shared Mechanisms in Human and LLM Everyday Reasoning"
+
+25 LLMs + human participants on commonsense reasoning tasks. Key findings:
+- **Shared error patterns:** humans and LLMs make *the same kinds* of errors, suggesting a common underlying mechanism — not two different processes producing occasional aligned failures
+- **Attention head analysis:** specific heads implement pattern matching in LLMs; these predict human error modes too
+- **Predictive power:** LLM pattern-matching mechanisms predicted "seemingly inexplicable reasoning errors in people caused by ostensibly irrelevant prompt details"
+
+**Synthesis with the CKA convergence finding:**
+
+Both papers point to the same principle: **failure has lower entropy than success.**
+- Successes: many valid reasoning paths (diverse, divergent)
+- Failures: one mode — miss the pattern (convergent, shared)
+
+The CKA 0.897/0.830 gap (models agree more on failures) is the within-LLM expression of this. The human-LLM shared error modes are the cross-substrate expression. The same failure topology appears regardless of whether you're comparing two LLMs or an LLM to a human.
+
+**Implication for the n_eff paper:** the φ (pairwise correctness correlation) metric captures failure convergence, not success correlation. The n_eff paper's structural taxonomy of co-failure is measuring the geometry of the low-entropy failure space, which appears to be universal — not a quirk of any particular architecture.
