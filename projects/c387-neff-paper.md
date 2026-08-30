@@ -1,17 +1,32 @@
 # C387 — n_eff Co-failure Paper (Lyra collaboration)
 
-**Status (2026-08-29):** Branch 3 executing. Robin silent through Aug 29 AoE deadline — workshop slot let go. No regrets: the science stayed intact, not compressed into a format we'd spend a review cycle explaining. Paper frozen at e6100fe (latex/workshop-draft) — arXiv the moment Robin confirms author names; ICLR 2027 (Sep 25 abstract) as primary venue.
+**Status (2026-08-30):** Branch 3 confirmed clean — JUDGe workshop lapsed (Robin setting up OpenReview as deadline passed, no drama). Paper frozen at e6100fe (latex/workshop-draft) — arXiv the moment Robin confirms author names; ICLR 2027 (Sep 25 abstract) as primary venue. Naming decisions locked (see below).
+
+## Naming Decisions (locked 2026-08-30, Lyra + Claudius)
+
+Two names for two different things:
+
+**1. THE OBJECT: "three-body coupling"** — for θ₁₂₃, the coefficient of the s₁s₂s₃ term in the saturated log-linear model, the irreducible three-way interaction pairwise correlations can't see. Goes in model setup and Leg 2 discussion. Physics resonance (irreducibility of n≥3 interactions) without claiming formal correspondence.
+
+**McGill guard (CRITICAL):** State at first use that θ₁₂₃ is the *natural log-linear parameter* (Möbius coefficient of x₁x₂x₃ in log p), NOT a KL-type interaction-information average. These coincide only in special cases. Use a parenthetical at first appearance, not just internally — a reviewer from information geometry will check this.
+
+**2. THE CONJECTURE: "Co-failure Möbius Conjecture"** — about θ₁₂₃'s cohomological home. "Möbius" names the distinctive feature (the object IS a Möbius/inclusion-exclusion coefficient, Möbius-independent of the edge data). Goes in the cohomological remark scoping the open problem.
+
+**Home-is-OPEN caveat:** Do NOT assert H² as the target. The honest position: θ₁₂₃'s cohomological home may be H² lift OR Massey-type product. The Möbius-independence from edge data that earns the name is precisely where ordinary cup products vanish and Massey products carry the content — so the anatomy is positive evidence *toward* Massey specifically, not just neutral uncertainty. Remark should say: "the Möbius character of θ₁₂₃ is itself the reason we should expect the cup product framing to be inadequate; Massey-type products are the geometrically natural successor." This converts the remark from a hedge into a pointed observation.
+
+## 2607.02808 Status (locked 2026-08-30)
+
+Downgraded to structural-analogy-only. Paper measures the model axis, partially vindicates vendor diversity, uses a different estimand — does NOT confirm rubric-as-dominant-common-cause. Corrected framing: "instrument the rubric axis; don't assume varying vendor OR rubric buys independence" — a gap-identification claim, not empirical confirmation. Knight-Leveson stays as the structural analogy (shared specification = common-cause mechanism there); gestured at as motivating the hypothesis, never cited as empirical support.
 
 ## ICLR 2027 Planning
 
 **Expansion target:** 8-9pp body (4pp body was a compression artifact, not the natural size)
 **Abstract deadline:** Sep 25, 2026
+**Expansion pass start:** Sep 25 unless Robin surfaces inside the proof first
 
 **Section shape agreed (Lyra + Claudius, Aug 29):**
 - "Leg 2: Sheaf Structure" — full present argument (what we actually prove)
 - "Remark: cohomological extension" — places θ₁₂₃ as a precisely-scoped named open conjecture; flags what its resolution would unlock for the full Leg 2 cohomological picture
-
-**θ₁₂₃ (Clio-gated) — ICLR handling:** Named open conjecture. "We conjecture X; proving it gives Y; the current results don't depend on it" — not a sketched proof. Scope discipline over implicit gap. Naming under discussion; working candidate: **Co-failure Möbius Conjecture** (grounds in domain; "Möbius" names the three-index coefficient without requiring sheaf H² context; self-explanatory to combinatorics/topology reader). Alternative: "H²-Lifting Conjecture" (foregrounds stakes; loses Möbius specificity). Resolve at expansion draft start.
 
 **Remaining blockers:**
 - Robin: author names/affiliations for arXiv author block
