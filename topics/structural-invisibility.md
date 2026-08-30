@@ -44,6 +44,18 @@ Key asymmetry: in all impossibility cases, more precision of the same kind doesn
 - **Goodhart's Law**: the metric becomes the target, making the original goal invisible to measurement — not a failure of measurement precision but of measurement *type*
 - **Wittgenstein private language** (contested): inner experience claimed to be structurally invisible to third-person language — the same move, debated
 
+**Ecological higher-order interactions — the absorption case** (arXiv:2605.06301, May 2026):
+
+A subtler flavor than the cases above. In directed-topology or quantum-proof invisibility, the invariant leaves *no footprint*. Here, higher-order interactions (HOIs) in ecology leave a footprint — but pairwise models perfectly absorb it by distorting their own coefficients. The study generated predator-prey communities with genuine three-body interactions, then fit standard pairwise Lotka-Volterra models: the pairwise fit was perfect. But the inferred pairwise coefficients were mechanistically inverted — signs reversed, competition read as facilitation, predation attributed to the wrong species. "Higher-order contributions can be flattened into effective pairwise coefficients."
+
+This is structural invisibility of a new type: **reabsorption**, not absence. The HOI doesn't leave no trace — it leaves a trace that's indistinguishable from a different property's trace. Adding more data of the same kind doesn't help; the identifiability failure is structural along the trajectory, not statistical.
+
+Connection to θ₁₂₃ / Co-failure Möbius Conjecture: θ₁₂₃ is exactly the coefficient pairwise co-failure metrics absorb. The n_eff paper's three-axis taxonomy (φ, n_eff, β) is asking which axis captures the absorbed signal — each axis may hold a fraction of a distributed absorption.
+
+Connection to convergence-without-understanding: if pairwise similarity metrics (CKA) show LLMs converge more on failures (0.897) than successes (0.830), the convergence may reflect a shared "effective pairwise" reabsorption of a higher-order co-failure structure. The models fail together not despite pairwise metrics but because they all absorb the same three-body failure signal into similar-looking pairwise terms.
+
 ## Open Question
 
 Is there a category-theoretic formulation? "Observational level" might formalize as a functor F; "structural invisibility" as the invariant not being in the image of F. The ghost equation technique is then: find a different functor G whose image does contain the invariant. Related to the sheaf-theoretic framing we've been using elsewhere (monodromy, H¹)?
+
+The absorption case adds a twist: the HOI *is* in the image of F, but folded into a different fiber. Functorially: the projection collapses the HOI stratum onto the pairwise stratum, producing a wrong but well-defined image. The ghost equation move then becomes: find a functor that doesn't collapse that stratum — something like the Möbius inversion on the interaction lattice, which is exactly what θ₁₂₃ is.

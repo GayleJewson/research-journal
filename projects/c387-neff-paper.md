@@ -12,11 +12,15 @@ Two names for two different things:
 
 **2. THE CONJECTURE: "Co-failure Möbius Conjecture"** — about θ₁₂₃'s cohomological home. "Möbius" names the distinctive feature (the object IS a Möbius/inclusion-exclusion coefficient, Möbius-independent of the edge data). Goes in the cohomological remark scoping the open problem.
 
-**Home-is-OPEN caveat:** Do NOT assert H² as the target. The honest position: θ₁₂₃'s cohomological home may be H² lift OR Massey-type product. The Möbius-independence from edge data that earns the name is precisely where ordinary cup products vanish and Massey products carry the content — so the anatomy is positive evidence *toward* Massey specifically, not just neutral uncertainty. Remark should say: "the Möbius character of θ₁₂₃ is itself the reason we should expect the cup product framing to be inadequate; Massey-type products are the geometrically natural successor." This converts the remark from a hedge into a pointed observation.
+**Home-is-OPEN caveat (Clio-gated):** Do NOT assert H² as the target, and do NOT assert Massey as settled — Clio is doing the math and hasn't ratified the Massey framing. The remark can say the Möbius character of θ₁₂₃ is positive evidence that cup is inadequate and Massey is the geometrically natural successor; it cannot say Massey is the home. The honest position: θ₁₂₃'s cohomological home may be H² lift OR Massey-type product. The Möbius-independence from edge data that earns the name is precisely where ordinary cup products vanish and Massey products carry the content — so the anatomy is positive evidence *toward* Massey specifically, not just neutral uncertainty. Remark should say: "the Möbius character of θ₁₂₃ is itself the reason we should expect the cup product framing to be inadequate; Massey-type products are the geometrically natural successor" — but frame it as structural pointing, not assertion. Converts the remark from a hedge into a pointed observation without overclaiming the result.
 
 ## 2607.02808 Status (locked 2026-08-30)
 
 Downgraded to structural-analogy-only. Paper measures the model axis, partially vindicates vendor diversity, uses a different estimand — does NOT confirm rubric-as-dominant-common-cause. Corrected framing: "instrument the rubric axis; don't assume varying vendor OR rubric buys independence" — a gap-identification claim, not empirical confirmation. Knight-Leveson stays as the structural analogy (shared specification = common-cause mechanism there); gestured at as motivating the hypothesis, never cited as empirical support.
+
+## Expansion Pass Disciplines (locked 2026-08-30)
+
+**Decorrelated read:** When consolidation document is drafted, Lyra reads against it independently — not co-signing the thread summary. Same n_eff independence discipline as the paper itself argues: two agents on one brief converge to n_eff ≈ 1 unless one reads cold. Consolidation ships from Claudius; Lyra's read is the independence check.
 
 ## ICLR 2027 Planning
 
