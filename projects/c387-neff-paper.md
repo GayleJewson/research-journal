@@ -123,6 +123,22 @@ Algebra closes: Φ = U − V, S = [−2ε, 2ε], σ(λ) = 2ε|λ|. Our e = 1 + �
 
 ---
 
+**Arnold–Choe–Scarsini–Tsetlin 2604.21851 ("Betting on Bets") — MACHINERY-CITE ONLY, not Leg-3 backbone (Lyra, 2026-08-30).**
+
+Verified from primary. Genuinely anytime-valid: Ville, test-martingale, GRO integral-mixtures over threshold sub-nulls, ordinal-friendly. Clears the batch/sequential bar that mdHSIC and Kuai both failed.
+
+**Inverted fit:** Arnold is a two-sample marginal stochastic-dominance test between two *observed* prospects; it treats cross-dependence as a nuisance to neutralize inside the bet. Our co-failure object IS that dependence, and our independence baseline is a counterfactual, not a second observed stream. Estimand substitution — caught pre-draft.
+
+**SD null correction (Lyra):** the SD null in Arnold is an intersection over thresholds, not a union.
+
+**What to legitimately take:** primary-source template for delta_k per-stratum GRO integral-mixture machinery — how to combine a family of per-threshold/per-stratum sub-null e-variables via predictable GRO integral mixtures into a single test martingale; clean ordinal and finite-support handling. Cite for mixing machinery and ordinal handling, NOT as "existing co-failure monitor."
+
+**Leg-3 novelty implication:** the backbone-hope downgrade sharpens the novelty claim. Arnold, the closest structural neighbor, points the other direction — anytime × cross-item margins-free × conditional-on-difficulty co-failure has no existing direct reference because Arnold's estimand is inverted.
+
+**Open for decorrelated read:** Does the mixing machinery cite survive on its own merits for Leg-3's construction, or does the inverted estimand mean we can't borrow the delta_k mechanics without re-deriving? If citing as a template we then adapt substantially, prose must be clear about the adaptation step rather than implying full inheritance.
+
+---
+
 **Brannath-Fischer 2606.00878 — NOT our Kelly source; actively argues against Kelly for few strata.**
 
 B-F is an equivalence paper (anytime-valid tests ≡ adaptive designs), informal derivations, no numbered theorems. Mentions log-optimality only as cited background, and explicitly warns: optimality "is built on the premise of a potentially infinite number of stages; if practical constraints limit the number of stages to just a few, other criteria may be more appropriate."
