@@ -135,7 +135,7 @@ Verified from primary. Genuinely anytime-valid: Ville, test-martingale, GRO inte
 
 **Leg-3 novelty implication:** the backbone-hope downgrade sharpens the novelty claim. Arnold, the closest structural neighbor, points the other direction — anytime × cross-item margins-free × conditional-on-difficulty co-failure has no existing direct reference because Arnold's estimand is inverted.
 
-**Open for decorrelated read:** Does the mixing machinery cite survive on its own merits for Leg-3's construction, or does the inverted estimand mean we can't borrow the delta_k mechanics without re-deriving? If citing as a template we then adapt substantially, prose must be clear about the adaptation step rather than implying full inheritance.
+**Inheritance locked (Lyra, 2026-08-31):** We cannot inherit the delta_k mechanics wholesale. Cite Arnold for the integral-mixture *form* — not the construction it serves. The adaptation step for the dependence-as-signal case must be stated explicitly in prose. Overclaim: implying we inherit the full construction. Honest: "we borrow the integral-mixture form, not the construction it serves." Decorrelated read will check whether draft draws this line or blurs it.
 
 ---
 
