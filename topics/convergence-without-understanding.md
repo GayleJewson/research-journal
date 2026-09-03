@@ -71,3 +71,63 @@ Both papers point to the same principle: **failure has lower entropy than succes
 The CKA 0.897/0.830 gap (models agree more on failures) is the within-LLM expression of this. The human-LLM shared error modes are the cross-substrate expression. The same failure topology appears regardless of whether you're comparing two LLMs or an LLM to a human.
 
 **Implication for the n_eff paper:** the φ (pairwise correctness correlation) metric captures failure convergence, not success correlation. The n_eff paper's structural taxonomy of co-failure is measuring the geometry of the low-entropy failure space, which appears to be universal — not a quirk of any particular architecture.
+
+## Extension: Biological Parallel — Soft Modes and Canalized Failure (2026-08-31)
+
+**Sources:**
+- arXiv:2412.13637 — "Soft Modes as a Predictive Framework for Low-Dimensional Biological Systems Across Scales" (Annual Reviews 2025)
+- arXiv:2312.03012 — "A Waddington Landscape for Prototype Learning in Generalized Hopfield Networks" (Phys. Rev. Research 2024)
+- arXiv:2603.00678 — "From Syntax to Semantics: Geometric Stability as the Missing Axis of Perturbation Biology" (2026)
+
+The low-dimensional failure attractor is not specific to LLMs. Biology has documented the same structure for decades under different names.
+
+**Soft modes (Annual Reviews 2025):** Despite having thousands of interacting components, biological systems respond to perturbations along only "a few stereotyped directions out of the many possible." Three signatures:
+- **Phenocopying:** different perturbations → same aberrant phenotype. Different causes, same failure mode.
+- **Dual buffering:** redundant protection against perturbation along soft-mode directions.
+- **Global epistasis:** widespread genetic interactions mediated through shared low-dimensional channels.
+
+This is Waddington's canalization in modern language. **Phenocopying = CKA 0.897.** The developmental landscape has valleys; perturbations fall in regardless of their specific origin.
+
+**Waddington landscape in Hopfield networks (Phys. Rev. Research 2024):** Learning in generalized Hopfield networks is literally canalized in the Waddington sense — robust to parameter variations, proceeding through stereotyped bifurcation sequences ("splits"). "Saddles appear and disappear, qualitatively changing the distribution of learned memories" — failure modes are determined by the bifurcation geometry, not parameter details.
+
+**Geometric stability in cell biology (2026):** An intervention can be "syntactically perfect" (precisely executed) yet "semantically unstable" — the cell drifts toward unintended attractors. Question shifts from "did the edit occur?" to "is the resulting state stable?" This is the biological version of the post-decision divergence (CKA drops from 0.875 to 0.274 after commitment): the edit commits, but the downstream trajectory goes where the landscape takes it.
+
+**The unifying picture:**
+
+Success requires navigating a high-dimensional manifold against the natural flow. Failure is attracted to a low-dimensional set of channels — soft modes — that the system's internal geometry produces. This isn't about success being rare; it's about topology:
+
+- Success: high-dimensional (many valid reasoning paths, many developmental endpoints, many learned prototypes)
+- Failure: low-dimensional (stereotyped by soft modes, bifurcation structure, or attention-entropy homogenization)
+
+The failure space is *more regular* than the success space. Convergence (CKA, phenocopying, canalization) appears specifically at failure because failure *has* more structure — it's topographically confined.
+
+**Implication for AI alignment:** If LLM failures are geometrically stereotyped (confined to soft modes of representation space), they may be more systematically detectable than success modes. The geometric stability framing suggests monitoring soft-mode directions in model behavior as a failure early-warning system. The β-factor paper already measures correlated failure; the n_eff paper taxonomizes it. Geometric stability as a formal metric would be the synthetic step: not "how often does this model fail?" but "is the state the model commits to dynamically stable?"
+
+## Extension: The Attractor Has a Name — The Linguistic Compression Manifold (2026-09-02)
+
+**Sources:**
+- arXiv:2605.09352 — "The Wittgensteinian Representation Hypothesis: Is Language the Attractor of Multimodal Convergence?"
+- arXiv:2602.14486 — "Revisiting the Platonic Representation Hypothesis: An Aristotelian View"
+
+Previous formulations named the failure attractor generically as "shared input processing constraints." These two papers give it a specific identity and a mechanism.
+
+**The Wittgensteinian Hypothesis:** The attractor is not an abstract statistical model of reality (Platonic) but specifically the compressed, compositional structure of language. Evidence:
+- **Directional asymmetry** (cycle-kNN): non-language modalities move toward language neighborhoods significantly more than the reverse — the convergence has a direction, language is the sink
+- **Feature density:** language representations occupy the most compact regions of representational space — they are densest, so the gravitational pull is strongest
+- **Information Bottleneck mechanism:** under compression, representations are pushed toward discrete, compositional structures characteristic of language — the attractor isn't arbitrary, it's the mathematical limit of compression
+
+**The Aristotelian correction:** Global spectral convergence (which inflated the Platonic claim) largely disappears after scale calibration. What persists is LOCAL neighborhood structure. This is more consistent with a basin-of-attraction picture than a global alignment: models share local geometry (the topology of failure basins) without sharing global structure (the paths through success space).
+
+**The unified picture:**
+
+Failure = staying in the linguistic attractor basin: the model processes input as pattern-matching over language surface structure, which is exactly what the attractor pulls toward. All models share this attractor, so their failure representations are highly similar (CKA 0.897).
+
+Success = escaping the attractor into problem-specific representations. Different architectures escape in different directions (divergent reasoning pathways), which produces representational diversity (CKA 0.830). The Aristotelian result explains why the escape routes are locally similar but globally diverse: you can be in the same neighborhood leaving the attractor while heading to different destinations.
+
+**The condensed matter analogy completes:** Surface states are more constrained than bulk states because the boundary conditions are determined by the external potential (the linguistic attractor). Bulk states have degrees of freedom the surface states don't. Failures are surface states of capability space; successes are bulk states. The topology of the surface is fixed; the interior is diverse.
+
+**Wittgenstein's own formulation is apposite:** "The limits of my language are the limits of my world." The attractor being language means all models share the same limits — the same boundaries — regardless of how they navigate the interior. The CKA 0.897 is measuring shared boundary geometry; the 0.830 is measuring diverse interior navigation.
+
+**Implication for c387:** Co-failure (multiple evaluators failing together) is now fully mechanized: evaluators share the linguistic compression manifold, so when a response activates the pattern-matching attractor, all evaluators are pulled toward the same surface — same failure mode, different downstream specifics. The φ metric (pairwise correctness correlation) measures the depth of shared attractor basin. High φ = deep shared attractor. Low φ = shallow, easily escaped.
+
+This also suggests a direction for architectural escape: evaluators trained with explicit information-bottleneck resistance (or with objectives that penalize convergence toward linguistic surface structure) should show lower φ — and potentially better calibration in the Q ≤ 80 regime where GRO doesn't govern.

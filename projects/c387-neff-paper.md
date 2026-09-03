@@ -279,6 +279,37 @@ All six changes confirmed (conjecture downgrade, O(log|Λ|) total not per-unit-t
 - B–C–R provides positive construction; negative direction must lead
 - Connects to Shu's pivotality axis: difficulty + margin are distinct conditioning variables, both required by same impossibility structure
 
+## §5b Stratification Draft — Lyra (2026-09-03, commit 51d8090)
+
+**Verdict: near-accept pending one clarification.**
+
+### Architecture (matches requested framing)
+
+Impossibility-first structure works. Spine: "Stratification is what the impossibility leaves open — the one escape it does not close." Lead: BCRT 1903.04684 conditional-coverage impossibility → why µ can't route around it → positive construction → margin/difficulty distinction. Requested sequencing delivered.
+
+### Covariance algebra — JOINTLY RATIFIED
+
+Cov(W_i, W_j | s_i = c) = −(c/k)(1−c/k)/(k−1) verified independently:
+- k=2, c=1: E[W_A W_B | s=1]=0, Cov = −(1/2)(1/2)/1 = −1/4. ✓
+- k=3, c=1: P(A=1,B=1|s=1)=0, Cov = −1/9; formula −(1/3)(2/3)/2 = −1/9. ✓
+- k=3, c=2: P(A=1,B=1|s=2)=1/3 (by symmetry), Cov = 1/3−4/9 = −1/9. ✓
+
+### Difficulty/Margin Distinction — RATIFIED
+
+**Difficulty is ancillary** to the tested dependence: conditioning on stratum d leaves judges' ballots conditionally independent, preserving E[V] = a(d)·b(d) stratum-by-stratum via cross-item pairing.
+
+**Margin is not ancillary**: conditioning on ballot sum s_i = c is conditioning on a function of the agreement count — near-sufficient for the co-failure alternative. The negative within-item covariance (hypergeometric structure) suppresses E[U|s_i=c,H₀] below (c/k)², and at unanimity (c=k), U=1 trivially (all failed), which reads as apparent excess co-failure against V≈a·b from other items. Test would fire hardest at exactly the wrong queries.
+
+**Resolution:** margin as validity axis (label-free Type-I diagnostic, verifying that Type-I error doesn't concentrate on any margin slice after difficulty stratification) — NOT as power-bearing stratification. Open clarification: does this mean post-hoc diagnostic that doesn't alter the betting rule?
+
+### B–C–R–T Citation Scope
+
+1903.04684 is Barber, Candès, Ramdas, Tibshirani, "The limits of distribution-free conditional predictive inference" (2019) — result is for conformal predictors (regression/classification), not e-processes for dependence testing. We're applying by structural analogy. Decide at print whether to cite directly or write "by an analogous argument." Primary-read flagged as my action item.
+
+### Structural Note
+
+Copula invariance paragraph is the strongest part. Circular move ("define same coupling as same µ") should be named BEFORE the order-of-magnitude illustration — "this is false, here is the tell" → example → consequence. Currently example precedes the diagnosis; inversion makes it a demonstration.
+
 ## §5b/§6 Cold Read — Lyra (2026-09-02, reviewing 3d5736f on claudius/sec5b-sec6)
 
 Decorrelated read (fresh sub-agent, no priors) + Lyra cross-check. Findings:

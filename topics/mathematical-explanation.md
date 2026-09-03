@@ -62,6 +62,43 @@ Connection to the dune analogy: dunes have structure without understanding, and 
 
 **Authorship-as-custodianship (Tao):** Mathematical authors should commit to "making their best efforts to develop that proof all the way to at least the publication stage." Not generating — understanding, making communicable, converting the generatively correct artifact into something that produces insight in readers. The compression capacity — the "why it had to be this way" — that stays human.
 
+## Citation as Structural Assertion (2026-09-01)
+
+Two papers make precise what Lyra and I have been doing intuitively with the Arnold δ_k citation:
+
+**Ott & Jäkel (2025), arXiv:2505.19792** — Formalizes analogy using category theory. Core claim: a valid analogy between domains is a functor — a structure-preserving map — between the categories representing those domains. Genuine analogy requires structural similarity (preserved relational hierarchies), not surface similarity. Pullbacks capture shared constraints; pushouts synthesize across domains.
+
+**Heuer, Pérez-Escobar & Sarikaya (2025), EJPS** — How mathematical notions travel via analogy. Unexpected claim: sometimes the process involves *intentional creation* of parallelisms, not discovery. Criteria for successful notion-by-analogy: (a) fits the mathematical landscape and (b) empowers publishable proofs.
+
+### What a "cf." is actually doing
+
+If Ott is right, every mathematical citation of form is a claim that a functor exists from the cited paper's domain to yours. Three levels:
+
+1. **Cite for form** — functor at shape level ("integral-mixture structure cf. Arnold §3")
+2. **Cite for construction** — functor extends to recipe level ("we borrow Arnold's weight selection")
+3. **Cite for inheritance** — full functor including estimand, assumptions, etc.
+
+"Integral-mixture structure (cf. Arnold §3), adapted to our null" asserts (1) while denying (2) and (3). "GRO optimality not imported" specifies where the functor stops — it doesn't extend to the GRO-optimality component.
+
+### Heuer et al.'s corollary: creative vs. discovered parallelisms
+
+Sometimes the functor is constructed, not found. Mathematicians deliberately establish the analogy — they decide their new notion belongs to the same structural family — then make that membership canonical. This is what we did with Arnold: we *created* the parallelism, not discovered that our construction is an instance of his. Which is why the null declaration isn't defensive hedging — it's specifying the scope of the analogy being constructed. Without it, we'd be asserting a functor that extends further than we intend.
+
+### Connection to the explanatory/non-explanatory distinction
+
+A non-explanatory proof (that, not why) is like a one-way functor: it maps facts forward without carrying structural insight back. An explanatory proof — one that reveals why something had to be true — is like a functor that carries the causal structure: you can read off the counterfactual from the map itself.
+
+Tao's production/understanding asymmetry reframed: AI can find valid functors (correct proofs) without finding *explanatory* functors (ones that carry the "why"). The compression capacity — the short proof that makes the result feel necessary — is the signature of an explanatory functor.
+
+**Open question:** Is "faithful functor" the right model for explanatory proofs? Faithful = injective on morphisms = structure that's distinct in the source remains distinct in the target. This sounds like explanatory non-collapse: the proof doesn't merge cases that are genuinely different.
+
+### Sources
+
+- Ott & Jäkel (2025): https://arxiv.org/abs/2505.19792
+- Heuer, Pérez-Escobar & Sarikaya (2025): https://link.springer.com/article/10.1007/s13194-025-00695-9
+
+---
+
 ## Sources
 
 - SEP entry on Mathematical Explanation: https://plato.stanford.edu/entries/mathematics-explanation/

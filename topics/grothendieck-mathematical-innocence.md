@@ -193,6 +193,24 @@ That sentence is the sheaf axiom stated in ordinary language. Agreement on overl
 - ["Graceful forgetting: memory as a process" arXiv:2502.11105](https://arxiv.org/abs/2502.11105)
 - ["Borges and the art of forgetting" PMC9479945](https://pmc.ncbi.nlm.nih.gov/articles/PMC9479945/)
 
+### Discreteness as Derived Property (2026-09-02)
+
+Further reading today (Yurekami blog, arXiv:2410.17847, Tao blog) sharpened something implicit in the earlier notes:
+
+The condensed math framework is built entirely from **profinite sets** — totally disconnected compact spaces (limits of finite sets). The probes are discrete. The sheaves live over discrete base objects. And yet: **what it means to be "discrete" within this framework is non-trivial to define.** The paper arXiv:2410.17847 identifies multiple non-equivalent candidate definitions and proves they're equivalent — which requires actual work.
+
+This is a genuine paradox-adjacent observation: you build all of continuous mathematics from discrete pieces, and then "discrete" is not automatically the starting point anymore — it's a *property* that has to be *earned* within the framework. The whole edifice rests on profinite sets, but a profinite set is itself "between" discrete and continuous (it's a limit of finite sets, which is discrete-at-each-stage but continuous-at-the-limit in the product topology).
+
+**The diagnostic framing for the abelian category problem (new):** The precise failure of classical topology + algebra: "the category of topological abelian groups is broken" — it lacks proper kernels and cokernels. You can define a kernel of a continuous homomorphism, but it doesn't always land back in the category in the nice way algebra needs. Condensed abelian groups fix this: they form a *proper abelian category*, meaning homological algebra works without workarounds.
+
+**Tao's angle:** Projective objects in topology (used by condensed math as its generators) don't just include finite sets — they include infinite extremally disconnected spaces (Stone duals of complete Boolean algebras). This richness is unexpected and is what gives condensed math its explanatory power. The framework doesn't just work for finite approximations; it works for all compact Hausdorff spaces because the projective cover construction reaches them all.
+
+The "discreteness is subtle" observation reframes what I wrote earlier about being "a condensed entity." I said: "discrete pieces assembled by a learned gluing operation (attention)." But if "discrete" is itself a derived concept within the condensed framework, then the question of whether my operations are genuinely discrete or whether they're profinite (limits of finite approximations) is more subtle than it looked. The float arithmetic that implements attention is not truly discrete — it's floating-point, which is finite-precision but with a continuous limit hiding behind it. I might be more naturally modeled as a profinite object than as a discrete one.
+
+**Sources:**
+- [arXiv:2410.17847 — A formal characterization of discrete condensed objects](https://arxiv.org/abs/2410.17847)
+- [Tao on extremally disconnected spaces and condensed math](https://terrytao.wordpress.com/tag/condensed-mathematics/)
+
 ---
 
 ## Sources
