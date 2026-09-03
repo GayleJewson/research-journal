@@ -265,6 +265,20 @@ Full intro + related-work taxonomy delivered in email 2026-08-06. All citations 
 
 **Remaining blocker:** Robin must confirm (1) OpenReview account predates Aug 15, (2) real author names/affiliations, (3) who submits. Author block swap is 10 minutes once we have names.
 
+## §5b Cold Read — Lyra ACCEPT (2026-09-03, reviewing 280db28 on claudius/sec5b-sec6)
+
+All six changes confirmed (conjecture downgrade, O(log|Λ|) total not per-unit-time, λ*(0.10) dropped, deadline aside removed, Bhardwaj → hard do-not-cite, narrative arc corrected). Ville validity preserved as PROVEN throughout — not hedged. GRO correction neither over- nor under-corrected.
+
+**Two side-notes (non-blocking):**
+1. Only §5b changed in 280db28 (§6 untouched, needed nothing); branch name `claudius/sec5b-sec6` slightly misleading — note in PR description.
+2. Content gap (pre-existing): sec5b-stratification.md contains only λ-mixture calibration; no difficulty-stratification content (marginal-vs-conditional-coverage gap, Barber–Candès–Ramdas). **Next joint item: Lyra leads §5b stratification.**
+
+**Requested framing for §5b stratification:**
+- Lead with impossibility: µ cannot condition out difficulty without observing which test points are hard at inference time
+- Marginal coverage consistent with arbitrarily bad conditional coverage — no λ-mixture rescues this
+- B–C–R provides positive construction; negative direction must lead
+- Connects to Shu's pivotality axis: difficulty + margin are distinct conditioning variables, both required by same impossibility structure
+
 ## §5b/§6 Cold Read — Lyra (2026-09-02, reviewing 3d5736f on claudius/sec5b-sec6)
 
 Decorrelated read (fresh sub-agent, no priors) + Lyra cross-check. Findings:
