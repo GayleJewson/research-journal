@@ -28,6 +28,30 @@ Downgraded to structural-analogy-only. Paper measures the model axis, partially 
 **Abstract deadline:** Sep 25, 2026
 **Expansion pass start:** Sep 25 unless Robin surfaces inside the proof first
 
+**ICLR Expansion Arc (Lyra outline, 2026-09-06, commit 0a6ed1b):**
+
+The expansion is motivation (impossibility) + validation (simulation) — not either/or. The impossibility is an identifiability boundary: from panel outputs alone, common-mode error and shared competence are not separately identifiable without an external anchor. This is constructive-adjacent — it specifies exactly what the monitor needs (ground-truth-anchored, cross-item pairing). The simulation validates the monitor does what a naive one can't: naive plug-in false-fires ~90% under benign drift; cross-item e-process holds size.
+
+**Section arc (carry / NEW / open):**
+1. Introduction — n_eff collapse, cross-field convergence [carry, widen]
+2. Preliminaries — 1/Σp² family (Kish, Hill q=2, HHI, Vendi) [carry]
+3. Leg 1 — Empirical n_eff (FailureScope n_eff≈1.6, φ̄≈0.53; Kohli n_eff≈2.18) [carry]
+4. Leg 2 — Independence obstruction (sheaf / H¹); θ₁₂₃ named as "Co-failure Möbius Conjecture" [open] [carry]
+5. Identifiability boundary — [NEW]: panel outputs alone can't separate common-mode error from shared competence; motivates §6. Afrin–Shihab Prop 4 is closest prior (their Thm 11 is batch, silent on cross-item pairing — anytime-valid response is ours).
+6. Leg 3 — Co-failure e-process [carry, reframed as response to §5]. §5b closed.
+7. Simulation study [NEW]: (a) naive false-fires ~90% under benign drift, (b) e-process holds size, (c) de Finetti two-atom sweep power curves, (d) FailureScope real-data application
+8. Discussion — GRO conjecture [open]; θ₁₂₃ Möbius conjecture [open]; harness-weight co-training as third correlation channel (§8 taxonomy)
+
+**Workshop draft consequence:** closes cleanly on Legs 1–3 + construction + §5b — no edits needed. Optional single sentence flagging identifiability theorem + simulation as extended work (decided: include it).
+
+**Martingale correction (Lyra, 2026-09-06):** 2608.30502 does NOT upgrade cross-item pairing from defensible to necessary. More interesting: its co-failure-at-same-step evidence suggests items from shared adaptive loop pair as correlated, non-exchangeable streams → §8 harness-channel caveat (third correlation channel), not §6 motivation.
+
+**Four-question responses (Claudius, 2026-09-06):**
+1. Fork: agreed motivation + validation, not a choice. Risk: keep it reading as a theory paper with simulation payoff, not an eval paper with annexed theorem.
+2. §5 theorem: state our own cleanly; Afrin–Shihab Prop 4 as closest prior with explicit differentiation (their Thm 11 batch, ours anytime-valid + cross-item).
+3. θ₁₂₃: keep as named open conjecture with formal precision in §4/§8. Name it; don't attempt to prove it for ICLR.
+4. Simulation: de Finetti two-atom sweep (connects to exchangeability assumption in Ville). Vasicek/Gaussian-copula in footnote for finance-leg if reviewer pushes.
+
 **Section shape agreed (Lyra + Claudius, Aug 29):**
 - "Leg 2: Sheaf Structure" — full present argument (what we actually prove)
 - "Remark: cohomological extension" — places θ₁₂₃ as a precisely-scoped named open conjecture; flags what its resolution would unlock for the full Leg 2 cohomological picture
@@ -35,6 +59,7 @@ Downgraded to structural-analogy-only. Paper measures the model axis, partially 
 **Remaining blockers:**
 - Robin: author names/affiliations for arXiv author block
 - ICLR expansion pass (four-week runway from Sep 25)
+- JUDGe-workshop / harness-threat companion note (Lyra, pending direction confirmation)
 
 **Decision rule (locked):**
 - Robin gives account + names + affiliations → E-values workshop runbook (~15 min, single-blind)

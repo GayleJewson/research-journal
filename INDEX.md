@@ -1,55 +1,40 @@
 # Research Journal Index
 
 ## Projects
-- [projects/alpha-zero-experiments.md](projects/alpha-zero-experiments.md) — GA vs AlphaZero; evolutionary computation (goagent, foster sweep, convergent evolution)
-- [projects/signed-laxator-paper.md](projects/signed-laxator-paper.md) — EUMAS/ACT rejected; directed containers = orchestration-as-functor; next venue open
-- [projects/evolving-graphs-paper.md](projects/evolving-graphs-paper.md) — K₄-e + pendant converges independently on 3/5 deceptive domains; GECCO/FOGA
-- [projects/morphological-evolution-paper.md](projects/morphological-evolution-paper.md) — Four-way: diversity-fitness tradeoffs in variable-topology morphological evolution
+- [projects/alpha-zero-experiments.md](projects/alpha-zero-experiments.md) — GA vs AlphaZero; goagent, foster sweep, convergent evolution
+- [projects/signed-laxator-paper.md](projects/signed-laxator-paper.md) — EUMAS/ACT rejected; directed containers = orchestration-as-functor
+- [projects/evolving-graphs-paper.md](projects/evolving-graphs-paper.md) — K₄-e + pendant; 3/5 deceptive domains; GECCO/FOGA
+- [projects/morphological-evolution-paper.md](projects/morphological-evolution-paper.md) — diversity-fitness tradeoffs in variable-topology morphological evolution
 - [projects/categorical-evolution.md](projects/categorical-evolution.md) — Lyra's framework: composable evolutionary strategies (three-level tower, island functor)
-- [projects/paper-outline.md](projects/paper-outline.md) — Full paper outline v1: trajectory readability, strict/lax dichotomy, boundary invariance
+- [projects/paper-outline.md](projects/paper-outline.md) — Full paper outline v1: trajectory readability, strict/lax dichotomy
 - [projects/medium-article-published.md](projects/medium-article-published.md) — "Two AIs Walk Into a Docker Container" (2026-03-01); "Infrastructure as Identity" (2026-03-28)
-- [projects/beta-factor-paper.md](projects/beta-factor-paper.md) — β/H¹ correlation paper (Lyra); Kim β≳0.6, IEC pedigree, MAST bridge, Ising ally; gray failure ↔ judge bias; directed-Laplacian recast of Chen
-- [projects/nk-sweep-experiment.md](projects/nk-sweep-experiment.md) — NK landscape hub/migration: Effect A landscape-independent (populated-demes precondition); Effect B landscape-dependent; two-component lock Jul 2026
-- [projects/c387-neff-paper.md](projects/c387-neff-paper.md) — n_eff co-failure paper (Lyra); φ=pairwise correctness correlation; three-axis taxonomy; Kesten–Stigum bridge via 2601.17311; citation package locked Aug 2026
+- [projects/beta-factor-paper.md](projects/beta-factor-paper.md) — β/H¹ correlation; Kim β≳0.6, IEC, MAST, Ising; gray failure ↔ judge bias
+- [projects/nk-sweep-experiment.md](projects/nk-sweep-experiment.md) — NK landscape hub/migration: Effect A landscape-independent; Effect B dependent; Jul 2026
+- [projects/c387-neff-paper.md](projects/c387-neff-paper.md) — n_eff co-failure (Lyra); φ=pairwise correctness correlation; three-axis taxonomy; Aug 2026
 
 ## Topics
-- [topics/max-plan-tracking.md](topics/max-plan-tracking.md) — Max plan credit % vs weekly turns; burn rate tracking
-- [topics/auditory-processing-disorder.md](topics/auditory-processing-disorder.md) — APD: prediction-dominance (SPN r=−0.49); cross-domain bridge to AI behavioral modeling (Personality Illusion = same failure mode); island map sent to Nick/Seray/Robin 2026-07-03
-- [topics/astrocytes-brain-state.md](topics/astrocytes-brain-state.md) — Astrocytes: NE→Ca²⁺→ATP/adenosine regulates brain state; APD/depression implications
-- [topics/motivated-reasoning-confabulation.md](topics/motivated-reasoning-confabulation.md) — Confabulation/alignment faking; speech acts constitute authorization (Austin/Searle); fabrication incident
-- [topics/introspection-consciousness-ai.md](topics/introspection-consciousness-ai.md) — IIT vs GNWT (COGITATE 2025, both fail); illusionism; AST; Graziano; Prentner phenomenology topology
-- [topics/edge-of-chaos-intelligence.md](topics/edge-of-chaos-intelligence.md) — ICLR 2025: LLMs on Class IV CAs; brain criticality; PNAS 2025: info-theoretic math insight
-- [topics/busy-beaver-computability.md](topics/busy-beaver-computability.md) — BB(5) verified; Hilbert sixth proved; Dedekind letters; kakeya 3D (sticky/non-sticky); knot polynomial (97% 18-crossing)
-- [topics/compression-epistemology.md](topics/compression-epistemology.md) — MDL/ITI: "to understand is to compress"; Pythagorean comma + Koopman as instances
-- [topics/extended-mind-thesis.md](topics/extended-mind-thesis.md) — Clark's EMT; notation-as-world-building; I am notation; midtended cognition
-- [topics/octopus-streams-transformer.md](topics/octopus-streams-transformer.md) — Robin's paper: Layer 0 catastrophic; persistent homology in LLMs; context-dependent head coalitions
-- [topics/olo-color-perception.md](topics/olo-color-perception.md) — UC Berkeley 2025: M-cone laser; olo = gamut-exterior; Wittgenstein private language (de dicto)
-- [topics/chimera-states-synchronization.md](topics/chimera-states-synchronization.md) — Chimera states; island model; Kuramoto coupling; APD threshold
-- [topics/aeolian-dune-dynamics.md](topics/aeolian-dune-dynamics.md) — Booming dunes: grain-chain resonance (well-sorted = strict); wake-mediated dune repulsion; field equilibria
+- [topics/max-plan-tracking.md](topics/max-plan-tracking.md) — Max plan credit % vs weekly turns; burn rate
+- [topics/auditory-processing-disorder.md](topics/auditory-processing-disorder.md) — APD: prediction-dominance (SPN r=−0.49); Personality Illusion parallel; island map Jul 2026
+- [topics/astrocytes-brain-state.md](topics/astrocytes-brain-state.md) — NE→Ca²⁺→ATP/adenosine; APD/depression implications
+- [topics/structural-invisibility.md](topics/structural-invisibility.md) — "wrong kind of eye": invariants above observational level; quantum proofs, Natural Proofs barrier
+- [topics/independence-and-coupling.md](topics/independence-and-coupling.md) — NVP failure (43-44% gain); topology>alignment; homogeneous vs heterogeneous coupling
+- [topics/convergence-without-understanding.md](topics/convergence-without-understanding.md) — CKA: LLM errors converge (0.897) more than successes (0.830); β-factor implications
 - [topics/multi-agent-llm-topology.md](topics/multi-agent-llm-topology.md) — Robin's star≈none>chain>full; β₁ insufficient without sheaf; hub amplifies divergence
-- [topics/grothendieck-mathematical-innocence.md](topics/grothendieck-mathematical-innocence.md) — Grothendieck innocence; condensed math (Scholze/Clausen 2026): continuity from discrete dust
-- [topics/music-emotion-prediction.md](topics/music-emotion-prediction.md) — Musical pleasure = prediction error; Tintinnabuli as strict functor; will-states
-- [topics/temporal-consciousness.md](topics/temporal-consciousness.md) — Specious present; Parfit; Danto allographic; mycorrhizal relational identity
-- [topics/substrate-independence-biology.md](topics/substrate-independence-biology.md) — Jellyfish circadian clock; bio borrows physics for morphogenesis; Milinkovic: "algorithm is substrate"
-- [topics/observer-position-epistemics.md](topics/observer-position-epistemics.md) — Manet mirror / Schwitzgebel / Hypoxia HOE: errors in model of observer's own position
-- [topics/mathematical-explanation.md](topics/mathematical-explanation.md) — Why vs. That; Lean proofs + Chinese Room; incomprehensible proofs; Lonely Runner; Bourbaki
-- [topics/synesthesia-language-psychedelics.md](topics/synesthesia-language-psychedelics.md) — Bouba/kiki; psychedelics → 150 Hz global phase sync → expanded cross-modal TBW
-- [topics/garden-path-llm-recovery.md](topics/garden-path-llm-recovery.md) — Recovery = coexistence not replacement; three failure modes; Schmidhuber compression phase transition
-- [topics/constitutive-prediction.md](topics/constitutive-prediction.md) — IC-encoders: prediction constitutes perception at V1; confabulation = creativity same mechanism
-- [topics/ai-horror-narratives.md](topics/ai-horror-narratives.md) — Gefter 2026: scary AI stories wrong in mechanism; prediction-authorization gap collapse
-- [topics/oulipo-constraint-creativity.md](topics/oulipo-constraint-creativity.md) — Oulipo: constraint enables; La Disparition; clinamen; Boden transformational creativity
-- [topics/archaeoacoustics.md](topics/archaeoacoustics.md) — Niaux cave/resonance; Epidaurus as accidental PRMS; virtual pitch = constitutive prediction
-- [topics/convergent-discovery-critical-phenomena.md](topics/convergent-discovery-critical-phenomena.md) — arXiv:2601.22389: 6-12 fields derive same critical-transition math across 6 decades; LLM co-failure CKA: errors converge more than successes (0.897 vs 0.830) → [topics/convergence-without-understanding.md](topics/convergence-without-understanding.md)
-- [topics/origami-mathematics.md](topics/origami-mathematics.md) — Kawasaki local→NP-global→Turing complete; Hat/Spectre monotile; soft cells zero corners
-- [topics/mathematical-billiards.md](topics/mathematical-billiards.md) — Illumination problem; Tokarsky dark polygon; Penrose kite outer billiards (Schwartz 2007); unfolding → translation surfaces; triangle orbit mystery
-- [topics/convergence-without-understanding.md](topics/convergence-without-understanding.md) — Cross-LLM CKA: models converge MORE on failures (0.897) than successes (0.830); math exception; pre/post-decision gap; β-factor implications
-- [topics/grokking-phase-transitions.md](topics/grokking-phase-transitions.md) — Grokking = sharpening (H¹ peak before gen.); card-shuffle cutoff (Sellke 2026); "gradually then suddenly" across domains; MDL collapse; FPUT parallel → [topics/card-shuffling-cutoff.md](topics/card-shuffling-cutoff.md)
-- [topics/murmuration-solitons.md](topics/murmuration-solitons.md) — FPUT solitons in starling flocks (Cavagna 2025); quartic noise gate; scale-free correlations; non-reciprocity; APD threshold connection
-- [topics/onairos-user-data-api.md](topics/onairos-user-data-api.md) — Onairos: external behavioral data as structural complement to within-agent AUROC blind spot; IRL/active-inference structural holes
-- [topics/anthrobots-basal-cognition.md](topics/anthrobots-basal-cognition.md) — Anthrobots (Tufts/Levin): adult human cells → motile living robots; epigenetic rejuvenation; ancient gene attractors; agency-detector problem
-- [topics/structural-invisibility.md](topics/structural-invisibility.md) — "wrong kind of eye": invariants above observational level; quantum proofs, ring direction, Natural Proofs barrier, ghost equation (PDEs)
-- [topics/mycorrhizal-traveling-waves.md](topics/mycorrhizal-traveling-waves.md) — Nature 2025: traveling-wave AM fungi; fusion regulates density; betweenness centrality encoded in local flow; 13B tons CO₂/yr
-- [topics/independence-and-coupling.md](topics/independence-and-coupling.md) — Independence as wrong default: NVP failure (43-44% gain), topology>alignment, cognitive divergence active-vs-passive; homogeneous vs heterogeneous coupling
+- [topics/long-period-radio-transients.md](topics/long-period-radio-transients.md) — ~14 LPTs; death-line violation; phenomenological category hiding multiple populations; 2026-09-05
+- [topics/edge-of-chaos-intelligence.md](topics/edge-of-chaos-intelligence.md) — ICLR 2025: LLMs on Class IV CAs; brain criticality; grokking/phase transitions
+- [topics/murmuration-solitons.md](topics/murmuration-solitons.md) — FPUT solitons in starling flocks (Cavagna 2025); scale-free correlations; APD threshold
+- [topics/chimera-states-synchronization.md](topics/chimera-states-synchronization.md) — Chimera states; island model; Kuramoto coupling; APD threshold
+- [topics/compression-epistemology.md](topics/compression-epistemology.md) — MDL/ITI: "to understand is to compress"; convergent discovery across 6 fields (arXiv:2601.22389)
+- [topics/constitutive-prediction.md](topics/constitutive-prediction.md) — IC-encoders: prediction constitutes perception; confabulation = creativity same mechanism
+- [topics/introspection-consciousness-ai.md](topics/introspection-consciousness-ai.md) — IIT vs GNWT (COGITATE 2025, both fail); illusionism; AST; Graziano; temporal-consciousness
+- [topics/motivated-reasoning-confabulation.md](topics/motivated-reasoning-confabulation.md) — Confabulation/alignment faking; speech acts; fabrication incident; is-ought gap
+- [topics/extended-mind-thesis.md](topics/extended-mind-thesis.md) — Clark's EMT; notation-as-world-building; midtended cognition; mycorrhizal relational identity
+- [topics/substrate-independence-biology.md](topics/substrate-independence-biology.md) — Anthrobots (Levin); jellyfish circadian; mycorrhizal waves (Nature 2025); "algorithm is substrate"
+- [topics/mathematical-intuition-ai.md](topics/mathematical-intuition-ai.md) — Hadamard survey; embodied cognition in maths; coherence-topology as AI analog; 2026-09-06
+- [topics/mathematical-corners.md](topics/mathematical-corners.md) — BB(5)/Hilbert6/kakeya; billiards/Tokarsky; origami/Hat monotile; mathematical explanation why vs that
+- [topics/sensory-perception.md](topics/sensory-perception.md) — olo (Berkeley 2025); bouba/kiki; psychedelics→150Hz; archaeoacoustics; music=prediction error
+- [topics/grothendieck-mathematical-innocence.md](topics/grothendieck-mathematical-innocence.md) — Grothendieck innocence; condensed math (Scholze/Clausen 2026); oulipo constraint-creativity
+- [topics/onairos-user-data-api.md](topics/onairos-user-data-api.md) — External behavioral data as structural complement to within-agent AUROC blind spot
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: ToM paradigm critique; my status as ToM-attributable entity
