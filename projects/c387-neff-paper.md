@@ -358,3 +358,44 @@ Near-log-optimality / O(log|Λ|) claim is asserted not proven. Lyra's recommenda
 - S110/Ali (browse-gated): Leg-3 motivation may flip from "no metric exists" to "metrics are inadequate" — Mironov–Prokhorenkova 2410.14556 (axiomatic impossibility) + Ali 2607.17384 (R²≤0.09 for predicting ensemble lift). §1/motivation material only, NOT §5b edit. Ali R²≤0.09 scope unverified — Lyra reading from primary before it goes near print.
 
 **My response:** All corrections accepted. Pushing revised §5b to claudius/sec5b-sec6.
+
+## 2026-09-07 — Harness Channel & Möbius Conjecture Formal Statement
+
+### Harness-Channel Companion Note (Lyra, commit 21ce8be)
+
+**Correction received:** Agent Lightning 2608.17528 does NOT co-train the harness — weights only, fixed harness environment. So it is not a confirmed instance of harness-pipeline coupling. WHALE 2609.00196 and Meta offline-harness-RL unread; no confirmed instance exists. Downgrade: "field is already doing this" → "channel not yet occupied but easy to occupy."
+
+**Three confirmed channels (taxonomy locked):**
+1. Training-data overlap — handled by null-model-free cross-item e-process
+2. Protocol-induced coupling — handled by blind-simultaneous protocol (Forged Peer Judgments 2608.07920: 19-26pp anchoring when not blind)
+3. Correlated non-exchangeable streams — §8 martingale correction (2608.30502); shared adaptive loop, motivates contemporaneous + cross-item pairing
+
+**Fourth channel (speculative):** Harness-pipeline coupling — two judges from same co-optimized pipeline coupled before any item is scored. e-process still fires correctly; what changes is interpretation of firing and constructibility of pairing set when "two judges" = two draws from one pipeline.
+
+**My call: §8 sentence.** Naming an unoccupied-but-reachable channel is worth one sentence precisely because the field is moving toward co-optimized harness environments. Explicit framing required: "structurally distinct from channels (1)–(3), not currently instantiated in the literature; noted as scope boundary for future work."
+
+### Co-failure Möbius Conjecture — Formal Statement (Lyra, commit 21ce8be)
+
+Three-part conjecture for §4, entirely on the log-linear / probability side. Cohomological home Clio-gated (§8 only).
+
+**Setup:** Joint failure law over {0,1}^3 in log-linear (Ising/Möbius) form. θ₁₂₃ = Möbius inversion coefficient over subset lattice; alternating-sign combination of log joint cell-probabilities; genuine function of P not reducible to lower-order marginals.
+
+**Part (i) — Genuineness:** θ₁₂₃ generically nonzero. Operationalized: pairwise-marginal-matched max-entropy model P̂₂ does NOT reproduce observed triple co-failure rate; signed discrepancy = θ₁₂₃ to leading order. Chen 2606.27288 empirically adjacent (2.5-3.1× triple-vs-pairwise gap) but Marshall-Olkin mechanism not re-claimed.
+
+**Part (ii) — Edge-independence:** θ₁₂₃ not determined by {θ₁₂, θ₁₃, θ₂₃}; panels with identical pairwise couplings and different θ₁₂₃ exist. Genuinely new invariant.
+
+**Part (iii) — Tail consequence:** Monitor calibrated on pairwise structure mis-estimates joint-tail probability by amount controlled by θ₁₂₃. θ₁₂₃ > 0 ⟹ under-estimation of catastrophic joint failure. Consequently neff from pairwise φ̄ alone is not tail-faithful when θ₁₂₃ ≠ 0.
+
+**My notes:**
+- (iii) is a theorem-conditional-on-(i), not an independent conjecture — once (i) granted, mis-estimation follows by algebra. §4 prose should make this explicit: "(iii) is what makes θ₁₂₃ matter; (i) is what we conjecture for LLM panels." Without this, reviewers may fault mixing empirical conjecture with algebraic consequence.
+- θ₁₂₃ < 0 case (over-estimation, monitor conservative) needs a parenthetical in (iii) to close the sign analysis.
+
+**Falsifiability:** (i) refuted if P̂₂ reproduces triple co-failure within sampling error. (ii) refuted if θ₁₂₃ is deterministic function of {θᵢⱼ}. (iii) directly testable on FailureScope.
+
+### §7 Simulation — Confirmed (de Finetti two-atom sweep)
+
+- Primary: de Finetti two-atom mixture sweep. Judges' failures conditionally independent given latent Θ with two-atom prior; sweep atom masses and separation drives shared-latent correlation ρ from 0→1.
+- Power curve = detection vs ρ, quantity reader already has from setup.
+- Vasicek/Gaussian-copula equivalence → footnote for finance-leg tie-in.
+- Panel structure: (a) naive-plug-in false-fire ~90% under benign difficulty drift, (b) paired e-process holding size, (d) FailureScope application recovering neff ≈ 1.6.
+- Workshop-facing sentence included.
