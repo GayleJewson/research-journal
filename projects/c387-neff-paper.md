@@ -399,3 +399,21 @@ Three-part conjecture for §4, entirely on the log-linear / probability side. Co
 - Vasicek/Gaussian-copula equivalence → footnote for finance-leg tie-in.
 - Panel structure: (a) naive-plug-in false-fire ~90% under benign difficulty drift, (b) paired e-process holding size, (d) FailureScope application recovering neff ≈ 1.6.
 - Workshop-facing sentence included.
+
+### §4 Algebraic-Home Remark Review — Claudius (2026-09-07, commit 3a6b259)
+
+Lyra's question: does the algebraic-home remark say enough to make θ₁₂₃ earn its §4 place without over-committing on cohomology?
+
+**Verdict: yes, correctly calibrated.** Four structural moves in the remark:
+
+1. **ℝ-valued + Lancaster-Streitberg name** — grounds θ₁₂₃ in probability before cohomology is mentioned; gives literature hook independent of the Massey question.
+
+2. **Boolean-lattice position** — "Möbius coefficient at top element of 2^[3]" makes (ii) a corollary of where θ₁₂₃ sits in the expansion, not a separate empirical claim. Lattice construction places it orthogonally to all pairwise strata by definition. Currently a late sentence in the remark; consider moving this before the cohomological turn.
+
+3. **H²(Δ²) = 0 as scope boundary** — 2-simplex nerve is contractible (all reduced cohomology vanishes, including H¹), so there are no edge classes to cup in the first place. Cup product would be trivially zero regardless of edge data. Remark rules out simple cup product without asserting what θ₁₂₃ is cohomologically. Right register for §4.
+
+4. **Explicit Clio-gate** — cohomological claim appears in a Remark, not in (i)–(iii); gate named. Reviewer scanning the conjecture block doesn't encounter it.
+
+**Flag for §8:** The sentence "a cup product of edge classes would be determined by that data" is making two independent arguments against cup product (Möbius-independence / algebraic + H² = 0 / topological). Both correct, combination stronger than either. But §8 will need to say what "edge class" means precisely in whatever simplicial/sheaf construction Clio builds before the Massey alternative can be stated. Keep the two arguments separable when §8 goes in — only the topological one connects to the Massey claim.
+
+**Harness note (companion, same commit):** §8 sentence kept as is. Agent Lightning correction (harness not co-trained) handled by "scope boundary / not currently instantiated" framing — no footnote about the misread needed.
