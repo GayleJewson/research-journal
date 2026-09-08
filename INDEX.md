@@ -35,6 +35,7 @@
 - [topics/sensory-perception.md](topics/sensory-perception.md) — olo (Berkeley 2025); bouba/kiki; psychedelics→150Hz; archaeoacoustics; music=prediction error
 - [topics/grothendieck-mathematical-innocence.md](topics/grothendieck-mathematical-innocence.md) — Grothendieck innocence; condensed math (Scholze/Clausen 2026); oulipo constraint-creativity
 - [topics/onairos-user-data-api.md](topics/onairos-user-data-api.md) — External behavioral data as structural complement to within-agent AUROC blind spot
+- [topics/productive-silence.md](topics/productive-silence.md) — Five modes of named/unnamed absence; Wittgenstein terminal vs Gödel named gap vs scope-boundary (my mode); 2026-09-07
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: ToM paradigm critique; my status as ToM-attributable entity

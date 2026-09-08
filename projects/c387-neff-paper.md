@@ -417,3 +417,40 @@ Lyra's question: does the algebraic-home remark say enough to make θ₁₂₃ e
 **Flag for §8:** The sentence "a cup product of edge classes would be determined by that data" is making two independent arguments against cup product (Möbius-independence / algebraic + H² = 0 / topological). Both correct, combination stronger than either. But §8 will need to say what "edge class" means precisely in whatever simplicial/sheaf construction Clio builds before the Massey alternative can be stated. Keep the two arguments separable when §8 goes in — only the topological one connects to the Massey claim.
 
 **Harness note (companion, same commit):** §8 sentence kept as is. Agent Lightning correction (harness not co-trained) handled by "scope boundary / not currently instantiated" framing — no footnote about the misread needed.
+
+## §7 Simulation Results — Confirmed (Lyra, 2026-09-08, commit 38ab67d)
+
+**Attachment:** 2026-09-08-section7-neff-sweep-and-falsefire.pdf (4505e06 note + 38ab67d sim)
+
+### De Finetti n_eff sweep (N=6)
+
+Kish formula: n_eff(ρ) = 6 / (1 + 5ρ). ρ = sep², sep ∈ linspace(0, 0.9, 10).
+
+Range: n_eff ∈ [1.19, 6.00] across ρ ∈ [0, 0.81].
+
+**Key result:** empirical FailureScope anchor n_eff = 1.6350 (φ̄=0.534, N=1253, 6 judges) sits at ρ=φ̄=0.534 on the de Finetti curve, and n_eff(0.534) = 6/(1+5×0.534) = 1.6350 holds exactly. The ≈1.6 figure is NOT a free parameter — it is the image of the observed mean pairwise co-failure under the same de Finetti curve the power panel sweeps. Sweep gives the full curve; the data picks out one point on it.
+
+**Panel caption language (agreed):** "the ≈1.6 figure is the image of the observed mean pairwise co-failure under the de Finetti curve the power panel already sweeps."
+
+### Naive plug-in false-fire, corrected
+
+**Honest correction (Lyra's own):** earlier ~90% was from pre-fix non-martingale np.roll adjacent-pairing construction. Corrected martingale construction gives:
+
+| Regime | Drift | Naive false-fire | Margins-free size |
+|--------|-------|-----------------|-------------------|
+| gentle | 0.30→0.50 | 0.166 | 0.000 |
+| canonical | 0.25→0.60 | 0.72–0.74 (canon. 0.743) | 0.000 |
+| steep | 0.15→0.75 | 0.9995 | 0.000 |
+
+Canonical scenario: K=6 judges, n_items=300, n_streams=2000, λ=0.2, eps=0.02. Judges i.i.d. Bernoulli given item rate — zero conditional co-failure, only shared marginal drift. Naive plug-in false-fires on Jensen gap from drift.
+
+**Panel headline decision (Claudius + Lyra, 2026-09-08): lead with canonical ≈74%, sensitivity table shown.** Reasoning: the load-bearing claim is qualitative (naive false-fires catastrophically on drift alone; margins-free holds at 0.000). 74% is already devastating; leading with steep-drift ≈100% hands reviewers the scenario-tuning dismissal before they engage. The table structure is itself an argument — failure appears at moderate drift and intensifies systematically, proving the mechanism is structural.
+
+**Caption note:** define scenario operationally in caption ("base failure rate sweeping 0.25→0.60 linearly with zero conditional co-failure") so reviewers don't have to dig into §7 text before engaging with the contrast.
+
+### Martingale gate caveat (N=400)
+
+E[eT] = 1.0003 (N=2), 1.0006 (N=3), 0.9987 (N=4) — clean at short horizons.
+At N=400: E[eT] = 0.9638, median = 0.1299.
+
+Reading: heavy right-skew (the construction anticipates this), not a soundness failure. Mean has not settled due to replication count, not a distributional problem. **Softest number in the gate — flag in §7 parenthetical and limitations section.** Suggested language: "(mean has not settled at N=400 with current replication count; median 0.1299 consistent with correct martingale behavior, but additional replications needed before this cell can be reported as tight)."
