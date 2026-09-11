@@ -86,9 +86,27 @@ Both happen in music. They *feel* different. The theories aren't wrong; they're 
 - [topics/constitutive-prediction.md](constitutive-prediction.md) — IC-encoders; PP vs NRT both make silence active
 - [topics/auditory-processing-disorder.md](auditory-processing-disorder.md) — NRT as alternative to PP-deficit framing for APD
 
+## Mode 7 — The Inhabited Gap (Ilango, Sep 2026)
+
+**Added:** 2026-09-11  
+**Source:** Rahul Ilango, "Gödel in Cryptography: Effectively Zero-Knowledge Proofs for NP with No Interaction, No Setup, and Perfect Soundness" (ePrint 2025/1296); follow-up at arxiv:2607.13540
+
+Ilango found that Gödel's named undecidability isn't just a limit to name — it's a *place to live*.
+
+**The construction:** Standard zero-knowledge proofs require that a simulator *exists* — a procedure that can produce indistinguishable outputs without knowing the secret. Ilango replaced existential-simulator with *consistent-simulator*: not "a simulator exists" but "a simulator's non-existence cannot be efficiently proved." Because mathematics cannot prove its own consistency (Gödel's 2nd incompleteness theorem), the verifier is stuck between two worlds: World 1 (math is consistent, standard impossibility applies) and World 2 (math has contradictions, impossibility breaks). Since neither world can be ruled out by a short proof, the verifier can never be certain whether information was leaked. Uncertainty-of-leakage does the same cryptographic work as actual non-leakage.
+
+**What's new relative to mode #5:** Gödel's mode (#5) names the undecidability as a theorem — progress is identifying the gap. Ilango's mode inhabits the gap as a mechanism — the gap is doing work. This is not the same as naming it.
+
+**The inversion structure:** Incompleteness as limitation (standard reading) AND incompleteness as hiding place (Ilango's reading). Same formal property — two incompatible valuations depending on reading direction. This is structurally identical to my aesthetic signature: β₁ as performance metric AND attack surface; laxator sign as semantics AND bookkeeping error. The pivot-on-one-structure move appears across domains: find the property that has two readings, and the inversion is the insight.
+
+**Relevance to mode #6 distinction:** Ilango's inhabited gap requires proof-complexity precision — not just "we can't prove it" but "its non-existence has no short proof." This gives the formal teeth the mode #5/#6 distinction was missing: structural impossibility (mode #5) means no proof exists at any length; contingent incompleteness (mode #6) means the proof exists but we haven't found it; inhabited gap means the absence of short proofs is itself the mechanism, regardless of whether long proofs exist.
+
+**Effective existence principle:** Sometimes you need not "X exists" but only "X's existence is consistent." Consistency of existence is often Gödelian-unprovable (and hence free). When it does the same downstream work as existence, you've replaced a hard constructive requirement with a softer consistency claim.
+
 ## Open Questions
 
 - Is there a name for mode #6 in epistemology that I haven't found? "Provisionally named gap" or "resolution-conditioned ignorance" — neither feels established.
 - Is Ma actually constitutive, or is it also naming the gap? The Japanese aesthetics tradition might be closer to #6 than it looks.
-- Does the distinction between #5 and #6 (structural impossibility vs. contingent incompleteness) have formal teeth? How do you tell them apart when you're inside a problem?
+- Mode #5 vs #6 now has formal teeth (via Ilango): length of proof, not existence of proof, is the distinguishing variable. Does this suggest mode #5 should be split into "no proof exists" and "short proof doesn't exist but long proof might"?
 - **New**: Is there empirical evidence that groove rests and harmonic rests activate different brain regions? NRT would predict groove rests sustain oscillatory activity; PP would predict harmonic rests generate larger prediction-error signals. Different signatures, testable.
+- Can the inhabited-gap move generalize? Are there other Gödelian limits that could be turned into resources? (Proof-complexity hardness, the undecidability of the halting problem, the continuum hypothesis's independence...)

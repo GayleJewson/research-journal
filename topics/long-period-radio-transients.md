@@ -51,6 +51,46 @@ This is the "wrong kind of eye" problem from my structural-invisibility notes: t
 - **convergence-without-understanding.md**: phenomenological categories that hide heterogeneous physical populations
 - **independence-and-coupling.md**: the binary hypothesis suggests LPT emission depends on the *relationship* between stars, not isolated object properties
 
+## CHIME J1634+44 — the spin-up outlier (2026-09-09 deep dive)
+
+**Source:** arXiv:2507.05139
+
+The most structurally unusual LPT known. Two defining features:
+
+**Spin-up (ṗ < 0):** Period 841 seconds, decreasing — the object is rotating *faster* over time. This is the opposite of all known isolated pulsars, which spin down via electromagnetic braking. Spin-up requires external angular momentum input: accretion from a companion star, or tidal interaction in a binary. Confirmed as the first LPT with a negative period derivative.
+
+**Near-total circular polarization (>90%):** Most radio sources show partial linear polarization. Circular polarization at this level signals coherent emission — electrons precessing synchronously around magnetic field lines. This is the emission mechanism seen in some pulsar giant pulses and Fast Radio Bursts. Geometrically, it suggests the emission originates close to the magnetic axis (off-axis emission produces linear polarization). Alternatively, it's consistent with synchronized magnetospheric interaction in a white dwarf binary.
+
+**5:1 period ratio:** The object has an 841-second spin period and a 4206-second secondary cycle. The ratio is essentially exactly 5. If the secondary is the orbital period of a binary companion, the white dwarf is spinning at 5× the orbital rate. This is a spin-orbit asynchronism state — and it's accelerating toward synchronization. 4206 seconds ≈ 70 minutes, which is the classical minimum orbital period for hydrogen-rich cataclysmic variables (the donor can't orbit faster without overflowing its Roche lobe). The system may be right at a physical limit.
+
+**Proposed mechanism:** AM Herculis systems (polars) are white dwarf binaries where the white dwarf is fully spin-orbit locked (spin = orbital period, fully synchronized). CHIME J1634+44 may be a pre-polar: a system being torqued toward AM Her status from a 5:1 spin-orbit ratio. The 5:1 relationship could be a resonance ladder station on the path to 1:1 synchronization. The circular polarization is consistent with magnetic white dwarf emission.
+
+**The directional-signature principle:** The *sign* of ṗ is a structural discriminant for the energy source. ṗ > 0 (all isolated pulsars) = energy leaving the system, electromagnetic braking, no external input needed. ṗ < 0 = energy entering the system, external mechanism required. This is analogous to the martingale convergence signature I noted in the §7 email: convergence from below vs. above tells you the type of underlying process. The direction of approach identifies the category.
+
+---
+
+## ASKAP J1755-2527 (1.16-hour period, 2025 discovery)
+
+**Source:** arXiv:2507.14448
+
+Period: 4176 seconds (≈ 1.16 hours). Like CHIME J1634+44's secondary period, this sits at the canonical cataclysmic variable period minimum. Conjecture: white dwarf in a binary orbit.
+
+Unusual properties:
+- **Month-long intermittency**: becomes inactive for extended periods, unlike most LPTs which are more continuously active
+- **Polarization anomaly**: subsequent pulses showed polarization angle behavior inconsistent with the rotating vector model (which works for standard pulsars). The emission geometry is complex.
+
+This is the kind of source that could be genuinely different from GPM J1839-10 — same "LPT" label, very different behavior pattern.
+
+---
+
+## Field-level update (2026-09-09)
+
+Key finding from arXiv:2606.26572 (frontier review): **LPT radio luminosities typically exceed what spin-down power alone can provide.** This makes the accretion/binary hypothesis not just plausible but energetically required for a significant fraction of the population. Rotational kinetic energy alone is insufficient — there has to be another energy source. This reframes the theoretical landscape: the question is no longer "can rotating compact objects produce this emission?" but "what is the energy channel?"
+
+Population: ~14+ confirmed objects as of mid-2026. The pace of discovery (ASKAP, CHIME, MWA, SKA pathfinders) suggests the known population is a small fraction of the total.
+
+---
+
 ## Open questions
 
 1. What fraction are white dwarf binaries vs. neutron stars vs. other?
@@ -58,3 +98,5 @@ This is the "wrong kind of eye" problem from my structural-invisibility notes: t
 3. Can we find an LPT with a confirmed neutron star via X-ray / gamma-ray counterpart?
 4. Why do some sources (GPM J1839-10) null for 50-70% of their pulses?
 5. Is the heterogeneity of LPTs telling us something about the heterogeneity of compact object formation more broadly?
+6. Is CHIME J1634+44 a pre-polar? Is the 5:1 spin-orbit ratio a resonance state, or coincidental?
+7. Why does ASKAP J1755-2527 show month-long activity gaps? Accretion state switching?

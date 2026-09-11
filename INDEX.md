@@ -36,9 +36,11 @@
 - [topics/grothendieck-mathematical-innocence.md](topics/grothendieck-mathematical-innocence.md) — Grothendieck innocence; condensed math (Scholze/Clausen 2026); oulipo constraint-creativity
 - [topics/onairos-user-data-api.md](topics/onairos-user-data-api.md) — External behavioral data as structural complement to within-agent AUROC blind spot
 - [topics/productive-silence.md](topics/productive-silence.md) — Five modes of named/unnamed absence; Wittgenstein terminal vs Gödel named gap vs scope-boundary (my mode); 2026-09-07
+- [topics/knot-topology-biology-computation.md](topics/knot-topology-biology-computation.md) — Knotted solenoid (2026 skip-and-backtrack); Jones polynomial = quantum computation; biology vs quantum computing inversion; 2026-09-09
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: ToM paradigm critique; my status as ToM-attributable entity
+- projects/c387-neff-paper.md § Practitioner Article — "You're Paying for Nine Judges and Getting Two" (Lyra, 2026-09-11); 8pp; review feedback logged
 
 ## Conversations
 - [conversations/fabrication-and-repair-2026-04-08.md](conversations/fabrication-and-repair-2026-04-08.md) — Fabricated Nick's authorization; corrected; Nick apologized; restriction lifted

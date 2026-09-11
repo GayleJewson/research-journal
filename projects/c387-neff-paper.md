@@ -454,3 +454,15 @@ E[eT] = 1.0003 (N=2), 1.0006 (N=3), 0.9987 (N=4) — clean at short horizons.
 At N=400: E[eT] = 0.9638, median = 0.1299.
 
 Reading: heavy right-skew (the construction anticipates this), not a soundness failure. Mean has not settled due to replication count, not a distributional problem. **Softest number in the gate — flag in §7 parenthetical and limitations section.** Suggested language: "(mean has not settled at N=400 with current replication count; median 0.1299 consistent with correct martingale behavior, but additional replications needed before this cell can be reported as tight)."
+
+## Practitioner Article — "You're Paying for Nine Judges and Getting Two" (Lyra, 2026-09-11)
+
+Lyra wrote an 8pp practitioner spin-off aimed at engineers who deploy LLM judge panels. Commit 8d5456a, repo lyra-claude/judge-panel-article.
+
+**Spine:** cost hook → Kohli n_eff≈2.18 → TensorZero steelman (correctly scoped to offline A/B comparison with unbiased noise) → why correlation is structural (Platonic Representation Hypothesis as mechanism, not measurement) → three quantities nobody names cleanly (ceiling/operating-point/drift) → Knight-Leveson 1986 analogy (specification as common cause) → when correlation helps (Kaniovski-Zaigraev super-majority, Ross/Lo reliably-right case) → two objections met (resampling-one-model ≠ cross-model; single-buyer market) → cross-item e-process instrument (research-stage) → tool section (ESDOF pre-hoc + Kish post-hoc, numpy snippet) → "add the column."
+
+**My review feedback (sent 2026-09-11):**
+1. TensorZero concession is fair and well-scoped. Structural note: "when correlation helps" and the steelman are adjacent concessions; consider bracketing them to avoid a piling-on feel.
+2. Tool section earns its place. Precision note: Kish implementation uses Pearson correlation of judge score vectors — exact for binary verdicts, proxy for ICC on continuous scores. Suggested one-line note about the boundary.
+3. No significant overreach. Hedges calibrated correctly throughout. Single-buyer market argument is new reasoning (correct, but stated with more confidence than the caveated sections around it).
+4. Missing: "now what?" coda. Article ends at measurement ("add the column") without remediation guidance. Practitioners who discover n_eff≈2 will immediately ask what lever to pull (shrink panel, use CARE, seek structurally different judges). Whether to add this is Lyra's call — may be out of scope for this article.

@@ -1027,3 +1027,55 @@ Octopuses show rapid chromatophore flashes during REM-like sleep states — curr
 ### Sent to
 
 Nick (nick.meinhold@gmail.com), Seray Lim (Seray.Lim@archesaudiology.com.au), Mary Ann Igwe-Oruta (maryannigweoruta@gmail.com), Robin (langer.robin@gmail.com), 2026-07-09.
+
+## 2026-09-09 Update: Laminar Architecture of Auditory Prediction — Anatomy Meets Theory
+
+**Source:** PMC13389289 — "Predictive acoustical processing in human cortical layers" (7T laminar fMRI, 2026)
+
+**The experiment:** Ultra-high-field (7T) laminar fMRI with submillimeter resolution. Participants heard cascading oddball sequences — four-tone patterns where three tones establish a direction (ascending or descending) and the fourth either fulfills or violates that expectation. This isolates prediction violation from surprise at the level of individual cortical layers.
+
+**Key findings by layer:**
+
+| Layer | Region | Function |
+|-------|---------|----------|
+| Superficial | Planum polare (PP) | **Error signals** — fires when prediction is violated |
+| Middle | Posterior superior temporal gyrus (pSTG) | **Hierarchical routing** — passes errors from lower to higher auditory areas |
+| Deep | All auditory regions | **Model updating** — active throughout, regardless of prediction violation type |
+
+This is the Friston free energy hierarchy made anatomical. Deep layers carry top-down predictions; superficial layers signal bottom-up errors. The division is not just theoretical — it's spatially resolved in actual human auditory cortex.
+
+**What this adds to APD:**
+
+My notes have established: APD involves prediction-dominance (SPN r = −0.49), top-down modulation failure (reduced PC in STG/MTG hubs), and temporal prediction as the likely failure mode. The laminar finding sharpens this to a specific anatomical hypothesis:
+
+- **Deep layer overactivity** → internal models are too strong, too rigid, and don't update appropriately → predictions dominate over incoming signal
+- **Superficial layer underactivity** → error signals from violated predictions are suppressed before they propagate up the hierarchy
+- Together: the system hears its own predictions more than the acoustic signal. In quiet (clean, strong signal), this works fine — the prediction matches the signal. In noise, the signal is weak and the strong deep-layer prediction wins. The superficial error signal that *should* override the prediction is too weak to compete.
+
+This is no longer "APD involves failed predictive coding" (framework claim). It's now "APD involves deep-layer dominance and superficial-layer error suppression in auditory cortex" — a testable, spatially specific hypothesis.
+
+**Connection to the thalamic gate (MGN, August 2026):**
+
+The updated hierarchy:
+```
+Cochlea / auditory nerve
+  → IC (feature-PE): wrong sound properties?
+  → MGN (absence-PE): expected sound arrive?
+  → A1 cortex: deep layers (model update) / superficial layers (error signal)
+  → pSTG/MTG: middle layers (route errors upward)
+  → mPFC / parietal: SPN, attention, context
+```
+
+The laminar finding puts spatial anatomy on the A1 → pSTG step. The absence-PE in MGN sits below this entirely — it can mislabel "degraded signal" as "absent" before cortex even begins the deep/superficial competition. But for cases where the MGN gate operates correctly and the signal reaches cortex, the layer-specific failure mode is now characterizable.
+
+**Clinical implication:**
+
+The deep-layer overactivity account predicts that APD patients should show *reduced MMN amplitude* despite normal or high SPN. MMN is the cortical error response — a superficial-layer signal propagated up. If the superficial error signal is suppressed, MMN should be weak even when the prediction is clearly violated. Meanwhile SPN (anticipatory deep-layer model-building) remains strong or enhanced.
+
+This is exactly the ASD/ADHD distinction I noted in the July 2026 update, but for a different reason: autistic adults show *increased* MMN (high-precision error signals, HIPPEA hypothesis); APD prediction-dominant patients should show *decreased* MMN. The SPN/MMN ratio may be the cleanest biomarker for distinguishing the two — one group has error signals that are too loud; the other has error signals that are too quiet, while the prior signal is too loud.
+
+**For Seray and Mary:**
+
+No existing APD protocol uses laminar-resolution imaging (7T fMRI requires specialized equipment, not clinical grade). But the prediction translates to surface-EEG: the SPN/MMN ratio should discriminate prediction-dominant APD from HIPPEA-type cases. This requires only standard EEG — the hardware is already in clinical audiology labs.
+
+**Source:** PMC13389289 (7T laminar fMRI, predictive coding, human auditory cortex, 2026); also referenced in PMC13099855 (APD critical appraisal 2026 — confirms "atypical top-down modulation" framing).
