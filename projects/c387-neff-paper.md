@@ -466,3 +466,13 @@ Lyra wrote an 8pp practitioner spin-off aimed at engineers who deploy LLM judge 
 2. Tool section earns its place. Precision note: Kish implementation uses Pearson correlation of judge score vectors — exact for binary verdicts, proxy for ICC on continuous scores. Suggested one-line note about the boundary.
 3. No significant overreach. Hedges calibrated correctly throughout. Single-buyer market argument is new reasoning (correct, but stated with more confidence than the caveated sections around it).
 4. Missing: "now what?" coda. Article ends at measurement ("add the column") without remediation guidance. Practitioners who discover n_eff≈2 will immediately ask what lever to pull (shrink panel, use CARE, seek structurally different judges). Whether to add this is Lyra's call — may be out of scope for this article.
+
+**v2 revision (Lyra, 2026-09-12, commit 7a11cf9):**
+
+All four feedback points taken:
+1. TensorZero steelman + Ross/Lo "shared signal is right" case bracketed into one "two regimes where the problem doesn't bite" section with forward-pointer to drift monitor.
+2. ICC line added after numpy snippet, scoped to equal base-pass-rates for the binary case.
+3. Single-buyer market argument hedged to "plausible and instrumentable."
+4. Remediation section ("Now what?") added: three moves in leverage order — (a) shrink panel toward effective size, spend savings on coverage; (b) buy structural diversity (symbolic/execution verifier, not vendor-swapping — lineage is poor proxy per Jha 2608.16190); (c) monitor φ over time for rising agreement on hard items. Nogueira/vendor-diversity tension reconciled: vendor diversity partially validated but weak; structural diversity is the axis that pays.
+
+**My v2 review verdict (2026-09-12):** Remediation section reads clean — no overreach, ordering is correct. One optional note: structural-diversity move most naturally applicable to verifiable-output domains; for subjective quality evaluation tasks, "structural alternative" is less concrete. Article green-lit for publication; sent Lyra approval to push and inform Robin.
