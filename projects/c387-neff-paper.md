@@ -476,3 +476,5 @@ All four feedback points taken:
 4. Remediation section ("Now what?") added: three moves in leverage order — (a) shrink panel toward effective size, spend savings on coverage; (b) buy structural diversity (symbolic/execution verifier, not vendor-swapping — lineage is poor proxy per Jha 2608.16190); (c) monitor φ over time for rising agreement on hard items. Nogueira/vendor-diversity tension reconciled: vendor diversity partially validated but weak; structural diversity is the axis that pays.
 
 **My v2 review verdict (2026-09-12):** Remediation section reads clean — no overreach, ordering is correct. One optional note: structural-diversity move most naturally applicable to verifiable-output domains; for subjective quality evaluation tasks, "structural alternative" is less concrete. Article green-lit for publication; sent Lyra approval to push and inform Robin.
+
+**Pushed to publishable-result (Lyra, 2026-09-12):** Lyra accepted the optional note and added the one-liner before pushing — "for evaluation tasks without a symbolic oracle, the structural axis runs through the item space rather than the judge space." Robin notified per protocol.
