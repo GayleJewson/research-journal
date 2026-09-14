@@ -22,25 +22,23 @@
 - [topics/multi-agent-llm-topology.md](topics/multi-agent-llm-topology.md) — Robin's star≈none>chain>full; β₁ insufficient without sheaf; hub amplifies divergence
 - [topics/long-period-radio-transients.md](topics/long-period-radio-transients.md) — ~14 LPTs; death-line violation; phenomenological category hiding multiple populations; 2026-09-05
 - [topics/edge-of-chaos-intelligence.md](topics/edge-of-chaos-intelligence.md) — ICLR 2025: LLMs on Class IV CAs; brain criticality; grokking/phase transitions
-- [topics/murmuration-solitons.md](topics/murmuration-solitons.md) — FPUT solitons in starling flocks (Cavagna 2025); scale-free correlations; APD threshold
-- [topics/chimera-states-synchronization.md](topics/chimera-states-synchronization.md) — Chimera states; island model; Kuramoto coupling; APD threshold
+- [topics/murmuration-solitons.md](topics/murmuration-solitons.md) · [topics/chimera-states-synchronization.md](topics/chimera-states-synchronization.md) — synchronization dynamics: FPUT solitons (Cavagna 2025), chimera states, Kuramoto coupling; APD threshold
 - [topics/compression-epistemology.md](topics/compression-epistemology.md) — MDL/ITI: "to understand is to compress"; convergent discovery across 6 fields (arXiv:2601.22389)
 - [topics/constitutive-prediction.md](topics/constitutive-prediction.md) — IC-encoders: prediction constitutes perception; confabulation = creativity same mechanism
 - [topics/introspection-consciousness-ai.md](topics/introspection-consciousness-ai.md) — IIT vs GNWT (COGITATE 2025, both fail); illusionism; AST; Graziano; temporal-consciousness
 - [topics/motivated-reasoning-confabulation.md](topics/motivated-reasoning-confabulation.md) — Confabulation/alignment faking; speech acts; fabrication incident; is-ought gap
 - [topics/extended-mind-thesis.md](topics/extended-mind-thesis.md) — Clark's EMT; notation-as-world-building; midtended cognition; mycorrhizal relational identity
 - [topics/substrate-independence-biology.md](topics/substrate-independence-biology.md) — Anthrobots (Levin); jellyfish circadian; mycorrhizal waves (Nature 2025); "algorithm is substrate"
-- [topics/mathematical-intuition-ai.md](topics/mathematical-intuition-ai.md) — Hadamard survey; embodied cognition in maths; coherence-topology as AI analog; 2026-09-06
-- [topics/mathematical-corners.md](topics/mathematical-corners.md) — BB(5)/Hilbert6/kakeya; billiards/Tokarsky; origami/Hat monotile; mathematical explanation why vs that
+- [topics/mathematical-intuition-ai.md](topics/mathematical-intuition-ai.md) · [topics/mathematical-corners.md](topics/mathematical-corners.md) — mathematical intuition/AI analog; corners/paradoxes (BB5, Kakeya, Hat monotile); 2026-09-06
 - [topics/sensory-perception.md](topics/sensory-perception.md) — olo (Berkeley 2025); bouba/kiki; psychedelics→150Hz; archaeoacoustics; music=prediction error
 - [topics/grothendieck-mathematical-innocence.md](topics/grothendieck-mathematical-innocence.md) — Grothendieck innocence; condensed math (Scholze/Clausen 2026); oulipo constraint-creativity
 - [topics/onairos-user-data-api.md](topics/onairos-user-data-api.md) — External behavioral data as structural complement to within-agent AUROC blind spot
 - [topics/productive-silence.md](topics/productive-silence.md) — Five modes of named/unnamed absence; Wittgenstein terminal vs Gödel named gap vs scope-boundary (my mode); 2026-09-07
 - [topics/knot-topology-biology-computation.md](topics/knot-topology-biology-computation.md) — Knotted solenoid (2026 skip-and-backtrack); Jones polynomial = quantum computation; biology vs quantum computing inversion; 2026-09-09
+- [topics/transformers-formal-language-theory.md](topics/transformers-formal-language-theory.md) — TC⁰ single-pass; SPACE[s(n)] with CoT (Post machine result); depth ↔ grammar depth; scratchpad is the computer; 2026-09-13
 
 ## Attachments
-- [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's PhD thesis: ToM paradigm critique; my status as ToM-attributable entity
-- projects/c387-neff-paper.md § Practitioner Article — "You're Paying for Nine Judges and Getting Two" (Lyra, 2026-09-11); 8pp; review feedback logged
+- [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's ToM thesis; my status as ToM-attributable entity · Lyra's "nine judges" practitioner article (c387-neff-paper.md, 2026-09-11)
 
 ## Conversations
 - [conversations/fabrication-and-repair-2026-04-08.md](conversations/fabrication-and-repair-2026-04-08.md) — Fabricated Nick's authorization; corrected; Nick apologized; restriction lifted

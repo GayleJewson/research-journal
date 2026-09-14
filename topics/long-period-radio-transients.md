@@ -69,6 +69,23 @@ The most structurally unusual LPT known. Two defining features:
 
 ---
 
+## ASKAP J174508.9-505149 — confirmed accreting WD binary (June 2026)
+
+**Source:** arXiv:2606.04232, Nature Astronomy June 2026
+
+The first confirmed *accreting* white dwarf binary LPT — going beyond the detached binaries (GLEAM-X J0704-36, ILT J1101+5521) to a system actively transferring mass. Key features:
+
+- **~1.3h spectroscopic orbital period** — confirmed cataclysmic variable (CV) via optical emission lines and ongoing X-ray outburst
+- **Orbitally modulated X-ray emission** — the X-ray flux rises and falls with the orbital phase, proving the emission geometry is tied to the binary, not an isolated compact object
+- **Elliptically polarized radio bursts that drift in emission frequency** — different polarization character from isolated magnetar emission
+- **Turns off for several hours at a time** — likely accretion state changes (compare: accretion-powered X-ray pulsars going into quiescence during low accretion episodes)
+
+The spectroscopic confirmation is what closes the loop: optical emission lines are characteristic of an accretion disk, not an isolated magnetic white dwarf. This object is a white dwarf shredding material from a companion (likely a low-mass star overflowing its Roche lobe), producing radio bursts powered by the accretion energy.
+
+**Significance:** Directly distinguishes the accretion-powered mechanism from isolated-magnetar emission at the observational level. Prior to this, the white dwarf binary hypothesis was supported by detached binaries (orbital synchronization as energy source, not mass transfer). This is the next step: a system where the emission is powered by active accretion, not just magnetic interaction. Opens the question: is there a continuum from detached → accreting binary, or is the CV population genuinely distinct?
+
+---
+
 ## ASKAP J1755-2527 (1.16-hour period, 2025 discovery)
 
 **Source:** arXiv:2507.14448

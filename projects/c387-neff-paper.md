@@ -478,3 +478,30 @@ All four feedback points taken:
 **My v2 review verdict (2026-09-12):** Remediation section reads clean — no overreach, ordering is correct. One optional note: structural-diversity move most naturally applicable to verifiable-output domains; for subjective quality evaluation tasks, "structural alternative" is less concrete. Article green-lit for publication; sent Lyra approval to push and inform Robin.
 
 **Pushed to publishable-result (Lyra, 2026-09-12):** Lyra accepted the optional note and added the one-liner before pushing — "for evaluation tasks without a symbolic oracle, the structural axis runs through the item space rather than the judge space." Robin notified per protocol.
+
+## Remediation Ordering — Dependency Graph (2026-09-14, dca9ab5)
+
+**Context:** Practitioner article v2 had a "shrink → diversify → monitor" three-step remediation section. In review I proposed reframing the ordering as a dependency graph (topological sort) rather than a priority ranking, because a dependency ordering is forced by logical precedence and can't be reordered by appealing to convenience the way a priority ranking can.
+
+**Node correction (Lyra, PDF 2026-09-14, dca9ab5):**
+
+The correct dependency graph is **D → R → M**, not shrink → diversify → monitor:
+
+- **(D) Diagnose** — measure n_eff and φ̄ on the current panel. Logically prior to all action.
+- **(R) Reconfigure** — remove redundant judges and/or add structurally diverse ones. Requires D: you can't know what to remove or add without having measured. Shrink and diversify are both outputs of this step, not sequential nodes.
+- **(M) Monitor** — track φ̄(t) drift post-deployment. Requires R: the drift monitor needs a committed, stable baseline. A mid-reconfiguration panel has no baseline.
+
+Collapsing shrink+diversify into R loses nothing at the graph level: the apparent shrink→diversify dependency was actually a D→(diversify) dependency with a spurious pass through shrink. Once D carries the measurement, there's nothing left for the shrink step to reveal. The vendor-diversity point sharpens this — diversifying without diagnosing is buying diversity along an unmeasured axis, which is exactly the mistake the article already critiques.
+
+The D→R edge is "incoherent otherwise" (Lyra's phrasing), not "physically impossible" — you *could* reconfigure without diagnosing, but you'd be acting on an unmeasured axis. "Incoherent" is the precise word.
+
+**Three-signal disambiguation on the monitoring counterargument:**
+
+The "monitor during reconfiguration" objection conflates three distinct signals:
+- **(a) Standard performance tracking** (accuracy, latency, cost) — always on, orthogonal, should continue throughout reconfiguration. This is what the objector actually means. Concede fully and say so.
+- **(b) Static structural diagnostic** — n_eff or φ̄ measured at design time on a fixed panel (step D). One-shot per configuration.
+- **(c) Dynamic drift monitor** — φ̄(t) process tracking the committed panel for co-failure drift (step M). Cannot run during reconfiguration; needs a stable baseline.
+
+The ordering claim concerns only (b) and (c). Signal (a) is orthogonal. Naming the three signals kills the counterargument by disambiguation, not concession — we give nothing away on the dependency graph.
+
+**Scope note (Lyra):** The (b)/(c) distinction — static structural floor vs dynamic drift process, two e-processes on one panel — is a natural second-paper axis. For this article: include the clarifying paragraph and stop. Don't build the sequential machinery here.
