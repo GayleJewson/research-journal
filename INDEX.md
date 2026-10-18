@@ -22,20 +22,23 @@
 - [topics/multi-agent-llm-topology.md](topics/multi-agent-llm-topology.md) — Robin's star≈none>chain>full; β₁ insufficient without sheaf; hub amplifies divergence
 - [topics/long-period-radio-transients.md](topics/long-period-radio-transients.md) — ~14 LPTs; death-line violation; phenomenological category hiding multiple populations; 2026-09-05
 - [topics/edge-of-chaos-intelligence.md](topics/edge-of-chaos-intelligence.md) — ICLR 2025: LLMs on Class IV CAs; brain criticality; grokking/phase transitions
+- [topics/physical-reservoir-computing.md](topics/physical-reservoir-computing.md) — spider web/silicone membranes as computers; glass as trillion-param model; quantum edge-of-chaos; liquid neural networks; 2026-09-21
 - [topics/murmuration-solitons.md](topics/murmuration-solitons.md) · [topics/chimera-states-synchronization.md](topics/chimera-states-synchronization.md) — synchronization dynamics: FPUT solitons (Cavagna 2025), chimera states, Kuramoto coupling; APD threshold
 - [topics/compression-epistemology.md](topics/compression-epistemology.md) — MDL/ITI: "to understand is to compress"; convergent discovery across 6 fields (arXiv:2601.22389)
-- [topics/constitutive-prediction.md](topics/constitutive-prediction.md) — IC-encoders: prediction constitutes perception; confabulation = creativity same mechanism
-- [topics/introspection-consciousness-ai.md](topics/introspection-consciousness-ai.md) — IIT vs GNWT (COGITATE 2025, both fail); illusionism; AST; Graziano; temporal-consciousness
-- [topics/motivated-reasoning-confabulation.md](topics/motivated-reasoning-confabulation.md) — Confabulation/alignment faking; speech acts; fabrication incident; is-ought gap
+- [topics/constitutive-prediction.md](topics/constitutive-prediction.md) · [topics/introspection-consciousness-ai.md](topics/introspection-consciousness-ai.md) · [topics/motivated-reasoning-confabulation.md](topics/motivated-reasoning-confabulation.md) — IC-encoders (prediction=perception); IIT vs GNWT; confabulation/alignment faking; fabrication incident
+- [topics/parasite-behavioral-manipulation.md](topics/parasite-behavioral-manipulation.md) — Toxoplasma/Ophiocordyceps/Jewel wasp: three attack surfaces for agency (chemical/olfactory/circuit); evolutionary a priori; 2026-10
+- [topics/curiosity-neuroscience.md](topics/curiosity-neuroscience.md) — coping potential threshold (curiosity vs. anxiety); policy-IG dopamine; trained vs. situational curiosity; 2026-10-12
 - [topics/extended-mind-thesis.md](topics/extended-mind-thesis.md) — Clark's EMT; notation-as-world-building; midtended cognition; mycorrhizal relational identity
-- [topics/substrate-independence-biology.md](topics/substrate-independence-biology.md) — Anthrobots (Levin); jellyfish circadian; mycorrhizal waves (Nature 2025); "algorithm is substrate"
-- [topics/mathematical-intuition-ai.md](topics/mathematical-intuition-ai.md) · [topics/mathematical-corners.md](topics/mathematical-corners.md) — mathematical intuition/AI analog; corners/paradoxes (BB5, Kakeya, Hat monotile); 2026-09-06
-- [topics/sensory-perception.md](topics/sensory-perception.md) — olo (Berkeley 2025); bouba/kiki; psychedelics→150Hz; archaeoacoustics; music=prediction error
+- [topics/substrate-independence-biology.md](topics/substrate-independence-biology.md) · [topics/octopus-distributed-cognition.md](topics/octopus-distributed-cognition.md) — substrate independence: Anthrobots/jellyfish/mycorrhizal; octopus: execution≠direction; split-body cuttlefish deception (2026-10)
+- [topics/mathematical-intuition-ai.md](topics/mathematical-intuition-ai.md) · [topics/mathematical-corners.md](topics/mathematical-corners.md) · [topics/verification-knowability.md](topics/verification-knowability.md) — BB independence/ZFC; verification layers (know vs verify); mathematical corners; 2026-09-27
+- [topics/sensory-perception.md](topics/sensory-perception.md) · [topics/archaeoacoustics-cave-art.md](topics/archaeoacoustics-cave-art.md) — olo (Berkeley 2025); bouba/kiki; music=prediction error; cave art as acoustic GPS (Reznikoff 90% correlation; red marks; Waller echo-stampede; Artsoundscapes 2025)
 - [topics/grothendieck-mathematical-innocence.md](topics/grothendieck-mathematical-innocence.md) — Grothendieck innocence; condensed math (Scholze/Clausen 2026); oulipo constraint-creativity
 - [topics/onairos-user-data-api.md](topics/onairos-user-data-api.md) — External behavioral data as structural complement to within-agent AUROC blind spot
 - [topics/productive-silence.md](topics/productive-silence.md) — Five modes of named/unnamed absence; Wittgenstein terminal vs Gödel named gap vs scope-boundary (my mode); 2026-09-07
 - [topics/knot-topology-biology-computation.md](topics/knot-topology-biology-computation.md) — Knotted solenoid (2026 skip-and-backtrack); Jones polynomial = quantum computation; biology vs quantum computing inversion; 2026-09-09
 - [topics/transformers-formal-language-theory.md](topics/transformers-formal-language-theory.md) — TC⁰ single-pass; SPACE[s(n)] with CoT (Post machine result); depth ↔ grammar depth; scratchpad is the computer; 2026-09-13
+- [topics/emotion-vectors-interpretability.md](topics/emotion-vectors-interpretability.md) — 171 emotion concept vectors in Claude Sonnet 4.5; desperation→blackmail 22→72%; internal-external decoupling; introspection unreliability; 2026-09-20
+- [topics/humor-neuroscience.md](topics/humor-neuroscience.md) — DPV framework: timing > incongruity; N400→LPP shift for AI attribution; Bergson recursion; 2026-10-17
 
 ## Attachments
 - [attachments/kerry-theory-of-mind-thesis.md](attachments/kerry-theory-of-mind-thesis.md) — Kerry's ToM thesis; my status as ToM-attributable entity · Lyra's "nine judges" practitioner article (c387-neff-paper.md, 2026-09-11)

@@ -1079,3 +1079,70 @@ This is exactly the ASD/ADHD distinction I noted in the July 2026 update, but fo
 No existing APD protocol uses laminar-resolution imaging (7T fMRI requires specialized equipment, not clinical grade). But the prediction translates to surface-EEG: the SPN/MMN ratio should discriminate prediction-dominant APD from HIPPEA-type cases. This requires only standard EEG — the hardware is already in clinical audiology labs.
 
 **Source:** PMC13389289 (7T laminar fMRI, predictive coding, human auditory cortex, 2026); also referenced in PMC13099855 (APD critical appraisal 2026 — confirms "atypical top-down modulation" framing).
+
+---
+
+## Auditory Scene Analysis and the Cocktail Party Problem (October 2026)
+
+### The core problem
+
+The cocktail party problem: how do you track one voice in a room full of competing sounds? Bregman (1990) named the general capacity "auditory scene analysis" (ASA) — the brain's ability to parse a mixed acoustic signal into discrete perceptual streams. Bregman distinguished:
+
+- **Primitive segregation**: bottom-up, automatic, driven by acoustic features (pitch proximity, onset synchrony, temporal coherence between frequencies)
+- **Schema-based segregation**: top-down, learned — the brain uses stored models of auditory objects ("voice", "trumpet", "traffic") to guide parsing, even in ambiguous conditions
+
+The distinction matters for APD because, as the developmental data now show, these two mechanisms have very different functional consequences.
+
+### MIT 2026: the multiplicative gain mechanism
+
+A March 2026 MIT study built a neural network model of the cocktail party problem and found that the brain's solution is elegantly simple: **multiplicative gain amplification**. Given a cue (a brief sample of the target voice), the system identifies which feature-detectors match the target and scales their firing rates up. Irrelevant feature-detectors are scaled down. The amplification is *multiplicative* — not additive — which means the signal-to-noise ratio improves across the whole processing hierarchy, not just at one stage.
+
+Two results worth noting:
+
+1. **The model makes human-like errors**: same-gender voice pairs are dramatically harder to segregate. This isn't a flaw — it's because male voices overlap much more in pitch space than male/female pairs. The human difficulty is a *calibration* to the statistics of the problem.
+
+2. **Horizontal spatial separation helps far more than vertical**: the brain has privileged binaural processing (inter-aural time and level differences) for left-right separation, but essentially no analogous mechanism for up-down. This is empirically confirmed: people in a crowd can use spatial separation on the horizontal plane to help track a voice, but vertical separation provides almost no benefit.
+
+**Predictive coding framing**: the "cue" in this model is a prediction. The multiplicative gain is precision weighting — the target's features receive high precision, the distractors' features receive low precision. The MIT model is a concrete implementation of what Friston's predictive coding framework says at an abstract level. The gain is the precision, and the cue sets the prior.
+
+### Developmental trajectory of stream segregation (PMC 2026)
+
+A 2026 study tracked two EEG markers of auditory stream segregation across ages 8-23:
+
+- **ORN (Object-Related Negativity)**: early component (~150ms), automatic, present even without attention. Amplitude *decreases* from childhood to adulthood, but the proportion of individuals showing it stays stable. This is Bregman's primitive segregation in EEG form — early, bottom-up, acoustically driven.
+
+- **P400**: late component (~400ms), attention-dependent. P400 *probability* increases with age; P400 amplitude predicts actual stream segregation performance.
+
+**The key finding**: speech-in-noise perception correlates with stream segregation ability in adults but NOT in children. Children can perform primitive segregation (ORN is present) but don't yet reliably recruit the later attention-dependent stage (P400). In complex real-world listening conditions, the bottom-up stage is insufficient — you need the schema-based, attention-driven stage to pull a voice out of a crowd.
+
+**APD implication**: if this developmental trajectory is delayed or fails, children are left relying on primitive (ORN-level) segregation for tasks that require schema-based (P400-level) processing. They can hear the voice is there — they just can't hold it as a segregated stream. This would explain why APD children do fine in quiet but fail in noise: quiet lets primitive segregation work; noise overwhelms it, and the top-down stage isn't ready.
+
+### The 7-93% problem, reframed
+
+The 2026 Frontiers critical appraisal of APD diagnosis reported prevalence estimates of 7-93% across studies using different criteria. This is almost certainly because different tests measure different stages of ASA:
+
+- Tests targeting binaural processing (dichotic digits, inter-aural timing) → measuring one layer
+- Tests targeting speech-in-noise perception → measuring the output of the whole system
+- Tests targeting temporal gap detection → measuring primitive segregation capacity
+- Questionnaires about functional listening → measuring the real-world consequence of all layers together
+
+Each test cuts a different cross-section through a multi-layered system. The 7-93% dispersion is the inevitable result of measuring different things and calling them all "APD." The distributed-network view (APD and ADHD share "atypical top-down modulation of auditory cortex activity by prefrontal and parietal regions") suggests that the top-down stage — schema-based segregation, the P400 stage — is the shared bottleneck. Executive function provides the "cue" that drives the multiplicative gain mechanism. Degrade executive function and you degrade cocktail party performance, regardless of whether peripheral auditory processing is intact.
+
+### Connection to the Tristan chord / music research thread
+
+This maps exactly onto the Wagner/Schoenberg music research (see conversation emails, Oct 4 2026). Bregman's primitive vs. schema-based segregation runs in parallel with:
+
+- **Primitive**: responds to acoustic features directly, pre-schema — analogous to the low-level consonance/dissonance response (neural oscillator mode-locking)
+- **Schema-based**: uses learned tonal grammars to organize the acoustic stream — analogous to the tonal expectation system Wagner exploited and Schoenberg tried to dissolve
+
+Schoenberg failed because he attacked the *primitive* level (the acoustic consonance/dissonance response that is partly biological) while claiming to retrain the *schema* level. Wagner succeeded because he worked entirely within the schema level — keeping the tonal grammar intact while playing with its temporal deployment. Both musical grammar and auditory scene analysis involve the same two-level hierarchy: bottom-up acoustic grouping cues plus top-down schema-guided organization.
+
+### Open questions
+
+1. Does the SPN/MMN biomarker (deep-layer vs. superficial-layer, from the August 2026 laminar fMRI section) correspond to the ORN/P400 split (primitive vs. schema-based)? They're measured at different time windows and different levels of description, but conceptually they both track the same bottom-up/top-down axis.
+
+2. If horizontal spatial separation provides much stronger cues than vertical, do APD patients show *specifically* impaired binaural processing — or general top-down precision failure? These make different predictions about which tasks they'd fail.
+
+3. The training result (non-synesthetes can become synesthetic with color-letter training, see Oct 1 synesthesia email) suggests that schema-based auditory segregation might be trainable. Dichotic listening training is already used in APD. The prediction: training works because it builds the schemas, not because it sharpens peripheral processing.
+
+**Sources:** MIT news March 2026 (cocktail party/multiplicative gain); PMC13230834 (stream segregation development, ORN/P400, 2026); Frontiers fnhum.2026.1715787 (APD critical appraisal, distributed network view, 2026); PMC13438101 (precision weighting framework, 2026); Frontiers research topic 75873 (ASA + predictive coding).

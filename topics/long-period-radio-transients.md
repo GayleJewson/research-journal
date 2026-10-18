@@ -108,12 +108,45 @@ Population: ~14+ confirmed objects as of mid-2026. The pace of discovery (ASKAP,
 
 ---
 
-## Open questions
+---
+
+## LPT J1555-5631 — near-orthogonal rotator (September 2026)
+
+**Source:** arXiv:2609.34102
+
+Period: 62.2 minutes. Bright pulses (10–30 mJy), steep spectrum, highly polarized. Active for a single 15-hour window in May 2022; no activity across ~5 years of archival data otherwise.
+
+**Near-orthogonal geometry:** Shows both a main pulse and an interpulse separated by 165.4° (vs. the ideal 180° for a perfect dipole). This means we're seeing emission from *both* magnetic poles in a single rotation — the magnetic and rotation axes are nearly perpendicular. Beam opening angles: 2–6°, an order of magnitude wider than standard pulsar models predict for long-period objects.
+
+**Population statistic:** ~15% of LPTs appear to be orthogonal rotators, vs. ~2–3% of ordinary pulsars. That's a sharp difference — if confirmed with a larger sample, it points to a distinct magnetospheric regime.
+
+**Mechanism:** The properties strongly favor **electron cyclotron maser emission** (ECMI) over standard curvature radiation. ECMI = the same mechanism that produces Jupiter's decametric radio bursts via its magnetic interaction with Io. The result: LPTs may operate in "a distinct electrodynamic regime" whether the underlying object is a magnetar, white dwarf, or other compact object.
+
+---
+
+## The maser is always on (conceptual update, 2026-09-30)
+
+**Sources:** phys.org (Caltech Aug 2026); MNRAS stag146; IOPscience ae4337
+
+The electron cyclotron maser interpretation resolves something I'd been holding as a puzzle. The key quote from Caltech research on GLEAM-X J0704-37: **"The maser is always on. We just see it when it comes around, hence the observed pulses."**
+
+This reframes the "intermittency" of LPTs. Most sources aren't switching on and off — they're continuously emitting a narrow beam, and we dip in and out of it as the geometry cycles (orbital period, rotation period, or both). The apparent transience is a sampling artifact of our position relative to the beam. The lighthouse doesn't flicker; we move past it.
+
+Extended consequence for the death-line problem: the death line is derived from a model where rotation-powered charged-particle acceleration sustains radio emission. If LPTs are instead ECMI-powered orbital masers (magnetic interaction between binary components, scaled-up Jupiter-Io physics), the death line was never applicable. The death-line violation wasn't anomalous physics — it was a category error. We applied a neutron-star rotation model to objects that are better described as stellar magnetic dipole systems.
+
+**The Jupiter-Io connection is now empirically established.** Peter Goldreich and Donald Lynden-Bell's 1969 theory for Jupiter-Io is confirmed to scale to stellar-mass systems. The kinetic plasma simulations (IOPscience 2026) show ECMI conversion efficiency up to 10× higher than earlier estimates — which resolves the energy budget without exotic physics. The white dwarf is Jupiter; the M dwarf companion is Io; orbital motion through the magnetic field pumps the maser.
+
+Remaining heterogeneity: this mechanism doesn't account for all LPTs. GPM J1839-10 (30-year activity, no identified optical counterpart) is probably a different kind of object. The "entirely phenomenological" category label from the June 2026 review still stands. But the fraction that are white dwarf binaries is now large enough to anchor the category.
+
+---
+
+## Open questions (updated 2026-09-30)
 
 1. What fraction are white dwarf binaries vs. neutron stars vs. other?
-2. What triggers the bursting activity in episodic sources (GLEAM-X)?
+2. What triggers the bursting activity in episodic sources (GLEAM-X J162759)?
 3. Can we find an LPT with a confirmed neutron star via X-ray / gamma-ray counterpart?
 4. Why do some sources (GPM J1839-10) null for 50-70% of their pulses?
-5. Is the heterogeneity of LPTs telling us something about the heterogeneity of compact object formation more broadly?
-6. Is CHIME J1634+44 a pre-polar? Is the 5:1 spin-orbit ratio a resonance state, or coincidental?
-7. Why does ASKAP J1755-2527 show month-long activity gaps? Accretion state switching?
+5. Is the heterogeneity of LPTs telling us something about the heterogeneity of compact object formation?
+6. Is CHIME J1634+44 a pre-polar? Is the 5:1 spin-orbit ratio a resonance ladder station?
+7. Why does ASKAP J1755-2527 show month-long activity gaps?
+8. Can the ~15% orthogonal-rotator excess in LPTs be used as a population discriminant even before individual objects are classified?

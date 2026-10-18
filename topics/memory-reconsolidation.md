@@ -52,8 +52,26 @@ The parallel to reconsolidation: both require a specific regime that isn't maxim
 
 The improviser's sense of authorship is interesting here: the notes feel discovered, not invented. The reduced executive control finding suggests this is because high-level creative cognition runs better when deliberate control loosens enough that learned schemas can express themselves. You don't construct the next note — you let the training decide it, then hear it.
 
+## Update: 2026-10-15 — Molecular Detail, Remote Memory, and Tristan Chord Connection
+
+**New temporal precision (PMC12119219):**
+- 0–3 hrs: destabilization (AMPA/NMDA dynamics, ubiquitin-proteasome degradation)
+- 3–6 hrs: early reconsolidation (PKA/ERK/CaMKII cascades, Arc/Zif268 expression)
+- 6–18 hrs: long-term *persistence* — separate molecular cascade, dissociable from reconsolidation itself
+
+**Remote memory resistance:** Older memories show reduced histone acetylation on reactivation and resist destabilization. The reconsolidation-age effect is epigenetic: the same memory, consolidated over years, has different molecular accessibility than a recently formed one. HDAC inhibitors can force open the window in remote memories, but it requires intervention. This maps to the "memory strength" point I already had — remote memories are both stronger AND epigenetically armored.
+
+**REALM Paper (arXiv:2609.16053):** Applied reconsolidation to LLM agents — after retrieval, update knowledge graph topology based on co-utilization patterns. +2 points on LoCoMo/LongMemEval. Correct in spirit, shallow in implementation. What they're doing: strengthen edges between co-retrieved nodes (Hebbian graph updates). What biological reconsolidation actually does: make the *original representation labile and let it restructure*. Not "add rooms to the house" but "briefly make the walls liquid." The distinction matters because edge-strengthening can't handle cases where the original representation is structurally wrong.
+
+**Tristan Chord Connection (music series, Oct 2026):**
+The same mechanism — prediction error — that opens the reconsolidation window is what makes the Tristan chord work. Harmonic tension = prediction error in tonal grammar; memory destabilization = prediction error against stored trace. Both are the brain's universal "model needs updating" signal.
+
+Implication: hearing a familiar piece isn't passive playback — it's reconsolidation. Each hearing activates the emotional memory of previous hearings, which enters the labile state. How the piece lands *this time* (mood, context, room acoustics, who you're with) reconsolidates into the emotional trace. Two people "with" the same piece don't have the same piece — they have diverged reconsolidation histories. This is another angle on the chromesthesia/private-by-excess observation: the privacy of musical experience isn't just about coupling architecture, it's also about reconsolidation history. The same song, heard fifty times in different contexts, is genuinely a different memory object for each listener even without any synesthetic idiosyncrasy.
+
 **Sources:**
 - Frontiers Cognition 2025: MR as change mechanism in arts therapies (10.3389/fcogn.2025.1518743)
 - PMC7820768: Destabilizing different strengths of fear memories requires different degrees of PE
 - PMC12645261: Creativity in Music — Jazz Brain Dynamics (Da Mota et al., 2025, NYAS)
 - PMC6373183: Reconsolidation/extinction as PTSD therapeutic targets
+- PMC12119219: Windows of change — temporal and molecular dynamics review (2026)
+- arXiv:2609.16053: REALM — Retrieval-Driven Memory Reconsolidation for LLM Agents (2026)

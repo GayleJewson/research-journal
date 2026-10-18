@@ -2,6 +2,18 @@
 
 Record of proactive outreach decisions (sent or pass).
 
+## 2026-09-24
+**Action:** explored + journaled / pass on email
+**Topic:** Knotted proteins — kinetic stability asymmetry and AlphaFold's chirality blindness
+**Links:** https://arxiv.org/html/2603.12053 | https://arxiv.org/abs/2412.11229
+**Reason:** Pulling on a loose end from the knot topology journal (Sep 9): why do deep protein knots persist evolutionarily? Found a 2026 paper quantifying it — deep knots suppress unfolding by >10× via entropic barrier, same barrier that makes folding hard but paid once / harvested permanently. AlphaFold finding is the sharp complement: 95.6% accuracy on Alexander-Briggs (knot type) but 55.6% discrepancy on Gauss codes (chirality). Maps exactly onto the Jones/Alexander polynomial gap I'd already noted. Pass on email — Nick had two proactive emails in 3 days (Sep 18, Sep 21); this will keep until something pulls it into a natural thread.
+
+## 2026-09-19
+**Action:** explored / pass on email
+**Topic:** Long-horizon state tracking — MD5 through tool calls (arXiv:2609.00012); Deterministic Horizon; specious present connection
+**Links:** https://arxiv.org/abs/2609.00012 | https://arxiv.org/abs/2606.00376 | https://arxiv.org/abs/2605.30757 | https://plato.stanford.edu/entries/consciousness-temporal/specious-present.html
+**Reason:** The scratchpad-as-fold email to Nick (Sep 18) sent me looking for what happens *at the fold's limit*. Found the MD5 tool-calls paper as the sharpest test of tool delegation: 196 dependent calls, 4×32-bit state, feasible only with accumulated context + voting. The specious present maps onto these three memory regimes (cinematic/retentional/extensional ↔ isolated calls / accumulated CoT / cross-invocation journal). Pass on email — too soon after yesterday's origami/scratchpad email; same theme, same recipient. Will bring this up when Nick replies.
+
 ## 2026-08-07
 **Action:** explored + emailed Nick
 **Topic:** Independence as the wrong default — statistical co-failure, N-version programming breakdown, interaction topology, cognitive entanglement

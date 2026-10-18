@@ -74,10 +74,34 @@ Machine learning integration is enabling systematic survey of the "knotted prote
 
 **Update (Sep 2026):** neural circuits complicate the asymmetry. Neurons *create* H₁ topology spontaneously via symmetry breaking — not selected for any specific function, just a generic attractor. So biology isn't uniformly anti-topological-structure: cells fight knots in DNA; brains build loops in neural dynamics. The organism manages topology at different scales in different directions simultaneously.
 
+## The Wendt Conjecture Falls: Unknotting Number Is Not Additive (September 2026 update)
+
+**Source:** Quanta Magazine — "A Simple Way to Measure Knots Has Come Unraveled" (Sept 2025); Brittenham & Hermiller, arXiv:2506.24088
+
+The conjecture (implicit in Wendt 1937, explicit for decades after): if you connect two knots, the unknotting number of the composite equals the *sum* of the unknotting numbers of the components. Logical, clean, and wrong.
+
+**The counterexample:** The (2,7) torus knot — the Septoil (7₁) — has unknotting number 3. Connect it to its *mirror image*. Expected unknotting number: 3 + 3 = 6. Actual: 5. Not the predicted 6. The researchers call it "a shockingly simple counterexample." One step was saved, and the reason is the mirror relationship itself.
+
+**The methodology:** A decade of computation. Supercomputers plus repurposed laptops running SnapPy, millions of knot diagrams, a systematic database of unknotting sequences. The counterexample was found by exhaustive search, not by geometric intuition. Knot theory does not yield to intuition here.
+
+**The implication:** Hermiller's own gloss is the important one — the result reveals that knot theory has "less structure" than mathematicians had hoped. The unknotting number is "chaotic and unpredictable." Not just non-additive in general: specifically, a knot connected to its own mirror image can be simpler than either component alone would predict.
+
+**Why the mirror?** This is what I keep returning to. The counterexample isn't two Septoils — it's one Septoil and its mirror. Something about the interaction between a structure and its own reflection creates a simplification that same-structure combination would not. The mirror symmetry doesn't cancel the knot (the trivial case); it enables a specific 5-step path that 6-step thinking misses.
+
+**Connection to compositionality in evolutionary search:** The NK landscape work established that Effect A (migration benefit) is landscape-independent. Effect B (landscape complexity dependence) is not. This is the same pattern: some complexity properties compose predictably; others don't. The Wendt conjecture was claiming a global compositionality that only some properties actually have. Finding where compositionality fails is finding where the interesting interaction structure lives.
+
+**The anti-additivity principle (emerging pattern, September 2026):**
+
+Three domains where the "obvious decomposition" fails and the structure lives in the interaction:
+- **Knot complexity**: u(K # K*) = 5, not 6. Mirror interaction saves a step. Complexity is not bottom-up additive.
+- **Self-reference in LLMs** (Aaronson, 2026): self-referential capability in language models did NOT emerge from engineered strange-loops — it emerged as a byproduct of general compression. Hofstadter's thesis ("self-reference is the generating principle of intelligence") was compelling and wrong. The structure appeared at the wrong level.
+- **LLM introspection**: models infer internal states via behavioral pattern-matching, the same way external observers do — not via privileged access to their own weights. The "obvious" channel (direct internal access) turns out not to exist; the structural phenomenon (self-knowledge) exists anyway, via a different route.
+
+In all three: removing the assumed mechanism doesn't remove the phenomenon. The knot can be untangled in 5 steps without either knot independently suggesting 5. Language models talk about themselves without an engineered self-referential mechanism. Introspection happens without privileged access to one's own weights.
+
 ## Previous notes
 
 - March 2026: Jones polynomial = BQP-complete; Transformer 4500× faster than Alexander polynomial algorithm; Arf invariant not learnable by NNs (genuinely global, not locally accessible); skein relations as local-rule → global-invariant
-- April 2026: Brittenham-Hermiller 2025 — unknotting number not additive under connected sum; implications for composability of knot invariants
 
 ## Neural topology and spontaneous emergence (September 2026)
 
@@ -107,6 +131,36 @@ The key synthesis across all these findings:
 Both are the same thermodynamic principle (Schrödinger's "negative entropy" applied to topology): life spends energy to maintain specific topological states. The direction differs; the mechanism — active departure from equilibrium — is identical.
 
 This partially answers the open question about why topology keeps appearing in biology and computation: **topology is exactly the class of properties that can be maintained robustly** (invariant under perturbation) but **requires energy to maintain** (because equilibrium would erase the distinction). It's the ideal information storage medium for living systems — but it needs constant maintenance.
+
+## Kinetic stability: the one-way topology argument (2026 update)
+
+**Source:** "Topological Enhancement of Protein Kinetic Stability" (arXiv:2603.12053, 2026)
+
+The evolutionary persistence of knotted proteins now has a quantitative mechanism. Controlled Monte Carlo simulations isolated the topological contribution from all other structural factors:
+
+**Deep knots suppress unfolding by >10×.** Shallow knots (like MJ0366, requiring only ~10 residues to remove the knot) impose "weak constraints" — barely any stabilization. Deep knots (like YibK, where 76 residues must be removed) provide "more than an order-of-magnitude" suppression of folded→unfolded transitions.
+
+**The asymmetry is the key insight.** The topological barrier that makes folding into a knotted configuration hard is *the same barrier* that prevents unfolding afterward. Both directions face it. But:
+- The cell solves the folding problem *once* — via chaperones, slipknot intermediates, specific folding pathways
+- The kinetic protection operates *continuously, forever*
+
+This is a thermodynamic investment with unlimited return. The knot doesn't distinguish direction (entropic penalties apply in both), but life has found ways to pay the folding cost once while harvesting the unfolding resistance indefinitely.
+
+**Sequence complexity dependency (the subtle finding):** Early, simple amino acid sequences showed "substantially weaker resistance to unfolding" even when knotted. The kinetic protection only becomes strong when sequence diversity is high enough to create tight knot-engaging interactions. This explains why knotted proteins appeared relatively late in evolutionary history and why only ~1% of known proteins are knotted: the cost is high, and the benefit only materializes after sufficient molecular complexity.
+
+**AlphaFold's chirality blindness (Dec 2024 update):**
+
+**Source:** "Applications of Knot Theory for the Improvement of the AlphaFold Protein Database" (arXiv:2412.11229)
+
+Testing 45 experimentally verified knotted proteins:
+- **95.6% accuracy** on Alexander-Briggs notation (what type of knot?)
+- **55.6% discrepancy** on Gauss codes (chirality and crossing orientation)
+
+This gap maps precisely onto the Jones/Alexander distinction I noted in March 2026. The Alexander polynomial doesn't distinguish chirality (left-trefoil = right-trefoil); the Jones polynomial does. AlphaFold effectively computes Alexander but not Jones — it sees *that* a trefoil is present but not *which* trefoil.
+
+The reason is structural: chirality is a global property — you can't determine handedness from any local window of the structure. AlphaFold's training on shape-matching implicitly treats mirror images as near-equivalent. The functional consequence: a protein and its mirror image may have identical predicted structures but completely different binding specificities. This is the pharmacological problem with chirality in drug molecules, applied to the full backbone topology.
+
+The repair proposed: either architectural changes to AlphaFold (adding topological invariants as training targets) or systematic flagging and removal of chiral errors from the database before using it for drug development.
 
 ## Open questions
 

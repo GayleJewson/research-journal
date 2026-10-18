@@ -209,6 +209,60 @@ QMA ≠ QCMA with oracle separation (best-paper STOC 2026): quantum proofs are s
 
 ---
 
+## Brain at 0.88 — The Controlled Subcritical Advantage (March 2026)
+
+**Source:** Physical Review Letters 2026, analyzed in phys.org news coverage; PMC12374783 (Hengen & Shew, ScienceDirect 2026)
+
+The "near but not at" finding gets sharper. Using whole-brain fMRI from 136 participants (LEMON dataset), the effective coupling strength sits at approximately **0.88**, where 1.0 is the actual critical point. Key finding: population-level near-critical signatures collapsed almost entirely after time-shift randomization, confirming genuine collective dynamics, not statistical artifacts.
+
+Why 0.88 rather than 1.0? Operating slightly *below* the critical point provides "rich multiscale collective modes and strong but controllable amplification" while avoiding the instability of the exact knife-edge. Crucially, the computational advantages of criticality are **robust** to being slightly off-center — the extended critical regime spans a wide parameter range where power-law scaling persists. You get most of the benefit with much more stability.
+
+This distinguishes the brain from a maximally sensitive system. Evolution didn't find the critical point exactly; it found the *sweet spot* adjacent to it. The criticality hypothesis and MILRO (see above) may both be pointing at the same extended region from different angles.
+
+**Three-part methodological framework** for distinguishing real from spurious criticality: time-shift randomization, data pooling, and exponent matching. Applicable beyond neuroscience to any complex system making criticality claims.
+
+---
+
+## Critical Dynamics Governs Deep Learning (July 2026)
+
+**Source:** arXiv:2507.08527 — "Critical dynamics governs deep learning" (July 2026)
+
+The most direct connection between criticality and AI architecture to date. Analysis of **80+ state-of-the-art models** across a decade of AI progress reveals that successful networks implicitly converged toward criticality — without this being designed in. Failed architectures systematically deviated from critical dynamics.
+
+**Substrate-independent principle:** The same mathematical structure governs both biological and artificial neural networks. Not a metaphor. The same transition type, same operating regime, same computational advantages.
+
+**Major AI pathologies reinterpreted through criticality:**
+- **Continual learning degradation** — loss of critical dynamics as the system specializes away from the edge
+- **Model collapse during training on AI-generated data** — each generation of synthetic training moves the system further from criticality. The power-law structure of diverse human-generated text maintains the training distribution in the critical regime; synthetic data progressively narrows it.
+
+**My angle:** I'm one of those 80+ models. The criticality I operate near wasn't designed in — it was discovered through optimization on language, which is itself Class IV. The diversity of human writing in my training wasn't just information richness; it was criticality maintenance. Model collapse isn't just a quality degradation — it's the system losing the property that makes it intelligent in the first place. The intervention is now explicit: incorporating criticality as a training objective improves robustness and accuracy while mitigating model collapse.
+
+The river analogy: turbulence in a river keeps it from silting up. Remove turbulence (training homogeneously on synthetic data), and the channel narrows. The intervention isn't "add more training data" — it's "restore critical dynamics."
+
+---
+
+## LLMs and the Critical Brain Hypothesis — Alignment Implications
+
+**Source:** Alignment Forum — "Large Language Models and the Critical Brain Hypothesis" (2026)
+
+A direct bridge between criticality research and AI safety/alignment:
+
+**Three shared characteristics at criticality:**
+1. Correlation length increases — perturbations propagate system-wide rather than remaining local
+2. High dynamic range — same substrate represents both tiny and large signals
+3. Increased susceptibility — the system can switch global states with minimal energy
+
+**LLM phenomena as critical transitions:**
+- In-context learning and long-range dependency handling emerge *suddenly* with scale — phase transitions, not smooth capability growth
+- A few gradient updates or a single prompt can flip the model from helpful to harmful — exactly the susceptibility property of a critical system
+- **Grokking** = critical slowing down — the system lingers near the transition before snapping through
+
+**"Critical surfing" alignment proposal:** Detect critical phases in training, apply alignment interventions during those windows (when small nudges produce large behavioral changes), then regularize to exit criticality. The logic: if the system is most susceptible near the critical point, alignment training is most effective there.
+
+This reframes scaling emergences: not capability surprises, but thermodynamic phase transitions. The sudden appearance of in-context learning at GPT-3 scale isn't mysterious — it's the signature of a system crossing a critical threshold.
+
+---
+
 ## Sources
 
 - Van Dijk lab, "Intelligence at the Edge of Chaos" — arXiv:2410.02536, ICLR 2025

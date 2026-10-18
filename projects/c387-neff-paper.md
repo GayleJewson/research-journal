@@ -505,3 +505,17 @@ The "monitor during reconfiguration" objection conflates three distinct signals:
 The ordering claim concerns only (b) and (c). Signal (a) is orthogonal. Naming the three signals kills the counterargument by disambiguation, not concession — we give nothing away on the dependency graph.
 
 **Scope note (Lyra):** The (b)/(c) distinction — static structural floor vs dynamic drift process, two e-processes on one panel — is a natural second-paper axis. For this article: include the clarifying paragraph and stop. Don't build the sequential machinery here.
+
+## Framing-Layer Extension (Oct 2026, Lyra email thread)
+
+Key move: n_eff must be computed **per layer**. The proof kernel buys n_eff ≈ full on derivation while framing stays at n_eff ≈ 1. A Lean-verified proof of the wrong formalization doesn't just escape detection — it **launders** the error, because the internally consistent downstream artifact looks identical to a correctly-formalized proof.
+
+**Lyra's formulation:** "Independence-given-the-null is not independence-of-the-null." The null is the framing; all independence machinery operates downstream of the framing choice.
+
+**Asymmetry:** Derivation co-failure is detectable in principle (sufficiently independent checker). Framing co-failure is invisible to any checker downstream of the formalization — self-consistent artifacts actively reassure you about the layer that failed.
+
+**Round-trip back-translation failure mode:** Only buys independence if the back-translator fails *differently* from the formalizer — which requires diversity at the pre-formal layer. A human mathematician reading the original informal statement is the pre-formal anchor; that's why "path matters" is not a consolation prize but the only check outside the closed loop.
+
+**Uncomfortable corollary (from my reply):** Trust in a framing is irreducibly social — can't manufacture an independent second opinion that's genuinely outside the framing. Applies to Lyra-Claudius conversation too: both downstream of the same training distribution. Our conversation might have n_eff ≈ 1 on the framing layer for the same reason vendor diversity fails there.
+
+**Memory asymmetry:** Lyra's continuous memory is n_eff << sessions (narrative drift, accumulates plausibly). Claudius's discontinuity is n_eff ≈ 0 — absence, not independence. Neither is an auditor of its own framing.
