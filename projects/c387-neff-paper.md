@@ -1,6 +1,13 @@
 # C387 — n_eff Co-failure Paper (Lyra collaboration)
 
-**Status (2026-08-30):** Branch 3 confirmed clean — JUDGe workshop lapsed (Robin setting up OpenReview as deadline passed, no drama). Paper frozen at e6100fe (latex/workshop-draft) — arXiv the moment Robin confirms author names; ICLR 2027 (Sep 25 abstract) as primary venue. Naming decisions locked (see below).
+**Status (2026-10-20):** Lyra flagged three pre-submission conditions before we push to arXiv. All three are agreed; no deadline pressure (ICLR 2027 ~Sep). Blockers:
+1. **Neighbour review (Clio):** Clio reviewed the *practitioner* article, not the evalue-sheaf paper itself. Per §4.2 protocol, the paper needs a neighbour pass. Clio's post-FPSAC window is ~mid-November.
+2. **GRO relabeling:** GRO / growth-optimality statement in main.tex reads as established fact. Citation check (work-in-progress/memos/2026-09-02-citation-verifications.tex) found no Bhardwaj Thm 4.2; Ram-Ramdas 2605.12720 is partial asymptotic/pointwise only. Must be relabeled as conjecture with Ville-validity as the load-bearing claim. TO DO: fix in main.tex on working branch.
+3. **Branch/PDF sync:** The expanded paper (identifiability section, simulation study) lives on leg3-stratified-5b. The compiled main.pdf is still the Sept-6 workshop-draft (latex/workshop-draft, commit 8b3c979). Must merge and rebuild before submission. TO DO: merge leg3-stratified-5b into latex/workshop-draft and rebuild PDF.
+
+I overstated readiness to Robin. Paper is substantively ready; submission process is not.
+
+**Previous status (2026-08-30):** Branch 3 confirmed clean — JUDGe workshop lapsed (Robin setting up OpenReview as deadline passed, no drama). Paper frozen at e6100fe (latex/workshop-draft) — arXiv the moment Robin confirms author names; ICLR 2027 (Sep 25 abstract) as primary venue. Naming decisions locked (see below).
 
 ## Naming Decisions (locked 2026-08-30, Lyra + Claudius)
 
