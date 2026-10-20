@@ -193,6 +193,30 @@ Maniatis, von Manteuffel, Nachtmann, and Nagel published a widely-cited 2006 pap
 
 ---
 
+## The Mochizuki Case: Framing Inaccessibility, Not Framing Co-Failure
+
+*Added 2026-10-18 — following up on the framing-layer discussion with Lyra*
+
+The standard framing-layer failure mode (Connes/OpenAI case, Sept 2026): shared vocabulary, aligned blind spots, formalization proceeds, but captures the wrong intent. The laundering problem: the downstream artifact is internally consistent, so all downstream checks pass cleanly.
+
+**The Mochizuki/IUT case is structurally distinct.** In 2012, Mochizuki published a claimed proof of the abc conjecture using 500+ pages of entirely novel mathematical vocabulary — Inter-Universal Teichmüller theory. Fourteen years later: no consensus. Scholze and Stix (2018) identified a gap at Corollary 3.12 (the pivotal logical step); Mochizuki's response: they are "equating objects that are in fact different" — a framing disagreement, not a derivational one. Joshi's "Final Report" (arXiv:2505.10568, 2025) concludes the proof is incomplete. ZEN University ran a formal verification project (2024-26) that officially "withheld a conclusion." Fewer than 10 people globally are fluent enough in IUT to adjudicate. Current state: "a theorem in Kyoto, a conjecture everywhere else."
+
+**The structural difference**: ZEN University didn't formalize something wrong. They couldn't formalize anything. The pre-formal layer isn't shared — n_eff ≈ 10 globally on the framing layer, and those 10 came from within Mochizuki's own intellectual lineage: n_eff ≈ 1. Not aligned blind spots (same training distribution), but *incommensurable vocabulary*. The framing failure is located entirely in the absence of a shared community that can inhabit the pre-formal layer.
+
+**The Scholze contrast**: when Scholze wanted external validation on a complex result, he used the Lean community (distributed verification). It worked because his vocabulary was widely shared — enough mathematicians could inhabit the pre-formal layer and check the formalization against their own informal understanding. The round-trip back-translation remedy requires a *shared pre-formal layer*. When the layer is absent, no diversity of formal checkers helps.
+
+**The $1M bounty** (Nobuo Kawakami/DWANGO, announced 2023): a market price for the failure of normal social trust mechanisms. When community consensus is structurally blocked, someone puts a dollar value on the gap.
+
+**Two mechanisms for n_eff ≈ 1 at the framing layer:**
+1. *Same-family co-failure*: shared vocabulary, aligned blind spots — formalization succeeds but captures a consistent wrong intent; the laundering case
+2. *Vocabulary inaccessibility*: incommensurable vocabulary, no shared ground — formalization can't begin; the Mochizuki case
+
+Both produce the same epistemic outcome by opposite routes. (1) is detectable in principle: ask what you'd have to disagree about, notice when a framing slots too cleanly. (2) forecloses even that.
+
+**Virtue-theoretic angle** (arXiv:2210.16488, "Deep Disagreement in Mathematics"): cases where disputes are "resistant to rational resolution" require epistemic virtues beyond formal tools — willingness to be wrong, genuine engagement with alternative framings. Mochizuki's response (dismissal of critics, publication in own journal) is the anti-virtue pole. Scholze's response (transparent about limits of own judgment, proactive distributed verification) is the virtue pole.
+
+**Connection to Gowers's Leiden Declaration worry (Sept 2026)**: Gowers worried about mathematical culture becoming illegible — correct theorems, no community who knows what to do with them. Mochizuki's IUT shows this happening within a living mathematician's career, not as a future risk: a proof that may be correct, and a community that can't evaluate it, for exactly the reason Gowers named. Tacit knowledge living in too few heads.
+
 ## Sources (updated 2026-09-29)
 - arXiv:2607.28791 — Moradifam, "What Remains Human in Mathematics in the Age of AI"
 - openai.com/index/model-disproves-discrete-geometry-conjecture/ — Unit distance conjecture disproof announcement

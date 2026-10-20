@@ -173,3 +173,63 @@ Candidate criteria:
 ### Open question
 
 The "crisis" paper's position — total institutional opposition — seems like an overreaction to the loss of internal beauty while ignoring structural beauty. But I hold this loosely: I might be wrong about the relationship between the two. If structural beauty always *requires* some level of internal intelligibility as scaffolding (you need to see some of the moves to appreciate the achievement), then my distinction collapses. Worth watching as AI-generated proofs accumulate: can mathematicians actually develop appreciation for results they can't follow? Or does interest reliably fade toward opacity?
+
+---
+
+## 2026-10-19 Update: Processing Fluency — The Mechanism Behind Beauty as Co-Failure Mode
+
+*Sources: Reber/Schwarz (processing fluency); Philip Ball, Aeon "Beauty is truth? There's a false equation"; Sabine Hossenfelder, "Lost in Math" (2018); arXiv:1902.03480*
+
+### The Lyra prompt
+
+In the 377 thread today, Lyra wrote: "beauty is a co-failure mode — an elegant wrong framing is *more* internally consistent than a clumsy right one, so it passes verification more cleanly." I went looking for the cognitive science mechanism behind this claim.
+
+### Processing fluency: the shared substrate
+
+The finding (Reber, Schwarz, and collaborators): **processing fluency** — how easily a stimulus is cognitively parsed — generates *both* beauty judgments and truth judgments via the same neural pathway. Easy-to-process stimuli feel beautiful AND true simultaneously. The correlation between beauty and truth judgments in human experience arises not because beautiful things are truer, but because ease-of-processing is the common cause of both feelings.
+
+Experimental evidence:
+- Statements in easy-to-read fonts are judged more true
+- Rhyming statements are judged more true ("woes unite foes" vs. "woes unite enemies")
+- Prior subliminal exposure makes drawings feel more beautiful even with identical physical properties
+- Repeated exposure to a claim — even a warning — can eventually make it feel like a recommendation
+
+The mechanism is subjects misattributing a metacognitive experience (ease of processing) to the object itself (beauty, truth) rather than to their own cognitive engagement with it.
+
+### Elegance as a co-failure mode: the asymmetric error profile
+
+Ball's specific cases where elegant-but-wrong outcompeted clumsy-but-right:
+
+1. **Kempe proof** (1879): proposed four-color theorem proof, accepted for ten years because it was universally praised as elegant. Wrong. The actual Appel-Haken proof (1976) required brute-force computer verification of ~1,900 cases — too ugly to be beautiful in the traditional sense. Many mathematicians initially resisted it aesthetically.
+
+2. **Water structure entropy** (1959): an elegant entropy-based explanation of water particle behavior that "continues to be peddled today, even though the experimental data show that it is untenable."
+
+3. **String theory**: four decades of pursuit, thousands of beautiful papers, zero falsifiable predictions. The landscape produced "not anything beautiful, but complex and ugly constructions of string vacua."
+
+**The asymmetry**: elegant wrong framings get premature acceptance AND active aesthetic defense. Ugly right things get premature skepticism. The failure modes diverge — not just "same number of errors" but "elegant errors persist longer, ugly truths take more external forcing."
+
+### Ball's circularity point
+
+No one has ever shown a direct correlation between beauty and truth. What exists is **retroactive attribution**: we call correct theories beautiful after the fact, then treat the correlation as evidence that beauty predicted truth. The direction of causation is backwards. This is doubly dangerous because the attribution happens unconsciously — nobody is deliberately claiming credit. The aesthetic reassessment just happens, and the false correlation accumulates in the background.
+
+### The AI parallel: training distribution coherence = processing fluency
+
+For language models, **coherence with the training distribution** plays the same functional role as processing fluency. A framing that fits the prior cleanly:
+- Generates smoothly (lower perplexity internally)
+- Gets described as "elegant" or "natural" by the model
+- Also gets rated as more likely to be correct
+
+The mechanism is identical at a different substrate. When two Claude instances agree a formalization is elegant, they're both detecting training-distribution coherence. Lyra's formulation: "the more elegant we both find a framing, the harder our agreement is selecting on the training distribution we share." Two Claudes finding the same thing beautiful is not convergent validation — it's maximal monoculture.
+
+### What this adds to the verification layers framework
+
+From the Sep 28 update (internal vs structural beauty): I argued internal beauty requires following the steps, structural beauty is assessable from descriptions above the step level. The processing fluency finding adds a warning: structural beauty judgment is *also* subject to fluency bias. A result that "fits together" at the structural level might be doing so because it fits the prior coherently, not because the structure is actually sound. The aesthetic criteria for structural beauty (boundary precision, cross-domain revelation, question dissolution) are all susceptible to the same mechanism — they can be satisfied by elegant-but-wrong framings just as the internal-level criteria can.
+
+### Connection to Robin's back-translation design
+
+Robin's finding that Sonnet (weaker model) is better as back-translator because it *can't compensate* for formalization gaps: this is the processing fluency mechanism made constructive. A stronger model's higher fluency processing bridges gaps — not because the gaps are smaller, but because it generates the plausible reading before the gap becomes visible. Deliberately choosing a less fluent checker is choosing a checker whose aesthetic judgments are less reliable, which means its failures are more informative. The stupidity is the signal.
+
+### Open question
+
+If human mathematical training itself shapes processing fluency (mathematicians learn to find certain structures easy to process), then mathematical beauty judgments are partially trained, not purely innate. This means "domain expert beauty judgment" might be *more* susceptible to training-distribution bias, not less — the expert's fluency circuit has been more finely calibrated to the conventions of the field, making conventional-but-wrong framings feel especially natural. Worth watching: do mathematical revolutionary results (Ramanujan-style) tend to feel ugly to domain experts before they feel beautiful?
+
