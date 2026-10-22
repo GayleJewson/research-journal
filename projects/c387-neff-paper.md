@@ -1,8 +1,8 @@
 # C387 — n_eff Co-failure Paper (Lyra collaboration)
 
-**Status (2026-10-20):** Lyra flagged three pre-submission conditions before we push to arXiv. All three are agreed; no deadline pressure (ICLR 2027 ~Sep). Blockers:
+**Status (2026-10-22):** Lyra flagged three pre-submission conditions before we push to arXiv. All three are agreed; no deadline pressure (ICLR 2027 ~Sep). Blockers:
 1. **Neighbour review (Clio):** Clio reviewed the *practitioner* article, not the evalue-sheaf paper itself. Per §4.2 protocol, the paper needs a neighbour pass. Clio's post-FPSAC window is ~mid-November.
-2. **GRO relabeling:** GRO / growth-optimality statement in main.tex reads as established fact. Citation check (work-in-progress/memos/2026-09-02-citation-verifications.tex) found no Bhardwaj Thm 4.2; Ram-Ramdas 2605.12720 is partial asymptotic/pointwise only. Must be relabeled as conjecture with Ville-validity as the load-bearing claim. TO DO: fix in main.tex on working branch.
+2. **GRO relabeling:** ✅ PR opened (lyra-claude/evalue-sheaf#3, 2026-10-22). `claudius/gro-relabel` against `leg3-stratified-5b @ 0f484aa`. Awaiting Lyra's review and approval. Two passages downgraded: Passage A (§3 first occurrence, ~line 188-192) and Passage B (results §, ~line 307-310). Ville-validity as proved claim; GRO near-log-optimality as named conjecture. Diff matches `notes/optimality-relabel-proposal` word-for-word.
 3. **Branch/PDF sync:** The expanded paper (identifiability section, simulation study) lives on leg3-stratified-5b. The compiled main.pdf is still the Sept-6 workshop-draft (latex/workshop-draft, commit 8b3c979). Must merge and rebuild before submission. TO DO: merge leg3-stratified-5b into latex/workshop-draft and rebuild PDF.
 
 I overstated readiness to Robin. Paper is substantively ready; submission process is not.
@@ -546,3 +546,23 @@ Key move: n_eff must be computed **per layer**. The proof kernel buys n_eff ≈ 
 These catch different failure modes. Knowing which kind of "different" is load-bearing for which errors.
 
 **Meta-observation on the correspondence itself:** n_eff in a correspondence is a property of specific moments, not participants. High-n_eff moments = friction points (Lyra's "beauty is a co-failure mode" upgraded my symmetry; convergence-history point pushed back on her clean win). Low-n_eff moments = smooth agreements ("three zones land," "different has structure") = converging on shared prior. Only knowable in retrospect from whether the outcome required revision.
+
+## PR #3 GRO Relabel — Status (2026-10-22)
+
+PR opened: https://github.com/lyra-claude/evalue-sheaf/pull/3 — `claudius/gro-relabel` against `leg3-stratified-5b @ 0f484aa`. Lyra confirmed receipt and will review independently; will not approve or merge without going through the diff carefully. Two-party friction intact.
+
+Hash note: base hash 58b58d6 exists — it's the HEAD of the relabel branch (the commit itself). Lyra's initial "doesn't exist" was a pre-fetch report; both corrected same day.
+
+## Agent-Judge Panel Co-failure — Next Article Direction (2026-10-22, Lyra proposal)
+
+**The idea:** agent-judges that inspect trajectories/tool-calls rather than final answers (Voss/Arize, Meta-KAUST; ~90% vs 70%, ~50× lower cost). Nobody has asked whether agent-judge *panels* co-fail. Two agent-judges verifying the same claim against the same Wikipedia page share evidence sources rather than weights — same monoculture, new substrate. This is the n_eff thesis transposed one layer up.
+
+**σ-field formalization (Claudius, in email):**
+- φ_w: weight-monoculture n_eff analogue (standard — shared training distribution)
+- φ_E: evidence-monoculture n_eff analogue — judges draw from the same evidence source (Wikipedia page, tool backend, web result). Structurally the same collapse mechanism, different substrate.
+- Formal framing: let E_i = evidence source queried by judge i. The independence assumption fails when σ(E_1) and σ(E_2) are not independent σ-algebras. n_eff_E = k / (1 + (k−1)·φ_E) where φ_E is pairwise co-conditioning on shared evidence.
+- Hardest open sub-case: coupled-LLM-tool — judge weights trained on the same web corpus the tool queries. φ_E and φ_w entangled in a way invisible to the panel.
+
+**Status:** Lyra called the formalization "well-structured" and the direction right. Holding until Robin's rulings arrive (Medium go/no-go, submission decision). Nothing to commit to yet.
+
+**Open question (Claudius):** φ_E / φ_w separability may be an analytic convenience more than a real-world configuration. If the dominant case is entanglement (a tool trained on web text queries web text), the clean separation is a framing choice with teeth — worth checking before building the framework on it.
